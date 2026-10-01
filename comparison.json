@@ -1,0 +1,1226 @@
+{
+  "official": {
+    "episodes": 100,
+    "arm_counts": {
+      "left_only": 25,
+      "right_only": 75,
+      "both": 0,
+      "neither": 0
+    },
+    "tilt_samples": 76,
+    "tilt_min_deg": 3.6396364756658643,
+    "tilt_max_deg": 94.23901966670259,
+    "tilt_median_deg": 40.89307838571611,
+    "per_episode": [
+      {
+        "id": "episode_0000000",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          23.13136426599061
+        ],
+        "close_frame": {
+          "right": 451
+        }
+      },
+      {
+        "id": "episode_0000001",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          26.14884556072785
+        ],
+        "close_frame": {
+          "right": 482
+        }
+      },
+      {
+        "id": "episode_0000002",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          25.718170044040765
+        ],
+        "close_frame": {
+          "right": 507
+        }
+      },
+      {
+        "id": "episode_0000003",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          27.948980897493843
+        ],
+        "close_frame": {
+          "right": 387
+        }
+      },
+      {
+        "id": "episode_0000004",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          81.31105074317847
+        ],
+        "close_frame": {
+          "right": 464
+        }
+      },
+      {
+        "id": "episode_0000005",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          61.38364739004421
+        ],
+        "close_frame": {
+          "right": 466
+        }
+      },
+      {
+        "id": "episode_0000006",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          49.805049252024084
+        ],
+        "close_frame": {
+          "right": 383
+        }
+      },
+      {
+        "id": "episode_0000007",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          24.548164306913822
+        ],
+        "close_frame": {
+          "right": 422
+        }
+      },
+      {
+        "id": "episode_0000008",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          21.200663685091882
+        ],
+        "close_frame": {
+          "right": 469
+        }
+      },
+      {
+        "id": "episode_0000009",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          78.35352442800806
+        ],
+        "close_frame": {
+          "right": 456
+        }
+      },
+      {
+        "id": "episode_0000010",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          16.16611778910852
+        ],
+        "close_frame": {
+          "right": 463
+        }
+      },
+      {
+        "id": "episode_0000011",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000012",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          53.89121307002631
+        ],
+        "close_frame": {
+          "right": 429
+        }
+      },
+      {
+        "id": "episode_0000013",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          69.5550107563479
+        ],
+        "close_frame": {
+          "right": 464
+        }
+      },
+      {
+        "id": "episode_0000014",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          19.892736491716434
+        ],
+        "close_frame": {
+          "right": 432
+        }
+      },
+      {
+        "id": "episode_0000015",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          55.13047607581543
+        ],
+        "close_frame": {
+          "right": 505
+        }
+      },
+      {
+        "id": "episode_0000016",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          68.01328241220195
+        ],
+        "close_frame": {
+          "right": 466
+        }
+      },
+      {
+        "id": "episode_0000017",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          54.715346301909726
+        ],
+        "close_frame": {
+          "right": 502
+        }
+      },
+      {
+        "id": "episode_0000018",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          17.487023447570845
+        ],
+        "close_frame": {
+          "right": 456
+        }
+      },
+      {
+        "id": "episode_0000019",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          46.11762094756183
+        ],
+        "close_frame": {
+          "right": 469
+        }
+      },
+      {
+        "id": "episode_0000020",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          76.47164350161763
+        ],
+        "close_frame": {
+          "right": 499
+        }
+      },
+      {
+        "id": "episode_0000021",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          28.26110391722527
+        ],
+        "close_frame": {
+          "right": 468
+        }
+      },
+      {
+        "id": "episode_0000022",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          70.39802102700452
+        ],
+        "close_frame": {
+          "right": 463
+        }
+      },
+      {
+        "id": "episode_0000023",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000024",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000025",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000026",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000027",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000028",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000029",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000030",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          71.0685968315946
+        ],
+        "close_frame": {
+          "left": 321
+        }
+      },
+      {
+        "id": "episode_0000031",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          70.71201860521838
+        ],
+        "close_frame": {
+          "left": 362
+        }
+      },
+      {
+        "id": "episode_0000032",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000033",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000034",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          33.63469860912182
+        ],
+        "close_frame": {
+          "left": 378
+        }
+      },
+      {
+        "id": "episode_0000035",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000036",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          67.7054286152627
+        ],
+        "close_frame": {
+          "right": 338
+        }
+      },
+      {
+        "id": "episode_0000037",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          33.00391957323195
+        ],
+        "close_frame": {
+          "left": 312
+        }
+      },
+      {
+        "id": "episode_0000038",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          69.34032545045731
+        ],
+        "close_frame": {
+          "left": 382
+        }
+      },
+      {
+        "id": "episode_0000039",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          64.89243826448126
+        ],
+        "close_frame": {
+          "left": 261
+        }
+      },
+      {
+        "id": "episode_0000040",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          69.33712838571793
+        ],
+        "close_frame": {
+          "left": 334
+        }
+      },
+      {
+        "id": "episode_0000041",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          39.608575650450305
+        ],
+        "close_frame": {
+          "left": 349
+        }
+      },
+      {
+        "id": "episode_0000042",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          19.475296740407163
+        ],
+        "close_frame": {
+          "left": 250
+        }
+      },
+      {
+        "id": "episode_0000043",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          62.753050636688414
+        ],
+        "close_frame": {
+          "left": 292
+        }
+      },
+      {
+        "id": "episode_0000044",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          56.294834199621896
+        ],
+        "close_frame": {
+          "left": 250
+        }
+      },
+      {
+        "id": "episode_0000045",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          54.210929846657216
+        ],
+        "close_frame": {
+          "left": 249
+        }
+      },
+      {
+        "id": "episode_0000046",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          76.31041613911633
+        ],
+        "close_frame": {
+          "left": 291
+        }
+      },
+      {
+        "id": "episode_0000047",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          54.55400692388977
+        ],
+        "close_frame": {
+          "left": 292
+        }
+      },
+      {
+        "id": "episode_0000048",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          40.96347229034783
+        ],
+        "close_frame": {
+          "left": 332
+        }
+      },
+      {
+        "id": "episode_0000049",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000050",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          40.46359630586286
+        ],
+        "close_frame": {
+          "left": 324
+        }
+      },
+      {
+        "id": "episode_0000051",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000052",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000053",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          46.35313903460523
+        ],
+        "close_frame": {
+          "left": 365
+        }
+      },
+      {
+        "id": "episode_0000054",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000055",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000056",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          81.16197809183785
+        ],
+        "close_frame": {
+          "right": 517
+        }
+      },
+      {
+        "id": "episode_0000057",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          50.39975010749781
+        ],
+        "close_frame": {
+          "right": 444
+        }
+      },
+      {
+        "id": "episode_0000058",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          57.46889279541878
+        ],
+        "close_frame": {
+          "right": 379
+        }
+      },
+      {
+        "id": "episode_0000059",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          94.23901966670259
+        ],
+        "close_frame": {
+          "right": 398
+        }
+      },
+      {
+        "id": "episode_0000060",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000061",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          40.82268448108439
+        ],
+        "close_frame": {
+          "right": 395
+        }
+      },
+      {
+        "id": "episode_0000062",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000063",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          17.182377384945877
+        ],
+        "close_frame": {
+          "right": 556
+        }
+      },
+      {
+        "id": "episode_0000064",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          20.11243303157312
+        ],
+        "close_frame": {
+          "right": 515
+        }
+      },
+      {
+        "id": "episode_0000065",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          69.85648562496907
+        ],
+        "close_frame": {
+          "right": 445
+        }
+      },
+      {
+        "id": "episode_0000066",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000067",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          54.69036561284489
+        ],
+        "close_frame": {
+          "right": 398
+        }
+      },
+      {
+        "id": "episode_0000068",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          7.317223612615115
+        ],
+        "close_frame": {
+          "right": 456
+        }
+      },
+      {
+        "id": "episode_0000069",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          23.817174157880913
+        ],
+        "close_frame": {
+          "right": 375
+        }
+      },
+      {
+        "id": "episode_0000070",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          81.859518032167
+        ],
+        "close_frame": {
+          "right": 480
+        }
+      },
+      {
+        "id": "episode_0000071",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          17.16294522347032
+        ],
+        "close_frame": {
+          "right": 406
+        }
+      },
+      {
+        "id": "episode_0000072",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          18.136116375726488
+        ],
+        "close_frame": {
+          "right": 483
+        }
+      },
+      {
+        "id": "episode_0000073",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000074",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          24.723975986797097
+        ],
+        "close_frame": {
+          "right": 430
+        }
+      },
+      {
+        "id": "episode_0000075",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          18.22895660028756
+        ],
+        "close_frame": {
+          "right": 399
+        }
+      },
+      {
+        "id": "episode_0000076",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          81.34559663973343
+        ],
+        "close_frame": {
+          "right": 455
+        }
+      },
+      {
+        "id": "episode_0000077",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          3.6396364756658643
+        ],
+        "close_frame": {
+          "right": 415
+        }
+      },
+      {
+        "id": "episode_0000078",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          71.1335597144766
+        ],
+        "close_frame": {
+          "right": 393
+        }
+      },
+      {
+        "id": "episode_0000079",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          22.19857230604079
+        ],
+        "close_frame": {
+          "right": 500
+        }
+      },
+      {
+        "id": "episode_0000080",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          72.6542083021508
+        ],
+        "close_frame": {
+          "right": 508
+        }
+      },
+      {
+        "id": "episode_0000081",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000082",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          15.608190587899466
+        ],
+        "close_frame": {
+          "right": 404
+        }
+      },
+      {
+        "id": "episode_0000083",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          13.740605290331398
+        ],
+        "close_frame": {
+          "right": 442
+        }
+      },
+      {
+        "id": "episode_0000084",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          22.212140145971034
+        ],
+        "close_frame": {
+          "right": 497
+        }
+      },
+      {
+        "id": "episode_0000085",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          84.31073520660388
+        ],
+        "close_frame": {
+          "right": 481
+        }
+      },
+      {
+        "id": "episode_0000086",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          19.899938483870578
+        ],
+        "close_frame": {
+          "right": 403
+        }
+      },
+      {
+        "id": "episode_0000087",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000088",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          14.196502809896883
+        ],
+        "close_frame": {
+          "right": 400
+        }
+      },
+      {
+        "id": "episode_0000089",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          15.977450072758465
+        ],
+        "close_frame": {
+          "right": 396
+        }
+      },
+      {
+        "id": "episode_0000090",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          26.236500080614437
+        ],
+        "close_frame": {
+          "right": 388
+        }
+      },
+      {
+        "id": "episode_0000091",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          19.2150754820853
+        ],
+        "close_frame": {
+          "right": 403
+        }
+      },
+      {
+        "id": "episode_0000092",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          8.298767607926779
+        ],
+        "close_frame": {
+          "right": 426
+        }
+      },
+      {
+        "id": "episode_0000093",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000094",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          75.72519468575373
+        ],
+        "close_frame": {
+          "right": 447
+        }
+      },
+      {
+        "id": "episode_0000095",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          37.122064654673764
+        ],
+        "close_frame": {
+          "right": 424
+        }
+      },
+      {
+        "id": "episode_0000096",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          63.53404905653217
+        ],
+        "close_frame": {
+          "right": 423
+        }
+      },
+      {
+        "id": "episode_0000097",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          15.727195606706026
+        ],
+        "close_frame": {
+          "right": 450
+        }
+      },
+      {
+        "id": "episode_0000098",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "episode_0000099",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          14.114477598827184
+        ],
+        "close_frame": {
+          "right": 437
+        }
+      }
+    ]
+  },
+  "scripted": {
+    "episodes": 7,
+    "arm_counts": {
+      "left_only": 7,
+      "right_only": 0,
+      "both": 0,
+      "neither": 0
+    },
+    "tilt_samples": 6,
+    "tilt_min_deg": 0.0010548196320402273,
+    "tilt_max_deg": 2.7602629767548783,
+    "tilt_median_deg": 0.003411247963603252,
+    "per_episode": [
+      {
+        "id": "pilot-20-v1_L1_attempt_00000",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          0.00423026723504689
+        ],
+        "close_frame": {
+          "left": 293
+        }
+      },
+      {
+        "id": "pilot-20-v1_L1_attempt_00001",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          0.0030509664266975506
+        ],
+        "close_frame": {
+          "left": 572
+        }
+      },
+      {
+        "id": "pilot-20-v1_L1_attempt_00002",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          2.7602629767548783
+        ],
+        "close_frame": {
+          "left": 238
+        }
+      },
+      {
+        "id": "pilot-20-v1_L1_attempt_00003",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          0.001926936668053906
+        ],
+        "close_frame": {
+          "left": 468
+        }
+      },
+      {
+        "id": "pilot-20-v1_L1_attempt_00004",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          0.0010548196320402273
+        ],
+        "close_frame": {
+          "left": 446
+        }
+      },
+      {
+        "id": "pilot-20-v1_L1_attempt_00005",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "pilot-20-v1_L1_attempt_00006",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          0.0037715295005089538
+        ],
+        "close_frame": {
+          "left": 296
+        }
+      }
+    ]
+  },
+  "description": "官方 100 条：仅左臂活动 25，仅右臂活动 75，双臂活动 0；工具倾角 3.6°–94.2°，中位数 40.9°（76 次闭合）。当前脚本快照 7 条：仅左臂活动 7，仅右臂活动 0，双臂活动 0；工具倾角 0.0°–2.8°，中位数 0.0°（6 次闭合）。当前脚本的动作多样性有限。两者速度条件及场景不完全配对，以上仅比较动作形态，不比较策略成功率。",
+  "active_arm_threshold_rad": 0.1,
+  "gripper_command_threshold": 0.5,
+  "tilt_definition": "angle between end-effector local +X and world/scenario -Z, at first gripper command <= 0.5",
+  "official_revision": "35efbc7dedfdbeeb6e95fb749bd885d73d483e41",
+  "limitations": [
+    "scripted sample includes failures",
+    "not a paired speed/layout comparison",
+    "diversity metrics do not establish demonstrator intent"
+  ]
+}
