@@ -91,7 +91,7 @@ async function selectEpisode(id) {
   $('motion-panel').hidden=official||!reference;
   if(reference){
     const plans=episode.expert?.plans||[];
-    $('motion-description').textContent=plans.map(p=>`${p.arm==='left'?'左':'右'}臂 · 计划工具倾角 ${fmt(p.planned_tilt_deg,1)}° · 接近 ${fmt(p.approach_seconds,1)} s · ${fmt(p.start_time,2)} s 开始`).join('；');
+    $('motion-description').textContent=plans.map(p=>`${p.arm==='left'?'左':'右'}臂 · 计划工具倾角 ${fmt(p.planned_tilt_deg,1)}° · ${p.prepare_seconds?`准备 ${fmt(p.prepare_seconds,1)} s · `:''}接近 ${fmt(p.approach_seconds,1)} s · ${fmt(p.start_time,2)} s 开始`).join('；');
     $('motion-references').replaceChildren(...plans.map(p=>{const b=document.createElement('button');b.className='event-chip';b.textContent=`对照官方 Demo ${Number(p.reference_episode.split('_')[1])}`;b.onclick=()=>changeSource('official',p.reference_episode).catch(showError);return b;}));
   }
   if(!cache.has(id)){const response=await fetch(episode.data_url);if(!response.ok)throw new Error(response.statusText);cache.set(id,await response.json());}
