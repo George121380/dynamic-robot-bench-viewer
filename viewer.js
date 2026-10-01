@@ -72,6 +72,7 @@ async function selectEpisode(id) {
   stop();const token=++generation;episode=catalog.episodes.find(e=>e.id===id);data=null;frame=0;
   document.querySelectorAll('.episode-button').forEach(b=>b.classList.toggle('active',b.dataset.id===id));
   const official=episode.source==='official';
+  $('intro-note').textContent=official?'官方原始示范：对照左右臂选择和抓取姿态。原始 HDF5 未记录速度读数。':'记住第一个物体，再抓取随后出现的同类物体。传送带速度以仿真时钟变化。';
   $('episode-kicker').textContent=official?`OFFICIAL · ${episode.id}`:`L${episode.level} · LAYOUT ${episode.layout_id} · SEED ${episode.seed}`;
   $('episode-title').textContent=official?`官方 Demo ${Number(episode.id.split('_')[1])}`:`尝试 ${String(episode.attempt+1).padStart(2,'0')} · ${['','随机固定速度','随机停止与恢复','随机变速 / 停止 / 反向'][episode.level]}`;
   $('result-badge').textContent=official?'官方训练示范':(episode.success?'抓取成功':'失败记录');$('result-badge').classList.toggle('failure',!official&&!episode.success);
@@ -91,19 +92,24 @@ async function selectEpisode(id) {
   history.replaceState(null,'','#'+encodeURIComponent(id));
 }
 function renderList() {
-  const level=$('level-filter').value,result=$('result-filter').value;
-  const rows=catalog.episodes.filter(e=>e.source==='official'||((level==='all'||e.level===Number(level))&&(result==='all'||e.success===(result==='success'))));
+  const level=$('level-filter').value,result=$('result-filter').value,arm=$('arm-filter').value;
+  const armMatch=e=>arm==='all'||(arm==='left'&&e.left_joint_travel_rad>.1&&e.right_joint_travel_rad<=.1)||(arm==='right'&&e.right_joint_travel_rad>.1&&e.left_joint_travel_rad<=.1)||(arm==='both'&&e.left_joint_travel_rad>.1&&e.right_joint_travel_rad>.1);
+  const rows=catalog.episodes.filter(e=>e.source==='official'?armMatch(e):((level==='all'||e.level===Number(level))&&(result==='all'||e.success===(result==='success'))));
   $('episodes').replaceChildren(...rows.map(e=>{const b=document.createElement('button');b.className='episode-button'+(episode?.id===e.id?' active':'');b.dataset.id=e.id;
     const img=document.createElement('img');img.src=e.thumbnail;img.alt='回合终帧预览';img.loading='lazy';
     const text=document.createElement('span'),strong=document.createElement('strong'),small=document.createElement('small');
     strong.textContent=e.source==='official'?`官方 Demo ${String(Number(e.id.split('_')[1])).padStart(3,'0')}`:`L${e.level} · 尝试 ${String(e.attempt+1).padStart(2,'0')} · ${e.success?'成功':'失败'}`;small.textContent=e.source==='official'?`${fmt(e.seconds,1)} s · 原始三路视频`:`${fmt(e.initial_speed)} m/s · 布局 ${e.layout_id} · ${fmt(e.seconds,1)} s`;text.append(strong,small);b.append(img,text);b.onclick=()=>selectEpisode(e.id).catch(showError);return b;}));
+  document.querySelector('.workspace').hidden=!rows.length;
+  if(!rows.length){const empty=document.createElement('p');empty.className='aside-note';empty.textContent='该筛选下没有轨迹';$('episodes').append(empty);}
   $('episode-count').textContent=`${rows.length} / ${catalog.episodes.length} 条`;
   if(episode&&rows.length&&!rows.some(e=>e.id===episode.id))selectEpisode(rows[0].id).catch(showError);
 }
 async function changeSource(mode,id) {
   stop();sourceMode=mode;catalog=sources[mode];episode=null;data=null;
+  $('arm-filter').value='all';$('level-filter').value='all';$('result-filter').value='all';
   $('show-official').classList.toggle('active',mode==='official');$('show-scripted').classList.toggle('active',mode==='scripted');
   $('show-official').setAttribute('aria-pressed',mode==='official');$('show-scripted').setAttribute('aria-pressed',mode==='scripted');
+  $('arm-filter-label').hidden=mode!=='official';
   $('level-filter').disabled=mode==='official';$('result-filter').disabled=mode==='official';
   renderList();const first=catalog.episodes.find(e=>e.id===id)||catalog.episodes.find(e=>e.success)||catalog.episodes[0];
   if(first)await selectEpisode(first.id);
@@ -124,7 +130,7 @@ async function init() {
   await changeSource(isOfficial||(!hash&&official.episodes.length)?'official':'scripted',hash);
 }
 $('show-official').onclick=()=>changeSource('official').catch(showError);$('show-scripted').onclick=()=>changeSource('scripted').catch(showError);
-$('level-filter').onchange=renderList;$('result-filter').onchange=renderList;$('joint-select').onchange=drawJoint;
+$('arm-filter').onchange=renderList;$('level-filter').onchange=renderList;$('result-filter').onchange=renderList;$('joint-select').onchange=drawJoint;
 $('scrub').oninput=()=>data&&seek(Number($('scrub').value));$('previous').onclick=()=>data&&seek(frame-1);$('next').onclick=()=>data&&seek(frame+1);
 $('rate').onchange=()=>videos.forEach(v=>v.playbackRate=Number($('rate').value));
 $('play').onclick=async()=>{if(!data)return;if(playing){stop();return;}if(frame===episode.frames-1)seek(0);try{await Promise.all(videos.map(v=>v.play()));playing=true;$('play').textContent='暂停';$('play').setAttribute('aria-label','暂停轨迹');$('play').setAttribute('aria-pressed','true');}catch(e){stop();showError(e);}};

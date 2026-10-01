@@ -1,0 +1,11 @@
+{
+  "official_episodes": 100,
+  "official_control_frames": 43266,
+  "official_videos": 300,
+  "fps": 25,
+  "state_action_dim": 14,
+  "preview_hdf5_frame_counts_match": true,
+  "preview_sha256_verified": true,
+  "speed_channel_present": false,
+  "revision": "35efbc7dedfdbeeb6e95fb749bd885d73d483e41"
+}

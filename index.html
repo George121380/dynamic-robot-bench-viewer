@@ -6,21 +6,22 @@
   <meta name="description" content="RoboDojo 动态传送带的真实轨迹回放：三路视频、速度与机械臂末端位姿。">
   <title>Dynamic Robot Bench · 轨迹回放</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23192b2b'/%3E%3Crect x='5' y='11' width='22' height='10' rx='5' fill='none' stroke='%23ffffff' stroke-width='2'/%3E%3Ccircle cx='10' cy='16' r='2' fill='%23087c76'/%3E%3Ccircle cx='16' cy='16' r='2' fill='%23ffffff'/%3E%3Ccircle cx='22' cy='16' r='2' fill='%23087c76'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="styles.css?v=official1">
-  <script src="viewer.js?v=official1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=official2">
+  <script src="viewer.js?v=official2" defer></script>
 </head>
 <body>
 <header>
   <div class="brand"><span class="mark">DRB</span><span>DYNAMIC ROBOT BENCH<span class="brand-sub">RoboDojo / Conveyor</span></span></div>
   <div id="collection-status" class="collection-status"></div>
 </header>
-<div class="intro"><div><div class="eyebrow">TASK 01 · MEMORY + MOVING OBJECTS</div><h1>传送带轨迹回放</h1><p>记住第一个物体，再抓取随后出现的同类物体。速度以仿真时钟变化。</p></div><div id="counts" class="counts"></div></div>
+<div class="intro"><div><div class="eyebrow">TASK 01 · MEMORY + MOVING OBJECTS</div><h1>传送带轨迹回放</h1><p id="intro-note">记住第一个物体，再抓取随后出现的同类物体。</p></div><div id="counts" class="counts"></div></div>
 <div class="source-switch" role="group" aria-label="数据来源"><button id="show-official" class="source-button">官方原始 demos <span id="official-count"></span></button><button id="show-scripted" class="source-button active">随机速度脚本轨迹</button></div>
-<section id="comparison" class="comparison" hidden><h2>官方与脚本的动作差异</h2><p id="comparison-text"></p><p class="chart-caption">机械臂是否活动：6 个关节的累计绝对变化 &gt; 0.1 rad。工具倾角：夹爪动作首次 ≤ 0.5 时，末端 +X 轴与竖直向下的夹角。它衡量抓取姿态，不能代表所有策略多样性。</p></section>
+<section id="comparison" class="comparison" hidden><h2>官方与脚本的动作差异</h2><p id="comparison-text"></p><p class="chart-caption">官方原任务配置使用约 0.10 m/s 的固定速度，无回合内随机调度；官方 HDF5 未记录速度，不能据此恢复每条 demo 的速度曲线。<a href="https://github.com/RoboDojo-Benchmark/RoboDojo/blob/726e9aabfaa642203722eb126f5eaf0f37f3e1ad/task/RoboDojo/config/match_and_pick_from_conveyor.yml" target="_blank" rel="noopener">任务配置</a> · <a href="https://huggingface.co/datasets/RoboDojo-Benchmark/RoboDojo/tree/35efbc7dedfdbeeb6e95fb749bd885d73d483e41/Assets/Object/RoboDojo/Dynamic/conveyor/00000" target="_blank" rel="noopener">原始传送带资产</a></p><p class="chart-caption">机械臂是否活动：6 个关节的累计绝对变化 &gt; 0.1 rad。工具倾角：夹爪动作首次 ≤ 0.5 时，末端 +X 轴与竖直向下的夹角。它衡量抓取姿态，不能代表所有策略多样性。</p></section>
 <main>
   <aside aria-label="轨迹目录">
     <div class="aside-top"><h2>轨迹目录</h2><span id="episode-count"></span></div>
     <div class="filter-row"><label>级别<select id="level-filter"><option value="all">全部级别</option></select></label><label>结果<select id="result-filter"><option value="all">全部结果</option><option value="success">成功</option><option value="failure">失败</option></select></label></div>
+    <label id="arm-filter-label" class="arm-filter" hidden>活动机械臂<select id="arm-filter"><option value="all">全部机械臂</option><option value="left">仅左臂</option><option value="right">仅右臂</option><option value="both">双臂</option></select></label>
     <nav id="episodes"></nav>
     <p id="aside-note" class="aside-note">有真值权限的脚本专家采集。成功沿用原任务抬升条件；失败尝试完整保留。</p>
   </aside>
