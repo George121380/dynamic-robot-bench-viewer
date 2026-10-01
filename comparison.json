@@ -1119,6 +1119,194 @@
     ]
   },
   "scripted": {
+    "episodes": 10,
+    "arm_counts": {
+      "left_only": 8,
+      "right_only": 1,
+      "both": 1,
+      "neither": 0
+    },
+    "tilt_samples": 10,
+    "tilt_min_deg": 0.0010548196320402273,
+    "tilt_max_deg": 65.34409140623707,
+    "tilt_median_deg": 1.3822466219949625,
+    "per_episode": [
+      {
+        "id": "reference-probe-v3_L1_attempt_00000",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.02191911364381
+        ],
+        "close_frame": {
+          "left": 396
+        }
+      },
+      {
+        "id": "reference-probe-v3_L1_attempt_00001",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          24.755868644673367
+        ],
+        "close_frame": {
+          "right": 427
+        }
+      },
+      {
+        "id": "reference-probe-v3_L2_attempt_00002",
+        "arms": [
+          "left",
+          "right"
+        ],
+        "tool_tilt_deg": [
+          65.34409140623707,
+          16.134427473467817
+        ],
+        "close_frame": {
+          "left": 475,
+          "right": 687
+        }
+      },
+      {
+        "id": "pilot-20-v1_L1_attempt_00000",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          0.00423026723504689
+        ],
+        "close_frame": {
+          "left": 293
+        }
+      },
+      {
+        "id": "pilot-20-v1_L1_attempt_00001",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          0.0030509664266975506
+        ],
+        "close_frame": {
+          "left": 572
+        }
+      },
+      {
+        "id": "pilot-20-v1_L1_attempt_00002",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          2.7602629767548783
+        ],
+        "close_frame": {
+          "left": 238
+        }
+      },
+      {
+        "id": "pilot-20-v1_L1_attempt_00003",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          0.001926936668053906
+        ],
+        "close_frame": {
+          "left": 468
+        }
+      },
+      {
+        "id": "pilot-20-v1_L1_attempt_00004",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          0.0010548196320402273
+        ],
+        "close_frame": {
+          "left": 446
+        }
+      },
+      {
+        "id": "pilot-20-v1_L1_attempt_00005",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "pilot-20-v1_L1_attempt_00006",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          0.0037715295005089538
+        ],
+        "close_frame": {
+          "left": 296
+        }
+      }
+    ]
+  },
+  "reference": {
+    "episodes": 3,
+    "arm_counts": {
+      "left_only": 1,
+      "right_only": 1,
+      "both": 1,
+      "neither": 0
+    },
+    "tilt_samples": 4,
+    "tilt_min_deg": 16.134427473467817,
+    "tilt_max_deg": 65.34409140623707,
+    "tilt_median_deg": 22.388893879158587,
+    "per_episode": [
+      {
+        "id": "reference-probe-v3_L1_attempt_00000",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.02191911364381
+        ],
+        "close_frame": {
+          "left": 396
+        }
+      },
+      {
+        "id": "reference-probe-v3_L1_attempt_00001",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          24.755868644673367
+        ],
+        "close_frame": {
+          "right": 427
+        }
+      },
+      {
+        "id": "reference-probe-v3_L2_attempt_00002",
+        "arms": [
+          "left",
+          "right"
+        ],
+        "tool_tilt_deg": [
+          65.34409140623707,
+          16.134427473467817
+        ],
+        "close_frame": {
+          "left": 475,
+          "right": 687
+        }
+      }
+    ]
+  },
+  "legacy": {
     "episodes": 7,
     "arm_counts": {
       "left_only": 7,
@@ -1213,7 +1401,7 @@
       }
     ]
   },
-  "description": "官方 100 条：仅左臂活动 25，仅右臂活动 75，双臂活动 0；工具倾角 3.6°–94.2°，中位数 40.9°（76 次闭合）。当前脚本快照 7 条：仅左臂活动 7，仅右臂活动 0，双臂活动 0；工具倾角 0.0°–2.8°，中位数 0.0°（6 次闭合）。当前脚本的动作多样性有限。两者速度条件及场景不完全配对，以上仅比较动作形态，不比较策略成功率。",
+  "description": "官方遥操作 100 条：仅左臂活动 25，仅右臂活动 75，双臂活动 0；工具倾角 3.6°–94.2°，中位数 40.9°（76 次闭合）。新版参考轨迹合成 3 条：仅左臂活动 1，仅右臂活动 1，双臂活动 1；工具倾角 16.1°–65.3°，中位数 22.4°（4 次闭合）。旧版垂直抓取 7 条：仅左臂活动 7，仅右臂活动 0，双臂活动 0；工具倾角 0.0°–2.8°，中位数 0.0°（6 次闭合）。速度与场景没有逐条配对，这些统计比较动作形态，不能证明合成数据等价于遥操作，也不能比较模型成功率。",
   "active_arm_threshold_rad": 0.1,
   "gripper_command_threshold": 0.5,
   "tilt_definition": "angle between end-effector local +X and world/scenario -Z, at first gripper command <= 0.5",

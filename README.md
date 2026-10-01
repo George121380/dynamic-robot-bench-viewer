@@ -1,6 +1,6 @@
 # Dynamic Robot Bench trajectory viewer
 
-Public, anonymous visualization: https://george121380.github.io/dynamic-robot-bench-viewer/
+Public, anonymous visualization: https://peiqil.com/dynamic-robot-bench-viewer/
 
 This repository contains the static viewer and public trajectory previews.
 The dynamic benchmark implementation is maintained in a separate private repository.
@@ -12,6 +12,7 @@ The dataset card declares Apache-2.0. Original attribution and checksums are in 
 
 Official HDF5 does not record conveyor speed. The original task selects conveyor asset 00000 with a constant speed magnitude of approximately 0.10 m/s; this is configuration evidence, not a measured per-episode speed curve.
 Scripted previews are real simulator recordings at randomized speeds. They include failures and are a snapshot of ongoing pilot collection.
-The current scripted expert uses a limited grasping workflow. Arm-activity and tool-angle metrics are in `comparison.json`; the two sources are not a paired policy-success comparison.
+The new collector samples approach and lift curves from 74 usable official teleoperation segments (17 left-arm, 57 right-arm), retargets them to live object geometry, and varies arm preference, grasp orientation, approach timing, closing timing, and lift motion. Smooth joint commands bound velocity and acceleration. The old vertical collector remains selectable for comparison.
+These are reference-conditioned synthetic simulator recordings, not human teleoperation. Training eligibility additionally requires a closed gripper and an active lift near the target; passive object flips that trigger the original task reward are excluded. Arm-activity and measured tool-angle metrics are in `comparison.json`, including failed attempts; the two sources are not a paired policy-success comparison.
 
 No model checkpoint scores are reported here. Full training HDF5 files and credentials are not published in this repository.
