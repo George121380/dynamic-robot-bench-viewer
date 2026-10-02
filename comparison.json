@@ -1119,18 +1119,30 @@
     ]
   },
   "scripted": {
-    "episodes": 15,
+    "episodes": 16,
     "arm_counts": {
-      "left_only": 11,
+      "left_only": 12,
       "right_only": 3,
       "both": 1,
       "neither": 0
     },
-    "tilt_samples": 15,
+    "tilt_samples": 16,
     "tilt_min_deg": 0.0010548196320402273,
     "tilt_max_deg": 65.34409140623707,
-    "tilt_median_deg": 20.016254016587983,
+    "tilt_median_deg": 20.0190865651159,
     "per_episode": [
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00000",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          39.685026481506846
+        ],
+        "close_frame": {
+          "left": 539
+        }
+      },
       {
         "id": "reference-isolated-v4_L1_attempt_00001",
         "arms": [
@@ -1313,18 +1325,30 @@
     ]
   },
   "reference": {
-    "episodes": 8,
+    "episodes": 9,
     "arm_counts": {
-      "left_only": 4,
+      "left_only": 5,
       "right_only": 3,
       "both": 1,
       "neither": 0
     },
-    "tilt_samples": 9,
+    "tilt_samples": 10,
     "tilt_min_deg": 16.134427473467817,
     "tilt_max_deg": 65.34409140623707,
-    "tilt_median_deg": 20.047627584563248,
+    "tilt_median_deg": 20.04864817221439,
     "per_episode": [
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00000",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          39.685026481506846
+        ],
+        "close_frame": {
+          "left": 539
+        }
+      },
       {
         "id": "reference-isolated-v4_L1_attempt_00001",
         "arms": [
@@ -1521,7 +1545,7 @@
       }
     ]
   },
-  "description": "官方遥操作 100 条：仅左臂活动 25，仅右臂活动 75，双臂活动 0；工具倾角 3.6°–94.2°，中位数 40.9°（76 次闭合）。新版参考轨迹合成 8 条：仅左臂活动 4，仅右臂活动 3，双臂活动 1；工具倾角 16.1°–65.3°，中位数 20.0°（9 次闭合）。旧版垂直抓取 7 条：仅左臂活动 7，仅右臂活动 0，双臂活动 0；工具倾角 0.0°–2.8°，中位数 0.0°（6 次闭合）。速度与场景没有逐条配对，这些统计比较动作形态，不能证明合成数据等价于遥操作，也不能比较模型成功率。",
+  "description": "官方遥操作 100 条：仅左臂活动 25，仅右臂活动 75，双臂活动 0；工具倾角 3.6°–94.2°，中位数 40.9°（76 次闭合）。新版参考轨迹合成 9 条：仅左臂活动 5，仅右臂活动 3，双臂活动 1；工具倾角 16.1°–65.3°，中位数 20.0°（10 次闭合）。旧版垂直抓取 7 条：仅左臂活动 7，仅右臂活动 0，双臂活动 0；工具倾角 0.0°–2.8°，中位数 0.0°（6 次闭合）。速度与场景没有逐条配对，这些统计比较动作形态，不能证明合成数据等价于遥操作，也不能比较模型成功率。",
   "active_arm_threshold_rad": 0.1,
   "gripper_command_threshold": 0.5,
   "tilt_definition": "angle between end-effector local +X and world/scenario -Z, at first gripper command <= 0.5",
