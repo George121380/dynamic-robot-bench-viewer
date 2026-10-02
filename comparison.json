@@ -1119,18 +1119,66 @@
     ]
   },
   "scripted": {
-    "episodes": 11,
+    "episodes": 15,
     "arm_counts": {
-      "left_only": 9,
-      "right_only": 1,
+      "left_only": 11,
+      "right_only": 3,
       "both": 1,
       "neither": 0
     },
-    "tilt_samples": 11,
+    "tilt_samples": 15,
     "tilt_min_deg": 0.0010548196320402273,
     "tilt_max_deg": 65.34409140623707,
-    "tilt_median_deg": 2.7602629767548783,
+    "tilt_median_deg": 20.016254016587983,
     "per_episode": [
+      {
+        "id": "reference-isolated-v4_L1_attempt_00001",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          39.378422891767876
+        ],
+        "close_frame": {
+          "right": 607
+        }
+      },
+      {
+        "id": "reference-isolated-v4_L1_attempt_00003",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          20.02744984751502
+        ],
+        "close_frame": {
+          "right": 522
+        }
+      },
+      {
+        "id": "reference-isolated-v4_L2_attempt_00000",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.047627584563248
+        ],
+        "close_frame": {
+          "left": 439
+        }
+      },
+      {
+        "id": "reference-isolated-v4_L3_attempt_00002",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.016254016587983
+        ],
+        "close_frame": {
+          "left": 574
+        }
+      },
       {
         "id": "reference-probe-v3_L1_attempt_00000",
         "arms": [
@@ -1265,18 +1313,66 @@
     ]
   },
   "reference": {
-    "episodes": 4,
+    "episodes": 8,
     "arm_counts": {
-      "left_only": 2,
-      "right_only": 1,
+      "left_only": 4,
+      "right_only": 3,
       "both": 1,
       "neither": 0
     },
-    "tilt_samples": 5,
+    "tilt_samples": 9,
     "tilt_min_deg": 16.134427473467817,
     "tilt_max_deg": 65.34409140623707,
-    "tilt_median_deg": 20.04966875986553,
+    "tilt_median_deg": 20.047627584563248,
     "per_episode": [
+      {
+        "id": "reference-isolated-v4_L1_attempt_00001",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          39.378422891767876
+        ],
+        "close_frame": {
+          "right": 607
+        }
+      },
+      {
+        "id": "reference-isolated-v4_L1_attempt_00003",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          20.02744984751502
+        ],
+        "close_frame": {
+          "right": 522
+        }
+      },
+      {
+        "id": "reference-isolated-v4_L2_attempt_00000",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.047627584563248
+        ],
+        "close_frame": {
+          "left": 439
+        }
+      },
+      {
+        "id": "reference-isolated-v4_L3_attempt_00002",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.016254016587983
+        ],
+        "close_frame": {
+          "left": 574
+        }
+      },
       {
         "id": "reference-probe-v3_L1_attempt_00000",
         "arms": [
@@ -1425,7 +1521,7 @@
       }
     ]
   },
-  "description": "官方遥操作 100 条：仅左臂活动 25，仅右臂活动 75，双臂活动 0；工具倾角 3.6°–94.2°，中位数 40.9°（76 次闭合）。新版参考轨迹合成 4 条：仅左臂活动 2，仅右臂活动 1，双臂活动 1；工具倾角 16.1°–65.3°，中位数 20.0°（5 次闭合）。旧版垂直抓取 7 条：仅左臂活动 7，仅右臂活动 0，双臂活动 0；工具倾角 0.0°–2.8°，中位数 0.0°（6 次闭合）。速度与场景没有逐条配对，这些统计比较动作形态，不能证明合成数据等价于遥操作，也不能比较模型成功率。",
+  "description": "官方遥操作 100 条：仅左臂活动 25，仅右臂活动 75，双臂活动 0；工具倾角 3.6°–94.2°，中位数 40.9°（76 次闭合）。新版参考轨迹合成 8 条：仅左臂活动 4，仅右臂活动 3，双臂活动 1；工具倾角 16.1°–65.3°，中位数 20.0°（9 次闭合）。旧版垂直抓取 7 条：仅左臂活动 7，仅右臂活动 0，双臂活动 0；工具倾角 0.0°–2.8°，中位数 0.0°（6 次闭合）。速度与场景没有逐条配对，这些统计比较动作形态，不能证明合成数据等价于遥操作，也不能比较模型成功率。",
   "active_arm_threshold_rad": 0.1,
   "gripper_command_threshold": 0.5,
   "tilt_definition": "angle between end-effector local +X and world/scenario -Z, at first gripper command <= 0.5",
