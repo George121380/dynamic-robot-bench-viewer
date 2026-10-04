@@ -1119,17 +1119,17 @@
     ]
   },
   "scripted": {
-    "episodes": 17,
+    "episodes": 60,
     "arm_counts": {
-      "left_only": 13,
-      "right_only": 3,
-      "both": 1,
-      "neither": 0
+      "left_only": 38,
+      "right_only": 15,
+      "both": 6,
+      "neither": 1
     },
-    "tilt_samples": 17,
+    "tilt_samples": 48,
     "tilt_min_deg": 0.0010548196320402273,
     "tilt_max_deg": 65.34409140623707,
-    "tilt_median_deg": 20.02191911364381,
+    "tilt_median_deg": 39.53172468663736,
     "per_episode": [
       {
         "id": "reference-isolated-pilot-v4_L1_attempt_00000",
@@ -1144,6 +1144,338 @@
         }
       },
       {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00003",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.051353210502505
+        ],
+        "close_frame": {
+          "left": 298
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00006",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00009",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.058291649015626
+        ],
+        "close_frame": {
+          "left": 480
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00012",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          62.0167807813359
+        ],
+        "close_frame": {
+          "right": 460
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00015",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.039466636942272
+        ],
+        "close_frame": {
+          "left": 306
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00018",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          21.028568257004125
+        ],
+        "close_frame": {
+          "right": 373
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00021",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          55.28890939445324
+        ],
+        "close_frame": {
+          "left": 678
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00024",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00027",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.057152775103134
+        ],
+        "close_frame": {
+          "left": 651
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00030",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00032",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          61.9969701418878
+        ],
+        "close_frame": {
+          "right": 620
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00034",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          61.6240072667005
+        ],
+        "close_frame": {
+          "right": 548
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00036",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00038",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          47.97848590618968
+        ],
+        "close_frame": {
+          "right": 587
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00039",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          42.348072778489716
+        ],
+        "close_frame": {
+          "left": 579
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00041",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          48.05937231067985
+        ],
+        "close_frame": {
+          "left": 372
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00042",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          48.091888151368856
+        ],
+        "close_frame": {
+          "right": 491
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00001",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.009000730594988
+        ],
+        "close_frame": {
+          "left": 489
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00004",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          48.13028605695908
+        ],
+        "close_frame": {
+          "right": 454
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00007",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00010",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          39.767218486452684
+        ],
+        "close_frame": {
+          "left": 493
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00013",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00016",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          54.71926141749188
+        ],
+        "close_frame": {
+          "left": 462
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00019",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00022",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          33.625240295660085
+        ],
+        "close_frame": {
+          "left": 537
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00025",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.045589146190803
+        ],
+        "close_frame": {
+          "left": 368
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00028",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          56.67075947887892
+        ],
+        "close_frame": {
+          "left": 417
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00031",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00035",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          48.229748801428784
+        ],
+        "close_frame": {
+          "left": 372
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00002",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00005",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
         "id": "reference-isolated-pilot-v4_L3_attempt_00008",
         "arms": [
           "left"
@@ -1153,6 +1485,143 @@
         ],
         "close_frame": {
           "left": 514
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00011",
+        "arms": [
+          "left",
+          "right"
+        ],
+        "tool_tilt_deg": [
+          18.870375946325176
+        ],
+        "close_frame": {
+          "right": 622
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00014",
+        "arms": [],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00017",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          48.02655955112299
+        ],
+        "close_frame": {
+          "left": 412
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00020",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          39.81274003348288
+        ],
+        "close_frame": {
+          "left": 634
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00023",
+        "arms": [
+          "left",
+          "right"
+        ],
+        "tool_tilt_deg": [
+          50.907105734352875,
+          27.949488493790856
+        ],
+        "close_frame": {
+          "left": 433,
+          "right": 690
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00026",
+        "arms": [
+          "left",
+          "right"
+        ],
+        "tool_tilt_deg": [
+          48.211766310583606
+        ],
+        "close_frame": {
+          "right": 510
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00029",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          40.64711732783077
+        ],
+        "close_frame": {
+          "left": 381
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00033",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00037",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          64.45105208259956
+        ],
+        "close_frame": {
+          "left": 523
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00040",
+        "arms": [
+          "left",
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00043",
+        "arms": [
+          "left",
+          "right"
+        ],
+        "tool_tilt_deg": [
+          54.53308710926793
+        ],
+        "close_frame": {
+          "left": 314
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00044",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          46.502381944295315
+        ],
+        "close_frame": {
+          "left": 576
         }
       },
       {
@@ -1337,17 +1806,17 @@
     ]
   },
   "reference": {
-    "episodes": 10,
+    "episodes": 53,
     "arm_counts": {
-      "left_only": 6,
-      "right_only": 3,
-      "both": 1,
-      "neither": 0
+      "left_only": 31,
+      "right_only": 15,
+      "both": 6,
+      "neither": 1
     },
-    "tilt_samples": 11,
+    "tilt_samples": 42,
     "tilt_min_deg": 16.134427473467817,
     "tilt_max_deg": 65.34409140623707,
-    "tilt_median_deg": 20.04966875986553,
+    "tilt_median_deg": 40.229928680656826,
     "per_episode": [
       {
         "id": "reference-isolated-pilot-v4_L1_attempt_00000",
@@ -1362,6 +1831,338 @@
         }
       },
       {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00003",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.051353210502505
+        ],
+        "close_frame": {
+          "left": 298
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00006",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00009",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.058291649015626
+        ],
+        "close_frame": {
+          "left": 480
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00012",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          62.0167807813359
+        ],
+        "close_frame": {
+          "right": 460
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00015",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.039466636942272
+        ],
+        "close_frame": {
+          "left": 306
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00018",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          21.028568257004125
+        ],
+        "close_frame": {
+          "right": 373
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00021",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          55.28890939445324
+        ],
+        "close_frame": {
+          "left": 678
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00024",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00027",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.057152775103134
+        ],
+        "close_frame": {
+          "left": 651
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00030",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00032",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          61.9969701418878
+        ],
+        "close_frame": {
+          "right": 620
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00034",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          61.6240072667005
+        ],
+        "close_frame": {
+          "right": 548
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00036",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00038",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          47.97848590618968
+        ],
+        "close_frame": {
+          "right": 587
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00039",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          42.348072778489716
+        ],
+        "close_frame": {
+          "left": 579
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00041",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          48.05937231067985
+        ],
+        "close_frame": {
+          "left": 372
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L1_attempt_00042",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          48.091888151368856
+        ],
+        "close_frame": {
+          "right": 491
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00001",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.009000730594988
+        ],
+        "close_frame": {
+          "left": 489
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00004",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          48.13028605695908
+        ],
+        "close_frame": {
+          "right": 454
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00007",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00010",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          39.767218486452684
+        ],
+        "close_frame": {
+          "left": 493
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00013",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00016",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          54.71926141749188
+        ],
+        "close_frame": {
+          "left": 462
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00019",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00022",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          33.625240295660085
+        ],
+        "close_frame": {
+          "left": 537
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00025",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          20.045589146190803
+        ],
+        "close_frame": {
+          "left": 368
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00028",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          56.67075947887892
+        ],
+        "close_frame": {
+          "left": 417
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00031",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L2_attempt_00035",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          48.229748801428784
+        ],
+        "close_frame": {
+          "left": 372
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00002",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00005",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
         "id": "reference-isolated-pilot-v4_L3_attempt_00008",
         "arms": [
           "left"
@@ -1371,6 +2172,143 @@
         ],
         "close_frame": {
           "left": 514
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00011",
+        "arms": [
+          "left",
+          "right"
+        ],
+        "tool_tilt_deg": [
+          18.870375946325176
+        ],
+        "close_frame": {
+          "right": 622
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00014",
+        "arms": [],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00017",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          48.02655955112299
+        ],
+        "close_frame": {
+          "left": 412
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00020",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          39.81274003348288
+        ],
+        "close_frame": {
+          "left": 634
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00023",
+        "arms": [
+          "left",
+          "right"
+        ],
+        "tool_tilt_deg": [
+          50.907105734352875,
+          27.949488493790856
+        ],
+        "close_frame": {
+          "left": 433,
+          "right": 690
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00026",
+        "arms": [
+          "left",
+          "right"
+        ],
+        "tool_tilt_deg": [
+          48.211766310583606
+        ],
+        "close_frame": {
+          "right": 510
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00029",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          40.64711732783077
+        ],
+        "close_frame": {
+          "left": 381
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00033",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00037",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          64.45105208259956
+        ],
+        "close_frame": {
+          "left": 523
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00040",
+        "arms": [
+          "left",
+          "right"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00043",
+        "arms": [
+          "left",
+          "right"
+        ],
+        "tool_tilt_deg": [
+          54.53308710926793
+        ],
+        "close_frame": {
+          "left": 314
+        }
+      },
+      {
+        "id": "reference-isolated-pilot-v4_L3_attempt_00044",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          46.502381944295315
+        ],
+        "close_frame": {
+          "left": 576
         }
       },
       {
@@ -1569,7 +2507,7 @@
       }
     ]
   },
-  "description": "官方遥操作 100 条：仅左臂活动 25，仅右臂活动 75，双臂活动 0；工具倾角 3.6°–94.2°，中位数 40.9°（76 次闭合）。新版参考轨迹合成 10 条：仅左臂活动 6，仅右臂活动 3，双臂活动 1；工具倾角 16.1°–65.3°，中位数 20.0°（11 次闭合）。旧版垂直抓取 7 条：仅左臂活动 7，仅右臂活动 0，双臂活动 0；工具倾角 0.0°–2.8°，中位数 0.0°（6 次闭合）。速度与场景没有逐条配对，这些统计比较动作形态，不能证明合成数据等价于遥操作，也不能比较模型成功率。",
+  "description": "官方遥操作 100 条：仅左臂活动 25，仅右臂活动 75，双臂活动 0；工具倾角 3.6°–94.2°，中位数 40.9°（76 次闭合）。新版参考轨迹合成 53 条：仅左臂活动 31，仅右臂活动 15，双臂活动 6；工具倾角 16.1°–65.3°，中位数 40.2°（42 次闭合）。旧版垂直抓取 7 条：仅左臂活动 7，仅右臂活动 0，双臂活动 0；工具倾角 0.0°–2.8°，中位数 0.0°（6 次闭合）。速度与场景没有逐条配对，这些统计比较动作形态，不能证明合成数据等价于遥操作，也不能比较模型成功率。",
   "active_arm_threshold_rad": 0.1,
   "gripper_command_threshold": 0.5,
   "tilt_definition": "angle between end-effector local +X and world/scenario -Z, at first gripper command <= 0.5",
