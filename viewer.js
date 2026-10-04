@@ -130,8 +130,9 @@ async function init() {
   sources={scripted,official};catalog=scripted;
   $('official-count').textContent=`${official.episodes.length} 条`;$('show-official').disabled=!official.episodes.length;
   const newRows=scripted.episodes.filter(e=>e.expert_style==='reference');
-  $('collection-status').textContent=newRows.length?`新版 ${newRows.filter(e=>e.success).length} 条成功 · ${newRows.filter(e=>!e.success).length} 条失败记录`:'旧版垂直抓取快照';
-  $('counts').replaceChildren(...[1,2,3].map(l=>{const count=(newRows.length?newRows:scripted.episodes).filter(e=>e.level===l&&e.success).length,target=scripted.pilot_targets[l];const el=document.createElement('div');el.innerHTML=`<div class="count-label">L${l} ${newRows.length?'新版':'旧版'}成功</div><div class="count-value">${count}<small> / ${target}</small></div><div class="count-bar"><i style="width:${Math.min(100,count/target*100)}%"></i></div>`;return el;}));
+  const pilotRows=scripted.pilot_run_id?newRows.filter(e=>e.id.startsWith(scripted.pilot_run_id+'_L')):newRows;
+  $('collection-status').textContent=pilotRows.length?`${scripted.pilot_run_id?'正式批次':'新版'} ${pilotRows.filter(e=>e.success).length} 条成功 · ${pilotRows.filter(e=>!e.success).length} 条失败记录`:'旧版垂直抓取快照';
+  $('counts').replaceChildren(...[1,2,3].map(l=>{const count=(pilotRows.length?pilotRows:scripted.episodes).filter(e=>e.level===l&&e.success).length,target=scripted.pilot_targets[l];const el=document.createElement('div');el.innerHTML=`<div class="count-label">L${l} ${scripted.pilot_run_id?'正式批次':newRows.length?'新版':'旧版'}成功</div><div class="count-value">${count}<small> / ${target}</small></div><div class="count-bar"><i style="width:${Math.min(100,count/target*100)}%"></i></div>`;return el;}));
   [...new Set(scripted.episodes.map(e=>e.level))].sort().forEach(l=>{const o=document.createElement('option');o.value=l;o.textContent='L'+l;$('level-filter').append(o);});
   $('built-at').textContent=`脚本快照 ${new Date(scripted.built_at).toLocaleString('zh-CN',{timeZone:'UTC'})} UTC · 官方 ${official.revision?.slice(0,12)||'未加载'}`;
   for(let j=0;j<14;j++){const o=document.createElement('option');o.value=j;const k=j%7;o.textContent=`${j<7?'左':'右'}臂 ${k===6?'夹爪':'关节 '+(k+1)}`;$('joint-select').append(o);}
