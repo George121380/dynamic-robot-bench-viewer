@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Collision Lab · 双圆盘碰撞回放</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header><a href="../">DYNAMIC ROBOT BENCH</a><span>实验 02 / 碰撞传递</span></header>
+<main>
+<section class="intro"><div><p class="eyebrow">SINGLE SHOT · TWO PUCKS</p><h1>用 A 碰 B，<br>让 B 停入目标区。</h1><p class="description">固定物理参数，变化布局。观察一次推出如何转化为碰撞后的运动。</p></div><div class="overview"><div><strong id="count">—</strong><span>实测回合</span></div><div><strong id="success">—</strong><span>成功 / 全部尝试</span></div><p>结果来源：脚本专家与慢推、快推对照<br>图像 10 Hz · 轨迹曲线 100 Hz · 接触诊断 500 Hz</p></div></section>
+<section class="workspace">
+<aside><div class="filters"><label for="category">轨迹类型</label><select id="category"><option value="all">全部轨迹</option><option value="expert">专家示范</option><option value="slow">慢推对照</option><option value="fast">快推对照</option></select><label for="outcome">结果</label><select id="outcome"><option value="all">全部结果</option><option value="success">成功</option><option value="failure">失败</option></select></div><div id="episode-list" role="list" aria-label="回合列表"></div></aside>
+<div class="detail"><div class="detail-top"><div><p class="eyebrow" id="episode-id"></p><h2 id="episode-title"></h2></div><span id="result" class="badge"></span></div>
+<div class="media"><video id="video" controls playsinline preload="metadata" aria-label="真实仿真回放"></video><div class="video-overlay"><span class="dot a"></span>A · 推出圆盘 <span class="dot b"></span>B · 目标圆盘 <span class="dot target"></span>目标区</div></div>
+<div class="camera"><button type="button" id="birdview" aria-pressed="true">俯视相机</button><button type="button" id="third_person_camera" aria-pressed="false">机器人视角</button><span id="play-time">0.00 s</span></div>
+<div class="facts"><div><span>B 初始位置</span><strong id="b-init"></strong></div><div><span>目标位置</span><strong id="goal"></strong></div><div><span>推出参数</span><strong id="stroke"></strong></div><div><span>最终目标误差</span><strong id="error"></strong></div></div>
+<section class="plot"><div class="plot-heading"><h3>碰撞前后的 y 位置</h3><span><i class="a-line"></i>A <i class="b-line"></i>B <i class="target-line"></i>目标</span></div><canvas id="position" height="235" aria-label="A 和 B 的 y 位置，横轴仿真时间秒，纵轴位置米"></canvas></section>
+<section class="plot"><div class="plot-heading"><h3>线速度与接触时刻</h3><span><i class="a-line"></i>A <i class="b-line"></i>B</span></div><canvas id="velocity" height="210" aria-label="A 和 B 的线速度，横轴仿真时间秒，纵轴速度米每秒"></canvas></section>
+<div class="event-strip" id="events"></div><p class="caption">视频与曲线按仿真时间联动；竖线分别表示分离确认和首次 A–B 碰撞。最终观察帧可能短于一个控制周期。速度参数为机器人轨迹参数，实测圆盘速度见曲线。</p>
+</div></section>
+<footer><p>成功条件：有效 A–B 碰撞后，B 中心距目标 ≤ 5 cm，线速度 &lt; 0.01 m/s，连续保持 0.5 s。</p><p>圆盘质量 0.1 kg · 半径 3.5 cm · 厚度 4 cm · 滑动摩擦系数 0.01 · 每回合单次击打</p><p>机器人与桌面资产来源：<a href="https://github.com/real-stanford/gated-memory-policy">Stanford REAL · gated-memory-policy</a>（<a href="UPSTREAM-LICENSE.txt">MIT 许可证</a>）。新增任务与采集：Dynamic Robot Bench。</p><a href="validation.json">视频验收记录</a><span id="load-error" role="alert"></span></footer>
+</main><script src="viewer.js"></script></body></html>
