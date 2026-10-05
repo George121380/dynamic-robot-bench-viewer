@@ -1119,18 +1119,70 @@
     ]
   },
   "scripted": {
-    "episodes": 60,
+    "episodes": 65,
     "arm_counts": {
-      "left_only": 38,
-      "right_only": 15,
+      "left_only": 42,
+      "right_only": 16,
       "both": 6,
       "neither": 1
     },
-    "tilt_samples": 48,
+    "tilt_samples": 51,
     "tilt_min_deg": 0.0010548196320402273,
     "tilt_max_deg": 65.34409140623707,
-    "tilt_median_deg": 39.53172468663736,
+    "tilt_median_deg": 39.767218486452684,
     "per_episode": [
+      {
+        "id": "conveyor-quality-v5-20261005_L1_attempt_00000",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          48.16770071350189
+        ],
+        "close_frame": {
+          "left": 570
+        }
+      },
+      {
+        "id": "conveyor-quality-v5-20261005_L2_attempt_00001",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          48.43108099178264
+        ],
+        "close_frame": {
+          "right": 468
+        }
+      },
+      {
+        "id": "conveyor-quality-v5-20261005_L3_attempt_00002",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "conveyor-quality-v5-20261005_L3_attempt_00003",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "conveyor-quality-v5-20261005_L3_attempt_00004",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          48.04717343623225
+        ],
+        "close_frame": {
+          "left": 383
+        }
+      },
       {
         "id": "reference-isolated-pilot-v4_L1_attempt_00000",
         "arms": [
@@ -1806,18 +1858,70 @@
     ]
   },
   "reference": {
-    "episodes": 53,
+    "episodes": 58,
     "arm_counts": {
-      "left_only": 31,
-      "right_only": 15,
+      "left_only": 35,
+      "right_only": 16,
       "both": 6,
       "neither": 1
     },
-    "tilt_samples": 42,
+    "tilt_samples": 45,
     "tilt_min_deg": 16.134427473467817,
     "tilt_max_deg": 65.34409140623707,
-    "tilt_median_deg": 40.229928680656826,
+    "tilt_median_deg": 42.348072778489716,
     "per_episode": [
+      {
+        "id": "conveyor-quality-v5-20261005_L1_attempt_00000",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          48.16770071350189
+        ],
+        "close_frame": {
+          "left": 570
+        }
+      },
+      {
+        "id": "conveyor-quality-v5-20261005_L2_attempt_00001",
+        "arms": [
+          "right"
+        ],
+        "tool_tilt_deg": [
+          48.43108099178264
+        ],
+        "close_frame": {
+          "right": 468
+        }
+      },
+      {
+        "id": "conveyor-quality-v5-20261005_L3_attempt_00002",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "conveyor-quality-v5-20261005_L3_attempt_00003",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [],
+        "close_frame": {}
+      },
+      {
+        "id": "conveyor-quality-v5-20261005_L3_attempt_00004",
+        "arms": [
+          "left"
+        ],
+        "tool_tilt_deg": [
+          48.04717343623225
+        ],
+        "close_frame": {
+          "left": 383
+        }
+      },
       {
         "id": "reference-isolated-pilot-v4_L1_attempt_00000",
         "arms": [
@@ -2507,7 +2611,7 @@
       }
     ]
   },
-  "description": "官方遥操作 100 条：仅左臂活动 25，仅右臂活动 75，双臂活动 0；工具倾角 3.6°–94.2°，中位数 40.9°（76 次闭合）。新版参考轨迹合成 53 条：仅左臂活动 31，仅右臂活动 15，双臂活动 6；工具倾角 16.1°–65.3°，中位数 40.2°（42 次闭合）。旧版垂直抓取 7 条：仅左臂活动 7，仅右臂活动 0，双臂活动 0；工具倾角 0.0°–2.8°，中位数 0.0°（6 次闭合）。速度与场景没有逐条配对，这些统计比较动作形态，不能证明合成数据等价于遥操作，也不能比较模型成功率。",
+  "description": "官方遥操作 100 条：仅左臂活动 25，仅右臂活动 75，双臂活动 0；工具倾角 3.6°–94.2°，中位数 40.9°（76 次闭合）。新版参考轨迹合成 58 条：仅左臂活动 35，仅右臂活动 16，双臂活动 6；工具倾角 16.1°–65.3°，中位数 42.3°（45 次闭合）。旧版垂直抓取 7 条：仅左臂活动 7，仅右臂活动 0，双臂活动 0；工具倾角 0.0°–2.8°，中位数 0.0°（6 次闭合）。速度与场景没有逐条配对，这些统计比较动作形态，不能证明合成数据等价于遥操作，也不能比较模型成功率。",
   "active_arm_threshold_rad": 0.1,
   "gripper_command_threshold": 0.5,
   "tilt_definition": "angle between end-effector local +X and world/scenario -Z, at first gripper command <= 0.5",

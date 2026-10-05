@@ -57,7 +57,25 @@ function drawJoint() {
   line(p,b.map((v,i)=>[data.timestamp[i],v]),colors.command,true);line(p,a.map((v,i)=>[data.timestamp[i],v]),colors.left);timeCursor(p);
   $('joint-caption').textContent=`当前状态 ${fmt(a[frame],4)} · 当前动作 ${fmt(b[frame],4)}。关节为 rad；夹爪为归一化开度（0 闭合、1 张开）。观测在动作之前记录。`;
 }
-function draw() { if(!data)return;if(data.speed)drawSpeed();drawPose('xy-chart',1);drawPose('xz-chart',2);drawJoint(); }
+function drawVisibility() {
+  const visibility=data.visibility, overlay=$('visibility-overlay');
+  $('visibility-controls').hidden=!visibility;
+  overlay.hidden=!visibility||!$('show-visibility').checked;
+  if(!visibility)return;
+  const stages=['等待','准备','接近','下降','闭合','抬起','质量中止'];
+  const active=visibility.active_arm?visibility.active_arm[frame]>0:visibility.stage[frame]>0;
+  const inside=visibility.target_in_frame[frame].every(Boolean)&&visibility.jaw_in_frame[frame].every(Boolean);
+  $('visibility-status').textContent=active?`${stages[visibility.stage[frame]]} · ${inside?'目标与夹持区域在安全边界内':'目标或夹持区域未进入安全边界'}（投影检查，不判定遮挡）`:'等待 · 尚未选择抓取机械臂';
+  if(overlay.hidden)return;
+  const [w,h]=visibility.resolution, video=videos[0];overlay.width=w;overlay.height=h;
+  overlay.style.width=video.clientWidth+'px';overlay.style.height=video.clientHeight+'px';
+  overlay.style.left=video.offsetLeft+'px';overlay.style.top=video.offsetTop+'px';
+  const c=overlay.getContext('2d');c.setLineDash([6,5]);c.strokeStyle='#f9e393';c.lineWidth=2;c.strokeRect(32,24,w-64,h-48);c.setLineDash([]);
+  const points=visibility.target_uv[frame].filter(p=>p.every(Number.isFinite));
+  if(points.length){const x=Math.min(...points.map(p=>p[0])),y=Math.min(...points.map(p=>p[1]));c.strokeStyle='#56efb1';c.lineWidth=3;c.strokeRect(x,y,Math.max(...points.map(p=>p[0]))-x,Math.max(...points.map(p=>p[1]))-y);}
+  c.fillStyle='#ff8a66';if(active)for(const p of visibility.jaw_uv[frame])if(p.every(Number.isFinite)){c.beginPath();c.arc(p[0],p[1],5,0,2*Math.PI);c.fill();}
+}
+function draw() { if(!data)return;if(data.speed)drawSpeed();drawPose('xy-chart',1);drawPose('xz-chart',2);drawJoint();drawVisibility(); }
 function updateReadouts() {
   $('scrub').value=frame;$('clock').textContent=`${fmt(data.timestamp[frame],2)} / ${fmt(episode.seconds,2)} s`;
   $('speed-readout').textContent=data.speed?`${data.speed[frame]>=0?'+':''}${fmt(data.speed[frame])} m/s`:'官方未记录';
@@ -77,7 +95,7 @@ async function selectEpisode(id) {
   $('episode-kicker').textContent=official?`OFFICIAL · ${episode.id}`:`L${episode.level} · LAYOUT ${episode.layout_id} · SEED ${episode.seed}`;
   $('episode-title').textContent=official?`官方 Demo ${Number(episode.id.split('_')[1])}`:`尝试 ${String(episode.attempt+1).padStart(2,'0')} · ${['','随机固定速度','随机停止与恢复','随机变速 / 停止 / 反向'][episode.level]}`;
   $('result-badge').textContent=official?'官方训练示范':(episode.success?'抓取成功':'失败记录');$('result-badge').classList.toggle('failure',!official&&!episode.success);
-  const reason={ik_unreachable:'IK 不可达',timeout_before_grasp:'超时，目标未完成抓取',target_not_yet_reachable:'目标未进入可达区域',grasp_did_not_lift_target:'夹持后未抬起目标',unconfirmed_grasp_lift:'原奖励触发抬升，但未确认抓取；排除训练'}[episode.failure_reason]||episode.failure_reason;
+  const reason={ik_unreachable:'IK 不可达',continuous_ik_unreachable:'没有连续可达的关节解',timeout_before_grasp:'超时，目标未完成抓取',target_not_yet_reachable:'目标未进入可达区域',grasp_did_not_lift_target:'夹持后未抬起目标',unconfirmed_grasp_lift:'原奖励触发抬升，但未确认抓取；排除训练',grasp_outside_head_view:'抓取越出画面安全边界，已中止',physical_joint_tracking_outlier:'实测关节跟踪误差超限，已中止',physical_joint_acceleration_outlier:'实测关节加速度突变，已中止',physical_joint_jerk_outlier:'实测关节运动突变，已中止'}[episode.failure_reason]||episode.failure_reason;
   $('episode-meta').textContent=official?`${episode.frames} 帧 · ${fmt(episode.seconds,2)} 秒 · ${episode.fps} Hz · 左臂累计关节变化 ${fmt(episode.left_joint_travel_rad,2)} rad · 右臂 ${fmt(episode.right_joint_travel_rad,2)} rad`:`${episode.frames} 帧 · ${fmt(episode.seconds,2)} 仿真秒 · 初始速度 ${fmt(episode.initial_speed)} m/s · 范围 ${fmt(episode.min_speed)} 至 ${fmt(episode.max_speed)} m/s${episode.target_category?' · 目标 '+episode.target_category:''}${reason?' · '+reason:''}`;
   $('xy-title').textContent=`俯视 · ${official?'场景':'世界'}坐标 X–Y`;$('xz-title').textContent=`侧视 · ${official?'场景':'世界'}坐标 X–Z`;
   $('speed-panel').hidden=official;$('events-panel').hidden=official;$('input-readout').textContent=official?'原始数据无速度字段':'可独立开关';
@@ -89,9 +107,12 @@ async function selectEpisode(id) {
   $('source-caption').textContent=official?`来源：RoboDojo-Benchmark/RoboDojo · ${episode.id} · 原始 HDF5 数值，不平滑轨迹。 `:`来源：${catalog.task} / ${episode.id} · 所有曲线直接读取本回合 HDF5，不平滑轨迹。`;
   if(official){const a=document.createElement('a');a.href=episode.source_url;a.textContent='查看官方原始文件';a.target='_blank';a.rel='noopener';$('source-caption').append(a);}
   $('motion-panel').hidden=official||!reference;
+  $('quality-description').textContent='';
   if(reference){
     const plans=episode.expert?.plans||[];
     $('motion-description').textContent=plans.map(p=>`${p.arm==='left'?'左':'右'}臂 · 计划工具倾角 ${fmt(p.planned_tilt_deg,1)}° · ${p.prepare_seconds?`准备 ${fmt(p.prepare_seconds,1)} s · `:''}接近 ${fmt(p.approach_seconds,1)} s · ${fmt(p.start_time,2)} s 开始`).join('；');
+    const q=episode.expert?.quality;
+    if(q)$('quality-description').textContent=`v5 · 关节命令限制速度、加速度及 jerk · ${q.critical_frames?'抓取关键阶段画面内 '+q.critical_visible_frames+' / '+q.critical_frames+' 帧':'未进入抓取关键阶段'} · 实测最大关节跟踪误差 ${fmt(q.max_tracking_error_rad,4)} rad${q.abort_reason?' · '+(reason||q.abort_reason):''}。`;
     $('motion-references').replaceChildren(...plans.map(p=>{const b=document.createElement('button');b.className='event-chip';b.textContent=`对照官方 Demo ${Number(p.reference_episode.split('_')[1])}`;b.onclick=()=>changeSource('official',p.reference_episode).catch(showError);return b;}));
   }
   if(!cache.has(id)){const response=await fetch(episode.data_url);if(!response.ok)throw new Error(response.statusText);cache.set(id,await response.json());}
@@ -99,13 +120,14 @@ async function selectEpisode(id) {
   history.replaceState(null,'','#'+encodeURIComponent(id));
 }
 function renderList() {
-  const level=$('level-filter').value,result=$('result-filter').value,arm=$('arm-filter').value,style=$('style-filter').value;
+  const level=$('level-filter').value,result=$('result-filter').value,arm=$('arm-filter').value,style=$('style-filter').value,version=$('version-filter').value;
+  const versionMatch=e=>version==='all'||(version==='earlier'?e.expert?.adaptation_version!=='continuous-visible-reference-v5':e.expert?.adaptation_version===version);
   const armMatch=e=>arm==='all'||(arm==='left'&&e.left_joint_travel_rad>.1&&e.right_joint_travel_rad<=.1)||(arm==='right'&&e.right_joint_travel_rad>.1&&e.left_joint_travel_rad<=.1)||(arm==='both'&&e.left_joint_travel_rad>.1&&e.right_joint_travel_rad>.1);
-  const rows=catalog.episodes.filter(e=>e.source==='official'?armMatch(e):((level==='all'||e.level===Number(level))&&(result==='all'||e.success===(result==='success'))&&armMatch(e)&&(style==='all'||(e.expert_style||'vertical')===style)));
+  const rows=catalog.episodes.filter(e=>e.source==='official'?armMatch(e):((level==='all'||e.level===Number(level))&&(result==='all'||e.success===(result==='success'))&&armMatch(e)&&versionMatch(e)&&(style==='all'||(e.expert_style||'vertical')===style)));
   $('episodes').replaceChildren(...rows.map(e=>{const b=document.createElement('button');b.className='episode-button'+(episode?.id===e.id?' active':'');b.dataset.id=e.id;
     const img=document.createElement('img');img.src=e.thumbnail;img.alt='回合终帧预览';img.loading='lazy';
     const text=document.createElement('span'),strong=document.createElement('strong'),small=document.createElement('small');
-    strong.textContent=e.source==='official'?`官方 Demo ${String(Number(e.id.split('_')[1])).padStart(3,'0')}`:`L${e.level} · 尝试 ${String(e.attempt+1).padStart(2,'0')} · ${e.success?'成功':'失败'}`;small.textContent=e.source==='official'?`${fmt(e.seconds,1)} s · 原始三路视频`:`${fmt(e.initial_speed)} m/s · 布局 ${e.layout_id} · ${fmt(e.seconds,1)} s`;text.append(strong,small);b.append(img,text);b.onclick=()=>selectEpisode(e.id).catch(showError);return b;}));
+    strong.textContent=e.source==='official'?`官方 Demo ${String(Number(e.id.split('_')[1])).padStart(3,'0')}`:`${e.expert?.quality?'v5 · ':''}L${e.level} · 尝试 ${String(e.attempt+1).padStart(2,'0')} · ${e.success?'成功':'失败'}`;small.textContent=e.source==='official'?`${fmt(e.seconds,1)} s · 原始三路视频`:`${fmt(e.initial_speed)} m/s · 布局 ${e.layout_id} · ${fmt(e.seconds,1)} s`;text.append(strong,small);b.append(img,text);b.onclick=()=>selectEpisode(e.id).catch(showError);return b;}));
   document.querySelector('.workspace').hidden=!rows.length;
   if(!rows.length){const empty=document.createElement('p');empty.className='aside-note';empty.textContent='该筛选下没有轨迹';$('episodes').append(empty);}
   $('episode-count').textContent=`${rows.length} / ${catalog.episodes.length} 条`;
@@ -114,6 +136,8 @@ function renderList() {
 async function changeSource(mode,id) {
   stop();sourceMode=mode;catalog=sources[mode];episode=null;data=null;
   $('arm-filter').value='all';$('level-filter').value='all';$('result-filter').value='all';
+  $('version-filter').value=id&&catalog.episodes.find(e=>e.id===id)?.expert?.quality?'continuous-visible-reference-v5':'all';
+  $('version-filter-label').hidden=mode==='official';
   $('show-official').classList.toggle('active',mode==='official');$('show-scripted').classList.toggle('active',mode==='scripted');
   $('show-official').setAttribute('aria-pressed',mode==='official');$('show-scripted').setAttribute('aria-pressed',mode==='scripted');
   $('arm-filter-label').hidden=false;$('style-filter-label').hidden=mode==='official';
@@ -130,9 +154,11 @@ async function init() {
   sources={scripted,official};catalog=scripted;
   $('official-count').textContent=`${official.episodes.length} 条`;$('show-official').disabled=!official.episodes.length;
   const newRows=scripted.episodes.filter(e=>e.expert_style==='reference');
+  const qualityRows=newRows.filter(e=>e.expert?.adaptation_version==='continuous-visible-reference-v5');
   const pilotRows=scripted.pilot_run_id?newRows.filter(e=>e.id.startsWith(scripted.pilot_run_id+'_L')):newRows;
   $('collection-status').textContent=pilotRows.length?`${scripted.pilot_run_id?'正式批次':'新版'} ${pilotRows.filter(e=>e.success).length} 条成功 · ${pilotRows.filter(e=>!e.success).length} 条失败记录`:'旧版垂直抓取快照';
-  $('counts').replaceChildren(...[1,2,3].map(l=>{const count=(pilotRows.length?pilotRows:scripted.episodes).filter(e=>e.level===l&&e.success).length,target=scripted.pilot_targets[l];const el=document.createElement('div');el.innerHTML=`<div class="count-label">L${l} ${scripted.pilot_run_id?'正式批次':newRows.length?'新版':'旧版'}成功</div><div class="count-value">${count}<small> / ${target}</small></div><div class="count-bar"><i style="width:${Math.min(100,count/target*100)}%"></i></div>`;return el;}));
+  if(qualityRows.length)$('collection-status').textContent=`v5 验证 ${qualityRows.filter(e=>e.success).length} 条成功 / ${qualityRows.length} 条完整记录${scripted.pilot_run_id?' · 既有批次 '+pilotRows.filter(e=>e.success).length+' 条成功':''}`;
+  $('counts').replaceChildren(...[1,2,3].map(l=>{const count=(pilotRows.length?pilotRows:scripted.episodes).filter(e=>e.level===l&&e.success).length,target=scripted.pilot_targets[l];const el=document.createElement('div');el.innerHTML=`<div class="count-label">L${l} ${scripted.pilot_run_id?.endsWith('-v4')?'v4 批次':scripted.pilot_run_id?'既有批次':newRows.length?'新版':'旧版'}成功</div><div class="count-value">${count}<small> / ${target}</small></div><div class="count-bar"><i style="width:${Math.min(100,count/target*100)}%"></i></div>`;return el;}));
   [...new Set(scripted.episodes.map(e=>e.level))].sort().forEach(l=>{const o=document.createElement('option');o.value=l;o.textContent='L'+l;$('level-filter').append(o);});
   $('built-at').textContent=`脚本快照 ${new Date(scripted.built_at).toLocaleString('zh-CN',{timeZone:'UTC'})} UTC · 官方 ${official.revision?.slice(0,12)||'未加载'}`;
   for(let j=0;j<14;j++){const o=document.createElement('option');o.value=j;const k=j%7;o.textContent=`${j<7?'左':'右'}臂 ${k===6?'夹爪':'关节 '+(k+1)}`;$('joint-select').append(o);}
@@ -143,6 +169,7 @@ async function init() {
 $('show-official').onclick=()=>changeSource('official').catch(showError);$('show-scripted').onclick=()=>changeSource('scripted').catch(showError);
 $('arm-filter').onchange=renderList;$('level-filter').onchange=renderList;$('result-filter').onchange=renderList;$('joint-select').onchange=drawJoint;
 $('style-filter').onchange=renderList;
+$('version-filter').onchange=renderList;$('show-visibility').onchange=drawVisibility;
 $('scrub').oninput=()=>data&&seek(Number($('scrub').value));$('previous').onclick=()=>data&&seek(frame-1);$('next').onclick=()=>data&&seek(frame+1);
 $('rate').onchange=()=>videos.forEach(v=>v.playbackRate=Number($('rate').value));
 $('play').onclick=async()=>{if(!data)return;if(playing){stop();return;}if(frame===episode.frames-1)seek(0);try{await Promise.all(videos.map(v=>v.play()));playing=true;$('play').textContent='暂停';$('play').setAttribute('aria-label','暂停轨迹');$('play').setAttribute('aria-pressed','true');}catch(e){stop();showError(e);}};
