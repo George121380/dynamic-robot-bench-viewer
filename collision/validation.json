@@ -2,271 +2,325 @@
   {
     "video": "media/layout_00_expert_birdview.mp4",
     "decoded_frames": 54,
+    "sha256": "108a6cac56e5a0227a78a38bcfa31e005a3df76382cb46ccb13c5f3b9f8cc6fd",
     "passed": true
   },
   {
     "video": "media/layout_00_expert_third_person_camera.mp4",
     "decoded_frames": 54,
+    "sha256": "bbfd56bd384056dd581a7875eeefef3f559d64bd122a49ca641ffff1e2e46e79",
     "passed": true
   },
   {
     "video": "media/layout_00_fast_birdview.mp4",
     "decoded_frames": 34,
+    "sha256": "fe22cd9dffb839ae8b41fc1eb770d9e97574872bc3afcef5a20f5e8a6bb25cc5",
     "passed": true
   },
   {
     "video": "media/layout_00_fast_third_person_camera.mp4",
     "decoded_frames": 34,
+    "sha256": "4c97a7da4c6aa6afcfa9f8f2c13c8711b2bdee67cb03ec649f5e4a8036fe68e7",
     "passed": true
   },
   {
     "video": "media/layout_00_slow_birdview.mp4",
     "decoded_frames": 46,
+    "sha256": "45e7dd2183d40d72ed09c7aa9ebd0f20d624d1710ed680bab4eede4974ffaf52",
     "passed": true
   },
   {
     "video": "media/layout_00_slow_third_person_camera.mp4",
     "decoded_frames": 46,
+    "sha256": "5faa55c0eab798fbb0b53effa755460c844a05d52d7d809cfae4f4400476a71e",
     "passed": true
   },
   {
     "video": "media/layout_01_expert_birdview.mp4",
     "decoded_frames": 59,
+    "sha256": "4cf4729821aedf6d16ae0eb219dca87b3b86bff954d06d1cb3f01839dfc8875f",
     "passed": true
   },
   {
     "video": "media/layout_01_expert_third_person_camera.mp4",
     "decoded_frames": 59,
+    "sha256": "72ba2332101cde7381138144eee1ab812b599b545bf3de389452584841da0cca",
     "passed": true
   },
   {
     "video": "media/layout_01_fast_birdview.mp4",
     "decoded_frames": 55,
+    "sha256": "842c552db5ba6f8069cee4e808112fcd49467a69a35c9bfde6125a68482b8bbb",
     "passed": true
   },
   {
     "video": "media/layout_01_fast_third_person_camera.mp4",
     "decoded_frames": 55,
+    "sha256": "785228a3a08ec78543827743a023a3455bbf74b2aed8ca406d96fd1afd4dd11c",
     "passed": true
   },
   {
     "video": "media/layout_01_slow_birdview.mp4",
     "decoded_frames": 47,
+    "sha256": "2dd1b6055cf40feb3e255dcd9537dfb72b91b0ff9ac539169a40cf2849f29dad",
     "passed": true
   },
   {
     "video": "media/layout_01_slow_third_person_camera.mp4",
     "decoded_frames": 47,
+    "sha256": "33df195185e5633c445dce2f52ebfd2d305c7fb72ed951c26da1ecfbfa0df7c3",
     "passed": true
   },
   {
     "video": "media/layout_02_expert_birdview.mp4",
     "decoded_frames": 59,
+    "sha256": "c7b4bb086132cf0b3dc65be662eb9d5fa0b30f09f29e7327a5630b80c286d578",
     "passed": true
   },
   {
     "video": "media/layout_02_expert_third_person_camera.mp4",
     "decoded_frames": 59,
+    "sha256": "f4ce1f227a12bce8ccc1a1e990bb95c2486301d1553b6fb5b22841354ef7fb2f",
     "passed": true
   },
   {
     "video": "media/layout_02_fast_birdview.mp4",
     "decoded_frames": 64,
+    "sha256": "9a556db4a3837b4efdebe33a17f38c1e9bef6cec1922f984640a6ad0cf18cda1",
     "passed": true
   },
   {
     "video": "media/layout_02_fast_third_person_camera.mp4",
     "decoded_frames": 64,
+    "sha256": "ff7e74c0ac48177c4f50016de5ccc71149bc4a86ae1ce3c60e189f0ad75bb9f6",
     "passed": true
   },
   {
     "video": "media/layout_02_slow_birdview.mp4",
     "decoded_frames": 49,
+    "sha256": "af4b7b0c0c0b6fc81b2b4e16189bd647dbb26ddfa91477c421cdb2ee4b5988ed",
     "passed": true
   },
   {
     "video": "media/layout_02_slow_third_person_camera.mp4",
     "decoded_frames": 49,
+    "sha256": "ba767a3d8cdd437e8b3a6c8fbcbf72a43c6a0df62b88421b7fda78a6cb8c7fd5",
     "passed": true
   },
   {
     "video": "media/layout_03_expert_birdview.mp4",
     "decoded_frames": 55,
+    "sha256": "337672af51754bb94ffa3adb29398874a801d6469d45affe8937b9e6587c9686",
     "passed": true
   },
   {
     "video": "media/layout_03_expert_third_person_camera.mp4",
     "decoded_frames": 55,
+    "sha256": "2422cd11299f5bfcd77bdeeabb592c46525b21f23d5a3d03cf1d14f87ed14b9c",
     "passed": true
   },
   {
     "video": "media/layout_03_fast_birdview.mp4",
     "decoded_frames": 55,
+    "sha256": "a2ee503c034b5484685ba027cc7fd600b3b15affda73d9bb42e9f9844a06425b",
     "passed": true
   },
   {
     "video": "media/layout_03_fast_third_person_camera.mp4",
     "decoded_frames": 55,
+    "sha256": "468a55d9a4d3d5a2323fa05bcdb4b63c22344a77d05bb91d4a17aad37615dd8f",
     "passed": true
   },
   {
     "video": "media/layout_03_slow_birdview.mp4",
     "decoded_frames": 48,
+    "sha256": "d64ca0a934d7fe7879f6d273d8ff41bd241c319204da38ac20344c0934412dd3",
     "passed": true
   },
   {
     "video": "media/layout_03_slow_third_person_camera.mp4",
     "decoded_frames": 48,
+    "sha256": "cfff37794ecd0b59fc20ed79eb740f88f2b15fbaa938adcb8fae940a5f01f699",
     "passed": true
   },
   {
     "video": "media/layout_04_expert_birdview.mp4",
     "decoded_frames": 56,
+    "sha256": "015926e766c6b65365ba676c645fd53e95a37e84e1952a5f8b6c2fdaca697000",
     "passed": true
   },
   {
     "video": "media/layout_04_expert_third_person_camera.mp4",
     "decoded_frames": 56,
+    "sha256": "bd6bf1f4d62b685bc514df58b389419670d33922bfabb0b87a4d8ea2331f65c8",
     "passed": true
   },
   {
     "video": "media/layout_04_fast_birdview.mp4",
     "decoded_frames": 45,
+    "sha256": "99293c20e0c497fbd95f0d1d6b14c4b4612bc7d3d5db74cd6b593c0aa6f74b74",
     "passed": true
   },
   {
     "video": "media/layout_04_fast_third_person_camera.mp4",
     "decoded_frames": 45,
+    "sha256": "f34868cbf692c59a81a048416b64a1cb8f4447d586b9f0a200f2dc6946d9cb5a",
     "passed": true
   },
   {
     "video": "media/layout_04_slow_birdview.mp4",
     "decoded_frames": 49,
+    "sha256": "5ccfd3a876b93f16bdc8747129649cd7ec176fca375e85a866dda5425d01702c",
     "passed": true
   },
   {
     "video": "media/layout_04_slow_third_person_camera.mp4",
     "decoded_frames": 49,
+    "sha256": "7a515e099b1660046d9cfd4c7ae6266abfa6bf3a806c6432a563e1aebfdbbd2f",
     "passed": true
   },
   {
     "video": "media/layout_05_expert_birdview.mp4",
     "decoded_frames": 59,
+    "sha256": "945e929a99b641d42b77f205e02f422e631b24845a8a7dd2ad66416266db2251",
     "passed": true
   },
   {
     "video": "media/layout_05_expert_third_person_camera.mp4",
     "decoded_frames": 59,
+    "sha256": "d8db571626ca1a4c87ba865233640cd190ed17b1449f0ac960378add9d4c6cd3",
     "passed": true
   },
   {
     "video": "media/layout_05_fast_birdview.mp4",
     "decoded_frames": 58,
+    "sha256": "7f8afddc81761a4374f718188f46cdd8c8d271a5d89cc92cb5ad603796182cb1",
     "passed": true
   },
   {
     "video": "media/layout_05_fast_third_person_camera.mp4",
     "decoded_frames": 58,
+    "sha256": "fcac023fac470c4fde8f58a01d410d6de72a7881b04b0e7f605e13ac2c3cf8b2",
     "passed": true
   },
   {
     "video": "media/layout_05_slow_birdview.mp4",
     "decoded_frames": 52,
+    "sha256": "430cc496572e094085e4285912fc91c87fa4f5b8efdad08d506769a0b82ceb1a",
     "passed": true
   },
   {
     "video": "media/layout_05_slow_third_person_camera.mp4",
     "decoded_frames": 52,
+    "sha256": "e544d5ab2851b4513ae078e6f1381bf918102ad6600a5df114ca5e29a77e6213",
     "passed": true
   },
   {
     "video": "media/layout_06_expert_birdview.mp4",
     "decoded_frames": 53,
+    "sha256": "8275d7df30c4d4716e062b266680c2cf6de8bfc3e18486987484b0bdeda1b28e",
     "passed": true
   },
   {
     "video": "media/layout_06_expert_third_person_camera.mp4",
     "decoded_frames": 53,
+    "sha256": "8625bf7030171ccc8e79cbfcdd91ebfd0ff06cdfda6372d4f50d7765dffcbb89",
     "passed": true
   },
   {
     "video": "media/layout_06_fast_birdview.mp4",
     "decoded_frames": 59,
+    "sha256": "e216b1888b2fb88cf0642b119eb73894fd48846fc73b29c6a30df973281e4b4f",
     "passed": true
   },
   {
     "video": "media/layout_06_fast_third_person_camera.mp4",
     "decoded_frames": 59,
+    "sha256": "0bf3f49095f7f87e9ae4c9b49c552b443b40169a416fa401cb88ca9a2aa69bcd",
     "passed": true
   },
   {
     "video": "media/layout_06_slow_birdview.mp4",
     "decoded_frames": 53,
+    "sha256": "5f2bf0d4dbbeffd7c6a4a285dbf2ca43933756f549c977be5c3bd8f9819aec0d",
     "passed": true
   },
   {
     "video": "media/layout_06_slow_third_person_camera.mp4",
     "decoded_frames": 53,
+    "sha256": "5a126b3a233f46220a78659f870e20ec5a2baf9b538f09ea8dea587f9a55082a",
     "passed": true
   },
   {
     "video": "media/layout_07_expert_birdview.mp4",
     "decoded_frames": 55,
+    "sha256": "d98ca46f33785354833fbb2f0ddc1c8cfde1cb749dc861f09b6ca3f9276f9837",
     "passed": true
   },
   {
     "video": "media/layout_07_expert_third_person_camera.mp4",
     "decoded_frames": 55,
+    "sha256": "ff149e20adf34a4965547bd4698b0e0b38a374c97b1b5caa732048ce7a497846",
     "passed": true
   },
   {
     "video": "media/layout_07_fast_birdview.mp4",
     "decoded_frames": 43,
+    "sha256": "1526cefa34e96748131d967d30628b709e56dec72f90654df49fedea67bd91f8",
     "passed": true
   },
   {
     "video": "media/layout_07_fast_third_person_camera.mp4",
     "decoded_frames": 43,
+    "sha256": "0855e34b68751d81e81258f7472da228995559fcad56ccc9ed04dad96b592f80",
     "passed": true
   },
   {
     "video": "media/layout_07_slow_birdview.mp4",
     "decoded_frames": 52,
+    "sha256": "83e7df615747aaa57d439bd25783fbf22b755c1eebd2b8b5e26f2f8be4490fb6",
     "passed": true
   },
   {
     "video": "media/layout_07_slow_third_person_camera.mp4",
     "decoded_frames": 52,
+    "sha256": "b28d94736fd1afb5d6aa5d8d9131516819a8820e5f92bb555cb25631c5087a40",
     "passed": true
   },
   {
     "video": "media/layout_08_expert_birdview.mp4",
     "decoded_frames": 59,
+    "sha256": "bf6c6dbc89f2ba2744032e8381ed5a5275e20503489e4a7f0a5b2f3a7af10c0c",
     "passed": true
   },
   {
     "video": "media/layout_08_expert_third_person_camera.mp4",
     "decoded_frames": 59,
+    "sha256": "6b553645d4710c38e3f7909ac57a7784b436b00f45e2ab21dd00e22f1ab51155",
     "passed": true
   },
   {
     "video": "media/layout_08_fast_birdview.mp4",
     "decoded_frames": 47,
+    "sha256": "a21269384b5ac1c9164cb1f50c8355de94b2c6e116d7275196b8a16eb0bfe151",
     "passed": true
   },
   {
     "video": "media/layout_08_fast_third_person_camera.mp4",
     "decoded_frames": 47,
+    "sha256": "157201949509ca532d3fbf03665b85357ae5efb59d1db5cc0aea5940c4d2cd22",
     "passed": true
   },
   {
     "video": "media/layout_08_slow_birdview.mp4",
     "decoded_frames": 53,
+    "sha256": "e9d71e0c8251ae02eed879d21513a9aa9851b52036983e5626a291851c7da683",
     "passed": true
   },
   {
     "video": "media/layout_08_slow_third_person_camera.mp4",
     "decoded_frames": 53,
+    "sha256": "88cf01008be78aa8a52e343cb626659c2218647224cc80c67091a0e40814a651",
     "passed": true
   }
 ]

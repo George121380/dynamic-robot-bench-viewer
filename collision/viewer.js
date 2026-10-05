@@ -8,6 +8,7 @@ function listEpisodes() {
   const category = $("category").value, outcome = $("outcome").value;
   const rows = catalog.episodes.filter(e => (category === "all" || e.category === category) &&
     (outcome === "all" || (e.result.reason === "success" ? "success" : "failure") === outcome));
+  document.querySelector(".detail").hidden = !rows.length;
   $("episode-list").replaceChildren();
   for (const e of rows) {
     const button = document.createElement("button");button.className = "episode"+(selected?.id === e.id ? " selected" : "");button.type="button";
@@ -18,7 +19,7 @@ function listEpisodes() {
     button.append(row,detail);button.onclick=()=>selectEpisode(e);$("episode-list").append(button);
   }
   if (rows.length && !rows.some(e=>e.id===selected?.id)) selectEpisode(rows[0]);
-  if (!rows.length) {const note=document.createElement("p");note.textContent="此筛选条件下没有回合。";$("episode-list").append(note);}
+  if (!rows.length) {video.pause();const note=document.createElement("p");note.textContent="此筛选条件下没有回合。";$("episode-list").append(note);}
 }
 function selectEpisode(e) {
   selected=e;$("episode-id").textContent=e.id;
@@ -53,7 +54,7 @@ function plot(id, arrays, min, max, label, goal) {
   const now=Math.min(video.currentTime||0,selected.duration_s);ctx.strokeStyle="#253038";ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x(now),m.t);ctx.lineTo(x(now),m.t+ph);ctx.stroke();
   canvas.onclick=event=>{video.currentTime=Math.max(0,Math.min(selected.duration_s,(event.clientX-canvas.getBoundingClientRect().left-m.l)/pw*selected.duration_s));draw();};
 }
-function draw(){if(!selected)return;$("play-time").textContent=Math.min(video.currentTime||0,selected.duration_s).toFixed(2)+" s";
+function draw(){if(!selected||document.querySelector(".detail").hidden)return;$("play-time").textContent=Math.min(video.currentTime||0,selected.duration_s).toFixed(2)+" s";
   plot("position",[selected.a_y,selected.b_y],-.8,.7,"y 位置 (m)",selected.episode.target_y);
   const vmax=Math.max(.2,...selected.a_speed,...selected.b_speed)*1.08;
   plot("velocity",[selected.a_speed,selected.b_speed],0,vmax,"线速度 (m/s)");
