@@ -1,0 +1,2328 @@
+{
+  "summary": {
+    "primary_input": "full",
+    "aggregation": "each episode averages its windows, then equal mean across episodes",
+    "single_training_seed": 7,
+    "fixed_test_mask_seed": 12345,
+    "metrics": [
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "target",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 3.629104915030518,
+        "FDE_mm": 6.103375232206393
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "target",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 4.819847321666405,
+        "FDE_mm": 7.9993991714037795
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "target",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 0.025083299087095397,
+        "FDE_mm": 0.09453604918569591
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 9.95245336064645,
+        "FDE_mm": 16.729798631141424
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 15.18247287594787,
+        "FDE_mm": 25.51782151891126
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 8.907863742697142,
+        "FDE_mm": 15.160629473995737
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "all",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 6.7907791157258055,
+        "FDE_mm": 11.41658694404498
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "all",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 10.001160059353367,
+        "FDE_mm": 16.758610387258823
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "all",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 4.4664735318696795,
+        "FDE_mm": 7.6275828037465025
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "target",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 2.9592522049265093,
+        "FDE_mm": 5.950214278647576
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 7.690268707616876,
+        "FDE_mm": 12.952692927792668
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "all",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 5.3247604620022075,
+        "FDE_mm": 9.451453566240767
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "target",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 8.110935093321034,
+        "FDE_mm": 13.578799731820991
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 12.257255519976665,
+        "FDE_mm": 20.619884054426315
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "all",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 10.184095234738201,
+        "FDE_mm": 17.09934190329168
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "target",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 4.528659217902871,
+        "FDE_mm": 6.147540832712325
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 20.67533797894915,
+        "FDE_mm": 33.727399775137506
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "all",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 12.601998522877693,
+        "FDE_mm": 19.937470372145373
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "target",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 6.067444160752874,
+        "FDE_mm": 10.310703279113973
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 7.416531586250852,
+        "FDE_mm": 12.48789911439258
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "all",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 6.74198782034514,
+        "FDE_mm": 11.39930121467582
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "target",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 2.3262672271024655e-05,
+        "FDE_mm": 2.3246101423332393e-05
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 7.258355619740627,
+        "FDE_mm": 12.183675260120443
+      },
+      {
+        "input": "full",
+        "method": "stationary",
+        "entity": "all",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 3.629189467478898,
+        "FDE_mm": 6.091849230200288
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 0.7806443610216809,
+        "FDE_mm": 1.6227134414084587
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 1.8659066959359047,
+        "FDE_mm": 3.8709521505685207
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 0.14084131083168808,
+        "FDE_mm": 0.2973543667617458
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.317409001896122,
+        "FDE_mm": 2.7243056649177757
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 3.2318103655583514,
+        "FDE_mm": 6.757674365736232
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 1.6466731261445973,
+        "FDE_mm": 3.251168478739931
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.049026676652815,
+        "FDE_mm": 2.1735095645274582
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 2.5488585118695024,
+        "FDE_mm": 5.314313284915918
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 0.8937572242366447,
+        "FDE_mm": 1.7742614380068622
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 2.159205904178568,
+        "FDE_mm": 4.6321984519019805
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 0.5804366578619616,
+        "FDE_mm": 1.2097376895144407
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.3698212871956155,
+        "FDE_mm": 2.920968093940246
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 1.875147896137805,
+        "FDE_mm": 3.9294569231248055
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 2.2084665588289596,
+        "FDE_mm": 4.71398800904021
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 2.041807207349367,
+        "FDE_mm": 4.321722479462902
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 3.8128803684378454,
+        "FDE_mm": 7.571808358976189
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 5.242795507462385,
+        "FDE_mm": 10.23051715727585
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 4.527837875066325,
+        "FDE_mm": 8.901162778493017
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 0.4759412823404427,
+        "FDE_mm": 0.9970579943188379
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 0.38034700214485917,
+        "FDE_mm": 0.7623638072129238
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 0.4281441444935996,
+        "FDE_mm": 0.8797109057042458
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 8.510478869493817e-05,
+        "FDE_mm": 0.00013017933801687297
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 0.3400696379851561,
+        "FDE_mm": 0.6528788218041709
+      },
+      {
+        "input": "full",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 0.17007737359534306,
+        "FDE_mm": 0.3265045029622111
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "target",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.0334332123406174,
+        "FDE_mm": 1.4305094715420936
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "target",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 1.5234046079780135,
+        "FDE_mm": 2.2851889886494194
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "target",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 0.8603886572788733,
+        "FDE_mm": 1.2121848746844641
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "tool",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.5200307026687792,
+        "FDE_mm": 2.2238179214394824
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "tool",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 2.585325787668042,
+        "FDE_mm": 3.8088978423426543
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "tool",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 1.5529156055133755,
+        "FDE_mm": 2.0961342315565163
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "all",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.2767319602302951,
+        "FDE_mm": 1.8271637015185125
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "all",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 2.0543652078476806,
+        "FDE_mm": 3.0470434280615004
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "all",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 1.2066521224571143,
+        "FDE_mm": 1.6541595472782118
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "target",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.655859690993869,
+        "FDE_mm": 2.5718712139253816
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "tool",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.2323760522607092,
+        "FDE_mm": 1.9424549247681473
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "all",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.4441178632356848,
+        "FDE_mm": 2.2571630424742275
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "target",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 1.533519423866941,
+        "FDE_mm": 2.2878620660115185
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "tool",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 2.0245857579364537,
+        "FDE_mm": 3.1470558975385106
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "all",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 1.7790526022769413,
+        "FDE_mm": 2.7174589975933525
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "target",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 1.5666972645946469,
+        "FDE_mm": 2.191276269926069
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "tool",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 3.0994289985392243,
+        "FDE_mm": 4.871909699868411
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "all",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 2.3330631549470127,
+        "FDE_mm": 3.531593024575462
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "target",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 0.9356828403681339,
+        "FDE_mm": 1.365984717729531
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "tool",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.0489072320827593,
+        "FDE_mm": 1.533429609567282
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "all",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 0.9922950333612602,
+        "FDE_mm": 1.4497071606225318
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "target",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 0.641212188675704,
+        "FDE_mm": 0.6403547082473301
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "tool",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 0.9258590882555359,
+        "FDE_mm": 1.3291263124085075
+      },
+      {
+        "input": "full",
+        "method": "A",
+        "entity": "all",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 0.7835356394819442,
+        "FDE_mm": 0.9847405158715057
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "target",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.1978482372970105,
+        "FDE_mm": 1.6645435831157203
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "target",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 1.69956288817856,
+        "FDE_mm": 2.5655061008393885
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "target",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 0.8857318808883884,
+        "FDE_mm": 1.0863991951761904
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "tool",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.753431640931272,
+        "FDE_mm": 2.5106592771533145
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "tool",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 2.9921650158477915,
+        "FDE_mm": 4.391435809093454
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "tool",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 1.9958653133151245,
+        "FDE_mm": 2.777732029500374
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "all",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.475639933986323,
+        "FDE_mm": 2.087601423682398
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "all",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 2.345863947947879,
+        "FDE_mm": 3.47847093029746
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "all",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 1.4407985890799344,
+        "FDE_mm": 1.932065623129377
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "target",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.7848968233253497,
+        "FDE_mm": 2.8711258728678026
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "tool",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.785754030473375,
+        "FDE_mm": 2.829463086576046
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "all",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.785325404489413,
+        "FDE_mm": 2.8502945023744055
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "target",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 1.7437032758453939,
+        "FDE_mm": 2.7312163008907477
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "tool",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 2.1419151878931553,
+        "FDE_mm": 3.3355640118174796
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "all",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 1.9428092240635213,
+        "FDE_mm": 3.033390136291464
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "target",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 2.149812839925289,
+        "FDE_mm": 2.9608060132401683
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "tool",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 3.0711580828453102,
+        "FDE_mm": 4.590724740022172
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "all",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 2.6104854594450444,
+        "FDE_mm": 3.775765406123052
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "target",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.096424175747892,
+        "FDE_mm": 1.5890517845816376
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "tool",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.239908100216694,
+        "FDE_mm": 1.6669915092828138
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "all",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.1681661264793501,
+        "FDE_mm": 1.628021650489361
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "target",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 0.7975576479645771,
+        "FDE_mm": 0.8390728639261353
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "tool",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 1.028221806729331,
+        "FDE_mm": 1.4735505130836766
+      },
+      {
+        "input": "full",
+        "method": "B",
+        "entity": "all",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 0.9128897275317404,
+        "FDE_mm": 1.1563116902603752
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "target",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.6375845433680936,
+        "FDE_mm": 2.2275693498418794
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "target",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 2.564561731248562,
+        "FDE_mm": 3.633645237866966
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "target",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 1.4126916374985519,
+        "FDE_mm": 1.8234883960470012
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "tool",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 2.2072935794115507,
+        "FDE_mm": 2.4615142252370124
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "tool",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 3.5615520825284346,
+        "FDE_mm": 4.080248581585549
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "tool",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 2.326453507244424,
+        "FDE_mm": 2.760755504948014
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "all",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.9224390640076277,
+        "FDE_mm": 2.344541777992158
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "all",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 3.063056919546354,
+        "FDE_mm": 3.8569468890302003
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "all",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 1.8695725846955162,
+        "FDE_mm": 2.2921219159124324
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "target",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 2.0279042267551026,
+        "FDE_mm": 3.442103864896732
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "tool",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.9005022731532033,
+        "FDE_mm": 2.796690172399394
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "all",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.9642032552898552,
+        "FDE_mm": 3.1193970248568803
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "target",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 2.2916255738724383,
+        "FDE_mm": 3.3892902760516987
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "tool",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 2.733810082131023,
+        "FDE_mm": 3.0481426976867856
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "all",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 2.512717828866337,
+        "FDE_mm": 3.218716485564384
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "target",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 3.483180908175806,
+        "FDE_mm": 4.29107136791572
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "tool",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 4.367782600068797,
+        "FDE_mm": 3.6709189104537168
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "all",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 3.9254817056159177,
+        "FDE_mm": 3.980995137244463
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "target",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.2060685175663186,
+        "FDE_mm": 1.698535147293042
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "tool",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.5700309820074054,
+        "FDE_mm": 1.77777150446283
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "all",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.388049749694469,
+        "FDE_mm": 1.738153322644177
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "target",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 1.1421233812894023,
+        "FDE_mm": 1.350527664365631
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "tool",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 1.4902976736988107,
+        "FDE_mm": 1.5265225896626589
+      },
+      {
+        "input": "full",
+        "method": "C",
+        "entity": "all",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 1.3162105227820575,
+        "FDE_mm": 1.4385251223020965
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "target",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 3.629104915030518,
+        "FDE_mm": 6.103375232206393
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "target",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 4.819847321666405,
+        "FDE_mm": 7.9993991714037795
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "target",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 0.025083299087095397,
+        "FDE_mm": 0.09453604918569591
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 9.95245336064645,
+        "FDE_mm": 16.729798631141424
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 15.18247287594787,
+        "FDE_mm": 25.51782151891126
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 8.907863742697142,
+        "FDE_mm": 15.160629473995737
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "all",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 6.7907791157258055,
+        "FDE_mm": 11.41658694404498
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "all",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 10.001160059353367,
+        "FDE_mm": 16.758610387258823
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "all",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 4.4664735318696795,
+        "FDE_mm": 7.6275828037465025
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "target",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 2.9592522049265093,
+        "FDE_mm": 5.950214278647576
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 7.690268707616876,
+        "FDE_mm": 12.952692927792668
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "all",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 5.3247604620022075,
+        "FDE_mm": 9.451453566240767
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "target",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 8.110935093321034,
+        "FDE_mm": 13.578799731820991
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 12.257255519976665,
+        "FDE_mm": 20.619884054426315
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "all",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 10.184095234738201,
+        "FDE_mm": 17.09934190329168
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "target",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 4.528659217902871,
+        "FDE_mm": 6.147540832712325
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 20.67533797894915,
+        "FDE_mm": 33.727399775137506
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "all",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 12.601998522877693,
+        "FDE_mm": 19.937470372145373
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "target",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 6.067444160752874,
+        "FDE_mm": 10.310703279113973
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 7.416531586250852,
+        "FDE_mm": 12.48789911439258
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "all",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 6.74198782034514,
+        "FDE_mm": 11.39930121467582
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "target",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 2.3262672271024655e-05,
+        "FDE_mm": 2.3246101423332393e-05
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "tool",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 7.258355619740627,
+        "FDE_mm": 12.183675260120443
+      },
+      {
+        "input": "masked",
+        "method": "stationary",
+        "entity": "all",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 3.629189467478898,
+        "FDE_mm": 6.091849230200288
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 2.2070651176786398,
+        "FDE_mm": 3.863052092090789
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 3.3393567773140873,
+        "FDE_mm": 5.918250558689111
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 0.08154010425122786,
+        "FDE_mm": 0.19373112916502602
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 5.512295497457971,
+        "FDE_mm": 9.533008746041286
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 8.90697488711527,
+        "FDE_mm": 15.668579338324934
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 5.12684956224385,
+        "FDE_mm": 8.958131995626609
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 3.8596803222141585,
+        "FDE_mm": 6.698030438298232
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 6.123165882563049,
+        "FDE_mm": 10.793415000519
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 2.6041948433971007,
+        "FDE_mm": 4.575931590602105
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 2.5011409554134008,
+        "FDE_mm": 5.193102117754767
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 3.9516651386050703,
+        "FDE_mm": 6.774912448624188
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 3.2264031048786515,
+        "FDE_mm": 5.98400728078559
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 4.990568559142242,
+        "FDE_mm": 8.739726008570752
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 7.01307288988532,
+        "FDE_mm": 12.32821317015802
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 6.001820768376634,
+        "FDE_mm": 10.533969622315198
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 4.244248680559674,
+        "FDE_mm": 6.929869377162348
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 12.877106701295512,
+        "FDE_mm": 21.86879718132938
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 8.560677573550493,
+        "FDE_mm": 14.39933342859149
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 3.2817857560486137,
+        "FDE_mm": 5.670831195671437
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 3.715537336092749,
+        "FDE_mm": 6.320220948569004
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 3.4986615520975892,
+        "FDE_mm": 5.995526074594449
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "target",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 5.281967321795693e-05,
+        "FDE_mm": 7.452191181605322e-05
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "tool",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 3.9143742691658914,
+        "FDE_mm": 6.610225951229922
+      },
+      {
+        "input": "masked",
+        "method": "constant_velocity",
+        "entity": "all",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 1.9572135319818365,
+        "FDE_mm": 3.305150239781243
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "target",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.652407233489963,
+        "FDE_mm": 2.2601819449971634
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "target",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 2.4435957135181754,
+        "FDE_mm": 3.5373288268659504
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "target",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 1.0642206839597164,
+        "FDE_mm": 1.4631866740338666
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "tool",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 3.181183237210409,
+        "FDE_mm": 4.604561586442979
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "tool",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 6.4728206563149655,
+        "FDE_mm": 9.504119968522222
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "tool",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 3.163150254919334,
+        "FDE_mm": 4.425116065292756
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "all",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 2.4167952318700454,
+        "FDE_mm": 3.4323717331976953
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "all",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 4.45820817258209,
+        "FDE_mm": 6.520724302298197
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "all",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 2.11368545202375,
+        "FDE_mm": 2.9441513244169584
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "target",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.9488687299114342,
+        "FDE_mm": 2.957484938475924
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "tool",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.601175374429052,
+        "FDE_mm": 2.403193121717777
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "all",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.7750220796248566,
+        "FDE_mm": 2.680339031503536
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "target",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 2.7288793394799655,
+        "FDE_mm": 3.9351497218955434
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "tool",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 4.1741188594654135,
+        "FDE_mm": 6.196713795215226
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "all",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 3.4514991224979408,
+        "FDE_mm": 5.065931717402289
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "target",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 3.2215384531688565,
+        "FDE_mm": 4.453564999275841
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "tool",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 10.811384964423874,
+        "FDE_mm": 16.499228271034855
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "all",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 7.016461652237922,
+        "FDE_mm": 10.476396481196085
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "target",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.7418031993743388,
+        "FDE_mm": 2.4070311415319647
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "tool",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.6277347236783022,
+        "FDE_mm": 2.208762711084019
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "all",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.6847689687791798,
+        "FDE_mm": 2.3078969291721783
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "target",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 0.771822787577375,
+        "FDE_mm": 0.8361858665935754
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "tool",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 1.4429943316379592,
+        "FDE_mm": 2.1008020797226994
+      },
+      {
+        "input": "masked",
+        "method": "A",
+        "entity": "all",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 1.1074085542488667,
+        "FDE_mm": 1.4684939681227125
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "target",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.1951651677942623,
+        "FDE_mm": 1.624540175944468
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "target",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 1.6404760110798098,
+        "FDE_mm": 2.3174954286318212
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "target",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 0.8819468539537504,
+        "FDE_mm": 1.1149905586143871
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "tool",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.776091072359738,
+        "FDE_mm": 2.5386005245203336
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "tool",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 3.0629841793727666,
+        "FDE_mm": 4.537166130825109
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "tool",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 1.8891404750411231,
+        "FDE_mm": 2.5478264992882207
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "all",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.485628116365877,
+        "FDE_mm": 2.0815703528810037
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "all",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 2.35173006797032,
+        "FDE_mm": 3.4273307848100862
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "all",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 1.3855436552328342,
+        "FDE_mm": 1.8314085345773452
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "target",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.7208186795081322,
+        "FDE_mm": 2.670798148222578
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "tool",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.5629072819137946,
+        "FDE_mm": 2.429850426657746
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "all",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.6418629761513632,
+        "FDE_mm": 2.5503242935519665
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "target",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 1.754076948366284,
+        "FDE_mm": 2.5833663816195505
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "tool",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 2.242683590049374,
+        "FDE_mm": 3.507573121443943
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "all",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 1.9983802685185537,
+        "FDE_mm": 3.0454697579542382
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "target",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 1.8813031050376594,
+        "FDE_mm": 2.161457393473635
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "tool",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 3.5458522057160735,
+        "FDE_mm": 5.367609648965299
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "all",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 2.7135776150195547,
+        "FDE_mm": 3.7645334812502065
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "target",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.2011681184438723,
+        "FDE_mm": 1.7227963812368376
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "tool",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.2322111136560876,
+        "FDE_mm": 1.6296474318507879
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "all",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.2166896289850158,
+        "FDE_mm": 1.676221914951586
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "target",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 0.7438513738591046,
+        "FDE_mm": 0.8333287179647456
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "tool",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 1.0330779240503611,
+        "FDE_mm": 1.4489880108851052
+      },
+      {
+        "input": "masked",
+        "method": "B",
+        "entity": "all",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 0.8884646521422953,
+        "FDE_mm": 1.1411583588813388
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "target",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.6407910689142426,
+        "FDE_mm": 2.1936376245566716
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "target",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 2.4074723927437196,
+        "FDE_mm": 3.420323414713262
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "target",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 1.4935358744207219,
+        "FDE_mm": 1.838996590528043
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "tool",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 2.138604124867549,
+        "FDE_mm": 2.404498481795331
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "tool",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 3.5674605507492316,
+        "FDE_mm": 3.816060882638253
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "tool",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 2.199419427609369,
+        "FDE_mm": 2.5606270158547746
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "all",
+        "group": "all",
+        "episodes": 45,
+        "ADE_mm": 1.8896975920402577,
+        "FDE_mm": 2.2990680538073534
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "all",
+        "group": "detach",
+        "episodes": 15,
+        "ADE_mm": 2.9874664557624664,
+        "FDE_mm": 3.6181921538497717
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "all",
+        "group": "stationary",
+        "episodes": 45,
+        "ADE_mm": 1.8464776554752063,
+        "FDE_mm": 2.199811788309211
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "target",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.9604856431639444,
+        "FDE_mm": 3.1390703579139276
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "tool",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.6589545008415978,
+        "FDE_mm": 2.3865827054639035
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "all",
+        "group": "near_establish",
+        "episodes": 30,
+        "ADE_mm": 1.8097200470704895,
+        "FDE_mm": 2.7628265194168002
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "target",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 2.16191163929554,
+        "FDE_mm": 3.22483577510309
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "tool",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 2.6803718545180355,
+        "FDE_mm": 2.946894897672013
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "all",
+        "group": "moving",
+        "episodes": 30,
+        "ADE_mm": 2.421141733696806,
+        "FDE_mm": 3.085865348188157
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "target",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 3.049197068903595,
+        "FDE_mm": 3.96151301295807
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "tool",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 4.308815737410138,
+        "FDE_mm": 3.39259992664059
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "all",
+        "group": "near_release",
+        "episodes": 15,
+        "ADE_mm": 3.6790063992763558,
+        "FDE_mm": 3.677056470575432
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "target",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.2226926841928312,
+        "FDE_mm": 1.7734783957527567
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "tool",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.4249562418886592,
+        "FDE_mm": 1.7285405636011137
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "all",
+        "group": "engage_pull",
+        "episodes": 15,
+        "ADE_mm": 1.3238244571737827,
+        "FDE_mm": 1.75100947223929
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "target",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 1.2922081298061778,
+        "FDE_mm": 1.387111063203996
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "tool",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 1.4233955819647581,
+        "FDE_mm": 1.6688939991466227
+      },
+      {
+        "input": "masked",
+        "method": "C",
+        "entity": "all",
+        "group": "pass_by",
+        "episodes": 15,
+        "ADE_mm": 1.357801863184524,
+        "FDE_mm": 1.5280025353329993
+      }
+    ],
+    "history": [
+      {
+        "method": "A",
+        "masked_history_ADE_mm": 43.01141142135574,
+        "episodes": 45,
+        "coverage": 1.0
+      },
+      {
+        "method": "B",
+        "masked_history_ADE_mm": 43.98047319322667,
+        "episodes": 45,
+        "coverage": 1.0
+      },
+      {
+        "method": "C",
+        "masked_history_ADE_mm": 2.258868506744938,
+        "episodes": 45,
+        "coverage": 1.0
+      },
+      {
+        "method": "oracle_entity_rigid_fit",
+        "masked_history_ADE_mm": 1.0815537708831688e-05,
+        "episodes": 45,
+        "coverage": 0.5004457122481726
+      }
+    ],
+    "oracle_geometric_reference": "uses true entity grouping; at least 3 non-collinear unmasked point correspondences",
+    "confidence_intervals": "not computed; no between-seed stability claim"
+  },
+  "runtime": [
+    {
+      "variant": "A",
+      "seed": 7,
+      "updates": 2000,
+      "batch_size": 32,
+      "samples_processed": 64000,
+      "seconds": 31.35304157063365,
+      "best_val_target_ADE_mm": 1.0324506518719274,
+      "initial_parameters_sha256": "f394c8ba8a12b0f555d6e0fd5b46aec8b71cc9af6584060556d5f2af38b54bcf",
+      "sample_order_sha256": "1235ff5ec36bcb380ef2e77a8558153cad3f2d436fdba31ef16465c11bbd6dd8",
+      "mask_sha256": "351a8054b23144894668c6a51d5dbba82f56523ef43cc45b6f4d7060a969c31a",
+      "all_trainable_parameters": 2752774,
+      "effective_gradient_parameters": 2685955,
+      "peak_gpu_allocated_bytes": 239403520,
+      "peak_gpu_reserved_bytes": 331350016,
+      "loss_and_gradient_scales": {
+        "future_shared_body_norm": 0.2377074658870697,
+        "initial_future_loss": 0.013343940488994122,
+        "initial_history_loss": 0.0
+      },
+      "forward_heads": "both evaluated for every variant",
+      "additional_C_cost": "history loss and history/shared-body backward; measured in wall time",
+      "last_losses": {
+        "future_loss": 6.492251122836024e-05,
+        "history_loss": 0.0
+      }
+    },
+    {
+      "variant": "B",
+      "seed": 7,
+      "updates": 2000,
+      "batch_size": 32,
+      "samples_processed": 64000,
+      "seconds": 21.114568513818085,
+      "best_val_target_ADE_mm": 1.1827627903715308,
+      "initial_parameters_sha256": "f394c8ba8a12b0f555d6e0fd5b46aec8b71cc9af6584060556d5f2af38b54bcf",
+      "sample_order_sha256": "1235ff5ec36bcb380ef2e77a8558153cad3f2d436fdba31ef16465c11bbd6dd8",
+      "mask_sha256": "f27ef064912a9499d715ad964318d4304ef8b115262305d8fbc77cf28d4e5515",
+      "all_trainable_parameters": 2752774,
+      "effective_gradient_parameters": 2685955,
+      "peak_gpu_allocated_bytes": 239436288,
+      "peak_gpu_reserved_bytes": 331350016,
+      "loss_and_gradient_scales": {
+        "future_shared_body_norm": 0.24014858901500702,
+        "initial_future_loss": 0.01340075209736824,
+        "initial_history_loss": 0.038551293313503265
+      },
+      "forward_heads": "both evaluated for every variant",
+      "additional_C_cost": "history loss and history/shared-body backward; measured in wall time",
+      "last_losses": {
+        "future_loss": 6.207531259860843e-05,
+        "history_loss": 0.01816929131746292
+      }
+    },
+    {
+      "variant": "C",
+      "seed": 7,
+      "updates": 2000,
+      "batch_size": 32,
+      "samples_processed": 64000,
+      "seconds": 22.280991018749774,
+      "best_val_target_ADE_mm": 1.630064574712099,
+      "initial_parameters_sha256": "f394c8ba8a12b0f555d6e0fd5b46aec8b71cc9af6584060556d5f2af38b54bcf",
+      "sample_order_sha256": "1235ff5ec36bcb380ef2e77a8558153cad3f2d436fdba31ef16465c11bbd6dd8",
+      "mask_sha256": "f27ef064912a9499d715ad964318d4304ef8b115262305d8fbc77cf28d4e5515",
+      "all_trainable_parameters": 2752774,
+      "effective_gradient_parameters": 2752774,
+      "peak_gpu_allocated_bytes": 235579904,
+      "peak_gpu_reserved_bytes": 341835776,
+      "loss_and_gradient_scales": {
+        "future_shared_body_norm": 0.24014858901500702,
+        "history_shared_body_norm": 0.5215272307395935,
+        "initial_future_loss": 0.01340075209736824,
+        "initial_history_loss": 0.038551293313503265
+      },
+      "forward_heads": "both evaluated for every variant",
+      "additional_C_cost": "history loss and history/shared-body backward; measured in wall time",
+      "last_losses": {
+        "future_loss": 9.477566345594823e-05,
+        "history_loss": 9.868448250927031e-05
+      }
+    }
+  ],
+  "data_audit": {
+    "passed": true,
+    "episodes": 300,
+    "physical_classes": {
+      "engage_pull": 100,
+      "pass_by": 100,
+      "detach": 100
+    },
+    "samples": 6300,
+    "max_rigid_distance_error_m": 3.5376265306030774e-08,
+    "max_local_coordinate_error_m": 1.4966953121309245e-08,
+    "current_projection_seg_depth_alignment": 1.0,
+    "max_timestamp_error_seconds": 1.2293457984924316e-07,
+    "split_no_episode_or_family_overlap": true,
+    "B_C_masks_equal": true,
+    "point_selection_uses_current_frame_only": true
+  },
+  "overfit": {
+    "steps": 500,
+    "batch_size": 8,
+    "initial_future_loss": 0.014758739620447159,
+    "final_future_loss": 0.0001037918045767583,
+    "initial_history_loss": 0.039169855415821075,
+    "final_history_loss": 0.00039755713078193367,
+    "future_prediction_abs_mean_m": 0.0021130165550857782,
+    "sample_ids": [
+      4742,
+      5187,
+      1434,
+      5591,
+      3808,
+      4012,
+      4273,
+      5924
+    ],
+    "passed": true
+  },
+  "leakage": {
+    "passed": true,
+    "hidden_truth_changes_targets_only": true,
+    "future_truth_and_future_image_excluded": true,
+    "action_plan_cannot_change_history_output": true,
+    "sample_independent_fixed_scaling": true,
+    "B_C_masks_identical": true,
+    "history_gradient_to_shared_body_norm": 0.5920135378837585
+  }
+}

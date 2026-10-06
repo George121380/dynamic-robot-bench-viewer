@@ -1,0 +1,114 @@
+[
+  {
+    "category": "engage_pull",
+    "rank": "best",
+    "episode_id": "family0013_engage_pull",
+    "sample_id": 843,
+    "time": 1.5999999642372131,
+    "near_establish": true,
+    "near_release": false,
+    "contact_events": [
+      {
+        "time": 1.7899999599903822,
+        "type": "establish"
+      }
+    ],
+    "event_in_future_interval": true,
+    "episode_C_ADE_mm": 1.003224646583909,
+    "video": "engage_pull-best-family0013_engage_pull.mp4",
+    "figure": "engage_pull-best-family0013_engage_pull.png"
+  },
+  {
+    "category": "engage_pull",
+    "rank": "worst",
+    "episode_id": "family0089_engage_pull",
+    "sample_id": 5631,
+    "time": 1.5999999642372131,
+    "near_establish": true,
+    "near_release": false,
+    "contact_events": [
+      {
+        "time": 1.8299999590963125,
+        "type": "establish"
+      }
+    ],
+    "event_in_future_interval": true,
+    "episode_C_ADE_mm": 1.4686267434929807,
+    "video": "engage_pull-worst-family0089_engage_pull.mp4",
+    "figure": "engage_pull-worst-family0089_engage_pull.png"
+  },
+  {
+    "category": "pass_by",
+    "rank": "best",
+    "episode_id": "family0052_pass_by",
+    "sample_id": 3321,
+    "time": 1.5999999642372131,
+    "near_establish": false,
+    "near_release": false,
+    "contact_events": [],
+    "event_in_future_interval": false,
+    "episode_C_ADE_mm": 0.9858769869121412,
+    "video": "pass_by-best-family0052_pass_by.mp4",
+    "figure": "pass_by-best-family0052_pass_by.png"
+  },
+  {
+    "category": "pass_by",
+    "rank": "worst",
+    "episode_id": "family0019_pass_by",
+    "sample_id": 1242,
+    "time": 1.5999999642372131,
+    "near_establish": false,
+    "near_release": false,
+    "contact_events": [],
+    "event_in_future_interval": false,
+    "episode_C_ADE_mm": 1.2793975128304391,
+    "video": "pass_by-worst-family0019_pass_by.mp4",
+    "figure": "pass_by-worst-family0019_pass_by.png"
+  },
+  {
+    "category": "detach",
+    "rank": "best",
+    "episode_id": "family0031_detach",
+    "sample_id": 1965,
+    "time": 3.399999924004078,
+    "near_establish": false,
+    "near_release": true,
+    "contact_events": [
+      {
+        "time": 1.9499999564141035,
+        "type": "establish"
+      },
+      {
+        "time": 3.799999915063381,
+        "type": "release"
+      }
+    ],
+    "event_in_future_interval": true,
+    "episode_C_ADE_mm": 2.2915438610306453,
+    "video": "detach-best-family0031_detach.mp4",
+    "figure": "detach-best-family0031_detach.png"
+  },
+  {
+    "category": "detach",
+    "rank": "worst",
+    "episode_id": "family0089_detach",
+    "sample_id": 5620,
+    "time": 3.5999999195337296,
+    "near_establish": false,
+    "near_release": true,
+    "contact_events": [
+      {
+        "time": 1.8299999590963125,
+        "type": "establish"
+      },
+      {
+        "time": 3.9399999119341373,
+        "type": "release"
+      }
+    ],
+    "event_in_future_interval": true,
+    "episode_C_ADE_mm": 3.0422788335099105,
+    "video": "detach-worst-family0089_detach.mp4",
+    "figure": "detach-worst-family0089_detach.png"
+  }
+]
