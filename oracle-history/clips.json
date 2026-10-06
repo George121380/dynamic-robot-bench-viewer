@@ -1,0 +1,1282 @@
+[
+  {
+    "episode_id": "family0000_detach",
+    "family_id": "family0000",
+    "initial_conditions": {
+      "x": -0.02333095976695375,
+      "y": -0.12551158898577477,
+      "cube_y": -0.06448869006631469,
+      "cube_yaw": 0.020797189624791074,
+      "pull_speed_m_s": 0.06009721915079511,
+      "pull_start_control_step": 25,
+      "requested_mode": "detach"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "f9469dbdef4d53f9efd4ac1b327aedd96b8da22c6e957b3d492b041af8a2d004",
+    "labels": {
+      "category": "detach",
+      "cube_displacement_m": 0.060202158987522125,
+      "tool_displacement_m": 0.19218644499778748,
+      "contact_fraction": 0.3290909090909091,
+      "events": [
+        {
+          "time": 2.149999951943755,
+          "type": "establish"
+        },
+        {
+          "time": 3.9599999114871025,
+          "type": "release"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0000_detach.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0000_engage_pull",
+    "family_id": "family0000",
+    "initial_conditions": {
+      "x": -0.02333095976695375,
+      "y": -0.12551158898577477,
+      "cube_y": -0.06448869006631469,
+      "cube_yaw": 0.020797189624791074,
+      "pull_speed_m_s": 0.06009721915079511,
+      "pull_start_control_step": 25,
+      "requested_mode": "engage_pull"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "a98ad1d7adac5c691d2b25d1c0f3120bfc2a3fea7c093ad76c8002fecfdcbe19",
+    "labels": {
+      "category": "engage_pull",
+      "cube_displacement_m": 0.0731395035982132,
+      "tool_displacement_m": 0.09287592768669128,
+      "contact_fraction": 0.610909090909091,
+      "events": [
+        {
+          "time": 2.149999951943755,
+          "type": "establish"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0000_engage_pull.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0000_pass_by",
+    "family_id": "family0000",
+    "initial_conditions": {
+      "x": -0.02333095976695375,
+      "y": -0.12551158898577477,
+      "cube_y": 0.019488411014225215,
+      "cube_yaw": 0.020797189624791074,
+      "pull_speed_m_s": 0.06147764054170017,
+      "pull_start_control_step": 23,
+      "requested_mode": "pass_by"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "5cf1b5c760647613c52a21df0aa613683c80b446b3e7758533429000f5c65d19",
+    "labels": {
+      "category": "pass_by",
+      "cube_displacement_m": 9.313225746154785e-09,
+      "tool_displacement_m": 0.09780904650688171,
+      "contact_fraction": 0.0,
+      "events": []
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0000_pass_by.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0001_detach",
+    "family_id": "family0001",
+    "initial_conditions": {
+      "x": -0.0035193576838535023,
+      "y": -0.10390562552223227,
+      "cube_y": -0.040814728769984446,
+      "cube_yaw": -0.0452242416050789,
+      "pull_speed_m_s": 0.06409545910939156,
+      "pull_start_control_step": 24,
+      "requested_mode": "detach"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "9bb5137772d98a382ed99d52471f64cbf55cd6cc92f7eff4848ba4ee5d3189a0",
+    "labels": {
+      "category": "detach",
+      "cube_displacement_m": 0.06429149210453033,
+      "tool_displacement_m": 0.19968567788600922,
+      "contact_fraction": 0.3418181818181818,
+      "events": [
+        {
+          "time": 2.0199999548494816,
+          "type": "establish"
+        },
+        {
+          "time": 3.899999912828207,
+          "type": "release"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0001_detach.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0001_engage_pull",
+    "family_id": "family0001",
+    "initial_conditions": {
+      "x": -0.0035193576838535023,
+      "y": -0.10390562552223227,
+      "cube_y": -0.040814728769984446,
+      "cube_yaw": -0.0452242416050789,
+      "pull_speed_m_s": 0.06409545910939156,
+      "pull_start_control_step": 24,
+      "requested_mode": "engage_pull"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "dfd9c88d25db86318fa863b128a20adce19a100403853aae1b8d78696446ebb9",
+    "labels": {
+      "category": "engage_pull",
+      "cube_displacement_m": 0.08116483688354492,
+      "tool_displacement_m": 0.10082195699214935,
+      "contact_fraction": 0.6345454545454545,
+      "events": [
+        {
+          "time": 2.0199999548494816,
+          "type": "establish"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0001_engage_pull.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0001_pass_by",
+    "family_id": "family0001",
+    "initial_conditions": {
+      "x": -0.0035193576838535023,
+      "y": -0.10390562552223227,
+      "cube_y": 0.04109437447776772,
+      "cube_yaw": -0.0452242416050789,
+      "pull_speed_m_s": 0.06590906446910248,
+      "pull_start_control_step": 21,
+      "requested_mode": "pass_by"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "ef6f5890ad883252f381ad845df7097346452ea6a9befdc54a9b44d5088274e1",
+    "labels": {
+      "category": "pass_by",
+      "cube_displacement_m": 1.053671194739536e-08,
+      "tool_displacement_m": 0.10816706717014313,
+      "contact_fraction": 0.0,
+      "events": []
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0001_pass_by.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0002_detach",
+    "family_id": "family0002",
+    "initial_conditions": {
+      "x": -0.011481410057065072,
+      "y": -0.14374842831213266,
+      "cube_y": -0.08563476056640903,
+      "cube_yaw": 0.013837667647799312,
+      "pull_speed_m_s": 0.07439119504311903,
+      "pull_start_control_step": 24,
+      "requested_mode": "detach"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "45021ff2305ecd317de1dd2e8ec4518858e90334811c3bff0b2fef9859ae4532",
+    "labels": {
+      "category": "detach",
+      "cube_displacement_m": 0.08083900064229965,
+      "tool_displacement_m": 0.209306001663208,
+      "contact_fraction": 0.38727272727272727,
+      "events": [
+        {
+          "time": 1.9199999570846558,
+          "type": "establish"
+        },
+        {
+          "time": 4.049999909475446,
+          "type": "release"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0002_detach.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0002_engage_pull",
+    "family_id": "family0002",
+    "initial_conditions": {
+      "x": -0.011481410057065072,
+      "y": -0.14374842831213266,
+      "cube_y": -0.08563476056640903,
+      "cube_yaw": 0.013837667647799312,
+      "pull_speed_m_s": 0.07439119504311903,
+      "pull_start_control_step": 24,
+      "requested_mode": "engage_pull"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "03ab9ed03c1c5529aad220e51b6018210e6756343049947efd7356ea826af2d4",
+    "labels": {
+      "category": "engage_pull",
+      "cube_displacement_m": 0.0982736349105835,
+      "tool_displacement_m": 0.11775428056716919,
+      "contact_fraction": 0.6527272727272727,
+      "events": [
+        {
+          "time": 1.9199999570846558,
+          "type": "establish"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0002_engage_pull.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0002_pass_by",
+    "family_id": "family0002",
+    "initial_conditions": {
+      "x": -0.011481410057065072,
+      "y": -0.14374842831213266,
+      "cube_y": 0.0012515716878673255,
+      "cube_yaw": 0.013837667647799312,
+      "pull_speed_m_s": 0.05524357374083633,
+      "pull_start_control_step": 20,
+      "requested_mode": "pass_by"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "09628449e96a30d1af70bf79cc2f79918c0cfa7a67a96d1c3c8b9df10af3a0e2",
+    "labels": {
+      "category": "pass_by",
+      "cube_displacement_m": 7.679882507716229e-09,
+      "tool_displacement_m": 0.09000136703252792,
+      "contact_fraction": 0.0,
+      "events": []
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0002_pass_by.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0003_detach",
+    "family_id": "family0003",
+    "initial_conditions": {
+      "x": -0.006183813435073501,
+      "y": -0.09249695117606378,
+      "cube_y": -0.031053053246043974,
+      "cube_yaw": 0.13945753139240769,
+      "pull_speed_m_s": 0.07190577611428031,
+      "pull_start_control_step": 25,
+      "requested_mode": "detach"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "90bf507d862a2ce12d9de984d9d296ffd0c68e46c5bfd653c39541f8d8a88ab3",
+    "labels": {
+      "category": "detach",
+      "cube_displacement_m": 0.06982481479644775,
+      "tool_displacement_m": 0.20753483474254608,
+      "contact_fraction": 0.3618181818181818,
+      "events": [
+        {
+          "time": 1.9099999573081732,
+          "type": "establish"
+        },
+        {
+          "time": 3.899999912828207,
+          "type": "release"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0003_detach.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0003_engage_pull",
+    "family_id": "family0003",
+    "initial_conditions": {
+      "x": -0.006183813435073501,
+      "y": -0.09249695117606378,
+      "cube_y": -0.031053053246043974,
+      "cube_yaw": 0.13945753139240769,
+      "pull_speed_m_s": 0.07190577611428031,
+      "pull_start_control_step": 25,
+      "requested_mode": "engage_pull"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "da3c31c908ac1d7ee5ebe673ccfa9d6ebd205f825232644b95b981fbc1dbf846",
+    "labels": {
+      "category": "engage_pull",
+      "cube_displacement_m": 0.09304586052894592,
+      "tool_displacement_m": 0.11268395930528641,
+      "contact_fraction": 0.6545454545454545,
+      "events": [
+        {
+          "time": 1.9099999573081732,
+          "type": "establish"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0003_engage_pull.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0003_pass_by",
+    "family_id": "family0003",
+    "initial_conditions": {
+      "x": -0.006183813435073501,
+      "y": -0.09249695117606378,
+      "cube_y": 0.05250304882393621,
+      "cube_yaw": 0.13945753139240769,
+      "pull_speed_m_s": 0.06237978127861387,
+      "pull_start_control_step": 21,
+      "requested_mode": "pass_by"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "f94edb3e7088385524a5f2f31bcfa853d7393ae9eb2d1d15dd1e7c5ab1f0ee6e",
+    "labels": {
+      "category": "pass_by",
+      "cube_displacement_m": 8.33000246558413e-09,
+      "tool_displacement_m": 0.10193850100040436,
+      "contact_fraction": 0.0,
+      "events": []
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0003_pass_by.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0004_detach",
+    "family_id": "family0004",
+    "initial_conditions": {
+      "x": 0.008940264871381734,
+      "y": -0.13828826188071436,
+      "cube_y": -0.07520363922883891,
+      "cube_yaw": -0.011319076074862766,
+      "pull_speed_m_s": 0.06409811065287567,
+      "pull_start_control_step": 22,
+      "requested_mode": "detach"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "5675aa28a32b9c2220b047577f14350186090c0a7b36353e1a4904ebd0258e58",
+    "labels": {
+      "category": "detach",
+      "cube_displacement_m": 0.06487621366977692,
+      "tool_displacement_m": 0.20129607617855072,
+      "contact_fraction": 0.3381818181818182,
+      "events": [
+        {
+          "time": 1.9499999564141035,
+          "type": "establish"
+        },
+        {
+          "time": 3.8099999148398638,
+          "type": "release"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0004_detach.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0004_engage_pull",
+    "family_id": "family0004",
+    "initial_conditions": {
+      "x": 0.008940264871381734,
+      "y": -0.13828826188071436,
+      "cube_y": -0.07520363922883891,
+      "cube_yaw": -0.011319076074862766,
+      "pull_speed_m_s": 0.06409811065287567,
+      "pull_start_control_step": 22,
+      "requested_mode": "engage_pull"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "3a646b2b8489e4d5106804b3561a1d6b1c5fd10d68fe2691dffce65886245b2f",
+    "labels": {
+      "category": "engage_pull",
+      "cube_displacement_m": 0.08336159586906433,
+      "tool_displacement_m": 0.10291486233472824,
+      "contact_fraction": 0.6472727272727272,
+      "events": [
+        {
+          "time": 1.9499999564141035,
+          "type": "establish"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0004_engage_pull.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0004_pass_by",
+    "family_id": "family0004",
+    "initial_conditions": {
+      "x": 0.008940264871381734,
+      "y": -0.13828826188071436,
+      "cube_y": 0.006711738119285632,
+      "cube_yaw": -0.011319076074862766,
+      "pull_speed_m_s": 0.06589561996830454,
+      "pull_start_control_step": 26,
+      "requested_mode": "pass_by"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "8b84535c43847850ccb16a75db8e5f75e79d35fb2a69e3ee2323776fb0103687",
+    "labels": {
+      "category": "pass_by",
+      "cube_displacement_m": 2.7939677238464355e-09,
+      "tool_displacement_m": 0.10178954899311066,
+      "contact_fraction": 0.0,
+      "events": []
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0004_pass_by.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0005_detach",
+    "family_id": "family0005",
+    "initial_conditions": {
+      "x": -0.05387212798615643,
+      "y": -0.1355244820714712,
+      "cube_y": -0.06723877821860638,
+      "cube_yaw": 0.13325683182294423,
+      "pull_speed_m_s": 0.07053510736313333,
+      "pull_start_control_step": 24,
+      "requested_mode": "detach"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "9b6d258afb35863a8e86a9081d2b4dd2a3aca3c02c543c4b10c339ae1d67ad11",
+    "labels": {
+      "category": "detach",
+      "cube_displacement_m": 0.06098534166812897,
+      "tool_displacement_m": 0.20770889520645142,
+      "contact_fraction": 0.3327272727272727,
+      "events": [
+        {
+          "time": 1.8799999579787254,
+          "type": "establish"
+        },
+        {
+          "time": 3.709999917075038,
+          "type": "release"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0005_detach.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0005_engage_pull",
+    "family_id": "family0005",
+    "initial_conditions": {
+      "x": -0.05387212798615643,
+      "y": -0.1355244820714712,
+      "cube_y": -0.06723877821860638,
+      "cube_yaw": 0.13325683182294423,
+      "pull_speed_m_s": 0.07053510736313333,
+      "pull_start_control_step": 24,
+      "requested_mode": "engage_pull"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "08cec3d7e753de2fba77e46be41c227dffc078060909b6c79b22741534f566c2",
+    "labels": {
+      "category": "engage_pull",
+      "cube_displacement_m": 0.09152653813362122,
+      "tool_displacement_m": 0.11091474443674088,
+      "contact_fraction": 0.66,
+      "events": [
+        {
+          "time": 1.8799999579787254,
+          "type": "establish"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0005_engage_pull.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0005_pass_by",
+    "family_id": "family0005",
+    "initial_conditions": {
+      "x": -0.05387212798615643,
+      "y": -0.1355244820714712,
+      "cube_y": 0.009475517928528798,
+      "cube_yaw": 0.13325683182294423,
+      "pull_speed_m_s": 0.0770407939704246,
+      "pull_start_control_step": 21,
+      "requested_mode": "pass_by"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "ba1da7eae82a2736819e9971cf6976231f411c9b48dff1730f528ae2854697ff",
+    "labels": {
+      "category": "pass_by",
+      "cube_displacement_m": 1.5914446649389902e-08,
+      "tool_displacement_m": 0.126608744263649,
+      "contact_fraction": 0.0,
+      "events": []
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0005_pass_by.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0006_detach",
+    "family_id": "family0006",
+    "initial_conditions": {
+      "x": -0.06104196712001078,
+      "y": -0.09478932329216502,
+      "cube_y": -0.026430654225731848,
+      "cube_yaw": -0.024412961401548777,
+      "pull_speed_m_s": 0.0686001152212568,
+      "pull_start_control_step": 26,
+      "requested_mode": "detach"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "95dcfc3b5fc165a98d80078457c4a953843c6c5b37450e759d8ed99423e7c82d",
+    "labels": {
+      "category": "detach",
+      "cube_displacement_m": 0.06109729781746864,
+      "tool_displacement_m": 0.20404979586601257,
+      "contact_fraction": 0.32181818181818184,
+      "events": [
+        {
+          "time": 2.079999953508377,
+          "type": "establish"
+        },
+        {
+          "time": 3.849999913945794,
+          "type": "release"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0006_detach.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0006_engage_pull",
+    "family_id": "family0006",
+    "initial_conditions": {
+      "x": -0.06104196712001078,
+      "y": -0.09478932329216502,
+      "cube_y": -0.026430654225731848,
+      "cube_yaw": -0.024412961401548777,
+      "pull_speed_m_s": 0.0686001152212568,
+      "pull_start_control_step": 26,
+      "requested_mode": "engage_pull"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "5331b612fb32e47a2219a7d009b2dc744668c3a7d36ebd110c3e7944890b2097",
+    "labels": {
+      "category": "engage_pull",
+      "cube_displacement_m": 0.08600378781557083,
+      "tool_displacement_m": 0.10567449778318405,
+      "contact_fraction": 0.6236363636363637,
+      "events": [
+        {
+          "time": 2.079999953508377,
+          "type": "establish"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0006_engage_pull.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0006_pass_by",
+    "family_id": "family0006",
+    "initial_conditions": {
+      "x": -0.06104196712001078,
+      "y": -0.09478932329216502,
+      "cube_y": 0.05021067670783497,
+      "cube_yaw": -0.024412961401548777,
+      "pull_speed_m_s": 0.07719714799949967,
+      "pull_start_control_step": 23,
+      "requested_mode": "pass_by"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "353de8976ce967c14c0559926ce864abb9fba1f52943ac30b0624e8f50c1bafd",
+    "labels": {
+      "category": "pass_by",
+      "cube_displacement_m": 8.33000246558413e-09,
+      "tool_displacement_m": 0.12450908869504929,
+      "contact_fraction": 0.0,
+      "events": []
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0006_pass_by.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0007_detach",
+    "family_id": "family0007",
+    "initial_conditions": {
+      "x": 0.007330276075517658,
+      "y": -0.16454025436772607,
+      "cube_y": -0.09541181403182265,
+      "cube_yaw": -0.03182606601310416,
+      "pull_speed_m_s": 0.0678784784509877,
+      "pull_start_control_step": 26,
+      "requested_mode": "detach"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "cafad1b14ed4a84cf2b48f60c34b5833b8468b19395905ba779b04562ba082a9",
+    "labels": {
+      "category": "detach",
+      "cube_displacement_m": 0.0633566677570343,
+      "tool_displacement_m": 0.19341064989566803,
+      "contact_fraction": 0.3327272727272727,
+      "events": [
+        {
+          "time": 2.079999953508377,
+          "type": "establish"
+        },
+        {
+          "time": 3.9099999126046896,
+          "type": "release"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0007_detach.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0007_engage_pull",
+    "family_id": "family0007",
+    "initial_conditions": {
+      "x": 0.007330276075517658,
+      "y": -0.16454025436772607,
+      "cube_y": -0.09541181403182265,
+      "cube_yaw": -0.03182606601310416,
+      "pull_speed_m_s": 0.0678784784509877,
+      "pull_start_control_step": 26,
+      "requested_mode": "engage_pull"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "be8ca509cbaff5ec86411b7b7b01dab47f848d0c0e36544e044900e9a0f20a34",
+    "labels": {
+      "category": "engage_pull",
+      "cube_displacement_m": 0.0847722738981247,
+      "tool_displacement_m": 0.1041874960064888,
+      "contact_fraction": 0.6236363636363637,
+      "events": [
+        {
+          "time": 2.079999953508377,
+          "type": "establish"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0007_engage_pull.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0007_pass_by",
+    "family_id": "family0007",
+    "initial_conditions": {
+      "x": 0.007330276075517658,
+      "y": -0.16454025436772607,
+      "cube_y": -0.01954025436772608,
+      "cube_yaw": -0.03182606601310416,
+      "pull_speed_m_s": 0.07884665786265019,
+      "pull_start_control_step": 22,
+      "requested_mode": "pass_by"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "d26f63fc50fd725b5952fda1465e35f3aad72c1408a9329b1365b3f6671081d1",
+    "labels": {
+      "category": "pass_by",
+      "cube_displacement_m": 0.0,
+      "tool_displacement_m": 0.12825554609298706,
+      "contact_fraction": 0.0,
+      "events": []
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0007_pass_by.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0008_detach",
+    "family_id": "family0008",
+    "initial_conditions": {
+      "x": -0.017360692157991756,
+      "y": -0.12255601744150488,
+      "cube_y": -0.05251513440957137,
+      "cube_yaw": 0.03797014642991023,
+      "pull_speed_m_s": 0.08295406781250653,
+      "pull_start_control_step": 21,
+      "requested_mode": "detach"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "280805ae79161ddee96d98bf16c172e20726ef66811071402fde72a2c1e682a2",
+    "labels": {
+      "category": "detach",
+      "cube_displacement_m": 0.07368143647909164,
+      "tool_displacement_m": 0.230735644698143,
+      "contact_fraction": 0.34363636363636363,
+      "events": [
+        {
+          "time": 1.6799999624490738,
+          "type": "establish"
+        },
+        {
+          "time": 3.569999920204282,
+          "type": "release"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0008_detach.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0008_engage_pull",
+    "family_id": "family0008",
+    "initial_conditions": {
+      "x": -0.017360692157991756,
+      "y": -0.12255601744150488,
+      "cube_y": -0.05251513440957137,
+      "cube_yaw": 0.03797014642991023,
+      "pull_speed_m_s": 0.08295406781250653,
+      "pull_start_control_step": 21,
+      "requested_mode": "engage_pull"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "1a22ae7e558e2cdc9f6b9eca0b59d3cfe15ad26bc3f6a9c37902e0069719cb66",
+    "labels": {
+      "category": "engage_pull",
+      "cube_displacement_m": 0.11756425350904465,
+      "tool_displacement_m": 0.13702082633972168,
+      "contact_fraction": 0.6963636363636364,
+      "events": [
+        {
+          "time": 1.6799999624490738,
+          "type": "establish"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0008_engage_pull.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0008_pass_by",
+    "family_id": "family0008",
+    "initial_conditions": {
+      "x": -0.017360692157991756,
+      "y": -0.12255601744150488,
+      "cube_y": 0.022443982558495112,
+      "cube_yaw": 0.03797014642991023,
+      "pull_speed_m_s": 0.0808018922112861,
+      "pull_start_control_step": 25,
+      "requested_mode": "pass_by"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "3ea229159875793c3c44687b0e6f97b37216befb67034ad268570a5c1d3f1280",
+    "labels": {
+      "category": "pass_by",
+      "cube_displacement_m": 1.862645149230957e-09,
+      "tool_displacement_m": 0.12777458131313324,
+      "contact_fraction": 0.0,
+      "events": []
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0008_pass_by.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0009_detach",
+    "family_id": "family0009",
+    "initial_conditions": {
+      "x": -0.022766027208506914,
+      "y": -0.11107564087691205,
+      "cube_y": -0.04695255378214788,
+      "cube_yaw": 0.02904603636398262,
+      "pull_speed_m_s": 0.07781910960334826,
+      "pull_start_control_step": 21,
+      "requested_mode": "detach"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "cf333ae69a31ba1024e1546fc473a9768f13541009e2d803495d1e371c4ff63d",
+    "labels": {
+      "category": "detach",
+      "cube_displacement_m": 0.07523643970489502,
+      "tool_displacement_m": 0.22525450587272644,
+      "contact_fraction": 0.36,
+      "events": [
+        {
+          "time": 1.7299999613314867,
+          "type": "establish"
+        },
+        {
+          "time": 3.709999917075038,
+          "type": "release"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0009_detach.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0009_engage_pull",
+    "family_id": "family0009",
+    "initial_conditions": {
+      "x": -0.022766027208506914,
+      "y": -0.11107564087691205,
+      "cube_y": -0.04695255378214788,
+      "cube_yaw": 0.02904603636398262,
+      "pull_speed_m_s": 0.07781910960334826,
+      "pull_start_control_step": 21,
+      "requested_mode": "engage_pull"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "94858b7904c290ed67271630666d501bad424b7673e0c320d777dfa448218c50",
+    "labels": {
+      "category": "engage_pull",
+      "cube_displacement_m": 0.1084594577550888,
+      "tool_displacement_m": 0.12805470824241638,
+      "contact_fraction": 0.6872727272727273,
+      "events": [
+        {
+          "time": 1.7299999613314867,
+          "type": "establish"
+        }
+      ]
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0009_engage_pull.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  },
+  {
+    "episode_id": "family0009_pass_by",
+    "family_id": "family0009",
+    "initial_conditions": {
+      "x": -0.022766027208506914,
+      "y": -0.11107564087691205,
+      "cube_y": 0.033924359123087944,
+      "cube_yaw": 0.02904603636398262,
+      "pull_speed_m_s": 0.06812090091735178,
+      "pull_start_control_step": 22,
+      "requested_mode": "pass_by"
+    },
+    "action_plan_committed_at": 0.0,
+    "action_source": "precommitted_open_loop",
+    "oracle_trajectories": true,
+    "coordinate_system": "fixed_world",
+    "length_unit": "m",
+    "collector_sha256": "a3826c2ab4e5b76359de6198a4374dcd967ce19ef0fd03810decc1dbd49c4239",
+    "action_sha256": "616118a717b97cb49a88fb34a24be8cc01c64faa9d7d1bc45678c52b8184cd9e",
+    "labels": {
+      "category": "pass_by",
+      "cube_displacement_m": 2.2351741790771484e-08,
+      "tool_displacement_m": 0.11043472588062286,
+      "contact_fraction": 0.0,
+      "events": []
+    },
+    "physics_dt": 0.009999999776482582,
+    "control_freq": 20,
+    "sim_freq": 100,
+    "video": "family0009_pass_by.mp4",
+    "frames": 56,
+    "point_reference_frame": 15,
+    "point_colors": {
+      "target": "red",
+      "tool": "cyan"
+    },
+    "ring": "oracle point currently occluded"
+  }
+]
