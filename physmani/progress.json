@@ -2,7 +2,7 @@
   "updated": "2026-10-07",
   "status": "Environment and dataset preparation in progress",
   "validated": {
-    "protocol_checks": 15,
+    "protocol_checks": 16,
     "training_loop_checks": 2,
     "gpu_checks": 0,
     "collected_successes": 0,
@@ -18,7 +18,7 @@
     {
       "title": "H800 environments",
       "state": "In progress",
-      "detail": "Private native Xvfb/Mesa OpenGL 4.5 context check passed. Pinned policy CUDA 11.8 packages installed; Python dependencies, world environment and GPU extensions remain in progress."
+      "detail": "Private native OpenGL 4.5 context and actual CoppeliaSim 4.1 RLBench scene run passed. Policy Torch 2.4.1/cu118 installed; common dependencies, world environment and CUDA extensions remain in progress."
     },
     {
       "title": "Release data",
@@ -28,7 +28,7 @@
     {
       "title": "GPU acceptance",
       "state": "Pending",
-      "detail": "Both environment kernel checks, simulator step, policy/WM service smoke and three 200-update training smoke runs."
+      "detail": "Guarded acceptance is queued after extension builds; ten fresh utilization samples precede both environment kernel and simulator checks. Policy/WM service and batch-18 training smoke runs remain pending."
     },
     {
       "title": "Self collection",
