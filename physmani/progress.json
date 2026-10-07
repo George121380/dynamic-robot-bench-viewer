@@ -23,7 +23,7 @@
     {
       "title": "Release data",
       "state": "In progress",
-      "detail": "Resumable download with pinned sizes and SHA-256. 485.3 GiB of archives. No complete data-validation receipt yet."
+      "detail": "Resumable pinned download is active; first checkpoint archive has received over 80 MiB. Full 485.3 GiB asset set and SHA-256 acceptance are still pending."
     },
     {
       "title": "GPU acceptance",
