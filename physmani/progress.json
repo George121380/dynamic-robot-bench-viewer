@@ -23,7 +23,7 @@
     {
       "title": "Release data",
       "state": "In progress",
-      "detail": "Resumable pinned download is active; first checkpoint archive has received over 80 MiB. Full 485.3 GiB asset set and SHA-256 acceptance are still pending."
+      "detail": "Two checkpoint assets have passed size/SHA-256 verification and installation. Remaining assets download through a verified direct CDN route; full 485.3 GiB acceptance remains pending."
     },
     {
       "title": "GPU acceptance",
@@ -52,8 +52,7 @@
     }
   ],
   "blockers": [
-    "Latest resource check: all development GPUs had existing compute processes. No GPU jobs launched.",
-    "Remote direct downloads encountered TLS errors. A loopback tunnel retaining end-to-end TLS verification is being used for preparation."
+    "Native CUDA extension and simulator acceptance are pending environment installation. Official batch-18 VRAM peaks must be measured before full training."
   ],
   "results": [],
   "tasks": [
