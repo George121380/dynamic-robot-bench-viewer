@@ -13,17 +13,17 @@
     {
       "title": "Source & protocol",
       "state": "Verified",
-      "detail": "Pinned upstream source, nested dependencies and all 12 dataset assets. Official training arguments captured directly."
+      "detail": "Pinned upstream commit, nested dependencies and official checksums for all 12 data assets. Official training arguments captured directly."
     },
     {
       "title": "H800 environments",
       "state": "In progress",
-      "detail": "Isolated policy and world-model environments. CPU setup only; actual CUDA extensions and simulator checks pending."
+      "detail": "Private native Xvfb/Mesa OpenGL 4.5 context check passed. Pinned policy CUDA 11.8 packages installed; Python dependencies, world environment and GPU extensions remain in progress."
     },
     {
       "title": "Release data",
       "state": "In progress",
-      "detail": "Two checkpoint assets have passed size/SHA-256 verification and installation. Remaining assets download through a verified direct CDN route; full 485.3 GiB acceptance remains pending."
+      "detail": "All four checkpoint assets and instructions passed size/SHA-256 verification and installation (5 of 12). The 42.56 GiB test archive is downloading; full 485.3 GiB acceptance remains pending."
     },
     {
       "title": "GPU acceptance",
