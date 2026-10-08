@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08 04:56 UTC",
+  "updated": "2026-10-08 05:08 UTC",
   "status": "Full protocol queued; native environment acceptance in progress",
   "validated": {
     "protocol_checks": 25,
@@ -38,7 +38,7 @@
     {
       "title": "Full training",
       "state": "Pending",
-      "detail": "Reviewed full v2 controller queued behind environment, data and smoke gates. Stage 1, PhysMani Stage 2 and 3DFA: 100,000 updates each, seed 0, three idle cards, batch 18 per card."
+      "detail": "Full development-host controller queued behind environment, data and smoke gates. Stage 1, PhysMani Stage 2 and 3DFA: 100,000 updates each, seed 0, three idle cards, batch 18 per card."
     },
     {
       "title": "Policy evaluation",
