@@ -1,14 +1,14 @@
 {
-  "updated": "2026-10-08 17:43 UTC",
-  "status": "Remote access interrupted; last execution verified at 07:06 UTC",
+  "updated": "2026-10-08 18:43 UTC",
+  "status": "32 demonstrations accepted; world-model data generation running",
   "validated": {
-    "protocol_checks": 29,
+    "protocol_checks": 33,
     "training_loop_checks": 2,
-    "gpu_checks": 6,
-    "collected_successes": 2,
+    "gpu_checks": 7,
+    "collected_successes": 32,
     "training_updates": 0,
     "evaluated_episodes": 0,
-    "last_verified": "2026-10-08 07:06 UTC"
+    "last_verified": "2026-10-08 18:42 UTC"
   },
   "phases": [
     {
@@ -23,37 +23,42 @@
     },
     {
       "title": "Release data",
-      "state": "Unverified",
-      "detail": "Last verified: seven of 12 assets installed, 640 test episodes indexed, about 26.4 GB of the 58.7 GB WM validation archive retained with sparse control. Partial bytes are not accepted data. Newer transfer status cannot currently be checked."
+      "state": "In progress",
+      "detail": "Seven of 12 assets fully installed; all 640 test episodes indexed. The 58.7 GB validation-WM archive passed its full official SHA-256 and is safely extracting. Remaining training archives are pending. Downloads resumed from preserved revision-bound sparse controls."
     },
     {
       "title": "GPU acceptance",
-      "state": "Unverified",
-      "detail": "Both compiled CUDA/camera bundles, basic Torch, FlashAttention and DGL checks passed. A real WM initialization/update/prediction probe was queued with an independent idle-GPU lease gate; its outcome and later service/training checks are unverified."
+      "state": "In progress",
+      "detail": "Both CUDA/camera bundles passed on both H800 development hosts. The real WM initialization/update/10-frame prediction test passed with the first fresh accepted demonstration explicitly replacing the absent author fixture. Policy service and batch-18 smokes are next."
     },
     {
       "title": "Self collection",
-      "state": "Unverified",
-      "detail": "Last verified at 07:06 UTC: the first task selected two validated scripted-expert successes, with failures retained; its high-speed variant was running. Target remains 32 total, at most 20 attempt slots per task. Later status cannot currently be checked."
+      "state": "Verified",
+      "detail": "All 16 tasks reached two accepted scripted-expert successes, total 32. Across 68 attempt slots, 33 successes were recorded; unused attempts and one infrastructure failure remain preserved. These are expert data, not policy success rates."
+    },
+    {
+      "title": "Fresh WM & packaging",
+      "state": "In progress",
+      "detail": "Reviewed controller reuses the verified 32 demonstrations and runs the unmodified release tracker, prediction and visualization budgets. Container UUID routing is repaired. Original real Dataset packaging/batch acceptance follows generation."
     },
     {
       "title": "Full training",
-      "state": "Unverified",
-      "detail": "No completed result was verified before access was lost. Full development-host controller queued behind environment, data and smoke gates. Stage 1, PhysMani Stage 2 and 3DFA: 100,000 updates each, seed 0, three idle cards, batch 18 per card."
+      "state": "Pending",
+      "detail": "Full development-host controller queued behind environment, data and smoke gates. Stage 1, PhysMani Stage 2 and 3DFA: 100,000 updates each, seed 0, three idle cards, batch 18 per card."
     },
     {
       "title": "Policy evaluation",
-      "state": "Unverified",
-      "detail": "No completed result was verified before access was lost. Released and retrained PhysMani/3DFA; five checkpoints, 16 tasks, 40 episodes each: 12,800 episodes."
+      "state": "Pending",
+      "detail": "Released and retrained PhysMani/3DFA; five checkpoints, 16 tasks, 40 episodes each: 12,800 episodes."
     },
     {
       "title": "World-model quality",
-      "state": "Unverified",
-      "detail": "No completed result was verified before access was lost. 640 held-out trajectories; horizons 1/5/10 at 0.05 s per frame. PSNR, SSIM, LPIPS and depth log RMSE. Object-center error requires verified GT."
+      "state": "Pending",
+      "detail": "640 held-out trajectories; horizons 1/5/10 at 0.05 s per frame. PSNR, SSIM, LPIPS and depth log RMSE. Object-center error requires verified GT."
     }
   ],
   "blockers": [
-    "Remote logs and job identities cannot currently be refreshed. Counters show confirmed evidence through 07:06 UTC; later collection, download and experiment status is unknown. Full reproduction has not been accepted."
+    "Full reproduction remains in progress. Official training data, fresh WM/package acceptance, policy service checks and measured batch-18 smokes must pass before formal training; no model success rate has been produced."
   ],
   "results": [],
   "tasks": [
