@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-08 05:50 UTC",
-  "status": "Full protocol queued; policy kernels, FlashAttention, DGL and camera passed",
+  "updated": "2026-10-08 06:58 UTC",
+  "status": "Both environments accepted; full controller started expert collection",
   "validated": {
     "protocol_checks": 29,
     "training_loop_checks": 2,
-    "gpu_checks": 5,
+    "gpu_checks": 6,
     "collected_successes": 0,
     "training_updates": 0,
     "evaluated_episodes": 0
@@ -17,23 +17,23 @@
     },
     {
       "title": "H800 environments",
-      "state": "In progress",
-      "detail": "Both foundations installed. Policy CUDA kernels, FlashAttention 2.5.9.post1, DGL CUDA sampling and actual headless RGB/depth capture plus graceful shutdown passed. Policy installation finished; world extensions are building."
+      "state": "Verified",
+      "detail": "Both isolated installations complete. Policy CPU suite: 103 tests passed; world: 24 tests with two retained skips. Both compiled CUDA bundles and actual headless RGB/depth capture plus graceful shutdown passed. Numerical equivalence to the original Docker stack remains unvalidated."
     },
     {
       "title": "Release data",
       "state": "In progress",
-      "detail": "Seven of 12 assets passed SHA-256 and installation. Test index has 640 real episodes. A 16-connection pilot wrote about 7.9 GB in 90 seconds; remaining archives now use checked parallel sparse resume. Final official SHA-256 remains mandatory."
+      "detail": "Seven of 12 assets passed SHA-256 and installation. Test index has 640 real episodes. Parallel sparse resume retains about 25.4 GB of the 58.7 GB WM validation archive. Partial bytes are not accepted data; full official SHA-256 remains mandatory."
     },
     {
       "title": "GPU acceptance",
       "state": "In progress",
-      "detail": "Both basic Torch probes, the policy compiled CUDA/simulator bundle, FlashAttention forward/backward and DGL CUDA sampling passed. World compiled kernels and complete CPU suites, then policy/WM services and batch-18 smokes, remain pending."
+      "detail": "Both full compiled-kernel/simulator probes passed, alongside basic Torch, FlashAttention forward/backward and DGL CUDA sampling. Policy/WM service smokes and measured batch-18 training smokes remain pending."
     },
     {
       "title": "Self collection",
-      "state": "Pending",
-      "detail": "Two scripted-expert successes per task, up to 20 attempts each. Keep failed attempts. Not human teleoperation."
+      "state": "Running",
+      "detail": "Full controller has launched the real simulator and scripted expert. Target: two accepted successes per task, 32 total, up to 20 attempt slots per task. Keep failed attempts. Not human teleoperation."
     },
     {
       "title": "Full training",
@@ -52,7 +52,7 @@
     }
   ],
   "blockers": [
-    "World extensions and full environment/service acceptance remain pending. Full training also waits for accepted data and measured batch-18 VRAM peaks."
+    "Full training waits for accepted train/WM archives and measured batch-18 VRAM peaks. Service acceptance and expert collection are executing before the training gates."
   ],
   "results": [],
   "tasks": [
