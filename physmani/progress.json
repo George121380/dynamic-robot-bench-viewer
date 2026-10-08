@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-07",
-  "status": "Environment and dataset preparation in progress",
+  "updated": "2026-10-08 04:00 UTC",
+  "status": "Full protocol queued; native environment acceptance in progress",
   "validated": {
-    "protocol_checks": 16,
+    "protocol_checks": 22,
     "training_loop_checks": 2,
-    "gpu_checks": 0,
+    "gpu_checks": 1,
     "collected_successes": 0,
     "training_updates": 0,
     "evaluated_episodes": 0
@@ -18,17 +18,17 @@
     {
       "title": "H800 environments",
       "state": "In progress",
-      "detail": "Private native OpenGL 4.5 context and actual CoppeliaSim 4.1 RLBench scene run passed. Policy Torch 2.4.1/cu118 installed; common dependencies, world environment and CUDA extensions remain in progress."
+      "detail": "Native OpenGL and actual simulator scene passed. Both private CUDA toolchains installed. Policy Torch CUDA forward/backward passed; world dependencies and both compiled extension builds remain in progress."
     },
     {
       "title": "Release data",
       "state": "In progress",
-      "detail": "All four checkpoint assets and instructions passed size/SHA-256 verification and installation (5 of 12). The 42.56 GiB test archive is downloading; full 485.3 GiB acceptance remains pending."
+      "detail": "All four checkpoint assets, instructions and the full test archive passed SHA-256 and installation (6 of 12). Test index verified: 16 tasks \u00d7 40 real episodes = 640. Remaining validation/training assets are downloading with resumable retries."
     },
     {
       "title": "GPU acceptance",
-      "state": "Pending",
-      "detail": "Guarded acceptance is queued after extension builds; ten fresh utilization samples precede both environment kernel and simulator checks. Policy/WM service and batch-18 training smoke runs remain pending."
+      "state": "In progress",
+      "detail": "Actual policy Torch H800 CUDA forward/backward passed after fresh idle-utilization samples. Both environments\u2019 rendering/KNN/FPS/PyTorch3D kernels and camera capture, then policy/WM services and batch-18 training smokes, remain pending."
     },
     {
       "title": "Self collection",
@@ -38,7 +38,7 @@
     {
       "title": "Full training",
       "state": "Pending",
-      "detail": "Shared Stage 1, PhysMani Stage 2 and 3DFA fine-tuning: 100,000 updates each, seed 0, 3 idle GPUs, batch 18 per GPU."
+      "detail": "Full development-host controller queued behind environment, data and smoke gates. Shared Stage 1, PhysMani Stage 2 and 3DFA: 100,000 updates each, seed 0, three idle cards, batch 18 per card."
     },
     {
       "title": "Policy evaluation",
@@ -52,7 +52,7 @@
     }
   ],
   "blockers": [
-    "Native CUDA extension and simulator acceptance are pending environment installation. Official batch-18 VRAM peaks must be measured before full training."
+    "Compiled extensions and full simulator/service acceptance remain pending. Full training also waits for accepted data and measured batch-18 VRAM peaks."
   ],
   "results": [],
   "tasks": [
