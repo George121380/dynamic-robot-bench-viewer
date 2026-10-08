@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-08 05:08 UTC",
-  "status": "Full protocol queued; native environment acceptance in progress",
+  "updated": "2026-10-08 05:15 UTC",
+  "status": "Full protocol queued; policy CUDA kernels and headless camera passed",
   "validated": {
     "protocol_checks": 25,
     "training_loop_checks": 2,
-    "gpu_checks": 2,
+    "gpu_checks": 3,
     "collected_successes": 0,
     "training_updates": 0,
     "evaluated_episodes": 0
@@ -18,17 +18,17 @@
     {
       "title": "H800 environments",
       "state": "In progress",
-      "detail": "Both environment foundations installed. Both Torch CUDA matmul forward/backward and policy headless PyRep RGB/depth capture plus graceful shutdown passed. Policy gsplat wheel built; PyTorch3D and remaining extensions are building."
+      "detail": "Both environment foundations installed. Both Torch CUDA matmul forward/backward passed. Policy gsplat forward/backward, simple-knn, PyTorch3D, FPS and actual headless RGB/depth capture plus graceful shutdown passed. FlashAttention installation and world compiled extensions remain pending."
     },
     {
       "title": "Release data",
       "state": "In progress",
-      "detail": "Seven of 12 assets passed SHA-256 and installation, including the validation package. Test index has 640 real episodes. Files above the HF 50 GB HTTP limit now use checked, resumable bounded ranges; final official SHA-256 remains mandatory."
+      "detail": "Seven of 12 assets passed SHA-256 and installation, including the validation package. Test index has 640 real episodes. Checked resumable ranges bypass the HF 50 GB ordinary-HTTP limit; large-file transport remains slow. Final official SHA-256 remains mandatory."
     },
     {
       "title": "GPU acceptance",
       "state": "In progress",
-      "detail": "Both Torch H800 CUDA probes and real 256\u00d7256 RGB/depth simulator capture passed. Full compiled kernels in both environments, then policy/WM services and batch-18 training smokes, remain pending."
+      "detail": "Both basic Torch probes and the policy compiled CUDA/simulator bundle passed. World compiled kernels and complete CPU suites, then policy/WM services and batch-18 training smokes, remain pending."
     },
     {
       "title": "Self collection",
@@ -52,7 +52,7 @@
     }
   ],
   "blockers": [
-    "Compiled extensions and full simulator/service acceptance remain pending. Full training also waits for accepted data and measured batch-18 VRAM peaks."
+    "FlashAttention installation, world extensions and full environment/service acceptance remain pending. Large-file download transport is slow; full training also waits for accepted data and measured batch-18 VRAM peaks."
   ],
   "results": [],
   "tasks": [
