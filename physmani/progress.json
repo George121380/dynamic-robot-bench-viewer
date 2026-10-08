@@ -1,13 +1,14 @@
 {
-  "updated": "2026-10-08 06:58 UTC",
-  "status": "Both environments accepted; full controller started expert collection",
+  "updated": "2026-10-08 17:43 UTC",
+  "status": "Remote access interrupted; last execution verified at 07:06 UTC",
   "validated": {
     "protocol_checks": 29,
     "training_loop_checks": 2,
     "gpu_checks": 6,
-    "collected_successes": 0,
+    "collected_successes": 2,
     "training_updates": 0,
-    "evaluated_episodes": 0
+    "evaluated_episodes": 0,
+    "last_verified": "2026-10-08 07:06 UTC"
   },
   "phases": [
     {
@@ -22,37 +23,37 @@
     },
     {
       "title": "Release data",
-      "state": "In progress",
-      "detail": "Seven of 12 assets passed SHA-256 and installation. Test index has 640 real episodes. Parallel sparse resume retains about 25.4 GB of the 58.7 GB WM validation archive. Partial bytes are not accepted data; full official SHA-256 remains mandatory."
+      "state": "Unverified",
+      "detail": "Last verified: seven of 12 assets installed, 640 test episodes indexed, about 26.4 GB of the 58.7 GB WM validation archive retained with sparse control. Partial bytes are not accepted data. Newer transfer status cannot currently be checked."
     },
     {
       "title": "GPU acceptance",
-      "state": "In progress",
-      "detail": "Both full compiled-kernel/simulator probes passed, alongside basic Torch, FlashAttention forward/backward and DGL CUDA sampling. Policy/WM service smokes and measured batch-18 training smokes remain pending."
+      "state": "Unverified",
+      "detail": "Both compiled CUDA/camera bundles, basic Torch, FlashAttention and DGL checks passed. A real WM initialization/update/prediction probe was queued with an independent idle-GPU lease gate; its outcome and later service/training checks are unverified."
     },
     {
       "title": "Self collection",
-      "state": "Running",
-      "detail": "Full controller has launched the real simulator and scripted expert. Target: two accepted successes per task, 32 total, up to 20 attempt slots per task. Keep failed attempts. Not human teleoperation."
+      "state": "Unverified",
+      "detail": "Last verified at 07:06 UTC: the first task selected two validated scripted-expert successes, with failures retained; its high-speed variant was running. Target remains 32 total, at most 20 attempt slots per task. Later status cannot currently be checked."
     },
     {
       "title": "Full training",
-      "state": "Pending",
-      "detail": "Full development-host controller queued behind environment, data and smoke gates. Stage 1, PhysMani Stage 2 and 3DFA: 100,000 updates each, seed 0, three idle cards, batch 18 per card."
+      "state": "Unverified",
+      "detail": "No completed result was verified before access was lost. Full development-host controller queued behind environment, data and smoke gates. Stage 1, PhysMani Stage 2 and 3DFA: 100,000 updates each, seed 0, three idle cards, batch 18 per card."
     },
     {
       "title": "Policy evaluation",
-      "state": "Pending",
-      "detail": "Released and retrained PhysMani/3DFA; five checkpoints, 16 tasks, 40 episodes each: 12,800 episodes."
+      "state": "Unverified",
+      "detail": "No completed result was verified before access was lost. Released and retrained PhysMani/3DFA; five checkpoints, 16 tasks, 40 episodes each: 12,800 episodes."
     },
     {
       "title": "World-model quality",
-      "state": "Pending",
-      "detail": "640 held-out trajectories; horizons 1/5/10 at 0.05 s per frame. PSNR, SSIM, LPIPS and depth log RMSE. Object-center error requires verified GT."
+      "state": "Unverified",
+      "detail": "No completed result was verified before access was lost. 640 held-out trajectories; horizons 1/5/10 at 0.05 s per frame. PSNR, SSIM, LPIPS and depth log RMSE. Object-center error requires verified GT."
     }
   ],
   "blockers": [
-    "Full training waits for accepted train/WM archives and measured batch-18 VRAM peaks. Service acceptance and expert collection are executing before the training gates."
+    "Remote logs and job identities cannot currently be refreshed. Counters show confirmed evidence through 07:06 UTC; later collection, download and experiment status is unknown. Full reproduction has not been accepted."
   ],
   "results": [],
   "tasks": [
