@@ -1,10 +1,10 @@
 {
-  "updated": "2026-10-08 04:00 UTC",
+  "updated": "2026-10-08 04:23 UTC",
   "status": "Full protocol queued; native environment acceptance in progress",
   "validated": {
     "protocol_checks": 22,
     "training_loop_checks": 2,
-    "gpu_checks": 1,
+    "gpu_checks": 2,
     "collected_successes": 0,
     "training_updates": 0,
     "evaluated_episodes": 0
@@ -18,17 +18,17 @@
     {
       "title": "H800 environments",
       "state": "In progress",
-      "detail": "Native OpenGL and actual simulator scene passed. Both private CUDA toolchains installed. Policy Torch CUDA forward/backward passed; world dependencies and both compiled extension builds remain in progress."
+      "detail": "Native OpenGL and actual simulator scene passed. Both private Torch/CUDA environments passed H800 matmul forward/backward. Verified wheel prefetch accelerates common dependencies; both compiled extension builds remain pending."
     },
     {
       "title": "Release data",
       "state": "In progress",
-      "detail": "All four checkpoint assets, instructions and the full test archive passed SHA-256 and installation (6 of 12). Test index verified: 16 tasks \u00d7 40 real episodes = 640. Remaining validation/training assets are downloading with resumable retries."
+      "detail": "Six of 12 assets passed SHA-256 and installation; test index has 16 tasks \u00d7 40 real episodes = 640. Resumed validation/training downloads through a freshly probed CAS bridge route; final official hashes remain mandatory."
     },
     {
       "title": "GPU acceptance",
       "state": "In progress",
-      "detail": "Actual policy Torch H800 CUDA forward/backward passed after fresh idle-utilization samples. Both environments\u2019 rendering/KNN/FPS/PyTorch3D kernels and camera capture, then policy/WM services and batch-18 training smokes, remain pending."
+      "detail": "Both policy/world Torch H800 CUDA forward/backward passed under fresh idle-utilization leases. Rendering/KNN/FPS/PyTorch3D kernels and camera capture, then policy/WM services and batch-18 training smokes, remain pending."
     },
     {
       "title": "Self collection",
