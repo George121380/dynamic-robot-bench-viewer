@@ -1,8 +1,8 @@
 {
-  "updated": "2026-10-08 04:23 UTC",
+  "updated": "2026-10-08 04:56 UTC",
   "status": "Full protocol queued; native environment acceptance in progress",
   "validated": {
-    "protocol_checks": 22,
+    "protocol_checks": 25,
     "training_loop_checks": 2,
     "gpu_checks": 2,
     "collected_successes": 0,
@@ -18,17 +18,17 @@
     {
       "title": "H800 environments",
       "state": "In progress",
-      "detail": "Native OpenGL and actual simulator scene passed. Both private Torch/CUDA environments passed H800 matmul forward/backward. Verified wheel prefetch accelerates common dependencies; both compiled extension builds remain pending."
+      "detail": "Both environment foundations installed. Both Torch CUDA matmul forward/backward and policy headless PyRep RGB/depth capture plus graceful shutdown passed. Policy gsplat wheel built; PyTorch3D and remaining extensions are building."
     },
     {
       "title": "Release data",
       "state": "In progress",
-      "detail": "Six of 12 assets passed SHA-256 and installation; test index has 16 tasks \u00d7 40 real episodes = 640. Resumed validation/training downloads through a freshly probed CAS bridge route; final official hashes remain mandatory."
+      "detail": "Seven of 12 assets passed SHA-256 and installation, including the validation package. Test index has 640 real episodes. Files above the HF 50 GB HTTP limit now use checked, resumable bounded ranges; final official SHA-256 remains mandatory."
     },
     {
       "title": "GPU acceptance",
       "state": "In progress",
-      "detail": "Both policy/world Torch H800 CUDA forward/backward passed under fresh idle-utilization leases. Rendering/KNN/FPS/PyTorch3D kernels and camera capture, then policy/WM services and batch-18 training smokes, remain pending."
+      "detail": "Both Torch H800 CUDA probes and real 256\u00d7256 RGB/depth simulator capture passed. Full compiled kernels in both environments, then policy/WM services and batch-18 training smokes, remain pending."
     },
     {
       "title": "Self collection",
@@ -38,7 +38,7 @@
     {
       "title": "Full training",
       "state": "Pending",
-      "detail": "Full development-host controller queued behind environment, data and smoke gates. Shared Stage 1, PhysMani Stage 2 and 3DFA: 100,000 updates each, seed 0, three idle cards, batch 18 per card."
+      "detail": "Reviewed full v2 controller queued behind environment, data and smoke gates. Stage 1, PhysMani Stage 2 and 3DFA: 100,000 updates each, seed 0, three idle cards, batch 18 per card."
     },
     {
       "title": "Policy evaluation",
