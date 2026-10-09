@@ -1,14 +1,14 @@
 {
-  "updated": "2026-10-09 06:13 UTC",
-  "status": "Both closed-loop smokes passed; first 40 formal episodes accepted",
+  "updated": "2026-10-09 06:24 UTC",
+  "status": "Both closed-loop smokes passed; 80 formal episodes accepted",
   "validated": {
     "protocol_checks": 37,
     "training_loop_checks": 2,
     "gpu_checks": 11,
     "collected_successes": 32,
     "training_updates": 0,
-    "evaluated_episodes": 40,
-    "last_verified": "2026-10-09 06:13 UTC"
+    "evaluated_episodes": 80,
+    "last_verified": "2026-10-09 06:24 UTC"
   },
   "phases": [
     {
@@ -24,7 +24,7 @@
     {
       "title": "Release data",
       "state": "In progress",
-      "detail": "Ten of twelve assets passed official SHA-256 acceptance and safe extraction. Training-WM part 1 is installed; part 2 is downloading and part 3 follows. All 640 held-out test episodes are indexed. Partial bytes are not accepted assets."
+      "detail": "Ten of twelve assets are installed after official SHA-256 and safe extraction. Training-WM part 2 also passed its complete official SHA-256 and is extracting; part 3 follows. All 640 held-out test episodes are indexed. A verified archive is not installed until extraction finishes."
     },
     {
       "title": "GPU acceptance",
@@ -49,7 +49,7 @@
     {
       "title": "Policy evaluation",
       "state": "In progress",
-      "detail": "Released 3DFA checkpoint 79,999 completed its first 40-episode task: exact held-out identities, normal client exit and no inference/infrastructure exception passed. The high-speed task is running. Both acceptance smokes passed and are excluded from this counter. No complete formal checkpoint result yet; total released/retrained budget is 12,800."
+      "detail": "Released 3DFA checkpoint 79,999 completed both normal/high-speed buzz tasks: 80 held-out episodes passed exact identities, normal client exits and inference/infrastructure exception scans. Rotating-peg evaluation is running. Both acceptance smokes are excluded from this counter. No complete formal checkpoint result yet; total budget is 12,800."
     },
     {
       "title": "World-model quality",
