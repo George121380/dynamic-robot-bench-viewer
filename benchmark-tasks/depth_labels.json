@@ -1,0 +1,435 @@
+{
+  "schema": "benchmark-gif-depth-labels-v1",
+  "checked_utc": "2026-10-09 22:51 UTC",
+  "scope": "Dataset/collection capability, not depth embedded in GIF files; rendering adapters remain unvalidated.",
+  "entries": {
+    "match_and_pick_from_conveyor": {
+      "status": "estimated",
+      "filters": [
+        "estimated",
+        "new_collection"
+      ],
+      "label_zh": "现有 RGB 需估计／重建 · 可新采 RGB-D",
+      "label_en": "Existing RGB needs estimation/reconstruction · new RGB-D possible",
+      "note_zh": "当前包无 depth；官方样本有多视角标定，可尝试几何重建。",
+      "note_en": "Current packages lack depth; calibrated public views support a reconstruction attempt."
+    },
+    "push_puck_collision": {
+      "status": "new_collection",
+      "filters": [
+        "new_collection"
+      ],
+      "label_zh": "可新采 RGB-D · 当前记录无深度",
+      "label_en": "New RGB-D collection possible · no stored depth",
+      "note_zh": "可扩展 MuJoCo 采集；原帧完整状态重渲染尚未验证。",
+      "note_en": "Extend MuJoCo collection; original-frame state rendering is unverified."
+    },
+    "PandaFingerArticulationDiagnostic-v0": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 项目诊断",
+      "label_en": "Stored depth · project diagnostics",
+      "note_zh": "现有 HDF5 有 depth 和相机内外参。",
+      "note_en": "Existing HDF5 files have depth and camera calibration."
+    },
+    "RollBall-v1": {
+      "status": "rerender",
+      "filters": [
+        "stored",
+        "rerender"
+      ],
+      "label_zh": "公开轨迹可重渲染 · 项目诊断已有深度",
+      "label_en": "Public states can render depth · project diagnostics have depth",
+      "note_zh": "公开原始轨迹存 env_states；项目诊断已存 depth。",
+      "note_en": "Public raw trajectories store env_states; project diagnostics store depth."
+    },
+    "PullCubeTool-v1": {
+      "status": "rerender",
+      "filters": [
+        "stored",
+        "rerender"
+      ],
+      "label_zh": "公开轨迹可重渲染 · 项目诊断已有深度",
+      "label_en": "Public states can render depth · project diagnostics have depth",
+      "note_zh": "公开原始轨迹存 env_states；项目诊断已存 depth。",
+      "note_en": "Public raw trajectories store env_states; project diagnostics store depth."
+    },
+    "PokeCube-v1": {
+      "status": "rerender",
+      "filters": [
+        "stored",
+        "rerender"
+      ],
+      "label_zh": "公开轨迹可重渲染 · 项目诊断已有深度",
+      "label_en": "Public states can render depth · project diagnostics have depth",
+      "note_zh": "公开原始轨迹存 env_states；项目诊断已存 depth。",
+      "note_en": "Public raw trajectories store env_states; project diagnostics store depth."
+    },
+    "PickCube-v1": {
+      "status": "rerender",
+      "filters": [
+        "stored",
+        "rerender"
+      ],
+      "label_zh": "公开轨迹可重渲染 · 项目诊断已有深度",
+      "label_en": "Public states can render depth · project diagnostics have depth",
+      "note_zh": "公开原始轨迹存 env_states；项目诊断已存 depth。",
+      "note_en": "Public raw trajectories store env_states; project diagnostics store depth."
+    },
+    "PushT-v1": {
+      "status": "rerender",
+      "filters": [
+        "stored",
+        "rerender"
+      ],
+      "label_zh": "公开轨迹可重渲染 · 项目诊断已有深度",
+      "label_en": "Public states can render depth · project diagnostics have depth",
+      "note_zh": "公开原始轨迹存 env_states；项目诊断已存 depth。",
+      "note_en": "Public raw trajectories store env_states; project diagnostics store depth."
+    },
+    "OpenDrawer": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "可重渲染深度",
+      "label_en": "Depth can be rendered from saved states",
+      "note_zh": "保留 XML、states 和 episode extras；转换及帧对齐待验收。",
+      "note_en": "Preserve XML, states and episode extras; conversion/alignment need validation."
+    },
+    "PanTransfer": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "可重渲染深度",
+      "label_en": "Depth can be rendered from saved states",
+      "note_zh": "保留 XML、states 和 episode extras；转换及帧对齐待验收。",
+      "note_en": "Preserve XML, states and episode extras; conversion/alignment need validation."
+    },
+    "CloseFridge": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "可重渲染深度",
+      "label_en": "Depth can be rendered from saved states",
+      "note_zh": "保留 XML、states 和 episode extras；转换及帧对齐待验收。",
+      "note_en": "Preserve XML, states and episode extras; conversion/alignment need validation."
+    },
+    "SlideDishwasherRack": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "可重渲染深度",
+      "label_en": "Depth can be rendered from saved states",
+      "note_zh": "保留 XML、states 和 episode extras；转换及帧对齐待验收。",
+      "note_en": "Preserve XML, states and episode extras; conversion/alignment need validation."
+    },
+    "StackBowlsCabinet": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "可重渲染深度",
+      "label_en": "Depth can be rendered from saved states",
+      "note_zh": "保留 XML、states 和 episode extras；转换及帧对齐待验收。",
+      "note_en": "Preserve XML, states and episode extras; conversion/alignment need validation."
+    },
+    "CoffeeSetupMug": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "可重渲染深度",
+      "label_en": "Depth can be rendered from saved states",
+      "note_zh": "保留 XML、states 和 episode extras；转换及帧对齐待验收。",
+      "note_en": "Preserve XML, states and episode extras; conversion/alignment need validation."
+    },
+    "SlideToasterOvenRack": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "可重渲染深度",
+      "label_en": "Depth can be rendered from saved states",
+      "note_zh": "保留 XML、states 和 episode extras；转换及帧对齐待验收。",
+      "note_en": "Preserve XML, states and episode extras; conversion/alignment need validation."
+    },
+    "StirVegetables": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "可重渲染深度",
+      "label_en": "Depth can be rendered from saved states",
+      "note_zh": "保留 XML、states 和 episode extras；转换及帧对齐待验收。",
+      "note_en": "Preserve XML, states and episode extras; conversion/alignment need validation."
+    },
+    "ToolHang": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "可重渲染深度",
+      "label_en": "Depth can be rendered from saved states",
+      "note_zh": "raw 状态转观测支持 --depth；v1.5 兼容性待验收。",
+      "note_en": "Raw-state conversion supports --depth; validate v1.5 compatibility."
+    },
+    "reach_and_drag": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始数据",
+      "label_en": "Stored depth · original data",
+      "note_zh": "RLBench 发布格式有深度 PNG；所选归档尚未解包验收。",
+      "note_en": "The RLBench release format has depth PNGs; selected archives remain unverified."
+    },
+    "MOVi-C": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始数据",
+      "label_en": "Stored depth · original data",
+      "note_zh": "TFDS 有 depth；定义为相机中心射线距离。",
+      "note_en": "TFDS contains depth, defined as ray distance from camera center."
+    },
+    "CoPhy": {
+      "status": "conditional",
+      "filters": [
+        "conditional",
+        "new_collection"
+      ],
+      "label_zh": "部分可重建／新采 · 待验证",
+      "label_en": "Partial reconstruction/new collection · unverified",
+      "note_zh": "Blocktower 有生成器；BallsCF／CollisionCF 路径待核。",
+      "note_en": "Blocktower has a generator; BallsCF/CollisionCF paths need verification."
+    },
+    "AdroitHandHammer-v1": {
+      "status": "conditional",
+      "filters": [
+        "conditional",
+        "new_collection"
+      ],
+      "label_zh": "可生成 RGB-D · 完整状态待核",
+      "label_en": "RGB-D generation possible · verify full state",
+      "note_zh": "原始 D4RL 有状态恢复路径；所选 Minari state 字段未实查。",
+      "note_en": "Original D4RL supports state recovery; selected Minari state fields are unchecked."
+    },
+    "Physion-v1.5-OCP": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始数据",
+      "label_en": "Stored depth · original data",
+      "note_zh": "v1.5 Collide 原始 HDF5 已实查；MP4 预览无深度。",
+      "note_en": "Raw v1.5 Collide HDF5 was inspected; MP4 previews have no depth."
+    },
+    "sweep_to_dustpan_of_size": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始数据",
+      "label_en": "Stored depth · original data",
+      "note_zh": "RLBench 发布格式有深度 PNG；所选归档尚未解包验收。",
+      "note_en": "The RLBench release format has depth PNGs; selected archives remain unverified."
+    },
+    "CLEVRER": {
+      "status": "estimated",
+      "filters": [
+        "estimated"
+      ],
+      "label_zh": "现有视频需估计深度",
+      "label_en": "Existing videos require estimated depth",
+      "note_zh": "标准发布无像素深度；对象三维中心标注不等于表面深度。",
+      "note_en": "The standard release lacks pixel depth; object centers are not surface depth."
+    },
+    "TurnFaucet-v1": {
+      "status": "unconfirmed",
+      "filters": [
+        "unconfirmed"
+      ],
+      "label_zh": "v1 深度待确认",
+      "label_en": "v1 depth availability unconfirmed",
+      "note_zh": "匹配 v1 数据／资产尚未验收；v0 GIF 只是动作参考。",
+      "note_en": "Matching v1 data/assets are unaccepted; the v0 GIF is a motion reference."
+    },
+    "beat_the_rotating_buzz": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "beat_the_rotating_buzz_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "insert_onto_rotating_peg": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "insert_onto_rotating_peg_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "pick_moving_target_on_the_table": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "pick_moving_target_on_the_table_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "place_cups_on_rotating_frame": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "place_cups_on_rotating_frame_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "remove_cups_from_rotating_frame": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "remove_cups_from_rotating_frame_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "put_rubbish_in_moving_bin": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "put_rubbish_in_moving_bin_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "push_moving_button": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "push_moving_button_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "moving_basketball_in_hoop": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "moving_basketball_in_hoop_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始示范",
+      "label_en": "Stored depth · original demonstrations",
+      "note_zh": "原始示范有 front_depth；GIF 只展示 RGB。",
+      "note_en": "Original demonstrations have front_depth; this GIF shows RGB only."
+    },
+    "PhysMani": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已有深度 · 原始数据",
+      "label_en": "Stored depth · original data",
+      "note_zh": "原始示范／观测包有深度；WM 预测深度不是真值。",
+      "note_en": "Original observations have depth; WM predictions are not ground truth."
+    }
+  }
+}
