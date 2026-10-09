@@ -1,14 +1,14 @@
 {
-  "updated": "2026-10-08 18:43 UTC",
-  "status": "32 demonstrations accepted; world-model data generation running",
+  "updated": "2026-10-09 05:28 UTC",
+  "status": "32 demonstrations and WM packages verified; released closed-loop smoke running",
   "validated": {
-    "protocol_checks": 33,
+    "protocol_checks": 36,
     "training_loop_checks": 2,
-    "gpu_checks": 7,
+    "gpu_checks": 9,
     "collected_successes": 32,
     "training_updates": 0,
     "evaluated_episodes": 0,
-    "last_verified": "2026-10-08 18:42 UTC"
+    "last_verified": "2026-10-09 05:28 UTC"
   },
   "phases": [
     {
@@ -24,12 +24,12 @@
     {
       "title": "Release data",
       "state": "In progress",
-      "detail": "Seven of 12 assets fully installed; all 640 test episodes indexed. The 58.7 GB validation-WM archive passed its full official SHA-256 and is safely extracting. Remaining training archives are pending. Downloads resumed from preserved revision-bound sparse controls."
+      "detail": "Nine of twelve assets are installed after official SHA-256 acceptance and safe extraction; all 640 test episodes are indexed. Three remaining training-WM archives are downloading through the refreshed bounded relay and probed direct CDN. Partial bytes are not accepted assets."
     },
     {
       "title": "GPU acceptance",
       "state": "In progress",
-      "detail": "Both CUDA/camera bundles passed on both H800 development hosts. The real WM initialization/update/10-frame prediction test passed with the first fresh accepted demonstration explicitly replacing the absent author fixture. Policy service and batch-18 smokes are next."
+      "detail": "Both CUDA/camera bundles passed on both development hosts. Actual WM init/update/10-frame prediction and released PhysMani/3DFA WebSocket initialization with finite 8D inference passed. The fresh demonstration explicitly replaces the absent author WM fixture. Closed-loop and batch-18 training smokes follow."
     },
     {
       "title": "Self collection",
@@ -38,8 +38,8 @@
     },
     {
       "title": "Fresh WM & packaging",
-      "state": "In progress",
-      "detail": "Reviewed controller reuses the verified 32 demonstrations and runs the unmodified release tracker, prediction and visualization budgets. Container UUID routing is repaired. Original real Dataset packaging/batch acceptance follows generation."
+      "state": "Verified",
+      "detail": "All 32 four-view WM generations and visualizations completed with original budgets. The encoded-depth format adapter passed 384 byte-for-byte comparisons and the original Dataset produced a finite 32-episode batch with four cameras, WM velocity clouds and 8D actions. Failed partial outputs remain preserved."
     },
     {
       "title": "Full training",
@@ -48,8 +48,8 @@
     },
     {
       "title": "Policy evaluation",
-      "state": "Pending",
-      "detail": "Released and retrained PhysMani/3DFA; five checkpoints, 16 tasks, 40 episodes each: 12,800 episodes."
+      "state": "In progress",
+      "detail": "The released 3DFA single-episode closed-loop smoke is running; PhysMani follows. Diagnostic inference executes no actions and counts no formal episodes. Released and retrained models, five checkpoints, 16 tasks, 40 episodes each: 12,800 formal episodes remain pending."
     },
     {
       "title": "World-model quality",
@@ -58,7 +58,7 @@
     }
   ],
   "blockers": [
-    "Full reproduction remains in progress. Official training data, fresh WM/package acceptance, policy service checks and measured batch-18 smokes must pass before formal training; no model success rate has been produced."
+    "Full reproduction is unfinished. Remaining train-WM inputs and three measured batch-18/200-update smokes must pass before formal training. No formal model success rate has been produced."
   ],
   "results": [],
   "tasks": [
