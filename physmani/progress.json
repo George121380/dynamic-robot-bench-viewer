@@ -1,14 +1,14 @@
 {
-  "updated": "2026-10-09 06:29 UTC",
-  "status": "Both closed-loop smokes passed; 80 formal episodes accepted",
+  "updated": "2026-10-09 18:45 UTC",
+  "status": "2,280 formal episodes accepted; released 3DFA evaluation running",
   "validated": {
     "protocol_checks": 37,
     "training_loop_checks": 2,
     "gpu_checks": 11,
     "collected_successes": 32,
     "training_updates": 0,
-    "evaluated_episodes": 80,
-    "last_verified": "2026-10-09 06:29 UTC"
+    "evaluated_episodes": 2280,
+    "last_verified": "2026-10-09 18:45 UTC"
   },
   "phases": [
     {
@@ -23,8 +23,8 @@
     },
     {
       "title": "Release data",
-      "state": "In progress",
-      "detail": "Eleven of twelve assets passed complete official SHA-256 and safe extraction. Both training-WM parts 1 and 2 are installed; the final part 3 is downloading. All 640 held-out test episodes are indexed. Partial bytes are not accepted assets."
+      "state": "Verified",
+      "detail": "All twelve official assets passed complete official SHA-256, exact size and safe extraction/installation gates. All three training-WM parts are ready. All 640 held-out test episodes are indexed."
     },
     {
       "title": "GPU acceptance",
@@ -44,12 +44,12 @@
     {
       "title": "Full training",
       "state": "Pending",
-      "detail": "Full development-host controller queued behind environment, data and smoke gates. Stage 1, PhysMani Stage 2 and 3DFA: 100,000 updates each, seed 0, three idle cards, batch 18 per card."
+      "detail": "Controller will run three measured batch-18/200-update smokes after released-model evaluations, then Stage 1, PhysMani Stage 2 and 3DFA at 100,000 updates each, seed 0, three idle cards, batch 18 per card. All official input assets are installed."
     },
     {
       "title": "Policy evaluation",
       "state": "In progress",
-      "detail": "Released 3DFA checkpoint 79,999 completed both normal/high-speed buzz tasks: 80 held-out episodes passed exact identities, normal client exits and inference/infrastructure exception scans. Rotating-peg evaluation is running. Both acceptance smokes are excluded from this counter. No complete formal checkpoint result yet; total budget is 12,800."
+      "detail": "Released 3DFA checkpoints 79,999 / 84,999 / 89,999 completed all 640 episodes each. Checkpoint 94,999 has nine accepted tasks (360 episodes). Total 2,280 formal episodes passed exact identities, normal client exits and exception scans. Completed checkpoint scores are below; final global top-three awaits all five. Both acceptance smokes are excluded. Total budget: 12,800."
     },
     {
       "title": "World-model quality",
@@ -58,9 +58,31 @@
     }
   ],
   "blockers": [
-    "Full reproduction is unfinished. Remaining train-WM inputs and three measured batch-18/200-update smokes must pass before formal training. No formal model success rate has been produced."
+    "Full reproduction is unfinished. Released-model evaluations are running; three measured batch-18/200-update smokes must pass before formal training. The checkpoint rows below are complete individual results; final top-three and final-checkpoint summaries remain pending."
   ],
-  "results": [],
+  "results": [
+    {
+      "model": "3DFA",
+      "source": "released",
+      "checkpoint": 79999,
+      "episodes": 640,
+      "success_percent": 39.06
+    },
+    {
+      "model": "3DFA",
+      "source": "released",
+      "checkpoint": 84999,
+      "episodes": 640,
+      "success_percent": 36.25
+    },
+    {
+      "model": "3DFA",
+      "source": "released",
+      "checkpoint": 89999,
+      "episodes": 640,
+      "success_percent": 37.66
+    }
+  ],
   "tasks": [
     "beat_the_rotating_buzz",
     "beat_the_rotating_buzz_high_speed",
