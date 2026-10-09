@@ -1,14 +1,14 @@
 {
-  "updated": "2026-10-09 05:28 UTC",
-  "status": "32 demonstrations and WM packages verified; released closed-loop smoke running",
+  "updated": "2026-10-09 05:51 UTC",
+  "status": "Fresh data and packages verified; headless closed-loop retry awaiting idle GPU",
   "validated": {
-    "protocol_checks": 36,
+    "protocol_checks": 37,
     "training_loop_checks": 2,
     "gpu_checks": 9,
     "collected_successes": 32,
     "training_updates": 0,
     "evaluated_episodes": 0,
-    "last_verified": "2026-10-09 05:28 UTC"
+    "last_verified": "2026-10-09 05:51 UTC"
   },
   "phases": [
     {
@@ -24,12 +24,12 @@
     {
       "title": "Release data",
       "state": "In progress",
-      "detail": "Nine of twelve assets are installed after official SHA-256 acceptance and safe extraction; all 640 test episodes are indexed. Three remaining training-WM archives are downloading through the refreshed bounded relay and probed direct CDN. Partial bytes are not accepted assets."
+      "detail": "Ten of twelve assets passed official SHA-256 acceptance and safe extraction. Training-WM part 1 is installed; part 2 is downloading and part 3 follows. All 640 held-out test episodes are indexed. Partial bytes are not accepted assets."
     },
     {
       "title": "GPU acceptance",
       "state": "In progress",
-      "detail": "Both CUDA/camera bundles passed on both development hosts. Actual WM init/update/10-frame prediction and released PhysMani/3DFA WebSocket initialization with finite 8D inference passed. The fresh demonstration explicitly replaces the absent author WM fixture. Closed-loop and batch-18 training smokes follow."
+      "detail": "Both CUDA/camera bundles passed. Actual WM init/update/10-frame prediction and released PhysMani/3DFA WebSocket finite 8D inference passed. The first closed-loop attempt was blocked by a simulator informational modal and produced no valid episode. A reviewed headless retry retains warnings/errors and awaits ten idle GPU samples."
     },
     {
       "title": "Self collection",
@@ -49,7 +49,7 @@
     {
       "title": "Policy evaluation",
       "state": "In progress",
-      "detail": "The released 3DFA single-episode closed-loop smoke is running; PhysMani follows. Diagnostic inference executes no actions and counts no formal episodes. Released and retrained models, five checkpoints, 16 tasks, 40 episodes each: 12,800 formal episodes remain pending."
+      "detail": "A new headless controller verified and reused the completed collection, WM and 384-check package receipts. It is awaiting idle GPU utilization for the released 3DFA single-episode smoke, then PhysMani. The stopped modal-blocked attempt counts no episode. All 12,800 formal episodes remain pending."
     },
     {
       "title": "World-model quality",
