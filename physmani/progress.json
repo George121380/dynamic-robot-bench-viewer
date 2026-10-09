@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-09 06:24 UTC",
+  "updated": "2026-10-09 06:29 UTC",
   "status": "Both closed-loop smokes passed; 80 formal episodes accepted",
   "validated": {
     "protocol_checks": 37,
@@ -8,7 +8,7 @@
     "collected_successes": 32,
     "training_updates": 0,
     "evaluated_episodes": 80,
-    "last_verified": "2026-10-09 06:24 UTC"
+    "last_verified": "2026-10-09 06:29 UTC"
   },
   "phases": [
     {
@@ -24,7 +24,7 @@
     {
       "title": "Release data",
       "state": "In progress",
-      "detail": "Ten of twelve assets are installed after official SHA-256 and safe extraction. Training-WM part 2 also passed its complete official SHA-256 and is extracting; part 3 follows. All 640 held-out test episodes are indexed. A verified archive is not installed until extraction finishes."
+      "detail": "Eleven of twelve assets passed complete official SHA-256 and safe extraction. Both training-WM parts 1 and 2 are installed; the final part 3 is downloading. All 640 held-out test episodes are indexed. Partial bytes are not accepted assets."
     },
     {
       "title": "GPU acceptance",
