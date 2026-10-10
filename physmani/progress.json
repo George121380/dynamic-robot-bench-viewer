@@ -1,14 +1,14 @@
 {
-  "updated": "2026-10-09 18:45 UTC",
-  "status": "2,280 formal episodes accepted; released 3DFA evaluation running",
+  "updated": "2026-10-10 03:31 UTC",
+  "status": "Released 3DFA complete; PhysMani evaluation running",
   "validated": {
     "protocol_checks": 37,
     "training_loop_checks": 2,
     "gpu_checks": 11,
     "collected_successes": 32,
     "training_updates": 0,
-    "evaluated_episodes": 2280,
-    "last_verified": "2026-10-09 18:45 UTC"
+    "evaluated_episodes": 3200,
+    "last_verified": "2026-10-10 03:26 UTC"
   },
   "phases": [
     {
@@ -24,7 +24,7 @@
     {
       "title": "Release data",
       "state": "Verified",
-      "detail": "All twelve official assets passed complete official SHA-256, exact size and safe extraction/installation gates. All three training-WM parts are ready. All 640 held-out test episodes are indexed."
+      "detail": "All twelve official assets passed complete official SHA-256 and installation. Original Stage-1 / PhysMani train and validation Datasets also read 64 finite real CPU samples across all 16 tasks; no optimizer or GPU execution in this audit."
     },
     {
       "title": "GPU acceptance",
@@ -49,7 +49,7 @@
     {
       "title": "Policy evaluation",
       "state": "In progress",
-      "detail": "Released 3DFA checkpoints 79,999 / 84,999 / 89,999 completed all 640 episodes each. Checkpoint 94,999 has nine accepted tasks (360 episodes). Total 2,280 formal episodes passed exact identities, normal client exits and exception scans. Completed checkpoint scores are below; final global top-three awaits all five. Both acceptance smokes are excluded. Total budget: 12,800."
+      "detail": "Released 3DFA completed all five checkpoints / 3,200 episodes. Global top-three [99999, 79999, 94999]: 39.11% \u00b1 0.32 percentage points; final checkpoint: 39.53%. PhysMani with online WM is running. Total accepted: 3,200/12,800. Smokes and unfinished tasks are excluded; checkpoint variation is not seed variability."
     },
     {
       "title": "World-model quality",
@@ -58,7 +58,7 @@
     }
   ],
   "blockers": [
-    "Full reproduction is unfinished. Released-model evaluations are running; three measured batch-18/200-update smokes must pass before formal training. The checkpoint rows below are complete individual results; final top-three and final-checkpoint summaries remain pending."
+    "Full reproduction is unfinished. Released PhysMani evaluation is running. Three measured batch-18/200-update smokes, full training, retrained evaluation and held-out WM quality remain pending."
   ],
   "results": [
     {
@@ -81,6 +81,20 @@
       "checkpoint": 89999,
       "episodes": 640,
       "success_percent": 37.66
+    },
+    {
+      "model": "3DFA",
+      "source": "released",
+      "checkpoint": 94999,
+      "episodes": 640,
+      "success_percent": 38.75
+    },
+    {
+      "model": "3DFA",
+      "source": "released",
+      "checkpoint": 99999,
+      "episodes": 640,
+      "success_percent": 39.53
     }
   ],
   "tasks": [
