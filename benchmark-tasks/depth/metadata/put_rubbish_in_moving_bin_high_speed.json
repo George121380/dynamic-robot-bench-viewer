@@ -1,0 +1,43 @@
+{
+  "source_format": "PhysMani observed HDF5",
+  "source_encoding": "RGB24 / (2^24-1), linear near/far",
+  "source_near_m": 0.009999999776482582,
+  "source_far_m": 4.5,
+  "extrinsic_convention": "world_to_camera; OpenCV +x right,+y down,+z forward",
+  "camera_axis_conversion": "native negative fx/fy -> OpenCV by flipping camera x/y axes",
+  "alignment": "same observations group/frame IDs; wm_predictions excluded",
+  "source_hdf5_sha256": "46b7a367e942f13a3aee9216f366365c05965d6f74e5f0dfdcf52d92b9020bd8",
+  "valid_definition": "finite and positive; known far-plane background excluded",
+  "projection_roundtrip_scope": "numerical self-consistency; not independent RGB alignment proof",
+  "projection_roundtrip_max_pixels": 5.684341886080802e-14,
+  "preview_sampling": "12 uniformly selected source indices; constant 125 ms GIF frame duration is illustrative, not source clock",
+  "id": "put_rubbish_in_moving_bin_high_speed",
+  "sample_id": "put_rubbish_in_moving_bin_high_speed",
+  "status": "passed",
+  "mode": "stored",
+  "frames": 12,
+  "depth_kind": "z",
+  "depth_unit": "m",
+  "depth_min_m": 1.0165952444076538,
+  "depth_max_m": 4.171214580535889,
+  "valid_fraction": 1.0,
+  "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+  "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+  "gif": "media/put_rubbish_in_moving_bin_high_speed.gif",
+  "poster": "media/put_rubbish_in_moving_bin_high_speed.jpg",
+  "metadata": "metadata/put_rubbish_in_moving_bin_high_speed.json",
+  "numerical_sha256": "c8428f72aa50a71536a53a8fec3069e1c6cae241a4a04a520be1da977838a042",
+  "preview_sha256": "f548399e62f9262949730bde0a950f60ae34939d1f0152c10368648957b9870e",
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/put_rubbish_in_moving_bin_high_speed/sample.npz",
+  "depth_source": "sim_gt",
+  "camera": "front",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    1.1144638061523438,
+    4.132870197296143
+  ]
+}

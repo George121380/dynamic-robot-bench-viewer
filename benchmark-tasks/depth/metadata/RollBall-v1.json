@@ -1,0 +1,40 @@
+{
+  "source_format": "project ManiSkill diagnostic HDF5",
+  "source_encoding": "millimetres, integer",
+  "extrinsic_convention": "world_to_camera; OpenCV +x right,+y down,+z forward",
+  "alignment": "RGB and depth share source frame indices",
+  "source_hdf5_sha256": "e0c68eebdd2c67a52758b604b5b16e30f723cc61261ba33e9334034a773f0db1",
+  "source_file_sha256": "e0c68eebdd2c67a52758b604b5b16e30f723cc61261ba33e9334034a773f0db1",
+  "valid_definition": "finite and positive; known far-plane background excluded",
+  "projection_roundtrip_scope": "numerical self-consistency; not independent RGB alignment proof",
+  "projection_roundtrip_max_pixels": 5.684341886080802e-14,
+  "preview_sampling": "12 uniformly selected source indices; constant 125 ms GIF frame duration is illustrative, not source clock",
+  "id": "RollBall-v1",
+  "sample_id": "RollBall-v1",
+  "status": "passed",
+  "mode": "stored",
+  "frames": 12,
+  "depth_kind": "z",
+  "depth_unit": "m",
+  "depth_min_m": 0.3070000112056732,
+  "depth_max_m": 5.78000020980835,
+  "valid_fraction": 1.0,
+  "note_zh": "项目诊断 HDF5 已存 RGB、毫米深度及相机参数；没有下载官方专家全库。",
+  "note_en": "Project diagnostic HDF5 stores RGB, millimeter depth and calibration; the official expert corpus was not downloaded.",
+  "gif": "media/RollBall-v1.gif",
+  "poster": "media/RollBall-v1.jpg",
+  "metadata": "metadata/RollBall-v1.json",
+  "numerical_sha256": "95add3d9ec2965cddcc39a78cbededb239c07d67f4d8716d8d66e5d8d19e39e4",
+  "preview_sha256": "2f85c85fd1da535fec5f296fac1dbe4816b72dca863b9d267e3340008f062781",
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/RollBall-v1/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    224,
+    224
+  ],
+  "depth_preview_range_m": [
+    0.34599998593330383,
+    5.508999824523926
+  ]
+}

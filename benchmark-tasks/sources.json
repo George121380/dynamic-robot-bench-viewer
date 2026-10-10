@@ -1286,5 +1286,8 @@
       },
       "poster_file": "posters/PhysMani.jpg"
     }
-  ]
+  ],
+  "depth_labels_file": "depth_labels.json",
+  "depth_labels_sha256": "a13ebf8445792c547885b0afc28248c85360dd1b0e2f53bc1da7ea7fd1da8c73",
+  "executed_depth_samples_file": "depth/manifest.json"
 }

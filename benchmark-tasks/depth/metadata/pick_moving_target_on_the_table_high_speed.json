@@ -1,0 +1,43 @@
+{
+  "source_format": "PhysMani observed HDF5",
+  "source_encoding": "RGB24 / (2^24-1), linear near/far",
+  "source_near_m": 0.009999999776482582,
+  "source_far_m": 4.5,
+  "extrinsic_convention": "world_to_camera; OpenCV +x right,+y down,+z forward",
+  "camera_axis_conversion": "native negative fx/fy -> OpenCV by flipping camera x/y axes",
+  "alignment": "same observations group/frame IDs; wm_predictions excluded",
+  "source_hdf5_sha256": "efcc41d43f22d53358fba7e15fb41959126711d7db874113ad2e67d66cb5dbd7",
+  "valid_definition": "finite and positive; known far-plane background excluded",
+  "projection_roundtrip_scope": "numerical self-consistency; not independent RGB alignment proof",
+  "projection_roundtrip_max_pixels": 5.684341886080802e-14,
+  "preview_sampling": "12 uniformly selected source indices; constant 125 ms GIF frame duration is illustrative, not source clock",
+  "id": "pick_moving_target_on_the_table_high_speed",
+  "sample_id": "pick_moving_target_on_the_table_high_speed",
+  "status": "passed",
+  "mode": "stored",
+  "frames": 12,
+  "depth_kind": "z",
+  "depth_unit": "m",
+  "depth_min_m": 1.0165826082229614,
+  "depth_max_m": 4.171214580535889,
+  "valid_fraction": 1.0,
+  "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+  "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+  "gif": "media/pick_moving_target_on_the_table_high_speed.gif",
+  "poster": "media/pick_moving_target_on_the_table_high_speed.jpg",
+  "metadata": "metadata/pick_moving_target_on_the_table_high_speed.json",
+  "numerical_sha256": "c8e652cc9edbd66582fa8c6c99a63d5c7574df99e750b0d130f8d0c7719f41b4",
+  "preview_sha256": "558404ff64b1314743c55c70b54684883cf7d016340cbe4e66e49130968ec404",
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/pick_moving_target_on_the_table_high_speed/sample.npz",
+  "depth_source": "sim_gt",
+  "camera": "front",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    1.118333101272583,
+    4.138260841369629
+  ]
+}

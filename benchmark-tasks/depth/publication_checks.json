@@ -1,0 +1,1024 @@
+{
+  "checked_utc": "2026-10-10 02:02 UTC",
+  "anonymous_gallery": "https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/",
+  "files_verified": 125,
+  "all_passed": true,
+  "checks": [
+    {
+      "path": "index.html",
+      "http_status": 200,
+      "sha256": "f3014fad1a781d0c1a6fcfcfc87be3497f24d81d583f45f6c270cdadaccd837f",
+      "expected_sha256": "f3014fad1a781d0c1a6fcfcfc87be3497f24d81d583f45f6c270cdadaccd837f",
+      "bytes": 93445,
+      "passed": true
+    },
+    {
+      "path": "sources.json",
+      "http_status": 200,
+      "sha256": "e7498d2d64831081dd4982a17f91fa43eca922ccc6d1818b553b3b7884ba5d4e",
+      "expected_sha256": "e7498d2d64831081dd4982a17f91fa43eca922ccc6d1818b553b3b7884ba5d4e",
+      "bytes": 64438,
+      "passed": true
+    },
+    {
+      "path": "depth_labels.json",
+      "http_status": 200,
+      "sha256": "a13ebf8445792c547885b0afc28248c85360dd1b0e2f53bc1da7ea7fd1da8c73",
+      "expected_sha256": "a13ebf8445792c547885b0afc28248c85360dd1b0e2f53bc1da7ea7fd1da8c73",
+      "bytes": 21810,
+      "passed": true
+    },
+    {
+      "path": "depth/index.html",
+      "http_status": 200,
+      "sha256": "075645d551d1a2b67ef11b15f838ee884c1b447f380387c38f24751240581d58",
+      "expected_sha256": "075645d551d1a2b67ef11b15f838ee884c1b447f380387c38f24751240581d58",
+      "bytes": 49593,
+      "passed": true
+    },
+    {
+      "path": "depth/acceptance_checks.json",
+      "http_status": 200,
+      "sha256": "b745b2ae9aefc87e0058145c2da2f01caea5d215250335a835f64ffd8bdb1c86",
+      "expected_sha256": "b745b2ae9aefc87e0058145c2da2f01caea5d215250335a835f64ffd8bdb1c86",
+      "bytes": 14341,
+      "passed": true
+    },
+    {
+      "path": "depth/manifest.json",
+      "http_status": 200,
+      "sha256": "5935872a46ba20a53ff453a65d380206d2df0c1edd73fbed06615350ccde2129",
+      "expected_sha256": "5935872a46ba20a53ff453a65d380206d2df0c1edd73fbed06615350ccde2129",
+      "bytes": 36583,
+      "passed": true
+    },
+    {
+      "path": "depth/environment_versions.json",
+      "http_status": 200,
+      "sha256": "448a235021f3239f41ddf32392e307c20c1ece96f4c418510120085a4311af4f",
+      "expected_sha256": "448a235021f3239f41ddf32392e307c20c1ece96f4c418510120085a4311af4f",
+      "bytes": 378,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/ToolHang.json",
+      "http_status": 200,
+      "sha256": "4969c1c0c76471f760e16dccf8389d8fffeeb3f7fb5895ca3b7f24dace1340b1",
+      "expected_sha256": "4969c1c0c76471f760e16dccf8389d8fffeeb3f7fb5895ca3b7f24dace1340b1",
+      "bytes": 2341,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/push_moving_button.json",
+      "http_status": 200,
+      "sha256": "ec9c028baa2589bb332bd80112f9738f18f5eb540c50a791baa2f7b140b1229f",
+      "expected_sha256": "ec9c028baa2589bb332bd80112f9738f18f5eb540c50a791baa2f7b140b1229f",
+      "bytes": 1912,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/place_cups_on_rotating_frame_high_speed.json",
+      "http_status": 200,
+      "sha256": "1e0a65f5e3be6c19c6c14761f81c0276975c6883192a7f54927985cede14a02c",
+      "expected_sha256": "1e0a65f5e3be6c19c6c14761f81c0276975c6883192a7f54927985cede14a02c",
+      "bytes": 2038,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/beat_the_rotating_buzz_high_speed.json",
+      "http_status": 200,
+      "sha256": "9beb212546b204200637f3c02442eac040e7973e18e235b17ec2bd9c38f8a16a",
+      "expected_sha256": "9beb212546b204200637f3c02442eac040e7973e18e235b17ec2bd9c38f8a16a",
+      "bytes": 2001,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/sweep_to_dustpan_of_size.json",
+      "http_status": 200,
+      "sha256": "67d90c93bf456e346fb18eda91fb1100b9de43ed055ca0b7e0f08eccf33b4cc9",
+      "expected_sha256": "67d90c93bf456e346fb18eda91fb1100b9de43ed055ca0b7e0f08eccf33b4cc9",
+      "bytes": 2061,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/PandaFingerArticulationDiagnostic-v0.json",
+      "http_status": 200,
+      "sha256": "7458dc44772e11c773be64731e4b7ec9a9f74990b15890253668d2569e8e8435",
+      "expected_sha256": "7458dc44772e11c773be64731e4b7ec9a9f74990b15890253668d2569e8e8435",
+      "bytes": 1983,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/PhysMani.json",
+      "http_status": 200,
+      "sha256": "bec8d443bd04c428f29405ed64cdab74ec6397853f8723690c99cd5099fb6ea6",
+      "expected_sha256": "bec8d443bd04c428f29405ed64cdab74ec6397853f8723690c99cd5099fb6ea6",
+      "bytes": 1907,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/StackBowlsCabinet.json",
+      "http_status": 200,
+      "sha256": "dc3747a7d12d4f134025cd422a1a3893476f2e086eb479ed1ea4f53b8cbddfa8",
+      "expected_sha256": "dc3747a7d12d4f134025cd422a1a3893476f2e086eb479ed1ea4f53b8cbddfa8",
+      "bytes": 2683,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/PickCube-v1.json",
+      "http_status": 200,
+      "sha256": "1b6075792777b9537fbe7a5e5ea3bcf7df7de2617008785cab9edc9f88cba2a1",
+      "expected_sha256": "1b6075792777b9537fbe7a5e5ea3bcf7df7de2617008785cab9edc9f88cba2a1",
+      "bytes": 1834,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/SlideDishwasherRack.json",
+      "http_status": 200,
+      "sha256": "0d4715f363291624c5d5927f8c28c9c5e7369d2601a4ba655b571183f5c2d228",
+      "expected_sha256": "0d4715f363291624c5d5927f8c28c9c5e7369d2601a4ba655b571183f5c2d228",
+      "bytes": 2694,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/insert_onto_rotating_peg.json",
+      "http_status": 200,
+      "sha256": "aa11d03dd3e789fd75607b3ae4c15bed75333ca65cbbeb87142df7033f52c1fd",
+      "expected_sha256": "aa11d03dd3e789fd75607b3ae4c15bed75333ca65cbbeb87142df7033f52c1fd",
+      "bytes": 1948,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/PushT-v1.json",
+      "http_status": 200,
+      "sha256": "78a34603cdbcdf8b42ff0e979bdf4f2993854c638073ef352ac9dd5a18dfb302",
+      "expected_sha256": "78a34603cdbcdf8b42ff0e979bdf4f2993854c638073ef352ac9dd5a18dfb302",
+      "bytes": 1817,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/moving_basketball_in_hoop.json",
+      "http_status": 200,
+      "sha256": "aefbe7f45f1fd76f8b369ee10615e43c95c32020161d91675d127a525e4f0291",
+      "expected_sha256": "aefbe7f45f1fd76f8b369ee10615e43c95c32020161d91675d127a525e4f0291",
+      "bytes": 1954,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/put_rubbish_in_moving_bin.json",
+      "http_status": 200,
+      "sha256": "db8f6ec27c9a9e821255166a51ff6fc6328036e2b6b32a09dbf7764f42bd0dbb",
+      "expected_sha256": "db8f6ec27c9a9e821255166a51ff6fc6328036e2b6b32a09dbf7764f42bd0dbb",
+      "bytes": 1954,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/StirVegetables.json",
+      "http_status": 200,
+      "sha256": "6f0265aa9ecc9249a45a67401812935f5e2f98e1ff2b86a75be639faf547ee12",
+      "expected_sha256": "6f0265aa9ecc9249a45a67401812935f5e2f98e1ff2b86a75be639faf547ee12",
+      "bytes": 2662,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/CoPhy.json",
+      "http_status": 200,
+      "sha256": "ff2a3802ac3b3ba98a52a2ef5441d905511b810fe392419f7632842173ad1397",
+      "expected_sha256": "ff2a3802ac3b3ba98a52a2ef5441d905511b810fe392419f7632842173ad1397",
+      "bytes": 1747,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/push_moving_button_high_speed.json",
+      "http_status": 200,
+      "sha256": "29c18a3d218e9b852cb38e8bcbb149d83cdaf9839c617bc7ab5be34f2adbd27b",
+      "expected_sha256": "29c18a3d218e9b852cb38e8bcbb149d83cdaf9839c617bc7ab5be34f2adbd27b",
+      "bytes": 1977,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/push_puck_collision.json",
+      "http_status": 200,
+      "sha256": "7a68881a0b612a01af31784ce388436b52ac70f0cab862eec47af68152bc208d",
+      "expected_sha256": "7a68881a0b612a01af31784ce388436b52ac70f0cab862eec47af68152bc208d",
+      "bytes": 2468,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/place_cups_on_rotating_frame.json",
+      "http_status": 200,
+      "sha256": "b9ff4d98c1ca08176b50c65fdef4d0afe414a21bc313fe20cc2a1ffd1a8bc7d9",
+      "expected_sha256": "b9ff4d98c1ca08176b50c65fdef4d0afe414a21bc313fe20cc2a1ffd1a8bc7d9",
+      "bytes": 1972,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/Physion-v1.5-OCP.json",
+      "http_status": 200,
+      "sha256": "3136535e0aa842b97b97a5d3a0d95b92e64a5dcbbbe34877caca9b9a4569e84a",
+      "expected_sha256": "3136535e0aa842b97b97a5d3a0d95b92e64a5dcbbbe34877caca9b9a4569e84a",
+      "bytes": 3025,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/MOVi-C.json",
+      "http_status": 200,
+      "sha256": "7ac028956a95eb6c986320c77226ab4b93f24ea68decde5345017f02a4d4a0ee",
+      "expected_sha256": "7ac028956a95eb6c986320c77226ab4b93f24ea68decde5345017f02a4d4a0ee",
+      "bytes": 1825,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/remove_cups_from_rotating_frame_high_speed.json",
+      "http_status": 200,
+      "sha256": "878dc90cc94939e4f6ed65e27f3d78f61bd7ad18cf08cb6c36c4bb4356e4d367",
+      "expected_sha256": "878dc90cc94939e4f6ed65e27f3d78f61bd7ad18cf08cb6c36c4bb4356e4d367",
+      "bytes": 2056,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/reach_and_drag.json",
+      "http_status": 200,
+      "sha256": "7d994a0087e9d5304453d80d4000d61ae26ad72c743a5eb0690cb376a24cecdf",
+      "expected_sha256": "7d994a0087e9d5304453d80d4000d61ae26ad72c743a5eb0690cb376a24cecdf",
+      "bytes": 2001,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/moving_basketball_in_hoop_high_speed.json",
+      "http_status": 200,
+      "sha256": "5ff6882fb7a72e7b1123e963522752f0bf9a5a315cca04a614d8b7070465ad2f",
+      "expected_sha256": "5ff6882fb7a72e7b1123e963522752f0bf9a5a315cca04a614d8b7070465ad2f",
+      "bytes": 2020,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/put_rubbish_in_moving_bin_high_speed.json",
+      "http_status": 200,
+      "sha256": "053ca94631afbe844b28398d14db592e6073e978034d704b0d381b346cbec7e6",
+      "expected_sha256": "053ca94631afbe844b28398d14db592e6073e978034d704b0d381b346cbec7e6",
+      "bytes": 2020,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/match_and_pick_from_conveyor.json",
+      "http_status": 200,
+      "sha256": "a5fb469ea857bfe24c4414288a5aaa18da452ccdb6c58d8e520138ec6591f9c0",
+      "expected_sha256": "a5fb469ea857bfe24c4414288a5aaa18da452ccdb6c58d8e520138ec6591f9c0",
+      "bytes": 2341,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/PullCubeTool-v1.json",
+      "http_status": 200,
+      "sha256": "c1a35d80151f69c4af52a7fdfe7d847125313ad791295e2936c4a5d7ced0ff92",
+      "expected_sha256": "c1a35d80151f69c4af52a7fdfe7d847125313ad791295e2936c4a5d7ced0ff92",
+      "bytes": 1858,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/PokeCube-v1.json",
+      "http_status": 200,
+      "sha256": "a29fd644a6dc7d31106a3a19b83f4d063e67a53655e4bf04dbf69834635cef94",
+      "expected_sha256": "a29fd644a6dc7d31106a3a19b83f4d063e67a53655e4bf04dbf69834635cef94",
+      "bytes": 1834,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/OpenDrawer.json",
+      "http_status": 200,
+      "sha256": "ba6d4b19ce5c3e7752e4c803c846e0edcda4cc7dd887ccad50a89092ade8d3f4",
+      "expected_sha256": "ba6d4b19ce5c3e7752e4c803c846e0edcda4cc7dd887ccad50a89092ade8d3f4",
+      "bytes": 2640,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/pick_moving_target_on_the_table_high_speed.json",
+      "http_status": 200,
+      "sha256": "ef368b47b5109b7eb40c84a248bf0d74a082ac9519e097b4070b22668ca88294",
+      "expected_sha256": "ef368b47b5109b7eb40c84a248bf0d74a082ac9519e097b4070b22668ca88294",
+      "bytes": 2055,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/PanTransfer.json",
+      "http_status": 200,
+      "sha256": "520869f151d8ffd8b42fc1f2549a1ee2c49bd817bb6242b9bc93de98bf620c1b",
+      "expected_sha256": "520869f151d8ffd8b42fc1f2549a1ee2c49bd817bb6242b9bc93de98bf620c1b",
+      "bytes": 2644,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/CoffeeSetupMug.json",
+      "http_status": 200,
+      "sha256": "3d3fac4b61c795ea28aa92f50591748700e3109f50617910b0540db8535074cd",
+      "expected_sha256": "3d3fac4b61c795ea28aa92f50591748700e3109f50617910b0540db8535074cd",
+      "bytes": 2664,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/AdroitHandHammer-v1.json",
+      "http_status": 200,
+      "sha256": "e7870a519a209706fc66c609afcca12f820b03d9b693eb8a25e557071c508a7f",
+      "expected_sha256": "e7870a519a209706fc66c609afcca12f820b03d9b693eb8a25e557071c508a7f",
+      "bytes": 2577,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/RollBall-v1.json",
+      "http_status": 200,
+      "sha256": "73dfe7edcdf869026b264638dcd8558a1a6b604e8991490ec142c380620de557",
+      "expected_sha256": "73dfe7edcdf869026b264638dcd8558a1a6b604e8991490ec142c380620de557",
+      "bytes": 1834,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/remove_cups_from_rotating_frame.json",
+      "http_status": 200,
+      "sha256": "c5b0109de679b9b96a9bf193c4b5453818c0d13a4e4e2c7bd7796bca829a6fac",
+      "expected_sha256": "c5b0109de679b9b96a9bf193c4b5453818c0d13a4e4e2c7bd7796bca829a6fac",
+      "bytes": 1990,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/pick_moving_target_on_the_table.json",
+      "http_status": 200,
+      "sha256": "f955d4230db86fa6359890d82b64f4a1fb152cef78d578297c61e9504dd5e842",
+      "expected_sha256": "f955d4230db86fa6359890d82b64f4a1fb152cef78d578297c61e9504dd5e842",
+      "bytes": 1989,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/SlideToasterOvenRack.json",
+      "http_status": 200,
+      "sha256": "33ba4926404d026ef3119365709ae33842e8d49eee1f51c59d42b284a5281c11",
+      "expected_sha256": "33ba4926404d026ef3119365709ae33842e8d49eee1f51c59d42b284a5281c11",
+      "bytes": 2699,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/insert_onto_rotating_peg_high_speed.json",
+      "http_status": 200,
+      "sha256": "37276926de149b020298377767c8a9e622a94593ed418eb7179798ac6eea8d35",
+      "expected_sha256": "37276926de149b020298377767c8a9e622a94593ed418eb7179798ac6eea8d35",
+      "bytes": 2014,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/beat_the_rotating_buzz.json",
+      "http_status": 200,
+      "sha256": "0aeb74f06beb0e3658d3243aa65dd0b7c4d597ae68bdc3be400e4983ee2edb8f",
+      "expected_sha256": "0aeb74f06beb0e3658d3243aa65dd0b7c4d597ae68bdc3be400e4983ee2edb8f",
+      "bytes": 1935,
+      "passed": true
+    },
+    {
+      "path": "depth/metadata/CloseFridge.json",
+      "http_status": 200,
+      "sha256": "03351e6158d4a8aad61edd8956215cf88571addeb0b58c7c3b84164200597203",
+      "expected_sha256": "03351e6158d4a8aad61edd8956215cf88571addeb0b58c7c3b84164200597203",
+      "bytes": 2648,
+      "passed": true
+    },
+    {
+      "path": "depth/media/PandaFingerArticulationDiagnostic-v0.gif",
+      "http_status": 200,
+      "sha256": "139643247934abd32e0f6dc5defddb4bf1f58e4283f3495a5bcbbc04c8fd8ad3",
+      "expected_sha256": "139643247934abd32e0f6dc5defddb4bf1f58e4283f3495a5bcbbc04c8fd8ad3",
+      "bytes": 85443,
+      "passed": true
+    },
+    {
+      "path": "depth/media/CloseFridge.gif",
+      "http_status": 200,
+      "sha256": "23525154b4dfb9ed074db5d47c66b5bb66c49710690bf8ee9e446893e659b83c",
+      "expected_sha256": "23525154b4dfb9ed074db5d47c66b5bb66c49710690bf8ee9e446893e659b83c",
+      "bytes": 536196,
+      "passed": true
+    },
+    {
+      "path": "depth/media/remove_cups_from_rotating_frame_high_speed.gif",
+      "http_status": 200,
+      "sha256": "6e6e474cba163605cb8737dbd6f65678e9e25a75772f47b4277c70796b64ff31",
+      "expected_sha256": "6e6e474cba163605cb8737dbd6f65678e9e25a75772f47b4277c70796b64ff31",
+      "bytes": 468822,
+      "passed": true
+    },
+    {
+      "path": "depth/media/match_and_pick_from_conveyor.gif",
+      "http_status": 200,
+      "sha256": "800eb6e524923fd0239c40b04124fd9e49d06b0d226ea38f18b190d9206fd08d",
+      "expected_sha256": "800eb6e524923fd0239c40b04124fd9e49d06b0d226ea38f18b190d9206fd08d",
+      "bytes": 323054,
+      "passed": true
+    },
+    {
+      "path": "depth/media/sweep_to_dustpan_of_size.gif",
+      "http_status": 200,
+      "sha256": "86fe3324ecdbe93f135889457f5d6d84a6a99eb976a236fb4892034e10234278",
+      "expected_sha256": "86fe3324ecdbe93f135889457f5d6d84a6a99eb976a236fb4892034e10234278",
+      "bytes": 433368,
+      "passed": true
+    },
+    {
+      "path": "depth/media/ToolHang.gif",
+      "http_status": 200,
+      "sha256": "105e356f47f1b5f5267bdb43d751b7bf3a8218b2ca2701b95f5aee7993d14fa5",
+      "expected_sha256": "105e356f47f1b5f5267bdb43d751b7bf3a8218b2ca2701b95f5aee7993d14fa5",
+      "bytes": 470943,
+      "passed": true
+    },
+    {
+      "path": "depth/media/push_puck_collision.jpg",
+      "http_status": 200,
+      "sha256": "d7193c31777aa04067c9e22b2be0d95a9eac1555f47f176dbcc05d1340806162",
+      "expected_sha256": "d7193c31777aa04067c9e22b2be0d95a9eac1555f47f176dbcc05d1340806162",
+      "bytes": 26315,
+      "passed": true
+    },
+    {
+      "path": "depth/media/pick_moving_target_on_the_table_high_speed.gif",
+      "http_status": 200,
+      "sha256": "558404ff64b1314743c55c70b54684883cf7d016340cbe4e66e49130968ec404",
+      "expected_sha256": "558404ff64b1314743c55c70b54684883cf7d016340cbe4e66e49130968ec404",
+      "bytes": 440772,
+      "passed": true
+    },
+    {
+      "path": "depth/media/beat_the_rotating_buzz_high_speed.jpg",
+      "http_status": 200,
+      "sha256": "007954f6c81b35830033fbc1e99d760a9fcd76d9767484d75db6f51596e6bf42",
+      "expected_sha256": "007954f6c81b35830033fbc1e99d760a9fcd76d9767484d75db6f51596e6bf42",
+      "bytes": 27933,
+      "passed": true
+    },
+    {
+      "path": "depth/media/insert_onto_rotating_peg.gif",
+      "http_status": 200,
+      "sha256": "2a0c39a69ebf6b315eb19072e4b44d559a510485a2a1b7112f2891de17155824",
+      "expected_sha256": "2a0c39a69ebf6b315eb19072e4b44d559a510485a2a1b7112f2891de17155824",
+      "bytes": 417193,
+      "passed": true
+    },
+    {
+      "path": "depth/media/PokeCube-v1.gif",
+      "http_status": 200,
+      "sha256": "de496ce039bd6678fa42a779b83205fb3839ea115472d64b9d130189b4375ba1",
+      "expected_sha256": "de496ce039bd6678fa42a779b83205fb3839ea115472d64b9d130189b4375ba1",
+      "bytes": 231775,
+      "passed": true
+    },
+    {
+      "path": "depth/media/RollBall-v1.jpg",
+      "http_status": 200,
+      "sha256": "314cd72ae575bfca8c30868eb3dc8e8e93907026da590434cfabb992b68a392f",
+      "expected_sha256": "314cd72ae575bfca8c30868eb3dc8e8e93907026da590434cfabb992b68a392f",
+      "bytes": 28051,
+      "passed": true
+    },
+    {
+      "path": "depth/media/CoffeeSetupMug.jpg",
+      "http_status": 200,
+      "sha256": "109a7194a6df894b52b23245446d45117b6dc1542628ee7155efb59f429edd4a",
+      "expected_sha256": "109a7194a6df894b52b23245446d45117b6dc1542628ee7155efb59f429edd4a",
+      "bytes": 34831,
+      "passed": true
+    },
+    {
+      "path": "depth/media/put_rubbish_in_moving_bin_high_speed.jpg",
+      "http_status": 200,
+      "sha256": "9c94df8475c49a478f48937d380e08629db857967755ee02a4e5976d43de448e",
+      "expected_sha256": "9c94df8475c49a478f48937d380e08629db857967755ee02a4e5976d43de448e",
+      "bytes": 28103,
+      "passed": true
+    },
+    {
+      "path": "depth/media/StirVegetables.jpg",
+      "http_status": 200,
+      "sha256": "b69ffb2d980f2a5414b63dad28fbbaaf494c912c168c0c636adf56061fb20bea",
+      "expected_sha256": "b69ffb2d980f2a5414b63dad28fbbaaf494c912c168c0c636adf56061fb20bea",
+      "bytes": 32238,
+      "passed": true
+    },
+    {
+      "path": "depth/media/push_moving_button_high_speed.jpg",
+      "http_status": 200,
+      "sha256": "acc26695d82fcc03852d67cef0382f6455ca19e742311dfb439bc957c0757a2f",
+      "expected_sha256": "acc26695d82fcc03852d67cef0382f6455ca19e742311dfb439bc957c0757a2f",
+      "bytes": 28648,
+      "passed": true
+    },
+    {
+      "path": "depth/media/push_moving_button.gif",
+      "http_status": 200,
+      "sha256": "c75168d7d36e8707599ac4fcf82181eca76461be23730942255cbf950846aa94",
+      "expected_sha256": "c75168d7d36e8707599ac4fcf82181eca76461be23730942255cbf950846aa94",
+      "bytes": 436431,
+      "passed": true
+    },
+    {
+      "path": "depth/media/Physion.gif",
+      "http_status": 200,
+      "sha256": "a6734c3c5573e72b861c864407af17a130556f9c7a40d60f89694928c3929ea2",
+      "expected_sha256": "a6734c3c5573e72b861c864407af17a130556f9c7a40d60f89694928c3929ea2",
+      "bytes": 564813,
+      "passed": true
+    },
+    {
+      "path": "depth/media/OpenDrawer.jpg",
+      "http_status": 200,
+      "sha256": "4f40d080d2cd4ba34e29e3213200340e1e610cac6d0b15caa7ff89cf8582cb6c",
+      "expected_sha256": "4f40d080d2cd4ba34e29e3213200340e1e610cac6d0b15caa7ff89cf8582cb6c",
+      "bytes": 29966,
+      "passed": true
+    },
+    {
+      "path": "depth/media/place_cups_on_rotating_frame_high_speed.jpg",
+      "http_status": 200,
+      "sha256": "b173b69d1ebc68c8792eba1ae45b8b91823513fccd02f8ac81332c35a3b7dad2",
+      "expected_sha256": "b173b69d1ebc68c8792eba1ae45b8b91823513fccd02f8ac81332c35a3b7dad2",
+      "bytes": 29136,
+      "passed": true
+    },
+    {
+      "path": "depth/media/StackBowlsCabinet.jpg",
+      "http_status": 200,
+      "sha256": "db30b6519838ba7c4bf02a8349618d331f56dbdb81276147f90d3b9ae1075ad8",
+      "expected_sha256": "db30b6519838ba7c4bf02a8349618d331f56dbdb81276147f90d3b9ae1075ad8",
+      "bytes": 30956,
+      "passed": true
+    },
+    {
+      "path": "depth/media/pick_moving_target_on_the_table.gif",
+      "http_status": 200,
+      "sha256": "cd302187b3c0a14b5c743f2b3e74142af44af555b03140fd470ed0ebb331d181",
+      "expected_sha256": "cd302187b3c0a14b5c743f2b3e74142af44af555b03140fd470ed0ebb331d181",
+      "bytes": 455170,
+      "passed": true
+    },
+    {
+      "path": "depth/media/place_cups_on_rotating_frame.gif",
+      "http_status": 200,
+      "sha256": "0bfacbf6b8af49045a38561a81c76b17b295e4888f7390c855a7faf9f4a06f96",
+      "expected_sha256": "0bfacbf6b8af49045a38561a81c76b17b295e4888f7390c855a7faf9f4a06f96",
+      "bytes": 400763,
+      "passed": true
+    },
+    {
+      "path": "depth/media/Hammer.gif",
+      "http_status": 200,
+      "sha256": "4e08f5bed88829c05005e5385606ff0e3b67d4766b7a05de5d23b4384efe999f",
+      "expected_sha256": "4e08f5bed88829c05005e5385606ff0e3b67d4766b7a05de5d23b4384efe999f",
+      "bytes": 235451,
+      "passed": true
+    },
+    {
+      "path": "depth/media/PushT-v1.jpg",
+      "http_status": 200,
+      "sha256": "510e086e3754da49408ce48ec8de4e67c6b8a1f73caf59fc229f7979a73abd32",
+      "expected_sha256": "510e086e3754da49408ce48ec8de4e67c6b8a1f73caf59fc229f7979a73abd32",
+      "bytes": 14901,
+      "passed": true
+    },
+    {
+      "path": "depth/media/SlideToasterOvenRack.gif",
+      "http_status": 200,
+      "sha256": "93ccb53f19b25e63a1c6b39ab55037d918b43082e27b299dfbc6e0604cd13254",
+      "expected_sha256": "93ccb53f19b25e63a1c6b39ab55037d918b43082e27b299dfbc6e0604cd13254",
+      "bytes": 490525,
+      "passed": true
+    },
+    {
+      "path": "depth/media/SlideDishwasherRack.gif",
+      "http_status": 200,
+      "sha256": "7683e609e409cd81ec41340ca66ad7467a1ca356814b2dc63a8b010243bb3808",
+      "expected_sha256": "7683e609e409cd81ec41340ca66ad7467a1ca356814b2dc63a8b010243bb3808",
+      "bytes": 504266,
+      "passed": true
+    },
+    {
+      "path": "depth/media/PickCube-v1.gif",
+      "http_status": 200,
+      "sha256": "1f2abae4de01f4f9cc072ed0877e96f1524b3a873bb7dbe32b27a3b7e32c2085",
+      "expected_sha256": "1f2abae4de01f4f9cc072ed0877e96f1524b3a873bb7dbe32b27a3b7e32c2085",
+      "bytes": 387305,
+      "passed": true
+    },
+    {
+      "path": "depth/media/CoPhy.jpg",
+      "http_status": 200,
+      "sha256": "403b88acedf70f2c623d82710b76ee418c06d8bdea5cc2a39877b23303d06ca4",
+      "expected_sha256": "403b88acedf70f2c623d82710b76ee418c06d8bdea5cc2a39877b23303d06ca4",
+      "bytes": 21499,
+      "passed": true
+    },
+    {
+      "path": "depth/media/PullCubeTool-v1.gif",
+      "http_status": 200,
+      "sha256": "869f2f975c7e75bc8d52592aa07c47f14f169ef5508d7a28c8b8af71ea6b4742",
+      "expected_sha256": "869f2f975c7e75bc8d52592aa07c47f14f169ef5508d7a28c8b8af71ea6b4742",
+      "bytes": 245551,
+      "passed": true
+    },
+    {
+      "path": "depth/media/reach_and_drag.jpg",
+      "http_status": 200,
+      "sha256": "1fce94d5a6b39cf93f39442a5216269385cfc839c877c3a2dffcfca5e15544be",
+      "expected_sha256": "1fce94d5a6b39cf93f39442a5216269385cfc839c877c3a2dffcfca5e15544be",
+      "bytes": 29652,
+      "passed": true
+    },
+    {
+      "path": "depth/media/moving_basketball_in_hoop.gif",
+      "http_status": 200,
+      "sha256": "2b48e73ab47a798db5a2b169cbf6efda1ed9bd1642364b93dd9361c467669daa",
+      "expected_sha256": "2b48e73ab47a798db5a2b169cbf6efda1ed9bd1642364b93dd9361c467669daa",
+      "bytes": 468237,
+      "passed": true
+    },
+    {
+      "path": "depth/media/PanTransfer.gif",
+      "http_status": 200,
+      "sha256": "90d3e07e6af43e5cf5ac9e0133649b075703f9ca0d9cfe7dd8700a5423c50fc9",
+      "expected_sha256": "90d3e07e6af43e5cf5ac9e0133649b075703f9ca0d9cfe7dd8700a5423c50fc9",
+      "bytes": 581177,
+      "passed": true
+    },
+    {
+      "path": "depth/media/remove_cups_from_rotating_frame.gif",
+      "http_status": 200,
+      "sha256": "e0442ea1a27323927c6c1b389d4635d4db97e7afa60707d15ec80f010e8a5a1c",
+      "expected_sha256": "e0442ea1a27323927c6c1b389d4635d4db97e7afa60707d15ec80f010e8a5a1c",
+      "bytes": 370245,
+      "passed": true
+    },
+    {
+      "path": "depth/media/MOVi-C.jpg",
+      "http_status": 200,
+      "sha256": "1cd32e1cdd60110da7066bf03303df2f6ab6802de1727c7490430813e808d0eb",
+      "expected_sha256": "1cd32e1cdd60110da7066bf03303df2f6ab6802de1727c7490430813e808d0eb",
+      "bytes": 9717,
+      "passed": true
+    },
+    {
+      "path": "depth/media/beat_the_rotating_buzz.jpg",
+      "http_status": 200,
+      "sha256": "eb336f99e1c88bab7a2aee8705c39a41f85592e17203ebcc8f4094b5304f3b11",
+      "expected_sha256": "eb336f99e1c88bab7a2aee8705c39a41f85592e17203ebcc8f4094b5304f3b11",
+      "bytes": 27918,
+      "passed": true
+    },
+    {
+      "path": "depth/media/moving_basketball_in_hoop_high_speed.jpg",
+      "http_status": 200,
+      "sha256": "cb1c857e6c82a8f726cc130ad9857036f72c4fd09bf0b320b0beb563b9a20364",
+      "expected_sha256": "cb1c857e6c82a8f726cc130ad9857036f72c4fd09bf0b320b0beb563b9a20364",
+      "bytes": 28579,
+      "passed": true
+    },
+    {
+      "path": "depth/media/insert_onto_rotating_peg_high_speed.gif",
+      "http_status": 200,
+      "sha256": "269a905471dab5d3c46fa39c3d03a7f8d0f886867d9e9acaa3240830d78d6fe7",
+      "expected_sha256": "269a905471dab5d3c46fa39c3d03a7f8d0f886867d9e9acaa3240830d78d6fe7",
+      "bytes": 447015,
+      "passed": true
+    },
+    {
+      "path": "depth/media/put_rubbish_in_moving_bin.gif",
+      "http_status": 200,
+      "sha256": "8c7a5e719c85eab95d3bfbfbb2fc382e05396c33b800d87310b839751acce5c3",
+      "expected_sha256": "8c7a5e719c85eab95d3bfbfbb2fc382e05396c33b800d87310b839751acce5c3",
+      "bytes": 475632,
+      "passed": true
+    },
+    {
+      "path": "depth/media/PandaFingerArticulationDiagnostic-v0.jpg",
+      "http_status": 200,
+      "sha256": "1ee3bd0da47cc9d71da39235472b08ee329ef748f50cfd93f64a56307fd8616b",
+      "expected_sha256": "1ee3bd0da47cc9d71da39235472b08ee329ef748f50cfd93f64a56307fd8616b",
+      "bytes": 28730,
+      "passed": true
+    },
+    {
+      "path": "depth/media/CloseFridge.jpg",
+      "http_status": 200,
+      "sha256": "33078f6ef8986fe187b52c3ed788e850d24cd49931e13ef0c9945f71dadbfbcf",
+      "expected_sha256": "33078f6ef8986fe187b52c3ed788e850d24cd49931e13ef0c9945f71dadbfbcf",
+      "bytes": 30615,
+      "passed": true
+    },
+    {
+      "path": "depth/media/match_and_pick_from_conveyor.jpg",
+      "http_status": 200,
+      "sha256": "f8dbbfed728f806b9f643c8469603339f0b240f30d8dc60afd22848e256fe331",
+      "expected_sha256": "f8dbbfed728f806b9f643c8469603339f0b240f30d8dc60afd22848e256fe331",
+      "bytes": 32563,
+      "passed": true
+    },
+    {
+      "path": "depth/media/remove_cups_from_rotating_frame_high_speed.jpg",
+      "http_status": 200,
+      "sha256": "9aa831e26ad8ffb151c24a8fe5070cccdd9baf8a9c5e0a076bf22b511c12a93a",
+      "expected_sha256": "9aa831e26ad8ffb151c24a8fe5070cccdd9baf8a9c5e0a076bf22b511c12a93a",
+      "bytes": 28671,
+      "passed": true
+    },
+    {
+      "path": "depth/media/sweep_to_dustpan_of_size.jpg",
+      "http_status": 200,
+      "sha256": "4c8ad9aef1cbdee62da3d3867957d797ddd06a77baa222d3f832608f4f7b1ea1",
+      "expected_sha256": "4c8ad9aef1cbdee62da3d3867957d797ddd06a77baa222d3f832608f4f7b1ea1",
+      "bytes": 34589,
+      "passed": true
+    },
+    {
+      "path": "depth/media/pick_moving_target_on_the_table_high_speed.jpg",
+      "http_status": 200,
+      "sha256": "ccd00098ccceabb6a4c1870060afa336ba375b066b51642c92b0514064280ba4",
+      "expected_sha256": "ccd00098ccceabb6a4c1870060afa336ba375b066b51642c92b0514064280ba4",
+      "bytes": 29414,
+      "passed": true
+    },
+    {
+      "path": "depth/media/push_puck_collision.gif",
+      "http_status": 200,
+      "sha256": "ffad00e15593d1a3f70ad3723d2a78b4501d379f6420490bd0568a47f557deed",
+      "expected_sha256": "ffad00e15593d1a3f70ad3723d2a78b4501d379f6420490bd0568a47f557deed",
+      "bytes": 163179,
+      "passed": true
+    },
+    {
+      "path": "depth/media/ToolHang.jpg",
+      "http_status": 200,
+      "sha256": "8c25e6fbcccbb870873d1a38e0e254b507dc575d7cbe66b7dcf9000e034e6e0d",
+      "expected_sha256": "8c25e6fbcccbb870873d1a38e0e254b507dc575d7cbe66b7dcf9000e034e6e0d",
+      "bytes": 24649,
+      "passed": true
+    },
+    {
+      "path": "depth/media/beat_the_rotating_buzz_high_speed.gif",
+      "http_status": 200,
+      "sha256": "700c2718f5c4f355500ff7b373d0075699c7b0784a2d96158700eb413dbe7bc9",
+      "expected_sha256": "700c2718f5c4f355500ff7b373d0075699c7b0784a2d96158700eb413dbe7bc9",
+      "bytes": 436241,
+      "passed": true
+    },
+    {
+      "path": "depth/media/insert_onto_rotating_peg.jpg",
+      "http_status": 200,
+      "sha256": "71c2fc37b634a31411efecdb8d5545c6122310c4dd96120dfa4cb56524849b3c",
+      "expected_sha256": "71c2fc37b634a31411efecdb8d5545c6122310c4dd96120dfa4cb56524849b3c",
+      "bytes": 28066,
+      "passed": true
+    },
+    {
+      "path": "depth/media/PokeCube-v1.jpg",
+      "http_status": 200,
+      "sha256": "cd19b68df998f7dd66a88316448822d6b9f0904fb5742e85dcb502b4fb9c4b02",
+      "expected_sha256": "cd19b68df998f7dd66a88316448822d6b9f0904fb5742e85dcb502b4fb9c4b02",
+      "bytes": 28795,
+      "passed": true
+    },
+    {
+      "path": "depth/media/RollBall-v1.gif",
+      "http_status": 200,
+      "sha256": "2f85c85fd1da535fec5f296fac1dbe4816b72dca863b9d267e3340008f062781",
+      "expected_sha256": "2f85c85fd1da535fec5f296fac1dbe4816b72dca863b9d267e3340008f062781",
+      "bytes": 346688,
+      "passed": true
+    },
+    {
+      "path": "depth/media/CoffeeSetupMug.gif",
+      "http_status": 200,
+      "sha256": "b15d6dc0cc74c8d11d0e846a0d7230740742123d8e7842d092d57a3e4a39a3fa",
+      "expected_sha256": "b15d6dc0cc74c8d11d0e846a0d7230740742123d8e7842d092d57a3e4a39a3fa",
+      "bytes": 548329,
+      "passed": true
+    },
+    {
+      "path": "depth/media/StirVegetables.gif",
+      "http_status": 200,
+      "sha256": "914466662133956d0020ee5bcdeda9b4e59ae4453e00517aa7bfcd42a815e356",
+      "expected_sha256": "914466662133956d0020ee5bcdeda9b4e59ae4453e00517aa7bfcd42a815e356",
+      "bytes": 673070,
+      "passed": true
+    },
+    {
+      "path": "depth/media/push_moving_button_high_speed.gif",
+      "http_status": 200,
+      "sha256": "09f83bf330fd4b274d9218e5ceb302bcbea7d1e76d46e956bcef6fe5f0eb8f05",
+      "expected_sha256": "09f83bf330fd4b274d9218e5ceb302bcbea7d1e76d46e956bcef6fe5f0eb8f05",
+      "bytes": 437499,
+      "passed": true
+    },
+    {
+      "path": "depth/media/put_rubbish_in_moving_bin_high_speed.gif",
+      "http_status": 200,
+      "sha256": "f548399e62f9262949730bde0a950f60ae34939d1f0152c10368648957b9870e",
+      "expected_sha256": "f548399e62f9262949730bde0a950f60ae34939d1f0152c10368648957b9870e",
+      "bytes": 499082,
+      "passed": true
+    },
+    {
+      "path": "depth/media/push_moving_button.jpg",
+      "http_status": 200,
+      "sha256": "9058b17711fafc4458658a1aa90269ab474fbc35561c50b720674becf38563f9",
+      "expected_sha256": "9058b17711fafc4458658a1aa90269ab474fbc35561c50b720674becf38563f9",
+      "bytes": 28611,
+      "passed": true
+    },
+    {
+      "path": "depth/media/Physion.jpg",
+      "http_status": 200,
+      "sha256": "cb19672f5dba5ffd5c673b1398bf4f4d305c193842fbd38bba371a9feb230d8a",
+      "expected_sha256": "cb19672f5dba5ffd5c673b1398bf4f4d305c193842fbd38bba371a9feb230d8a",
+      "bytes": 33938,
+      "passed": true
+    },
+    {
+      "path": "depth/media/place_cups_on_rotating_frame_high_speed.gif",
+      "http_status": 200,
+      "sha256": "d99c6aef3cf1ea17e32622e575e711aa4e0fdab7218350ad96c2cb76ebbb1514",
+      "expected_sha256": "d99c6aef3cf1ea17e32622e575e711aa4e0fdab7218350ad96c2cb76ebbb1514",
+      "bytes": 446000,
+      "passed": true
+    },
+    {
+      "path": "depth/media/OpenDrawer.gif",
+      "http_status": 200,
+      "sha256": "e7f30f21a0dbb4adba7636f5499369088d33560206976a25a44542366604f990",
+      "expected_sha256": "e7f30f21a0dbb4adba7636f5499369088d33560206976a25a44542366604f990",
+      "bytes": 581578,
+      "passed": true
+    },
+    {
+      "path": "depth/media/StackBowlsCabinet.gif",
+      "http_status": 200,
+      "sha256": "ee513e21bc91103dfea407aee57f5dae6fd757a6102509ca92dc4a8bb7276466",
+      "expected_sha256": "ee513e21bc91103dfea407aee57f5dae6fd757a6102509ca92dc4a8bb7276466",
+      "bytes": 528192,
+      "passed": true
+    },
+    {
+      "path": "depth/media/pick_moving_target_on_the_table.jpg",
+      "http_status": 200,
+      "sha256": "f8641c6e767cf10c6c1f8a7f8eab80c429ac2d1c337924138fb4d02bec0fe9ab",
+      "expected_sha256": "f8641c6e767cf10c6c1f8a7f8eab80c429ac2d1c337924138fb4d02bec0fe9ab",
+      "bytes": 29464,
+      "passed": true
+    },
+    {
+      "path": "depth/media/Hammer.jpg",
+      "http_status": 200,
+      "sha256": "71ee7b686422c1d3fbe3ab32a5fc7e800ec223d0ccbdf344e01eaaacae1c8b84",
+      "expected_sha256": "71ee7b686422c1d3fbe3ab32a5fc7e800ec223d0ccbdf344e01eaaacae1c8b84",
+      "bytes": 21744,
+      "passed": true
+    },
+    {
+      "path": "depth/media/place_cups_on_rotating_frame.jpg",
+      "http_status": 200,
+      "sha256": "80921a2e308eb3dbe3f6b3e5682d1b0cef22fbe0b10fe0d143bb40baab0007e7",
+      "expected_sha256": "80921a2e308eb3dbe3f6b3e5682d1b0cef22fbe0b10fe0d143bb40baab0007e7",
+      "bytes": 29724,
+      "passed": true
+    },
+    {
+      "path": "depth/media/PushT-v1.gif",
+      "http_status": 200,
+      "sha256": "22080c070f18ab652f64a05b7449d28a7cece9b57161a50544e1d13f2bf313ca",
+      "expected_sha256": "22080c070f18ab652f64a05b7449d28a7cece9b57161a50544e1d13f2bf313ca",
+      "bytes": 99901,
+      "passed": true
+    },
+    {
+      "path": "depth/media/SlideDishwasherRack.jpg",
+      "http_status": 200,
+      "sha256": "99c1f270d983db3b98126422fcfb555d52ac6ac3b57686feb927d8687c9828a6",
+      "expected_sha256": "99c1f270d983db3b98126422fcfb555d52ac6ac3b57686feb927d8687c9828a6",
+      "bytes": 32805,
+      "passed": true
+    },
+    {
+      "path": "depth/media/SlideToasterOvenRack.jpg",
+      "http_status": 200,
+      "sha256": "ce0732e4352b66034e62bf6a744d37e035ee4c446e6b7e178b58b71f6c714c36",
+      "expected_sha256": "ce0732e4352b66034e62bf6a744d37e035ee4c446e6b7e178b58b71f6c714c36",
+      "bytes": 31221,
+      "passed": true
+    },
+    {
+      "path": "depth/media/PickCube-v1.jpg",
+      "http_status": 200,
+      "sha256": "519ffa81db413392dcc74daab23e390fdde5ca554759721d848bef07bd0b3636",
+      "expected_sha256": "519ffa81db413392dcc74daab23e390fdde5ca554759721d848bef07bd0b3636",
+      "bytes": 28878,
+      "passed": true
+    },
+    {
+      "path": "depth/media/CoPhy.gif",
+      "http_status": 200,
+      "sha256": "1aa8ac1368622bd35bb3d28e278df55186d30f337398b8903341d8ac780d0569",
+      "expected_sha256": "1aa8ac1368622bd35bb3d28e278df55186d30f337398b8903341d8ac780d0569",
+      "bytes": 63719,
+      "passed": true
+    },
+    {
+      "path": "depth/media/PullCubeTool-v1.jpg",
+      "http_status": 200,
+      "sha256": "3973a1a042de977e696ada0e902ee0e0eefff59b9d3d8f5c15d8a038765da8a9",
+      "expected_sha256": "3973a1a042de977e696ada0e902ee0e0eefff59b9d3d8f5c15d8a038765da8a9",
+      "bytes": 29182,
+      "passed": true
+    },
+    {
+      "path": "depth/media/reach_and_drag.gif",
+      "http_status": 200,
+      "sha256": "db10eab23225d7e3cb759563d1da065858535263b7e8d9ece02bafac849f65ac",
+      "expected_sha256": "db10eab23225d7e3cb759563d1da065858535263b7e8d9ece02bafac849f65ac",
+      "bytes": 463283,
+      "passed": true
+    },
+    {
+      "path": "depth/media/moving_basketball_in_hoop.jpg",
+      "http_status": 200,
+      "sha256": "27baa1e309390d7115c4d6eb8ca4a19822884706a0de5cb2f936fcbf356f5a92",
+      "expected_sha256": "27baa1e309390d7115c4d6eb8ca4a19822884706a0de5cb2f936fcbf356f5a92",
+      "bytes": 28838,
+      "passed": true
+    },
+    {
+      "path": "depth/media/PanTransfer.jpg",
+      "http_status": 200,
+      "sha256": "54a1e2d0e8ba052d2fc0c45c2ceb438de09e6ad28ed221557c8f9b0828ecb777",
+      "expected_sha256": "54a1e2d0e8ba052d2fc0c45c2ceb438de09e6ad28ed221557c8f9b0828ecb777",
+      "bytes": 32151,
+      "passed": true
+    },
+    {
+      "path": "depth/media/beat_the_rotating_buzz.gif",
+      "http_status": 200,
+      "sha256": "40e2afec616455b596ca73515cb6e5e62da513f4f3d616623755c920ba6c42a3",
+      "expected_sha256": "40e2afec616455b596ca73515cb6e5e62da513f4f3d616623755c920ba6c42a3",
+      "bytes": 377082,
+      "passed": true
+    },
+    {
+      "path": "depth/media/remove_cups_from_rotating_frame.jpg",
+      "http_status": 200,
+      "sha256": "c880ad4803bde3a0092f56f80ce9cbfe337166dd65d17bfe57df64db708e99cd",
+      "expected_sha256": "c880ad4803bde3a0092f56f80ce9cbfe337166dd65d17bfe57df64db708e99cd",
+      "bytes": 31191,
+      "passed": true
+    },
+    {
+      "path": "depth/media/MOVi-C.gif",
+      "http_status": 200,
+      "sha256": "56ad116b13b144e210ed7836c2f2a436e6ca82caeb147b4446ffa15c9a0549ab",
+      "expected_sha256": "56ad116b13b144e210ed7836c2f2a436e6ca82caeb147b4446ffa15c9a0549ab",
+      "bytes": 162177,
+      "passed": true
+    },
+    {
+      "path": "depth/media/insert_onto_rotating_peg_high_speed.jpg",
+      "http_status": 200,
+      "sha256": "d92373eb067de662082a1ce86cf43e5e731ebf18623f5c186a1e8f1b443d5060",
+      "expected_sha256": "d92373eb067de662082a1ce86cf43e5e731ebf18623f5c186a1e8f1b443d5060",
+      "bytes": 28089,
+      "passed": true
+    },
+    {
+      "path": "depth/media/moving_basketball_in_hoop_high_speed.gif",
+      "http_status": 200,
+      "sha256": "bdce46bdc405e3146dff2bf96e362107b18f412846b97e701df6e19fdac566b2",
+      "expected_sha256": "bdce46bdc405e3146dff2bf96e362107b18f412846b97e701df6e19fdac566b2",
+      "bytes": 501853,
+      "passed": true
+    },
+    {
+      "path": "depth/media/put_rubbish_in_moving_bin.jpg",
+      "http_status": 200,
+      "sha256": "424024db96ab2c225da38fcf7409e393f609457378c04cb98e88016b0c4963af",
+      "expected_sha256": "424024db96ab2c225da38fcf7409e393f609457378c04cb98e88016b0c4963af",
+      "bytes": 28322,
+      "passed": true
+    }
+  ],
+  "scope": "125 production files: original index/sources/depth labels and all depth artifacts; this later publication report is excluded from its own hashes.",
+  "browser_checks": {
+    "production_url": "https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/",
+    "chinese_and_english": true,
+    "search_OpenDrawer_visible_entries": 1,
+    "new_rgbd_filter_visible_entries": 5,
+    "total_catalog_entries": 42,
+    "paused_posters": 40,
+    "playing_gif_elements": 40,
+    "visible_OpenDrawer_gif_loaded": true,
+    "visible_OpenDrawer_gif_dimensions": [
+      512,
+      280
+    ],
+    "mobile_viewport_tested_this_run": false
+  }
+}

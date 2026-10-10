@@ -1,0 +1,40 @@
+{
+  "source_format": "project ManiSkill diagnostic HDF5",
+  "source_encoding": "millimetres, integer",
+  "extrinsic_convention": "world_to_camera; OpenCV +x right,+y down,+z forward",
+  "alignment": "RGB and depth share source frame indices",
+  "source_hdf5_sha256": "ce875e14cbac3a94d82fabb7a282cd13f7f064f127fadd3fe9fa23e1d4f5465c",
+  "source_file_sha256": "ce875e14cbac3a94d82fabb7a282cd13f7f064f127fadd3fe9fa23e1d4f5465c",
+  "valid_definition": "finite and positive; known far-plane background excluded",
+  "projection_roundtrip_scope": "numerical self-consistency; not independent RGB alignment proof",
+  "projection_roundtrip_max_pixels": 5.684341886080802e-14,
+  "preview_sampling": "12 uniformly selected source indices; constant 125 ms GIF frame duration is illustrative, not source clock",
+  "id": "PandaFingerArticulationDiagnostic-v0",
+  "sample_id": "PandaFingerArticulationDiagnostic-v0",
+  "status": "passed",
+  "mode": "stored",
+  "frames": 12,
+  "depth_kind": "z",
+  "depth_unit": "m",
+  "depth_min_m": 0.5070000290870667,
+  "depth_max_m": 6.014999866485596,
+  "valid_fraction": 1.0,
+  "note_zh": "项目诊断 HDF5 已存 RGB、毫米深度及相机参数；没有下载官方专家全库。",
+  "note_en": "Project diagnostic HDF5 stores RGB, millimeter depth and calibration; the official expert corpus was not downloaded.",
+  "gif": "media/PandaFingerArticulationDiagnostic-v0.gif",
+  "poster": "media/PandaFingerArticulationDiagnostic-v0.jpg",
+  "metadata": "metadata/PandaFingerArticulationDiagnostic-v0.json",
+  "numerical_sha256": "0ce6b447e13c384480a0c6e039aceae67b5237b6c82cb9a19b16638f06c57720",
+  "preview_sha256": "139643247934abd32e0f6dc5defddb4bf1f58e4283f3495a5bcbbc04c8fd8ad3",
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/PandaFingerArticulationDiagnostic-v0/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    224,
+    224
+  ],
+  "depth_preview_range_m": [
+    0.531000018119812,
+    5.368000030517578
+  ]
+}

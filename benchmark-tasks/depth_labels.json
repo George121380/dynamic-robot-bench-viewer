@@ -1,0 +1,476 @@
+{
+  "schema": "benchmark-gif-depth-labels-v1",
+  "checked_utc": "2026-10-10 01:54 UTC",
+  "scope": "Dataset capabilities plus explicitly linked executed RGB-D small samples; original GIFs remain RGB previews.",
+  "entries": {
+    "match_and_pick_from_conveyor": {
+      "status": "estimated",
+      "filters": [
+        "estimated",
+        "new_collection"
+      ],
+      "label_zh": "已新采 RGB-D · 12 帧小样本",
+      "label_en": "New RGB-D collected · 12-frame sample",
+      "note_zh": "真实 Isaac Sim 场景新采 RGB-D；保持机器人状态，验证传送带运动及传感器，未评测抓取成功。",
+      "note_en": "New RGB-D in the actual Isaac Sim task; hold robot state to verify conveyor motion and sensors, without evaluating grasp success.",
+      "sample_page": "depth/index.html#match_and_pick_from_conveyor"
+    },
+    "push_puck_collision": {
+      "status": "new_collection",
+      "filters": [
+        "new_collection"
+      ],
+      "label_zh": "已新采 RGB-D · 12 帧小样本",
+      "label_en": "New RGB-D collected · 12-frame sample",
+      "note_zh": "现有 CollisionEnv 新采深度。该样本因 second_strike 失败，未发生 A–B 碰撞；不是成功示范。",
+      "note_en": "New depth in existing CollisionEnv. This sample failed with second_strike before A–B collision; it is not a successful demo.",
+      "sample_page": "depth/index.html#push_puck_collision"
+    },
+    "PandaFingerArticulationDiagnostic-v0": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目诊断 HDF5 已存 RGB、毫米深度及相机参数；没有下载官方专家全库。",
+      "note_en": "Project diagnostic HDF5 stores RGB, millimeter depth and calibration; the official expert corpus was not downloaded.",
+      "sample_page": "depth/index.html#PandaFingerArticulationDiagnostic-v0"
+    },
+    "RollBall-v1": {
+      "status": "rerender",
+      "filters": [
+        "stored",
+        "rerender"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目诊断 HDF5 已存 RGB、毫米深度及相机参数；没有下载官方专家全库。",
+      "note_en": "Project diagnostic HDF5 stores RGB, millimeter depth and calibration; the official expert corpus was not downloaded.",
+      "sample_page": "depth/index.html#RollBall-v1"
+    },
+    "PullCubeTool-v1": {
+      "status": "rerender",
+      "filters": [
+        "stored",
+        "rerender"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目诊断 HDF5 已存 RGB、毫米深度及相机参数；没有下载官方专家全库。",
+      "note_en": "Project diagnostic HDF5 stores RGB, millimeter depth and calibration; the official expert corpus was not downloaded.",
+      "sample_page": "depth/index.html#PullCubeTool-v1"
+    },
+    "PokeCube-v1": {
+      "status": "rerender",
+      "filters": [
+        "stored",
+        "rerender"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目诊断 HDF5 已存 RGB、毫米深度及相机参数；没有下载官方专家全库。",
+      "note_en": "Project diagnostic HDF5 stores RGB, millimeter depth and calibration; the official expert corpus was not downloaded.",
+      "sample_page": "depth/index.html#PokeCube-v1"
+    },
+    "PickCube-v1": {
+      "status": "rerender",
+      "filters": [
+        "stored",
+        "rerender"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目诊断 HDF5 已存 RGB、毫米深度及相机参数；没有下载官方专家全库。",
+      "note_en": "Project diagnostic HDF5 stores RGB, millimeter depth and calibration; the official expert corpus was not downloaded.",
+      "sample_page": "depth/index.html#PickCube-v1"
+    },
+    "PushT-v1": {
+      "status": "rerender",
+      "filters": [
+        "stored",
+        "rerender"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目诊断 HDF5 已存 RGB、毫米深度及相机参数；没有下载官方专家全库。",
+      "note_en": "Project diagnostic HDF5 stores RGB, millimeter depth and calibration; the official expert corpus was not downloaded.",
+      "sample_page": "depth/index.html#PushT-v1"
+    },
+    "OpenDrawer": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "已按原状态生成深度 · 12 帧小样本",
+      "label_en": "Original-state depth rendered · 12-frame sample",
+      "note_zh": "原 XML／状态／相机重渲染；与原视频 RGB MAE 8.25/255。本页 RGB 与 depth 为同次新渲染。",
+      "note_en": "Replay original XML/states/cameras; original-video RGB MAE 8.25/255. Displayed RGB/depth are rendered together.",
+      "sample_page": "depth/index.html#OpenDrawer"
+    },
+    "PanTransfer": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "已按原状态生成深度 · 12 帧小样本",
+      "label_en": "Original-state depth rendered · 12-frame sample",
+      "note_zh": "原 XML／状态／相机重渲染；与原视频 RGB MAE 6.47/255。本页 RGB 与 depth 为同次新渲染。",
+      "note_en": "Replay original XML/states/cameras; original-video RGB MAE 6.47/255. Displayed RGB/depth are rendered together.",
+      "sample_page": "depth/index.html#PanTransfer"
+    },
+    "CloseFridge": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "已按原状态生成深度 · 12 帧小样本",
+      "label_en": "Original-state depth rendered · 12-frame sample",
+      "note_zh": "原 XML／状态／相机重渲染；与原视频 RGB MAE 11.60/255。本页 RGB 与 depth 为同次新渲染。",
+      "note_en": "Replay original XML/states/cameras; original-video RGB MAE 11.60/255. Displayed RGB/depth are rendered together.",
+      "sample_page": "depth/index.html#CloseFridge"
+    },
+    "SlideDishwasherRack": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "已按原状态生成深度 · 12 帧小样本",
+      "label_en": "Original-state depth rendered · 12-frame sample",
+      "note_zh": "原 XML／状态／相机重渲染；与原视频 RGB MAE 2.96/255。本页 RGB 与 depth 为同次新渲染。",
+      "note_en": "Replay original XML/states/cameras; original-video RGB MAE 2.96/255. Displayed RGB/depth are rendered together.",
+      "sample_page": "depth/index.html#SlideDishwasherRack"
+    },
+    "StackBowlsCabinet": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "已按原状态生成深度 · 12 帧小样本",
+      "label_en": "Original-state depth rendered · 12-frame sample",
+      "note_zh": "原 XML／状态／相机重渲染；与原视频 RGB MAE 2.65/255。本页 RGB 与 depth 为同次新渲染。",
+      "note_en": "Replay original XML/states/cameras; original-video RGB MAE 2.65/255. Displayed RGB/depth are rendered together.",
+      "sample_page": "depth/index.html#StackBowlsCabinet"
+    },
+    "CoffeeSetupMug": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "已按原状态生成深度 · 12 帧小样本",
+      "label_en": "Original-state depth rendered · 12-frame sample",
+      "note_zh": "原 XML／状态／相机重渲染；与原视频 RGB MAE 6.29/255。本页 RGB 与 depth 为同次新渲染。",
+      "note_en": "Replay original XML/states/cameras; original-video RGB MAE 6.29/255. Displayed RGB/depth are rendered together.",
+      "sample_page": "depth/index.html#CoffeeSetupMug"
+    },
+    "SlideToasterOvenRack": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "已按原状态生成深度 · 12 帧小样本",
+      "label_en": "Original-state depth rendered · 12-frame sample",
+      "note_zh": "原 XML／状态／相机重渲染；与原视频 RGB MAE 2.99/255。本页 RGB 与 depth 为同次新渲染。",
+      "note_en": "Replay original XML/states/cameras; original-video RGB MAE 2.99/255. Displayed RGB/depth are rendered together.",
+      "sample_page": "depth/index.html#SlideToasterOvenRack"
+    },
+    "StirVegetables": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "已按原状态生成深度 · 12 帧小样本",
+      "label_en": "Original-state depth rendered · 12-frame sample",
+      "note_zh": "原 XML／状态／相机重渲染；与原视频 RGB MAE 7.12/255。本页 RGB 与 depth 为同次新渲染。",
+      "note_en": "Replay original XML/states/cameras; original-video RGB MAE 7.12/255. Displayed RGB/depth are rendered together.",
+      "sample_page": "depth/index.html#StirVegetables"
+    },
+    "ToolHang": {
+      "status": "rerender",
+      "filters": [
+        "rerender"
+      ],
+      "label_zh": "已按原状态生成深度 · 12 帧小样本",
+      "label_en": "Original-state depth rendered · 12-frame sample",
+      "note_zh": "原 demo_0 完整 MuJoCo 状态重渲染 RGB-D；尚无原 RGB 逐像素对照。",
+      "note_en": "Full MuJoCo states from original demo_0 rendered as paired RGB-D; no original RGB pixel comparison.",
+      "sample_page": "depth/index.html#ToolHang"
+    },
+    "reach_and_drag": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已新采 RGB-D · 12 帧小样本",
+      "label_en": "New RGB-D collected · 12-frame sample",
+      "note_zh": "新采 RLBench 专家示范；任务 Python/TTM 与 PerAct 固定版本相同，未读取作者 Drive 归档。",
+      "note_en": "New RLBench expert demo; task Python/TTM match pinned PerAct assets. The author Drive archive was not read.",
+      "sample_page": "depth/index.html#reach_and_drag"
+    },
+    "MOVi-C": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "官方 TFRecord 原生深度；数值为 ray distance，反投影前须转 Z。",
+      "note_en": "Official TFRecord depth stores ray distance; convert to Z before back-projection.",
+      "sample_page": "depth/index.html#MOVi-C"
+    },
+    "CoPhy": {
+      "status": "conditional",
+      "filters": [
+        "conditional",
+        "new_collection"
+      ],
+      "label_zh": "已新采 RGB-D · 12 帧小样本",
+      "label_en": "New RGB-D collected · 12-frame sample",
+      "note_zh": "仅 Blocktower：作者函数和 URDF 的新 RGB-D 序列；没有执行完整 AB/CD 协议或其他子集。",
+      "note_en": "Blocktower only: new RGB-D with author functions/URDFs; no complete AB/CD protocol or other subsets.",
+      "sample_page": "depth/index.html#CoPhy"
+    },
+    "AdroitHandHammer-v1": {
+      "status": "conditional",
+      "filters": [
+        "conditional",
+        "new_collection",
+        "rerender"
+      ],
+      "label_zh": "已按原状态生成深度 · 12 帧小样本",
+      "label_en": "Original-state depth rendered · 12-frame sample",
+      "note_zh": "原 D4RL qpos/qvel/board_pos 重渲染；所选 Minari 实文件只有 success，没有完整状态。",
+      "note_en": "Replay original D4RL qpos/qvel/board_pos; the selected Minari file has only success, without full states.",
+      "sample_page": "depth/index.html#AdroitHandHammer-v1"
+    },
+    "Physion-v1.5-OCP": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "原始 TDW float32 深度和矩阵；同帧 RGB-D 从 1024² 同步步进采样为 256²。",
+      "note_en": "Original TDW float32 depth and matrices; aligned RGB-D strided jointly from 1024² to 256².",
+      "sample_page": "depth/index.html#Physion-v1.5-OCP"
+    },
+    "sweep_to_dustpan_of_size": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已新采 RGB-D · 12 帧小样本",
+      "label_en": "New RGB-D collected · 12-frame sample",
+      "note_zh": "新采 RLBench 专家示范；任务 Python/TTM 与 PerAct 固定版本相同，未读取作者 Drive 归档。",
+      "note_en": "New RLBench expert demo; task Python/TTM match pinned PerAct assets. The author Drive archive was not read.",
+      "sample_page": "depth/index.html#sweep_to_dustpan_of_size"
+    },
+    "CLEVRER": {
+      "status": "estimated",
+      "filters": [
+        "estimated"
+      ],
+      "label_zh": "现有视频需估计深度",
+      "label_en": "Existing videos require estimated depth",
+      "note_zh": "标准发布无像素深度；对象三维中心标注不等于表面深度。",
+      "note_en": "The standard release lacks pixel depth; object centers are not surface depth."
+    },
+    "TurnFaucet-v1": {
+      "status": "unconfirmed",
+      "filters": [
+        "unconfirmed"
+      ],
+      "label_zh": "v1 深度待确认",
+      "label_en": "v1 depth availability unconfirmed",
+      "note_zh": "匹配 v1 数据／资产尚未验收；v0 GIF 只是动作参考。",
+      "note_en": "Matching v1 data/assets are unaccepted; the v0 GIF is a motion reference."
+    },
+    "beat_the_rotating_buzz": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#beat_the_rotating_buzz"
+    },
+    "beat_the_rotating_buzz_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#beat_the_rotating_buzz_high_speed"
+    },
+    "insert_onto_rotating_peg": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#insert_onto_rotating_peg"
+    },
+    "insert_onto_rotating_peg_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#insert_onto_rotating_peg_high_speed"
+    },
+    "pick_moving_target_on_the_table": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#pick_moving_target_on_the_table"
+    },
+    "pick_moving_target_on_the_table_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#pick_moving_target_on_the_table_high_speed"
+    },
+    "place_cups_on_rotating_frame": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#place_cups_on_rotating_frame"
+    },
+    "place_cups_on_rotating_frame_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#place_cups_on_rotating_frame_high_speed"
+    },
+    "remove_cups_from_rotating_frame": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#remove_cups_from_rotating_frame"
+    },
+    "remove_cups_from_rotating_frame_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#remove_cups_from_rotating_frame_high_speed"
+    },
+    "put_rubbish_in_moving_bin": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#put_rubbish_in_moving_bin"
+    },
+    "put_rubbish_in_moving_bin_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#put_rubbish_in_moving_bin_high_speed"
+    },
+    "push_moving_button": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#push_moving_button"
+    },
+    "push_moving_button_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#push_moving_button_high_speed"
+    },
+    "moving_basketball_in_hoop": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#moving_basketball_in_hoop"
+    },
+    "moving_basketball_in_hoop_high_speed": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#moving_basketball_in_hoop_high_speed"
+    },
+    "PhysMani": {
+      "status": "stored",
+      "filters": [
+        "stored"
+      ],
+      "label_zh": "已读取深度 · 12 帧小样本",
+      "label_en": "Depth read · 12-frame sample",
+      "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+      "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+      "sample_page": "depth/index.html#PhysMani"
+    }
+  }
+}

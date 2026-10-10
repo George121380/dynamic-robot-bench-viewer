@@ -1,0 +1,43 @@
+{
+  "source_format": "PhysMani observed HDF5",
+  "source_encoding": "RGB24 / (2^24-1), linear near/far",
+  "source_near_m": 0.009999999776482582,
+  "source_far_m": 4.5,
+  "extrinsic_convention": "world_to_camera; OpenCV +x right,+y down,+z forward",
+  "camera_axis_conversion": "native negative fx/fy -> OpenCV by flipping camera x/y axes",
+  "alignment": "same observations group/frame IDs; wm_predictions excluded",
+  "source_hdf5_sha256": "c18c27115abc4e717c03f9fa2a3c8bdc58f319744a6a2aa68079a0f918c4f540",
+  "valid_definition": "finite and positive; known far-plane background excluded",
+  "projection_roundtrip_scope": "numerical self-consistency; not independent RGB alignment proof",
+  "projection_roundtrip_max_pixels": 5.684341886080802e-14,
+  "preview_sampling": "12 uniformly selected source indices; constant 125 ms GIF frame duration is illustrative, not source clock",
+  "id": "remove_cups_from_rotating_frame_high_speed",
+  "sample_id": "remove_cups_from_rotating_frame_high_speed",
+  "status": "passed",
+  "mode": "stored",
+  "frames": 12,
+  "depth_kind": "z",
+  "depth_unit": "m",
+  "depth_min_m": 0.8940883278846741,
+  "depth_max_m": 4.171214580535889,
+  "valid_fraction": 1.0,
+  "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+  "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+  "gif": "media/remove_cups_from_rotating_frame_high_speed.gif",
+  "poster": "media/remove_cups_from_rotating_frame_high_speed.jpg",
+  "metadata": "metadata/remove_cups_from_rotating_frame_high_speed.json",
+  "numerical_sha256": "fc7574a1ac57fc18992f9b590d80be54f09a764b7b11a1cebf03d06437869a11",
+  "preview_sha256": "6e6e474cba163605cb8737dbd6f65678e9e25a75772f47b4277c70796b64ff31",
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/remove_cups_from_rotating_frame_high_speed/sample.npz",
+  "depth_source": "sim_gt",
+  "camera": "front",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    0.9960374093055725,
+    4.132870197296143
+  ]
+}

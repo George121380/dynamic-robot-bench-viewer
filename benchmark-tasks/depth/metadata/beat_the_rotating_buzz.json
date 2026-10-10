@@ -1,0 +1,43 @@
+{
+  "source_format": "PhysMani observed HDF5",
+  "source_encoding": "RGB24 / (2^24-1), linear near/far",
+  "source_near_m": 0.009999999776482582,
+  "source_far_m": 4.5,
+  "extrinsic_convention": "world_to_camera; OpenCV +x right,+y down,+z forward",
+  "camera_axis_conversion": "native negative fx/fy -> OpenCV by flipping camera x/y axes",
+  "alignment": "same observations group/frame IDs; wm_predictions excluded",
+  "source_hdf5_sha256": "0cc37e4c5cbf56ac4bc9d9559786e7a17125b78ca1ede372c3eb87cfcbb1abf4",
+  "valid_definition": "finite and positive; known far-plane background excluded",
+  "projection_roundtrip_scope": "numerical self-consistency; not independent RGB alignment proof",
+  "projection_roundtrip_max_pixels": 5.684341886080802e-14,
+  "preview_sampling": "12 uniformly selected source indices; constant 125 ms GIF frame duration is illustrative, not source clock",
+  "id": "beat_the_rotating_buzz",
+  "sample_id": "beat_the_rotating_buzz",
+  "status": "passed",
+  "mode": "stored",
+  "frames": 12,
+  "depth_kind": "z",
+  "depth_unit": "m",
+  "depth_min_m": 1.0169332027435303,
+  "depth_max_m": 4.171214580535889,
+  "valid_fraction": 1.0,
+  "note_zh": "项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。",
+  "note_en": "Project expert observations: decoded RGB24 depth; no WM predictions.",
+  "gif": "media/beat_the_rotating_buzz.gif",
+  "poster": "media/beat_the_rotating_buzz.jpg",
+  "metadata": "metadata/beat_the_rotating_buzz.json",
+  "numerical_sha256": "9cc10279bd1b439da7083b5919270afa2baedae1e8b79f3373ec89fafdfc7ec5",
+  "preview_sha256": "40e2afec616455b596ca73515cb6e5e62da513f4f3d616623755c920ba6c42a3",
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/beat_the_rotating_buzz/sample.npz",
+  "depth_source": "sim_gt",
+  "camera": "front",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    1.126152515411377,
+    4.132870197296143
+  ]
+}

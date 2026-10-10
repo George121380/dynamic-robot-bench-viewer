@@ -1,0 +1,40 @@
+{
+  "source_format": "project ManiSkill diagnostic HDF5",
+  "source_encoding": "millimetres, integer",
+  "extrinsic_convention": "world_to_camera; OpenCV +x right,+y down,+z forward",
+  "alignment": "RGB and depth share source frame indices",
+  "source_hdf5_sha256": "aaf5c0d9b0868ffc4ce9e809d10753ab6884869d02b3fb27af09da9e540db7cc",
+  "source_file_sha256": "aaf5c0d9b0868ffc4ce9e809d10753ab6884869d02b3fb27af09da9e540db7cc",
+  "valid_definition": "finite and positive; known far-plane background excluded",
+  "projection_roundtrip_scope": "numerical self-consistency; not independent RGB alignment proof",
+  "projection_roundtrip_max_pixels": 5.684341886080802e-14,
+  "preview_sampling": "12 uniformly selected source indices; constant 125 ms GIF frame duration is illustrative, not source clock",
+  "id": "PokeCube-v1",
+  "sample_id": "PokeCube-v1",
+  "status": "passed",
+  "mode": "stored",
+  "frames": 12,
+  "depth_kind": "z",
+  "depth_unit": "m",
+  "depth_min_m": 0.5440000295639038,
+  "depth_max_m": 6.014999866485596,
+  "valid_fraction": 1.0,
+  "note_zh": "项目诊断 HDF5 已存 RGB、毫米深度及相机参数；没有下载官方专家全库。",
+  "note_en": "Project diagnostic HDF5 stores RGB, millimeter depth and calibration; the official expert corpus was not downloaded.",
+  "gif": "media/PokeCube-v1.gif",
+  "poster": "media/PokeCube-v1.jpg",
+  "metadata": "metadata/PokeCube-v1.json",
+  "numerical_sha256": "6ddbc9ce1cb51a26818a9a7494bc7e6d3a3a9d3db35867375e34aaff81a4cf24",
+  "preview_sha256": "de496ce039bd6678fa42a779b83205fb3839ea115472d64b9d130189b4375ba1",
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/PokeCube-v1/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    224,
+    224
+  ],
+  "depth_preview_range_m": [
+    0.5519999861717224,
+    5.515999794006348
+  ]
+}
