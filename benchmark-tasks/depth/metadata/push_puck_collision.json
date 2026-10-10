@@ -41,5 +41,15 @@
   "metadata": "metadata/push_puck_collision.json",
   "numerical_sha256": "6bdab4424f79e3c294b8bf91722cf073060942c365ef06a007d7ed625acf64ff",
   "preview_sha256": "ffad00e15593d1a3f70ad3723d2a78b4501d379f6420490bd0568a47f557deed",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/push_puck_collision/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/push_puck_collision/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    1.4754009246826172,
+    3.7620532512664795
+  ]
 }

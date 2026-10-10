@@ -39,5 +39,16 @@
   "metadata": "metadata/CoffeeSetupMug.json",
   "numerical_sha256": "76ad7837ebfab1279996585762aedf62e4ebebae79b9725032b1a98ffb00bc8b",
   "preview_sha256": "b15d6dc0cc74c8d11d0e846a0d7230740742123d8e7842d092d57a3e4a39a3fa",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/CoffeeSetupMug/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/CoffeeSetupMug/sample.npz",
+  "depth_source": "rerender_gt",
+  "camera": "robot0_agentview_left",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    0.5691024136543273,
+    1.5807922053337098
+  ]
 }

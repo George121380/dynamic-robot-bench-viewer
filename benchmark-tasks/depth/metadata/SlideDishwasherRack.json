@@ -39,5 +39,16 @@
   "metadata": "metadata/SlideDishwasherRack.json",
   "numerical_sha256": "7270fc392bfc1c777336f4207609b1bd71ee76a702dc253a7f20fd1cd0a5c9a0",
   "preview_sha256": "7683e609e409cd81ec41340ca66ad7467a1ca356814b2dc63a8b010243bb3808",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/SlideDishwasherRack/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/SlideDishwasherRack/sample.npz",
+  "depth_source": "rerender_gt",
+  "camera": "robot0_agentview_left",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    0.5163088274002076,
+    1.902298140525818
+  ]
 }

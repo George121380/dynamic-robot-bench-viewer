@@ -26,5 +26,15 @@
   "metadata": "metadata/PullCubeTool-v1.json",
   "numerical_sha256": "f7ca990ad8ce21cec7bf8d193bbd60c1356ef95dd650202f69c359603d0cd67f",
   "preview_sha256": "869f2f975c7e75bc8d52592aa07c47f14f169ef5508d7a28c8b8af71ea6b4742",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/PullCubeTool-v1/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/PullCubeTool-v1/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    224,
+    224
+  ],
+  "depth_preview_range_m": [
+    0.5519999861717224,
+    5.492000102996826
+  ]
 }

@@ -39,5 +39,16 @@
   "metadata": "metadata/CloseFridge.json",
   "numerical_sha256": "40a76b936c896ee15241860a93ca8fb343c6917ced27d8218fddbbbc2ef4fb28",
   "preview_sha256": "23525154b4dfb9ed074db5d47c66b5bb66c49710690bf8ee9e446893e659b83c",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/CloseFridge/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/CloseFridge/sample.npz",
+  "depth_source": "rerender_gt",
+  "camera": "robot0_agentview_left",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    0.582608951330185,
+    2.1029733848571777
+  ]
 }

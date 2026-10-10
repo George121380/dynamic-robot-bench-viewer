@@ -39,5 +39,16 @@
   "metadata": "metadata/StirVegetables.json",
   "numerical_sha256": "916515327eefc0427a142960e9e7fecb874557dcfdbfffbbdc70fcc2557ba171",
   "preview_sha256": "914466662133956d0020ee5bcdeda9b4e59ae4453e00517aa7bfcd42a815e356",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/StirVegetables/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/StirVegetables/sample.npz",
+  "depth_source": "rerender_gt",
+  "camera": "robot0_agentview_left",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    0.5598103642463684,
+    1.6279373502731322
+  ]
 }

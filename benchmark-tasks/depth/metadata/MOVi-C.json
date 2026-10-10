@@ -27,5 +27,15 @@
   "metadata": "metadata/MOVi-C.json",
   "numerical_sha256": "714df101b8add9e819152c8f3dc4262e3133641fae42a1866549f7af072b62b9",
   "preview_sha256": "56ad116b13b144e210ed7836c2f2a436e6ca82caeb147b4446ffa15c9a0549ab",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/MOVi-C/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/MOVi-C/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    128,
+    128
+  ],
+  "depth_preview_range_m": [
+    1.7226938009262085,
+    48.12126541137695
+  ]
 }

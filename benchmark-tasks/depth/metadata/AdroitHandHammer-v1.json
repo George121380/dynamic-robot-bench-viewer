@@ -36,5 +36,16 @@
   "metadata": "metadata/AdroitHandHammer-v1.json",
   "numerical_sha256": "64ec1fdee451e8482443df64b9e1783b2d6e46be20565fba09f9ac57274c6da8",
   "preview_sha256": "4e08f5bed88829c05005e5385606ff0e3b67d4766b7a05de5d23b4384efe999f",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/Hammer/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/Hammer/sample.npz",
+  "depth_source": "rerender_gt",
+  "camera": "vil_camera",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    1.27546861410141,
+    3.3673903942108154
+  ]
 }

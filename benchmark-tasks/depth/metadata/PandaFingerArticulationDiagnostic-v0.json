@@ -26,5 +26,15 @@
   "metadata": "metadata/PandaFingerArticulationDiagnostic-v0.json",
   "numerical_sha256": "0ce6b447e13c384480a0c6e039aceae67b5237b6c82cb9a19b16638f06c57720",
   "preview_sha256": "139643247934abd32e0f6dc5defddb4bf1f58e4283f3495a5bcbbc04c8fd8ad3",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/PandaFingerArticulationDiagnostic-v0/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/PandaFingerArticulationDiagnostic-v0/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    224,
+    224
+  ],
+  "depth_preview_range_m": [
+    0.531000018119812,
+    5.368000030517578
+  ]
 }

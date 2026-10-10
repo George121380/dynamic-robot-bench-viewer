@@ -28,5 +28,16 @@
   "metadata": "metadata/place_cups_on_rotating_frame_high_speed.json",
   "numerical_sha256": "42540ff9a969cbfd09155c2e6b86e4785c2aaab93cf07e5e39f29e0ce45d8de9",
   "preview_sha256": "d99c6aef3cf1ea17e32622e575e711aa4e0fdab7218350ad96c2cb76ebbb1514",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/place_cups_on_rotating_frame_high_speed/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/place_cups_on_rotating_frame_high_speed/sample.npz",
+  "depth_source": "sim_gt",
+  "camera": "front",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    1.1106212139129639,
+    4.132870197296143
+  ]
 }

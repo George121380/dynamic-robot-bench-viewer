@@ -39,5 +39,16 @@
   "metadata": "metadata/StackBowlsCabinet.json",
   "numerical_sha256": "e5063df0fa5f3a5e462d0ecc5b12839c14492ea421a98f3d5f2ace0e5b84a4fa",
   "preview_sha256": "ee513e21bc91103dfea407aee57f5dae6fd757a6102509ca92dc4a8bb7276466",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/StackBowlsCabinet/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/StackBowlsCabinet/sample.npz",
+  "depth_source": "rerender_gt",
+  "camera": "robot0_agentview_left",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    0.4055010396242142,
+    1.5917334413528443
+  ]
 }

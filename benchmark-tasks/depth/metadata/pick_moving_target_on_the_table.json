@@ -28,5 +28,16 @@
   "metadata": "metadata/pick_moving_target_on_the_table.json",
   "numerical_sha256": "feec004ff9f7b65657f6a7d719efe37cfca351c450c309c351c75e68d8054a64",
   "preview_sha256": "cd302187b3c0a14b5c743f2b3e74142af44af555b03140fd470ed0ebb331d181",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/pick_moving_target_on_the_table/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/pick_moving_target_on_the_table/sample.npz",
+  "depth_source": "sim_gt",
+  "camera": "front",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    1.118333101272583,
+    4.132870197296143
+  ]
 }

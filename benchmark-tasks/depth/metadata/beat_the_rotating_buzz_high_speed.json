@@ -28,5 +28,16 @@
   "metadata": "metadata/beat_the_rotating_buzz_high_speed.json",
   "numerical_sha256": "a2a411e8a703dc46ad1420085d590aefb77e6779886f47e47dfd338d60c0ddb4",
   "preview_sha256": "700c2718f5c4f355500ff7b373d0075699c7b0784a2d96158700eb413dbe7bc9",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/beat_the_rotating_buzz_high_speed/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/beat_the_rotating_buzz_high_speed/sample.npz",
+  "depth_source": "sim_gt",
+  "camera": "front",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    1.126152515411377,
+    4.132870197296143
+  ]
 }

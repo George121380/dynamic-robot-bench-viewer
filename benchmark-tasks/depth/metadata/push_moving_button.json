@@ -28,5 +28,16 @@
   "metadata": "metadata/push_moving_button.json",
   "numerical_sha256": "70b2be5286aaa34765137417fded9abfc6c69e95d19d089840a1400688e2775f",
   "preview_sha256": "c75168d7d36e8707599ac4fcf82181eca76461be23730942255cbf950846aa94",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/push_moving_button/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/push_moving_button/sample.npz",
+  "depth_source": "sim_gt",
+  "camera": "front",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    1.1222292184829712,
+    4.132870197296143
+  ]
 }

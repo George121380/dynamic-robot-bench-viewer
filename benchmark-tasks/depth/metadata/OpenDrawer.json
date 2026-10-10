@@ -39,5 +39,16 @@
   "metadata": "metadata/OpenDrawer.json",
   "numerical_sha256": "b4ffb819269965070eb66e9a626f3ff335b9c38d9b2fae0c189853235b983c40",
   "preview_sha256": "e7f30f21a0dbb4adba7636f5499369088d33560206976a25a44542366604f990",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/OpenDrawer/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/OpenDrawer/sample.npz",
+  "depth_source": "rerender_gt",
+  "camera": "robot0_agentview_left",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    0.5665818750858307,
+    1.7214107561111451
+  ]
 }

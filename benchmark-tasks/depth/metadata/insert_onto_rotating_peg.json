@@ -28,5 +28,16 @@
   "metadata": "metadata/insert_onto_rotating_peg.json",
   "numerical_sha256": "13fd5378c2b77d64f90dc58c13d608cf4b2a15d3ff0073cf082fae74a2dfcea0",
   "preview_sha256": "2a0c39a69ebf6b315eb19072e4b44d559a510485a2a1b7112f2891de17155824",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/insert_onto_rotating_peg/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/insert_onto_rotating_peg/sample.npz",
+  "depth_source": "sim_gt",
+  "camera": "front",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    1.1151335477828979,
+    4.132870197296143
+  ]
 }

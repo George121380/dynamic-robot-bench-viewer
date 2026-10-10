@@ -26,5 +26,15 @@
   "metadata": "metadata/PushT-v1.json",
   "numerical_sha256": "94a0c4a41080f5c7e3355697754458650582aa6f36f25d8a49372af1d0777d25",
   "preview_sha256": "22080c070f18ab652f64a05b7449d28a7cece9b57161a50544e1d13f2bf313ca",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/PushT-v1/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/PushT-v1/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    224,
+    224
+  ],
+  "depth_preview_range_m": [
+    0.5519999861717224,
+    5.5929999351501465
+  ]
 }

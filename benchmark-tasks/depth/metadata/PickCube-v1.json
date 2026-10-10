@@ -26,5 +26,15 @@
   "metadata": "metadata/PickCube-v1.json",
   "numerical_sha256": "72d71ef4ab37aea8e2fa7b666d907bbe8445cec762b3bfe493af86514760bb0b",
   "preview_sha256": "1f2abae4de01f4f9cc072ed0877e96f1524b3a873bb7dbe32b27a3b7e32c2085",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/PickCube-v1/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/PickCube-v1/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    224,
+    224
+  ],
+  "depth_preview_range_m": [
+    0.5519999861717224,
+    5.515999794006348
+  ]
 }

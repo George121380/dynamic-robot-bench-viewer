@@ -28,5 +28,16 @@
   "metadata": "metadata/moving_basketball_in_hoop.json",
   "numerical_sha256": "8ec3425bb0d3360cbd9e4e62eec82542c7dfbec44be1d52f344acee23bfe929b",
   "preview_sha256": "2b48e73ab47a798db5a2b169cbf6efda1ed9bd1642364b93dd9361c467669daa",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/moving_basketball_in_hoop/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/moving_basketball_in_hoop/sample.npz",
+  "depth_source": "sim_gt",
+  "camera": "front",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    0.9156026840209961,
+    4.132870197296143
+  ]
 }

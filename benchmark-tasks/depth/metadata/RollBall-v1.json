@@ -26,5 +26,15 @@
   "metadata": "metadata/RollBall-v1.json",
   "numerical_sha256": "95add3d9ec2965cddcc39a78cbededb239c07d67f4d8716d8d66e5d8d19e39e4",
   "preview_sha256": "2f85c85fd1da535fec5f296fac1dbe4816b72dca863b9d267e3340008f062781",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/RollBall-v1/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/RollBall-v1/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    224,
+    224
+  ],
+  "depth_preview_range_m": [
+    0.34599998593330383,
+    5.508999824523926
+  ]
 }

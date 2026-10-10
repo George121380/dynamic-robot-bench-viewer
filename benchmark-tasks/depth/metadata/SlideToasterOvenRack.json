@@ -39,5 +39,16 @@
   "metadata": "metadata/SlideToasterOvenRack.json",
   "numerical_sha256": "938c9b1d382b52364bf960ae77d45c3afd6cc0b521f99f9fb12c11f20564df42",
   "preview_sha256": "93ccb53f19b25e63a1c6b39ab55037d918b43082e27b299dfbc6e0604cd13254",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/SlideToasterOvenRack/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/SlideToasterOvenRack/sample.npz",
+  "depth_source": "rerender_gt",
+  "camera": "robot0_agentview_left",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    0.5107192182540894,
+    1.5879164385795594
+  ]
 }

@@ -28,5 +28,15 @@
   "metadata": "metadata/sweep_to_dustpan_of_size.json",
   "numerical_sha256": "43d9bdf5e45ae2eb81c725ab1155629cdec172502f80046ff5e91a97fa15f736",
   "preview_sha256": "86fe3324ecdbe93f135889457f5d6d84a6a99eb976a236fb4892034e10234278",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/sweep_to_dustpan_of_size/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/sweep_to_dustpan_of_size/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    1.1087098121643066,
+    4.125062942504883
+  ]
 }

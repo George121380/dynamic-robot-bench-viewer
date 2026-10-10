@@ -31,5 +31,21 @@
   "metadata": "metadata/match_and_pick_from_conveyor.json",
   "numerical_sha256": "ef0fc6c94b649d79a71e1c13d477ae4d6245db572bf064194c26e01b1e560164",
   "preview_sha256": "800eb6e524923fd0239c40b04124fd9e49d06b0d226ea38f18b190d9206fd08d",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/match_and_pick_from_conveyor/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/match_and_pick_from_conveyor/sample.npz",
+  "depth_source": "sim_gt",
+  "camera": "cam_head",
+  "shape": [
+    12,
+    240,
+    320
+  ],
+  "depth_preview_range_m": [
+    0.28355443477630615,
+    2.437492847442627
+  ],
+  "original_resolution": [
+    480,
+    640
+  ],
+  "joint_rgb_depth_stride": 2
 }

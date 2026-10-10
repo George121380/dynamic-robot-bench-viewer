@@ -28,5 +28,15 @@
   "metadata": "metadata/reach_and_drag.json",
   "numerical_sha256": "6b29ca11fe90dc43dbae92afec035249eb0781330511568e6dfe34e207d0455c",
   "preview_sha256": "db10eab23225d7e3cb759563d1da065858535263b7e8d9ece02bafac849f65ac",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/reach_and_drag/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/reach_and_drag/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    1.0538357496261597,
+    4.128911972045898
+  ]
 }

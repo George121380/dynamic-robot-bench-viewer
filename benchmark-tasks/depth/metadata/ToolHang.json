@@ -36,5 +36,16 @@
   "metadata": "metadata/ToolHang.json",
   "numerical_sha256": "11408f558e1bff81163c0791d12323cf532e1da2298f6e24abf65a06f1a1b084",
   "preview_sha256": "105e356f47f1b5f5267bdb43d751b7bf3a8218b2ca2701b95f5aee7993d14fa5",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/ToolHang/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/ToolHang/sample.npz",
+  "depth_source": "rerender_gt",
+  "camera": "agentview",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    0.35486553132534027,
+    3.1257944107055664
+  ]
 }

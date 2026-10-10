@@ -26,5 +26,15 @@
   "metadata": "metadata/CoPhy.json",
   "numerical_sha256": "682d54c7c79db8bc0c562353172a3874a2ab56ac139c99b9aa971f219228b8dc",
   "preview_sha256": "1aa8ac1368622bd35bb3d28e278df55186d30f337398b8903341d8ac780d0569",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/CoPhy/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/CoPhy/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    4.933396816253662,
+    18.709239959716797
+  ]
 }

@@ -39,5 +39,16 @@
   "metadata": "metadata/PanTransfer.json",
   "numerical_sha256": "cd7b73109681e1395661edafd308c717faf03d3ed5a69d66ae8e691066c279bb",
   "preview_sha256": "90d3e07e6af43e5cf5ac9e0133649b075703f9ca0d9cfe7dd8700a5423c50fc9",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/PanTransfer/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/PanTransfer/sample.npz",
+  "depth_source": "rerender_gt",
+  "camera": "robot0_agentview_left",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    0.5188190710544586,
+    1.6284317231178285
+  ]
 }

@@ -65,5 +65,20 @@
   "metadata": "metadata/Physion-v1.5-OCP.json",
   "numerical_sha256": "b365f719b1f971b173e49cbdc320135d9eda0ad06d15ac1e80d1705758f0b916",
   "preview_sha256": "a6734c3c5573e72b861c864407af17a130556f9c7a40d60f89694928c3929ea2",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/Physion/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/Physion/sample.npz",
+  "depth_source": "sim_gt",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    2.374150037765503,
+    5.314091205596924
+  ],
+  "source_resolution": [
+    1024,
+    1024
+  ],
+  "sampling_stride": 4
 }

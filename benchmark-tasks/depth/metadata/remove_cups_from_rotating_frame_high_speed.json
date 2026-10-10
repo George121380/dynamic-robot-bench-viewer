@@ -28,5 +28,16 @@
   "metadata": "metadata/remove_cups_from_rotating_frame_high_speed.json",
   "numerical_sha256": "fc7574a1ac57fc18992f9b590d80be54f09a764b7b11a1cebf03d06437869a11",
   "preview_sha256": "6e6e474cba163605cb8737dbd6f65678e9e25a75772f47b4277c70796b64ff31",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/remove_cups_from_rotating_frame_high_speed/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/remove_cups_from_rotating_frame_high_speed/sample.npz",
+  "depth_source": "sim_gt",
+  "camera": "front",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    0.9960374093055725,
+    4.132870197296143
+  ]
 }

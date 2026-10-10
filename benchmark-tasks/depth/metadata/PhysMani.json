@@ -28,5 +28,16 @@
   "metadata": "metadata/PhysMani.json",
   "numerical_sha256": "9cc10279bd1b439da7083b5919270afa2baedae1e8b79f3373ec89fafdfc7ec5",
   "preview_sha256": "40e2afec616455b596ca73515cb6e5e62da513f4f3d616623755c920ba6c42a3",
-  "numeric_artifact": "private data/depth_samples/acceptance-20261009/beat_the_rotating_buzz/sample.npz"
+  "numeric_artifact": "private data/depth_samples/acceptance-20261009/beat_the_rotating_buzz/sample.npz",
+  "depth_source": "sim_gt",
+  "camera": "front",
+  "shape": [
+    12,
+    256,
+    256
+  ],
+  "depth_preview_range_m": [
+    1.126152515411377,
+    4.132870197296143
+  ]
 }
