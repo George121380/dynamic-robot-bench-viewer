@@ -1288,5 +1288,6 @@
     }
   ],
   "depth_labels_file": "depth_labels.json",
-  "depth_labels_sha256": "74b68ae85d6cca7690d268c968c9156d5deb7db177eeb42474169c6f5bb81a38"
+  "depth_labels_sha256": "a13ebf8445792c547885b0afc28248c85360dd1b0e2f53bc1da7ea7fd1da8c73",
+  "executed_depth_samples_file": "depth/manifest.json"
 }
