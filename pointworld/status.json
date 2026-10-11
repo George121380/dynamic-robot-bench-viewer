@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-11T19:26:06+00:00",
+  "updated_utc": "2026-10-11T20:46:02+00:00",
   "verified_stages": 6,
   "total_stages": 9,
   "complete": false,
@@ -19,7 +19,7 @@
     }
   },
   "acceptance": {
-    "evaluation_passed": false,
+    "evaluation_passed": true,
     "training_passed": false,
     "visualization_passed": false
   },
@@ -30,5 +30,5 @@
   },
   "checkpoint_cpu_loads_verified": 4,
   "ground_truth_viewer_checked": true,
-  "gpu_operators_verified": false
+  "gpu_operators_verified": true
 }
