@@ -1,0 +1,19 @@
+{
+  "updated_utc": "2026-10-11T18:49:25.653950+00:00",
+  "verified_stages": 1,
+  "total_stages": 9,
+  "complete": false,
+  "assets_verified": 0,
+  "data": {},
+  "acceptance": {
+    "evaluation_passed": false,
+    "training_passed": false,
+    "visualization_passed": false
+  },
+  "upstream": {
+    "main": "05484826dfef74cbe278a3974179a5a16705d35d",
+    "data": "3872ec6ee73146aa671192ef79b5dfbedc0246e3",
+    "dinov3": "54694f7627fd815f62a5dcc82944ffa6153bbb76"
+  },
+  "gpu_operators_verified": false
+}
