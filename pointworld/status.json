@@ -1,8 +1,8 @@
 {
-  "updated_utc": "2026-10-11T21:25:11+00:00",
-  "verified_stages": 7,
+  "updated_utc": "2026-10-11T21:37:59+00:00",
+  "verified_stages": 9,
   "total_stages": 9,
-  "complete": false,
+  "complete": true,
   "assets_verified": 15,
   "data": {
     "droid": {
@@ -21,7 +21,7 @@
   "acceptance": {
     "evaluation_passed": true,
     "training_passed": true,
-    "visualization_passed": false
+    "visualization_passed": true
   },
   "upstream": {
     "main": "05484826dfef74cbe278a3974179a5a16705d35d",
