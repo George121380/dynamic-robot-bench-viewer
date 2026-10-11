@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-11",
+  "scope": "Selection-document, existing-data and page checks only; no new simulator runs or model training",
+  "entries": 45,
+  "unique_task_ids": 45,
+  "gallery_and_depth_targets_checked": 90,
+  "core_basic_counts": {
+    "FreeMotionInterception-v1": {
+      "train": 18,
+      "validation": 0,
+      "test": 0
+    },
+    "ToolContactRelease-v1": {
+      "train": 12,
+      "validation": 0,
+      "test": 0
+    },
+    "CollisionChain-v1": {
+      "train": 12,
+      "validation": 0,
+      "test": 6
+    }
+  },
+  "core_basic_families": 9,
+  "independent_chain_counts": {
+    "train": 12,
+    "validation": 6
+  },
+  "core_GIFs": [
+    {
+      "id": "FreeMotionInterception-v1",
+      "frames": 56,
+      "width": 620,
+      "height": 420,
+      "sha256": "b4d1cc346b055aada2183c9f87aab94a49ccc68645567797a141934ca3146736"
+    },
+    {
+      "id": "ToolContactRelease-v1",
+      "frames": 56,
+      "width": 620,
+      "height": 420,
+      "sha256": "af7fda7004fb56d9664e330584257bfba71f14bb20fa7ea215ec284949eadd67"
+    },
+    {
+      "id": "CollisionChain-v1",
+      "frames": 56,
+      "width": 620,
+      "height": 420,
+      "sha256": "cd1c2fe1ea7fbb5aa46c5576becb66bca69762a9b7ee139b22862655dbba77d9"
+    }
+  ],
+  "bilingual_relative_document_links": "passed",
+  "canvas_typescript": "npm exec --yes --package=typescript -- tsc --project tsconfig.json: exit 0",
+  "browser_UI": {
+    "default_core_count": "3/45",
+    "all_count": "45/45",
+    "search_OpenDrawer_count": 3,
+    "English_heading": "Start model iteration with three task families",
+    "three_GIFs_loaded": "620x420 each"
+  },
+  "notes": [
+    "The OpenDrawer search also matches alternative rack rationales.",
+    "The chain preview is a basic-profile accepted three_body rollout.",
+    "This does not rerun 69 existing physical tests or validate new model adapters."
+  ]
+}
