@@ -1,10 +1,23 @@
 {
-  "updated_utc": "2026-10-11T18:49:25.653950+00:00",
-  "verified_stages": 1,
+  "updated_utc": "2026-10-11T19:26:06+00:00",
+  "verified_stages": 6,
   "total_stages": 9,
   "complete": false,
-  "assets_verified": 0,
-  "data": {},
+  "assets_verified": 15,
+  "data": {
+    "droid": {
+      "train_clips": 578,
+      "test_clips": 49,
+      "wds_tar_files": 7,
+      "subset_only": true
+    },
+    "behavior": {
+      "train_clips": 5202,
+      "test_clips": 578,
+      "wds_tar_files": 5,
+      "subset_only": true
+    }
+  },
   "acceptance": {
     "evaluation_passed": false,
     "training_passed": false,
@@ -15,5 +28,7 @@
     "data": "3872ec6ee73146aa671192ef79b5dfbedc0246e3",
     "dinov3": "54694f7627fd815f62a5dcc82944ffa6153bbb76"
   },
+  "checkpoint_cpu_loads_verified": 4,
+  "ground_truth_viewer_checked": true,
   "gpu_operators_verified": false
 }
