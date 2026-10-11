@@ -1,0 +1,823 @@
+[
+  {
+    "file": "ID_collision_chain_family000000_seed0_collision_free_motion.gif",
+    "task": "collision_chain",
+    "mode": "collision_free_motion",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.12515321373939514,
+        0.1342972218990326,
+        0.09881327301263809
+      ],
+      "motion_onset_s": [
+        1.05,
+        1.1,
+        1.4000000000000001
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "A_B_contact": true,
+      "final_A_B_force_contact_s": 1.8699999582022429,
+      "B_post_A_B_release_motion_m": 0.030717268586158752,
+      "direct_tool_or_robot_contact_with_B_C": false,
+      "task_success": true,
+      "task_success_definition": "direct mode: move A >1.5cm; propagation modes: physically transmit motion to B/C >1.5cm",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–A",
+      "tool–B",
+      "A–B",
+      "robot–A",
+      "robot–B"
+    ]
+  },
+  {
+    "file": "ID_collision_chain_family000000_seed0_direct_push.gif",
+    "task": "collision_chain",
+    "mode": "direct_push",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.1251411736011505,
+        0.1357489973306656,
+        0.0
+      ],
+      "motion_onset_s": [
+        1.05,
+        1.1,
+        null
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "A_B_contact": false,
+      "direct_tool_or_robot_contact_with_B_C": false,
+      "task_success": true,
+      "task_success_definition": "direct mode: move A >1.5cm; propagation modes: physically transmit motion to B/C >1.5cm",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–A",
+      "tool–B",
+      "A–B",
+      "robot–A",
+      "robot–B"
+    ]
+  },
+  {
+    "file": "ID_collision_chain_family000000_seed0_failed_propagation.gif",
+    "task": "collision_chain",
+    "mode": "failed_propagation",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.08752553910017014,
+        0.04292242228984833,
+        0.0030265257228165865
+      ],
+      "motion_onset_s": [
+        1.1,
+        1.1500000000000001,
+        null
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "A_B_contact": true,
+      "direct_tool_or_robot_contact_with_B_C": false,
+      "task_success": false,
+      "task_success_definition": "direct mode: move A >1.5cm; propagation modes: physically transmit motion to B/C >1.5cm",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–A",
+      "tool–B",
+      "A–B",
+      "robot–A",
+      "robot–B"
+    ]
+  },
+  {
+    "file": "ID_collision_chain_family000000_seed0_near_miss.gif",
+    "task": "collision_chain",
+    "mode": "near_miss",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.12516842782497406,
+        0.13897274434566498,
+        7.568690989501192e-07
+      ],
+      "motion_onset_s": [
+        1.05,
+        1.1,
+        null
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "A_B_contact": false,
+      "direct_tool_or_robot_contact_with_B_C": false,
+      "task_success": false,
+      "task_success_definition": "direct mode: move A >1.5cm; propagation modes: physically transmit motion to B/C >1.5cm",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–A",
+      "tool–B",
+      "A–B",
+      "robot–A",
+      "robot–B"
+    ]
+  },
+  {
+    "file": "ID_collision_chain_family000000_seed0_three_body.gif",
+    "task": "collision_chain",
+    "mode": "three_body",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.1251242309808731,
+        0.14424756169319153,
+        0.10461075603961945,
+        0.06544893980026245
+      ],
+      "motion_onset_s": [
+        1.05,
+        1.1,
+        1.4000000000000001,
+        1.75
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "A_B_contact": true,
+      "B_C_contact": true,
+      "direct_tool_or_robot_contact_with_B_C": false,
+      "task_success": true,
+      "task_success_definition": "direct mode: move A >1.5cm; propagation modes: physically transmit motion to B/C >1.5cm",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic",
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–A",
+      "tool–B",
+      "tool–C",
+      "A–B",
+      "A–C",
+      "B–C",
+      "robot–A",
+      "robot–B",
+      "robot–C"
+    ]
+  },
+  {
+    "file": "ID_collision_chain_family000000_seed0_two_body.gif",
+    "task": "collision_chain",
+    "mode": "two_body",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.12515321373939514,
+        0.1342972218990326,
+        0.09881327301263809
+      ],
+      "motion_onset_s": [
+        1.05,
+        1.1,
+        1.4000000000000001
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "A_B_contact": true,
+      "direct_tool_or_robot_contact_with_B_C": false,
+      "task_success": true,
+      "task_success_definition": "direct mode: move A >1.5cm; propagation modes: physically transmit motion to B/C >1.5cm",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–A",
+      "tool–B",
+      "A–B",
+      "robot–A",
+      "robot–B"
+    ]
+  },
+  {
+    "file": "ID_free_motion_interception_family000000_seed0_early.gif",
+    "task": "free_motion_interception",
+    "mode": "early",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.11621376872062683,
+        0.632850170135498
+      ],
+      "motion_onset_s": [
+        0.1,
+        0.05
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "initial_speed_m_s": 0.14873097836971283,
+      "final_velocity_m_s": [
+        -0.07103335112333298,
+        0.049306560307741165,
+        5.151584900886519e-07
+      ],
+      "target_velocity_change_m_s": 0.20950771868228912,
+      "task_success": true,
+      "task_success_definition": "actual interception contact and target velocity change >0.02m/s",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "approximate robot-hand bounding box",
+      "analytic"
+    ],
+    "contact_rows": [
+      "robot_hand–ball",
+      "robot–ball"
+    ]
+  },
+  {
+    "file": "ID_free_motion_interception_family000000_seed0_interception.gif",
+    "task": "free_motion_interception",
+    "mode": "interception",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.11905442923307419,
+        0.24349403381347656
+      ],
+      "motion_onset_s": [
+        0.30000000000000004,
+        0.05
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "initial_speed_m_s": 0.14873097836971283,
+      "final_velocity_m_s": [
+        -0.0025554061867296696,
+        0.07490451633930206,
+        3.819908727109578e-07
+      ],
+      "target_velocity_change_m_s": 0.22361283004283905,
+      "task_success": true,
+      "task_success_definition": "actual interception contact and target velocity change >0.02m/s",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "approximate robot-hand bounding box",
+      "analytic"
+    ],
+    "contact_rows": [
+      "robot_hand–ball",
+      "robot–ball"
+    ]
+  },
+  {
+    "file": "ID_free_motion_interception_family000000_seed0_late.gif",
+    "task": "free_motion_interception",
+    "mode": "late",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": false,
+      "displacement_max_m": [
+        0.11924710124731064,
+        0.7863986492156982
+      ],
+      "motion_onset_s": [
+        3.35,
+        0.05
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "initial_speed_m_s": 0.14873097836971283,
+      "final_velocity_m_s": [
+        -0.002401676494628191,
+        -0.13737913966178894,
+        2.916442269906838e-07
+      ],
+      "task_success": false,
+      "task_success_definition": "actual interception contact and target velocity change >0.02m/s",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "approximate robot-hand bounding box",
+      "analytic"
+    ],
+    "contact_rows": [
+      "robot_hand–ball",
+      "robot–ball"
+    ]
+  },
+  {
+    "file": "ID_free_motion_interception_family000000_seed0_missed.gif",
+    "task": "free_motion_interception",
+    "mode": "missed",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": false,
+      "displacement_max_m": [
+        0.1734422743320465,
+        0.7863986492156982
+      ],
+      "motion_onset_s": [
+        0.1,
+        0.05
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "initial_speed_m_s": 0.14873097836971283,
+      "final_velocity_m_s": [
+        -0.002401676494628191,
+        -0.13737913966178894,
+        2.916442269906838e-07
+      ],
+      "task_success": false,
+      "task_success_definition": "actual interception contact and target velocity change >0.02m/s",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "approximate robot-hand bounding box",
+      "analytic"
+    ],
+    "contact_rows": [
+      "robot_hand–ball",
+      "robot–ball"
+    ]
+  },
+  {
+    "file": "ID_free_motion_interception_family000000_seed0_no_intervention.gif",
+    "task": "free_motion_interception",
+    "mode": "no_intervention",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": false,
+      "displacement_max_m": [
+        0.000788364966865629,
+        0.7863986492156982
+      ],
+      "motion_onset_s": [
+        null,
+        0.05
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "initial_speed_m_s": 0.14873097836971283,
+      "final_velocity_m_s": [
+        -0.002401676494628191,
+        -0.13737913966178894,
+        2.916442269906838e-07
+      ],
+      "task_success": false,
+      "task_success_definition": "actual interception contact and target velocity change >0.02m/s",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "approximate robot-hand bounding box",
+      "analytic"
+    ],
+    "contact_rows": [
+      "robot_hand–ball",
+      "robot–ball"
+    ]
+  },
+  {
+    "file": "ID_free_motion_interception_family000000_seed0_redirection.gif",
+    "task": "free_motion_interception",
+    "mode": "redirection",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.11969929188489914,
+        0.36525219678878784
+      ],
+      "motion_onset_s": [
+        0.30000000000000004,
+        0.05
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "initial_speed_m_s": 0.14873097836971283,
+      "final_velocity_m_s": [
+        -0.010120168328285217,
+        0.0971437618136406,
+        5.01199963309773e-07
+      ],
+      "post_contact_redirection_max_deg": 173.0846405029297,
+      "task_success": true,
+      "task_success_definition": "actual interception contact and target velocity change >0.02m/s",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "approximate robot-hand bounding box",
+      "analytic"
+    ],
+    "contact_rows": [
+      "robot_hand–ball",
+      "robot–ball"
+    ]
+  },
+  {
+    "file": "ID_hook_pull_family000000_seed0_detachment.gif",
+    "task": "hook_pull",
+    "mode": "detachment",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.2186109572649002,
+        0.03949379920959473
+      ],
+      "motion_onset_s": [
+        1.3,
+        2.0
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "final_force_contact_s": 2.2099999506026506,
+      "post_release_motion_m": 0.021025119349360466,
+      "effective_engagement": true,
+      "effective_engagement_onset_s": 2.0,
+      "effective_engagement_end_s": 2.2,
+      "engagement_label_quality": "approximate 20Hz velocity-following with >5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint",
+      "expected_pull_distance_m": 0.04,
+      "task_success": false,
+      "task_success_definition": "actual contact and target pull >4cm along negative X",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–target",
+      "robot–target"
+    ]
+  },
+  {
+    "file": "ID_hook_pull_family000000_seed0_hook_miss.gif",
+    "task": "hook_pull",
+    "mode": "hook_miss",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": false,
+      "displacement_max_m": [
+        0.18281278014183044,
+        2.106436767235209e-07
+      ],
+      "motion_onset_s": [
+        1.2000000000000002,
+        null
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "effective_engagement": false,
+      "effective_engagement_onset_s": null,
+      "effective_engagement_end_s": null,
+      "engagement_label_quality": "approximate 20Hz velocity-following with >5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint",
+      "expected_pull_distance_m": 0.04,
+      "task_success": false,
+      "task_success_definition": "actual contact and target pull >4cm along negative X",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–target",
+      "robot–target"
+    ]
+  },
+  {
+    "file": "ID_hook_pull_family000000_seed0_ineffective_contact.gif",
+    "task": "hook_pull",
+    "mode": "ineffective_contact",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.08925794064998627,
+        0.024269526824355125
+      ],
+      "motion_onset_s": [
+        1.3,
+        2.0
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "effective_engagement": false,
+      "effective_engagement_onset_s": null,
+      "effective_engagement_end_s": null,
+      "engagement_label_quality": "approximate 20Hz velocity-following with >5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint",
+      "expected_pull_distance_m": 0.04,
+      "task_success": false,
+      "task_success_definition": "actual contact and target pull >4cm along negative X",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–target",
+      "robot–target"
+    ]
+  },
+  {
+    "file": "ID_hook_pull_family000000_seed0_successful_engagement.gif",
+    "task": "hook_pull",
+    "mode": "successful_engagement",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.1326504647731781,
+        0.11207948625087738
+      ],
+      "motion_onset_s": [
+        1.3,
+        2.0
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "effective_engagement": true,
+      "effective_engagement_onset_s": 2.0,
+      "effective_engagement_end_s": 5.5,
+      "engagement_label_quality": "approximate 20Hz velocity-following with >5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint",
+      "expected_pull_distance_m": 0.04,
+      "task_success": true,
+      "task_success_definition": "actual contact and target pull >4cm along negative X",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–target",
+      "robot–target"
+    ]
+  },
+  {
+    "file": "ID_tool_contact_release_family000000_seed0_contact_release.gif",
+    "task": "tool_contact_release",
+    "mode": "contact_release",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.2336881309747696,
+        0.10173442959785461
+      ],
+      "motion_onset_s": [
+        1.2000000000000002,
+        1.35
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "final_force_contact_s": 1.8599999584257603,
+      "post_release_motion_m": 0.027611656114459038,
+      "effective_engagement": true,
+      "effective_engagement_onset_s": 1.35,
+      "effective_engagement_end_s": 1.8,
+      "engagement_label_quality": "approximate 20Hz velocity-following with >5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint",
+      "expected_pull_distance_m": 0.04,
+      "task_success": true,
+      "task_success_definition": "actual contact and target pull >4cm along negative X",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–target",
+      "robot–target"
+    ]
+  },
+  {
+    "file": "ID_tool_contact_release_family000000_seed0_engage_pull.gif",
+    "task": "tool_contact_release",
+    "mode": "engage_pull",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.1444028913974762,
+        0.12492375820875168
+      ],
+      "motion_onset_s": [
+        1.35,
+        1.9000000000000001
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "effective_engagement": true,
+      "effective_engagement_onset_s": 1.9000000000000001,
+      "effective_engagement_end_s": 5.5,
+      "engagement_label_quality": "approximate 20Hz velocity-following with >5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint",
+      "expected_pull_distance_m": 0.04,
+      "task_success": true,
+      "task_success_definition": "actual contact and target pull >4cm along negative X",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–target",
+      "robot–target"
+    ]
+  },
+  {
+    "file": "ID_tool_contact_release_family000000_seed0_failed_engagement.gif",
+    "task": "tool_contact_release",
+    "mode": "failed_engagement",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": true,
+      "displacement_max_m": [
+        0.08880040049552917,
+        0.026776088401675224
+      ],
+      "motion_onset_s": [
+        1.35,
+        1.9500000000000002
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "effective_engagement": false,
+      "effective_engagement_onset_s": null,
+      "effective_engagement_end_s": null,
+      "engagement_label_quality": "approximate 20Hz velocity-following with >5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint",
+      "expected_pull_distance_m": 0.04,
+      "task_success": false,
+      "task_success_definition": "actual contact and target pull >4cm along negative X",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–target",
+      "robot–target"
+    ]
+  },
+  {
+    "file": "ID_tool_contact_release_family000000_seed0_near_miss.gif",
+    "task": "tool_contact_release",
+    "mode": "near_miss",
+    "seed": 0,
+    "mode_verified": true,
+    "frames": 56,
+    "physical_duration_s": 5.5,
+    "labels": {
+      "contact_observed": false,
+      "displacement_max_m": [
+        0.1865331381559372,
+        2.8113603889323713e-07
+      ],
+      "motion_onset_s": [
+        1.25,
+        null
+      ],
+      "phase_quality": "contact native; coupled-motion/engagement phases are explicit velocity heuristics",
+      "effective_engagement": false,
+      "effective_engagement_onset_s": null,
+      "effective_engagement_end_s": null,
+      "engagement_label_quality": "approximate 20Hz velocity-following with >5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint",
+      "expected_pull_distance_m": 0.04,
+      "task_success": false,
+      "task_success_definition": "actual contact and target pull >4cm along negative X",
+      "mode_verified": true,
+      "success": true,
+      "success_definition": "legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score"
+    },
+    "point_surface_quality": [
+      "analytic",
+      "analytic"
+    ],
+    "contact_rows": [
+      "tool–target",
+      "robot–target"
+    ]
+  }
+]

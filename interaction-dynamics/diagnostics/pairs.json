@@ -1,0 +1,168 @@
+{
+  "pairs": [
+    {
+      "pair_id": "action_counterfactual_seed0",
+      "counterfactual_type": "action_counterfactual",
+      "anchor_frame": 0,
+      "held_constant_variables": [
+        "complete native reset state",
+        "physical parameters",
+        "geometry",
+        "camera"
+      ],
+      "changed_variables": [
+        "precommitted robot controls"
+      ],
+      "initial_state_id": {
+        "A": "34a6d8080b17cbadbd88eb259578a3a77e657292be60638a6f09747004d57ee4",
+        "B": "34a6d8080b17cbadbd88eb259578a3a77e657292be60638a6f09747004d57ee4"
+      },
+      "action_sequence_id": {
+        "A": "024c39803f68d9317b0235ba35884c4ad0a6e3b338f30447b9489aba0c7df281",
+        "B": "a24e4129777606600974d8123d635b3f292ffee77ffa7a4dfbcfb26387d04b6d"
+      },
+      "complete_initial_state_identical": true,
+      "future_motion_difference_m": 0.043214243312822954,
+      "observation_matching": {
+        "current_rgb_MAE_255": 0.0,
+        "current_rgb_identical": true,
+        "current_depth_max_error_m": 0.0,
+        "current_proprio_max_error": 0.0,
+        "current_pose_max_error": 0.0,
+        "future_actions_identical": false,
+        "current_points_max_error_m": 0.0,
+        "current_points_identical": true,
+        "strict_current_RGBD_match": true,
+        "different_nonhistory_model_input_keys": [
+          "future_actions"
+        ],
+        "strict_hidden_state_ambiguity": false,
+        "strict_hidden_state_ambiguity_without_oracle_current_points": false,
+        "ambiguity_scope": "Exact comparison of all nonhistory model inputs; RGB-D match reported separately. Near-matched pairs remain approximate."
+      },
+      "accepted": true,
+      "state_writes": "reset-only before history integration; no pose/velocity teleport during recorded history/future",
+      "past_target_contact": null,
+      "simulation_verified": "both branches integrated through native SAPIEN CPU PhysX; contact truth from solver trace",
+      "episodes": [
+        "action_counterfactual_seed0_A.h5",
+        "action_counterfactual_seed0_B.h5"
+      ],
+      "gif": "action_counterfactual_seed0.gif",
+      "anchor_image": "action_counterfactual_seed0_anchor.jpg",
+      "frames": 56
+    },
+    {
+      "pair_id": "hidden_velocity_seed0",
+      "counterfactual_type": "hidden_velocity",
+      "anchor_frame": 20,
+      "held_constant_variables": [
+        "physical parameters",
+        "geometry",
+        "camera",
+        "future control sequence"
+      ],
+      "changed_variables": [
+        "physically integrated pre-anchor history",
+        "hidden target velocity",
+        "reset state needed to generate histories"
+      ],
+      "initial_state_id": {
+        "A": "ab51483d9c1fb17a980139ad3797b8660d9d3ca31c3164cf81664a914f529b86",
+        "B": "3b761db47c077b6a8bf4a21ee79e9bf70485864aaf42d4cabbbc5dae3832009c"
+      },
+      "action_sequence_id": {
+        "A": "7086dbb79acf183e7aca38e7cf5aebce26915276bbc35bce917c5a14a7a34d36",
+        "B": "7086dbb79acf183e7aca38e7cf5aebce26915276bbc35bce917c5a14a7a34d36"
+      },
+      "complete_initial_state_identical": false,
+      "future_motion_difference_m": 0.3306669048915251,
+      "observation_matching": {
+        "current_rgb_MAE_255": 0.0,
+        "current_rgb_identical": true,
+        "current_depth_max_error_m": 0.0,
+        "current_proprio_max_error": 0.0,
+        "current_pose_max_error": 4.76837158203125e-06,
+        "future_actions_identical": true,
+        "current_points_max_error_m": 3.8743019104003906e-07,
+        "current_points_identical": false,
+        "strict_current_RGBD_match": true,
+        "different_nonhistory_model_input_keys": [
+          "current_points"
+        ],
+        "strict_hidden_state_ambiguity": false,
+        "strict_hidden_state_ambiguity_without_oracle_current_points": true,
+        "ambiguity_scope": "Exact comparison of all nonhistory model inputs; RGB-D match reported separately. Near-matched pairs remain approximate."
+      },
+      "accepted": true,
+      "state_writes": "reset-only before history integration; no pose/velocity teleport during recorded history/future",
+      "past_target_contact": null,
+      "simulation_verified": "both branches integrated through native SAPIEN CPU PhysX; contact truth from solver trace",
+      "episodes": [
+        "hidden_velocity_seed0_A.h5",
+        "hidden_velocity_seed0_B.h5"
+      ],
+      "gif": "hidden_velocity_seed0.gif",
+      "anchor_image": "hidden_velocity_seed0_anchor.jpg",
+      "frames": 56
+    },
+    {
+      "pair_id": "contact_history_seed0",
+      "counterfactual_type": "contact_history",
+      "anchor_frame": 80,
+      "held_constant_variables": [
+        "physical parameters",
+        "geometry",
+        "camera",
+        "future control sequence"
+      ],
+      "changed_variables": [
+        "physically integrated pre-anchor history",
+        "hidden target velocity",
+        "reset state needed to generate histories"
+      ],
+      "initial_state_id": {
+        "A": "441dfe854a3f6a770b6e560263f33d6e966fe6b99f9b41e92267f2ff53792b6a",
+        "B": "3da6bd2d59b6efd92fe421bb31423eea1fbf37629480568c4dc9f105ac1ead5d"
+      },
+      "action_sequence_id": {
+        "A": "40f91949754ffa7c9e855d107b048708d5acefad673c0f52865c8a8f56e2c931",
+        "B": "7086dbb79acf183e7aca38e7cf5aebce26915276bbc35bce917c5a14a7a34d36"
+      },
+      "complete_initial_state_identical": false,
+      "future_motion_difference_m": 0.06518806542455512,
+      "observation_matching": {
+        "current_rgb_MAE_255": 0.0,
+        "current_rgb_identical": true,
+        "current_depth_max_error_m": 0.0,
+        "current_proprio_max_error": 1.6763806343078613e-08,
+        "current_pose_max_error": 5.125999450683594e-06,
+        "future_actions_identical": true,
+        "current_points_max_error_m": 5.364418029785156e-07,
+        "current_points_identical": false,
+        "strict_current_RGBD_match": true,
+        "different_nonhistory_model_input_keys": [
+          "current_points",
+          "proprioception"
+        ],
+        "strict_hidden_state_ambiguity": false,
+        "strict_hidden_state_ambiguity_without_oracle_current_points": false,
+        "ambiguity_scope": "Exact comparison of all nonhistory model inputs; RGB-D match reported separately. Near-matched pairs remain approximate."
+      },
+      "accepted": true,
+      "state_writes": "reset-only before history integration; no pose/velocity teleport during recorded history/future",
+      "past_target_contact": {
+        "A": true,
+        "B": false
+      },
+      "simulation_verified": "both branches integrated through native SAPIEN CPU PhysX; contact truth from solver trace",
+      "episodes": [
+        "contact_history_seed0_A.h5",
+        "contact_history_seed0_B.h5"
+      ],
+      "gif": "contact_history_seed0.gif",
+      "anchor_image": "contact_history_seed0_anchor.jpg",
+      "frames": 56
+    }
+  ]
+}

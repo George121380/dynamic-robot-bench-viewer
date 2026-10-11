@@ -1,0 +1,272 @@
+{
+  "audit_base": "c39a8799a346bf92774294e54d775e011d2ab952",
+  "existing_catalog_entries": [
+    {
+      "task_id": "match_and_pick_from_conveyor",
+      "interaction": "moving support / grasp / carry",
+      "before_status": "project implemented; Isaac Sim runner"
+    },
+    {
+      "task_id": "push_puck_collision",
+      "interaction": "robot→A→B contact, release and free slide",
+      "before_status": "implemented separate owned feature checkout, 9985d495"
+    },
+    {
+      "task_id": "PandaFingerArticulationDiagnostic-v0",
+      "interaction": "prismatic link motion",
+      "before_status": "native ManiSkill diagnostic collector, bd74f72; upstream task criteria retained"
+    },
+    {
+      "task_id": "RollBall-v1",
+      "interaction": "push / ball rolling",
+      "before_status": "native ManiSkill diagnostic collector, bd74f72; upstream task criteria retained"
+    },
+    {
+      "task_id": "PullCubeTool-v1",
+      "interaction": "L-tool hook / pull / near miss / detach",
+      "before_status": "native ManiSkill diagnostic collector, bd74f72; upstream task criteria retained"
+    },
+    {
+      "task_id": "PokeCube-v1",
+      "interaction": "grasp peg / tool push cube",
+      "before_status": "native ManiSkill diagnostic collector, bd74f72; upstream task criteria retained"
+    },
+    {
+      "task_id": "PickCube-v1",
+      "interaction": "grasp / lift / release",
+      "before_status": "native ManiSkill diagnostic collector, bd74f72; upstream task criteria retained"
+    },
+    {
+      "task_id": "PushT-v1",
+      "interaction": "off-centre pushing / torque diagnostic",
+      "before_status": "native ManiSkill diagnostic collector, bd74f72; upstream task criteria retained"
+    },
+    {
+      "task_id": "OpenDrawer",
+      "interaction": "prismatic drawer / handle contact / release",
+      "before_status": "source-data state replay verified; no local task policy runner"
+    },
+    {
+      "task_id": "PanTransfer",
+      "interaction": "grasp / carry pan / placement",
+      "before_status": "source-data state replay verified; no local task policy runner"
+    },
+    {
+      "task_id": "CloseFridge",
+      "interaction": "revolute door / closure contact",
+      "before_status": "source-data state replay verified; no local task policy runner"
+    },
+    {
+      "task_id": "SlideDishwasherRack",
+      "interaction": "prismatic rack / handle contact",
+      "before_status": "source-data state replay verified; no local task policy runner"
+    },
+    {
+      "task_id": "StackBowlsCabinet",
+      "interaction": "grasp / stacking / support contact",
+      "before_status": "source-data state replay verified; no local task policy runner"
+    },
+    {
+      "task_id": "CoffeeSetupMug",
+      "interaction": "grasp / carry / placement",
+      "before_status": "source-data state replay verified; no local task policy runner"
+    },
+    {
+      "task_id": "SlideToasterOvenRack",
+      "interaction": "prismatic rack / handle contact",
+      "before_status": "source-data state replay verified; no local task policy runner"
+    },
+    {
+      "task_id": "StirVegetables",
+      "interaction": "tool-food multi-object contact",
+      "before_status": "source-data state replay verified; no local task policy runner"
+    },
+    {
+      "task_id": "ToolHang",
+      "interaction": "frame assembly / tool-frame support constraint",
+      "before_status": "original-state RGB-D replay verified; no policy adapter"
+    },
+    {
+      "task_id": "reach_and_drag",
+      "interaction": "tool-object contact",
+      "before_status": "live RLBench expert RGB-D; no unified policy evaluator"
+    },
+    {
+      "task_id": "MOVi-C",
+      "interaction": "passive physical object interactions",
+      "before_status": "source/read or partial generation; not robot task adapter"
+    },
+    {
+      "task_id": "CoPhy",
+      "interaction": "passive physical object interactions",
+      "before_status": "source/read or partial generation; not robot task adapter"
+    },
+    {
+      "task_id": "AdroitHandHammer-v1",
+      "interaction": "dexterous grasp / hammer-nail impact",
+      "before_status": "original-state RGB-D replay verified; no policy adapter"
+    },
+    {
+      "task_id": "Physion-v1.5-OCP",
+      "interaction": "passive physical object interactions",
+      "before_status": "source/read or partial generation; not robot task adapter"
+    },
+    {
+      "task_id": "sweep_to_dustpan_of_size",
+      "interaction": "tool-object contact",
+      "before_status": "live RLBench expert RGB-D; no unified policy evaluator"
+    },
+    {
+      "task_id": "CLEVRER",
+      "interaction": "passive physical object interactions",
+      "before_status": "source/read or partial generation; not robot task adapter"
+    },
+    {
+      "task_id": "TurnFaucet-v1",
+      "interaction": "revolute handle",
+      "before_status": "matching assets blocked; legacy GIF only"
+    },
+    {
+      "task_id": "beat_the_rotating_buzz",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "beat_the_rotating_buzz_high_speed",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "insert_onto_rotating_peg",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "insert_onto_rotating_peg_high_speed",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "pick_moving_target_on_the_table",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "pick_moving_target_on_the_table_high_speed",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "place_cups_on_rotating_frame",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "place_cups_on_rotating_frame_high_speed",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "remove_cups_from_rotating_frame",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "remove_cups_from_rotating_frame_high_speed",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "put_rubbish_in_moving_bin",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "put_rubbish_in_moving_bin_high_speed",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "push_moving_button",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "push_moving_button_high_speed",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "moving_basketball_in_hoop",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "moving_basketball_in_hoop_high_speed",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    },
+    {
+      "task_id": "PhysMani",
+      "interaction": "moving target / moving support / insertion / grasp",
+      "before_status": "PhysMani original task reproduction; source RGB-D verified"
+    }
+  ],
+  "key_gaps": [
+    "three-body propagation",
+    "free-motion interception variants",
+    "analytic fixed local point identities",
+    "complete physical contact trace",
+    "matched hidden-state pairs",
+    "parameter/composition OOD split before windows"
+  ],
+  "reuse": [
+    "ManiSkill PullCubeTool assets/controller and project precommitted plan",
+    "ManiSkill PokeCube scene/peg for chain",
+    "ManiSkill RollBall scene/ball for interception",
+    "existing policy transport and ADE/FDE metric conventions"
+  ],
+  "modified_existing_paths": [
+    {
+      "upstream": "PullCubeTool-v1",
+      "extension": "ToolContactRelease-v1 / HookPullDynamics-v1",
+      "original_registration_modified": false
+    },
+    {
+      "upstream": "PokeCube-v1",
+      "extension": "CollisionChain-v1",
+      "original_registration_modified": false
+    },
+    {
+      "upstream": "RollBall-v1",
+      "extension": "FreeMotionInterception-v1",
+      "original_registration_modified": false
+    }
+  ],
+  "new_protocols": [
+    {
+      "task_id": "tool_contact_release",
+      "environment_id": "ToolContactRelease-v1",
+      "native_reuse": "PullCubeTool"
+    },
+    {
+      "task_id": "hook_pull",
+      "environment_id": "HookPullDynamics-v1",
+      "native_reuse": "same L-tool contact implementation"
+    },
+    {
+      "task_id": "collision_chain",
+      "environment_id": "CollisionChain-v1",
+      "native_reuse": "PokeCube + independent B/C bodies"
+    },
+    {
+      "task_id": "free_motion_interception",
+      "environment_id": "FreeMotionInterception-v1",
+      "native_reuse": "RollBall + reset-only initial velocity"
+    }
+  ],
+  "deferred_P1": [
+    "new door/drawer link dynamics",
+    "grasp carry/slip/release extension; existing PickCube retained"
+  ]
+}

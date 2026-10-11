@@ -1,0 +1,433 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Interaction-aware 4D Dynamics · Benchmark review</title><style>body{font:16px system-ui;margin:28px auto;max-width:1400px;padding:0 20px;color:#20262c;line-height:1.55}h1{font-size:29px}h2{font-size:19px}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(500px,1fr));gap:24px}article{border-top:1px solid #ddd;padding:14px 0}article p{font-size:14px;margin:8px 0}img{width:100%;height:auto}.depth{color:#136754}select{padding:10px;margin:16px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;background:#f5f6f7;padding:12px}.pair{margin-top:20px}.note{background:#f1f5f7;padding:16px;border-radius:6px}nav{display:flex;flex-wrap:wrap;gap:20px}a{color:#175497}summary{cursor:pointer}@media(max-width:600px){main{grid-template-columns:1fr}}</style></head><body><h1>Interaction-aware 4D Dynamics · Benchmark 检查页</h1><p>4 个 P0 协议 · 20 种交互模式 · 60 条验收 · 20 个模式 GIF + 3 个诊断对 GIF。</p><nav><a href="BENCHMARK.zh.md">简洁 Benchmark 说明</a><a href="BENCHMARK.en.md">Benchmark specification</a><a href="README.zh.md">中文文档</a><a href="README.en.md">English documentation</a><a href="VALIDATION.zh.md">验收说明</a><a href="validation.json">机器可读验收</a><a href="task_inventory.json">Task Inventory</a><a href="../benchmark-tasks/depth/">既有深度任务</a></nav><p class="note">GIF：左侧实际 RGB，右侧固定世界 XYZ 点轨迹，下方 100 Hz 求解器接触时间线。球／方块／工具用解析表面点；机器人手使用明确标注的 link 局部包围盒参考点。Mode verified 包括负样本行为验证。Stationary/CV 仅用于接口 smoke，没有训练模型。</p><h2>逐任务交互模式 / Interaction modes</h2><label>任务筛选 / Task filter <select aria-label="Task filter"><option value="">全部 / All</option><option value="collision_chain">多物体碰撞链 / Collision chain</option><option value="free_motion_interception">自由运动拦截 / Free-motion interception</option><option value="tool_contact_release">工具接触与解除 / Tool contact & release</option><option value="hook_pull">钩拉 / Hook & pull</option></select></label><main><article data-task="collision_chain"><h2>collision_free_motion</h2><p>多物体碰撞链 / Collision chain · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: True</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_collision_chain_family000000_seed0_collision_free_motion.gif"><img loading="lazy" src="media/ID_collision_chain_family000000_seed0_collision_free_motion.gif" alt="collision_chain collision_free_motion RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 13.43 cm · Object 2: 9.88 cm</p><p>运动起点 / motion onset (s): [1.1, 1.4000000000000001]</p><p>接触行从上到下 / contact rows: tool–A; tool–B; A–B; robot–A; robot–B</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.12515321373939514,
+    0.1342972218990326,
+    0.09881327301263809
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.05,
+    1.1,
+    1.4000000000000001
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;A_B_contact&quot;: true,
+  &quot;final_A_B_force_contact_s&quot;: 1.8699999582022429,
+  &quot;B_post_A_B_release_motion_m&quot;: 0.030717268586158752,
+  &quot;direct_tool_or_robot_contact_with_B_C&quot;: false,
+  &quot;task_success&quot;: true,
+  &quot;task_success_definition&quot;: &quot;direct mode: move A &gt;1.5cm; propagation modes: physically transmit motion to B/C &gt;1.5cm&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="collision_chain"><h2>direct_push</h2><p>多物体碰撞链 / Collision chain · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: True</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_collision_chain_family000000_seed0_direct_push.gif"><img loading="lazy" src="media/ID_collision_chain_family000000_seed0_direct_push.gif" alt="collision_chain direct_push RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 13.57 cm · Object 2: 0.00 cm</p><p>运动起点 / motion onset (s): [1.1, None]</p><p>接触行从上到下 / contact rows: tool–A; tool–B; A–B; robot–A; robot–B</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.1251411736011505,
+    0.1357489973306656,
+    0.0
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.05,
+    1.1,
+    null
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;A_B_contact&quot;: false,
+  &quot;direct_tool_or_robot_contact_with_B_C&quot;: false,
+  &quot;task_success&quot;: true,
+  &quot;task_success_definition&quot;: &quot;direct mode: move A &gt;1.5cm; propagation modes: physically transmit motion to B/C &gt;1.5cm&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="collision_chain"><h2>failed_propagation</h2><p>多物体碰撞链 / Collision chain · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: False</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_collision_chain_family000000_seed0_failed_propagation.gif"><img loading="lazy" src="media/ID_collision_chain_family000000_seed0_failed_propagation.gif" alt="collision_chain failed_propagation RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 4.29 cm · Object 2: 0.30 cm</p><p>运动起点 / motion onset (s): [1.1500000000000001, None]</p><p>接触行从上到下 / contact rows: tool–A; tool–B; A–B; robot–A; robot–B</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.08752553910017014,
+    0.04292242228984833,
+    0.0030265257228165865
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.1,
+    1.1500000000000001,
+    null
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;A_B_contact&quot;: true,
+  &quot;direct_tool_or_robot_contact_with_B_C&quot;: false,
+  &quot;task_success&quot;: false,
+  &quot;task_success_definition&quot;: &quot;direct mode: move A &gt;1.5cm; propagation modes: physically transmit motion to B/C &gt;1.5cm&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="collision_chain"><h2>near_miss</h2><p>多物体碰撞链 / Collision chain · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: False</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_collision_chain_family000000_seed0_near_miss.gif"><img loading="lazy" src="media/ID_collision_chain_family000000_seed0_near_miss.gif" alt="collision_chain near_miss RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 13.90 cm · Object 2: 0.00 cm</p><p>运动起点 / motion onset (s): [1.1, None]</p><p>接触行从上到下 / contact rows: tool–A; tool–B; A–B; robot–A; robot–B</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.12516842782497406,
+    0.13897274434566498,
+    7.568690989501192e-07
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.05,
+    1.1,
+    null
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;A_B_contact&quot;: false,
+  &quot;direct_tool_or_robot_contact_with_B_C&quot;: false,
+  &quot;task_success&quot;: false,
+  &quot;task_success_definition&quot;: &quot;direct mode: move A &gt;1.5cm; propagation modes: physically transmit motion to B/C &gt;1.5cm&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="collision_chain"><h2>three_body</h2><p>多物体碰撞链 / Collision chain · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: True</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_collision_chain_family000000_seed0_three_body.gif"><img loading="lazy" src="media/ID_collision_chain_family000000_seed0_three_body.gif" alt="collision_chain three_body RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 14.42 cm · Object 2: 10.46 cm · Object 3: 6.54 cm</p><p>运动起点 / motion onset (s): [1.1, 1.4000000000000001, 1.75]</p><p>接触行从上到下 / contact rows: tool–A; tool–B; tool–C; A–B; A–C; B–C; robot–A; robot–B; robot–C</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.1251242309808731,
+    0.14424756169319153,
+    0.10461075603961945,
+    0.06544893980026245
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.05,
+    1.1,
+    1.4000000000000001,
+    1.75
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;A_B_contact&quot;: true,
+  &quot;B_C_contact&quot;: true,
+  &quot;direct_tool_or_robot_contact_with_B_C&quot;: false,
+  &quot;task_success&quot;: true,
+  &quot;task_success_definition&quot;: &quot;direct mode: move A &gt;1.5cm; propagation modes: physically transmit motion to B/C &gt;1.5cm&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="collision_chain"><h2>two_body</h2><p>多物体碰撞链 / Collision chain · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: True</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_collision_chain_family000000_seed0_two_body.gif"><img loading="lazy" src="media/ID_collision_chain_family000000_seed0_two_body.gif" alt="collision_chain two_body RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 13.43 cm · Object 2: 9.88 cm</p><p>运动起点 / motion onset (s): [1.1, 1.4000000000000001]</p><p>接触行从上到下 / contact rows: tool–A; tool–B; A–B; robot–A; robot–B</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.12515321373939514,
+    0.1342972218990326,
+    0.09881327301263809
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.05,
+    1.1,
+    1.4000000000000001
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;A_B_contact&quot;: true,
+  &quot;direct_tool_or_robot_contact_with_B_C&quot;: false,
+  &quot;task_success&quot;: true,
+  &quot;task_success_definition&quot;: &quot;direct mode: move A &gt;1.5cm; propagation modes: physically transmit motion to B/C &gt;1.5cm&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="free_motion_interception"><h2>early</h2><p>自由运动拦截 / Free-motion interception · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: True</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_free_motion_interception_family000000_seed0_early.gif"><img loading="lazy" src="media/ID_free_motion_interception_family000000_seed0_early.gif" alt="free_motion_interception early RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 63.29 cm</p><p>运动起点 / motion onset (s): [0.05]</p><p>接触行从上到下 / contact rows: robot_hand–ball; robot–ball</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.11621376872062683,
+    0.632850170135498
+  ],
+  &quot;motion_onset_s&quot;: [
+    0.1,
+    0.05
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;initial_speed_m_s&quot;: 0.14873097836971283,
+  &quot;final_velocity_m_s&quot;: [
+    -0.07103335112333298,
+    0.049306560307741165,
+    5.151584900886519e-07
+  ],
+  &quot;target_velocity_change_m_s&quot;: 0.20950771868228912,
+  &quot;task_success&quot;: true,
+  &quot;task_success_definition&quot;: &quot;actual interception contact and target velocity change &gt;0.02m/s&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="free_motion_interception"><h2>interception</h2><p>自由运动拦截 / Free-motion interception · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: True</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_free_motion_interception_family000000_seed0_interception.gif"><img loading="lazy" src="media/ID_free_motion_interception_family000000_seed0_interception.gif" alt="free_motion_interception interception RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 24.35 cm</p><p>运动起点 / motion onset (s): [0.05]</p><p>接触行从上到下 / contact rows: robot_hand–ball; robot–ball</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.11905442923307419,
+    0.24349403381347656
+  ],
+  &quot;motion_onset_s&quot;: [
+    0.30000000000000004,
+    0.05
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;initial_speed_m_s&quot;: 0.14873097836971283,
+  &quot;final_velocity_m_s&quot;: [
+    -0.0025554061867296696,
+    0.07490451633930206,
+    3.819908727109578e-07
+  ],
+  &quot;target_velocity_change_m_s&quot;: 0.22361283004283905,
+  &quot;task_success&quot;: true,
+  &quot;task_success_definition&quot;: &quot;actual interception contact and target velocity change &gt;0.02m/s&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="free_motion_interception"><h2>late</h2><p>自由运动拦截 / Free-motion interception · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: False</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_free_motion_interception_family000000_seed0_late.gif"><img loading="lazy" src="media/ID_free_motion_interception_family000000_seed0_late.gif" alt="free_motion_interception late RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 78.64 cm</p><p>运动起点 / motion onset (s): [0.05]</p><p>接触行从上到下 / contact rows: robot_hand–ball; robot–ball</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: false,
+  &quot;displacement_max_m&quot;: [
+    0.11924710124731064,
+    0.7863986492156982
+  ],
+  &quot;motion_onset_s&quot;: [
+    3.35,
+    0.05
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;initial_speed_m_s&quot;: 0.14873097836971283,
+  &quot;final_velocity_m_s&quot;: [
+    -0.002401676494628191,
+    -0.13737913966178894,
+    2.916442269906838e-07
+  ],
+  &quot;task_success&quot;: false,
+  &quot;task_success_definition&quot;: &quot;actual interception contact and target velocity change &gt;0.02m/s&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="free_motion_interception"><h2>missed</h2><p>自由运动拦截 / Free-motion interception · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: False</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_free_motion_interception_family000000_seed0_missed.gif"><img loading="lazy" src="media/ID_free_motion_interception_family000000_seed0_missed.gif" alt="free_motion_interception missed RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 78.64 cm</p><p>运动起点 / motion onset (s): [0.05]</p><p>接触行从上到下 / contact rows: robot_hand–ball; robot–ball</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: false,
+  &quot;displacement_max_m&quot;: [
+    0.1734422743320465,
+    0.7863986492156982
+  ],
+  &quot;motion_onset_s&quot;: [
+    0.1,
+    0.05
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;initial_speed_m_s&quot;: 0.14873097836971283,
+  &quot;final_velocity_m_s&quot;: [
+    -0.002401676494628191,
+    -0.13737913966178894,
+    2.916442269906838e-07
+  ],
+  &quot;task_success&quot;: false,
+  &quot;task_success_definition&quot;: &quot;actual interception contact and target velocity change &gt;0.02m/s&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="free_motion_interception"><h2>no_intervention</h2><p>自由运动拦截 / Free-motion interception · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: False</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_free_motion_interception_family000000_seed0_no_intervention.gif"><img loading="lazy" src="media/ID_free_motion_interception_family000000_seed0_no_intervention.gif" alt="free_motion_interception no_intervention RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 78.64 cm</p><p>运动起点 / motion onset (s): [0.05]</p><p>接触行从上到下 / contact rows: robot_hand–ball; robot–ball</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: false,
+  &quot;displacement_max_m&quot;: [
+    0.000788364966865629,
+    0.7863986492156982
+  ],
+  &quot;motion_onset_s&quot;: [
+    null,
+    0.05
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;initial_speed_m_s&quot;: 0.14873097836971283,
+  &quot;final_velocity_m_s&quot;: [
+    -0.002401676494628191,
+    -0.13737913966178894,
+    2.916442269906838e-07
+  ],
+  &quot;task_success&quot;: false,
+  &quot;task_success_definition&quot;: &quot;actual interception contact and target velocity change &gt;0.02m/s&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="free_motion_interception"><h2>redirection</h2><p>自由运动拦截 / Free-motion interception · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: True</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_free_motion_interception_family000000_seed0_redirection.gif"><img loading="lazy" src="media/ID_free_motion_interception_family000000_seed0_redirection.gif" alt="free_motion_interception redirection RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 36.53 cm</p><p>运动起点 / motion onset (s): [0.05]</p><p>接触行从上到下 / contact rows: robot_hand–ball; robot–ball</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.11969929188489914,
+    0.36525219678878784
+  ],
+  &quot;motion_onset_s&quot;: [
+    0.30000000000000004,
+    0.05
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;initial_speed_m_s&quot;: 0.14873097836971283,
+  &quot;final_velocity_m_s&quot;: [
+    -0.010120168328285217,
+    0.0971437618136406,
+    5.01199963309773e-07
+  ],
+  &quot;post_contact_redirection_max_deg&quot;: 173.0846405029297,
+  &quot;task_success&quot;: true,
+  &quot;task_success_definition&quot;: &quot;actual interception contact and target velocity change &gt;0.02m/s&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="hook_pull"><h2>detachment</h2><p>钩拉 / Hook & pull · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: False</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_hook_pull_family000000_seed0_detachment.gif"><img loading="lazy" src="media/ID_hook_pull_family000000_seed0_detachment.gif" alt="hook_pull detachment RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 3.95 cm</p><p>运动起点 / motion onset (s): [2.0]</p><p>接触行从上到下 / contact rows: tool–target; robot–target</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.2186109572649002,
+    0.03949379920959473
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.3,
+    2.0
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;final_force_contact_s&quot;: 2.2099999506026506,
+  &quot;post_release_motion_m&quot;: 0.021025119349360466,
+  &quot;effective_engagement&quot;: true,
+  &quot;effective_engagement_onset_s&quot;: 2.0,
+  &quot;effective_engagement_end_s&quot;: 2.2,
+  &quot;engagement_label_quality&quot;: &quot;approximate 20Hz velocity-following with &gt;5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint&quot;,
+  &quot;expected_pull_distance_m&quot;: 0.04,
+  &quot;task_success&quot;: false,
+  &quot;task_success_definition&quot;: &quot;actual contact and target pull &gt;4cm along negative X&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="hook_pull"><h2>hook_miss</h2><p>钩拉 / Hook & pull · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: False</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_hook_pull_family000000_seed0_hook_miss.gif"><img loading="lazy" src="media/ID_hook_pull_family000000_seed0_hook_miss.gif" alt="hook_pull hook_miss RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 0.00 cm</p><p>运动起点 / motion onset (s): [None]</p><p>接触行从上到下 / contact rows: tool–target; robot–target</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: false,
+  &quot;displacement_max_m&quot;: [
+    0.18281278014183044,
+    2.106436767235209e-07
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.2000000000000002,
+    null
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;effective_engagement&quot;: false,
+  &quot;effective_engagement_onset_s&quot;: null,
+  &quot;effective_engagement_end_s&quot;: null,
+  &quot;engagement_label_quality&quot;: &quot;approximate 20Hz velocity-following with &gt;5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint&quot;,
+  &quot;expected_pull_distance_m&quot;: 0.04,
+  &quot;task_success&quot;: false,
+  &quot;task_success_definition&quot;: &quot;actual contact and target pull &gt;4cm along negative X&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="hook_pull"><h2>ineffective_contact</h2><p>钩拉 / Hook & pull · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: False</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_hook_pull_family000000_seed0_ineffective_contact.gif"><img loading="lazy" src="media/ID_hook_pull_family000000_seed0_ineffective_contact.gif" alt="hook_pull ineffective_contact RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 2.43 cm</p><p>运动起点 / motion onset (s): [2.0]</p><p>接触行从上到下 / contact rows: tool–target; robot–target</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.08925794064998627,
+    0.024269526824355125
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.3,
+    2.0
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;effective_engagement&quot;: false,
+  &quot;effective_engagement_onset_s&quot;: null,
+  &quot;effective_engagement_end_s&quot;: null,
+  &quot;engagement_label_quality&quot;: &quot;approximate 20Hz velocity-following with &gt;5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint&quot;,
+  &quot;expected_pull_distance_m&quot;: 0.04,
+  &quot;task_success&quot;: false,
+  &quot;task_success_definition&quot;: &quot;actual contact and target pull &gt;4cm along negative X&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="hook_pull"><h2>successful_engagement</h2><p>钩拉 / Hook & pull · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: True</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_hook_pull_family000000_seed0_successful_engagement.gif"><img loading="lazy" src="media/ID_hook_pull_family000000_seed0_successful_engagement.gif" alt="hook_pull successful_engagement RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 11.21 cm</p><p>运动起点 / motion onset (s): [2.0]</p><p>接触行从上到下 / contact rows: tool–target; robot–target</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.1326504647731781,
+    0.11207948625087738
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.3,
+    2.0
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;effective_engagement&quot;: true,
+  &quot;effective_engagement_onset_s&quot;: 2.0,
+  &quot;effective_engagement_end_s&quot;: 5.5,
+  &quot;engagement_label_quality&quot;: &quot;approximate 20Hz velocity-following with &gt;5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint&quot;,
+  &quot;expected_pull_distance_m&quot;: 0.04,
+  &quot;task_success&quot;: true,
+  &quot;task_success_definition&quot;: &quot;actual contact and target pull &gt;4cm along negative X&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="tool_contact_release"><h2>contact_release</h2><p>工具接触与解除 / Tool contact & release · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: True</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_tool_contact_release_family000000_seed0_contact_release.gif"><img loading="lazy" src="media/ID_tool_contact_release_family000000_seed0_contact_release.gif" alt="tool_contact_release contact_release RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 10.17 cm</p><p>运动起点 / motion onset (s): [1.35]</p><p>接触行从上到下 / contact rows: tool–target; robot–target</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.2336881309747696,
+    0.10173442959785461
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.2000000000000002,
+    1.35
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;final_force_contact_s&quot;: 1.8599999584257603,
+  &quot;post_release_motion_m&quot;: 0.027611656114459038,
+  &quot;effective_engagement&quot;: true,
+  &quot;effective_engagement_onset_s&quot;: 1.35,
+  &quot;effective_engagement_end_s&quot;: 1.8,
+  &quot;engagement_label_quality&quot;: &quot;approximate 20Hz velocity-following with &gt;5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint&quot;,
+  &quot;expected_pull_distance_m&quot;: 0.04,
+  &quot;task_success&quot;: true,
+  &quot;task_success_definition&quot;: &quot;actual contact and target pull &gt;4cm along negative X&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="tool_contact_release"><h2>engage_pull</h2><p>工具接触与解除 / Tool contact & release · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: True</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_tool_contact_release_family000000_seed0_engage_pull.gif"><img loading="lazy" src="media/ID_tool_contact_release_family000000_seed0_engage_pull.gif" alt="tool_contact_release engage_pull RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 12.49 cm</p><p>运动起点 / motion onset (s): [1.9000000000000001]</p><p>接触行从上到下 / contact rows: tool–target; robot–target</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.1444028913974762,
+    0.12492375820875168
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.35,
+    1.9000000000000001
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;effective_engagement&quot;: true,
+  &quot;effective_engagement_onset_s&quot;: 1.9000000000000001,
+  &quot;effective_engagement_end_s&quot;: 5.5,
+  &quot;engagement_label_quality&quot;: &quot;approximate 20Hz velocity-following with &gt;5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint&quot;,
+  &quot;expected_pull_distance_m&quot;: 0.04,
+  &quot;task_success&quot;: true,
+  &quot;task_success_definition&quot;: &quot;actual contact and target pull &gt;4cm along negative X&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="tool_contact_release"><h2>failed_engagement</h2><p>工具接触与解除 / Tool contact & release · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: False</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_tool_contact_release_family000000_seed0_failed_engagement.gif"><img loading="lazy" src="media/ID_tool_contact_release_family000000_seed0_failed_engagement.gif" alt="tool_contact_release failed_engagement RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 2.68 cm</p><p>运动起点 / motion onset (s): [1.9500000000000002]</p><p>接触行从上到下 / contact rows: tool–target; robot–target</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: true,
+  &quot;displacement_max_m&quot;: [
+    0.08880040049552917,
+    0.026776088401675224
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.35,
+    1.9500000000000002
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;effective_engagement&quot;: false,
+  &quot;effective_engagement_onset_s&quot;: null,
+  &quot;effective_engagement_end_s&quot;: null,
+  &quot;engagement_label_quality&quot;: &quot;approximate 20Hz velocity-following with &gt;5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint&quot;,
+  &quot;expected_pull_distance_m&quot;: 0.04,
+  &quot;task_success&quot;: false,
+  &quot;task_success_definition&quot;: &quot;actual contact and target pull &gt;4cm along negative X&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article><article data-task="tool_contact_release"><h2>near_miss</h2><p>工具接触与解除 / Tool contact & release · seed 0 · <b>模式已验证 / verified · 物理目标 / task success: False</b></p><p class="depth">Depth：原生仿真真值 / native GT (metres)</p><a href="media/ID_tool_contact_release_family000000_seed0_near_miss.gif"><img loading="lazy" src="media/ID_tool_contact_release_family000000_seed0_near_miss.gif" alt="tool_contact_release near_miss RGB, fixed XYZ tracks and native contact timeline"></a><p>Object 1: 0.00 cm</p><p>运动起点 / motion onset (s): [None]</p><p>接触行从上到下 / contact rows: tool–target; robot–target</p><details><summary>接触／运动数值证据 · numeric evidence</summary><pre>{
+  &quot;contact_observed&quot;: false,
+  &quot;displacement_max_m&quot;: [
+    0.1865331381559372,
+    2.8113603889323713e-07
+  ],
+  &quot;motion_onset_s&quot;: [
+    1.25,
+    null
+  ],
+  &quot;phase_quality&quot;: &quot;contact native; coupled-motion/engagement phases are explicit velocity heuristics&quot;,
+  &quot;effective_engagement&quot;: false,
+  &quot;effective_engagement_onset_s&quot;: null,
+  &quot;effective_engagement_end_s&quot;: null,
+  &quot;engagement_label_quality&quot;: &quot;approximate 20Hz velocity-following with &gt;5mm negative-X progress, conditioned on actual native force contacts; no artificial attachment joint&quot;,
+  &quot;expected_pull_distance_m&quot;: 0.04,
+  &quot;task_success&quot;: false,
+  &quot;task_success_definition&quot;: &quot;actual contact and target pull &gt;4cm along negative X&quot;,
+  &quot;mode_verified&quot;: true,
+  &quot;success&quot;: true,
+  &quot;success_definition&quot;: &quot;legacy alias of mode_verified, including negative controls; use task_success for physical goal outcome; not original task score&quot;
+}</pre></details></article></main><h2>History / Action paired diagnostics</h2><p>逐字段检查非历史输入。图像一致不自动代表 Oracle XYZ 或机器人状态也严格一致；下面展示 seed0，全部 3 seeds 共 9 对的匹配值在验收 JSON 中。Contact-history 的其他 seeds 是近似匹配，必须单独报告。</p><article class="pair"><h2>action_counterfactual</h2><p>anchor 0 · RGB-D exact: True · all inputs exact: False · without oracle current XYZ: False</p><a href="diagnostics/action_counterfactual_seed0.gif"><img loading="lazy" src="diagnostics/action_counterfactual_seed0.gif" alt="A and B histories, matched anchor and physically different futures"></a><p>未来目标平均差异 / mean future difference: 4.32 cm</p><p>当前 Oracle XYZ 最大差异 / max current XYZ difference: 0.00000000 m</p><p><a href="diagnostics/action_counterfactual_seed0_anchor.jpg">检查 anchor 静帧 / matched anchor</a></p></article><article class="pair"><h2>hidden_velocity</h2><p>anchor 20 · RGB-D exact: True · all inputs exact: False · without oracle current XYZ: True</p><a href="diagnostics/hidden_velocity_seed0.gif"><img loading="lazy" src="diagnostics/hidden_velocity_seed0.gif" alt="A and B histories, matched anchor and physically different futures"></a><p>未来目标平均差异 / mean future difference: 33.07 cm</p><p>当前 Oracle XYZ 最大差异 / max current XYZ difference: 0.00000039 m</p><p><a href="diagnostics/hidden_velocity_seed0_anchor.jpg">检查 anchor 静帧 / matched anchor</a></p></article><article class="pair"><h2>contact_history</h2><p>anchor 80 · RGB-D exact: True · all inputs exact: False · without oracle current XYZ: False</p><a href="diagnostics/contact_history_seed0.gif"><img loading="lazy" src="diagnostics/contact_history_seed0.gif" alt="A and B histories, matched anchor and physically different futures"></a><p>未来目标平均差异 / mean future difference: 6.52 cm</p><p>当前 Oracle XYZ 最大差异 / max current XYZ difference: 0.00000054 m</p><p><a href="diagnostics/contact_history_seed0_anchor.jpg">检查 anchor 静帧 / matched anchor</a></p></article><p><a href="diagnostics/pairs.json">诊断对完整匹配与变量记录 / pair metadata</a> · <a href="samples.json">全部模式数值摘要 / sample evidence</a></p><script>document.querySelector('select').addEventListener('change',e=>document.querySelectorAll('main article').forEach(a=>a.hidden=!!e.target.value&&a.dataset.task!==e.target.value));</script></body></html>
