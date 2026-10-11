@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-10-11T20:46:02+00:00",
-  "verified_stages": 6,
+  "updated_utc": "2026-10-11T21:25:11+00:00",
+  "verified_stages": 7,
   "total_stages": 9,
   "complete": false,
   "assets_verified": 15,
@@ -20,7 +20,7 @@
   },
   "acceptance": {
     "evaluation_passed": true,
-    "training_passed": false,
+    "training_passed": true,
     "visualization_passed": false
   },
   "upstream": {
