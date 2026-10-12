@@ -1,0 +1,1279 @@
+{
+  "provenance": {
+    "base_checkpoint_sha256": "ccb9ed93dff5eea976010c57dd0cb5634db61c68b732c4437cbf54c8da9de8fe",
+    "source_commit": "b08b800c091f4ccb907bbdf67f7ba90facd3c3fa",
+    "prepared_manifest_sha256": "0b573727f46ef0513ec5c1835e0078d25f669d9fc4f18aa66a139c6e15e20310",
+    "train_windows": 135,
+    "validation_episodes": 15,
+    "test_episodes": 25,
+    "training_seed": 42,
+    "trainable_parameters": 51102760,
+    "frozen_parameters": 303154176,
+    "normalization": "released DROID buffers retained; collision_chain domain aliases DROID statistics",
+    "loss": "macro object MSE in centimeters squared + 0.05 current-table MSE",
+    "actual_future_tool_poses_as_input": false,
+    "oracle_current_points_as_input": false,
+    "selected_gpu": "1",
+    "memory_cap_fraction": 0.06,
+    "model_load": "strict",
+    "single_view": true,
+    "context_frames": 1,
+    "prediction_frames": 10,
+    "horizon_s": 2.0
+  },
+  "completed_steps": 1200,
+  "selected_step": 1000,
+  "elapsed_s": 211.03707265853882,
+  "peak_cuda_allocated_mib": 2220.53076171875,
+  "validation": [
+    {
+      "step": 0,
+      "episodes": 15,
+      "scene_seed_groups": 3,
+      "ADE_m": 0.14952328114045993,
+      "FDE_m": 0.2091795211037,
+      "propagation_accuracy": 0.5,
+      "propagation_decisions": 18,
+      "moving_object_ADE_m": 0.15067645245128208,
+      "moving_object_FDE_m": 0.21987712879975638,
+      "phase_ADE_m": {
+        "approach": 0.1919441764553388,
+        "contact": 0.18454478681087494,
+        "coupled_motion": 0.06101577077060938,
+        "free_motion": 0.12269980758428574,
+        "release": 0.15090430031220117
+      },
+      "object_1": {
+        "ADE_m": 0.14672332803408306,
+        "FDE_m": 0.22149800757567087
+      },
+      "object_2": {
+        "ADE_m": 0.15132342328627904,
+        "FDE_m": 0.1978281686703364
+      },
+      "object_3": {
+        "ADE_m": 0.1647255023320516,
+        "FDE_m": 0.20500991741816202
+      }
+    },
+    {
+      "step": 100,
+      "episodes": 15,
+      "scene_seed_groups": 3,
+      "ADE_m": 0.008402429488746244,
+      "FDE_m": 0.01084493015271922,
+      "propagation_accuracy": 1.0,
+      "propagation_decisions": 18,
+      "moving_object_ADE_m": 0.010681924730953245,
+      "moving_object_FDE_m": 0.013850332330912351,
+      "phase_ADE_m": {
+        "approach": 0.009457763206834594,
+        "contact": 0.00604045600630343,
+        "coupled_motion": 0.007161501484612624,
+        "free_motion": 0.008003863506019115,
+        "release": 0.011322544422000647
+      },
+      "object_1": {
+        "ADE_m": 0.009272930057098469,
+        "FDE_m": 0.012157156753043333
+      },
+      "object_2": {
+        "ADE_m": 0.006913469180775186,
+        "FDE_m": 0.008709274387607971
+      },
+      "object_3": {
+        "ADE_m": 0.015824715917309124,
+        "FDE_m": 0.018865217144290607
+      }
+    },
+    {
+      "step": 200,
+      "episodes": 15,
+      "scene_seed_groups": 3,
+      "ADE_m": 0.009266181411739025,
+      "FDE_m": 0.013767045760242683,
+      "propagation_accuracy": 0.9444444444444444,
+      "propagation_decisions": 18,
+      "moving_object_ADE_m": 0.011836346942517494,
+      "moving_object_FDE_m": 0.0182129150049554,
+      "phase_ADE_m": {
+        "approach": 0.012529263552278281,
+        "contact": 0.01165312435477972,
+        "coupled_motion": 0.008151088065157333,
+        "free_motion": 0.007065054401755333,
+        "release": 0.006333618424832821
+      },
+      "object_1": {
+        "ADE_m": 0.011032761602352063,
+        "FDE_m": 0.017581167941292126
+      },
+      "object_2": {
+        "ADE_m": 0.007216636200125018,
+        "FDE_m": 0.009722685344362011
+      },
+      "object_3": {
+        "ADE_m": 0.01670845163365205,
+        "FDE_m": 0.02275153063237667
+      }
+    },
+    {
+      "step": 300,
+      "episodes": 15,
+      "scene_seed_groups": 3,
+      "ADE_m": 0.007673709812418868,
+      "FDE_m": 0.011959190000521227,
+      "propagation_accuracy": 1.0,
+      "propagation_decisions": 18,
+      "moving_object_ADE_m": 0.010106771501402063,
+      "moving_object_FDE_m": 0.015535930782142613,
+      "phase_ADE_m": {
+        "approach": 0.011129885663588841,
+        "contact": 0.009219290222972631,
+        "coupled_motion": 0.005987500461439292,
+        "free_motion": 0.005450432747602462,
+        "release": 0.0057448893785476685
+      },
+      "object_1": {
+        "ADE_m": 0.009634393081068993,
+        "FDE_m": 0.014374135496715705
+      },
+      "object_2": {
+        "ADE_m": 0.005628876520010332,
+        "FDE_m": 0.009559369762428105
+      },
+      "object_3": {
+        "ADE_m": 0.011868472521503767,
+        "FDE_m": 0.018475241648654144
+      }
+    },
+    {
+      "step": 400,
+      "episodes": 15,
+      "scene_seed_groups": 3,
+      "ADE_m": 0.005885452983461114,
+      "FDE_m": 0.007651845246760381,
+      "propagation_accuracy": 0.9444444444444444,
+      "propagation_decisions": 18,
+      "moving_object_ADE_m": 0.00632168581812746,
+      "moving_object_FDE_m": 0.007656383628232611,
+      "phase_ADE_m": {
+        "approach": 0.007040763599798083,
+        "contact": 0.00775094935670495,
+        "coupled_motion": 0.006607909415227671,
+        "free_motion": 0.004907977984597286,
+        "release": 0.004956522956490517
+      },
+      "object_1": {
+        "ADE_m": 0.004759747519468268,
+        "FDE_m": 0.005283160228282213
+      },
+      "object_2": {
+        "ADE_m": 0.005648470580733071,
+        "FDE_m": 0.007781135632346074
+      },
+      "object_3": {
+        "ADE_m": 0.018106683157384396,
+        "FDE_m": 0.027004847923914593
+      }
+    },
+    {
+      "step": 500,
+      "episodes": 15,
+      "scene_seed_groups": 3,
+      "ADE_m": 0.0047052806165690225,
+      "FDE_m": 0.007174601945249984,
+      "propagation_accuracy": 1.0,
+      "propagation_decisions": 18,
+      "moving_object_ADE_m": 0.005763154026741783,
+      "moving_object_FDE_m": 0.009232269553467632,
+      "phase_ADE_m": {
+        "approach": 0.005205531852940718,
+        "contact": 0.003306144382804632,
+        "coupled_motion": 0.00597002194263041,
+        "free_motion": 0.004285204022501906,
+        "release": 0.00480958439099292
+      },
+      "object_1": {
+        "ADE_m": 0.00481393785836796,
+        "FDE_m": 0.00932957682137688
+      },
+      "object_2": {
+        "ADE_m": 0.0037697939823071163,
+        "FDE_m": 0.004000560248581072
+      },
+      "object_3": {
+        "ADE_m": 0.012419966359933218,
+        "FDE_m": 0.0170284907023112
+      }
+    },
+    {
+      "step": 600,
+      "episodes": 15,
+      "scene_seed_groups": 3,
+      "ADE_m": 0.004649105624735562,
+      "FDE_m": 0.0058641549180417,
+      "propagation_accuracy": 1.0,
+      "propagation_decisions": 18,
+      "moving_object_ADE_m": 0.006041729626142316,
+      "moving_object_FDE_m": 0.007721061181897918,
+      "phase_ADE_m": {
+        "approach": 0.005289451234663526,
+        "contact": 0.007254295749589801,
+        "coupled_motion": 0.005074053265464802,
+        "free_motion": 0.0038546558236703275,
+        "release": 0.003158466580013434
+      },
+      "object_1": {
+        "ADE_m": 0.005240498172740141,
+        "FDE_m": 0.0069441097633292275
+      },
+      "object_2": {
+        "ADE_m": 0.003651969487934063,
+        "FDE_m": 0.004521607526112348
+      },
+      "object_3": {
+        "ADE_m": 0.009251629002392292,
+        "FDE_m": 0.009335278999060392
+      }
+    },
+    {
+      "step": 700,
+      "episodes": 15,
+      "scene_seed_groups": 3,
+      "ADE_m": 0.005802554535653649,
+      "FDE_m": 0.008738166932016612,
+      "propagation_accuracy": 1.0,
+      "propagation_decisions": 18,
+      "moving_object_ADE_m": 0.007826124788779351,
+      "moving_object_FDE_m": 0.012139132122198741,
+      "phase_ADE_m": {
+        "approach": 0.006771218637004495,
+        "contact": 0.004567831987515092,
+        "coupled_motion": 0.005193109798710793,
+        "free_motion": 0.005261826716984312,
+        "release": 0.007051992074896892
+      },
+      "object_1": {
+        "ADE_m": 0.008042759137849013,
+        "FDE_m": 0.013914839861293634
+      },
+      "object_2": {
+        "ADE_m": 0.003539184391653786,
+        "FDE_m": 0.0039543932924667995
+      },
+      "object_3": {
+        "ADE_m": 0.008029437934358915,
+        "FDE_m": 0.008489754827072224
+      }
+    },
+    {
+      "step": 800,
+      "episodes": 15,
+      "scene_seed_groups": 3,
+      "ADE_m": 0.008775337883788677,
+      "FDE_m": 0.013712535195776986,
+      "propagation_accuracy": 1.0,
+      "propagation_decisions": 18,
+      "moving_object_ADE_m": 0.011855421484344536,
+      "moving_object_FDE_m": 0.01867008772161272,
+      "phase_ADE_m": {
+        "approach": 0.011662843373293678,
+        "contact": 0.0069456687197089195,
+        "coupled_motion": 0.004929242267583807,
+        "free_motion": 0.007470693066716194,
+        "release": 0.009831733691195646
+      },
+      "object_1": {
+        "ADE_m": 0.012753446803738673,
+        "FDE_m": 0.02112241679181655
+      },
+      "object_2": {
+        "ADE_m": 0.005578244167069594,
+        "FDE_m": 0.008319250137234727
+      },
+      "object_3": {
+        "ADE_m": 0.007821443801124891,
+        "FDE_m": 0.0064988634549081326
+      }
+    },
+    {
+      "step": 900,
+      "episodes": 15,
+      "scene_seed_groups": 3,
+      "ADE_m": 0.00567828779005342,
+      "FDE_m": 0.0059995860896176765,
+      "propagation_accuracy": 1.0,
+      "propagation_decisions": 18,
+      "moving_object_ADE_m": 0.007579388008970353,
+      "moving_object_FDE_m": 0.007437964795260794,
+      "phase_ADE_m": {
+        "approach": 0.006685618233556549,
+        "contact": 0.005161556298844516,
+        "coupled_motion": 0.005179631834228833,
+        "free_motion": 0.005037901418594022,
+        "release": 0.00521394257278492
+      },
+      "object_1": {
+        "ADE_m": 0.007591669137279193,
+        "FDE_m": 0.006430700328201056
+      },
+      "object_2": {
+        "ADE_m": 0.0036859928940733274,
+        "FDE_m": 0.005231450932721297
+      },
+      "object_3": {
+        "ADE_m": 0.00811698567122221,
+        "FDE_m": 0.011087520513683558
+      }
+    },
+    {
+      "step": 1000,
+      "episodes": 15,
+      "scene_seed_groups": 3,
+      "ADE_m": 0.004163288273977944,
+      "FDE_m": 0.006297832107197286,
+      "propagation_accuracy": 1.0,
+      "propagation_decisions": 18,
+      "moving_object_ADE_m": 0.005327760619628761,
+      "moving_object_FDE_m": 0.008551792950472897,
+      "phase_ADE_m": {
+        "approach": 0.004934122956668337,
+        "contact": 0.003925974597223103,
+        "coupled_motion": 0.0042218030818427605,
+        "free_motion": 0.003670510168497761,
+        "release": 0.004653732913235824
+      },
+      "object_1": {
+        "ADE_m": 0.0051184723929812515,
+        "FDE_m": 0.009572442962477605
+      },
+      "object_2": {
+        "ADE_m": 0.0031647830231425664,
+        "FDE_m": 0.0034715416026301683
+      },
+      "object_3": {
+        "ADE_m": 0.006642279680818319,
+        "FDE_m": 0.006245438940823078
+      }
+    },
+    {
+      "step": 1100,
+      "episodes": 15,
+      "scene_seed_groups": 3,
+      "ADE_m": 0.004761721440849619,
+      "FDE_m": 0.009126986409925545,
+      "propagation_accuracy": 1.0,
+      "propagation_decisions": 18,
+      "moving_object_ADE_m": 0.006122875736198492,
+      "moving_object_FDE_m": 0.012471413208792607,
+      "phase_ADE_m": {
+        "approach": 0.006865423529719313,
+        "contact": 0.006818217923864722,
+        "coupled_motion": 0.003952626061315338,
+        "free_motion": 0.0033118746088196833,
+        "release": 0.003916979068890214
+      },
+      "object_1": {
+        "ADE_m": 0.005732006455461184,
+        "FDE_m": 0.013237021242578825
+      },
+      "object_2": {
+        "ADE_m": 0.003596204371812443,
+        "FDE_m": 0.005734473532841852
+      },
+      "object_3": {
+        "ADE_m": 0.007852673220137754,
+        "FDE_m": 0.007532216298083465
+      }
+    },
+    {
+      "step": 1200,
+      "episodes": 15,
+      "scene_seed_groups": 3,
+      "ADE_m": 0.005628407353328335,
+      "FDE_m": 0.009318752591368846,
+      "propagation_accuracy": 1.0,
+      "propagation_decisions": 18,
+      "moving_object_ADE_m": 0.006992957083922293,
+      "moving_object_FDE_m": 0.012224260883198843,
+      "phase_ADE_m": {
+        "approach": 0.007793733105063439,
+        "contact": 0.00625287345610559,
+        "coupled_motion": 0.0041955178215478854,
+        "free_motion": 0.00434569080825895,
+        "release": 0.006446700853606065
+      },
+      "object_1": {
+        "ADE_m": 0.0056760228704661134,
+        "FDE_m": 0.011283383735766013
+      },
+      "object_2": {
+        "ADE_m": 0.00536235940332214,
+        "FDE_m": 0.007845505035948008
+      },
+      "object_3": {
+        "ADE_m": 0.010630217380821705,
+        "FDE_m": 0.012129538071652254
+      }
+    }
+  ],
+  "final_evaluation_source_commit": "6caf81f1b334508ab1e2ebda4ced62e78e9fbb81",
+  "evaluation_rng": "PTv3 serialization seed = sha256(episode basename:anchor:42) first 32 bits; identical for pretrained/adapted and standalone inference",
+  "checkpoint_reconstructed_from_disk": true,
+  "final_evaluation_peak_cuda_mib": 1458.9072265625,
+  "methods": {
+    "stationary": {
+      "ID": {
+        "episodes": 15,
+        "scene_seed_groups": 3,
+        "ADE_m": 0.056262170303985296,
+        "FDE_m": 0.07998323755539807,
+        "propagation_accuracy": 0.5,
+        "propagation_decisions": 18,
+        "moving_object_ADE_m": 0.08019395371278125,
+        "moving_object_FDE_m": 0.1124007388121552,
+        "phase_ADE_m": {
+          "approach": 0.08860859217552039,
+          "contact": 0.04534740699455142,
+          "coupled_motion": 0.050701347046664784,
+          "free_motion": 0.04284076153611143,
+          "release": 0.04227216180879623
+        },
+        "object_1": {
+          "ADE_m": 0.08990241686503092,
+          "FDE_m": 0.12296536415815354
+        },
+        "object_2": {
+          "ADE_m": 0.028613572377214472,
+          "FDE_m": 0.044034787523958764
+        },
+        "object_3": {
+          "ADE_m": 0.041852664202451706,
+          "FDE_m": 0.07330586512883504
+        }
+      },
+      "three_body": {
+        "episodes": 3,
+        "scene_seed_groups": 3,
+        "ADE_m": 0.07181090737382571,
+        "FDE_m": 0.108474247985416,
+        "propagation_accuracy": 0.0,
+        "propagation_decisions": 6,
+        "moving_object_ADE_m": 0.07181090737382571,
+        "moving_object_FDE_m": 0.108474247985416,
+        "phase_ADE_m": {
+          "approach": 0.10847421238819759,
+          "contact": 0.11057063192129135,
+          "coupled_motion": 0.06648709252476692,
+          "free_motion": 0.05290714651346207,
+          "release": 0.015318536199629307
+        },
+        "object_1": {
+          "ADE_m": 0.10372383892536163,
+          "FDE_m": 0.14395548403263092
+        },
+        "object_2": {
+          "ADE_m": 0.06985621899366379,
+          "FDE_m": 0.108161394794782
+        },
+        "object_3": {
+          "ADE_m": 0.041852664202451706,
+          "FDE_m": 0.07330586512883504
+        }
+      },
+      "by_mode": {
+        "collision_free_motion": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.08579382176200549,
+          "FDE_m": 0.12364695097009341,
+          "propagation_accuracy": 0.0,
+          "propagation_decisions": 3,
+          "moving_object_ADE_m": 0.08579382176200549,
+          "moving_object_FDE_m": 0.12364695097009341,
+          "phase_ADE_m": {
+            "approach": 0.12364693234364192,
+            "coupled_motion": 0.09998280555009842,
+            "free_motion": 0.06584598744908969,
+            "release": 0.0756039097905159
+          },
+          "object_1": {
+            "ADE_m": 0.10242320597171783,
+            "FDE_m": 0.14098884165287018
+          },
+          "object_2": {
+            "ADE_m": 0.06916443755229314,
+            "FDE_m": 0.10630506028731664
+          }
+        },
+        "direct_push": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.051871283604709544,
+          "FDE_m": 0.07202093800307138,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 3,
+          "moving_object_ADE_m": 0.10374256720145543,
+          "moving_object_FDE_m": 0.1440418759981791,
+          "phase_ADE_m": {
+            "approach": 0.07202093054850896,
+            "free_motion": 0.04323572417100271
+          },
+          "object_1": {
+            "ADE_m": 0.10374256720145543,
+            "FDE_m": 0.1440418759981791
+          },
+          "object_2": {
+            "ADE_m": 7.96364652462985e-12,
+            "FDE_m": 7.96364652462985e-12
+          }
+        },
+        "failed_propagation": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.019906117891271908,
+          "FDE_m": 0.023606143814201157,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 3,
+          "moving_object_ADE_m": 0.03576524804035822,
+          "moving_object_FDE_m": 0.041505105793476105,
+          "phase_ADE_m": {
+            "approach": 0.022981680929660797,
+            "contact": 0.023606332018971443,
+            "coupled_motion": 0.018488448734084766,
+            "free_motion": 0.008960174241413673,
+            "release": 0.002562291454523802
+          },
+          "object_1": {
+            "ADE_m": 0.03576524804035822,
+            "FDE_m": 0.041505105793476105
+          },
+          "object_2": {
+            "ADE_m": 0.004046987742185593,
+            "FDE_m": 0.005707181834926208
+          }
+        },
+        "near_miss": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.051928720888113844,
+          "FDE_m": 0.07216790700420835,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 3,
+          "moving_object_ADE_m": 0.10385722418626149,
+          "moving_object_FDE_m": 0.14433551331361136,
+          "phase_ADE_m": {
+            "approach": 0.07216793050368626,
+            "free_motion": 0.04325477530558904
+          },
+          "object_1": {
+            "ADE_m": 0.10385722418626149,
+            "FDE_m": 0.14433551331361136
+          },
+          "object_2": {
+            "ADE_m": 2.175899661930695e-07,
+            "FDE_m": 3.0069480535151644e-07
+          }
+        },
+        "three_body": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.07181090737382571,
+          "FDE_m": 0.108474247985416,
+          "propagation_accuracy": 0.0,
+          "propagation_decisions": 6,
+          "moving_object_ADE_m": 0.07181090737382571,
+          "moving_object_FDE_m": 0.108474247985416,
+          "phase_ADE_m": {
+            "approach": 0.10847421238819759,
+            "contact": 0.11057063192129135,
+            "coupled_motion": 0.06648709252476692,
+            "free_motion": 0.05290714651346207,
+            "release": 0.015318536199629307
+          },
+          "object_1": {
+            "ADE_m": 0.10372383892536163,
+            "FDE_m": 0.14395548403263092
+          },
+          "object_2": {
+            "ADE_m": 0.06985621899366379,
+            "FDE_m": 0.108161394794782
+          },
+          "object_3": {
+            "ADE_m": 0.041852664202451706,
+            "FDE_m": 0.07330586512883504
+          }
+        }
+      },
+      "OOD": {
+        "OOD_composition": {
+          "episodes": 2,
+          "scene_seed_groups": 2,
+          "ADE_m": 0.0689783835162719,
+          "FDE_m": 0.102864108979702,
+          "propagation_accuracy": 0.0,
+          "propagation_decisions": 4,
+          "moving_object_ADE_m": 0.0689783835162719,
+          "moving_object_FDE_m": 0.102864108979702,
+          "phase_ADE_m": {
+            "approach": 0.10286415740847588,
+            "coupled_motion": 0.05506110191345215,
+            "free_motion": 0.05169457010924816,
+            "release": 0.03307636082172394
+          },
+          "object_1": {
+            "ADE_m": 0.10240523144602776,
+            "FDE_m": 0.14026517421007156
+          },
+          "object_2": {
+            "ADE_m": 0.0668051652610302,
+            "FDE_m": 0.10247894376516342
+          },
+          "object_3": {
+            "ADE_m": 0.037724753841757774,
+            "FDE_m": 0.065848208963871
+          }
+        },
+        "OOD_geometry": {
+          "episodes": 4,
+          "scene_seed_groups": 4,
+          "ADE_m": 0.08217996638268232,
+          "FDE_m": 0.1257174431035916,
+          "propagation_accuracy": 0.0,
+          "propagation_decisions": 8,
+          "moving_object_ADE_m": 0.08217996638268232,
+          "moving_object_FDE_m": 0.1257174431035916,
+          "phase_ADE_m": {
+            "approach": 0.11495943181216717,
+            "contact": 0.1315741091966629,
+            "coupled_motion": 0.03781906422227621,
+            "free_motion": 0.09657898359000683,
+            "release": 0.060332280273238816
+          },
+          "object_1": {
+            "ADE_m": 0.10259330086410046,
+            "FDE_m": 0.14766259118914604
+          },
+          "object_2": {
+            "ADE_m": 0.08214960619807243,
+            "FDE_m": 0.12661303766071796
+          },
+          "object_3": {
+            "ADE_m": 0.06179699208587408,
+            "FDE_m": 0.1028767004609108
+          }
+        },
+        "OOD_physics": {
+          "episodes": 4,
+          "scene_seed_groups": 4,
+          "ADE_m": 0.057674387780328594,
+          "FDE_m": 0.08746676643689473,
+          "propagation_accuracy": 0.0,
+          "propagation_decisions": 8,
+          "moving_object_ADE_m": 0.057674387780328594,
+          "moving_object_FDE_m": 0.08746676643689473,
+          "phase_ADE_m": {
+            "approach": 0.07003720601399739,
+            "contact": 0.08722776174545288,
+            "coupled_motion": 0.05398476403206587,
+            "free_motion": 0.03720397362485528,
+            "release": 0.019675245508551598
+          },
+          "object_1": {
+            "ADE_m": 0.0870024524629116,
+            "FDE_m": 0.12229936756193638
+          },
+          "object_2": {
+            "ADE_m": 0.055941952392458916,
+            "FDE_m": 0.08723308891057968
+          },
+          "object_3": {
+            "ADE_m": 0.030078758485615253,
+            "FDE_m": 0.052867842838168144
+          }
+        }
+      }
+    },
+    "pretrained": {
+      "ID": {
+        "episodes": 15,
+        "scene_seed_groups": 3,
+        "ADE_m": 0.17998550443185699,
+        "FDE_m": 0.23016213658783172,
+        "propagation_accuracy": 0.5,
+        "propagation_decisions": 18,
+        "moving_object_ADE_m": 0.17956983976893953,
+        "moving_object_FDE_m": 0.23887995415263708,
+        "phase_ADE_m": {
+          "approach": 0.2327782821196776,
+          "contact": 0.19214550778269768,
+          "coupled_motion": 0.15764689764806203,
+          "free_motion": 0.14030774359901746,
+          "release": 0.12758452352136374
+        },
+        "object_1": {
+          "ADE_m": 0.17596448262532552,
+          "FDE_m": 0.24139053225517274
+        },
+        "object_2": {
+          "ADE_m": 0.18528295904397965,
+          "FDE_m": 0.22294161717096964
+        },
+        "object_3": {
+          "ADE_m": 0.1725504994392395,
+          "FDE_m": 0.19035063683986664
+        }
+      },
+      "three_body": {
+        "episodes": 3,
+        "scene_seed_groups": 3,
+        "ADE_m": 0.17893266346719527,
+        "FDE_m": 0.21039001809226143,
+        "propagation_accuracy": 1.0,
+        "propagation_decisions": 6,
+        "moving_object_ADE_m": 0.17893266346719527,
+        "moving_object_FDE_m": 0.21039001809226143,
+        "phase_ADE_m": {
+          "approach": 0.21524569392204285,
+          "contact": 0.20799513161182404,
+          "coupled_motion": 0.1932444473107656,
+          "free_motion": 0.150640236834685,
+          "release": 0.10940819978713989
+        },
+        "object_1": {
+          "ADE_m": 0.1718200147151947,
+          "FDE_m": 0.22169708212216696
+        },
+        "object_2": {
+          "ADE_m": 0.1924274762471517,
+          "FDE_m": 0.21912233531475067
+        },
+        "object_3": {
+          "ADE_m": 0.1725504994392395,
+          "FDE_m": 0.19035063683986664
+        }
+      },
+      "by_mode": {
+        "collision_free_motion": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.1984342336654663,
+          "FDE_m": 0.254072368144989,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 3,
+          "moving_object_ADE_m": 0.1984342336654663,
+          "moving_object_FDE_m": 0.254072368144989,
+          "phase_ADE_m": {
+            "approach": 0.2553289333979289,
+            "coupled_motion": 0.23075276613235474,
+            "free_motion": 0.16757464905579886,
+            "release": 0.18503102660179138
+          },
+          "object_1": {
+            "ADE_m": 0.18752009669939676,
+            "FDE_m": 0.25531819462776184
+          },
+          "object_2": {
+            "ADE_m": 0.20934837063153586,
+            "FDE_m": 0.2528265416622162
+          }
+        },
+        "direct_push": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.1658353991806507,
+          "FDE_m": 0.21106075247128805,
+          "propagation_accuracy": 0.0,
+          "propagation_decisions": 3,
+          "moving_object_ADE_m": 0.1834822048743566,
+          "moving_object_FDE_m": 0.24690848092238107,
+          "phase_ADE_m": {
+            "approach": 0.21385818719863892,
+            "free_motion": 0.14525420467058817
+          },
+          "object_1": {
+            "ADE_m": 0.1834822048743566,
+            "FDE_m": 0.24690848092238107
+          },
+          "object_2": {
+            "ADE_m": 0.14818859348694483,
+            "FDE_m": 0.175213024020195
+          }
+        },
+        "failed_propagation": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.14853342870871225,
+          "FDE_m": 0.21346299598614374,
+          "propagation_accuracy": 0.0,
+          "propagation_decisions": 3,
+          "moving_object_ADE_m": 0.1494823694229126,
+          "moving_object_FDE_m": 0.23371500273545584,
+          "phase_ADE_m": {
+            "approach": 0.17372159659862518,
+            "contact": 0.18686229983965555,
+            "coupled_motion": 0.0976807251572609,
+            "free_motion": 0.05480958397189776,
+            "release": 0.030867841094732285
+          },
+          "object_1": {
+            "ADE_m": 0.1494823694229126,
+            "FDE_m": 0.23371500273545584
+          },
+          "object_2": {
+            "ADE_m": 0.14758448799451193,
+            "FDE_m": 0.19321098923683167
+          }
+        },
+        "near_miss": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.20819179713726044,
+          "FDE_m": 0.2618245482444763,
+          "propagation_accuracy": 0.0,
+          "propagation_decisions": 3,
+          "moving_object_ADE_m": 0.18751772741476694,
+          "moving_object_FDE_m": 0.24931390086809793,
+          "phase_ADE_m": {
+            "approach": 0.2663658758004506,
+            "free_motion": 0.18326004346211752
+          },
+          "object_1": {
+            "ADE_m": 0.18751772741476694,
+            "FDE_m": 0.24931390086809793
+          },
+          "object_2": {
+            "ADE_m": 0.22886586685975394,
+            "FDE_m": 0.2743351956208547
+          }
+        },
+        "three_body": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.17893266346719527,
+          "FDE_m": 0.21039001809226143,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 6,
+          "moving_object_ADE_m": 0.17893266346719527,
+          "moving_object_FDE_m": 0.21039001809226143,
+          "phase_ADE_m": {
+            "approach": 0.21524569392204285,
+            "contact": 0.20799513161182404,
+            "coupled_motion": 0.1932444473107656,
+            "free_motion": 0.150640236834685,
+            "release": 0.10940819978713989
+          },
+          "object_1": {
+            "ADE_m": 0.1718200147151947,
+            "FDE_m": 0.22169708212216696
+          },
+          "object_2": {
+            "ADE_m": 0.1924274762471517,
+            "FDE_m": 0.21912233531475067
+          },
+          "object_3": {
+            "ADE_m": 0.1725504994392395,
+            "FDE_m": 0.19035063683986664
+          }
+        }
+      },
+      "OOD": {
+        "OOD_composition": {
+          "episodes": 2,
+          "scene_seed_groups": 2,
+          "ADE_m": 0.18289468437433243,
+          "FDE_m": 0.20828244586785633,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 4,
+          "moving_object_ADE_m": 0.18289468437433243,
+          "moving_object_FDE_m": 0.20828244586785633,
+          "phase_ADE_m": {
+            "approach": 0.21662595868110657,
+            "coupled_motion": 0.1999049186706543,
+            "free_motion": 0.159712553024292,
+            "release": 0.1674211472272873
+          },
+          "object_1": {
+            "ADE_m": 0.17816249281167984,
+            "FDE_m": 0.22643030434846878
+          },
+          "object_2": {
+            "ADE_m": 0.19880361109972,
+            "FDE_m": 0.2183658331632614
+          },
+          "object_3": {
+            "ADE_m": 0.17171794921159744,
+            "FDE_m": 0.18005120009183884
+          }
+        },
+        "OOD_geometry": {
+          "episodes": 4,
+          "scene_seed_groups": 4,
+          "ADE_m": 0.13814535612861314,
+          "FDE_m": 0.17170711606740952,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 8,
+          "moving_object_ADE_m": 0.13814535612861314,
+          "moving_object_FDE_m": 0.17170711606740952,
+          "phase_ADE_m": {
+            "approach": 0.1621174793690443,
+            "contact": 0.16149091720581055,
+            "coupled_motion": 0.09615606255829334,
+            "free_motion": 0.15295083448290825,
+            "release": 0.1344498246908188
+          },
+          "object_1": {
+            "ADE_m": 0.13164560869336128,
+            "FDE_m": 0.17566631734371185
+          },
+          "object_2": {
+            "ADE_m": 0.1469455249607563,
+            "FDE_m": 0.17881237342953682
+          },
+          "object_3": {
+            "ADE_m": 0.13584493473172188,
+            "FDE_m": 0.16064265742897987
+          }
+        },
+        "OOD_physics": {
+          "episodes": 4,
+          "scene_seed_groups": 4,
+          "ADE_m": 0.16617985256016254,
+          "FDE_m": 0.2228634419540564,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 8,
+          "moving_object_ADE_m": 0.16617985256016254,
+          "moving_object_FDE_m": 0.2228634419540564,
+          "phase_ADE_m": {
+            "approach": 0.1789895842472712,
+            "contact": 0.25534188747406006,
+            "coupled_motion": 0.16988525167107582,
+            "free_motion": 0.12312743440270424,
+            "release": 0.10046694427728653
+          },
+          "object_1": {
+            "ADE_m": 0.16095461696386337,
+            "FDE_m": 0.23783770948648453
+          },
+          "object_2": {
+            "ADE_m": 0.18130109086632729,
+            "FDE_m": 0.2363869808614254
+          },
+          "object_3": {
+            "ADE_m": 0.15628384985029697,
+            "FDE_m": 0.19436563551425934
+          }
+        }
+      }
+    },
+    "adapted": {
+      "ID": {
+        "episodes": 15,
+        "scene_seed_groups": 3,
+        "ADE_m": 0.004971657230958549,
+        "FDE_m": 0.0069186129853025915,
+        "propagation_accuracy": 1.0,
+        "propagation_decisions": 18,
+        "moving_object_ADE_m": 0.006324832488058342,
+        "moving_object_FDE_m": 0.009307543395294084,
+        "phase_ADE_m": {
+          "approach": 0.006695780670270324,
+          "contact": 0.004743147641420364,
+          "coupled_motion": 0.006119761516207031,
+          "free_motion": 0.003920322276341418,
+          "release": 0.004190631036181003
+        },
+        "object_1": {
+          "ADE_m": 0.006241086078807712,
+          "FDE_m": 0.010834206221625209
+        },
+        "object_2": {
+          "ADE_m": 0.0038532755454070864,
+          "FDE_m": 0.004024853456454972
+        },
+        "object_3": {
+          "ADE_m": 0.006314198796947797,
+          "FDE_m": 0.0032197757003208003
+        }
+      },
+      "three_body": {
+        "episodes": 3,
+        "scene_seed_groups": 3,
+        "ADE_m": 0.007069434608436294,
+        "FDE_m": 0.0083289442376958,
+        "propagation_accuracy": 1.0,
+        "propagation_decisions": 6,
+        "moving_object_ADE_m": 0.007069434608436294,
+        "moving_object_FDE_m": 0.0083289442376958,
+        "phase_ADE_m": {
+          "approach": 0.00788429177676638,
+          "contact": 0.006843928713351488,
+          "coupled_motion": 0.007155879711111386,
+          "free_motion": 0.006620744088043769,
+          "release": 0.006190716754645109
+        },
+        "object_1": {
+          "ADE_m": 0.0071349952680369215,
+          "FDE_m": 0.013614092953503132
+        },
+        "object_2": {
+          "ADE_m": 0.0077591097603241605,
+          "FDE_m": 0.008152964059263468
+        },
+        "object_3": {
+          "ADE_m": 0.006314198796947797,
+          "FDE_m": 0.0032197757003208003
+        }
+      },
+      "by_mode": {
+        "collision_free_motion": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.006870494534571965,
+          "FDE_m": 0.009378336447601518,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 3,
+          "moving_object_ADE_m": 0.006870494534571965,
+          "moving_object_FDE_m": 0.009378336447601518,
+          "phase_ADE_m": {
+            "approach": 0.008339174557477236,
+            "coupled_motion": 0.012845529243350029,
+            "free_motion": 0.005573887610808015,
+            "release": 0.0046674482291564345
+          },
+          "object_1": {
+            "ADE_m": 0.006386201828718185,
+            "FDE_m": 0.011726501863449812
+          },
+          "object_2": {
+            "ADE_m": 0.007354787240425746,
+            "FDE_m": 0.0070301710317532224
+          }
+        },
+        "direct_push": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.0033890182870284966,
+          "FDE_m": 0.005385895608924329,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 3,
+          "moving_object_ADE_m": 0.0060472866365065174,
+          "moving_object_FDE_m": 0.009744876918072501,
+          "phase_ADE_m": {
+            "approach": 0.004846197785809636,
+            "free_motion": 0.0027645125907535353
+          },
+          "object_1": {
+            "ADE_m": 0.0060472866365065174,
+            "FDE_m": 0.009744876918072501
+          },
+          "object_2": {
+            "ADE_m": 0.0007307499375504752,
+            "FDE_m": 0.0010269142997761567
+          }
+        },
+        "failed_propagation": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.0034864438930526376,
+          "FDE_m": 0.004625865471704553,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 3,
+          "moving_object_ADE_m": 0.004319819776962201,
+          "moving_object_FDE_m": 0.006441297320028146,
+          "phase_ADE_m": {
+            "approach": 0.005023887846618891,
+            "contact": 0.00404288728410999,
+            "coupled_motion": 0.002841720745588342,
+            "free_motion": 0.001554370081673066,
+            "release": 0.0012369109317660332
+          },
+          "object_1": {
+            "ADE_m": 0.004319819776962201,
+            "FDE_m": 0.006441297320028146
+          },
+          "object_2": {
+            "ADE_m": 0.0026530680091430745,
+            "FDE_m": 0.002810433623380959
+          }
+        },
+        "near_miss": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.004042894831703355,
+          "FDE_m": 0.006874023160586755,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 3,
+          "moving_object_ADE_m": 0.0073171268838147325,
+          "moving_object_FDE_m": 0.012644262053072453,
+          "phase_ADE_m": {
+            "approach": 0.006270756168911855,
+            "free_motion": 0.0030880970104287067
+          },
+          "object_1": {
+            "ADE_m": 0.0073171268838147325,
+            "FDE_m": 0.012644262053072453
+          },
+          "object_2": {
+            "ADE_m": 0.0007686627795919776,
+            "FDE_m": 0.0011037842681010563
+          }
+        },
+        "three_body": {
+          "episodes": 3,
+          "scene_seed_groups": 3,
+          "ADE_m": 0.007069434608436294,
+          "FDE_m": 0.0083289442376958,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 6,
+          "moving_object_ADE_m": 0.007069434608436294,
+          "moving_object_FDE_m": 0.0083289442376958,
+          "phase_ADE_m": {
+            "approach": 0.00788429177676638,
+            "contact": 0.006843928713351488,
+            "coupled_motion": 0.007155879711111386,
+            "free_motion": 0.006620744088043769,
+            "release": 0.006190716754645109
+          },
+          "object_1": {
+            "ADE_m": 0.0071349952680369215,
+            "FDE_m": 0.013614092953503132
+          },
+          "object_2": {
+            "ADE_m": 0.0077591097603241605,
+            "FDE_m": 0.008152964059263468
+          },
+          "object_3": {
+            "ADE_m": 0.006314198796947797,
+            "FDE_m": 0.0032197757003208003
+          }
+        }
+      },
+      "OOD": {
+        "OOD_composition": {
+          "episodes": 2,
+          "scene_seed_groups": 2,
+          "ADE_m": 0.006931160964692632,
+          "FDE_m": 0.008954440088321764,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 4,
+          "moving_object_ADE_m": 0.006931160964692632,
+          "moving_object_FDE_m": 0.008954440088321764,
+          "phase_ADE_m": {
+            "approach": 0.007881165714934468,
+            "coupled_motion": 0.007380673196166754,
+            "free_motion": 0.006342445500195026,
+            "release": 0.007129738572984934
+          },
+          "object_1": {
+            "ADE_m": 0.006481011863797903,
+            "FDE_m": 0.010691722389310598
+          },
+          "object_2": {
+            "ADE_m": 0.006955686258152127,
+            "FDE_m": 0.0072333430871367455
+          },
+          "object_3": {
+            "ADE_m": 0.007356784772127867,
+            "FDE_m": 0.008938254788517952
+          }
+        },
+        "OOD_geometry": {
+          "episodes": 4,
+          "scene_seed_groups": 4,
+          "ADE_m": 0.020308942534029484,
+          "FDE_m": 0.025947181313919522,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 8,
+          "moving_object_ADE_m": 0.020308942534029484,
+          "moving_object_FDE_m": 0.025947181313919522,
+          "phase_ADE_m": {
+            "approach": 0.024419235298410058,
+            "contact": 0.03550533950328827,
+            "coupled_motion": 0.01130291644949466,
+            "free_motion": 0.025085512548685074,
+            "release": 0.016451171599328518
+          },
+          "object_1": {
+            "ADE_m": 0.010896475985646248,
+            "FDE_m": 0.015388355939649045
+          },
+          "object_2": {
+            "ADE_m": 0.023833442945033312,
+            "FDE_m": 0.02889461535960436
+          },
+          "object_3": {
+            "ADE_m": 0.02619690867140889,
+            "FDE_m": 0.03355857264250517
+          }
+        },
+        "OOD_physics": {
+          "episodes": 4,
+          "scene_seed_groups": 4,
+          "ADE_m": 0.008719205468272168,
+          "FDE_m": 0.015722492166484397,
+          "propagation_accuracy": 1.0,
+          "propagation_decisions": 8,
+          "moving_object_ADE_m": 0.008719205468272168,
+          "moving_object_FDE_m": 0.015722492166484397,
+          "phase_ADE_m": {
+            "approach": 0.011694619432091713,
+            "contact": 0.01212851982563734,
+            "coupled_motion": 0.006875264225527644,
+            "free_motion": 0.0049982297932729125,
+            "release": 0.007025580387562513
+          },
+          "object_1": {
+            "ADE_m": 0.007689096033573151,
+            "FDE_m": 0.012019112706184387
+          },
+          "object_2": {
+            "ADE_m": 0.008726724656298757,
+            "FDE_m": 0.015239334432408214
+          },
+          "object_3": {
+            "ADE_m": 0.009741795714944601,
+            "FDE_m": 0.019909029360860586
+          }
+        }
+      }
+    }
+  },
+  "input_boundary": {
+    "input": "one current RGB-D frame; observable blue-peg pixels; precommitted controls",
+    "oracle_current_points": false,
+    "privileged_inputs": "static robot-root rotation only (calibration)",
+    "supervision": "initial depth pixels associated/transported by GT object poses; no future data enters features",
+    "split_rule": "all physics variants and modes grouped by domain/family/seed; val seeds 1,7; test seeds 2,8 and all OOD"
+  },
+  "split_counts": {
+    "train": {
+      "episodes": 45,
+      "groups": 9
+    },
+    "validation": {
+      "episodes": 15,
+      "groups": 3
+    },
+    "test": {
+      "episodes": 25,
+      "groups": 13
+    }
+  },
+  "restoration_check": {
+    "strict_named_parameter_restoration": true,
+    "input_arrays_exact": true,
+    "point_ids_exact": true,
+    "saved_tensors_finite": true,
+    "completed_optimizer_steps": 1200,
+    "selected_step": 1000,
+    "checkpoint_sha256": "ec50e7b0f8278de01a21a16f34ce14e34a390664502925755cb679894a266a77",
+    "checkpoint_bytes": 613545082,
+    "predictions_bitwise_reproducible": false,
+    "batch_vs_standalone_max_m": 0.019680559635162354,
+    "batch_vs_standalone_object_mean_l2_m": 0.0013199126115068793,
+    "fresh_repeat_max_m": 0.0029854625463485718,
+    "fresh_repeat_object_mean_l2_m": 0.0004913447774015367,
+    "note": "Serialization RNG is fixed; residual GPU forward variability is observed. Exact 1e-5 m prediction-equivalence assertion failed. No bitwise reproducibility claim. Optimizer_final is diagnostic from step1200 and is not matched to selected weights; adapter is inference-only."
+  }
+}
