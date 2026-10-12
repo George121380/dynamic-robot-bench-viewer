@@ -1,0 +1,51 @@
+{
+  "export_readback": [
+    {
+      "seed": 0,
+      "transport_exact": true,
+      "points": [
+        501,
+        11,
+        24,
+        3
+      ],
+      "valid_fraction": 0.6800143100247524
+    },
+    {
+      "seed": 1,
+      "transport_exact": true,
+      "points": [
+        501,
+        11,
+        24,
+        3
+      ],
+      "valid_fraction": 0.6808721379950495
+    },
+    {
+      "seed": 2,
+      "transport_exact": true,
+      "points": [
+        501,
+        11,
+        24,
+        3
+      ],
+      "valid_fraction": 0.6822246287128713
+    }
+  ],
+  "visible_privileged_separated": true,
+  "GIFs_decoded": 7,
+  "browser_local": {
+    "languages": [
+      "zh",
+      "en"
+    ],
+    "GIFs_loaded": 7,
+    "suite_rows": 28,
+    "Bowling_search": "1 / 46"
+  },
+  "python_compile": "passed",
+  "canvas_typescript": "passed",
+  "old_69_tests_rerun": false
+}

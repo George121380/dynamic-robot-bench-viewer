@@ -1,0 +1,58 @@
+[
+  {
+    "file": "official-val-episode0-rgb-depth.gif",
+    "frames": 30,
+    "size": [
+      320,
+      202
+    ]
+  },
+  {
+    "file": "seed0-dynamics.gif",
+    "frames": 101,
+    "size": [
+      650,
+      360
+    ]
+  },
+  {
+    "file": "seed0-rgb-depth.gif",
+    "frames": 101,
+    "size": [
+      320,
+      202
+    ]
+  },
+  {
+    "file": "seed1-dynamics.gif",
+    "frames": 101,
+    "size": [
+      650,
+      360
+    ]
+  },
+  {
+    "file": "seed1-rgb-depth.gif",
+    "frames": 101,
+    "size": [
+      320,
+      202
+    ]
+  },
+  {
+    "file": "seed2-dynamics.gif",
+    "frames": 101,
+    "size": [
+      650,
+      360
+    ]
+  },
+  {
+    "file": "seed2-rgb-depth.gif",
+    "frames": 101,
+    "size": [
+      320,
+      202
+    ]
+  }
+]

@@ -1,14 +1,16 @@
 # 当前所有可获取真值深度的任务
-目前已验证的范围是 **43 个具体任务／协议条目：24 项直接读取、10 项原状态重渲染、5 项新采集、4 项新交互协议原生 RGB-D**。去掉 PhysMani 总览重复计数，正常／高速各计一项；这不是 43 个独立物理任务家族。CLEVRER 原视频和未验收的 TurnFaucet-v1 不在该范围。
+目前已验证的范围是 **44 个具体任务／协议条目：24 项直接读取、11 项原状态重渲染、5 项新采集、4 项新交互协议原生 RGB-D**。去掉 PhysMani 总览重复计数，正常／高速各计一项；这不是 43 个独立物理任务家族。CLEVRER 原视频和未验收的 TurnFaucet-v1 不在该范围。
 
-项目新加入的 **PointWorld-BEHAVIOR / task0000** 另有仿真初帧深度；**PointWorld-DROID** 也有可读初帧深度，但来源是 FoundationStereo 双目估计。二者作为额外数据域列在末节，不混入 43 项旧目录计数。
+项目新加入的 **PointWorld-BEHAVIOR / task0000** 另有仿真初帧深度；**PointWorld-DROID** 也有可读初帧深度，但来源是 FoundationStereo 双目估计。二者作为额外数据域列在末节，不混入 44 项目录计数。
 
 2026-10-11 只读复查了已有数据：39 份 NPZ／468 帧全部通过数值 SHA256、dtype、RGB-depth shape、有效像素、相机标定与 GIF 解码检查；另外读取四个 P0 协议各一条 111 帧 HDF5，通过 RGB-D／时间／持续点运输审计。没有启动新仿真、采集或模型推理。证据见 [depth_recheck.json](depth_recheck.json)，完整来源索引见 [depth_capable.json](depth_capable.json)。
 
 [English](DEPTH_CAPABLE.en.md) · [原任务 RGB–depth GIF 页面](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/) · [四个新协议 RGB/XYZ/contact GIF](https://peiqil.com/dynamic-robot-bench-viewer/interaction-dynamics/) · [旧运行说明与命令](../benchmark-tasks/depth/)
 
+**2026-10-12 新增 OCBench Bowling：**已读取官方验证轨迹完整 qpos/qvel 片段并重渲染 30 帧 RGB-D；另新采三个 CPU seed，共 303 帧 RGB-D、持续点和实时接触。原 43 项复查记录保留，其他 27 个 OCBench 任务未验收。[中文 Bowling 报告](OCBENCH.zh.md)／[English](OCBENCH.en.md)。
+
 ## 分类怎样理解
-这里按**深度样本实际取得的路径**分类，不是按模拟器的所有潜在能力分类。39 个旧样本现在都可以读取，但其中 10 个是从状态补渲染、5 个是新轨迹。不能据此声称原 RGB 数据包已有深度，也不能把新轨迹 depth 配回旧视频。43 项均不依赖单目深度模型。
+这里按**深度样本实际取得的路径**分类，不是按模拟器的所有潜在能力分类。39 个旧样本现在都可以读取，但其中 10 个是从状态补渲染、5 个是新轨迹。不能据此声称原 RGB 数据包已有深度，也不能把新轨迹 depth 配回旧视频。44 项均不依赖单目深度模型。
 
 ### 直接读取已有深度（24 项）
 - ManiSkill 五项及 Panda 手指诊断共 6 项；这里读取的是已有项目诊断 HDF5，不是整套官方专家数据。官方存状态、不存图像的轨迹仍可按匹配版本另行重放。
@@ -40,7 +42,7 @@
 - **[moving_basketball_in_hoop](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/media/moving_basketball_in_hoop.gif)**：项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。 [数值／来源证据](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/metadata/moving_basketball_in_hoop.json)。
 - **[moving_basketball_in_hoop_high_speed](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/media/moving_basketball_in_hoop_high_speed.gif)**：项目专家原始观测：解码 RGB24 深度；没有使用 WM 预测。 [数值／来源证据](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/metadata/moving_basketball_in_hoop_high_speed.json)。
 
-### 恢复原状态重渲染（10 项）
+### 恢复原状态重渲染（11 项）
 RoboCasa 八项恢复原 XML、逐帧 state 和 ep_meta 相机；新渲染 RGB 与 depth 成对使用。不是从视频估计，也不是仅靠动作重跑。与原视频 RGB 有误差，已逐项记录；原状态渲染不能直接证明 action rollout、成功判据或新 contact labels 已验收。
 
 ToolHang 使用原 MuJoCo 状态；Hammer 使用原 D4RL qpos/qvel/board_pos。所选 Minari Hammer 文件只有 success 等字段，不能单靠该包恢复完整原场景。
@@ -55,6 +57,8 @@ ToolHang 使用原 MuJoCo 状态；Hammer 使用原 D4RL qpos/qvel/board_pos。�
 - **[StirVegetables](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/media/StirVegetables.gif)**：原 XML／状态／相机重渲染；与原视频 RGB MAE 7.12/255。本页 RGB 与 depth 为同次新渲染。 [数值／来源证据](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/metadata/StirVegetables.json)。
 - **[ToolHang](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/media/ToolHang.gif)**：原 demo_0 完整 MuJoCo 状态重渲染 RGB-D；尚无原 RGB 逐像素对照。 [数值／来源证据](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/metadata/ToolHang.json)。
 - **[AdroitHandHammer-v1](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/media/Hammer.gif)**：原 D4RL qpos/qvel/board_pos 重渲染；所选 Minari 实文件只有 success，没有完整状态。 [数值／来源证据](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/metadata/AdroitHandHammer-v1.json)。
+
+- **[OCBench bowling-task1-v0：RGB–depth GIF](https://peiqil.com/dynamic-robot-bench-viewer/ocbench/media/official-val-episode0-rgb-depth.gif)**：已从官方 qpos/qvel 恢复 30 帧，Z-depth／米；也已新采三个 CPU rollout。原包无 RGB/depth；原 MJWarp 接触不能靠状态补算成真值。[完整说明](OCBENCH.zh.md)。
 
 ### 新采 RGB-D 已跑通（5 项）
 这五项均已得到新 RGB-D，但验证范围不同：RLBench 两项是 live expert；传送带是保持机器人状态的传感器 smoke；双圆盘 depth 样本没有发生 A–B 碰撞；CoPhy 仅 Blocktower 的新小序列，不是完整发布 counterfactual 协议。

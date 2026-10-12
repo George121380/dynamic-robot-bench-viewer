@@ -3,9 +3,11 @@
 
 状态：2026-10-11 完成目录、数据、验收及既有实验复核；分支 `task/benchmark-subset-v1`，无 PR，未合并私人 main。环境代码沿用 `16c9aef`，本轮只新增 review JSON、双语文档及静态选型页生成器，不改任务或评估器。PhysMani 使用 `ab23d05` 与已发布的 2026-10-10 03:31 UTC 快照，不把快照中的运行状态当作当前实时状态。
 
-[English](README.en.md) · [免认证选型页（含 GIF）](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-subset/) · [45 项机器可读取舍](review.json) · [既有交互验收](../interaction-dynamics/VALIDATION.zh.md) · [既有深度验收](../benchmark-tasks/depth/)
+[English](README.en.md) · [免认证选型页（含 GIF）](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-subset/) · [46 项机器可读取舍](review.json) · [既有交互验收](../interaction-dynamics/VALIDATION.zh.md) · [既有深度验收](../benchmark-tasks/depth/)
 
-**全部可获取真值深度的任务：**[43 项中文清单](DEPTH_CAPABLE.zh.md)／[English inventory](DEPTH_CAPABLE.en.md)，区分直接读取、原状态重渲染、新采集与新协议原生 RGB-D；2026-10-11 已只读复核 39 个 NPZ 与四个协议各一条完整 HDF5。
+**全部可获取真值深度的任务：**[44 项中文清单](DEPTH_CAPABLE.zh.md)／[English inventory](DEPTH_CAPABLE.en.md)，区分直接读取、原状态重渲染、新采集与新协议原生 RGB-D；2026-10-11 已只读复核 39 个 NPZ 与四个协议各一条完整 HDF5。
+
+**新增 OCBench／Bowling（2026-10-12）：**五类 28 项已列 Inventory；重点 Bowling 完成官方轨迹 RGB-D 重渲染与三个 CPU seed 的持续点／接触 smoke。推荐作为 CollisionChain 之后的首个外部交互追加。[中文设计与命令](OCBENCH.zh.md)／[English](OCBENCH.en.md)／[Bowling GIF](https://peiqil.com/dynamic-robot-bench-viewer/ocbench/)。本清单现为 46 个具体选型条目；深度验收现为 44 项，其他 27 项仅源码 inventory。
 
 ## 为什么先选这三个
 研究需要分别判断历史、动作、跨物体信息是否帮助预测，而不仅是“历史重建变好”。三者使用同一 Panda、ManiSkill、7 维预提交 pd_ee_delta_pose 指令、20 Hz 观察／控制与 100 Hz 接触记录，完整 RGB-D、持续点和接触字段已经小样本验收。先保持机器人、坐标、控制语义和 schema 一致，有助于判断模型改动的作用。
@@ -73,7 +75,7 @@ python -m dynamic_robot_bench.tasks.interaction_dynamics.runner \
 新 P0 任务复用上游常用资产／环境，但新模式和验收器是项目自定义协议。三 seeds、60 条通过说明小样本功能成立，不能保证不存在隐藏 bug，也不等于整个协议已得到社区验证。下一轮应使用冻结数据清单、独立点位姿审计及 fresh families 复验。[ManiSkill 上游任务](https://maniskill.readthedocs.io/en/latest/tasks/table_top_gripper/index.html) 和 [公开 demonstrations](https://huggingface.co/datasets/haosulab/ManiSkill_Demonstrations/tree/main/demos) 可作外部锚点。
 
 ## 完整条目取舍
-复核范围是原 42 个目录条目（含 PhysMani 总览）加 4 个新协议；合并总览后下面列 **45 个具体条目**。速度变体、数据集和共享物理环境不作为独立任务家族计数。已有数据数量沿用选定版本的注册／轨迹元数据；不表示本机下载了完整公开集。
+复核范围是原 42 个目录条目（含 PhysMani 总览）加 4 个新协议；合并总览后原清单为 45 项，加本次 Bowling 后下面列 **46 个具体条目**。速度变体、数据集和共享物理环境不作为独立任务家族计数。已有数据数量沿用选定版本的注册／轨迹元数据；不表示本机下载了完整公开集。
 
 1. **[match_and_pick_from_conveyor](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/#match_and_pick_from_conveyor) — 后续外部验证**。移动支撑、抓取、语义记忆。保留在线外部测试，先 L1 固定带速；L2/L3 的未来外生调度未知时不能要求确定性精确预测。
    - 数据：官方 100 条；项目 v4 20 / v5 3 条合格。
@@ -255,10 +257,12 @@ python -m dynamic_robot_bench.tasks.interaction_dynamics.runner \
    - 数据：3 seeds、所有模式通过；RGB-D/持续点/接触完整；仅小样本验收。
    - [深度：原生仿真深度真值（米）](https://peiqil.com/dynamic-robot-bench-viewer/interaction-dynamics/)。与完整 RGB／持续 XYZ 点／100 Hz 接触数据同步。
 
+46. **[OCBench bowling-task1-v0](https://peiqil.com/dynamic-robot-bench-viewer/ocbench/) — 优先外部追加**。球–瓶／瓶–瓶传播、倾倒与自由运动。官方 10,000 train／1,000 val 状态示范；本次已原状态重渲染 30 帧并新采三个 CPU seeds。深度单位米、Z；原 MJWarp 接触不能恢复，新采有 500 Hz contacts／固定点；训练 adapter 待接。[双语细节与命令](OCBENCH.zh.md)。
+
 ## 产物、复现与限制
-`docs/benchmark_subset/review.json` 是本轮 45 项的双语结构化来源；`tools/build_benchmark_subset.py` 从该文件输出免认证静态页，复用已有 GIF，显示每项深度状态。生成器不模拟、不采数据、不调用模型：
+`docs/benchmark_subset/review.json` 是当前 46 项的双语结构化来源；`tools/build_benchmark_subset.py` 从该文件输出免认证静态页，复用已有 GIF，显示每项深度状态。生成器不模拟、不采数据、不调用模型：
 ```bash
 python tools/build_benchmark_subset.py --output results/benchmark-subset-site
 python -m http.server 8765 --directory results/benchmark-subset-site
 ```
-静态页包含三个实际 RGB/XYZ/contact GIF、45 项搜索／分类、中英文和原任务／深度链接。采集、在线／离线评价沿用 [现有命令](../interaction-dynamics/README.zh.md)，本轮没有重新跑原 69 项物理测试或改变其结果。发布前检查条目、锚点、GIF 和页面交互；验证结果另记 `checks.json`。本轮尚未实现模型训练 adapter、父场景分组、B/C hidden-state chain pair 或新增持续 link 点；它们是进入正式实验前的具体工作项。
+静态页包含三个实际 RGB/XYZ/contact GIF、46 项搜索／分类、中英文和原任务／深度链接。采集、在线／离线评价沿用 [现有命令](../interaction-dynamics/README.zh.md)，本轮没有重新跑原 69 项物理测试或改变其结果。发布前检查条目、锚点、GIF 和页面交互；验证结果另记 `checks.json`。本轮尚未实现模型训练 adapter、父场景分组、B/C hidden-state chain pair 或新增持续 link 点；它们是进入正式实验前的具体工作项。

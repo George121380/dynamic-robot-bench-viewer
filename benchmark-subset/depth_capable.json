@@ -1,19 +1,20 @@
 {
   "schema": "depth-capable-task-review-v1",
-  "review_date": "2026-10-11",
+  "review_date": "2026-10-12",
   "counts": {
     "stored": 24,
-    "rerender": 10,
+    "rerender": 11,
     "new": 5,
     "native": 4
   },
-  "total_specific_entries": 43,
-  "counting_note": "PhysMani overview excluded; normal/high-speed entries counted separately; the four new protocols reuse three physical families.",
+  "total_specific_entries": 44,
+  "counting_note": "Previous 43 accepted catalog entries plus one OCBench Bowling entry; remaining 27 OCBench tasks are unaccepted. PointWorld domains counted separately; speed variants retained.",
   "source_snapshots": {
     "old_manifest": "docs/benchmark_tasks/depth/manifest.json at 16c9aef",
     "old_evidence_utc": "2026-10-10 01:54 UTC",
     "native_acceptance": "docs/interaction_dynamics/validation.json at 16c9aef",
-    "actual_readback": "depth_recheck.json"
+    "actual_readback": "depth_recheck.json",
+    "ocbench": "ocbench.json / ocbench_validation.json, upstream 6939a1e, release fd771640"
   },
   "original_samples": {
     "unique": 39,
@@ -683,6 +684,21 @@
       "numerical_sample": "dev/benchmarks/benchmark_interaction_data/acceptance-006/ID_free_motion_interception_family000000_seed0_interception.h5",
       "robot_action": true,
       "gt_tracks_ready": true
+    },
+    {
+      "id": "bowling-task1-v0",
+      "family": "OCBench",
+      "route": "rerender",
+      "depth_kind": "z",
+      "depth_unit": "m",
+      "frames": 30,
+      "scope_zh": "官方验证第一条 qpos/qvel：30 帧原状态 RGB-D 重渲染；另新采三 seeds，原始 release 无 depth／RGB，原 MJWarp contact 未恢复。",
+      "scope_en": "Official validation episode 0 qpos/qvel: 30 original-state RGB-D frames; three new CPU seeds additionally collected. Release lacks RGB/depth; original MJWarp contacts unrecovered.",
+      "gif": "https://peiqil.com/dynamic-robot-bench-viewer/ocbench/media/official-val-episode0-rgb-depth.gif",
+      "evidence": "https://peiqil.com/dynamic-robot-bench-viewer/ocbench/ocbench_validation.json",
+      "numerical_sample": "dev/benchmarks/.agent-worktrees/dynamic-robot-bench/benchmark-subset-v1/results/ocbench-bowling/acceptance-004/official-val-episode0/sample.npz",
+      "robot_action": true,
+      "gt_tracks_ready": true
     }
   ],
   "additional_sources": [
@@ -731,5 +747,16 @@
       "dev/model/PointWorld/reports/dataset-loader.json"
     ],
     "audit_scope": "Read local pinned source and deployment reports; raw PointWorld data remains on Baidu and was not independently re-audited in this review."
+  },
+  "ocbench_addendum": {
+    "specific_accepted_entries": 1,
+    "unaccepted_suite_tasks": 27,
+    "new_CPU_episodes": 3,
+    "RGBD_frames_new": 303,
+    "RGBD_frames_official_rerender": 30,
+    "persistent_points": "11 bodies × 24 fixed local points",
+    "original_state_contact_truth": false,
+    "new_CPU_contact_rate_hz": 500,
+    "strict_counterfactual_pairs": false
   }
 }

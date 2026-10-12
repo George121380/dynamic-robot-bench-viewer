@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-11",
-  "scope": "42 historical catalog entries (including PhysMani overview) plus four new protocols; 45 individual entries reviewed. These include datasets, speed variants and reused physical families, not 45 independent environments.",
+  "date": "2026-10-12",
+  "scope": "45 earlier specific entries plus one audited OCBench Bowling task; the other 27 suite tasks are listed separately in ocbench.json and not counted as accepted implementations.",
   "recommendation_type": "qualitative research/design recommendation, not measured model performance",
   "core": [
     "FreeMotionInterception-v1",
@@ -48,7 +48,8 @@
     "third_round_report": "dev/experiments/history-supervision-round3/REPORT.md",
     "RoboCasa": "https://robocasa.ai/docs/build/html/datasets/using_datasets.html",
     "ManiSkill": "https://maniskill.readthedocs.io/en/latest/tasks/table_top_gripper/index.html",
-    "PhysMani": "https://github.com/vLAR-group/PhysMani"
+    "PhysMani": "https://github.com/vLAR-group/PhysMani",
+    "ocbench": "6939a1e source / fd771640 release; local CPU seeds 0,1,2 and official validation episode 0"
   },
   "tasks": [
     {
@@ -819,6 +820,23 @@
       "depth_note_zh": "与完整 RGB／持续 XYZ 点／100 Hz 接触数据同步。",
       "depth_note_en": "Synchronized with RGB, persistent XYZ points and 100 Hz contacts.",
       "depth_url": "https://peiqil.com/dynamic-robot-bench-viewer/interaction-dynamics/"
+    },
+    {
+      "id": "bowling-task1-v0",
+      "family": "OCBench",
+      "role": "next",
+      "focus_zh": "球–瓶／瓶–瓶传播、倾倒、旋转、自由运动",
+      "focus_en": "Ball–pin / pin–pin propagation, tipping, rotation and free motion",
+      "reason_zh": "CollisionChain 之后优先外部追加，重点预测球瓶；三个受控任务仍用于首轮诊断。新基准未建立长期独立验证；没有 lite。",
+      "reason_en": "Priority external addition after CollisionChain; target pins. Keep controlled initial diagnostics. Long-term independent validation is unestablished; no lite variant.",
+      "availability_zh": "官方状态 10,000 train / 1,000 val；已读一条片段＋新采 3 CPU seeds，未全库下载",
+      "availability_en": "Released state data: 10,000 train / 1,000 val; one episode prefix read plus 3 CPU samples, not a full download",
+      "gallery": "https://peiqil.com/dynamic-robot-bench-viewer/ocbench/",
+      "depth_zh": "已原状态重渲染 RGB-D · 30 帧；也已新采",
+      "depth_en": "Original-state RGB-D rendered: 30 frames; live collection accepted",
+      "depth_note_zh": "原包 qpos/qvel 无 depth；新采 3×101 RGB-D 帧＋持续点＋500 Hz contact。原状态不能恢复原 MJWarp 接触，训练 adapter 待接。",
+      "depth_note_en": "Original qpos/qvel package lacks depth; new 3×101 RGB-D frames, fixed points and 500 Hz contacts. Original MJWarp contacts and training adapter remain unavailable.",
+      "depth_url": "https://peiqil.com/dynamic-robot-bench-viewer/ocbench/#depth"
     }
   ],
   "additional_independent_chain_ID_split_counts": {
@@ -857,5 +875,7 @@
       0.0046
     ],
     "MAE_future_gain_established": false
-  }
+  },
+  "ocbench_suite_inventory": "ocbench.json",
+  "priority_external_addition": "bowling-task1-v0"
 }

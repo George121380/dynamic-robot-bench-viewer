@@ -3,9 +3,11 @@ Start with **FreeMotionInterception-v1, ToolContactRelease-v1, and CollisionChai
 
 Status: inventory, data, acceptance and previous experiments reviewed on 2026-10-11. Branch `task/benchmark-subset-v1`; no PR; private main unchanged. Environment code remains at `16c9aef`. This review adds bilingual documents, review JSON and a static-page builder, without changing tasks or evaluators. PhysMani evidence uses `ab23d05` and the published 2026-10-10 03:31 UTC snapshot; snapshot job status is not a live observation.
 
-[中文](README.zh.md) · [Public selection page with GIFs](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-subset/) · [45-entry structured review](review.json) · [Existing interaction acceptance](../interaction-dynamics/VALIDATION.en.md) · [Existing depth acceptance](../benchmark-tasks/depth/)
+[中文](README.zh.md) · [Public selection page with GIFs](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-subset/) · [46-entry structured review](review.json) · [Existing interaction acceptance](../interaction-dynamics/VALIDATION.en.md) · [Existing depth acceptance](../benchmark-tasks/depth/)
 
-**All verified GT-depth entries:** [43-entry English inventory](DEPTH_CAPABLE.en.md) / [中文清单](DEPTH_CAPABLE.zh.md), separating existing-depth reads, saved-state rendering, new collection and native protocols. On 2026-10-11, 39 NPZs and one full HDF5 per new protocol were checked read-only.
+**All verified GT-depth entries:** [44-entry English inventory](DEPTH_CAPABLE.en.md) / [中文清单](DEPTH_CAPABLE.zh.md), separating existing-depth reads, saved-state rendering, new collection and native protocols. On 2026-10-11, 39 NPZs and one full HDF5 per new protocol were checked read-only.
+
+**OCBench / Bowling added 2026-10-12:** inventory covers all 28 tasks; Bowling official-state RGB-D rendering and three CPU fixed-point/contact samples are accepted. Priority external interaction addition after CollisionChain. [Design and commands](OCBENCH.en.md) / [中文](OCBENCH.zh.md) / [Bowling GIFs](https://peiqil.com/dynamic-robot-bench-viewer/ocbench/). The selection list now has 46 entries and the accepted depth list 44; other 27 OCBench tasks are source inventory only.
 
 ## Why these three
 The experiment should isolate benefits from history, actions and other objects, rather than only improve historical reconstruction. These tasks share Panda, ManiSkill, seven-dimensional precommitted pd_ee_delta_pose controls, 20 Hz observations/control and 100 Hz contacts. Small-sample acceptance covers full RGB-D, persistent points and contact fields. Holding robot, coordinates, control semantics and schema constant helps interpret model changes.
@@ -73,7 +75,7 @@ The runner has no B/C target-selector CLI. The training/input adapter must call 
 P0 reuses familiar upstream assets/environments, but its new modes and acceptance rules are custom protocols. Three-seed/60-episode acceptance supports small-sample functionality, not absence of hidden bugs or community validation of the whole protocol. Freeze manifests, audit point transforms independently and replicate on fresh families. [Upstream ManiSkill tasks](https://maniskill.readthedocs.io/en/latest/tasks/table_top_gripper/index.html) and [public demonstrations](https://huggingface.co/datasets/haosulab/ManiSkill_Demonstrations/tree/main/demos) provide external anchors.
 
 ## Complete item-by-item decisions
-Scope: 42 historical catalog entries, including the PhysMani overview, plus four new protocols; excluding the redundant overview gives **45 individual entries**. Speed variants, datasets and reused environments are not independent task families. Dataset counts come from selected versions/registered metadata and do not mean every corpus was downloaded locally.
+Scope: 42 historical catalog entries, including the PhysMani overview, plus four new protocols; excluding the redundant overview gave 45 entries; adding Bowling yields **46 individual entries**. Speed variants, datasets and reused environments are not independent task families. Dataset counts come from selected versions/registered metadata and do not mean every corpus was downloaded locally.
 
 1. **[match_and_pick_from_conveyor](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/#match_and_pick_from_conveyor) — External validation**. Moving support / grasp / semantic memory. Retain for external online tests, starting with L1 constant speed; unobserved future L2/L3 schedules preclude deterministic exact forecasts.
    - Data: Official 100; project accepted v4 20 / v5 3.
@@ -255,8 +257,10 @@ Scope: 42 historical catalog entries, including the PhysMani overview, plus four
    - Data: All modes pass three-seed acceptance; native RGB-D/points/contacts; small samples only.
    - [Depth: Native simulator depth GT (metres)](https://peiqil.com/dynamic-robot-bench-viewer/interaction-dynamics/). Synchronized with RGB, persistent XYZ points and 100 Hz contacts.
 
+46. **[OCBench bowling-task1-v0](https://peiqil.com/dynamic-robot-bench-viewer/ocbench/) — Priority external addition**. Ball–pin / pin–pin propagation, tipping and free motion. Released 10,000 train / 1,000 val state episodes; 30 official-state RGB-D frames and three CPU seeds accepted. Depth is metric Z; original MJWarp contacts unrecovered, live contacts recorded at 500 Hz with fixed points. Training adapter pending. [Details and commands](OCBENCH.en.md).
+
 ## Artifacts, reproduction and limits
-`docs/benchmark_subset/review.json` is the bilingual source for all 45 entries. `tools/build_benchmark_subset.py` renders a public static review page, reusing existing GIFs and showing depth status. It does not simulate, collect data or invoke models:
+`docs/benchmark_subset/review.json` is the bilingual source for all 46 entries. `tools/build_benchmark_subset.py` renders a public static review page, reusing existing GIFs and showing depth status. It does not simulate, collect data or invoke models:
 ```bash
 python tools/build_benchmark_subset.py --output results/benchmark-subset-site
 python -m http.server 8765 --directory results/benchmark-subset-site

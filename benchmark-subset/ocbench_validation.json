@@ -1,0 +1,311 @@
+{
+  "upstream_commit": "6939a1e84f7ce9dbdd20c9f80d4cf335e8f83b49",
+  "packages": {
+    "ocbench": "1.0.1",
+    "mujoco": "3.3.7",
+    "dm_control": "1.0.34",
+    "numpy": "2.5.4",
+    "h5py": "3.16.0",
+    "Pillow": "12.3.0"
+  },
+  "episodes": [
+    {
+      "seed": 0,
+      "steps": 500,
+      "duration_s": 10.000000000000009,
+      "pins_knocked": 8,
+      "upstream_success": false,
+      "healthy": true,
+      "active_contact_rows": 83886,
+      "inter_object_pairs": [
+        [
+          "ball",
+          "pin_0"
+        ],
+        [
+          "ball",
+          "pin_2"
+        ],
+        [
+          "ball",
+          "pin_5"
+        ],
+        [
+          "pin_0",
+          "pin_1"
+        ],
+        [
+          "pin_0",
+          "pin_2"
+        ],
+        [
+          "pin_0",
+          "pin_4"
+        ],
+        [
+          "pin_1",
+          "pin_3"
+        ],
+        [
+          "pin_1",
+          "pin_4"
+        ],
+        [
+          "pin_1",
+          "pin_7"
+        ],
+        [
+          "pin_2",
+          "pin_4"
+        ],
+        [
+          "pin_2",
+          "pin_5"
+        ],
+        [
+          "pin_2",
+          "pin_8"
+        ],
+        [
+          "pin_3",
+          "pin_6"
+        ],
+        [
+          "pin_4",
+          "pin_7"
+        ]
+      ],
+      "ball_peak_speed_m_s": 0.5758146261170909,
+      "persistent_point_roundtrip_max_m": 3.7470027081099033e-16,
+      "rgbd_frames": 101,
+      "depth_min_m": 1.129379391670227,
+      "depth_max_m": 6.999993324279785,
+      "depth_valid_fraction": 0.6800143100247524,
+      "floor_depth_probe": {
+        "rays": 49,
+        "max_error_m": 3.638687085016912e-05,
+        "mean_error_m": 1.8663700350792494e-05,
+        "scope": "initial-frame floor-plane rays; not a full image or mesh-occlusion audit"
+      }
+    },
+    {
+      "seed": 1,
+      "steps": 500,
+      "duration_s": 10.000000000000009,
+      "pins_knocked": 0,
+      "upstream_success": false,
+      "healthy": true,
+      "active_contact_rows": 57708,
+      "inter_object_pairs": [],
+      "ball_peak_speed_m_s": 0.25222950175003445,
+      "persistent_point_roundtrip_max_m": 3.3306690738754696e-16,
+      "rgbd_frames": 101,
+      "depth_min_m": 1.129379391670227,
+      "depth_max_m": 6.999993324279785,
+      "depth_valid_fraction": 0.6808721379950495,
+      "floor_depth_probe": {
+        "rays": 51,
+        "max_error_m": 3.638687085016912e-05,
+        "mean_error_m": 1.9218845760119387e-05,
+        "scope": "initial-frame floor-plane rays; not a full image or mesh-occlusion audit"
+      }
+    },
+    {
+      "seed": 2,
+      "steps": 500,
+      "duration_s": 10.000000000000009,
+      "pins_knocked": 0,
+      "upstream_success": false,
+      "healthy": true,
+      "active_contact_rows": 57356,
+      "inter_object_pairs": [],
+      "ball_peak_speed_m_s": 0.3993673902949558,
+      "persistent_point_roundtrip_max_m": 3.469446951953614e-16,
+      "rgbd_frames": 101,
+      "depth_min_m": 1.129379391670227,
+      "depth_max_m": 6.999993324279785,
+      "depth_valid_fraction": 0.6822246287128713,
+      "floor_depth_probe": {
+        "rays": 51,
+        "max_error_m": 3.638687085016912e-05,
+        "mean_error_m": 1.8756608181278706e-05,
+        "scope": "initial-frame floor-plane rays; not a full image or mesh-occlusion audit"
+      }
+    }
+  ],
+  "stepping_matches_upstream": true,
+  "fixed_seed_reproducible": true,
+  "official_rerender": {
+    "source": "official validation episode 0, pinned release",
+    "frames": 30,
+    "source_state_frames": 500,
+    "release_revision": "fd771640f7a47879d8b06657fe05389641b5bff9",
+    "archive_headers": {
+      "qpos": [
+        500000,
+        91
+      ],
+      "qvel": [
+        500000,
+        80
+      ],
+      "observations": [
+        501000,
+        102
+      ],
+      "actions": [
+        500000,
+        7
+      ]
+    },
+    "depth_kind": "z",
+    "depth_unit": "m",
+    "depth_valid_fraction": 0.6813619791666666,
+    "depth_min_m": 1.129379391670227,
+    "depth_max_m": 6.999993324279785,
+    "ball_observation_pos_max_error_m": 1.4901161193847656e-08,
+    "ball_quat_observation_max_error": 0.0,
+    "ball_velocity_observation_max_error_m_s": 1.4901161193847656e-08,
+    "contact_labels": "not exported: CPU mj_forward contacts/forces do not recover original MJWarp solver events",
+    "terminal_state": "qpos/qvel have 500 pre-action states per episode; terminal RGB-D not synthesized",
+    "camera": "new front render; no original Bowling RGB available for pixel comparison",
+    "floor_depth_probe": {
+      "rays": 51,
+      "max_error_m": 3.638687085016912e-05,
+      "mean_error_m": 1.8756608181278706e-05,
+      "scope": "initial-frame floor-plane rays; not a full image or mesh-occlusion audit"
+    }
+  },
+  "has_observed_collision_propagation": true,
+  "has_observed_zero_score": true,
+  "passed": true,
+  "review_date": "2026-10-12",
+  "scope": "Three local CPU seeds; one official validation episode prefix; no model or MJWarp execution",
+  "release_range_read": {
+    "url": "https://huggingface.co/datasets/seohongpark/ocbench/resolve/fd771640f7a47879d8b06657fe05389641b5bff9/full/bowling-task1-v0/000-val.npz",
+    "revision": "fd771640f7a47879d8b06657fe05389641b5bff9",
+    "archive_bytes": 346792143,
+    "range_bytes": 1800673,
+    "full_file_hash_verified": false,
+    "entries": [
+      {
+        "name": "actions.npy",
+        "raw_bytes": 14000128,
+        "compressed_bytes": 12038972
+      },
+      {
+        "name": "rewards.npy",
+        "raw_bytes": 2000128,
+        "compressed_bytes": 7207
+      },
+      {
+        "name": "masks.npy",
+        "raw_bytes": 2000128,
+        "compressed_bytes": 4121
+      },
+      {
+        "name": "terminals.npy",
+        "raw_bytes": 500128,
+        "compressed_bytes": 2363
+      },
+      {
+        "name": "qpos.npy",
+        "raw_bytes": 182000128,
+        "compressed_bytes": 85796677
+      },
+      {
+        "name": "qvel.npy",
+        "raw_bytes": 160000128,
+        "compressed_bytes": 148613484
+      },
+      {
+        "name": "observations.npy",
+        "raw_bytes": 204408128,
+        "compressed_bytes": 100328259
+      },
+      {
+        "name": "observation_interval.npy",
+        "raw_bytes": 132,
+        "compressed_bytes": 70
+      }
+    ]
+  },
+  "artifacts": {
+    "official-val-episode0/privileged.npz": {
+      "bytes": 352737,
+      "sha256": "2cbf5598c3b0f8868d574ef41eee9de86e3b30ffb7724da14311d7d4f9fd7357"
+    },
+    "official-val-episode0/rgb-depth.gif": {
+      "bytes": 441114,
+      "sha256": "2e77f4fb63131a9c417b1393d4fb2a5048158a781d4659ec0f8453151c8393d4"
+    },
+    "official-val-episode0/sample.npz": {
+      "bytes": 702271,
+      "sha256": "bd0a29c6eef83b7fc004f45bf04d3ef9c3c4adf8fb4a51609783f6d02cee2781"
+    },
+    "official-val-episode0/summary.json": {
+      "bytes": 1247,
+      "sha256": "721554a3dcfb3dfc79d6df4b83447378695d143dce33496a8f795a59554a4585"
+    },
+    "seed0/contact-events.json": {
+      "bytes": 143497,
+      "sha256": "57eb3dd8f48440628905d44e2d9632fca31c0655499ad2b91468c9d884c8b3f5"
+    },
+    "seed0/dynamics.gif": {
+      "bytes": 3288573,
+      "sha256": "2e24dfd76b09a0d2cb8e639c2afc195d634a34251e9932bcee50283bb81949e6"
+    },
+    "seed0/rgb-depth.gif": {
+      "bytes": 1044629,
+      "sha256": "0b04148ee9c4d66459f9b41e3e485519b636763b0bd01ee02c681360da62919a"
+    },
+    "seed0/rollout.h5": {
+      "bytes": 7800975,
+      "sha256": "0f4c55803a03d6be1523a5c1be370eb417afa259a82f91f4cd22394fdb86be54"
+    },
+    "seed0/summary.json": {
+      "bytes": 1250,
+      "sha256": "5b16f9137c6d0e03406138876f5d726bedbfdbffa70c529ff5c7297655aeb69b"
+    },
+    "seed1/contact-events.json": {
+      "bytes": 178471,
+      "sha256": "d3b7bfe83f84c8bb36369f8e637bfb419f0edaa2f49f444334d92e5259dd98a1"
+    },
+    "seed1/dynamics.gif": {
+      "bytes": 3231860,
+      "sha256": "bd9735d8ec9ffbbe9e99596d64653c56602778bc1aa0f6951051d3851412ff51"
+    },
+    "seed1/rgb-depth.gif": {
+      "bytes": 1358852,
+      "sha256": "06c54402e1188aac100cf43aa1f3035f59df50e0ce6dcef5474ae56dfe3ab8d9"
+    },
+    "seed1/rollout.h5": {
+      "bytes": 6894354,
+      "sha256": "a59e6c60a506f38023ac24ef7b4c0c1afa6292def184b713bda4b569e3870d22"
+    },
+    "seed1/summary.json": {
+      "bytes": 664,
+      "sha256": "e710265f2596607e2b387d032e51e599a3b720895eea0b6ba25ead66c37f81cc"
+    },
+    "seed2/contact-events.json": {
+      "bytes": 93607,
+      "sha256": "a355c36b691bcd054ecf9294ab8d4b3644bb534847fb908b33032bda79c982a0"
+    },
+    "seed2/dynamics.gif": {
+      "bytes": 3222002,
+      "sha256": "24c162ae1725d5f965ffde4822177ffda73d4b177c1c6dc1e7357d3078e785b4"
+    },
+    "seed2/rgb-depth.gif": {
+      "bytes": 978227,
+      "sha256": "8e941bf26bdd53fad21162f770cfc0a51855ae816b5647e37ed2a39b014a7749"
+    },
+    "seed2/rollout.h5": {
+      "bytes": 6748012,
+      "sha256": "fc514b2737fa71ccddc2bb648cac69c5ba3fb77a592d4cd86ebc2b836c805b96"
+    },
+    "seed2/summary.json": {
+      "bytes": 662,
+      "sha256": "c639231fb54e7381ed34a6e1d9a41abe3c4e410f5558a1eaa29453c7c55c01d0"
+    }
+  }
+}
