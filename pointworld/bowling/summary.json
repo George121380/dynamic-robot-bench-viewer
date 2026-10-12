@@ -261,6 +261,47 @@
       "moving_episodes_only_pin_ADE_m": 0.004166995691290746
     }
   ],
+  "restoration_check": {
+    "inference": {
+      "source_commit": "a149e92e65c3fcccbbb7752c3ee688dece0287d4",
+      "input_sha256": "aea7092469d4bf13819b1b953bdadfd9179b906e511acb76244854ce272005e9",
+      "adapter_sha256": "5346fdcf0c17d5d073bb3eb694304a9f02ac4d0ca827a031669702aa98bb1466",
+      "selected_step": 1000,
+      "serialization_seed": 3734738073,
+      "inference_only": true,
+      "bitwise_gpu_prediction_reproducibility": false,
+      "restored_trainable_tensors_exact": 483,
+      "network_input_fields": [
+        "scene_flows",
+        "scene_colors",
+        "scene_normals",
+        "robot_flows",
+        "robot_normals",
+        "right_gripper_open",
+        "cam0_initial_rgb",
+        "cam0_initial_depth",
+        "cam0_intrinsic",
+        "cam0_extrinsic",
+        "cam1_initial_rgb",
+        "cam1_initial_depth",
+        "cam1_intrinsic",
+        "cam1_extrinsic"
+      ],
+      "supervision_fields_available_to_batch": false
+    },
+    "point_id_equality": true,
+    "mean_object_prediction_difference_m": 0.0006375023513101041,
+    "max_point_prediction_difference_m": 0.08468218147754669,
+    "mean_all_point_prediction_difference_m": 0.00048059484106488526,
+    "strict_prediction_tolerance_m": 1e-05,
+    "strict_prediction_equivalence": false,
+    "fresh_derived_tipping": 0,
+    "primary_derived_tipping": 0,
+    "max_object_point_prediction_difference_m": 0.014142651110887527,
+    "max_pin_point_prediction_difference_m": 0.010936467908322811,
+    "points_over_1cm": 15,
+    "pin_points_over_1cm": 1
+  },
   "methods": {
     "pretrained": {
       "episodes": 15,
