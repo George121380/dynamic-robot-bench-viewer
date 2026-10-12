@@ -26,7 +26,7 @@
 
 实际读取官方验证 NPZ 的 ZIP/NPY 片段，确认：
 - observations float32 [501000,102]、actions [500000,7]；
-- **qpos [500000,91]、qvel [500000,80]**，完整仿真状态按 action 前时间保存；
+- **qpos [500000,91]、qvel [500000,80]**，完整广义坐标／速度按 action 前时间保存；这不是包含 ctrl／act／warm-start 的完整 integration snapshot；
 - 不含 RGB、depth 或 camera calibration。官方未发布 Bowling visual 数据；有 visual 环境不等于有 visual 数据包。
 - 第一条 500 状态已读取，选其中 30 帧恢复 qpos/qvel，使用匹配资产的 CPU MuJoCo 新渲染 RGB＋metric Z-depth。读取约 1.80 MB 的 HTTP ranges，没有下载 3.47 GB 训练库，也没有执行 pickle。未校验整个压缩包 SHA256／CRC，不能称全库验收。
 - observations 每条多一个终止观测，但 qpos/qvel 没有额外终止状态；本次只渲染帧 0–499，不凭空补第 500 帧。动作与稀疏图像分别对齐，不能把两种长度直接 zip。
@@ -39,7 +39,7 @@
 **深度：已验证原状态重渲染；也可新采仿真 RGB-D，不需要模型估计。** 单位米，camera-axis Z。背景 far-plane 7 m 不代表可反投影的真实表面，已在 valid 中排除。Mac 渲染器报告缺少 ARB_clip_control；四个样本初帧的地面射线检查最大误差约 0.037 mm。这是地面／标定数值检查，不是所有网格、遮挡或像素的完备审计。该 GIF 30 帧均匀选取、每帧播放 100 ms，约 3.33× 加速。
 
 ## 本次 CPU 物理与身份验证
-seed 0/1/2 均健康运行 500 controls，分别击倒 **8/0/0** 瓶。seed 0 记录球–pin_0/2/5 和 11 类瓶–瓶碰撞 pair；seed 1/2 未出现球–瓶或瓶–瓶接触，得分零，是保留的自然负样本。这里没有把零分解释为人为保证的 Near Miss，也没有宣称已覆盖所有失败原因。
+seed 0/1/2 均健康运行 500 controls，分别击倒 **8/0/0** 瓶。seed 0 记录球–pin_0/2/5 和 11 类瓶–瓶碰撞 pair；seed 1/2 未出现球–瓶或瓶–瓶接触，得分零，是保留的自然负样本。这里没有把零分解释为人为保证的 Near Miss，也没有宣称已覆盖所有失败原因。seed 0 没有任何机器人–球瓶 contact：机器人–球接触在 2.752–3.318 s，首次球–瓶 4.046 s，首次瓶–瓶 4.104 s。上述区间为第一／最后观测，不把中间间隙当连续接触；这直接支持解除后自由运动再传播的样本有效性。
 
 每条保存 501 帧刚体状态、101 帧 RGB-D（10 Hz）、2 ms 求解器 contact samples（500 Hz）。11 个对象各绑定 24 个固定 body-local 物理点；球为固定球面采样，球瓶为固定编译网格顶点。点从同一 body pose 运输，IDs 不随时间重采样，局部坐标回转误差小于 4e-16 m。点覆盖可遮挡表面，不是逐帧可见深度点云；未包含机器人 link 点。
 

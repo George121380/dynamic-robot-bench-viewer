@@ -307,5 +307,23 @@
       "bytes": 662,
       "sha256": "c639231fb54e7381ed34a6e1d9a41abe3c4e410f5558a1eaa29453c7c55c01d0"
     }
+  },
+  "seed0_propagation_check": {
+    "robot_pin_contact_pairs": [],
+    "contact_intervals_scope": "first/last observed active contacts, not one continuous event",
+    "first_last_contact_s": {
+      "robot-ball": [
+        2.7519999999999185,
+        3.317999999999856
+      ],
+      "ball-pin": [
+        4.045999999999776,
+        4.749999999999699
+      ],
+      "pin-pin": [
+        4.10399999999977,
+        5.995999999999562
+      ]
+    }
   }
 }

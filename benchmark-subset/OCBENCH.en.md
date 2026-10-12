@@ -24,7 +24,7 @@ These are **proposals**, not model results or demonstrated necessity of physical
 ## Released data and depth
 At release revision `fd771640f7a47879d8b06657fe05389641b5bff9`, Bowling has **10,000 train / 1,000 validation episodes**, each with 500 controls. The train/validation NPZs are 3,470,914,682 / 346,792,143 bytes. These are manifest counts, not full local downloads.
 
-Validated HTTP ranges into the official validation archive confirm float32 observations [501000,102], actions [500000,7], **qpos [500000,91], qvel [500000,80]**. Complete simulation states are saved before actions. There are no RGB, depth or calibration arrays, and no released Bowling visual dataset.
+Validated HTTP ranges into the official validation archive confirm float32 observations [501000,102], actions [500000,7], **qpos [500000,91], qvel [500000,80]**. Complete generalized coordinates/velocities are saved before actions; this is not a complete integration snapshot with ctrl/act/warm-start. There are no RGB, depth or calibration arrays, and no released Bowling visual dataset.
 
 We read the first 500 states and re-rendered 30 frames with matching assets in CPU MuJoCo. About 1.80 MB of ranges were transferred; no 3.47 GB train download or pickle execution. This is a partial numeric read, not a full-archive SHA256/CRC audit. Observations include the terminal endpoint, while qpos/qvel have only 500 pre-action states per episode: frame 500 was not fabricated. Align sparse image indices and dense actions explicitly.
 
@@ -37,7 +37,7 @@ Saved poses support persistent material points, but a CPU mj_forward cannot reco
 **Depth: original-state rendering verified; new simulated RGB-D collection also works, without a depth-estimation model.** Depth is metric camera-axis Z. The 7 m far-plane background is excluded by valid masks. macOS warned that ARB_clip_control is unavailable; initial-frame floor-ray checks on all four samples have maximum error about 0.037 mm. This checks floor geometry/calibration, not all meshes, occlusions or pixels. The 30 uniformly selected frames play at 100 ms/frame, about 3.33× speed.
 
 ## Actual physics and persistent identity checks
-Seeds 0/1/2 each run 500 controls with healthy states and knock **8/0/0** pins. Seed 0 records ball contacts with pin_0/2/5 plus eleven pin–pin pair types. Seeds 1/2 have no ball–pin or pin–pin contacts and score zero. They are retained natural negatives, not guaranteed controlled Near Miss protocols.
+Seeds 0/1/2 each run 500 controls with healthy states and knock **8/0/0** pins. Seed 0 records ball contacts with pin_0/2/5 plus eleven pin–pin pair types. Seeds 1/2 have no ball–pin or pin–pin contacts and score zero. They are retained natural negatives, not guaranteed controlled Near Miss protocols. Seed 0 has no robot–pin contacts: robot–ball observations span 2.752–3.318 s; first ball–pin contact is 4.046 s and first pin–pin contact 4.104 s. These are first/last observations, not continuous intervals. They directly support release, free motion and subsequent propagation in this example.
 
 Each episode contains 501 rigid-state frames, 101 RGB-D frames at 10 Hz and solver contacts every 2 ms at 500 Hz. Eleven objects each bind 24 fixed BODY-local points: fixed sphere samples for the ball and compiled mesh vertices for pins. Point IDs persist and poses transport the same material points; local-coordinate roundtrip error is below 4e-16 m. Points include occluded surfaces and are not independently resampled depth clouds. Robot link points are not included.
 

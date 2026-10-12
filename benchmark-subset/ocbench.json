@@ -350,6 +350,7 @@
     "new_dynamic_objects": 11,
     "depth_kind": "z",
     "depth_unit": "m",
-    "core_recommendation": "Keep three controlled core families first; Bowling is the priority external interaction addition"
+    "core_recommendation": "Keep three controlled core families first; Bowling is the priority external interaction addition",
+    "original_state_is_full_integration_snapshot": false
   }
 }
