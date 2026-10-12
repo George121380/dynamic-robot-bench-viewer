@@ -1,0 +1,50 @@
+{
+  "updated_utc": "2026-10-12T16:37:05.743844+00:00",
+  "checks": [
+    {
+      "en": "Isolated Python environment",
+      "zh": "\u72ec\u7acb Python \u73af\u5883",
+      "passed": false
+    },
+    {
+      "en": "Two official checkpoint hashes",
+      "zh": "\u4e24\u5957\u5b98\u65b9 checkpoint \u54c8\u5e0c",
+      "passed": false
+    },
+    {
+      "en": "Strict full model and exact head export",
+      "zh": "\u5b8c\u6574\u6a21\u578b\u4e25\u683c\u52a0\u8f7d\u4e0e\u7cbe\u786e head \u5bfc\u51fa",
+      "passed": false
+    },
+    {
+      "en": "CPU inference and 20+2 optimizer steps",
+      "zh": "CPU \u63a8\u7406\u4e0e 20+2 \u6b21\u4f18\u5316\u66f4\u65b0",
+      "passed": false
+    },
+    {
+      "en": "GPU inference and 20+2 optimizer steps",
+      "zh": "GPU \u63a8\u7406\u4e0e 20+2 \u6b21\u4f18\u5316\u66f4\u65b0",
+      "passed": false
+    },
+    {
+      "en": "Contract tests",
+      "zh": "\u8f93\u5165\u3001\u63a9\u7801\u53ca\u5f52\u4e00\u5316\u8fb9\u754c\u6d4b\u8bd5",
+      "passed": false
+    },
+    {
+      "en": "Three-device source synchronization",
+      "zh": "\u4e09\u7aef\u6e90\u7801\u540c\u6b65",
+      "passed": false
+    }
+  ],
+  "scope": "Original EgoWAM 3D Flow head deployment. Synthetic fixtures test operators; no task-specific baseline scores.",
+  "gpu": {},
+  "upstream": "c87617fe37a6ed6a951e6b176ad552200c425c93",
+  "source_commit": null,
+  "head_interface": {
+    "features": "[B,L,256]",
+    "current_points": "[B,N,3]",
+    "output_normalized_delta": "[B,100,N,3]",
+    "inference_steps": 50
+  }
+}
