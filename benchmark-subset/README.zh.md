@@ -5,6 +5,8 @@
 
 [English](README.en.md) · [免认证选型页（含 GIF）](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-subset/) · [45 项机器可读取舍](review.json) · [既有交互验收](../interaction-dynamics/VALIDATION.zh.md) · [既有深度验收](../benchmark-tasks/depth/)
 
+**全部可获取真值深度的任务：**[43 项中文清单](DEPTH_CAPABLE.zh.md)／[English inventory](DEPTH_CAPABLE.en.md)，区分直接读取、原状态重渲染、新采集与新协议原生 RGB-D；2026-10-11 已只读复核 39 个 NPZ 与四个协议各一条完整 HDF5。
+
 ## 为什么先选这三个
 研究需要分别判断历史、动作、跨物体信息是否帮助预测，而不仅是“历史重建变好”。三者使用同一 Panda、ManiSkill、7 维预提交 pd_ee_delta_pose 指令、20 Hz 观察／控制与 100 Hz 接触记录，完整 RGB-D、持续点和接触字段已经小样本验收。先保持机器人、坐标、控制语义和 schema 一致，有助于判断模型改动的作用。
 

@@ -5,6 +5,8 @@ Status: inventory, data, acceptance and previous experiments reviewed on 2026-10
 
 [中文](README.zh.md) · [Public selection page with GIFs](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-subset/) · [45-entry structured review](review.json) · [Existing interaction acceptance](../interaction-dynamics/VALIDATION.en.md) · [Existing depth acceptance](../benchmark-tasks/depth/)
 
+**All verified GT-depth entries:** [43-entry English inventory](DEPTH_CAPABLE.en.md) / [中文清单](DEPTH_CAPABLE.zh.md), separating existing-depth reads, saved-state rendering, new collection and native protocols. On 2026-10-11, 39 NPZs and one full HDF5 per new protocol were checked read-only.
+
 ## Why these three
 The experiment should isolate benefits from history, actions and other objects, rather than only improve historical reconstruction. These tasks share Panda, ManiSkill, seven-dimensional precommitted pd_ee_delta_pose controls, 20 Hz observations/control and 100 Hz contacts. Small-sample acceptance covers full RGB-D, persistent points and contact fields. Holding robot, coordinates, control semantics and schema constant helps interpret model changes.
 
