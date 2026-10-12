@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-10-12T16:55:09.601797+00:00",
+  "updated_utc": "2026-10-12T17:29:13.878135+00:00",
   "checks": [
     {
-      "en": "Isolated Python environment",
-      "zh": "\u72ec\u7acb Python \u73af\u5883",
+      "en": "Isolated Linux environment (16 import checks)",
+      "zh": "\u72ec\u7acb Linux \u73af\u5883\uff0816 \u9879\u5bfc\u5165\u68c0\u67e5\uff09",
       "passed": true
     },
     {
@@ -12,19 +12,19 @@
       "passed": true
     },
     {
-      "en": "Strict full model and exact head export",
-      "zh": "\u5b8c\u6574\u6a21\u578b\u4e25\u683c\u52a0\u8f7d\u4e0e\u7cbe\u786e head \u5bfc\u51fa",
-      "passed": false
+      "en": "Strict models, exact export and Linux head restore",
+      "zh": "\u5b8c\u6574\u6a21\u578b\u4e25\u683c\u52a0\u8f7d\u3001\u7cbe\u786e\u5bfc\u51fa\u4e0e Linux head \u6062\u590d",
+      "passed": true
     },
     {
       "en": "CPU inference and 20+2 optimizer steps",
       "zh": "CPU \u63a8\u7406\u4e0e 20+2 \u6b21\u4f18\u5316\u66f4\u65b0",
-      "passed": false
+      "passed": true
     },
     {
       "en": "GPU inference and 20+2 optimizer steps",
       "zh": "GPU \u63a8\u7406\u4e0e 20+2 \u6b21\u4f18\u5316\u66f4\u65b0",
-      "passed": false
+      "passed": true
     },
     {
       "en": "Contract tests",
@@ -34,13 +34,22 @@
     {
       "en": "Three-device source synchronization",
       "zh": "\u4e09\u7aef\u6e90\u7801\u540c\u6b65",
-      "passed": false
+      "passed": true
     }
   ],
   "scope": "Original EgoWAM 3D Flow head deployment. Synthetic fixtures test operators; no task-specific baseline scores.",
-  "gpu": {},
+  "gpu": {
+    "gpu_name": "NVIDIA H800",
+    "peak_allocated_mib": 437.53076171875,
+    "peak_reserved_mib": 456.0,
+    "elapsed_seconds": 9.841647972818464
+  },
   "upstream": "c87617fe37a6ed6a951e6b176ad552200c425c93",
-  "source_commit": null,
+  "source_commit": "3330a225f7e0d63402eb6f4de72891f0d76ef8e7",
+  "runtime_platform": "Linux",
+  "full_model_load_platforms": [
+    "Darwin"
+  ],
   "head_interface": {
     "features": "[B,L,256]",
     "current_points": "[B,N,3]",
