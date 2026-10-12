@@ -1,6 +1,8 @@
 # 当前所有可获取真值深度的任务
 目前已验证的范围是 **43 个具体任务／协议条目：24 项直接读取、10 项原状态重渲染、5 项新采集、4 项新交互协议原生 RGB-D**。去掉 PhysMani 总览重复计数，正常／高速各计一项；这不是 43 个独立物理任务家族。CLEVRER 原视频和未验收的 TurnFaucet-v1 不在该范围。
 
+项目新加入的 **PointWorld-BEHAVIOR / task0000** 另有仿真初帧深度；**PointWorld-DROID** 也有可读初帧深度，但来源是 FoundationStereo 双目估计。二者作为额外数据域列在末节，不混入 43 项旧目录计数。
+
 2026-10-11 只读复查了已有数据：39 份 NPZ／468 帧全部通过数值 SHA256、dtype、RGB-depth shape、有效像素、相机标定与 GIF 解码检查；另外读取四个 P0 协议各一条 111 帧 HDF5，通过 RGB-D／时间／持续点运输审计。没有启动新仿真、采集或模型推理。证据见 [depth_recheck.json](depth_recheck.json)，完整来源索引见 [depth_capable.json](depth_capable.json)。
 
 [English](DEPTH_CAPABLE.en.md) · [原任务 RGB–depth GIF 页面](https://peiqil.com/dynamic-robot-bench-viewer/benchmark-tasks/depth/) · [四个新协议 RGB/XYZ/contact GIF](https://peiqil.com/dynamic-robot-bench-viewer/interaction-dynamics/) · [旧运行说明与命令](../benchmark-tasks/depth/)
@@ -83,3 +85,11 @@ ToolHang 使用原 MuJoCo 状态；Hammer 使用原 D4RL qpos/qvel/board_pos。�
 统一输出应保留米制、ray/Z 类型、valid mask、同帧 RGB 与内外参，以及原始时间／frame_ids。39 个 NPZ 每份只均匀选 12 帧，GIF 播放时钟是展示时钟，不能当作密集动作条件训练序列。完整轨迹、多视角、分割、持续点、接触和无泄漏 split 需要另行准备。
 
 本地旧样本入口为 `dev/benchmarks/benchmark_depth_samples/<sample_id>/sample.npz`，对应 metadata／preview.gif；新协议为 `dev/benchmarks/benchmark_interaction_data/acceptance-006/*.h5`。数值数组不在 Git，也未发布公网；代码／文档跨设备同步不代表原始数据自动复制。无 PR，本次更新在 `task/benchmark-subset-v1`。
+
+## 新加入的 PointWorld 数据域：也能读取深度，来源单独标记
+以上 43 项是原 Benchmark 目录的已验收真值深度范围。项目另新增 PointWorld 的两个数据域；不把这两个数据域与 43 个原目录条目混成独立任务数量。
+
+- **[PointWorld-BEHAVIOR / task0000](https://peiqil.com/dynamic-robot-bench-viewer/pointworld/behavior.gif)**：仿真 `depth_linear`，发布 flow HDF5 直接保存 `camera_*/initial_depth`（uint16 毫米），除 1000 转米。另有局部 mesh 点及位姿轨迹；它是初帧深度，不是每帧 depth 视频。部署记录已验证 5,202 train／578 test clips 与 CPU loader；本轮读取锁定源码／报告，没有再次独立审计 Baidu 原数组，也未运行 OmniGibson 原始生成。支持补逐帧深度的源码路径不等于当前该流程已跑通。[相机源码](https://github.com/NVlabs/PointWorld/blob/3872ec6ee73146aa671192ef79b5dfbedc0246e3/simulation/behavior/camera.py)、[保存字段](https://github.com/NVlabs/PointWorld/blob/3872ec6ee73146aa671192ef79b5dfbedc0246e3/simulation/behavior/writer.py)。
+- **[PointWorld-DROID](https://peiqil.com/dynamic-robot-bench-viewer/pointworld/droid.gif)**：发布 flow 同样有初帧 depth，但其生成器调用 FoundationStereo 从左右双目图像估计深度，必须标记 `estimated_stereo`，不能称为仿真／独立测量真值。部署记录 578 train／49 test clips；模型估计已在发布数据中，因此读取这些值无需重新推理。独立 `depth_320x180` 发布组可另下载，但当前 flow 子集不能自动当作逐帧 depth 历史。Viewer 的“GT”表示训练参考标注，不证明物理 Oracle 精度。[深度生成源码](https://github.com/NVlabs/PointWorld/blob/3872ec6ee73146aa671192ef79b5dfbedc0246e3/real/compute_depth.py)、[flow 初帧字段](https://github.com/NVlabs/PointWorld/blob/3872ec6ee73146aa671192ef79b5dfbedc0246e3/real/convert_2d_flows_to_3d.py)。
+
+来源锁定 `PointWorld-data 3872ec6` 与部署 `9f35b32`，项目根目录 `dev/model/PointWorld/reports/data.json`、`dataset-loader.json`；[公开进展与 GIF](https://peiqil.com/dynamic-robot-bench-viewer/pointworld/)。上述两份 GIF 是 scene-flow 参考／预测对比，不是 RGB–depth 热图。BEHAVIOR 的仿真 GT、DROID 的双目估计、RGB-only 单目估计应作为三类不同来源保留。

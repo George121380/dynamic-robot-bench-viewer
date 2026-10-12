@@ -684,5 +684,52 @@
       "robot_action": true,
       "gt_tracks_ready": true
     }
-  ]
+  ],
+  "additional_sources": [
+    {
+      "id": "PointWorld-BEHAVIOR / task0000",
+      "depth_source": "sim_gt",
+      "depth_payload": "camera_*/initial_depth",
+      "stored_unit": "uint16 millimetres",
+      "meter_conversion": "depth.astype(float32) * 0.001",
+      "temporal_scope": "Initial frame of each released flow clip; not a dense per-frame depth sequence",
+      "train_clips": 5202,
+      "test_clips": 578,
+      "note_zh": "OmniGibson depth_linear 仿真来源；发布 flow 保存初帧 depth，持久 mesh 点轨迹另存。task0000 子集已由部署流程验收；逐帧重渲染生成流程本轮未运行。",
+      "note_en": "OmniGibson depth_linear simulation source; released flows store initial depth and separate persistent mesh trajectories. Deployment accepts task0000; dense-depth regeneration was not run here.",
+      "gif": "https://peiqil.com/dynamic-robot-bench-viewer/pointworld/behavior.gif",
+      "evidence": "https://peiqil.com/dynamic-robot-bench-viewer/pointworld/",
+      "code": [
+        "https://github.com/NVlabs/PointWorld/blob/3872ec6ee73146aa671192ef79b5dfbedc0246e3/simulation/behavior/camera.py",
+        "https://github.com/NVlabs/PointWorld/blob/3872ec6ee73146aa671192ef79b5dfbedc0246e3/simulation/behavior/writer.py"
+      ]
+    },
+    {
+      "id": "PointWorld-DROID",
+      "depth_source": "estimated_stereo",
+      "depth_payload": "camera_*/initial_depth",
+      "stored_unit": "uint16 millimetres",
+      "meter_conversion": "depth.astype(float32) * 0.001",
+      "temporal_scope": "Initial depth in flow clips; separate released depth_320x180 group supports additional sequences",
+      "train_clips": 578,
+      "test_clips": 49,
+      "note_zh": "FoundationStereo 从双目影像计算深度；可读发布值，但不能归为仿真／独立测量 GT。3D flow 的“GT”是参考标注名称，不表示真实物理轨迹 Oracle。本轮未重跑双目模型。",
+      "note_en": "FoundationStereo computes depth from stereo images. Released depth is readable, but is not simulator/independent measured GT. Flow 'GT' names reference labels rather than a physical trajectory oracle. No stereo inference was rerun.",
+      "gif": "https://peiqil.com/dynamic-robot-bench-viewer/pointworld/droid.gif",
+      "evidence": "https://peiqil.com/dynamic-robot-bench-viewer/pointworld/",
+      "code": [
+        "https://github.com/NVlabs/PointWorld/blob/3872ec6ee73146aa671192ef79b5dfbedc0246e3/real/compute_depth.py",
+        "https://github.com/NVlabs/PointWorld/blob/3872ec6ee73146aa671192ef79b5dfbedc0246e3/real/convert_2d_flows_to_3d.py"
+      ]
+    }
+  ],
+  "additional_source_evidence": {
+    "main_commit": "9f35b328a1fc64477d0f5d36e31f287b9f9038c1",
+    "data_commit": "3872ec6ee73146aa671192ef79b5dfbedc0246e3",
+    "local_reports": [
+      "dev/model/PointWorld/reports/data.json",
+      "dev/model/PointWorld/reports/dataset-loader.json"
+    ],
+    "audit_scope": "Read local pinned source and deployment reports; raw PointWorld data remains on Baidu and was not independently re-audited in this review."
+  }
 }
