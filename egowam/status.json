@@ -1,15 +1,15 @@
 {
-  "updated_utc": "2026-10-12T16:37:05.743844+00:00",
+  "updated_utc": "2026-10-12T16:55:09.601797+00:00",
   "checks": [
     {
       "en": "Isolated Python environment",
       "zh": "\u72ec\u7acb Python \u73af\u5883",
-      "passed": false
+      "passed": true
     },
     {
       "en": "Two official checkpoint hashes",
       "zh": "\u4e24\u5957\u5b98\u65b9 checkpoint \u54c8\u5e0c",
-      "passed": false
+      "passed": true
     },
     {
       "en": "Strict full model and exact head export",
@@ -29,7 +29,7 @@
     {
       "en": "Contract tests",
       "zh": "\u8f93\u5165\u3001\u63a9\u7801\u53ca\u5f52\u4e00\u5316\u8fb9\u754c\u6d4b\u8bd5",
-      "passed": false
+      "passed": true
     },
     {
       "en": "Three-device source synchronization",
