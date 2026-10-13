@@ -1,0 +1,521 @@
+[
+  {
+    "sample": "cup",
+    "name": "放杯子",
+    "source": "https://gatech-rl2.github.io/egowam.github.io/videos/data/cup_inwild_0.mp4",
+    "status": {
+      "actual_model_run": true,
+      "model": "Track4World + DA3-Giant native 3D head",
+      "source_video_sha256": "2f4facab0cd0e18f9e7e016cb381e8c50cd33521e4a23a536b32fb80e9e2b511",
+      "checkpoint_sha256": "6c589c0f41632a2329920087dcd8cbd6465d4198d574f0d4186eeada78c492c7",
+      "frames": 32,
+      "original_frames": 418,
+      "fps": 30.0,
+      "original_size": [
+        640,
+        480
+      ],
+      "network_size": [
+        600,
+        448
+      ],
+      "model_seconds": 43.502362166007515,
+      "device": "Apple MPS",
+      "torch": "2.14.1",
+      "queries": [
+        [
+          202,
+          110
+        ],
+        [
+          529,
+          48
+        ],
+        [
+          551,
+          216
+        ],
+        [
+          164,
+          400
+        ],
+        [
+          202,
+          379
+        ],
+        [
+          431,
+          382
+        ]
+      ],
+      "query_labels": [
+        "门框",
+        "海报",
+        "桌面后缘",
+        "杯口",
+        "杯把",
+        "杯碟"
+      ],
+      "query_groups": [
+        "static_background",
+        "static_background",
+        "static_background",
+        "foreground",
+        "foreground",
+        "foreground"
+      ],
+      "query_selection": "fixed visible landmarks manually selected in the first RGB frame before inference",
+      "protocol": "32 chronological uniform samples of the complete public observed clip; offline tracking uses later frames",
+      "camera_compensation": "joint DA3 estimated relative camera poses, reference=first camera",
+      "Aria_VIO_available": false,
+      "independent_ground_truth": false,
+      "scale": "joint model-normalized units, not measured meters",
+      "force_projection": false,
+      "smoothing": false,
+      "filled_occlusions": false,
+      "valid_fraction": 0.45698924731182794,
+      "flow_definition": "endpoint displacement relative to each source point at frame 0, in the reference camera",
+      "limitations": "RGB-only tracker diagnostic; not the deployed EgoWAM future-prediction head and not a full Aria-label extraction reproduction",
+      "adapter_file_sha256": "9c1fdde534b1dfa6d55975d1c585b2d6b929d5e9bc15f27dbe4571ad2269fffc",
+      "runner_sha256": "5d5ada3391360b043ad8f2ae5f70132e9a6d5ba431dfef9c764838d44c2ce870",
+      "strict_weights": "<All keys matched successfully>",
+      "upstream_model_sha256": "4470aed42cdf8ef76df2a4ef381390459b977f006f5a666275b5603d3cc69e75",
+      "device_adapter_sha256": "34945cfcba69a26908f2cca948e338bbcf4bd95f50341b4e17fb479845643888",
+      "CPU_frontend_precision": null,
+      "CPU_frontend_adapter_sha256": null,
+      "MPS_area_pooling": "same PyTorch operator on CPU",
+      "MPS_attention": "zero-pad short Q/K/V heads to 64; preserve original attention scale"
+    },
+    "background_reference_depth_model_units": 1.2390823364257812,
+    "static_self_consistency": {
+      "camera_xyz": {
+        "per_frame_mean_percent": [
+          0.0,
+          3.0490000247955322,
+          4.48199987411499,
+          4.9720001220703125,
+          4.934999942779541,
+          6.6620001792907715,
+          6.059000015258789,
+          5.541999816894531,
+          4.6479997634887695,
+          5.48199987411499,
+          5.3379998207092285,
+          5.459000110626221,
+          5.73799991607666,
+          5.377999782562256,
+          5.644999980926514,
+          5.511000156402588,
+          2.5869998931884766,
+          2.7130000591278076,
+          3.056999921798706,
+          3.003999948501587,
+          3.7049999237060547,
+          4.001999855041504,
+          4.203999996185303,
+          5.421000003814697,
+          3.5260000228881836,
+          3.3929998874664307,
+          3.50600004196167,
+          3.9149999618530273,
+          4.289999961853027,
+          4.2220001220703125,
+          2.5179998874664307,
+          43.625
+        ],
+        "median_percent": 4.217282772064209,
+        "p95_percent": 7.285356521606445
+      },
+      "world_xyz": {
+        "per_frame_mean_percent": [
+          0.0,
+          1.5850000381469727,
+          2.5850000381469727,
+          2.3980000019073486,
+          2.1649999618530273,
+          2.2679998874664307,
+          2.4549999237060547,
+          2.734999895095825,
+          1.3240000009536743,
+          1.6790000200271606,
+          1.5609999895095825,
+          1.6180000305175781,
+          1.6039999723434448,
+          1.4579999446868896,
+          1.49399995803833,
+          1.7769999504089355,
+          4.045000076293945,
+          4.071000099182129,
+          3.8359999656677246,
+          4.11899995803833,
+          4.626999855041504,
+          4.697999954223633,
+          4.6020002365112305,
+          4.6519999504089355,
+          7.28000020980835,
+          7.0960001945495605,
+          7.585000038146973,
+          8.12600040435791,
+          8.347999572753906,
+          8.425000190734863,
+          8.673999786376953,
+          20.06800079345703
+        ],
+        "median_percent": 3.0657546520233154,
+        "p95_percent": 11.053997039794922
+      }
+    },
+    "metric_definition": "For 3 manually selected presumed-static background queries, endpoint displacement from sample 0 divided by the median initial estimated background Z. Median and p95 pool all 31 later samples x 3 points, without validity filtering. Not GT error or metric-unit accuracy.",
+    "background_valid_fraction": 0.3333333333333333,
+    "foreground_valid_fraction": 0.5806451612903226,
+    "native_2d_3d_projection_difference_px_median": 31.35100715444547,
+    "native_2d_3d_projection_difference_px_p95": 115.58098172847642,
+    "preview": "All 32 actual sampled frames, JPEG preview320x240q42; 850 real estimated first-frame cloud points; 3D rounded to 4 decimals; all six tracks and masks retained."
+  },
+  {
+    "sample": "fold",
+    "name": "折衣服",
+    "source": "https://gatech-rl2.github.io/egowam.github.io/videos/data/fold_inwild_0.mp4",
+    "status": {
+      "actual_model_run": true,
+      "model": "Track4World + DA3-Giant native 3D head",
+      "source_video_sha256": "6f883f12e65734726b815af091ab74c544f752f4cf911cf3b9f85222e99aaae0",
+      "checkpoint_sha256": "6c589c0f41632a2329920087dcd8cbd6465d4198d574f0d4186eeada78c492c7",
+      "frames": 32,
+      "original_frames": 405,
+      "fps": 30.0,
+      "original_size": [
+        640,
+        480
+      ],
+      "network_size": [
+        600,
+        448
+      ],
+      "model_seconds": 44.208703249983955,
+      "device": "Apple MPS",
+      "torch": "2.14.1",
+      "queries": [
+        [
+          157,
+          68
+        ],
+        [
+          399,
+          98
+        ],
+        [
+          106,
+          310
+        ],
+        [
+          310,
+          250
+        ],
+        [
+          347,
+          180
+        ],
+        [
+          508,
+          256
+        ]
+      ],
+      "query_labels": [
+        "白板边缘",
+        "墙面竖条",
+        "桌边",
+        "衣服图案",
+        "领口附近",
+        "右侧衣料"
+      ],
+      "query_groups": [
+        "static_background",
+        "static_background",
+        "static_background",
+        "foreground",
+        "foreground",
+        "foreground"
+      ],
+      "query_selection": "fixed visible landmarks manually selected in the first RGB frame before inference",
+      "protocol": "32 chronological uniform samples of the complete public observed clip; offline tracking uses later frames",
+      "camera_compensation": "joint DA3 estimated relative camera poses, reference=first camera",
+      "Aria_VIO_available": false,
+      "independent_ground_truth": false,
+      "scale": "joint model-normalized units, not measured meters",
+      "force_projection": false,
+      "smoothing": false,
+      "filled_occlusions": false,
+      "valid_fraction": 0.5698924731182796,
+      "flow_definition": "endpoint displacement relative to each source point at frame 0, in the reference camera",
+      "limitations": "RGB-only tracker diagnostic; not the deployed EgoWAM future-prediction head and not a full Aria-label extraction reproduction",
+      "adapter_file_sha256": "9c1fdde534b1dfa6d55975d1c585b2d6b929d5e9bc15f27dbe4571ad2269fffc",
+      "runner_sha256": "5d5ada3391360b043ad8f2ae5f70132e9a6d5ba431dfef9c764838d44c2ce870",
+      "strict_weights": "<All keys matched successfully>",
+      "upstream_model_sha256": "4470aed42cdf8ef76df2a4ef381390459b977f006f5a666275b5603d3cc69e75",
+      "device_adapter_sha256": "34945cfcba69a26908f2cca948e338bbcf4bd95f50341b4e17fb479845643888",
+      "CPU_frontend_precision": null,
+      "CPU_frontend_adapter_sha256": null,
+      "MPS_area_pooling": "same PyTorch operator on CPU",
+      "MPS_attention": "zero-pad short Q/K/V heads to 64; preserve original attention scale"
+    },
+    "background_reference_depth_model_units": 0.9772071838378906,
+    "static_self_consistency": {
+      "camera_xyz": {
+        "per_frame_mean_percent": [
+          0.0,
+          6.868000030517578,
+          6.184999942779541,
+          8.16100025177002,
+          8.5649995803833,
+          15.175000190734863,
+          21.027999877929688,
+          18.993999481201172,
+          49.63100051879883,
+          47.94300079345703,
+          23.37299919128418,
+          8.081000328063965,
+          15.22599983215332,
+          30.929000854492188,
+          40.48099899291992,
+          38.520999908447266,
+          23.65999984741211,
+          17.291000366210938,
+          30.86400032043457,
+          38.42100143432617,
+          32.242000579833984,
+          15.902000427246094,
+          26.259000778198242,
+          18.589000701904297,
+          27.17799949645996,
+          36.40999984741211,
+          26.79800033569336,
+          12.123000144958496,
+          11.57800006866455,
+          12.364999771118164,
+          12.534000396728516,
+          13.482000350952148
+        ],
+        "median_percent": 18.845848083496094,
+        "p95_percent": 48.530330657958984
+      },
+      "world_xyz": {
+        "per_frame_mean_percent": [
+          0.0,
+          3.200000047683716,
+          3.802999973297119,
+          4.610000133514404,
+          4.4629998207092285,
+          3.2679998874664307,
+          5.585999965667725,
+          4.304999828338623,
+          7.10099983215332,
+          6.599999904632568,
+          3.1029999256134033,
+          3.128000020980835,
+          3.2880001068115234,
+          5.889999866485596,
+          7.3470001220703125,
+          7.750999927520752,
+          9.635000228881836,
+          9.711999893188477,
+          9.645000457763672,
+          8.51099967956543,
+          9.425999641418457,
+          10.616000175476074,
+          10.930000305175781,
+          9.416999816894531,
+          10.836999893188477,
+          13.258000373840332,
+          12.220999717712402,
+          10.859999656677246,
+          10.33899974822998,
+          10.694000244140625,
+          10.454000473022461,
+          10.855999946594238
+        ],
+        "median_percent": 7.324069023132324,
+        "p95_percent": 14.963602066040039
+      }
+    },
+    "metric_definition": "For 3 manually selected presumed-static background queries, endpoint displacement from sample 0 divided by the median initial estimated background Z. Median and p95 pool all 31 later samples x 3 points, without validity filtering. Not GT error or metric-unit accuracy.",
+    "background_valid_fraction": 0.8064516129032258,
+    "foreground_valid_fraction": 0.3333333333333333,
+    "native_2d_3d_projection_difference_px_median": 34.98265819808307,
+    "native_2d_3d_projection_difference_px_p95": 90.01793364471736,
+    "preview": "All 32 actual sampled frames, JPEG preview320x240q42; 850 real estimated first-frame cloud points; 3D rounded to 4 decimals; all six tracks and masks retained."
+  },
+  {
+    "sample": "bag",
+    "name": "装购物袋",
+    "source": "https://gatech-rl2.github.io/egowam.github.io/videos/data/bag_inwild_0.mp4",
+    "status": {
+      "actual_model_run": true,
+      "model": "Track4World + DA3-Giant native 3D head",
+      "source_video_sha256": "8603cb459e13636d6714a86e0ce5ddb4e3b7652ce0ba1a62e98d14ffc1cbf1c5",
+      "checkpoint_sha256": "6c589c0f41632a2329920087dcd8cbd6465d4198d574f0d4186eeada78c492c7",
+      "frames": 32,
+      "original_frames": 604,
+      "fps": 30.0,
+      "original_size": [
+        640,
+        480
+      ],
+      "network_size": [
+        600,
+        448
+      ],
+      "model_seconds": 54.92307412499213,
+      "device": "Apple MPS",
+      "torch": "2.14.1",
+      "queries": [
+        [
+          210,
+          141
+        ],
+        [
+          479,
+          107
+        ],
+        [
+          329,
+          285
+        ],
+        [
+          221,
+          378
+        ],
+        [
+          406,
+          364
+        ],
+        [
+          561,
+          334
+        ]
+      ],
+      "query_labels": [
+        "门框",
+        "海报",
+        "桌面后缘",
+        "纸袋",
+        "饮料瓶",
+        "右侧罐体"
+      ],
+      "query_groups": [
+        "static_background",
+        "static_background",
+        "static_background",
+        "foreground",
+        "foreground",
+        "foreground"
+      ],
+      "query_selection": "fixed visible landmarks manually selected in the first RGB frame before inference",
+      "protocol": "32 chronological uniform samples of the complete public observed clip; offline tracking uses later frames",
+      "camera_compensation": "joint DA3 estimated relative camera poses, reference=first camera",
+      "Aria_VIO_available": false,
+      "independent_ground_truth": false,
+      "scale": "joint model-normalized units, not measured meters",
+      "force_projection": false,
+      "smoothing": false,
+      "filled_occlusions": false,
+      "valid_fraction": 0.3655913978494624,
+      "flow_definition": "endpoint displacement relative to each source point at frame 0, in the reference camera",
+      "limitations": "RGB-only tracker diagnostic; not the deployed EgoWAM future-prediction head and not a full Aria-label extraction reproduction",
+      "adapter_file_sha256": "9c1fdde534b1dfa6d55975d1c585b2d6b929d5e9bc15f27dbe4571ad2269fffc",
+      "runner_sha256": "5d5ada3391360b043ad8f2ae5f70132e9a6d5ba431dfef9c764838d44c2ce870",
+      "strict_weights": "<All keys matched successfully>",
+      "upstream_model_sha256": "4470aed42cdf8ef76df2a4ef381390459b977f006f5a666275b5603d3cc69e75",
+      "device_adapter_sha256": "34945cfcba69a26908f2cca948e338bbcf4bd95f50341b4e17fb479845643888",
+      "CPU_frontend_precision": null,
+      "CPU_frontend_adapter_sha256": null,
+      "MPS_area_pooling": "same PyTorch operator on CPU",
+      "MPS_attention": "zero-pad short Q/K/V heads to 64; preserve original attention scale"
+    },
+    "background_reference_depth_model_units": 1.1727259159088135,
+    "static_self_consistency": {
+      "camera_xyz": {
+        "per_frame_mean_percent": [
+          0.0,
+          7.590000152587891,
+          5.098999977111816,
+          6.244999885559082,
+          8.779999732971191,
+          6.630000114440918,
+          7.822999954223633,
+          11.491000175476074,
+          13.314000129699707,
+          11.425999641418457,
+          10.597999572753906,
+          7.203000068664551,
+          5.901000022888184,
+          8.053000450134277,
+          7.151000022888184,
+          8.925000190734863,
+          4.959000110626221,
+          4.142000198364258,
+          3.671999931335449,
+          6.835999965667725,
+          6.800000190734863,
+          4.715000152587891,
+          3.7890000343322754,
+          4.017000198364258,
+          2.140000104904175,
+          2.625,
+          3.0350000858306885,
+          2.1440000534057617,
+          3.61899995803833,
+          5.318999767303467,
+          4.730999946594238,
+          4.631999969482422
+        ],
+        "median_percent": 5.7502923011779785,
+        "p95_percent": 12.785956382751465
+      },
+      "world_xyz": {
+        "per_frame_mean_percent": [
+          0.0,
+          2.3989999294281006,
+          2.0799999237060547,
+          2.625,
+          3.2019999027252197,
+          2.88100004196167,
+          2.742000102996826,
+          2.25,
+          2.549999952316284,
+          2.1449999809265137,
+          2.3499999046325684,
+          2.109999895095825,
+          2.6040000915527344,
+          2.9140000343322754,
+          2.7260000705718994,
+          3.7339999675750732,
+          6.73799991607666,
+          6.00600004196167,
+          5.65500020980835,
+          6.71999979019165,
+          6.630000114440918,
+          6.309000015258789,
+          6.0320000648498535,
+          6.046999931335449,
+          7.670000076293945,
+          7.199999809265137,
+          7.948999881744385,
+          7.682000160217285,
+          7.960999965667725,
+          8.01200008392334,
+          8.54800033569336,
+          9.220999717712402
+        ],
+        "median_percent": 4.0815277099609375,
+        "p95_percent": 9.87855339050293
+      }
+    },
+    "metric_definition": "For 3 manually selected presumed-static background queries, endpoint displacement from sample 0 divided by the median initial estimated background Z. Median and p95 pool all 31 later samples x 3 points, without validity filtering. Not GT error or metric-unit accuracy.",
+    "background_valid_fraction": 0.3118279569892473,
+    "foreground_valid_fraction": 0.41935483870967744,
+    "native_2d_3d_projection_difference_px_median": 34.14611389082683,
+    "native_2d_3d_projection_difference_px_p95": 245.99372671070932,
+    "preview": "All 32 actual sampled frames, JPEG preview320x240q42; 850 real estimated first-frame cloud points; 3D rounded to 4 decimals; all six tracks and masks retained."
+  }
+]

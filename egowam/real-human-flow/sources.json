@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cup",
+    "url": "https://gatech-rl2.github.io/egowam.github.io/videos/data/cup_inwild_0.mp4",
+    "bytes": 603274,
+    "sha256": "2f4facab0cd0e18f9e7e016cb381e8c50cd33521e4a23a536b32fb80e9e2b511"
+  },
+  {
+    "id": "fold",
+    "url": "https://gatech-rl2.github.io/egowam.github.io/videos/data/fold_inwild_0.mp4",
+    "bytes": 1054664,
+    "sha256": "6f883f12e65734726b815af091ab74c544f752f4cf911cf3b9f85222e99aaae0"
+  },
+  {
+    "id": "bag",
+    "url": "https://gatech-rl2.github.io/egowam.github.io/videos/data/bag_inwild_0.mp4",
+    "bytes": 1176877,
+    "sha256": "8603cb459e13636d6714a86e0ce5ddb4e3b7652ce0ba1a62e98d14ffc1cbf1c5"
+  }
+]

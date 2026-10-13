@@ -1,0 +1,32 @@
+{
+  "actual_data_checks": [
+    {
+      "sample": "cup",
+      "all_32_frames": true,
+      "native_masks_equal": true,
+      "native_3d_display_rounding_error_lt": 5.1e-05,
+      "camera_transform_residual_max": 1.7881393432617188e-07
+    },
+    {
+      "sample": "fold",
+      "all_32_frames": true,
+      "native_masks_equal": true,
+      "native_3d_display_rounding_error_lt": 5.1e-05,
+      "camera_transform_residual_max": 2.384185791015625e-07
+    },
+    {
+      "sample": "bag",
+      "all_32_frames": true,
+      "native_masks_equal": true,
+      "native_3d_display_rounding_error_lt": 5.1e-05,
+      "camera_transform_residual_max": 2.384185791015625e-07
+    }
+  ],
+  "fragment_bytes": 724418,
+  "finite_playback_ui_verified": true,
+  "responsive_ui_verified_widths": [
+    320,
+    1024
+  ],
+  "sample_change_and_frame_controls_verified": true
+}
