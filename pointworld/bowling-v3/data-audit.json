@@ -1,0 +1,2107 @@
+{
+  "status": "passed",
+  "episodes": 296,
+  "splits": {
+    "train": 206,
+    "validation": 16,
+    "test": 44,
+    "fresh_test": 30
+  },
+  "robot_points": 500,
+  "scene_GT_depth_RGB_identity_exact": true,
+  "world_camera_projection_identity_atol_m": 1e-06,
+  "all_robot_initial_positions_identical": true,
+  "fresh_moving_episodes": 18,
+  "fresh_gt_tips": 76,
+  "fresh_wall_contact_seeds": [
+    3005,
+    3011,
+    3014,
+    3016,
+    3017,
+    3024,
+    3028
+  ],
+  "mean_training_weight_mass": {
+    "ball": 0.4216196230448802,
+    "ever_moving_pins": 0.1893334801305476,
+    "never_moving_pins": 0.23946305663340775,
+    "background": 0.1495838401911646
+  },
+  "conditioning": "main nominal commanded robot plan; realized future robot joints only in separately labeled diagnostic",
+  "manifest_sha256": "174736d584dd5cee0be9bb5df297a892b13af1038d471e2ab5b1735b431288ce",
+  "action_audits": [
+    {
+      "seed": 3,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.00021282620581990978,
+      "nominal_realized_terminal_error_m": 0.0002252495539428076,
+      "scene_identity_sha256": "2a7c864263e09d6356c3d1145bc4cecd126f40fde26474bacc3f9899b86874ac"
+    },
+    {
+      "seed": 4,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08325394992333403,
+      "nominal_realized_terminal_error_m": 0.16879123236736188,
+      "scene_identity_sha256": "ecee2aa5fd6e29ba7787f5ed1e3c9b0423e9ae7139fe64b358ea829a576486cf"
+    },
+    {
+      "seed": 5,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.022564679977744063,
+      "nominal_realized_terminal_error_m": 0.05809158908970716,
+      "scene_identity_sha256": "2881388ea616571e6e3d08565d693c704a49f3703b5fa068d91405956018c6ee"
+    },
+    {
+      "seed": 6,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.02263343126792172,
+      "nominal_realized_terminal_error_m": 0.023245062005160928,
+      "scene_identity_sha256": "d54f3158be95d2deec0872b2a40d76b6db3d4b905e495fdbce78e6cf6e3b3c5d"
+    },
+    {
+      "seed": 7,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08025023554311955,
+      "nominal_realized_terminal_error_m": 0.1808896346278395,
+      "scene_identity_sha256": "e532aa6d63da7571100a360c147e908ef3bd71ac08a84f119fb66643dfaddddb"
+    },
+    {
+      "seed": 8,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08685225706612694,
+      "nominal_realized_terminal_error_m": 0.15972279799516026,
+      "scene_identity_sha256": "4cad54d25030ab3b3e6be629a66c6bb6d637f7e3cbae008129989bd2587609fa"
+    },
+    {
+      "seed": 9,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08077711752394241,
+      "nominal_realized_terminal_error_m": 0.20019089330271295,
+      "scene_identity_sha256": "3977aaf4518502bcc624b09486ef0e2cea7d5bcc9c85429a939dfef9c296be65"
+    },
+    {
+      "seed": 10,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0963418920955917,
+      "nominal_realized_terminal_error_m": 0.16704738685223425,
+      "scene_identity_sha256": "b337db842865191bf93523de8427f0c9bbf5d6c69c331ae86616b7091a9928a9"
+    },
+    {
+      "seed": 11,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.1099083759661739,
+      "nominal_realized_terminal_error_m": 0.3130029329958462,
+      "scene_identity_sha256": "a7443908bfd316cc9d5046f1bde76395e20d6b53e7791ebb97ce4db871ccaa05"
+    },
+    {
+      "seed": 12,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06085618797165681,
+      "nominal_realized_terminal_error_m": 0.08444687020678109,
+      "scene_identity_sha256": "d58f077827c5dc2e7e1f0a88ce94522fbb54f5da90bf75626bb469e10d7f3de7"
+    },
+    {
+      "seed": 13,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03304285542677345,
+      "nominal_realized_terminal_error_m": 0.07567218721889073,
+      "scene_identity_sha256": "30c2a6456398b94bc5f600db7064545c855586c06ab7cc4d50c6385616aa033e"
+    },
+    {
+      "seed": 14,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08748290954284214,
+      "nominal_realized_terminal_error_m": 0.1846367947156611,
+      "scene_identity_sha256": "6845bc85f08964096cd76583fa2f86bb8363f6f2cb7a317241689a0f6aae8f52"
+    },
+    {
+      "seed": 15,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06409967351996368,
+      "nominal_realized_terminal_error_m": 0.09846727450630026,
+      "scene_identity_sha256": "6062b065e9fc174d9ecc961e556ce1d9ef7586f1ca377ee5718792f9761234f9"
+    },
+    {
+      "seed": 16,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07158596278687465,
+      "nominal_realized_terminal_error_m": 0.22603189141394284,
+      "scene_identity_sha256": "922d209bcfff8fd1c66153e5078e1ae0267654e4109fa04e063c7f90f2807fcd"
+    },
+    {
+      "seed": 17,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0442258130381614,
+      "nominal_realized_terminal_error_m": 0.10782881062652208,
+      "scene_identity_sha256": "c3c3fc98d733f7bfdb1a38a6f67c18894ec387c96149f6e57a34547acabc6932"
+    },
+    {
+      "seed": 18,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03875269722452296,
+      "nominal_realized_terminal_error_m": 0.06183412288895001,
+      "scene_identity_sha256": "9502e804f2a059b50a35e9ba5afb07571fe521805294f2c70c639bebfe3e4a0b"
+    },
+    {
+      "seed": 19,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.11940785250884,
+      "nominal_realized_terminal_error_m": 0.32981360273176447,
+      "scene_identity_sha256": "acd7c3692625d7ebffddc7f22dcde570ba9b6b937791a9f6d99c6564917fd58d"
+    },
+    {
+      "seed": 20,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06778966330904337,
+      "nominal_realized_terminal_error_m": 0.14027764720923055,
+      "scene_identity_sha256": "68d6064c7cc940c51ffb4fbd9bb18c4fc0ef7bcbea54a66c88710c416cb560f1"
+    },
+    {
+      "seed": 21,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.044808543075261775,
+      "nominal_realized_terminal_error_m": 0.11831307085100337,
+      "scene_identity_sha256": "572c7e9b7020479e51b58600d2e3d8dd9c34408d79e861c88cf3a248065ed418"
+    },
+    {
+      "seed": 22,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.056894963249059016,
+      "nominal_realized_terminal_error_m": 0.13832125869046671,
+      "scene_identity_sha256": "0a80746cc9ba464429ac131dd1a3dddd9111ca556af67171f5a449f2d5ae8d63"
+    },
+    {
+      "seed": 23,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.13842991218914316,
+      "nominal_realized_terminal_error_m": 0.21875779303761625,
+      "scene_identity_sha256": "eed9152aab5b8562b88259fdfe1641e4255787e38771043204a3d1f06b4a80b0"
+    },
+    {
+      "seed": 24,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.009184168055484037,
+      "nominal_realized_terminal_error_m": 0.0174785719646381,
+      "scene_identity_sha256": "1f4b627dc6bc1d9504d6af508eaef7da31b5aa5673b18f67b68a5cab84dd5fbd"
+    },
+    {
+      "seed": 25,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05542268196830777,
+      "nominal_realized_terminal_error_m": 0.18693515230809749,
+      "scene_identity_sha256": "0772a7fe34007b53b022577abe401719553b4e27457e5e05989f709f8878f109"
+    },
+    {
+      "seed": 26,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.030829610831006004,
+      "nominal_realized_terminal_error_m": 0.05580433815943478,
+      "scene_identity_sha256": "9ed38d6cd8962870ed1345ef2fb92f61762e00a522203d7b5be08828ae87c2ee"
+    },
+    {
+      "seed": 27,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0417651066631972,
+      "nominal_realized_terminal_error_m": 0.06175551556721308,
+      "scene_identity_sha256": "46e8de5cb23641aa990179d3be8f95e02119eeda5a450ce54e86fa3331272c59"
+    },
+    {
+      "seed": 28,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06149564368643711,
+      "nominal_realized_terminal_error_m": 0.16167726265490034,
+      "scene_identity_sha256": "7bc7a4cdc3befde4ca27c4c6989c3961a878a015bad9ca79bddac00bcfbf9924"
+    },
+    {
+      "seed": 29,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.060505030894538014,
+      "nominal_realized_terminal_error_m": 0.17120878595843833,
+      "scene_identity_sha256": "5ffe6daef81a15f37d2098a6055e137e0e1b0babe506987e73d2ad8355da6a27"
+    },
+    {
+      "seed": 30,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06343029345841972,
+      "nominal_realized_terminal_error_m": 0.1527386664438867,
+      "scene_identity_sha256": "5fc245c6846c50a4046106cadb9e998e700e2142825aa739c431d03458fbf788"
+    },
+    {
+      "seed": 31,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.20970848986028043,
+      "nominal_realized_terminal_error_m": 0.47143188966827826,
+      "scene_identity_sha256": "139eee0740ce4a160c6c5167fcd89a72d968b13707575421094fa5e287649c4c"
+    },
+    {
+      "seed": 32,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06848722235677153,
+      "nominal_realized_terminal_error_m": 0.20342051732306207,
+      "scene_identity_sha256": "988ff688d523dcf3327218bcf1167e8ba52c1115f5d1771375a77759b80dec31"
+    },
+    {
+      "seed": 33,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03994917596253155,
+      "nominal_realized_terminal_error_m": 0.08184696988822046,
+      "scene_identity_sha256": "6d998611d0be05a6acfa1854d17004894f91a4eb7461ef5d6beb5ed251d236c8"
+    },
+    {
+      "seed": 34,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.09138708449084416,
+      "nominal_realized_terminal_error_m": 0.24003422634718777,
+      "scene_identity_sha256": "cfea06de8a912ab7aa29d6eede36a4737a8613ee8b4b9b57686516acded0cb27"
+    },
+    {
+      "seed": 35,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07023920040072433,
+      "nominal_realized_terminal_error_m": 0.19803216936542734,
+      "scene_identity_sha256": "71b6c52f1ceccf0000330455d45880c909aaf649c11b7fb908666725d6956519"
+    },
+    {
+      "seed": 36,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.040404585494712576,
+      "nominal_realized_terminal_error_m": 0.08805237843212646,
+      "scene_identity_sha256": "776abc90a27ebacec406605b7e0254b050d4a3b8dd9bc9f264a95273957c9d74"
+    },
+    {
+      "seed": 37,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.09144073095312123,
+      "nominal_realized_terminal_error_m": 0.20079591493127316,
+      "scene_identity_sha256": "27ef1a776aebc572ab52013168bf8102232b839f1e78c3ae05a8fa27d8dca9cd"
+    },
+    {
+      "seed": 39,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04057805011173756,
+      "nominal_realized_terminal_error_m": 0.09159882327445618,
+      "scene_identity_sha256": "9134d819a618e0bf19715a887b5c73a6fe119ed8b521f036920faff11768f792"
+    },
+    {
+      "seed": 40,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08962034983077945,
+      "nominal_realized_terminal_error_m": 0.2584669169372858,
+      "scene_identity_sha256": "3e24ee345518a473b7d592d9a93f25571a3c1a8c55174b58947a3281c368f42e"
+    },
+    {
+      "seed": 41,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.029074030757308064,
+      "nominal_realized_terminal_error_m": 0.04502660976741041,
+      "scene_identity_sha256": "29f99744b07cdcd86546f01e23de41b3e1d998c5c7856a0ca4b310d7289ba870"
+    },
+    {
+      "seed": 42,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05967606151733402,
+      "nominal_realized_terminal_error_m": 0.12016359472087129,
+      "scene_identity_sha256": "fdcaadbb45529a35a3f7f343cc9636972cf31af54ffd199a6f63e7a1483e3cd7"
+    },
+    {
+      "seed": 43,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05386277137000761,
+      "nominal_realized_terminal_error_m": 0.09568900019767453,
+      "scene_identity_sha256": "29ff53a7d895d02f360d1b7b306ab05019275e3be654cf48e8dc34cbc696d023"
+    },
+    {
+      "seed": 44,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04625602408117134,
+      "nominal_realized_terminal_error_m": 0.14129768148100164,
+      "scene_identity_sha256": "e7e58015901516db2a7ebc475418dbf6b68d454f577a64d1b18e0cef6bfd2301"
+    },
+    {
+      "seed": 45,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0005999205223781653,
+      "nominal_realized_terminal_error_m": 0.0007451570427093382,
+      "scene_identity_sha256": "4c3be73c71bc9ba055762030fa9a091923c7dfb3a42501d31a9bf38027c75868"
+    },
+    {
+      "seed": 46,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.01854393584760065,
+      "nominal_realized_terminal_error_m": 0.039609058647557545,
+      "scene_identity_sha256": "71061570b7e93bbca5b73e6cec261ee0e8f566b76224538f8442faac2377b016"
+    },
+    {
+      "seed": 47,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08652198318294983,
+      "nominal_realized_terminal_error_m": 0.21850919192925988,
+      "scene_identity_sha256": "a4eccb365d3f77894086e23f47d984fc4c4ca339a4ece8f18edd91aba8fafb7a"
+    },
+    {
+      "seed": 48,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06462659769399622,
+      "nominal_realized_terminal_error_m": 0.12535675393143644,
+      "scene_identity_sha256": "0cabb4c340842429daa984cb6d46cf8e283ff82e6aaf6afeb0ecb3fcd50bf616"
+    },
+    {
+      "seed": 49,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.040912296833531106,
+      "nominal_realized_terminal_error_m": 0.13662888046734248,
+      "scene_identity_sha256": "1a8fcb0baaaa1ead44f8e34e7673a91685c2fd6454d190305908742d20ba5185"
+    },
+    {
+      "seed": 50,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0047990217228484145,
+      "nominal_realized_terminal_error_m": 0.00582227281288975,
+      "scene_identity_sha256": "3985ee778f125ad14af8c9a17d04e30aa766d494514abc847c3304d6e05b952f"
+    },
+    {
+      "seed": 51,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.00890565603293392,
+      "nominal_realized_terminal_error_m": 0.009473903454689847,
+      "scene_identity_sha256": "ce1f06cd3c336ff2ebd8ffa98ca4b403ef6cbcebc23fa6312b56fed7bcf50915"
+    },
+    {
+      "seed": 52,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03474263098703629,
+      "nominal_realized_terminal_error_m": 0.08518034474334618,
+      "scene_identity_sha256": "a82e0cfb53729e56dc716598157bd08b4dba51b657cc4233030e757d15206b1f"
+    },
+    {
+      "seed": 53,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04014541353105381,
+      "nominal_realized_terminal_error_m": 0.08461719987011289,
+      "scene_identity_sha256": "85c66e05fd6d7494948804874b8939b47135209456ac8637346ae28de4e029e5"
+    },
+    {
+      "seed": 54,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.008891589085791265,
+      "nominal_realized_terminal_error_m": 0.010863056230006218,
+      "scene_identity_sha256": "917dada7844f5c4cc8e6f1e2fc895f5ddc9f4c82a9fb57b484b6754b30546a2c"
+    },
+    {
+      "seed": 55,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.013602457092714267,
+      "nominal_realized_terminal_error_m": 0.014440673042548013,
+      "scene_identity_sha256": "4e45aaf249d930d81fa72ce5f5a12263cd258fd86abc14584c380fb15cb1249d"
+    },
+    {
+      "seed": 56,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.024789801021632384,
+      "nominal_realized_terminal_error_m": 0.025302773920924643,
+      "scene_identity_sha256": "7af274814018dd4fd119109693b613aa45589a76fe793dab2927e18c7a69166b"
+    },
+    {
+      "seed": 57,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.022641444022744994,
+      "nominal_realized_terminal_error_m": 0.025657111507167922,
+      "scene_identity_sha256": "7f2e1eb8788f9a4881645cce2c3cbeb4017cc4c4728976a5d3f0a62a0149cff3"
+    },
+    {
+      "seed": 58,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.013939992528491577,
+      "nominal_realized_terminal_error_m": 0.04092919829455396,
+      "scene_identity_sha256": "638a4624c5c2abdcbddbb52acddc690badd6fc45e0bfac510a99c2612208928e"
+    },
+    {
+      "seed": 59,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07398124609891851,
+      "nominal_realized_terminal_error_m": 0.11469350300124012,
+      "scene_identity_sha256": "70d9546acf06f280a213ae82c4505cbc6b45c1c9ce72c8ad4931619122a9e4d4"
+    },
+    {
+      "seed": 60,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04867777620537201,
+      "nominal_realized_terminal_error_m": 0.13468019967130868,
+      "scene_identity_sha256": "c637d5c3672ce4f0dda9f3c8616cbf2a33c8c95e8a1463c348a24308b2e1036c"
+    },
+    {
+      "seed": 61,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.09400194015000865,
+      "nominal_realized_terminal_error_m": 0.29044124115175896,
+      "scene_identity_sha256": "237ba2dde24c9dfd1f72945876f4e574170d4d8d01821746618bd1a1838bfdcb"
+    },
+    {
+      "seed": 62,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.014351630991804044,
+      "nominal_realized_terminal_error_m": 0.015069692369912882,
+      "scene_identity_sha256": "47c48f5b5d95ff34490d34686c56a33784785f7a0bc7a4f87aac1f5eb7ae9eaf"
+    },
+    {
+      "seed": 63,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.030568350090156616,
+      "nominal_realized_terminal_error_m": 0.03393563927804099,
+      "scene_identity_sha256": "e636d6693cdbda3c2cc6912ed2d920fceab4e02761a4c418e09e5276e84f2212"
+    },
+    {
+      "seed": 64,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.1649076688493501,
+      "nominal_realized_terminal_error_m": 0.2888445937981894,
+      "scene_identity_sha256": "b3b3a4edf56b6e0ff414e763dfe569aff24369ec387e233ed36a68ebb37de4d5"
+    },
+    {
+      "seed": 65,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.053420029600890324,
+      "nominal_realized_terminal_error_m": 0.16810280869902805,
+      "scene_identity_sha256": "b43cb7ea9010aaed11a8615fee549e18b5eeead835cabcb6f83f4b5a66be4529"
+    },
+    {
+      "seed": 66,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0394651062812985,
+      "nominal_realized_terminal_error_m": 0.11711790240473076,
+      "scene_identity_sha256": "3112bf5e8b2170c6b84159580c96a4b3aa2a222cf158754f0bbf4505756e37e8"
+    },
+    {
+      "seed": 67,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.12600496329221342,
+      "nominal_realized_terminal_error_m": 0.20983910478586898,
+      "scene_identity_sha256": "3c505ff1f91bb5bdff4910c5116995453c5ac4ed9999f1d0b3c783fd734056c1"
+    },
+    {
+      "seed": 68,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.030534549790671647,
+      "nominal_realized_terminal_error_m": 0.04913218978535955,
+      "scene_identity_sha256": "908122c3efb6892d1d695ca9d2a1d983843f95a93964342fb83e56309d8cd8ab"
+    },
+    {
+      "seed": 69,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0560232053295741,
+      "nominal_realized_terminal_error_m": 0.12036005371664749,
+      "scene_identity_sha256": "fa478fd5e4862762b43771e11a47c98a624206d7f3bf7b12f221d861920c350a"
+    },
+    {
+      "seed": 70,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04564378430442797,
+      "nominal_realized_terminal_error_m": 0.10581050719947331,
+      "scene_identity_sha256": "cd9451cfb3f9f3952e46dbac95c105ee14f882a793979dd41d67968703c8acf3"
+    },
+    {
+      "seed": 71,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04956028702862659,
+      "nominal_realized_terminal_error_m": 0.17032575988772256,
+      "scene_identity_sha256": "f2775f2b28a02e01e5218c122f22438a1fc7346352cad7d81413332272e6a36f"
+    },
+    {
+      "seed": 72,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.09159820071761539,
+      "nominal_realized_terminal_error_m": 0.21180871175876168,
+      "scene_identity_sha256": "b68e75cb9d9522a9ecbd1abf19bab3ad4e88da90b86c09b9ecb7dc6a29198900"
+    },
+    {
+      "seed": 73,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0531732036533148,
+      "nominal_realized_terminal_error_m": 0.11055999740071093,
+      "scene_identity_sha256": "3c01512e42fe75bf755daedfea6105ceb63618cc66e70b42588608bc641c695d"
+    },
+    {
+      "seed": 74,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.054299282516899285,
+      "nominal_realized_terminal_error_m": 0.12133041564090623,
+      "scene_identity_sha256": "f3c040837f67842eea07771afe40897c7649c7656ba832e040038198bf251a35"
+    },
+    {
+      "seed": 75,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03570429800468685,
+      "nominal_realized_terminal_error_m": 0.07752356619910805,
+      "scene_identity_sha256": "168151a6eb8875b623dc5230df715ebff9d8f0dbfd8c9b622868b99c878bde07"
+    },
+    {
+      "seed": 76,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.006490341750767026,
+      "nominal_realized_terminal_error_m": 0.022092014351412635,
+      "scene_identity_sha256": "48fe54c4840abfb919deb111b35257e773f99e407276ab66dd305b78b134b1e6"
+    },
+    {
+      "seed": 77,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0953710227988596,
+      "nominal_realized_terminal_error_m": 0.2610078276397777,
+      "scene_identity_sha256": "367f99da6704da01ebe713b55f06ad39630b996564b035ab11007147e7f190eb"
+    },
+    {
+      "seed": 78,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.015372013769209865,
+      "nominal_realized_terminal_error_m": 0.016272507819057074,
+      "scene_identity_sha256": "a8e8f1fa180724889d5693fccb4096a59be98a170bb51d0810d764d93972be0d"
+    },
+    {
+      "seed": 80,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.006429971299281438,
+      "nominal_realized_terminal_error_m": 0.006855675097707948,
+      "scene_identity_sha256": "db7262d2b3f9fe3d4f34622aac879a7630770e3e468e06ea3c9d52e6528722f9"
+    },
+    {
+      "seed": 81,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0505600442526087,
+      "nominal_realized_terminal_error_m": 0.10786702997745336,
+      "scene_identity_sha256": "e37fdbee750e9de2b41ff381b31072a189099f0a23d6113ae06bb94b71a2824d"
+    },
+    {
+      "seed": 82,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06887312068071641,
+      "nominal_realized_terminal_error_m": 0.1699074044942325,
+      "scene_identity_sha256": "edb1031aa75953454160cc229d7ae150d1ddcf2c82a2c6f23e5ce6cafbbae54d"
+    },
+    {
+      "seed": 1000,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.002193583526859136,
+      "nominal_realized_terminal_error_m": 0.006885135738989956,
+      "scene_identity_sha256": "73168808b480f1ded50c0d74ca751ead1656bd2bcdbd03fa7155d06a303bbad8"
+    },
+    {
+      "seed": 1001,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03344029896624113,
+      "nominal_realized_terminal_error_m": 0.09439558573694097,
+      "scene_identity_sha256": "8ca98e93e970242f0606663ccafd32ca0d0113e67e5f2815b764b43591dfd6e1"
+    },
+    {
+      "seed": 1002,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08004534700150337,
+      "nominal_realized_terminal_error_m": 0.16051837656185397,
+      "scene_identity_sha256": "e5b3a494c0263780fcb0c2b6eea6dedd1fd1342f35fe82d06f67b6bb4678d0f3"
+    },
+    {
+      "seed": 1003,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08939590000818408,
+      "nominal_realized_terminal_error_m": 0.1647216181823709,
+      "scene_identity_sha256": "aaab316a26514172679e9bfd2eb91a5f1956121cc7004a294c6c22f2f01338d5"
+    },
+    {
+      "seed": 1004,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.09434386318903196,
+      "nominal_realized_terminal_error_m": 0.15247855245408146,
+      "scene_identity_sha256": "0af1f6cbb2140209ef2599b519aaaf1ada32e42da7c17fc879f1c981720cdef1"
+    },
+    {
+      "seed": 1005,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.019830460209269082,
+      "nominal_realized_terminal_error_m": 0.02517803797740168,
+      "scene_identity_sha256": "bc92f5e543b666c37f99487ac45daeefa8ed27fc47ee601b3bd6b936e8b5183b"
+    },
+    {
+      "seed": 1006,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05612862549527556,
+      "nominal_realized_terminal_error_m": 0.18855600698661823,
+      "scene_identity_sha256": "d2be5edac685b69f430436fdb03785c5a88acf4129452f2519861684e0231739"
+    },
+    {
+      "seed": 1007,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.019741670432125314,
+      "nominal_realized_terminal_error_m": 0.0206978169483879,
+      "scene_identity_sha256": "41ac7a00f3debb910f36d4558dbb0609bf44b7b8cc24d2e494668124bae15aee"
+    },
+    {
+      "seed": 1008,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.12934412445774518,
+      "nominal_realized_terminal_error_m": 0.21209941093600912,
+      "scene_identity_sha256": "c7b31988ab22732f0df95b23166d4a67678115ad5651c0fce7458c84388b4538"
+    },
+    {
+      "seed": 1009,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.056133503049472615,
+      "nominal_realized_terminal_error_m": 0.1628307187704416,
+      "scene_identity_sha256": "9f2c2f89733003c7e0dfbd67a8832c7057071c0e5582de73014deba7516d8d45"
+    },
+    {
+      "seed": 1010,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.019744105728509733,
+      "nominal_realized_terminal_error_m": 0.04116877784216103,
+      "scene_identity_sha256": "8fb492c8ce903cb9e3400603a5e574f65da8b9d4234e13c6703aac3588cd4328"
+    },
+    {
+      "seed": 1011,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0685912796485699,
+      "nominal_realized_terminal_error_m": 0.17250116807723312,
+      "scene_identity_sha256": "2d5e1bd6871dee03aab437bf0970291d6f9d3e9f6596b1b92c1332f472aef6fc"
+    },
+    {
+      "seed": 1012,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.02286307494924935,
+      "nominal_realized_terminal_error_m": 0.06910868159057847,
+      "scene_identity_sha256": "b7827293d24f226cba8ddd88e8d6e1edbec476bed1d34bc09d1556f65db018f4"
+    },
+    {
+      "seed": 1013,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06455422482438386,
+      "nominal_realized_terminal_error_m": 0.1326882121357357,
+      "scene_identity_sha256": "12f56ba6d32374ada1b9af3ba3d56648bd8b1642be9898a692f275ebc3f395b4"
+    },
+    {
+      "seed": 1014,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05276965961772265,
+      "nominal_realized_terminal_error_m": 0.10694247108825723,
+      "scene_identity_sha256": "c1799c72a119e4fe45fcd63de7c6592101ce67c8fe34cc0b10d0bcf8a8dfab81"
+    },
+    {
+      "seed": 1015,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.02692585904232315,
+      "nominal_realized_terminal_error_m": 0.06096428388065101,
+      "scene_identity_sha256": "92a42459aab8e56520bc52c5e614442dfda1e0ee2930d8208736f789df8746f4"
+    },
+    {
+      "seed": 1016,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.005472080484885691,
+      "nominal_realized_terminal_error_m": 0.005741970696818235,
+      "scene_identity_sha256": "84acf4412405e3f35e45ba9ad7f97b527aef0e85f58ef378356fc708da7521f2"
+    },
+    {
+      "seed": 1017,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0808933307022749,
+      "nominal_realized_terminal_error_m": 0.16992565994491138,
+      "scene_identity_sha256": "f8541d946ac473ead817f9aa1a9b7d529585e681e6b626e8639c574ce1d22ca8"
+    },
+    {
+      "seed": 1018,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.008870030717050148,
+      "nominal_realized_terminal_error_m": 0.009730267706007217,
+      "scene_identity_sha256": "4c6856373e9f92c8585db77ea972e960d4b96aceb4987d9d659f8b5562483162"
+    },
+    {
+      "seed": 1019,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07113477009076456,
+      "nominal_realized_terminal_error_m": 0.15531982802593386,
+      "scene_identity_sha256": "6a14797dda223802a21edf0e63c5f00ddd137e9f6e44354aaf92aa21e9aed85f"
+    },
+    {
+      "seed": 1020,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.025736287173005124,
+      "nominal_realized_terminal_error_m": 0.05397110157634644,
+      "scene_identity_sha256": "4deca1b6cc1d102f15cf375bd838eb7660139e04b2ccf986e585de59fe0cbe9a"
+    },
+    {
+      "seed": 1021,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08330754724461051,
+      "nominal_realized_terminal_error_m": 0.18067449948974224,
+      "scene_identity_sha256": "cc1ec8fee49b254bb3abad07797ae79881726e7747e0911a51d34fd377333e99"
+    },
+    {
+      "seed": 1022,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0019268466776087327,
+      "nominal_realized_terminal_error_m": 0.006891285215000673,
+      "scene_identity_sha256": "fc318f955aa989c2989246dcfb6e0a23e05c827a8b1fe0a11c83f54249889d64"
+    },
+    {
+      "seed": 1023,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.02253590523655574,
+      "nominal_realized_terminal_error_m": 0.044642934316896324,
+      "scene_identity_sha256": "174b51e93c41290cac1350b2c8735984eb7411b26c32927fee4245ad95560242"
+    },
+    {
+      "seed": 1024,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06686493167315313,
+      "nominal_realized_terminal_error_m": 0.08739925963092213,
+      "scene_identity_sha256": "50a1983bc37187787e1f01cd3e051c145ba8a0c6fb0c12663fae1511ffe3aced"
+    },
+    {
+      "seed": 1025,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07655726648538608,
+      "nominal_realized_terminal_error_m": 0.2396631835099952,
+      "scene_identity_sha256": "80c9d5d6307a82b100f4805514434dd4dee6a6599ef99749c39fb56806697b16"
+    },
+    {
+      "seed": 1026,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0711139367517911,
+      "nominal_realized_terminal_error_m": 0.12362200276928742,
+      "scene_identity_sha256": "f1313d2dd5059b82c8ef24743e328544b5ae44fc356112897f4e05cf836b2fda"
+    },
+    {
+      "seed": 1027,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06225843351654955,
+      "nominal_realized_terminal_error_m": 0.146997819923476,
+      "scene_identity_sha256": "d19a4f909495e19ae67997adda24a27d9414a476bf9757c6c550097f38fb0017"
+    },
+    {
+      "seed": 1028,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.09381576637218125,
+      "nominal_realized_terminal_error_m": 0.16713807049168652,
+      "scene_identity_sha256": "995a90a12aefd6919ed14793dadc21577959d881281bdb57a6fa0dc7bf3e2609"
+    },
+    {
+      "seed": 1029,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07031534144707782,
+      "nominal_realized_terminal_error_m": 0.12460360626180134,
+      "scene_identity_sha256": "19019e49af0ca7bc9aae2a4aefbc8c899c6ca1a1465ee2d49e94a98ca1aadedc"
+    },
+    {
+      "seed": 1030,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05367443021929351,
+      "nominal_realized_terminal_error_m": 0.13608189563824746,
+      "scene_identity_sha256": "f097a7b863eb2bc59a58ad9c55c519c02a55e8fe056340c226ac48714c676131"
+    },
+    {
+      "seed": 1031,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05133929543341291,
+      "nominal_realized_terminal_error_m": 0.17044972577804396,
+      "scene_identity_sha256": "bf9c1bd89d69a60d1f889d1989d3c09562ad75a6111521fb3c636afe8d0a31f0"
+    },
+    {
+      "seed": 1032,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05686533843846312,
+      "nominal_realized_terminal_error_m": 0.12680144355967335,
+      "scene_identity_sha256": "d2adf535011a1d6c37c23bbb309b4525986c1cfbd1c0f17360ab937d2c8e02b4"
+    },
+    {
+      "seed": 1033,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06017336733102255,
+      "nominal_realized_terminal_error_m": 0.13133216680693585,
+      "scene_identity_sha256": "9b6eff872bb5d6ebe444b5c19a06f6463359764d596f5d2146292ed5d2e50265"
+    },
+    {
+      "seed": 1034,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.039091995497366985,
+      "nominal_realized_terminal_error_m": 0.11528229104321133,
+      "scene_identity_sha256": "6129abb78e719c28f25568270a61798725b9a752cec9b9162b73572b06c92e7e"
+    },
+    {
+      "seed": 1035,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03093568038372585,
+      "nominal_realized_terminal_error_m": 0.03315444746888968,
+      "scene_identity_sha256": "215446a9f03ce79d3287a06ea31e562b4d608f71cc21d8401425e5a2db1d137b"
+    },
+    {
+      "seed": 1036,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.055311786410698054,
+      "nominal_realized_terminal_error_m": 0.13188503693692838,
+      "scene_identity_sha256": "19ecdba4afc8ceb06103633794aa25f19bfebb03d7d95327fe1ae7be8bdd94d3"
+    },
+    {
+      "seed": 1037,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.020549932175410627,
+      "nominal_realized_terminal_error_m": 0.02074457161325368,
+      "scene_identity_sha256": "18e7a3a61ef5492df5ba7903a3f7f2f139796df86fe8de6131b2eab0e50103cb"
+    },
+    {
+      "seed": 1038,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.14154645701575333,
+      "nominal_realized_terminal_error_m": 0.26689063135243135,
+      "scene_identity_sha256": "40b65e9999ca3e768f1b97ec85dff0c219faec700773c5fac078f8b4dcb605e8"
+    },
+    {
+      "seed": 1039,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08621096969479293,
+      "nominal_realized_terminal_error_m": 0.16575804596049493,
+      "scene_identity_sha256": "707b8a09fb4409ec1f6cba3041df2ed5e878b865df1291db7d0b5ae1e973c43a"
+    },
+    {
+      "seed": 1040,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08011825712656717,
+      "nominal_realized_terminal_error_m": 0.2374204324314967,
+      "scene_identity_sha256": "e6150f8b8e9911a3fe0a2d0e1a6dda04f756ac04c61e9b47e41eabd5931f1f21"
+    },
+    {
+      "seed": 1041,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.056477769697659164,
+      "nominal_realized_terminal_error_m": 0.13853851879157086,
+      "scene_identity_sha256": "87a575b6d19a9495b262446246db23c01f207f2aa63e3f8e56c2f5da65a7ca4d"
+    },
+    {
+      "seed": 1042,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06888977777498388,
+      "nominal_realized_terminal_error_m": 0.23866156054992918,
+      "scene_identity_sha256": "afeb876ae7d88b48690be426c61cd3201dc21e9c1e420c0819d55cefd276d895"
+    },
+    {
+      "seed": 1043,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.056424327587186844,
+      "nominal_realized_terminal_error_m": 0.16594049793473276,
+      "scene_identity_sha256": "d8434da64a2a92902488c3ba5caf338e98a42d1096acd3bc57a866e8e7d1d090"
+    },
+    {
+      "seed": 1044,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.021679395107277784,
+      "nominal_realized_terminal_error_m": 0.04492141032949463,
+      "scene_identity_sha256": "1d5065ba42b3e30a06815d28a5ed53a6fc6ac880833502ddd835f42dd4e1296c"
+    },
+    {
+      "seed": 1045,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.10242756523242129,
+      "nominal_realized_terminal_error_m": 0.19429306123780338,
+      "scene_identity_sha256": "567f6f9ac8f5a7293b4696deb7c48178fd1c28d60b63af5d34144099451cf76e"
+    },
+    {
+      "seed": 1046,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.008367842828807193,
+      "nominal_realized_terminal_error_m": 0.032735311918990234,
+      "scene_identity_sha256": "0c0a0be1feb97b2eb74aa95faae63cb1623eaf1a80c373b9d268eb90b8f39a3d"
+    },
+    {
+      "seed": 1047,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.01364431941444773,
+      "nominal_realized_terminal_error_m": 0.014007972504811244,
+      "scene_identity_sha256": "11779dd6cfa221561f39ee7eb093ac71e8665cf1b38357eda166d717b5a4f782"
+    },
+    {
+      "seed": 1048,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07597260463828447,
+      "nominal_realized_terminal_error_m": 0.14708670608835303,
+      "scene_identity_sha256": "e69f9c98739f438dbd4abf771917714201074fad419d060aa91f6eb3b5fe0608"
+    },
+    {
+      "seed": 1049,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.1204771163445461,
+      "nominal_realized_terminal_error_m": 0.24310310355552325,
+      "scene_identity_sha256": "132b657aa877681fb49586285dd4d0dc3fa3e8a62b543b2ff88c1c585b6f7023"
+    },
+    {
+      "seed": 1050,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06059918109971331,
+      "nominal_realized_terminal_error_m": 0.1394471346588282,
+      "scene_identity_sha256": "51b349f7e28eb056b9090dc611895338a90e67e3188246021e46ba92d1d2add4"
+    },
+    {
+      "seed": 1051,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.02952608153812552,
+      "nominal_realized_terminal_error_m": 0.050673105227738095,
+      "scene_identity_sha256": "e8b7c24dae991a30e11ed4310c6b25ea07f9c319ac7b4c8f33c0c4f3ad9966a7"
+    },
+    {
+      "seed": 1052,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0309337365067086,
+      "nominal_realized_terminal_error_m": 0.045620507626331575,
+      "scene_identity_sha256": "51b09009092b8daf72079d2e7f9994902ed3e913af8988155dab41d90df8f774"
+    },
+    {
+      "seed": 1053,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03140195718737598,
+      "nominal_realized_terminal_error_m": 0.05238459278198721,
+      "scene_identity_sha256": "74789b4a0249fc7f4a3aaced56d3244fa7846cd5fa7731c2b90527861a010eba"
+    },
+    {
+      "seed": 1054,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.028360841803171555,
+      "nominal_realized_terminal_error_m": 0.043745467234524944,
+      "scene_identity_sha256": "04ce98713b8262a6a054a95dbf94d56038a11fa4c12578b23fe071a23eea4233"
+    },
+    {
+      "seed": 1055,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04153740214178803,
+      "nominal_realized_terminal_error_m": 0.10819131569125798,
+      "scene_identity_sha256": "f80e09216e8647bb80955720b861134d4a195c1ecbb2afefc7e5f31aa80964a2"
+    },
+    {
+      "seed": 1056,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.12312184436281477,
+      "nominal_realized_terminal_error_m": 0.2235874323805883,
+      "scene_identity_sha256": "59e48a4ff51f3a836d103a14bdb584e00216df5d4913d6a007c040aeb123b5dc"
+    },
+    {
+      "seed": 1057,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.005904171365870769,
+      "nominal_realized_terminal_error_m": 0.014462734549209273,
+      "scene_identity_sha256": "1c5645ab560461f16ef33c28347adfbdd914c6186ec649eb2ca9781a6149fbb7"
+    },
+    {
+      "seed": 1058,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.051922885796116515,
+      "nominal_realized_terminal_error_m": 0.10859335100811295,
+      "scene_identity_sha256": "6a77f9e4e021b3880b3a1e3fc88079d78797e93df5b4a8ce8fab55d1c2333091"
+    },
+    {
+      "seed": 1059,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08175354341327885,
+      "nominal_realized_terminal_error_m": 0.19681242866062762,
+      "scene_identity_sha256": "fd074a656fa398534a81658d86bed697bb77ae1c53fcc24c8e37da9de9a7d14c"
+    },
+    {
+      "seed": 1060,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.010818237173650004,
+      "nominal_realized_terminal_error_m": 0.010652987826125367,
+      "scene_identity_sha256": "9deb639ad69ca02d7eab551d1d9a0e9ea85243ddcc0ebe7a9cc35e9dcf91aab2"
+    },
+    {
+      "seed": 1061,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.09246340114105156,
+      "nominal_realized_terminal_error_m": 0.1663623164886554,
+      "scene_identity_sha256": "07c75a0151017a02f773a239a3a455fd41239f09ad5e4436df6efe9c9b8de43b"
+    },
+    {
+      "seed": 1062,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.1469173257349998,
+      "nominal_realized_terminal_error_m": 0.3077660299571677,
+      "scene_identity_sha256": "7585f080d9a054342030aa3f9c04da7e5a238c9992f6d34e6dd2684c00aeeadf"
+    },
+    {
+      "seed": 1063,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.044946710924867,
+      "nominal_realized_terminal_error_m": 0.13793799256906594,
+      "scene_identity_sha256": "b477e5a415f91126636d522cd0943a93b481d74ffc6d45bbf62e42d40438531b"
+    },
+    {
+      "seed": 1064,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.008469147778886936,
+      "nominal_realized_terminal_error_m": 0.01873572267037809,
+      "scene_identity_sha256": "f9d9cfc8df6d304fa0a395c0b4f03ce91392e45dbeaca4f09f68e390bd2dd8fd"
+    },
+    {
+      "seed": 1065,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07838919401014469,
+      "nominal_realized_terminal_error_m": 0.1352796413493917,
+      "scene_identity_sha256": "8d08931611656d16c7207d26a4464085dfc7fd3788eae9a544f66a9051ff1145"
+    },
+    {
+      "seed": 1066,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06010374384607116,
+      "nominal_realized_terminal_error_m": 0.19101250047421703,
+      "scene_identity_sha256": "ec20780ec5e9a82381f9bd3996a6b554961e3a5ede5340a9ee3ac85f46803e70"
+    },
+    {
+      "seed": 1067,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.019280278867169855,
+      "nominal_realized_terminal_error_m": 0.01958621020294302,
+      "scene_identity_sha256": "94a8c0ae7e55c144516be85d3204429b4cd610553da9d88c54546dcbc1643ea7"
+    },
+    {
+      "seed": 1068,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.008368435292502545,
+      "nominal_realized_terminal_error_m": 0.009296675401760062,
+      "scene_identity_sha256": "4dad338bd7d7b6594c155ec77f7ad76ac110df973d2967b337491e470ecfcecb"
+    },
+    {
+      "seed": 1069,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07039131455930266,
+      "nominal_realized_terminal_error_m": 0.17373707373073166,
+      "scene_identity_sha256": "45d6e197ff22e4da3e41752a649441dc0f055bd0ef4d107b05d74a6e825b04cf"
+    },
+    {
+      "seed": 1070,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.1143162040972511,
+      "nominal_realized_terminal_error_m": 0.2163735001225311,
+      "scene_identity_sha256": "9b9cad3c140f16fec9c5102fa5dc0c15ac761216511d302169c7cd19208bad2c"
+    },
+    {
+      "seed": 1071,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.15302290144306985,
+      "nominal_realized_terminal_error_m": 0.24901849528175973,
+      "scene_identity_sha256": "e09aa81d9349c6334838b4bfbc7193a10d7960075bd17749fad7a4dd48d13cc2"
+    },
+    {
+      "seed": 1072,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.011219463477719044,
+      "nominal_realized_terminal_error_m": 0.03303194206710013,
+      "scene_identity_sha256": "e43d2beac27fb954fb25341bbb32608ff10d579827127a9a15cc3f29604d2fa0"
+    },
+    {
+      "seed": 1073,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04652560875702715,
+      "nominal_realized_terminal_error_m": 0.06392732512804102,
+      "scene_identity_sha256": "ff73f5467415722d6f7f85fd01ad02e2f1f7e640465cd1bfe4e1e15bf42d7e0a"
+    },
+    {
+      "seed": 1074,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07416790448456546,
+      "nominal_realized_terminal_error_m": 0.13981132092680854,
+      "scene_identity_sha256": "e56422da1b52975f63beb589b48c79ec959b713222aed7249dfb5b15afa9eb6d"
+    },
+    {
+      "seed": 1075,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.02289466342251842,
+      "nominal_realized_terminal_error_m": 0.04137952289650963,
+      "scene_identity_sha256": "d983c022b105f1a8e576c4b178a18a2907739631fa579be86bccf642b8593646"
+    },
+    {
+      "seed": 1076,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.021850867198487098,
+      "nominal_realized_terminal_error_m": 0.04472248773061458,
+      "scene_identity_sha256": "9735c5f457b571de99a3dc1674d1ee48c85ab76be3b008e43b1bbf0b103d6dd0"
+    },
+    {
+      "seed": 1077,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.09492389222490275,
+      "nominal_realized_terminal_error_m": 0.16126106346087862,
+      "scene_identity_sha256": "57c69af9c894d895155f3a2a3fe06be28104d7ed0a2f6484ad6f8db8673ae265"
+    },
+    {
+      "seed": 1078,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07883279556819858,
+      "nominal_realized_terminal_error_m": 0.13031426254286801,
+      "scene_identity_sha256": "bda6f14dc6d207347b8bdfb196875fa625552cb5a11cefbfae4b86e98cca552b"
+    },
+    {
+      "seed": 1079,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.010228294391101863,
+      "nominal_realized_terminal_error_m": 0.02520806487084614,
+      "scene_identity_sha256": "c0c841eac713cd9d25dc5b085e9b57bb37a4dfef2cb9fac106b0ea65ea9aa473"
+    },
+    {
+      "seed": 1080,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.006003757728014426,
+      "nominal_realized_terminal_error_m": 0.0066240221844846466,
+      "scene_identity_sha256": "bf7072e96d264f738c56d580067804c44ff7578f4365f142c715a39609ea3a26"
+    },
+    {
+      "seed": 1081,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03887081285386608,
+      "nominal_realized_terminal_error_m": 0.07617984540015357,
+      "scene_identity_sha256": "ba39cbdc37723f6be3f65983a3f5ac14d9cf62a15c3330a5a36799883d7f9cd6"
+    },
+    {
+      "seed": 1082,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03758884422499518,
+      "nominal_realized_terminal_error_m": 0.09487459207925823,
+      "scene_identity_sha256": "0dcc877244faf36d53ed755d798d5dbd147f1aafb9fac043ed65a3b3a3562e56"
+    },
+    {
+      "seed": 1083,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.023243531124236307,
+      "nominal_realized_terminal_error_m": 0.042560529714381776,
+      "scene_identity_sha256": "db83ad5895db412dccb95fd961da69c72466a6ff5115496a10baad5af1dd665f"
+    },
+    {
+      "seed": 1084,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.10581179997046695,
+      "nominal_realized_terminal_error_m": 0.1734854664398933,
+      "scene_identity_sha256": "bf6359025a0625a9f3e7f6dcb7c7096eb9d2dc71d86042cc6132f18193c6c2ab"
+    },
+    {
+      "seed": 1085,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05295732640041269,
+      "nominal_realized_terminal_error_m": 0.09096232604014715,
+      "scene_identity_sha256": "a97acc641a6a9f172b9e311db933183b3ce421917f0c22ddbf993eeca5f932c3"
+    },
+    {
+      "seed": 1086,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06310957589893722,
+      "nominal_realized_terminal_error_m": 0.12878752212460123,
+      "scene_identity_sha256": "8e2988813411210355e32f7c2bb8726714c3090b17246c05a650352662e4b0e9"
+    },
+    {
+      "seed": 1087,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.039653703397617944,
+      "nominal_realized_terminal_error_m": 0.07397437108969598,
+      "scene_identity_sha256": "5d11da5a9c937f97b44f2295b8721b3c400f0e20f68835e14d3b39a9d62737e2"
+    },
+    {
+      "seed": 1088,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.039710370701261606,
+      "nominal_realized_terminal_error_m": 0.05797305965766177,
+      "scene_identity_sha256": "79404b731617f0c07765946e90e3768a6cffb394c9b2f9a70c32bfa299fadcd0"
+    },
+    {
+      "seed": 1089,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07355315456905205,
+      "nominal_realized_terminal_error_m": 0.23910815924841716,
+      "scene_identity_sha256": "a37729ce892c43253e330a199fb1e84975a9b78f3db1d29fc47d60d0bf4c68a0"
+    },
+    {
+      "seed": 1090,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.029462583605487844,
+      "nominal_realized_terminal_error_m": 0.07322732370477651,
+      "scene_identity_sha256": "ae9b59b1598c820242bba6387cbe93647e3981e3428fba5502e7802103afb7bd"
+    },
+    {
+      "seed": 1091,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04036524428673182,
+      "nominal_realized_terminal_error_m": 0.08327244048718725,
+      "scene_identity_sha256": "6f999f8b20c33873e64b07f889fb4c54d154358136cd19dacab6f279c34488a5"
+    },
+    {
+      "seed": 1092,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.1542747124281725,
+      "nominal_realized_terminal_error_m": 0.35136949713931265,
+      "scene_identity_sha256": "9cbf04f0753986c089e4bce748b0d1b07dae4dc90e895f74e49c55c50b6fcd2b"
+    },
+    {
+      "seed": 1093,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04108326231726542,
+      "nominal_realized_terminal_error_m": 0.1131081446838692,
+      "scene_identity_sha256": "251c5258fa4a18a0e1dc722f8ca35359edfbc44f7806e77bd3f3ef6f17f9e5e6"
+    },
+    {
+      "seed": 1094,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.10389335985317547,
+      "nominal_realized_terminal_error_m": 0.32870382910676577,
+      "scene_identity_sha256": "87c05ad3f9cbd72e8b7bb796eb611838c2f7d61e85869c04ce80ee5d770a7507"
+    },
+    {
+      "seed": 1095,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05377116478863769,
+      "nominal_realized_terminal_error_m": 0.10245626080815327,
+      "scene_identity_sha256": "ed65e5417472a49348da8474c50fa5be45b55eab40e2c2928c740286fd0976a7"
+    },
+    {
+      "seed": 1096,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07089231073353217,
+      "nominal_realized_terminal_error_m": 0.14098795132993278,
+      "scene_identity_sha256": "f3f1abdf302507ce4be9b5f0180852c68fdccdf6ed6b3d552c28a82430a695d0"
+    },
+    {
+      "seed": 1097,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.12678148645105822,
+      "nominal_realized_terminal_error_m": 0.23523400239823547,
+      "scene_identity_sha256": "8886c7172c0bee5838d113a85950a26d22cd3b3cc627cd65d0a5e0da0469af81"
+    },
+    {
+      "seed": 1098,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.1216783557095307,
+      "nominal_realized_terminal_error_m": 0.23135331823673488,
+      "scene_identity_sha256": "4d6b99d4752d48bf116f36db175e67a3b832aa4ec14c733f01b8ab3d5bfccd0e"
+    },
+    {
+      "seed": 1099,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.011453194967112699,
+      "nominal_realized_terminal_error_m": 0.03245074538818748,
+      "scene_identity_sha256": "29776fbe1b5882978d7957c1a39bcb84eb861839612db825916c12697a1b7e55"
+    },
+    {
+      "seed": 1100,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.058093104445373085,
+      "nominal_realized_terminal_error_m": 0.12968902111661082,
+      "scene_identity_sha256": "7e8990d813d9b36a238e0acd98d88b7db1c1a60202fcb16ab2cc2c66c69b9864"
+    },
+    {
+      "seed": 1101,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.02170564573328059,
+      "nominal_realized_terminal_error_m": 0.034280192750297714,
+      "scene_identity_sha256": "faa952125dd8945be58150c2f1876d7b66d09212b666ab31d4ff93eb57b67c87"
+    },
+    {
+      "seed": 1102,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06006026313088817,
+      "nominal_realized_terminal_error_m": 0.16589869999148496,
+      "scene_identity_sha256": "94089c1957eb7afc6f0decd9684306f3086d25ffff8e839132a63d2b51b4d7c5"
+    },
+    {
+      "seed": 1103,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03513357417425526,
+      "nominal_realized_terminal_error_m": 0.11425315231719796,
+      "scene_identity_sha256": "13e304b0383fd803e201c6e6325c1f682843da97c473f9f0ac593e9b26416daf"
+    },
+    {
+      "seed": 1104,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03876726711978469,
+      "nominal_realized_terminal_error_m": 0.09648553712674038,
+      "scene_identity_sha256": "d664874f9d5b0474f1ee70e9ab152ac2629f4f4ffd1085e1c3d6fd78dda66486"
+    },
+    {
+      "seed": 1105,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.09283395117890285,
+      "nominal_realized_terminal_error_m": 0.18473224737349245,
+      "scene_identity_sha256": "9437a9f226820adccf6bc795b131f00a610e84ad02f1e42844e8235b7c7024d5"
+    },
+    {
+      "seed": 1106,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08570175036414131,
+      "nominal_realized_terminal_error_m": 0.15099299223495655,
+      "scene_identity_sha256": "7d5b1e16fb7b016b4141712b48ddff97c284ce053cbe2a47d528a059ac9169ce"
+    },
+    {
+      "seed": 1107,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.015889116015601387,
+      "nominal_realized_terminal_error_m": 0.03527978468255154,
+      "scene_identity_sha256": "8f6e7bcdcb683cfb2299954c23852619498bbc191012240b717db61d06da4959"
+    },
+    {
+      "seed": 1108,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.055893022309668944,
+      "nominal_realized_terminal_error_m": 0.13293194377611894,
+      "scene_identity_sha256": "30ec2402301d81f2a858d5cacf7ce36af72bb6df59dd54a0dd06711077685415"
+    },
+    {
+      "seed": 1109,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.027587530776746024,
+      "nominal_realized_terminal_error_m": 0.061718009762922195,
+      "scene_identity_sha256": "29ec94bc16ae588c54efacd5e771d902d221232c461798713673729ceb189f46"
+    },
+    {
+      "seed": 1110,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.10805163665146737,
+      "nominal_realized_terminal_error_m": 0.18889798112674316,
+      "scene_identity_sha256": "737091a7d8beb4247db8612c01bbf9811bee8adecb4c7809193dce7739435746"
+    },
+    {
+      "seed": 1111,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.053844280341907524,
+      "nominal_realized_terminal_error_m": 0.1254043348013501,
+      "scene_identity_sha256": "cc939efd2baaba3558f3bd6dd352e5143fc56c8b210eacb6706d7702eebb90e0"
+    },
+    {
+      "seed": 1112,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07771353337443396,
+      "nominal_realized_terminal_error_m": 0.1370517551934741,
+      "scene_identity_sha256": "33b313fab422fe22daa9a2bab5e504c5024fcba96b00e234349421d2f748821f"
+    },
+    {
+      "seed": 1114,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04196430904711304,
+      "nominal_realized_terminal_error_m": 0.12796954448787481,
+      "scene_identity_sha256": "453fafd217d37b01181e7a2ee8c0d8515e5b09ed0ed9d146e79f514f6bbcf6e4"
+    },
+    {
+      "seed": 1115,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.004393883584944171,
+      "nominal_realized_terminal_error_m": 0.015499348690571221,
+      "scene_identity_sha256": "cddc6ac1589930bd5f16ee1256475cffb59e6057351914138797ca2e408fd06e"
+    },
+    {
+      "seed": 1116,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03570965389375988,
+      "nominal_realized_terminal_error_m": 0.09664100494895797,
+      "scene_identity_sha256": "b9893b70e4f9c0a850323093908c5e9135e5bf8043f249544998c47d799e848e"
+    },
+    {
+      "seed": 1117,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.022945955576007204,
+      "nominal_realized_terminal_error_m": 0.025496034879166473,
+      "scene_identity_sha256": "d2627c3db3fb0467a90ada279e1cc0a9a75e2e7580d9a6b15fb62b7e99ce386a"
+    },
+    {
+      "seed": 1118,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.033168188474512465,
+      "nominal_realized_terminal_error_m": 0.08678780318905348,
+      "scene_identity_sha256": "c2e6f7a6ba06a7b1a6a313f4354fe918cb12a31b976cb5b78804778cb5ea79d3"
+    },
+    {
+      "seed": 1119,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08784204589889573,
+      "nominal_realized_terminal_error_m": 0.13385213087194342,
+      "scene_identity_sha256": "a86a237de04d572003b04b12ac80d42ca7e2dc385ec0850eda25de1c595d6b1c"
+    },
+    {
+      "seed": 1120,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03310212425524228,
+      "nominal_realized_terminal_error_m": 0.0703958743462866,
+      "scene_identity_sha256": "e20810912e9dc57941b071adcfcca3e6ba3993d7622fec6c532f6856d4e23889"
+    },
+    {
+      "seed": 1121,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.052359698594964026,
+      "nominal_realized_terminal_error_m": 0.14007969389508862,
+      "scene_identity_sha256": "64487c49ee49a48fd192b6273bbe096ae22cf15f795802723166cc3f819c1dd8"
+    },
+    {
+      "seed": 1122,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05430940904226015,
+      "nominal_realized_terminal_error_m": 0.1478453032469447,
+      "scene_identity_sha256": "7cbd833251b041719c3a019931d7c63f4c84633a099b0b94bae3cc64773d8eed"
+    },
+    {
+      "seed": 1123,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.040146534409139505,
+      "nominal_realized_terminal_error_m": 0.06784263301327913,
+      "scene_identity_sha256": "b486a2a6623299764bbfac61e0a7385ec0832a8ce1b498f95d638f0f6edac880"
+    },
+    {
+      "seed": 1124,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06374235424756003,
+      "nominal_realized_terminal_error_m": 0.19674706656533777,
+      "scene_identity_sha256": "4a9e81ec7b7ee8d2a00121e9c3f6f5ffb53625e9d2688085d51746ca1617d231"
+    },
+    {
+      "seed": 1125,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.052026401356135135,
+      "nominal_realized_terminal_error_m": 0.16533532268215817,
+      "scene_identity_sha256": "4d6e6a17c8c4843fc19f5bdd49c9ef932125467190d0e3673aca4583fbbdff20"
+    },
+    {
+      "seed": 1126,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06134241916466491,
+      "nominal_realized_terminal_error_m": 0.10967633670987746,
+      "scene_identity_sha256": "571a9b6f1d1d533c2e6a1629b22ab777cee110684fbe267a98745a925492a817"
+    },
+    {
+      "seed": 1127,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.043033994057851056,
+      "nominal_realized_terminal_error_m": 0.11513180371000079,
+      "scene_identity_sha256": "f8be8b21f8fa483bf56182ee6e1df0a05f9186c640b143580d115657e787d981"
+    },
+    {
+      "seed": 1128,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03725807617228211,
+      "nominal_realized_terminal_error_m": 0.05619717376916885,
+      "scene_identity_sha256": "6e15715f119324a5c5a9f1236b2fc46b4d2901172c0b5cdaac1f00d385fd0039"
+    },
+    {
+      "seed": 1129,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.052601224283117164,
+      "nominal_realized_terminal_error_m": 0.06990542771661497,
+      "scene_identity_sha256": "37aac61edf63c7641a3509fd86820a918e7efc93b509a1ba5a277f38b44a93db"
+    },
+    {
+      "seed": 1130,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.018634872801682335,
+      "nominal_realized_terminal_error_m": 0.021632346891417322,
+      "scene_identity_sha256": "c5561b529021c47bec1d672ff5fa06f4891cff9777ba25d93a35f0b0746b8753"
+    },
+    {
+      "seed": 1131,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.015851468736606956,
+      "nominal_realized_terminal_error_m": 0.0392072779922169,
+      "scene_identity_sha256": "ee029314b07e8550718ac36b91caadfb2c25c5ccfb7584b0ffe63dbd291a12b6"
+    },
+    {
+      "seed": 1132,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.045085994971791506,
+      "nominal_realized_terminal_error_m": 0.11947922351236549,
+      "scene_identity_sha256": "87843f57f1040d0236699faad72b837ab10684e78f6eaea79f3d75a428915907"
+    },
+    {
+      "seed": 1133,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.053974662755642666,
+      "nominal_realized_terminal_error_m": 0.17232127844225203,
+      "scene_identity_sha256": "06fee5b9973e56a17a09a8c84541dd3a5912a91eb4a13d404b6b9c4bbd5f4722"
+    },
+    {
+      "seed": 1134,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.045953338771195854,
+      "nominal_realized_terminal_error_m": 0.12639595537945142,
+      "scene_identity_sha256": "f8efa62b141c1b2f9850da82cafb26b3b5aa71396b3affb6e26b4e84b92f02fb"
+    },
+    {
+      "seed": 1135,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.11281406156217447,
+      "nominal_realized_terminal_error_m": 0.18562422169763063,
+      "scene_identity_sha256": "09e89d453e04320628dea6ac5e0d9a1c3d96e616b6e97b385dcdd938f55d8c35"
+    },
+    {
+      "seed": 1136,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.013281477410886817,
+      "nominal_realized_terminal_error_m": 0.013355127254552145,
+      "scene_identity_sha256": "fc5f1f4ff38b032e3ac44efc0283729e4e7e4550b686cdca28a89f213e68a155"
+    },
+    {
+      "seed": 1137,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.060428407442150334,
+      "nominal_realized_terminal_error_m": 0.16441195587804378,
+      "scene_identity_sha256": "7b7d9e4cd0f16049055bbb489316791a3e323baf4e94b16d0ec43369ac3e8793"
+    },
+    {
+      "seed": 1138,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06772652561212364,
+      "nominal_realized_terminal_error_m": 0.1405544555885845,
+      "scene_identity_sha256": "d0e4ca86da5ce4203c40aef0b809ab1c57ddeb8dcecfe5026cffada1a8ca150d"
+    },
+    {
+      "seed": 1139,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07612255598999261,
+      "nominal_realized_terminal_error_m": 0.1982775296500866,
+      "scene_identity_sha256": "b0c33664dc287aa08b33d97e359cb4a2f219dc74f088e318e0103d2bcb3d73cf"
+    },
+    {
+      "seed": 1140,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.017637968300207592,
+      "nominal_realized_terminal_error_m": 0.01778123818526106,
+      "scene_identity_sha256": "faf961ec8e1669ecbf8dc1d9d0a731493f0d381dc9e5ee961be475b8ed27863a"
+    },
+    {
+      "seed": 1141,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04260676955291567,
+      "nominal_realized_terminal_error_m": 0.17356698077723343,
+      "scene_identity_sha256": "774e7d6f91072d7facc6dbdf15c9044031b5c957343a820ce41e91e39e26d490"
+    },
+    {
+      "seed": 1142,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08283936560492237,
+      "nominal_realized_terminal_error_m": 0.11120975193868901,
+      "scene_identity_sha256": "17f25c8278977ff2146e290b6adbeb121746c389bdd3e68f808ed215b7797d06"
+    },
+    {
+      "seed": 1143,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.02441128202656953,
+      "nominal_realized_terminal_error_m": 0.0856980975006293,
+      "scene_identity_sha256": "00d1ac98c078e7003864b9ee3a5eee14b2ed372c91a22b3263efc8cee8b79416"
+    },
+    {
+      "seed": 1144,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08677308501587815,
+      "nominal_realized_terminal_error_m": 0.26637807021556237,
+      "scene_identity_sha256": "75cb56eca844ae2a85633ceb1070036a47f98ff7c4e6555817592f5a88550dfe"
+    },
+    {
+      "seed": 1145,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.046288220602882985,
+      "nominal_realized_terminal_error_m": 0.09716149870621114,
+      "scene_identity_sha256": "719e00fe69dba936cf1be99af990d7451a045b8323a0360cc0d9d74ee14dc289"
+    },
+    {
+      "seed": 1146,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.020661546205435297,
+      "nominal_realized_terminal_error_m": 0.0252112734332781,
+      "scene_identity_sha256": "2cf5f4120c36ab0280140820141bfb9131a7acbb25702997bffb74a0b6cb4838"
+    },
+    {
+      "seed": 1147,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.12131917984491859,
+      "nominal_realized_terminal_error_m": 0.1945106357749076,
+      "scene_identity_sha256": "2f0e073b5f9cee6f61d0870a01b572329f277f9c6be34bd39ff7a2e48b08c854"
+    },
+    {
+      "seed": 1148,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08450234670706877,
+      "nominal_realized_terminal_error_m": 0.19150995721793718,
+      "scene_identity_sha256": "8cf5d4a8dcba629970187ae74ccb3563f69faa8fd96842d9b8691a1bf4dabe25"
+    },
+    {
+      "seed": 1149,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.027714626538876835,
+      "nominal_realized_terminal_error_m": 0.053369577741712346,
+      "scene_identity_sha256": "b60a2020d3658f39d992decb56997bd9918fa4212d356b90f9b665f9a86645ad"
+    },
+    {
+      "seed": 1150,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.022188182022454813,
+      "nominal_realized_terminal_error_m": 0.02269137799636055,
+      "scene_identity_sha256": "128b66a1573a06c914f1719f6232743f7e61e945d23fae0df52d5058c435645c"
+    },
+    {
+      "seed": 1151,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.02684772210218506,
+      "nominal_realized_terminal_error_m": 0.028188309195637817,
+      "scene_identity_sha256": "b2f9d8c143c14b77c725cb2c353957e2db443b8cbb30c6568601c1ceb26c0fd3"
+    },
+    {
+      "seed": 1152,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04865097338246586,
+      "nominal_realized_terminal_error_m": 0.12188815242708409,
+      "scene_identity_sha256": "c7b8e74a1077d3ce73eff490d761e6ed8bbe6b87643722d7118e5ce00de009e4"
+    },
+    {
+      "seed": 1153,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.1664802043137541,
+      "nominal_realized_terminal_error_m": 0.3481793292250123,
+      "scene_identity_sha256": "b844c0345b267d367ce8991a601a89e9a9613aba0491ce1e6a166edc27d3973a"
+    },
+    {
+      "seed": 1154,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06349055908177946,
+      "nominal_realized_terminal_error_m": 0.14011902391885683,
+      "scene_identity_sha256": "069f29e6cfe0e2e7e0a54cb3b59f91cdd4301ae67c108ff2ad8da1966c1c2291"
+    },
+    {
+      "seed": 1155,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.016803147445036495,
+      "nominal_realized_terminal_error_m": 0.04255363647286195,
+      "scene_identity_sha256": "a50f877731e5b0c27b8c2195c084de5134cf62c942e9f69b9de370389359dac4"
+    },
+    {
+      "seed": 1156,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07364712865550038,
+      "nominal_realized_terminal_error_m": 0.13048410561415336,
+      "scene_identity_sha256": "f49d2092cb7fad35591ed26b7bf051a2893f306516e80dd18ca797eb5578bdd8"
+    },
+    {
+      "seed": 1157,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06700424697492958,
+      "nominal_realized_terminal_error_m": 0.13112875564250664,
+      "scene_identity_sha256": "6351f59d3f41300ab2c45e5a974015482b99cba7c5a674428229444959a5713b"
+    },
+    {
+      "seed": 1158,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07119533213338006,
+      "nominal_realized_terminal_error_m": 0.14582830189064203,
+      "scene_identity_sha256": "821b4cd5f6a5778bf6ad389dc6eca76c732a6082cf9496c523ba296f0c17fd15"
+    },
+    {
+      "seed": 1159,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0787089052222338,
+      "nominal_realized_terminal_error_m": 0.1808953678293621,
+      "scene_identity_sha256": "74ecbf568d20068fc48c1e56e67808c570d3bc26f18fab646a1f0c17cb549dbc"
+    },
+    {
+      "seed": 2000,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05792921854878029,
+      "nominal_realized_terminal_error_m": 0.1846206749867808,
+      "scene_identity_sha256": "078f5e4a4f61ffeb744ec42fdd63c29093783980e133ae42bf6935ddc12117a5"
+    },
+    {
+      "seed": 2001,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.025427703622118696,
+      "nominal_realized_terminal_error_m": 0.03301034778656894,
+      "scene_identity_sha256": "dca0b51583834fc4916acc06ede8e010ebd0814885a7644ad7165381304e7805"
+    },
+    {
+      "seed": 2002,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0018297930061990297,
+      "nominal_realized_terminal_error_m": 0.00199068919401804,
+      "scene_identity_sha256": "ffe24b6a9ad447aab65a8972ca582bf28ff7b24cd2a5e9d244a7d9134d26f936"
+    },
+    {
+      "seed": 2003,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.14481630286738767,
+      "nominal_realized_terminal_error_m": 0.2790877689505724,
+      "scene_identity_sha256": "8cc395a4ad57d8198114284d6e23e1e4a27baa7d81aab33ac78a5bfea5d539da"
+    },
+    {
+      "seed": 2004,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07892571165985433,
+      "nominal_realized_terminal_error_m": 0.14395732911451067,
+      "scene_identity_sha256": "df636eeeefad8bf829907db4bc99b7441c04814d4b3d4ae3b1f47b59dad9ff5e"
+    },
+    {
+      "seed": 2005,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07501787843649876,
+      "nominal_realized_terminal_error_m": 0.1615514902402054,
+      "scene_identity_sha256": "3280a18fed51480112ccf4b94a2a9cb75a2c61903268d25b9c1d96140bf71cd3"
+    },
+    {
+      "seed": 2006,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.08431968133805978,
+      "nominal_realized_terminal_error_m": 0.19545431282723963,
+      "scene_identity_sha256": "a55272fa8af018b1b12d7ce7fb39f40f0f239eda5511e477c0055bf430fac98e"
+    },
+    {
+      "seed": 2007,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07340495882734177,
+      "nominal_realized_terminal_error_m": 0.19623933350076103,
+      "scene_identity_sha256": "aa363a92671ed91ac24f8338635593fbabb8914716261d27e690cfc5a1a724a4"
+    },
+    {
+      "seed": 2008,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04404428169596714,
+      "nominal_realized_terminal_error_m": 0.10741685677970556,
+      "scene_identity_sha256": "ef4d44682fc5753071d3478993a91a3fdd022f2c6d7cbf2b7ec385bd97745eae"
+    },
+    {
+      "seed": 2009,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06023793183136933,
+      "nominal_realized_terminal_error_m": 0.16556865328034487,
+      "scene_identity_sha256": "1d460fd4e246eb4cc11caa2b569b7dcfd1043a044322708394db3e890abe35bc"
+    },
+    {
+      "seed": 2010,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.10702384478475822,
+      "nominal_realized_terminal_error_m": 0.23820147184567542,
+      "scene_identity_sha256": "52810e9aa4e2bc7d5aaa673ae60fd952f5f7e805509f25c1cbfbee2844d341ac"
+    },
+    {
+      "seed": 2011,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.041284524929127375,
+      "nominal_realized_terminal_error_m": 0.06379899956710167,
+      "scene_identity_sha256": "9041862319dbf51d177542d1ef2e8ac0ee06811e83a500b1a022d4788a546afa"
+    },
+    {
+      "seed": 2012,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05455156846232426,
+      "nominal_realized_terminal_error_m": 0.13623819304759646,
+      "scene_identity_sha256": "d4252cf737c1c7c35770e12f994426072e1a9551b79b71fce5b3c36165a4ec84"
+    },
+    {
+      "seed": 2013,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.11249393745553932,
+      "nominal_realized_terminal_error_m": 0.19160484767078384,
+      "scene_identity_sha256": "08eec2d1b20ebbca58c4128263195ef1acdd76a75396a67c588a96181df8c9c7"
+    },
+    {
+      "seed": 2014,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.041194813037938476,
+      "nominal_realized_terminal_error_m": 0.096407144746815,
+      "scene_identity_sha256": "83900713dec2133a45252bbad286bc1c685262b26b4b595493944a8803adc052"
+    },
+    {
+      "seed": 2015,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05421794287798029,
+      "nominal_realized_terminal_error_m": 0.191110807354122,
+      "scene_identity_sha256": "301b56925a0111dcfcd2e42c624c00448c1284e0b955be06ada5c815123836dd"
+    },
+    {
+      "seed": 2016,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.09679218094445187,
+      "nominal_realized_terminal_error_m": 0.14842799014585936,
+      "scene_identity_sha256": "e364fbe6e797a0b3f3f78b4086d8955a12447a40ae9d13193aaa2d46661e1e3d"
+    },
+    {
+      "seed": 2017,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0005319015793170414,
+      "nominal_realized_terminal_error_m": 0.0022727913229543505,
+      "scene_identity_sha256": "6a27c6c66895011cb93a160fb5ca6280dffed4c2fb671b3324a4e17dad8f53e8"
+    },
+    {
+      "seed": 2018,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05257743344276221,
+      "nominal_realized_terminal_error_m": 0.09097428157449824,
+      "scene_identity_sha256": "3a62c7d9392f2dcf4c4776e06db5845380c9588313276369a8be6ee67bde745e"
+    },
+    {
+      "seed": 2019,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.047627117626984544,
+      "nominal_realized_terminal_error_m": 0.08122304310337007,
+      "scene_identity_sha256": "2728d9c6f9359b3029728b0d0274d6d448e1f0e210c7245ce34e969d55b8446d"
+    },
+    {
+      "seed": 2020,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07117786485035361,
+      "nominal_realized_terminal_error_m": 0.11682763143888829,
+      "scene_identity_sha256": "7e9e25383fcf13c105ba4fc80445b92d2005df3a7cb2e2392dfdfb38adcb2c56"
+    },
+    {
+      "seed": 2021,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06417162073106275,
+      "nominal_realized_terminal_error_m": 0.11684249710498423,
+      "scene_identity_sha256": "bf3d4165ce2c55be8e548822bbc2c2814e8ac3662ac76cd80e0a691acf0558c3"
+    },
+    {
+      "seed": 2022,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05481597762543631,
+      "nominal_realized_terminal_error_m": 0.14126780006623782,
+      "scene_identity_sha256": "05127557aba7da15c71d09a45981589c5cea7ec73dc6e66b336ddfea19553068"
+    },
+    {
+      "seed": 2023,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.017689059696948443,
+      "nominal_realized_terminal_error_m": 0.025125664781930433,
+      "scene_identity_sha256": "51f09835d5a14c22c5330e9fb7592c16fa10d1b15865aa0d15f8501945269e1b"
+    },
+    {
+      "seed": 2024,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07045289755926733,
+      "nominal_realized_terminal_error_m": 0.18712274354664,
+      "scene_identity_sha256": "fefc7c458568838fb37be89ea69deb1b40bca7b555a91cd5f8cb3799b26ae945"
+    },
+    {
+      "seed": 2026,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.15287585785232832,
+      "nominal_realized_terminal_error_m": 0.4073680607263202,
+      "scene_identity_sha256": "fa624b32173cbff4d4b6d875c2f62b12dc3a279e36a219e863edaae6f848c7a0"
+    },
+    {
+      "seed": 2027,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.052690366930998836,
+      "nominal_realized_terminal_error_m": 0.12981400718920075,
+      "scene_identity_sha256": "a2326a2c01a0193447cabd3266f5024aaf7a2f32f0e25a5931a41c097cd3d173"
+    },
+    {
+      "seed": 2028,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.11527016878644909,
+      "nominal_realized_terminal_error_m": 0.2451025538727994,
+      "scene_identity_sha256": "e3a8ee9da9473b44d0ae44e612f02dd7a60e228082689cb05400a28c4157a065"
+    },
+    {
+      "seed": 2029,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04981779685758966,
+      "nominal_realized_terminal_error_m": 0.1567987541392508,
+      "scene_identity_sha256": "e871d390fd88e7a7e2e324133c320884d2515f2fa17259f8ab95055f3a7cd680"
+    },
+    {
+      "seed": 3000,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06462971567964787,
+      "nominal_realized_terminal_error_m": 0.23416760465967262,
+      "scene_identity_sha256": "d486a8ea152a65521dec1e6e147fef115551d1fd22144ec5bca2a220c8ff76d8"
+    },
+    {
+      "seed": 3001,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.018031078369752672,
+      "nominal_realized_terminal_error_m": 0.04852703036997821,
+      "scene_identity_sha256": "f9b5f0c7f06f0cca929df7ff6598aa7ea628045f14e804204f12fc58da3e4b1d"
+    },
+    {
+      "seed": 3002,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.13218583202009804,
+      "nominal_realized_terminal_error_m": 0.3152411495387227,
+      "scene_identity_sha256": "2d8e067b299605d78890725a2bee08c94595fdfb6a01af83ed0939178559e517"
+    },
+    {
+      "seed": 3003,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.02126872424462152,
+      "nominal_realized_terminal_error_m": 0.04453721417196129,
+      "scene_identity_sha256": "e0e4d217d291f920c1dccb1687960e4db838d467f22f0a8c97eca84a1a602c43"
+    },
+    {
+      "seed": 3004,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03683524899497843,
+      "nominal_realized_terminal_error_m": 0.09324761135627704,
+      "scene_identity_sha256": "e41ea4ca646c30cf39735772c5526274ad9fb286e65922aaf4e0deccb8831d51"
+    },
+    {
+      "seed": 3005,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.013294738424304186,
+      "nominal_realized_terminal_error_m": 0.014414025857428264,
+      "scene_identity_sha256": "3c200609d4c7f8f4ccb1848e4556c6f031b21cc97f1730274414f78e395847ef"
+    },
+    {
+      "seed": 3006,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04990776069783729,
+      "nominal_realized_terminal_error_m": 0.16040973893749996,
+      "scene_identity_sha256": "001903da5ac884a1f83c305c85ae16bff37f3e77805e7e6fea9dffa7d349a58a"
+    },
+    {
+      "seed": 3007,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0798934909596363,
+      "nominal_realized_terminal_error_m": 0.21515743516029695,
+      "scene_identity_sha256": "c64790bfd35ab28d154d8f532d0646aa05b714ced00ef85deba72a71787aa22b"
+    },
+    {
+      "seed": 3008,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.058961701130234904,
+      "nominal_realized_terminal_error_m": 0.17851603705187644,
+      "scene_identity_sha256": "650bc674835c88b0c98dacb19db2a4572264c0e3608b2df66747717b42fd976c"
+    },
+    {
+      "seed": 3009,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03420056279961569,
+      "nominal_realized_terminal_error_m": 0.08851013458087473,
+      "scene_identity_sha256": "bbbd27c0c7a941e1a9291025c3f65b5889e77d3a821d4a1010d8d2dd728b3eeb"
+    },
+    {
+      "seed": 3010,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.004653844456630367,
+      "nominal_realized_terminal_error_m": 0.015553272763607828,
+      "scene_identity_sha256": "4ff9a130c27175f7d6bd855008a73b303a17c6d7665a5673be4952bbaa0c3e2a"
+    },
+    {
+      "seed": 3011,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0666786868158625,
+      "nominal_realized_terminal_error_m": 0.19048608383463544,
+      "scene_identity_sha256": "bb6e0d1f919f0056475c27365174d25476c1f142eb924e7c64a74a9c182859cf"
+    },
+    {
+      "seed": 3012,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06742879927519965,
+      "nominal_realized_terminal_error_m": 0.17815819765973936,
+      "scene_identity_sha256": "24f6c0ab4bc225e274212aa70d4a27dcb0f475264f5145c31cbf97c20f7b672c"
+    },
+    {
+      "seed": 3013,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.09872586605097769,
+      "nominal_realized_terminal_error_m": 0.1676513996084636,
+      "scene_identity_sha256": "afccc0f00d049bb138253f71dde2836d536588cf5aecc778b2628aa1f72ed055"
+    },
+    {
+      "seed": 3014,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.03364417602292602,
+      "nominal_realized_terminal_error_m": 0.0665174094855911,
+      "scene_identity_sha256": "9c88e3c59af257f10ebebee8e22f4a212affaae40668d9b6f7ce6710088e7cca"
+    },
+    {
+      "seed": 3015,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.07611765788190354,
+      "nominal_realized_terminal_error_m": 0.1663734324737601,
+      "scene_identity_sha256": "acdbd0f250f992e0b807355d8e532d55ea69c03641227e567c21b08106d777dd"
+    },
+    {
+      "seed": 3016,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05145168646333596,
+      "nominal_realized_terminal_error_m": 0.1440579253995715,
+      "scene_identity_sha256": "95723839da59b1971e336bed4cfeb66513b24459a0ba5487c79e139c9255bce4"
+    },
+    {
+      "seed": 3017,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.054220736223452234,
+      "nominal_realized_terminal_error_m": 0.16542647197205104,
+      "scene_identity_sha256": "766c9c919b6e0ea352ebd2b912235bb83d8c7a685d011fa1990657e8f0e47f86"
+    },
+    {
+      "seed": 3018,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.031234456633897543,
+      "nominal_realized_terminal_error_m": 0.0565857389508974,
+      "scene_identity_sha256": "c666a9aa06fcc7a32a65ea5b4088904af78672d323c5d819c86dec21b82cd9aa"
+    },
+    {
+      "seed": 3019,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0721861377030938,
+      "nominal_realized_terminal_error_m": 0.15253594908856494,
+      "scene_identity_sha256": "a9758e8909db67e41f49908bf22cac8d2a790f5330445d7b5ca855838703ef88"
+    },
+    {
+      "seed": 3020,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.05460787404924723,
+      "nominal_realized_terminal_error_m": 0.1273411150107883,
+      "scene_identity_sha256": "0a823a54e7353588b92b041fce59a618f0f9fd40c459ebfcff650d685fc9d130"
+    },
+    {
+      "seed": 3021,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.046432239249158555,
+      "nominal_realized_terminal_error_m": 0.14587091485236225,
+      "scene_identity_sha256": "fbef1d1219f45f498929e155454cbec4d368293a5b0d3b766e7fd9b5d51a6d54"
+    },
+    {
+      "seed": 3022,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.0009064577886744073,
+      "nominal_realized_terminal_error_m": 0.0012241546566027137,
+      "scene_identity_sha256": "61c6a6f9036ae1153ed789254603338f75459be10e444ab6caf3c18bde519f1c"
+    },
+    {
+      "seed": 3023,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.060828320641092545,
+      "nominal_realized_terminal_error_m": 0.18414073274036202,
+      "scene_identity_sha256": "1ca141fa4b3752f615d22b2f295cbb80b728ec08af59c61b6f6d868521297d0c"
+    },
+    {
+      "seed": 3024,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.012022426694096226,
+      "nominal_realized_terminal_error_m": 0.01248993926335199,
+      "scene_identity_sha256": "c85a9758ffeb791669d7f03c0efbf80a5080a6cf5f79b7b8d788339b553033c8"
+    },
+    {
+      "seed": 3025,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.059594145297360394,
+      "nominal_realized_terminal_error_m": 0.12892084804940118,
+      "scene_identity_sha256": "f5b221de8395657743b77caa816738db2e07d799ca2782c451c7854007906894"
+    },
+    {
+      "seed": 3026,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.006951789790465731,
+      "nominal_realized_terminal_error_m": 0.0230222797142497,
+      "scene_identity_sha256": "d6fd16e3340b8a4c0093cb80f08a30c8361b200847a55c51f106baad6a332db1"
+    },
+    {
+      "seed": 3027,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.06291360335364037,
+      "nominal_realized_terminal_error_m": 0.11591988432934527,
+      "scene_identity_sha256": "6c0159e2aa69e41b680aed76f542fe627d680c1d1921234c6faa75ca9daafeb0"
+    },
+    {
+      "seed": 3028,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.04679147730460555,
+      "nominal_realized_terminal_error_m": 0.15449210670522695,
+      "scene_identity_sha256": "dca377b8284874a44f848c505b7823c72e787c4d8044bdc4b383e3cbb519a959"
+    },
+    {
+      "seed": 3029,
+      "robot_points": 500,
+      "nominal_realized_mean_error_m": 0.01682555558618151,
+      "nominal_realized_terminal_error_m": 0.04695702520224563,
+      "scene_identity_sha256": "5ed57a4a20c793234147f8e679a69b9ee69b730f748cfed91ec3d6cdbf3467f3"
+    }
+  ]
+}
