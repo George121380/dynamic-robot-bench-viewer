@@ -14,7 +14,7 @@ figure{margin:0;border-top:1px solid var(--line);padding:14px 0}img{width:100%;h
 <h1 data-zh="OCBench Bowling：重点看下游球瓶" data-en="OCBench Bowling: focus on downstream pins"></h1>
 <p data-zh="建议作为 CollisionChain 之后优先追加的公开任务：球–瓶、瓶–瓶传播，接触解除、旋转倾倒与自由运动。首轮仍保留三个受控核心任务。" data-en="Priority public addition after CollisionChain: ball–pin and pin–pin propagation, contact release, tipping/rotation and free motion. Retain the three controlled core tasks initially."></p>
 <p class="caption" data-zh="2026-10-12 · 实际 CPU smoke＋官方状态重渲染，不是模型成绩。其他 27 个任务仅列 Inventory，未做深度验收。" data-en="2026-10-12 · Actual CPU smoke and official-state rendering, not model results. Other 27 tasks are inventory only, with no depth acceptance."></p>
-<h2 id="depth" data-zh="原轨迹可补深度，新采也已跑通" data-en="Original trajectories support depth rendering; live RGB-D works too"></h2>
+<!-- bowling-failure-analysis:start --><p><a href="diagnosis/">新增：为什么 Bowling 模型碰撞预测失败 / Model failure analysis</a></p><!-- bowling-failure-analysis:end --><h2 id="depth" data-zh="原轨迹可补深度，新采也已跑通" data-en="Original trajectories support depth rendering; live RGB-D works too"></h2>
 <div class="grid"><figure><h3 data-zh="官方验证第一条：30 帧 RGB–depth" data-en="Official validation episode 0: 30 RGB–depth frames"></h3>
 <a href="media/official-val-episode0-rgb-depth.gif"><img src="media/official-val-episode0-rgb-depth.gif" alt="Original Bowling qpos/qvel RGB and metric Z depth" loading="eager"></a>
 <p class="depth" data-zh="真值深度：已原状态重渲染，单位米、Z-depth，无需模型估计。背景 far plane 已在 valid 中排除。" data-en="GT depth: original-state rendering, metres / camera-axis Z, without estimation. Far-plane background is excluded by valid masks."></p>

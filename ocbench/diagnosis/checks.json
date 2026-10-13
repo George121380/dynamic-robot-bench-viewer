@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "new_model_inference": false,
+  "original_expert_replays_exact": 3,
+  "expert_controller_interventions": 12,
+  "python_compile": true,
+  "canvas_typecheck": true,
+  "JS_syntax": true,
+  "media": [
+    {
+      "name": "seed0-comparison.gif",
+      "frames": 101,
+      "sha256": "c3d6f42c1142cb49484f0867c00a9d42657d2b405dc8a1e8b4852f80ef07bdc1"
+    },
+    {
+      "name": "seed1-comparison.gif",
+      "frames": 101,
+      "sha256": "73f303dd7674a00490ed1152b8862b0fc7dcf4a4261e212c245aab9a82a8126b"
+    },
+    {
+      "name": "seed2-comparison.gif",
+      "frames": 101,
+      "sha256": "e21bbf7f7fd446b985de2171aeaadecd04c286703fba7962cfb9bca481ef8a12"
+    }
+  ],
+  "browser": {
+    "bilingual": true,
+    "metric_selection": true,
+    "loaded_images": 4,
+    "svg_points": 39
+  },
+  "source_data_and_predictions_modified": false
+}
