@@ -1,0 +1,56 @@
+{
+  "stage": "tokenizer",
+  "passed": false,
+  "targets": {
+    "ADE_m": 0.001,
+    "FDE_m": 0.003
+  },
+  "groups": {
+    "scene_history/ball": {
+      "ADE_m": 0.005842483416199684,
+      "FDE_m": 0.007026391569525003,
+      "trajectories": 16
+    },
+    "scene_history/static_pins": {
+      "ADE_m": 0.0058412736654281615,
+      "FDE_m": 0.007028141617774963,
+      "trajectories": 320
+    },
+    "robot_history/all": {
+      "ADE_m": 0.014163485765457152,
+      "FDE_m": 0.011462781578302383,
+      "trajectories": 320
+    },
+    "robot_future/all": {
+      "ADE_m": 0.019084856510162354,
+      "FDE_m": 0.032917463779449464,
+      "trajectories": 320
+    },
+    "scene_future/ball": {
+      "ADE_m": 0.01725480258464813,
+      "FDE_m": 0.04508589208126068,
+      "trajectories": 16
+    },
+    "scene_future/moving_pins": {
+      "ADE_m": 0.01103018323580424,
+      "FDE_m": 0.04178125659624735,
+      "trajectories": 24
+    },
+    "scene_future/static_pins": {
+      "ADE_m": 0.0062390327453613285,
+      "FDE_m": 0.011752375074335047,
+      "trajectories": 296
+    }
+  },
+  "meaning": "engineering_diagnostic_not_paper_requirement",
+  "statistics": {
+    "split": "train",
+    "trajectory_count": 185812,
+    "low_variance_channels": 0,
+    "standard_deviation_min": 0.01647116333954798,
+    "standard_deviation_max": 8.584960682631008
+  },
+  "training_steps_completed": 5000,
+  "selected_step": 5000,
+  "checkpoint_sha256": "57ee9b81e50189279c0f2c913c96623c85f4ed84099583e0b81c1b193debd3ea"
+}

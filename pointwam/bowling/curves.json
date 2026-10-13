@@ -1,0 +1,1082 @@
+{
+  "training": [
+    {
+      "stage": "tokenizer",
+      "step": 1,
+      "loss_m2": 0.03229663521051407,
+      "elapsed_s": 0.6945689250715077
+    },
+    {
+      "stage": "tokenizer",
+      "step": 50,
+      "loss_m2": 0.0017579359700903296,
+      "elapsed_s": 1.2940990971401334
+    },
+    {
+      "stage": "tokenizer",
+      "step": 100,
+      "loss_m2": 0.0007507407572120428,
+      "elapsed_s": 1.8472043201327324
+    },
+    {
+      "stage": "tokenizer",
+      "step": 150,
+      "loss_m2": 0.0005799144855700433,
+      "elapsed_s": 2.3997282220516354
+    },
+    {
+      "stage": "tokenizer",
+      "step": 200,
+      "loss_m2": 0.0005499221733771265,
+      "elapsed_s": 2.9594713130500168
+    },
+    {
+      "stage": "tokenizer",
+      "step": 250,
+      "loss_m2": 0.000408932042773813,
+      "elapsed_s": 3.521649040048942
+    },
+    {
+      "stage": "tokenizer",
+      "step": 300,
+      "loss_m2": 0.0004326861526351422,
+      "elapsed_s": 4.084350794088095
+    },
+    {
+      "stage": "tokenizer",
+      "step": 350,
+      "loss_m2": 0.00045608478831127286,
+      "elapsed_s": 4.676083530066535
+    },
+    {
+      "stage": "tokenizer",
+      "step": 400,
+      "loss_m2": 0.0003621985379140824,
+      "elapsed_s": 5.261317264055833
+    },
+    {
+      "stage": "tokenizer",
+      "step": 450,
+      "loss_m2": 0.0003446448245085776,
+      "elapsed_s": 5.837363404920325
+    },
+    {
+      "stage": "tokenizer",
+      "step": 500,
+      "loss_m2": 0.0003804569423664361,
+      "elapsed_s": 6.41927515110001
+    },
+    {
+      "stage": "tokenizer",
+      "step": 550,
+      "loss_m2": 0.00032304396154358983,
+      "elapsed_s": 7.099235902074724
+    },
+    {
+      "stage": "tokenizer",
+      "step": 600,
+      "loss_m2": 0.00029812706634402275,
+      "elapsed_s": 7.65656191110611
+    },
+    {
+      "stage": "tokenizer",
+      "step": 650,
+      "loss_m2": 0.00034964457154273987,
+      "elapsed_s": 8.210724627133459
+    },
+    {
+      "stage": "tokenizer",
+      "step": 700,
+      "loss_m2": 0.0003017795679625124,
+      "elapsed_s": 8.76258553401567
+    },
+    {
+      "stage": "tokenizer",
+      "step": 750,
+      "loss_m2": 0.0003120895416941494,
+      "elapsed_s": 9.331215555081144
+    },
+    {
+      "stage": "tokenizer",
+      "step": 800,
+      "loss_m2": 0.00034991552820429206,
+      "elapsed_s": 9.918967401143163
+    },
+    {
+      "stage": "tokenizer",
+      "step": 850,
+      "loss_m2": 0.0003116424195468426,
+      "elapsed_s": 10.50559116806835
+    },
+    {
+      "stage": "tokenizer",
+      "step": 900,
+      "loss_m2": 0.0003179181076120585,
+      "elapsed_s": 11.088114819023758
+    },
+    {
+      "stage": "tokenizer",
+      "step": 950,
+      "loss_m2": 0.0003037675633095205,
+      "elapsed_s": 11.652914050035179
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1000,
+      "loss_m2": 0.0003316867514513433,
+      "elapsed_s": 12.211643883027136
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1050,
+      "loss_m2": 0.000308018148643896,
+      "elapsed_s": 12.823604708071798
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1100,
+      "loss_m2": 0.00032780307810753584,
+      "elapsed_s": 13.39375816192478
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1150,
+      "loss_m2": 0.0003801552520599216,
+      "elapsed_s": 13.970488040940836
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1200,
+      "loss_m2": 0.0002591201919130981,
+      "elapsed_s": 14.579121926100925
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1250,
+      "loss_m2": 0.0002461388357914984,
+      "elapsed_s": 15.16104267607443
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1300,
+      "loss_m2": 0.00025593905593268573,
+      "elapsed_s": 15.733404417987913
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1350,
+      "loss_m2": 0.00023648992646485567,
+      "elapsed_s": 16.304638961097226
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1400,
+      "loss_m2": 0.0002367498236708343,
+      "elapsed_s": 16.866267102072015
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1450,
+      "loss_m2": 0.0002483116986695677,
+      "elapsed_s": 17.424039724981412
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1500,
+      "loss_m2": 0.00016730402421671897,
+      "elapsed_s": 17.981829704949632
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1550,
+      "loss_m2": 0.00015880895080044866,
+      "elapsed_s": 18.61402168008499
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1600,
+      "loss_m2": 0.0001755893463268876,
+      "elapsed_s": 19.168917247094214
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1650,
+      "loss_m2": 0.0001552991016069427,
+      "elapsed_s": 19.724912085104734
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1700,
+      "loss_m2": 0.00014576446847058833,
+      "elapsed_s": 20.271344914101064
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1750,
+      "loss_m2": 0.00015065667685121298,
+      "elapsed_s": 20.82500324305147
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1800,
+      "loss_m2": 0.00011593302770052105,
+      "elapsed_s": 21.398227642057464
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1850,
+      "loss_m2": 0.0001574433408677578,
+      "elapsed_s": 21.96078555006534
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1900,
+      "loss_m2": 0.00012976606376469135,
+      "elapsed_s": 22.51418325700797
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1950,
+      "loss_m2": 0.00013789511285722256,
+      "elapsed_s": 23.081191295059398
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2000,
+      "loss_m2": 0.00014327169628813863,
+      "elapsed_s": 23.651149447076023
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2050,
+      "loss_m2": 0.00017437869973946363,
+      "elapsed_s": 24.291165160015225
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2100,
+      "loss_m2": 0.0001224141742568463,
+      "elapsed_s": 24.880567657062784
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2150,
+      "loss_m2": 0.00010905570525210351,
+      "elapsed_s": 25.47932303091511
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2200,
+      "loss_m2": 0.00010412578558316454,
+      "elapsed_s": 26.072059451136738
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2250,
+      "loss_m2": 9.801156556932256e-05,
+      "elapsed_s": 26.6558322859928
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2300,
+      "loss_m2": 0.00011012572213076055,
+      "elapsed_s": 27.257455740123987
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2350,
+      "loss_m2": 7.903404184617102e-05,
+      "elapsed_s": 27.86803834908642
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2400,
+      "loss_m2": 0.009232411161065102,
+      "elapsed_s": 28.43373657297343
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2450,
+      "loss_m2": 0.0035353731364011765,
+      "elapsed_s": 29.002086220076308
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2500,
+      "loss_m2": 0.003907877020537853,
+      "elapsed_s": 29.572596153942868
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2550,
+      "loss_m2": 0.003591998713091016,
+      "elapsed_s": 30.168661070987582
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2600,
+      "loss_m2": 0.003652778221294284,
+      "elapsed_s": 30.73199255997315
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2650,
+      "loss_m2": 0.003245964180678129,
+      "elapsed_s": 31.29190171114169
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2700,
+      "loss_m2": 0.0031953684519976377,
+      "elapsed_s": 31.84722115797922
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2750,
+      "loss_m2": 0.003736219834536314,
+      "elapsed_s": 32.39863422000781
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2800,
+      "loss_m2": 0.0036233211867511272,
+      "elapsed_s": 32.94950485811569
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2850,
+      "loss_m2": 0.0036064120940864086,
+      "elapsed_s": 33.50068548694253
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2900,
+      "loss_m2": 0.003011738881468773,
+      "elapsed_s": 34.052097391104326
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2950,
+      "loss_m2": 0.002873592311516404,
+      "elapsed_s": 34.62792622903362
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3000,
+      "loss_m2": 0.003966715652495623,
+      "elapsed_s": 35.18585441005416
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3050,
+      "loss_m2": 0.003301766235381365,
+      "elapsed_s": 35.77782225701958
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3100,
+      "loss_m2": 0.0033342046663165092,
+      "elapsed_s": 36.34968671808019
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3150,
+      "loss_m2": 0.0038687880150973797,
+      "elapsed_s": 36.911392813082784
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3200,
+      "loss_m2": 0.003099096240475774,
+      "elapsed_s": 37.524736270075664
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3250,
+      "loss_m2": 0.0030099612195044756,
+      "elapsed_s": 38.13377367402427
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3300,
+      "loss_m2": 0.004157713148742914,
+      "elapsed_s": 38.725446603959426
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3350,
+      "loss_m2": 0.0028711804188787937,
+      "elapsed_s": 39.300129720941186
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3400,
+      "loss_m2": 0.0034344305749982595,
+      "elapsed_s": 39.89605986094102
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3450,
+      "loss_m2": 0.0035819581244140863,
+      "elapsed_s": 40.50657592411153
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3500,
+      "loss_m2": 0.0036928183399140835,
+      "elapsed_s": 41.0895561829675
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3550,
+      "loss_m2": 0.00311834504827857,
+      "elapsed_s": 41.70078319008462
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3600,
+      "loss_m2": 0.003316167974844575,
+      "elapsed_s": 42.28938528592698
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3650,
+      "loss_m2": 0.0030216427985578775,
+      "elapsed_s": 42.853025370975956
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3700,
+      "loss_m2": 0.003515507560223341,
+      "elapsed_s": 43.420937397982925
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3750,
+      "loss_m2": 0.003467907663434744,
+      "elapsed_s": 43.989201948046684
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3800,
+      "loss_m2": 0.002775508677586913,
+      "elapsed_s": 44.5715210379567
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3850,
+      "loss_m2": 0.0033291829749941826,
+      "elapsed_s": 45.13897447497584
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3900,
+      "loss_m2": 0.0038164977449923754,
+      "elapsed_s": 45.70145512907766
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3950,
+      "loss_m2": 0.003025289159268141,
+      "elapsed_s": 46.285274933092296
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4000,
+      "loss_m2": 0.00305381091311574,
+      "elapsed_s": 46.87609855993651
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4050,
+      "loss_m2": 0.0035219029523432255,
+      "elapsed_s": 47.49053955706768
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4100,
+      "loss_m2": 0.00337411742657423,
+      "elapsed_s": 48.05956126307137
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4150,
+      "loss_m2": 0.003282715566456318,
+      "elapsed_s": 48.632378140930086
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4200,
+      "loss_m2": 0.003443945897743106,
+      "elapsed_s": 49.20529367309064
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4250,
+      "loss_m2": 0.00353077775798738,
+      "elapsed_s": 49.78514930792153
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4300,
+      "loss_m2": 0.00334196537733078,
+      "elapsed_s": 50.354734369087964
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4350,
+      "loss_m2": 0.0032833849545568228,
+      "elapsed_s": 50.93263002298772
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4400,
+      "loss_m2": 0.0033241307828575373,
+      "elapsed_s": 51.51731545198709
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4450,
+      "loss_m2": 0.0032004467211663723,
+      "elapsed_s": 52.084046692121774
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4500,
+      "loss_m2": 0.0036019026301801205,
+      "elapsed_s": 52.651578267104924
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4550,
+      "loss_m2": 0.003309542778879404,
+      "elapsed_s": 53.24240948213264
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4600,
+      "loss_m2": 0.00352438073605299,
+      "elapsed_s": 53.842111645964906
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4650,
+      "loss_m2": 0.0035552838817238808,
+      "elapsed_s": 54.460582703119144
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4700,
+      "loss_m2": 0.0033432720229029655,
+      "elapsed_s": 55.04869532492012
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4750,
+      "loss_m2": 0.003404824063181877,
+      "elapsed_s": 55.62562319403514
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4800,
+      "loss_m2": 0.0032292408868670464,
+      "elapsed_s": 56.22575227706693
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4850,
+      "loss_m2": 0.00328522315248847,
+      "elapsed_s": 56.80115589313209
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4900,
+      "loss_m2": 0.003259161487221718,
+      "elapsed_s": 57.362142217112705
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4950,
+      "loss_m2": 0.0031175443436950445,
+      "elapsed_s": 57.915093963965774
+    },
+    {
+      "stage": "tokenizer",
+      "step": 5000,
+      "loss_m2": 0.0036030691117048264,
+      "elapsed_s": 58.46603266499005
+    }
+  ],
+  "validation": [
+    {
+      "step": 500,
+      "selection_score_mean_group_ADE_m": 0.0244536094438462,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.008841782808303833,
+          "FDE_m": 0.012213567271828651,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.008842288255691529,
+          "FDE_m": 0.012212395668029785,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.021606802940368652,
+          "FDE_m": 0.018502244353294374,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.049712419509887695,
+          "FDE_m": 0.0786798894405365,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.06167189478874206,
+          "FDE_m": 0.13136807084083557,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.013279666503270468,
+          "FDE_m": 0.04661741852760315,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.007220411300659179,
+          "FDE_m": 0.013912616549311457,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 1000,
+      "selection_score_mean_group_ADE_m": 0.02108979169082764,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.004999518394470215,
+          "FDE_m": 0.00832616537809372,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.004999380707740784,
+          "FDE_m": 0.008328033983707428,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.0152937912940979,
+          "FDE_m": 0.014655588567256928,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.047560081481933594,
+          "FDE_m": 0.07763315439224243,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.059114158153533936,
+          "FDE_m": 0.12906597554683685,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.010324217875798543,
+          "FDE_m": 0.04372569421927134,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.005337393928218533,
+          "FDE_m": 0.002548391351828704,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 1500,
+      "selection_score_mean_group_ADE_m": 0.013017263252964121,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.002721956931054592,
+          "FDE_m": 0.0036814892664551735,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.002720071077346802,
+          "FDE_m": 0.003680253028869629,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.014264132976531983,
+          "FDE_m": 0.015566639602184296,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.028005218505859374,
+          "FDE_m": 0.03305433988571167,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.028686192631721497,
+          "FDE_m": 0.056919097900390625,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.010070562362670898,
+          "FDE_m": 0.03921160101890564,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.0046527082855637005,
+          "FDE_m": 0.011605601052980166,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 2000,
+      "selection_score_mean_group_ADE_m": 0.011466023680709656,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.003988635540008545,
+          "FDE_m": 0.0028203879483044147,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.003987449705600738,
+          "FDE_m": 0.0028191857039928437,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.014319863319396973,
+          "FDE_m": 0.017130738496780394,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.021217875480651856,
+          "FDE_m": 0.03176243901252747,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.01611380875110626,
+          "FDE_m": 0.032440152019262314,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.01304671863714854,
+          "FDE_m": 0.03701058278481165,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.007587814331054687,
+          "FDE_m": 0.005507294390652631,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 2500,
+      "selection_score_mean_group_ADE_m": 0.05410954124065286,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.040659791231155394,
+          "FDE_m": 0.040659788995981216,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.04065987586975098,
+          "FDE_m": 0.04066253900527954,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.055763959884643555,
+          "FDE_m": 0.03103686273097992,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.07063977241516113,
+          "FDE_m": 0.11290668249130249,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.08438312411308288,
+          "FDE_m": 0.15772467851638794,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.04401578505833944,
+          "FDE_m": 0.06696211795012157,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.042644480112436656,
+          "FDE_m": 0.057860419556901264,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 3000,
+      "selection_score_mean_group_ADE_m": 0.06187613700500939,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.058864402770996097,
+          "FDE_m": 0.05886440724134445,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.05886491775512695,
+          "FDE_m": 0.05886379480361938,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.059043560028076175,
+          "FDE_m": 0.047467786073684695,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.06340766906738281,
+          "FDE_m": 0.10835806131362916,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.07473405599594116,
+          "FDE_m": 0.1526539921760559,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.05936950842539469,
+          "FDE_m": 0.06769021352132161,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.05884884499214791,
+          "FDE_m": 0.05857939333529086,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 3500,
+      "selection_score_mean_group_ADE_m": 0.06301409780135332,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.060615134239196775,
+          "FDE_m": 0.060615137219429016,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.06061565399169922,
+          "FDE_m": 0.06061446666717529,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.0596591854095459,
+          "FDE_m": 0.04923721551895142,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.06399759292602539,
+          "FDE_m": 0.10885374546051026,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.07450399994850158,
+          "FDE_m": 0.15304099023342133,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.06109412511189779,
+          "FDE_m": 0.0691023866335551,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.06061299298260663,
+          "FDE_m": 0.060539000743144264,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 4000,
+      "selection_score_mean_group_ADE_m": 0.06345935699408886,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.06010158061981201,
+          "FDE_m": 0.060101576149463654,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.060102100372314456,
+          "FDE_m": 0.060100889205932616,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.05943293571472168,
+          "FDE_m": 0.04871399998664856,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.06732385635375976,
+          "FDE_m": 0.10005152225494385,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.07676382064819336,
+          "FDE_m": 0.13637134432792664,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.060460170110066734,
+          "FDE_m": 0.06778172651926677,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.06003103513975401,
+          "FDE_m": 0.059194087982177734,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 4500,
+      "selection_score_mean_group_ADE_m": 0.06395096556253568,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.06096863150596619,
+          "FDE_m": 0.060968633741140366,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.06096916198730469,
+          "FDE_m": 0.06096792221069336,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.059865837097167966,
+          "FDE_m": 0.049603381752967836,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.0670156478881836,
+          "FDE_m": 0.1189542293548584,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.07637746334075927,
+          "FDE_m": 0.1666860580444336,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.0614911953608195,
+          "FDE_m": 0.06964949766794841,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.060968821757548565,
+          "FDE_m": 0.06093023918770455,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 5000,
+      "selection_score_mean_group_ADE_m": 0.0638096410212523,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.06064765453338623,
+          "FDE_m": 0.06064765900373459,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.06064815998077393,
+          "FDE_m": 0.060647040605545044,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.059917030334472654,
+          "FDE_m": 0.049297010898590087,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.06664929389953614,
+          "FDE_m": 0.11158518791198731,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.07696491479873657,
+          "FDE_m": 0.15913572907447815,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.061192623774210614,
+          "FDE_m": 0.0694827139377594,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.06064780982764992,
+          "FDE_m": 0.060609430880159944,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    }
+  ]
+}

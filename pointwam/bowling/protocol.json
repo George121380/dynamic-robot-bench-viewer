@@ -1,0 +1,104 @@
+{
+  "experiment": "unitas_sparse_bowling_v1",
+  "implementation_status": "independent_sparse_adaptation_not_official_code",
+  "paper": "https://arxiv.org/html/2610.12099v1",
+  "upstream_official_code_available_at_start": false,
+  "seed": 42,
+  "data": {
+    "train_episodes": 206,
+    "validation_episodes": 16,
+    "test_episodes": 29,
+    "test_status": "exploratory_reused_cohort",
+    "history_seconds": 1.0,
+    "future_seconds": 2.0,
+    "rollout_seconds": 4.0,
+    "sampling_hz": 10,
+    "native_hz": 50,
+    "train_offsets_controls": [
+      0,
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "query": "existing_event_aligned_prepush",
+    "scene_points": 21,
+    "robot_points": 20,
+    "scene_point_order": "ball,pin0_top,pin0_bottom,...,pin9_top,pin9_bottom",
+    "pin_local_half_height_m": 0.075,
+    "future_robot_condition": "current_robot_state_plus_frozen_commands_in_contact_disabled_simulation"
+  },
+  "model": {
+    "trajectory_latent_dim": 256,
+    "time_scale_seconds": 3.0,
+    "tokenizer_hidden_dim": 256,
+    "layers": 6,
+    "width": 256,
+    "heads": 8,
+    "mlp_ratio": 4,
+    "euler_steps": 10,
+    "flow_time_distribution": "uniform_0_1",
+    "context": "scene_history_robot_history_clean_nominal_robot_plan",
+    "prediction_postprocessing": "none"
+  },
+  "training": {
+    "batch_size": 64,
+    "tokenizer_steps": 5000,
+    "tokenizer_lr": 0.001,
+    "tokenizer_weight_decay": 0.0,
+    "overfit_steps": 2000,
+    "overfit_episodes": 8,
+    "main_steps": 20000,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "warmup_steps": 500,
+    "validation_interval": 500,
+    "loss_grouping": "equal_present_ball_moving_pin_static_pin",
+    "motion_threshold_m": 0.01,
+    "selection": "0.4*ball_ADE+0.4*moving_pin_ADE+0.2*static_pin_ADE_at_4s; absent_groups_renormalized",
+    "statistics_split": "train_only",
+    "motion_definition": "maximum Euclidean endpoint displacement over both endpoints and all predicted times",
+    "overfit_selection": "first eight training episode seeds in ascending order",
+    "tokenizer_selection": "lowest equal-group validation reconstruction ADE within 5000 steps"
+  },
+  "diagnostic_targets": {
+    "tokenizer_group_ade_m": 0.001,
+    "tokenizer_group_fde_m": 0.003,
+    "overfit_ball_and_moving_pin_ade_m": 0.005,
+    "meaning": "engineering_diagnostics_not_paper_requirements"
+  },
+  "evaluation": {
+    "prediction_noise": "one_deterministic_sample_per_case_and_chunk_no_best_of_k",
+    "baselines": [
+      "stationary",
+      "constant_velocity_past_1s_OLS"
+    ],
+    "tip_cosine_threshold": 0.75,
+    "native_event_scoring": "report_50Hz_GT_separately_from_10Hz_GT",
+    "initially_tipped": "separate_from_future_new_tips",
+    "test_access": "predictions_after_validation_checkpoint_lock",
+    "static_false_motion_threshold_m": 0.02
+  },
+  "adaptations": [
+    "removed_Florence_and_visual_language_conditions",
+    "removed_action_generation_expert",
+    "smaller_dynamics_transformer",
+    "added_scene_point_history",
+    "simulation_oracle_query_positions",
+    "three_group_balanced_scene_loss",
+    "single_task_training_without_mixed_pretraining"
+  ],
+  "limitations": [
+    "unobserved_ball_spin_and_pin_axial_spin",
+    "command_plan_differs_from_realized_robot_motion",
+    "event_aligned_queries_use_retrospective_contact_index",
+    "source_cohort_excluded_no_robot_ball_contact_cases",
+    "reused_test_cohort_and_single_training_seed"
+  ]
+}

@@ -1,0 +1,737 @@
+{
+  "kind": "tokenizer_activation_and_optimization_audit",
+  "device": "cpu",
+  "optimizer_updates": 0,
+  "test_split_loaded": false,
+  "torch_version": "2.5.1",
+  "manifest_sha256": "092b92f0e7b89c483fb73d9c78f88a1bc86c09ed44f75ccce6366534a72ec104",
+  "audit_source_sha256": "be89747f7092681308554b1560cfda32e915910812b5c3cd7a52c15b5f22bd7b",
+  "model_source_sha256": "2b603297a50484def6473ba0e3847986eb4f129989b40de0afaf546512235d85",
+  "sample_rule": "64 equally spaced integer indices, torch.linspace(0,N-1,64).long(), over all training windows",
+  "training_window_indices": [
+    0,
+    35,
+    71,
+    107,
+    143,
+    179,
+    215,
+    251,
+    287,
+    323,
+    359,
+    395,
+    431,
+    467,
+    503,
+    539,
+    575,
+    611,
+    647,
+    683,
+    719,
+    755,
+    790,
+    826,
+    862,
+    898,
+    934,
+    970,
+    1006,
+    1042,
+    1078,
+    1114,
+    1150,
+    1186,
+    1222,
+    1258,
+    1294,
+    1330,
+    1366,
+    1402,
+    1438,
+    1474,
+    1510,
+    1545,
+    1581,
+    1617,
+    1653,
+    1689,
+    1725,
+    1761,
+    1797,
+    1833,
+    1869,
+    1905,
+    1941,
+    1977,
+    2013,
+    2049,
+    2085,
+    2121,
+    2157,
+    2193,
+    2229,
+    2265
+  ],
+  "training_files": [
+    {
+      "file": "seed0003-offset000.npz",
+      "sha256": "4e333d60133d61825aa9eb34aac992ca9b13e0ab16485126e318e02952cfc2a3"
+    },
+    {
+      "file": "seed0006-offset020.npz",
+      "sha256": "109a508e37b6e49ecf5acfc999086632b3d63dcf0c317a6d5f2863154c667189"
+    },
+    {
+      "file": "seed0009-offset050.npz",
+      "sha256": "6d05f8224c592987c3c1c3aeea5018b888b8cb33ef2045aa3e04a74a1a8457ea"
+    },
+    {
+      "file": "seed0012-offset080.npz",
+      "sha256": "19d6a23d7db827bd9dcc5b7a2d19bf7105c71bc13958f194bc5228b7a8398ac7"
+    },
+    {
+      "file": "seed0016-offset000.npz",
+      "sha256": "9910e1a4346eab612d6440e81c47b4e8b218d0b5c9996f07734ef76b9a1517a1"
+    },
+    {
+      "file": "seed0019-offset030.npz",
+      "sha256": "599e4fcbe54d2a0c14d45e2007523050961d319473f80b142fc73808e3c25b71"
+    },
+    {
+      "file": "seed0022-offset060.npz",
+      "sha256": "5d8b1fb52dd47657de2d23951ea180faea47e37da7a6d6778958926ac70cef1d"
+    },
+    {
+      "file": "seed0025-offset090.npz",
+      "sha256": "f39e79c817dd9fb3dcf4a2496b0812f962e4fdaed993e1e62a6c3a5f26178470"
+    },
+    {
+      "file": "seed0029-offset010.npz",
+      "sha256": "9257c0a56d0241a820ee6e6aba987d21bf5e05b6c8aa521265780832bcb6b94a"
+    },
+    {
+      "file": "seed0032-offset040.npz",
+      "sha256": "9c264352d3837d97b224e9aa5a7b0a16a483ef1f993feb77462c6a59d046eb53"
+    },
+    {
+      "file": "seed0035-offset070.npz",
+      "sha256": "2f80227f69a5ae17f9bfc80046c992216e5795024560f3e7c6e9aec5af0681eb"
+    },
+    {
+      "file": "seed0039-offset100.npz",
+      "sha256": "1533d445653beac4986be8cf0466c5e44ff124f607ba5d92668a56a9b67a0d17"
+    },
+    {
+      "file": "seed0043-offset020.npz",
+      "sha256": "3a20e9cebbc4db9c60e3cc68773e5f36626d49d289f3a1da6cf08f396f8a58ed"
+    },
+    {
+      "file": "seed0046-offset050.npz",
+      "sha256": "d34fd52467107d2261dda9f2507bc6df8078e58e802bbfb6a5ff8c26ab46feeb"
+    },
+    {
+      "file": "seed0049-offset080.npz",
+      "sha256": "dfec77276a66a66ee37907eb5ba05675412226918574ae6f26253d880383951e"
+    },
+    {
+      "file": "seed1002-offset000.npz",
+      "sha256": "9d95e7c43a4c67e7ef04aa1e109ab28b5bd93ae1578e61c006a3ebc978cbd9c1"
+    },
+    {
+      "file": "seed1005-offset030.npz",
+      "sha256": "ba40de0e578f6cc865133bb2aaf7cc04d3247bd95413c0c81f5beec25a96f0e6"
+    },
+    {
+      "file": "seed1008-offset060.npz",
+      "sha256": "32edd23ea7d3377d7a293975740286d999d4bd23ba1a3cca68b696b6f1fbe95a"
+    },
+    {
+      "file": "seed1011-offset090.npz",
+      "sha256": "8ff52f23ee35d9d4310104cd9fc6394dc741df45904019eb610d1a070e359b82"
+    },
+    {
+      "file": "seed1015-offset010.npz",
+      "sha256": "53c565c05f6019c59e9fe12519ff98874d1b1880b0ce8962797e5767b337184c"
+    },
+    {
+      "file": "seed1018-offset040.npz",
+      "sha256": "0e4df84846ff9a5ff76743e98bbe71dfbe552e405b476977931db27327760086"
+    },
+    {
+      "file": "seed1021-offset070.npz",
+      "sha256": "3e7f61b80a4e6b3a6fb1dfe6f11e138b14df40812abba3a2527bdcb0ca1f7c05"
+    },
+    {
+      "file": "seed1024-offset090.npz",
+      "sha256": "fdf9174465caa45fe9b6503794691ca54cdc1e05dcfe523a8035229569915cd3"
+    },
+    {
+      "file": "seed1028-offset010.npz",
+      "sha256": "092b9c0901bb862de651e28ec38a666b1eea9914deb60b1bd1713aae5769fadd"
+    },
+    {
+      "file": "seed1031-offset040.npz",
+      "sha256": "e2c64fe68cc20d8f5b6700c19e4e7e6ca59aad926f8ffe27d39d7d8ee020836f"
+    },
+    {
+      "file": "seed1034-offset070.npz",
+      "sha256": "2846ced3a9df7eb953bdd0ad4f78aed129c99d03c2b47ad9b5f9ffde56217195"
+    },
+    {
+      "file": "seed1037-offset100.npz",
+      "sha256": "1d1197fa2c992fffb18365cef9488b4911688f34015bdbc7bc2c497878ed974b"
+    },
+    {
+      "file": "seed1041-offset020.npz",
+      "sha256": "4f69cf1d830a0376c6aaa61373123e1901c7fc248bee226d6e6f76b07373cf7d"
+    },
+    {
+      "file": "seed1044-offset050.npz",
+      "sha256": "5242301bbe6a5b42ce9b746aa3086817b6baebf0795a278e452bac065186448d"
+    },
+    {
+      "file": "seed1047-offset080.npz",
+      "sha256": "4b39db315c2bfefeddd5b95e55ac309af64639b0c52881ce4d44e941ed3db886"
+    },
+    {
+      "file": "seed1051-offset000.npz",
+      "sha256": "928882c16df0cc62b3f9d3d99375856fcfad49360ea6169f2aba37bcee632781"
+    },
+    {
+      "file": "seed1054-offset030.npz",
+      "sha256": "80db19d17f45184e3171f13c453f02b490f0b46bb9fcdee0d51975ff2e10f133"
+    },
+    {
+      "file": "seed1057-offset060.npz",
+      "sha256": "081c5ecf444a4f01ef828d2e0d0f084b6d335cb0a930e969fc9cdce31427d2d8"
+    },
+    {
+      "file": "seed1060-offset090.npz",
+      "sha256": "c79af09b1a082f36e0f0c7fedaf347b32a2aac3f8eb459cd5a0fab4c65ade564"
+    },
+    {
+      "file": "seed1064-offset010.npz",
+      "sha256": "24ed5011440b2092ad572de04a07dc5bbcfc869844280590893badff2053df16"
+    },
+    {
+      "file": "seed1067-offset040.npz",
+      "sha256": "cd5fdeddf1971f2c3efb113bc7ef5b1b25cf448cf1d4ab2e7b410645bd39160c"
+    },
+    {
+      "file": "seed1070-offset070.npz",
+      "sha256": "3e862cf17c0ca5d34e75166809d468eb93a7269585a180d809a55042d8c0ee6e"
+    },
+    {
+      "file": "seed1073-offset100.npz",
+      "sha256": "ed985699c5089679a119254e5eb3cfbbcdba5593088252d0e9fa618250a3ef91"
+    },
+    {
+      "file": "seed1077-offset020.npz",
+      "sha256": "09e84f53425259bf6983fc95e84b25e0b8421ad8d197602e8c3c9d6df6d94c7e"
+    },
+    {
+      "file": "seed1080-offset050.npz",
+      "sha256": "24a5ccb7209198bbb87eb7eb5b02483145c20604ee3225d96ddca84f9b669037"
+    },
+    {
+      "file": "seed1083-offset080.npz",
+      "sha256": "bae310702e2b4667328e4e0bd63f41aea52470257cd4da9adb1fa8fbc5823ee6"
+    },
+    {
+      "file": "seed1087-offset000.npz",
+      "sha256": "2fc5063726c02d0a9db20605e43771372e1d86eade0bd9a74094a8c9cf5a66d1"
+    },
+    {
+      "file": "seed1090-offset030.npz",
+      "sha256": "f8957751567e79067e0a1945d80e13d1e8790fd79f2f29221fd30f884b895a15"
+    },
+    {
+      "file": "seed1093-offset050.npz",
+      "sha256": "5144d8aec7facd89d7fdfa3e6c8f672a5594c97ca95ca18e440a7d3776eaaec6"
+    },
+    {
+      "file": "seed1096-offset080.npz",
+      "sha256": "81e59e13418a5d6eec4beabd61813b53c85072c9f375608d5b351c42e4a5fef9"
+    },
+    {
+      "file": "seed1100-offset000.npz",
+      "sha256": "1bc69604a8868d6d4eaa1d150fe877e8f870d61cfa485a4ccbf9934c538a8042"
+    },
+    {
+      "file": "seed1103-offset030.npz",
+      "sha256": "15283040be555e02b721f7ca84ab6363f437488f4b86c3073dab2dd9ae5b34ae"
+    },
+    {
+      "file": "seed1106-offset060.npz",
+      "sha256": "95190c5c83212102f99c422d7ffa98e4f9e3e6b504f9e937ccca392fa8c2c377"
+    },
+    {
+      "file": "seed1109-offset090.npz",
+      "sha256": "36c54c2491071262a92aaaca308874ad04553f1432c467dde076953e44f78a80"
+    },
+    {
+      "file": "seed1114-offset010.npz",
+      "sha256": "18a20ab506cbf5c8287b44533f7362044428b0fdd75e0a615787776e4eb8f528"
+    },
+    {
+      "file": "seed1117-offset040.npz",
+      "sha256": "9be5678aaf0615fc9100da9fd7557e7d79b0e158cb5406a5b6a636ed08f522b7"
+    },
+    {
+      "file": "seed1120-offset070.npz",
+      "sha256": "96cc81f0bbce122f5be5f3b09b4a8513547864b4fdb4439d82d2ffb3bdb9113b"
+    },
+    {
+      "file": "seed1123-offset100.npz",
+      "sha256": "69116afad9b4e87090f55b7768dcee63573bc35b853537684a8f3eced0f0eb4e"
+    },
+    {
+      "file": "seed1127-offset020.npz",
+      "sha256": "2447d9bc9e53a07fe492981d0c17c2572429e43a7e170af589fa3e7464509ee5"
+    },
+    {
+      "file": "seed1130-offset050.npz",
+      "sha256": "8174f0677ac33cae9cac9d10dc2e17e7199517d0307d10be23d59fdf5031e4e2"
+    },
+    {
+      "file": "seed1133-offset080.npz",
+      "sha256": "c6c0f121b5be39d98c79fad56c1ecfaf329e92c1b635a36c2f083fe8aee3e50a"
+    },
+    {
+      "file": "seed1137-offset000.npz",
+      "sha256": "70f9fb63076ef529651261a990c0f232618fd15e9f58ff146289664c52401ac5"
+    },
+    {
+      "file": "seed1140-offset030.npz",
+      "sha256": "d70baf9e25f5faf8941076b4af3fa35b739ca39c26c01d2e5bd078794c5f5cd6"
+    },
+    {
+      "file": "seed1143-offset060.npz",
+      "sha256": "a60951c1e14b3fbd76751a125236a6e0ad3634ed8f4472b8f12b968d0b880abd"
+    },
+    {
+      "file": "seed1146-offset090.npz",
+      "sha256": "b061a7359c6213759be6fc7982dcbf52144f270a08fc8297ce93d3c702e8b6bc"
+    },
+    {
+      "file": "seed1150-offset010.npz",
+      "sha256": "d7892315cbd6ac1d9fb1f590bcde7f2a6599fbd26bd943210e26c21966c96267"
+    },
+    {
+      "file": "seed1153-offset040.npz",
+      "sha256": "527242952bdfc3b64855b01819c95e0b0e8d2f0f1e7f7610f01386abaf67e708"
+    },
+    {
+      "file": "seed1156-offset070.npz",
+      "sha256": "f0c81f3d9e10ba63dd500f2b1b1ba945ae70c5153623ca94c84e9b7c472742fe"
+    },
+    {
+      "file": "seed1159-offset100.npz",
+      "sha256": "58aba0483b452dfe0c32e6e977761f1b7b3f1933f5109ed7a3215a1ab49dffe4"
+    }
+  ],
+  "checkpoints": {
+    "best.pt": {
+      "checkpoint": ".runtime/pointwam-bowling/tokenizer/best.pt",
+      "sha256": "264d03e8f13f60f31a80547c42d528fdcc7c9fafb5ba9cc6fc9d5a46ed1cd64a",
+      "step": 2000,
+      "optimizer_param_groups": [
+        {
+          "lr": 0.001,
+          "weight_decay": 0.0,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "eps": 1e-08
+        }
+      ],
+      "output_bias_xyz_m": [
+        0.03593740239739418,
+        0.007417986635118723,
+        -0.039849672466516495
+      ],
+      "streams": {
+        "scene_history": {
+          "input_hidden_absmax": 0.9169696569442749,
+          "latent_absmax": 3.2983391284942627,
+          "latent_l2_mean": 10.225672721862793,
+          "encoder_scale_absmax": 3.9471538066864014,
+          "encoder_shift_absmax": 0.606131911277771,
+          "decoder_scale_absmax": 5.18337345123291,
+          "decoder_shift_absmax": 1.18384850025177,
+          "decoder_preactivation_min": -4.183364391326904,
+          "decoder_preactivation_max": 2.1122066974639893,
+          "decoder_preactivation_below_minus5_fraction": 0.0,
+          "decoder_hidden_absmax": 2.0755929946899414,
+          "decoder_hidden_exact_zero_fraction": 0.0,
+          "reconstructed_displacement_std_xyz_m": [
+            0.00777796795591712,
+            0.0360381081700325,
+            0.0058912839740514755
+          ],
+          "mean_reconstruction_error_m": 0.004565314389765263
+        },
+        "robot_history": {
+          "input_hidden_absmax": 0.621451735496521,
+          "latent_absmax": 2.372906446456909,
+          "latent_l2_mean": 10.44706916809082,
+          "encoder_scale_absmax": 3.9471538066864014,
+          "encoder_shift_absmax": 0.606131911277771,
+          "decoder_scale_absmax": 5.18337345123291,
+          "decoder_shift_absmax": 1.18384850025177,
+          "decoder_preactivation_min": -2.677232027053833,
+          "decoder_preactivation_max": 1.3756048679351807,
+          "decoder_preactivation_below_minus5_fraction": 0.0,
+          "decoder_hidden_absmax": 1.2594046592712402,
+          "decoder_hidden_exact_zero_fraction": 0.0,
+          "reconstructed_displacement_std_xyz_m": [
+            0.029062066227197647,
+            0.08215980976819992,
+            0.027286313474178314
+          ],
+          "mean_reconstruction_error_m": 0.016090892255306244
+        },
+        "robot_future": {
+          "input_hidden_absmax": 0.8118284940719604,
+          "latent_absmax": 5.429220199584961,
+          "latent_l2_mean": 14.084294319152832,
+          "encoder_scale_absmax": 2.8585503101348877,
+          "encoder_shift_absmax": 0.5840091705322266,
+          "decoder_scale_absmax": 4.360878944396973,
+          "decoder_shift_absmax": 1.3277175426483154,
+          "decoder_preactivation_min": -2.5468475818634033,
+          "decoder_preactivation_max": 2.6984167098999023,
+          "decoder_preactivation_below_minus5_fraction": 0.0,
+          "decoder_hidden_absmax": 2.689016580581665,
+          "decoder_hidden_exact_zero_fraction": 0.0,
+          "reconstructed_displacement_std_xyz_m": [
+            0.07757139205932617,
+            0.13905863463878632,
+            0.01716584712266922
+          ],
+          "mean_reconstruction_error_m": 0.016179971396923065
+        },
+        "scene_future": {
+          "input_hidden_absmax": 1.6456743478775024,
+          "latent_absmax": 8.045334815979004,
+          "latent_l2_mean": 13.029322624206543,
+          "encoder_scale_absmax": 2.8585503101348877,
+          "encoder_shift_absmax": 0.5840091705322266,
+          "decoder_scale_absmax": 4.360878944396973,
+          "decoder_shift_absmax": 1.3277175426483154,
+          "decoder_preactivation_min": -4.142011642456055,
+          "decoder_preactivation_max": 3.3214364051818848,
+          "decoder_preactivation_below_minus5_fraction": 0.0,
+          "decoder_hidden_absmax": 3.31994891166687,
+          "decoder_hidden_exact_zero_fraction": 0.0,
+          "reconstructed_displacement_std_xyz_m": [
+            0.03072911873459816,
+            0.08173443377017975,
+            0.02473587356507778
+          ],
+          "mean_reconstruction_error_m": 0.01186838373541832
+        }
+      },
+      "grouped_training_loss_m2": 0.00013198664237279445,
+      "gradient_l2": {
+        "input_mlp": 0.0041150678880512714,
+        "encoder_time": 0.005477488972246647,
+        "decoder_time": 0.0020239728037267923,
+        "output_mlp": 0.008569866418838501
+      },
+      "gradient_l2_total": 0.011156869879644376,
+      "stored_full_validation_diagnostics": {
+        "passed": false,
+        "targets": {
+          "ADE_m": 0.001,
+          "FDE_m": 0.003
+        },
+        "groups": {
+          "scene_history/ball": {
+            "ADE_m": 0.003988635540008545,
+            "FDE_m": 0.0028203879483044147,
+            "trajectories": 16
+          },
+          "scene_history/static_pins": {
+            "ADE_m": 0.003987449705600738,
+            "FDE_m": 0.0028191857039928437,
+            "trajectories": 320
+          },
+          "robot_history/all": {
+            "ADE_m": 0.014319863319396973,
+            "FDE_m": 0.017130738496780394,
+            "trajectories": 320
+          },
+          "robot_future/all": {
+            "ADE_m": 0.021217875480651856,
+            "FDE_m": 0.03176243901252747,
+            "trajectories": 320
+          },
+          "scene_future/ball": {
+            "ADE_m": 0.01611380875110626,
+            "FDE_m": 0.032440152019262314,
+            "trajectories": 16
+          },
+          "scene_future/moving_pins": {
+            "ADE_m": 0.01304671863714854,
+            "FDE_m": 0.03701058278481165,
+            "trajectories": 24
+          },
+          "scene_future/static_pins": {
+            "ADE_m": 0.007587814331054687,
+            "FDE_m": 0.005507294390652631,
+            "trajectories": 296
+          }
+        },
+        "meaning": "engineering_diagnostic_not_paper_requirement"
+      }
+    },
+    "latest.pt": {
+      "checkpoint": ".runtime/pointwam-bowling/tokenizer/latest.pt",
+      "sha256": "ddf2fb6daf01832d5c7eda5bd00b1b4d10df729621d311655ec0525211734d46",
+      "step": 5000,
+      "optimizer_param_groups": [
+        {
+          "lr": 0.001,
+          "weight_decay": 0.0,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "eps": 1e-08
+        }
+      ],
+      "output_bias_xyz_m": [
+        -0.002233778592199087,
+        0.05999445170164108,
+        -0.008591540157794952
+      ],
+      "streams": {
+        "scene_history": {
+          "input_hidden_absmax": 2.2247273921966553,
+          "latent_absmax": 244.20216369628906,
+          "latent_l2_mean": 669.6416015625,
+          "encoder_scale_absmax": 49.6609992980957,
+          "encoder_shift_absmax": 31.870012283325195,
+          "decoder_scale_absmax": 44.845680236816406,
+          "decoder_shift_absmax": 36.8908576965332,
+          "decoder_preactivation_min": -6991.14599609375,
+          "decoder_preactivation_max": -84.58547973632812,
+          "decoder_preactivation_below_minus5_fraction": 1.0,
+          "decoder_hidden_absmax": 0.0,
+          "decoder_hidden_exact_zero_fraction": 1.0,
+          "reconstructed_displacement_std_xyz_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean_reconstruction_error_m": 0.06227851286530495
+        },
+        "robot_history": {
+          "input_hidden_absmax": 2.211181879043579,
+          "latent_absmax": 244.09664916992188,
+          "latent_l2_mean": 667.3818969726562,
+          "encoder_scale_absmax": 49.6609992980957,
+          "encoder_shift_absmax": 31.870012283325195,
+          "decoder_scale_absmax": 44.845680236816406,
+          "decoder_shift_absmax": 36.8908576965332,
+          "decoder_preactivation_min": -6985.109375,
+          "decoder_preactivation_max": -92.11597442626953,
+          "decoder_preactivation_below_minus5_fraction": 1.0,
+          "decoder_hidden_absmax": 0.0,
+          "decoder_hidden_exact_zero_fraction": 1.0,
+          "reconstructed_displacement_std_xyz_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "mean_reconstruction_error_m": 0.08549784868955612
+        },
+        "robot_future": {
+          "input_hidden_absmax": 2.2716047763824463,
+          "latent_absmax": 127.42505645751953,
+          "latent_l2_mean": 428.71588134765625,
+          "encoder_scale_absmax": 13.829957008361816,
+          "encoder_shift_absmax": 16.99209976196289,
+          "decoder_scale_absmax": 17.379465103149414,
+          "decoder_shift_absmax": 15.738971710205078,
+          "decoder_preactivation_min": -1556.3853759765625,
+          "decoder_preactivation_max": 52.610137939453125,
+          "decoder_preactivation_below_minus5_fraction": 0.997150719165802,
+          "decoder_hidden_absmax": 52.610137939453125,
+          "decoder_hidden_exact_zero_fraction": 0.9970988631248474,
+          "reconstructed_displacement_std_xyz_m": [
+            0.010514327324926853,
+            0.13039010763168335,
+            0.002581104403361678
+          ],
+          "mean_reconstruction_error_m": 0.07687699794769287
+        },
+        "scene_future": {
+          "input_hidden_absmax": 2.300236463546753,
+          "latent_absmax": 128.09713745117188,
+          "latent_l2_mean": 426.482177734375,
+          "encoder_scale_absmax": 13.829957008361816,
+          "encoder_shift_absmax": 16.99209976196289,
+          "decoder_scale_absmax": 17.379465103149414,
+          "decoder_shift_absmax": 15.738971710205078,
+          "decoder_preactivation_min": -1566.5653076171875,
+          "decoder_preactivation_max": 105.99998474121094,
+          "decoder_preactivation_below_minus5_fraction": 0.9995710253715515,
+          "decoder_hidden_absmax": 105.99998474121094,
+          "decoder_hidden_exact_zero_fraction": 0.9993986487388611,
+          "reconstructed_displacement_std_xyz_m": [
+            0.005480225197970867,
+            0.06796128302812576,
+            0.0013453102437779307
+          ],
+          "mean_reconstruction_error_m": 0.06659112870693207
+        }
+      },
+      "grouped_training_loss_m2": 0.0031910950783640146,
+      "gradient_l2": {
+        "input_mlp": 0.0005332916043698788,
+        "encoder_time": 0.0013102516531944275,
+        "decoder_time": 0.0015207217074930668,
+        "output_mlp": 0.08209771662950516
+      },
+      "gradient_l2_total": 0.08212398449673614,
+      "stored_full_validation_diagnostics": {
+        "passed": false,
+        "targets": {
+          "ADE_m": 0.001,
+          "FDE_m": 0.003
+        },
+        "groups": {
+          "scene_history/ball": {
+            "ADE_m": 0.06064765453338623,
+            "FDE_m": 0.06064765900373459,
+            "trajectories": 16
+          },
+          "scene_history/static_pins": {
+            "ADE_m": 0.06064815998077393,
+            "FDE_m": 0.060647040605545044,
+            "trajectories": 320
+          },
+          "robot_history/all": {
+            "ADE_m": 0.059917030334472654,
+            "FDE_m": 0.049297010898590087,
+            "trajectories": 320
+          },
+          "robot_future/all": {
+            "ADE_m": 0.06664929389953614,
+            "FDE_m": 0.11158518791198731,
+            "trajectories": 320
+          },
+          "scene_future/ball": {
+            "ADE_m": 0.07696491479873657,
+            "FDE_m": 0.15913572907447815,
+            "trajectories": 16
+          },
+          "scene_future/moving_pins": {
+            "ADE_m": 0.061192623774210614,
+            "FDE_m": 0.0694827139377594,
+            "trajectories": 24
+          },
+          "scene_future/static_pins": {
+            "ADE_m": 0.06064780982764992,
+            "FDE_m": 0.060609430880159944,
+            "trajectories": 296
+          }
+        },
+        "meaning": "engineering_diagnostic_not_paper_requirement"
+      }
+    }
+  },
+  "training_log_sha256": "8c30eed2a6ee3a818525aa720cc7b8ed0a51595c1d7094e78888556900fe83e0",
+  "training_curve_1950_to_2550": [
+    {
+      "stage": "tokenizer",
+      "step": 1950,
+      "loss_m2": 0.00013789511285722256,
+      "elapsed_s": 23.081191295059398
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2000,
+      "loss_m2": 0.00014327169628813863,
+      "elapsed_s": 23.651149447076023
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2050,
+      "loss_m2": 0.00017437869973946363,
+      "elapsed_s": 24.291165160015225
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2100,
+      "loss_m2": 0.0001224141742568463,
+      "elapsed_s": 24.880567657062784
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2150,
+      "loss_m2": 0.00010905570525210351,
+      "elapsed_s": 25.47932303091511
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2200,
+      "loss_m2": 0.00010412578558316454,
+      "elapsed_s": 26.072059451136738
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2250,
+      "loss_m2": 9.801156556932256e-05,
+      "elapsed_s": 26.6558322859928
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2300,
+      "loss_m2": 0.00011012572213076055,
+      "elapsed_s": 27.257455740123987
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2350,
+      "loss_m2": 7.903404184617102e-05,
+      "elapsed_s": 27.86803834908642
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2400,
+      "loss_m2": 0.009232411161065102,
+      "elapsed_s": 28.43373657297343
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2450,
+      "loss_m2": 0.0035353731364011765,
+      "elapsed_s": 29.002086220076308
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2500,
+      "loss_m2": 0.003907877020537853,
+      "elapsed_s": 29.572596153942868
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2550,
+      "loss_m2": 0.003591998713091016,
+      "elapsed_s": 30.168661070987582
+    }
+  ],
+  "interpretation": [
+    "Large negative output-MLP preactivations can make float32 GELU outputs exactly zero, leaving only its final XYZ bias.",
+    "This audit identifies an observed saturation mechanism in the saved checkpoints; it does not prove the learning rate is its unique cause.",
+    "sqrt(valid_count) pooling and both FiLM modules remain unchanged. No displacement clipping, smoothing, rigid repair or parameter update occurs.",
+    "Gradient norms are measured on the disclosed fixed training batch, not reconstructed historical gradient logs at the failure step.",
+    "The training log retains only every 50 updates; without intermediate checkpoints the exact first unstable update cannot be identified."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "kind": "full_trajectory_autoencoder_reconstruction_diagnostic",
+  "causal_prediction": false,
+  "uses_future_ground_truth": true,
+  "cases": 16,
+  "streams_per_case": 4,
+  "raw_arrays_verified": 256,
+  "scalar_values_verified": 122976,
+  "maximum_metric_discrepancy_m": 1.0408340855860843e-17,
+  "all_raw_coordinates_exact": true,
+  "all_curves_exact": true,
+  "all_groups_exact": true,
+  "shared_camera_bounds_include_every_coordinate": true,
+  "selected_step": 2000,
+  "checkpoint_sha256": "39b5b89848bbfd0b3a0822c8653c20048160a953ff82677c305c36f8d5341fa4",
+  "experiment": "unitas_sparse_bowling_v1",
+  "tokenizer_learning_rate": 0.001,
+  "related": {
+    "url": "lr-probe/",
+    "label": "Independent lower-learning-rate probe (1e-4)"
+  },
+  "optimization_audit_verified": {
+    "sha256": "265b466685830d303f3a1a25a32c915b8f551e82f10eb8dc3438e99181439167",
+    "displayed_values_exact": true,
+    "latest_checkpoint_identity_checked": true
+  },
+  "html_sha256": "df2f42ea303ce8ca61cf1b0d60b7d8cf9cf700b8bba8ecf9ac5682be1413b403",
+  "method": "HTML JSON read-back versus diagnostic NPZ; independent vectorized error recomputation against scalar-render metrics"
+}

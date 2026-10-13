@@ -1,0 +1,353 @@
+{
+  "kind": "full_trajectory_autoencoder_reconstruction_diagnostic",
+  "uses_future_ground_truth": true,
+  "causal_prediction": false,
+  "device": "cpu",
+  "test_split_loaded": false,
+  "training_or_parameter_updates": 0,
+  "prediction_postprocessing": "none",
+  "checkpoint_sha256": "39b5b89848bbfd0b3a0822c8653c20048160a953ff82677c305c36f8d5341fa4",
+  "selected_step": 2000,
+  "training_steps_completed": 5000,
+  "source": {
+    "diagnostic_sha256": "025087a1801adae57c29ac5723237e35fd7fda94d079f512a65f4a9f3d28dda0",
+    "torch": "2.5.1",
+    "numpy": "1.26.4",
+    "python": "3.12.6 (main, Sep  6 2024, 19:03:47) [Clang 15.0.0 (clang-1500.3.9.4)]"
+  },
+  "manifest_sha256": "092b92f0e7b89c483fb73d9c78f88a1bc86c09ed44f75ccce6366534a72ec104",
+  "train_windows": 2266,
+  "validation_windows": 16,
+  "diagnostics": {
+    "train": {
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.012938021855972977,
+          "FDE_m": 0.007305679956265287,
+          "trajectories": 2266
+        },
+        "scene_history/moving_pins": {
+          "ADE_m": 0.016722613062624257,
+          "FDE_m": 0.020405614771702475,
+          "trajectories": 524
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.003989095549060144,
+          "FDE_m": 0.0028212260764585518,
+          "trajectories": 44796
+        },
+        "robot_history/all": {
+          "ADE_m": 0.016431471007331114,
+          "FDE_m": 0.011848758841023863,
+          "trajectories": 45320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.016432178392940564,
+          "FDE_m": 0.023278388720324686,
+          "trajectories": 45320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.01987703860805609,
+          "FDE_m": 0.03681566703666761,
+          "trajectories": 2266
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.02328842115382262,
+          "FDE_m": 0.03416739149091632,
+          "trajectories": 9556
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.007593112119344667,
+          "FDE_m": 0.005520790832019495,
+          "trajectories": 35764
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    "validation": {
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.003988645225763321,
+          "FDE_m": 0.002820389112457633,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.0039874640107154845,
+          "FDE_m": 0.002819203771650791,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.01431986927986145,
+          "FDE_m": 0.017130741477012636,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.02121788501739502,
+          "FDE_m": 0.031762391328811646,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.016113811731338502,
+          "FDE_m": 0.032440222799777985,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.013046719630559285,
+          "FDE_m": 0.03701057781775793,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.007587815619803763,
+          "FDE_m": 0.005507321373836414,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    }
+  },
+  "validation_reconstructions": [
+    {
+      "episode_id": "bowling-seed0051",
+      "seed": 51,
+      "file": "validation_reconstructions/bowling-seed0051.npz",
+      "sha256": "180249bff8b7810b80bde175d24db9297b03995647a864a787019470f7cdf8f8",
+      "source_file": "seed0051-offset000.npz",
+      "ball_ADE_m": 0.016920417547225952,
+      "ball_FDE_m": 0.0356457345187664,
+      "all_pin_ADE_m": 0.007588135078549385,
+      "all_pin_FDE_m": 0.005503474269062281,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0052",
+      "seed": 52,
+      "file": "validation_reconstructions/bowling-seed0052.npz",
+      "sha256": "8244e516d36e4274f46deb0a4039141c171cd2b7a24fc3e88b19e630aa8666b2",
+      "source_file": "seed0052-offset000.npz",
+      "ball_ADE_m": 0.012684809044003487,
+      "ball_FDE_m": 0.025190962478518486,
+      "all_pin_ADE_m": 0.0075926873832941055,
+      "all_pin_FDE_m": 0.005523502826690674,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0053",
+      "seed": 53,
+      "file": "validation_reconstructions/bowling-seed0053.npz",
+      "sha256": "0e7e206ac2bc3aae49dfc6a4db27b3b5f2c85307b384619208f03c4c868089d1",
+      "source_file": "seed0053-offset000.npz",
+      "ball_ADE_m": 0.011918557807803154,
+      "ball_FDE_m": 0.021578602492809296,
+      "all_pin_ADE_m": 0.0075814248993992805,
+      "all_pin_FDE_m": 0.005505903623998165,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0054",
+      "seed": 54,
+      "file": "validation_reconstructions/bowling-seed0054.npz",
+      "sha256": "1e288fc4502ed6b77ab637c49181527579db6268c93e59785adf4d36ff86019a",
+      "source_file": "seed0054-offset000.npz",
+      "ball_ADE_m": 0.013262754306197166,
+      "ball_FDE_m": 0.021165480837225914,
+      "all_pin_ADE_m": 0.0075780050829052925,
+      "all_pin_FDE_m": 0.005514784716069698,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0055",
+      "seed": 55,
+      "file": "validation_reconstructions/bowling-seed0055.npz",
+      "sha256": "7eaef3c104fa48497f1d696d4ad35bc1d875bb7f38d4deb851f93581c0e0c966",
+      "source_file": "seed0055-offset000.npz",
+      "ball_ADE_m": 0.020358670502901077,
+      "ball_FDE_m": 0.03352198004722595,
+      "all_pin_ADE_m": 0.008696356788277626,
+      "all_pin_FDE_m": 0.014642536640167236,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0056",
+      "seed": 56,
+      "file": "validation_reconstructions/bowling-seed0056.npz",
+      "sha256": "7d0f0b60c68ee19ca868d73282a6b95bf1eb55d617beddc94070798c413275cb",
+      "source_file": "seed0056-offset000.npz",
+      "ball_ADE_m": 0.012159080244600773,
+      "ball_FDE_m": 0.018173351883888245,
+      "all_pin_ADE_m": 0.007594657596200705,
+      "all_pin_FDE_m": 0.005525025073438883,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0057",
+      "seed": 57,
+      "file": "validation_reconstructions/bowling-seed0057.npz",
+      "sha256": "7b7d98656d6b532bc1ac49c1a40ff5c863f7832da30d7db6c1a128a9b9f93fa0",
+      "source_file": "seed0057-offset000.npz",
+      "ball_ADE_m": 0.01110816653817892,
+      "ball_FDE_m": 0.020990492776036263,
+      "all_pin_ADE_m": 0.007588190957903862,
+      "all_pin_FDE_m": 0.0055300453677773476,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0058",
+      "seed": 58,
+      "file": "validation_reconstructions/bowling-seed0058.npz",
+      "sha256": "2c0a1bd1a71886181f73bacdff5c198dffd735f0f38e3ec7927b89ba2db16f65",
+      "source_file": "seed0058-offset000.npz",
+      "ball_ADE_m": 0.017216064035892487,
+      "ball_FDE_m": 0.03875052183866501,
+      "all_pin_ADE_m": 0.007585406303405762,
+      "all_pin_FDE_m": 0.005529211368411779,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0059",
+      "seed": 59,
+      "file": "validation_reconstructions/bowling-seed0059.npz",
+      "sha256": "37ee4e32c4c88890f93aa0e2e08d71636a5bb6a125fc8437a7fc93b88c60bd81",
+      "source_file": "seed0059-offset000.npz",
+      "ball_ADE_m": 0.014361756853759289,
+      "ball_FDE_m": 0.022853748872876167,
+      "all_pin_ADE_m": 0.007586427498608828,
+      "all_pin_FDE_m": 0.005512203089892864,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0060",
+      "seed": 60,
+      "file": "validation_reconstructions/bowling-seed0060.npz",
+      "sha256": "129d7c31a9320b196fd8e09886493de2ea4b9970d85b45cd63e83c4958ed1f43",
+      "source_file": "seed0060-offset000.npz",
+      "ball_ADE_m": 0.009562796913087368,
+      "ball_FDE_m": 0.013787430711090565,
+      "all_pin_ADE_m": 0.007588714361190796,
+      "all_pin_FDE_m": 0.0055310288444161415,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0061",
+      "seed": 61,
+      "file": "validation_reconstructions/bowling-seed0061.npz",
+      "sha256": "3b128183673f0b8cd2dae78114691c8b5367aad061efe62b3f3349e0d214f9d1",
+      "source_file": "seed0061-offset000.npz",
+      "ball_ADE_m": 0.011027857661247253,
+      "ball_FDE_m": 0.018523670732975006,
+      "all_pin_ADE_m": 0.00758514367043972,
+      "all_pin_FDE_m": 0.005526168737560511,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0062",
+      "seed": 62,
+      "file": "validation_reconstructions/bowling-seed0062.npz",
+      "sha256": "fd2c317fad90475512825d147b58089164af3e3557dcf3111f8cde28d78a82e5",
+      "source_file": "seed0062-offset000.npz",
+      "ball_ADE_m": 0.014857426285743713,
+      "ball_FDE_m": 0.05034680292010307,
+      "all_pin_ADE_m": 0.01211014948785305,
+      "all_pin_FDE_m": 0.02585018053650856,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0063",
+      "seed": 63,
+      "file": "validation_reconstructions/bowling-seed0063.npz",
+      "sha256": "8f28b50cbbee398b87d590ab5f8b44e8268d4656330c6def7ca3de17d4d2de91",
+      "source_file": "seed0063-offset000.npz",
+      "ball_ADE_m": 0.030115699395537376,
+      "ball_FDE_m": 0.05801819637417793,
+      "all_pin_ADE_m": 0.008519127033650875,
+      "all_pin_FDE_m": 0.013753427192568779,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0064",
+      "seed": 64,
+      "file": "validation_reconstructions/bowling-seed0064.npz",
+      "sha256": "073bd963f811e35dd55d03a550c8fe88b7fe21ba77d5a1b790b11d2ef1e4cf9d",
+      "source_file": "seed0064-offset000.npz",
+      "ball_ADE_m": 0.012343088164925575,
+      "ball_FDE_m": 0.03825990855693817,
+      "all_pin_ADE_m": 0.007585798390209675,
+      "all_pin_FDE_m": 0.005525738932192326,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0065",
+      "seed": 65,
+      "file": "validation_reconstructions/bowling-seed0065.npz",
+      "sha256": "4bf822e63b71d0b821d92a1ec1643308084331f155d19b161a9d29ab7b0b0377",
+      "source_file": "seed0065-offset000.npz",
+      "ball_ADE_m": 0.00996318832039833,
+      "ball_FDE_m": 0.008565608412027359,
+      "all_pin_ADE_m": 0.007585493382066488,
+      "all_pin_FDE_m": 0.005510910414159298,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    },
+    {
+      "episode_id": "bowling-seed0066",
+      "seed": 66,
+      "file": "validation_reconstructions/bowling-seed0066.npz",
+      "sha256": "3324d45eb293404833a029c3d7b114ade3a52a92509ab546f6ce49ced50f1f12",
+      "source_file": "seed0066-offset000.npz",
+      "ball_ADE_m": 0.03996066376566887,
+      "ball_FDE_m": 0.09367106109857559,
+      "all_pin_ADE_m": 0.007590022869408131,
+      "all_pin_FDE_m": 0.005436918698251247,
+      "uses_future_ground_truth": true,
+      "causal_prediction": false
+    }
+  ],
+  "saved_latent_statistics": {
+    "fitted": true,
+    "std_min": 0.03442437946796417,
+    "std_max": 2.001807928085327,
+    "channels_at_std_floor": 0,
+    "checkpoint_statistics_metadata": {
+      "split": "train",
+      "trajectory_count": 185812,
+      "low_variance_channels": 0,
+      "standard_deviation_min": 0.03442438018071198,
+      "standard_deviation_max": 2.001807866159111
+    }
+  },
+  "bottleneck_notes": [
+    "These reconstructions encode the entire ground-truth future. They measure the fitted tokenizer, not future prediction ability.",
+    "A poor tokenizer reconstruction establishes a limitation of this checkpoint and training recipe; it does not establish a model-family capacity limit.",
+    "Encoder-decoder reconstruction error is not a rigorous lower bound for every dynamics output: a dynamics model could choose a different decoder latent.",
+    "The 256-dimensional latent exceeds the 20x3=60 future coordinates, so dimension counting alone does not imply a compression bottleneck.",
+    "FiLM spectra characterize time-feature conditioning. Centered spectra isolate timestamp variation from a dominant constant component.",
+    "At a fixed timestamp grid, summed encoder FiLM shifts are shared across trajectories; their temporal rank alone does not demonstrate order-sensitive encoding.",
+    "Local reconstruction Jacobians can reveal locally suppressed temporal directions, but three probes cannot establish global invertibility or impossibility.",
+    "If train and validation reconstruction both fail, examine fitting/conditioning before interpreting a dynamics failure as generalization failure.",
+    "Historical displacements are current-minus-past and reconstructed past positions use subtraction. No rigid projection, smoothing or GT correction is applied.",
+    "Only the first two future seconds are reconstructed, matching tokenizer training; no four-second extrapolation or causal rollout is claimed."
+  ]
+}

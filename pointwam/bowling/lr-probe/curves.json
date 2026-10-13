@@ -1,0 +1,1082 @@
+{
+  "training": [
+    {
+      "stage": "tokenizer",
+      "step": 1,
+      "loss_m2": 0.03229663521051407,
+      "elapsed_s": 2.3032163220923394
+    },
+    {
+      "stage": "tokenizer",
+      "step": 50,
+      "loss_m2": 0.002385219093412161,
+      "elapsed_s": 3.131393165094778
+    },
+    {
+      "stage": "tokenizer",
+      "step": 100,
+      "loss_m2": 0.0016761540900915861,
+      "elapsed_s": 3.7143709319643676
+    },
+    {
+      "stage": "tokenizer",
+      "step": 150,
+      "loss_m2": 0.001241756952367723,
+      "elapsed_s": 4.2817849619314075
+    },
+    {
+      "stage": "tokenizer",
+      "step": 200,
+      "loss_m2": 0.0009706001728773117,
+      "elapsed_s": 4.8666076271329075
+    },
+    {
+      "stage": "tokenizer",
+      "step": 250,
+      "loss_m2": 0.0007977919885888696,
+      "elapsed_s": 5.433187121991068
+    },
+    {
+      "stage": "tokenizer",
+      "step": 300,
+      "loss_m2": 0.0007251667557284236,
+      "elapsed_s": 6.001858782954514
+    },
+    {
+      "stage": "tokenizer",
+      "step": 350,
+      "loss_m2": 0.0006838574190624058,
+      "elapsed_s": 6.566906840074807
+    },
+    {
+      "stage": "tokenizer",
+      "step": 400,
+      "loss_m2": 0.0005187152419239283,
+      "elapsed_s": 7.130494955927134
+    },
+    {
+      "stage": "tokenizer",
+      "step": 450,
+      "loss_m2": 0.0004989046137779951,
+      "elapsed_s": 7.695091130910441
+    },
+    {
+      "stage": "tokenizer",
+      "step": 500,
+      "loss_m2": 0.00048444216372445226,
+      "elapsed_s": 8.263138287933543
+    },
+    {
+      "stage": "tokenizer",
+      "step": 550,
+      "loss_m2": 0.00043339101830497384,
+      "elapsed_s": 8.913466732017696
+    },
+    {
+      "stage": "tokenizer",
+      "step": 600,
+      "loss_m2": 0.0004234748485032469,
+      "elapsed_s": 9.483713641995564
+    },
+    {
+      "stage": "tokenizer",
+      "step": 650,
+      "loss_m2": 0.00043649491271935403,
+      "elapsed_s": 10.058400799054652
+    },
+    {
+      "stage": "tokenizer",
+      "step": 700,
+      "loss_m2": 0.0003468210343271494,
+      "elapsed_s": 10.63707388099283
+    },
+    {
+      "stage": "tokenizer",
+      "step": 750,
+      "loss_m2": 0.0004193910863250494,
+      "elapsed_s": 11.218520376132801
+    },
+    {
+      "stage": "tokenizer",
+      "step": 800,
+      "loss_m2": 0.0003797218087129295,
+      "elapsed_s": 11.826801670016721
+    },
+    {
+      "stage": "tokenizer",
+      "step": 850,
+      "loss_m2": 0.0003477609425317496,
+      "elapsed_s": 12.427319098031148
+    },
+    {
+      "stage": "tokenizer",
+      "step": 900,
+      "loss_m2": 0.0003713106270879507,
+      "elapsed_s": 13.013390392065048
+    },
+    {
+      "stage": "tokenizer",
+      "step": 950,
+      "loss_m2": 0.0003308488230686635,
+      "elapsed_s": 13.589728810125962
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1000,
+      "loss_m2": 0.0003909460501745343,
+      "elapsed_s": 14.181694714119658
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1050,
+      "loss_m2": 0.0003511427203193307,
+      "elapsed_s": 14.80789692606777
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1100,
+      "loss_m2": 0.0003869663632940501,
+      "elapsed_s": 15.377666501095518
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1150,
+      "loss_m2": 0.0004476092290133238,
+      "elapsed_s": 15.950606415979564
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1200,
+      "loss_m2": 0.0003286220016889274,
+      "elapsed_s": 16.524383031995967
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1250,
+      "loss_m2": 0.0003135829756502062,
+      "elapsed_s": 17.090534440008923
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1300,
+      "loss_m2": 0.0003290408058091998,
+      "elapsed_s": 17.65228181099519
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1350,
+      "loss_m2": 0.0003405929892323911,
+      "elapsed_s": 18.22025709110312
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1400,
+      "loss_m2": 0.0003194183809682727,
+      "elapsed_s": 18.78062842413783
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1450,
+      "loss_m2": 0.0003359458933118731,
+      "elapsed_s": 19.34253465407528
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1500,
+      "loss_m2": 0.00032462182571180165,
+      "elapsed_s": 19.916939256014302
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1550,
+      "loss_m2": 0.0003001804288942367,
+      "elapsed_s": 20.534414188936353
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1600,
+      "loss_m2": 0.0003459713771007955,
+      "elapsed_s": 21.110504281008616
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1650,
+      "loss_m2": 0.00033765274565666914,
+      "elapsed_s": 21.68907956313342
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1700,
+      "loss_m2": 0.0003338918322697282,
+      "elapsed_s": 22.277901307912543
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1750,
+      "loss_m2": 0.0003503512416500598,
+      "elapsed_s": 22.86306376499124
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1800,
+      "loss_m2": 0.00025711272610351443,
+      "elapsed_s": 23.439654259942472
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1850,
+      "loss_m2": 0.00029900565277785063,
+      "elapsed_s": 24.01322833704762
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1900,
+      "loss_m2": 0.0002737821196205914,
+      "elapsed_s": 24.589259304106236
+    },
+    {
+      "stage": "tokenizer",
+      "step": 1950,
+      "loss_m2": 0.00025735670351423323,
+      "elapsed_s": 25.162542100064456
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2000,
+      "loss_m2": 0.00024096011475194246,
+      "elapsed_s": 25.757733442122117
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2050,
+      "loss_m2": 0.00018662362708710134,
+      "elapsed_s": 26.431013049092144
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2100,
+      "loss_m2": 0.00018316294881515205,
+      "elapsed_s": 27.01584432902746
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2150,
+      "loss_m2": 0.000167049904121086,
+      "elapsed_s": 27.6076999460347
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2200,
+      "loss_m2": 0.0001528009888716042,
+      "elapsed_s": 28.23185201897286
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2250,
+      "loss_m2": 0.00014940141409169883,
+      "elapsed_s": 28.817996067926288
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2300,
+      "loss_m2": 0.00019476431771181524,
+      "elapsed_s": 29.40078428410925
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2350,
+      "loss_m2": 0.00014617401757277548,
+      "elapsed_s": 29.982699024956673
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2400,
+      "loss_m2": 0.00015357116353698075,
+      "elapsed_s": 30.572399960132316
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2450,
+      "loss_m2": 0.00015498460561502725,
+      "elapsed_s": 31.16123312804848
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2500,
+      "loss_m2": 0.0001707096234895289,
+      "elapsed_s": 31.78946109302342
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2550,
+      "loss_m2": 0.0001712217490421608,
+      "elapsed_s": 32.548053628066555
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2600,
+      "loss_m2": 0.0001711866061668843,
+      "elapsed_s": 33.14680903311819
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2650,
+      "loss_m2": 0.000177947455085814,
+      "elapsed_s": 33.70400091307238
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2700,
+      "loss_m2": 0.0001832445414038375,
+      "elapsed_s": 34.28485766099766
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2750,
+      "loss_m2": 0.00016906003293115646,
+      "elapsed_s": 34.862753577996045
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2800,
+      "loss_m2": 0.00017702707555145025,
+      "elapsed_s": 35.43793093692511
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2850,
+      "loss_m2": 0.00015094102127477527,
+      "elapsed_s": 36.01771679497324
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2900,
+      "loss_m2": 0.00018636144523043185,
+      "elapsed_s": 36.60345394606702
+    },
+    {
+      "stage": "tokenizer",
+      "step": 2950,
+      "loss_m2": 0.0001494106836616993,
+      "elapsed_s": 37.18542152410373
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3000,
+      "loss_m2": 0.0002708352985791862,
+      "elapsed_s": 37.76617719605565
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3050,
+      "loss_m2": 0.0001411275879945606,
+      "elapsed_s": 38.39296239311807
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3100,
+      "loss_m2": 0.00015448321937583387,
+      "elapsed_s": 38.99606941593811
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3150,
+      "loss_m2": 0.00020085484720766544,
+      "elapsed_s": 39.61315174703486
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3200,
+      "loss_m2": 0.00015350041212514043,
+      "elapsed_s": 40.25050448696129
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3250,
+      "loss_m2": 0.00015594903379678726,
+      "elapsed_s": 40.872630167985335
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3300,
+      "loss_m2": 0.0002023079141508788,
+      "elapsed_s": 41.5048224509228
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3350,
+      "loss_m2": 0.00014870916493237019,
+      "elapsed_s": 42.133546454133466
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3400,
+      "loss_m2": 0.00015511081437580287,
+      "elapsed_s": 42.721837715944275
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3450,
+      "loss_m2": 0.0001772405521478504,
+      "elapsed_s": 43.29993285192177
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3500,
+      "loss_m2": 0.00017474472406320274,
+      "elapsed_s": 43.87647329992615
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3550,
+      "loss_m2": 0.0001714826503302902,
+      "elapsed_s": 44.52407179796137
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3600,
+      "loss_m2": 0.00015327424625866115,
+      "elapsed_s": 45.1082725150045
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3650,
+      "loss_m2": 0.00015281548257917166,
+      "elapsed_s": 45.713863133918494
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3700,
+      "loss_m2": 0.00016915917512960732,
+      "elapsed_s": 46.305839772103354
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3750,
+      "loss_m2": 0.00014630604709964246,
+      "elapsed_s": 46.89731870102696
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3800,
+      "loss_m2": 0.00013811406097374856,
+      "elapsed_s": 47.47961653699167
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3850,
+      "loss_m2": 0.00015371182234957814,
+      "elapsed_s": 48.05529820499942
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3900,
+      "loss_m2": 0.00017868392751552165,
+      "elapsed_s": 48.64562989096157
+    },
+    {
+      "stage": "tokenizer",
+      "step": 3950,
+      "loss_m2": 0.00015317369252443314,
+      "elapsed_s": 49.232531951973215
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4000,
+      "loss_m2": 0.0001446457317797467,
+      "elapsed_s": 49.808343237964436
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4050,
+      "loss_m2": 0.0001548632135381922,
+      "elapsed_s": 50.430039084050804
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4100,
+      "loss_m2": 0.0001614479988347739,
+      "elapsed_s": 51.02482069400139
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4150,
+      "loss_m2": 0.00013302610022947192,
+      "elapsed_s": 51.61549338698387
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4200,
+      "loss_m2": 0.00019351120863575488,
+      "elapsed_s": 52.195137144997716
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4250,
+      "loss_m2": 0.00015892027295194566,
+      "elapsed_s": 52.7674337180797
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4300,
+      "loss_m2": 0.000155275862198323,
+      "elapsed_s": 53.33944289712235
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4350,
+      "loss_m2": 0.00015650424757041037,
+      "elapsed_s": 53.915051598101854
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4400,
+      "loss_m2": 0.00014459434896707535,
+      "elapsed_s": 54.49266070802696
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4450,
+      "loss_m2": 0.00015075624105520546,
+      "elapsed_s": 55.07223542802967
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4500,
+      "loss_m2": 0.00014986225869506598,
+      "elapsed_s": 55.65025793900713
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4550,
+      "loss_m2": 0.0001516063930466771,
+      "elapsed_s": 56.26291790208779
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4600,
+      "loss_m2": 0.00014314180589281023,
+      "elapsed_s": 56.85075663612224
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4650,
+      "loss_m2": 0.00016674661310389638,
+      "elapsed_s": 57.428032075054944
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4700,
+      "loss_m2": 0.00015173091378528625,
+      "elapsed_s": 58.01027824101038
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4750,
+      "loss_m2": 0.00014226713392417878,
+      "elapsed_s": 58.616830897983164
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4800,
+      "loss_m2": 0.00015306627028621733,
+      "elapsed_s": 59.204070552950725
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4850,
+      "loss_m2": 0.00014428123540710658,
+      "elapsed_s": 59.78278013295494
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4900,
+      "loss_m2": 0.00017881530220620334,
+      "elapsed_s": 60.37090878398158
+    },
+    {
+      "stage": "tokenizer",
+      "step": 4950,
+      "loss_m2": 0.00015430075291078538,
+      "elapsed_s": 60.93842219398357
+    },
+    {
+      "stage": "tokenizer",
+      "step": 5000,
+      "loss_m2": 0.00015903357416391373,
+      "elapsed_s": 61.51896605105139
+    }
+  ],
+  "validation": [
+    {
+      "step": 500,
+      "selection_score_mean_group_ADE_m": 0.02925168386911026,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.01929301917552948,
+          "FDE_m": 0.04564358666539192,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.01929402947425842,
+          "FDE_m": 0.045645293593406674,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.031278891563415526,
+          "FDE_m": 0.04059148132801056,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.050357112884521486,
+          "FDE_m": 0.08220353126525878,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.0610829770565033,
+          "FDE_m": 0.1361570805311203,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.014704854289690653,
+          "FDE_m": 0.04837506512800852,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.008750902639852988,
+          "FDE_m": 0.012669125118771114,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 1000,
+      "selection_score_mean_group_ADE_m": 0.02227449523589479,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.004955384135246277,
+          "FDE_m": 0.0051923212595283985,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.004955977201461792,
+          "FDE_m": 0.005197447538375854,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.023001232147216798,
+          "FDE_m": 0.030755293369293214,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.0482240104675293,
+          "FDE_m": 0.08046913146972656,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.05999041199684143,
+          "FDE_m": 0.13693104684352875,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.010609466830889385,
+          "FDE_m": 0.044243176778157554,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.00418498387207856,
+          "FDE_m": 0.004445975696718371,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 1500,
+      "selection_score_mean_group_ADE_m": 0.023012595557568155,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.008448146283626556,
+          "FDE_m": 0.009532970376312733,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.008448498249053955,
+          "FDE_m": 0.009531359374523162,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.022015290260314943,
+          "FDE_m": 0.0218187615275383,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.04817861557006836,
+          "FDE_m": 0.07911796569824218,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.060363602638244626,
+          "FDE_m": 0.13422909379005432,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.009917610883712768,
+          "FDE_m": 0.04609858989715576,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.003716405017955883,
+          "FDE_m": 0.00813035385028736,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 2000,
+      "selection_score_mean_group_ADE_m": 0.017630659736779204,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.006183098629117012,
+          "FDE_m": 0.00785072147846222,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.006183310747146607,
+          "FDE_m": 0.007851743698120117,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.018922704458236694,
+          "FDE_m": 0.018297699093818665,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.03186454772949219,
+          "FDE_m": 0.05454416275024414,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.03619482517242432,
+          "FDE_m": 0.09271098673343658,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.014120075106620788,
+          "FDE_m": 0.045650934179623924,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.009946056314416835,
+          "FDE_m": 0.009490853225862657,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 2500,
+      "selection_score_mean_group_ADE_m": 0.01266432006837395,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.006029700115323067,
+          "FDE_m": 0.005198275670409203,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.006029318571090698,
+          "FDE_m": 0.005200107395648956,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.017957764863967895,
+          "FDE_m": 0.01978342831134796,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.0217354154586792,
+          "FDE_m": 0.04157106280326843,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.02067500352859497,
+          "FDE_m": 0.04736717790365219,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.010648955901463827,
+          "FDE_m": 0.04313325881958008,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.0055740820394979945,
+          "FDE_m": 0.016904518410966202,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 3000,
+      "selection_score_mean_group_ADE_m": 0.014547490806269676,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.009327660501003265,
+          "FDE_m": 0.00798744522035122,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.009327215552330017,
+          "FDE_m": 0.007989700138568877,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.018673923015594483,
+          "FDE_m": 0.015792448818683625,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.021145524978637694,
+          "FDE_m": 0.037643006443977355,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.021016448736190796,
+          "FDE_m": 0.05057961121201515,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.01339463194211324,
+          "FDE_m": 0.044279247522354126,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.008947030918018238,
+          "FDE_m": 0.011578582428597115,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 3500,
+      "selection_score_mean_group_ADE_m": 0.011448788212724942,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.004145226627588272,
+          "FDE_m": 0.0017851515440270305,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.004145174622535706,
+          "FDE_m": 0.001789538934826851,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.016588060855865477,
+          "FDE_m": 0.0202249675989151,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.020352587699890137,
+          "FDE_m": 0.039831554889678954,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.0174955889582634,
+          "FDE_m": 0.0399274006485939,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.011200745900472006,
+          "FDE_m": 0.03999728957811991,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.0062141328244595916,
+          "FDE_m": 0.012929445182954942,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 4000,
+      "selection_score_mean_group_ADE_m": 0.011796116585552002,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.0062047518789768216,
+          "FDE_m": 0.0033844371791929007,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.0062050938606262205,
+          "FDE_m": 0.0033822473138570785,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.017063038349151613,
+          "FDE_m": 0.01606084406375885,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.019288221597671507,
+          "FDE_m": 0.03794613480567932,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.016744741797447206,
+          "FDE_m": 0.04081146419048309,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.011005574464797973,
+          "FDE_m": 0.04088939229647318,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.006061394150192673,
+          "FDE_m": 0.011766860613951812,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 4500,
+      "selection_score_mean_group_ADE_m": 0.01162096929116752,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.005468670278787613,
+          "FDE_m": 0.004181482829153538,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.0054698741436004636,
+          "FDE_m": 0.004182064533233642,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.01751537561416626,
+          "FDE_m": 0.015943676233291626,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.01923742175102234,
+          "FDE_m": 0.03462478518486023,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.01764906942844391,
+          "FDE_m": 0.04260942339897156,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.010608092943827311,
+          "FDE_m": 0.04151651759942373,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.005398280878324766,
+          "FDE_m": 0.009342254819096747,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    },
+    {
+      "step": 5000,
+      "selection_score_mean_group_ADE_m": 0.011350873989008721,
+      "passed": false,
+      "targets": {
+        "ADE_m": 0.001,
+        "FDE_m": 0.003
+      },
+      "groups": {
+        "scene_history/ball": {
+          "ADE_m": 0.005842483416199684,
+          "FDE_m": 0.007026391569525003,
+          "trajectories": 16
+        },
+        "scene_history/static_pins": {
+          "ADE_m": 0.0058412736654281615,
+          "FDE_m": 0.007028141617774963,
+          "trajectories": 320
+        },
+        "robot_history/all": {
+          "ADE_m": 0.014163485765457152,
+          "FDE_m": 0.011462781578302383,
+          "trajectories": 320
+        },
+        "robot_future/all": {
+          "ADE_m": 0.019084856510162354,
+          "FDE_m": 0.032917463779449464,
+          "trajectories": 320
+        },
+        "scene_future/ball": {
+          "ADE_m": 0.01725480258464813,
+          "FDE_m": 0.04508589208126068,
+          "trajectories": 16
+        },
+        "scene_future/moving_pins": {
+          "ADE_m": 0.01103018323580424,
+          "FDE_m": 0.04178125659624735,
+          "trajectories": 24
+        },
+        "scene_future/static_pins": {
+          "ADE_m": 0.0062390327453613285,
+          "FDE_m": 0.011752375074335047,
+          "trajectories": 296
+        }
+      },
+      "meaning": "engineering_diagnostic_not_paper_requirement"
+    }
+  ]
+}
