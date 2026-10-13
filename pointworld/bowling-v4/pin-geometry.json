@@ -1,0 +1,37 @@
+{
+  "scope": "222 training/validation episodes only",
+  "pin_clouds": 2220,
+  "rank3_clouds": 2220,
+  "rank_tolerance_relative": 0.0001,
+  "singular_value_min_over_max": {
+    "min": 0.07064056834341241,
+    "p05": 0.11185459046181694,
+    "median": 0.14306957327996933,
+    "p95": 0.17051621988492932,
+    "max": 0.20650269156866896
+  },
+  "visible_axis_extent_m": {
+    "x": {
+      "min": 0.01579955220222473,
+      "p05": 0.029036106169223787,
+      "median": 0.03678809106349945,
+      "p95": 0.04120085686445236,
+      "max": 0.04334133863449097
+    },
+    "y": {
+      "min": 0.014649748802185059,
+      "p05": 0.02424492537975311,
+      "median": 0.036789074540138245,
+      "p95": 0.04086870476603508,
+      "max": 0.04320438206195831
+    },
+    "z": {
+      "min": 0.10592706874012947,
+      "p05": 0.13268285850062966,
+      "median": 0.14181023207493126,
+      "p95": 0.1459444325300865,
+      "max": 0.14928408135892823
+    }
+  },
+  "interpretation": "All sampled pin clouds span 3D at this rank tolerance. Smallest/longest spread reports conditioning, not guaranteed learned rigid dynamics or image-feature discrimination."
+}

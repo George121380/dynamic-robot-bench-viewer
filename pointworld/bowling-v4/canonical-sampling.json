@@ -1,0 +1,11 @@
+{
+  "episodes": 251,
+  "numpy": "1.26.4",
+  "sha256": "5fdd9d3888f0888ec11c0c4ed7f644dd0904292cf2162e372970e99405fda9a6",
+  "policy": "Release test-mode FNV voxel sampling, frozen on preparation CPU. Only current geometry read; exact original arrays and selected points preserved. Training sampling remains random.",
+  "fields_read": [
+    "scene_flows[0]",
+    "robot_flows[0]"
+  ],
+  "future_labels_read": false
+}

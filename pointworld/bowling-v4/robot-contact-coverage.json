@@ -1,0 +1,1353 @@
+{
+  "scope": "222 train/validation episodes; first0.2s robot-ball contact period; current-state/command-only plan, official robot sample and linear interpolation",
+  "episodes": 222,
+  "median_nearest_plan_mesh_point_m": {
+    "min": 0.0015071672249440948,
+    "p05": 0.0029423999263381603,
+    "median": 0.0067753519024298095,
+    "p95": 0.012245019591997499,
+    "max": 0.01809157862014152
+  },
+  "worst_nearest_plan_mesh_point_m": {
+    "min": 0.0015071672249440948,
+    "p05": 0.003239266221470225,
+    "median": 0.008011202335573855,
+    "p95": 0.01640014017568647,
+    "max": 0.019560838654611938
+  },
+  "rows": [
+    {
+      "seed": 3,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.00685083583935699,
+      "max_nearest_plan_mesh_point_m": 0.006872972730774084
+    },
+    {
+      "seed": 4,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0039505254263926546,
+      "max_nearest_plan_mesh_point_m": 0.0039505254263926546
+    },
+    {
+      "seed": 5,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.009563393013374881,
+      "max_nearest_plan_mesh_point_m": 0.011609082329415392
+    },
+    {
+      "seed": 6,
+      "contacts_checked": 46,
+      "median_nearest_plan_mesh_point_m": 0.006374482927358852,
+      "max_nearest_plan_mesh_point_m": 0.010183632152716443
+    },
+    {
+      "seed": 7,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.006580503993476866,
+      "max_nearest_plan_mesh_point_m": 0.006580503993476866
+    },
+    {
+      "seed": 8,
+      "contacts_checked": 11,
+      "median_nearest_plan_mesh_point_m": 0.009713082978529082,
+      "max_nearest_plan_mesh_point_m": 0.01458048420049505
+    },
+    {
+      "seed": 9,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.003227861432866819,
+      "max_nearest_plan_mesh_point_m": 0.003227861432866819
+    },
+    {
+      "seed": 10,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.010580540670431241,
+      "max_nearest_plan_mesh_point_m": 0.010777657579511324
+    },
+    {
+      "seed": 11,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.008324501237126428,
+      "max_nearest_plan_mesh_point_m": 0.00841061298331388
+    },
+    {
+      "seed": 12,
+      "contacts_checked": 6,
+      "median_nearest_plan_mesh_point_m": 0.010653919179915435,
+      "max_nearest_plan_mesh_point_m": 0.011233168224542754
+    },
+    {
+      "seed": 13,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.003507978569434436,
+      "max_nearest_plan_mesh_point_m": 0.0035469914303978447
+    },
+    {
+      "seed": 14,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.009480624855284918,
+      "max_nearest_plan_mesh_point_m": 0.009480624855284918
+    },
+    {
+      "seed": 15,
+      "contacts_checked": 13,
+      "median_nearest_plan_mesh_point_m": 0.00751763300588327,
+      "max_nearest_plan_mesh_point_m": 0.008598035152683649
+    },
+    {
+      "seed": 16,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.008549965714471898,
+      "max_nearest_plan_mesh_point_m": 0.008633318041637684
+    },
+    {
+      "seed": 17,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.007294284312296449,
+      "max_nearest_plan_mesh_point_m": 0.007294284312296449
+    },
+    {
+      "seed": 18,
+      "contacts_checked": 10,
+      "median_nearest_plan_mesh_point_m": 0.003791909768576406,
+      "max_nearest_plan_mesh_point_m": 0.013704035547046373
+    },
+    {
+      "seed": 19,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.006955309989513138,
+      "max_nearest_plan_mesh_point_m": 0.006955309989513138
+    },
+    {
+      "seed": 20,
+      "contacts_checked": 25,
+      "median_nearest_plan_mesh_point_m": 0.016150675784707337,
+      "max_nearest_plan_mesh_point_m": 0.016976404536413657
+    },
+    {
+      "seed": 21,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.01196311081436005,
+      "max_nearest_plan_mesh_point_m": 0.01196311081436005
+    },
+    {
+      "seed": 22,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.004313261803098985,
+      "max_nearest_plan_mesh_point_m": 0.004313261803098985
+    },
+    {
+      "seed": 23,
+      "contacts_checked": 13,
+      "median_nearest_plan_mesh_point_m": 0.00590626457080288,
+      "max_nearest_plan_mesh_point_m": 0.010200873772629604
+    },
+    {
+      "seed": 24,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.006981786328006207,
+      "max_nearest_plan_mesh_point_m": 0.007409947204196993
+    },
+    {
+      "seed": 25,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.007938486286094604,
+      "max_nearest_plan_mesh_point_m": 0.007947851538511647
+    },
+    {
+      "seed": 26,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.007393368741852528,
+      "max_nearest_plan_mesh_point_m": 0.007393368741852528
+    },
+    {
+      "seed": 27,
+      "contacts_checked": 14,
+      "median_nearest_plan_mesh_point_m": 0.00646801979691907,
+      "max_nearest_plan_mesh_point_m": 0.012764185426112639
+    },
+    {
+      "seed": 28,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.005093706590711745,
+      "max_nearest_plan_mesh_point_m": 0.00532724402309038
+    },
+    {
+      "seed": 29,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.011754181058501942,
+      "max_nearest_plan_mesh_point_m": 0.011754181058501942
+    },
+    {
+      "seed": 30,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.004971764828885592,
+      "max_nearest_plan_mesh_point_m": 0.005015553899847359
+    },
+    {
+      "seed": 31,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0038915837120974323,
+      "max_nearest_plan_mesh_point_m": 0.0038915837120974323
+    },
+    {
+      "seed": 32,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.006566973323568465,
+      "max_nearest_plan_mesh_point_m": 0.006566973323568465
+    },
+    {
+      "seed": 33,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0036792913171083824,
+      "max_nearest_plan_mesh_point_m": 0.0036792913171083824
+    },
+    {
+      "seed": 34,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.005127371813378891,
+      "max_nearest_plan_mesh_point_m": 0.005576010007905293
+    },
+    {
+      "seed": 35,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.005015017413421374,
+      "max_nearest_plan_mesh_point_m": 0.005079942082024341
+    },
+    {
+      "seed": 36,
+      "contacts_checked": 34,
+      "median_nearest_plan_mesh_point_m": 0.0072062617117072975,
+      "max_nearest_plan_mesh_point_m": 0.007903325534159868
+    },
+    {
+      "seed": 37,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.00776722425081466,
+      "max_nearest_plan_mesh_point_m": 0.00776722425081466
+    },
+    {
+      "seed": 39,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.0038403910806515083,
+      "max_nearest_plan_mesh_point_m": 0.003840650662242211
+    },
+    {
+      "seed": 40,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.007779871725947598,
+      "max_nearest_plan_mesh_point_m": 0.008157739589465089
+    },
+    {
+      "seed": 41,
+      "contacts_checked": 34,
+      "median_nearest_plan_mesh_point_m": 0.007584098050155162,
+      "max_nearest_plan_mesh_point_m": 0.01295318037583799
+    },
+    {
+      "seed": 42,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.004670160235977769,
+      "max_nearest_plan_mesh_point_m": 0.004670160235977769
+    },
+    {
+      "seed": 43,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.004393461128535857,
+      "max_nearest_plan_mesh_point_m": 0.004393461128535857
+    },
+    {
+      "seed": 44,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.01081338691614933,
+      "max_nearest_plan_mesh_point_m": 0.01085263306941637
+    },
+    {
+      "seed": 45,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.005381458849588774,
+      "max_nearest_plan_mesh_point_m": 0.005426923113866348
+    },
+    {
+      "seed": 46,
+      "contacts_checked": 32,
+      "median_nearest_plan_mesh_point_m": 0.01166793045846528,
+      "max_nearest_plan_mesh_point_m": 0.012060449573807594
+    },
+    {
+      "seed": 47,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.007441269719281768,
+      "max_nearest_plan_mesh_point_m": 0.007441269719281768
+    },
+    {
+      "seed": 48,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.006825993227230898,
+      "max_nearest_plan_mesh_point_m": 0.006825993227230898
+    },
+    {
+      "seed": 49,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.011583848198429492,
+      "max_nearest_plan_mesh_point_m": 0.011583848198429492
+    },
+    {
+      "seed": 50,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.006090762526076206,
+      "max_nearest_plan_mesh_point_m": 0.009300060076106037
+    },
+    {
+      "seed": 51,
+      "contacts_checked": 22,
+      "median_nearest_plan_mesh_point_m": 0.005672833512472167,
+      "max_nearest_plan_mesh_point_m": 0.006926858899818523
+    },
+    {
+      "seed": 52,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.008153126640512855,
+      "max_nearest_plan_mesh_point_m": 0.008153126640512855
+    },
+    {
+      "seed": 53,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.0026339463134076547,
+      "max_nearest_plan_mesh_point_m": 0.002686935638743319
+    },
+    {
+      "seed": 54,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.005309057952879085,
+      "max_nearest_plan_mesh_point_m": 0.005309057952879085
+    },
+    {
+      "seed": 55,
+      "contacts_checked": 7,
+      "median_nearest_plan_mesh_point_m": 0.002222128978689258,
+      "max_nearest_plan_mesh_point_m": 0.009725095003518012
+    },
+    {
+      "seed": 56,
+      "contacts_checked": 39,
+      "median_nearest_plan_mesh_point_m": 0.007971639622498984,
+      "max_nearest_plan_mesh_point_m": 0.011127905739206717
+    },
+    {
+      "seed": 57,
+      "contacts_checked": 33,
+      "median_nearest_plan_mesh_point_m": 0.01174763669202439,
+      "max_nearest_plan_mesh_point_m": 0.013786725193445305
+    },
+    {
+      "seed": 58,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.013266991012756685,
+      "max_nearest_plan_mesh_point_m": 0.013266991012756685
+    },
+    {
+      "seed": 59,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.00293995306479736,
+      "max_nearest_plan_mesh_point_m": 0.0033789049941692646
+    },
+    {
+      "seed": 60,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.005342025893179422,
+      "max_nearest_plan_mesh_point_m": 0.005342025893179422
+    },
+    {
+      "seed": 61,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.012015665247451167,
+      "max_nearest_plan_mesh_point_m": 0.01202168088731024
+    },
+    {
+      "seed": 62,
+      "contacts_checked": 23,
+      "median_nearest_plan_mesh_point_m": 0.007990528311594745,
+      "max_nearest_plan_mesh_point_m": 0.013006798400691823
+    },
+    {
+      "seed": 63,
+      "contacts_checked": 11,
+      "median_nearest_plan_mesh_point_m": 0.008076395509551521,
+      "max_nearest_plan_mesh_point_m": 0.012277077671854462
+    },
+    {
+      "seed": 64,
+      "contacts_checked": 6,
+      "median_nearest_plan_mesh_point_m": 0.002553897527850826,
+      "max_nearest_plan_mesh_point_m": 0.013890211910954044
+    },
+    {
+      "seed": 65,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0032418973089290396,
+      "max_nearest_plan_mesh_point_m": 0.0032418973089290396
+    },
+    {
+      "seed": 66,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.007602687069327798,
+      "max_nearest_plan_mesh_point_m": 0.007602687069327798
+    },
+    {
+      "seed": 1000,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.009360516678290503,
+      "max_nearest_plan_mesh_point_m": 0.010292289892045383
+    },
+    {
+      "seed": 1001,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0050520046144790325,
+      "max_nearest_plan_mesh_point_m": 0.0050520046144790325
+    },
+    {
+      "seed": 1002,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.013492837806656383,
+      "max_nearest_plan_mesh_point_m": 0.013492837806656383
+    },
+    {
+      "seed": 1003,
+      "contacts_checked": 31,
+      "median_nearest_plan_mesh_point_m": 0.003727386634000617,
+      "max_nearest_plan_mesh_point_m": 0.006587845607032611
+    },
+    {
+      "seed": 1004,
+      "contacts_checked": 20,
+      "median_nearest_plan_mesh_point_m": 0.01072252412920209,
+      "max_nearest_plan_mesh_point_m": 0.015545380280110396
+    },
+    {
+      "seed": 1005,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0029888902956133633,
+      "max_nearest_plan_mesh_point_m": 0.0029888902956133633
+    },
+    {
+      "seed": 1006,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0070050827526962406,
+      "max_nearest_plan_mesh_point_m": 0.0070050827526962406
+    },
+    {
+      "seed": 1007,
+      "contacts_checked": 17,
+      "median_nearest_plan_mesh_point_m": 0.0037069526898140803,
+      "max_nearest_plan_mesh_point_m": 0.013842220694656448
+    },
+    {
+      "seed": 1008,
+      "contacts_checked": 18,
+      "median_nearest_plan_mesh_point_m": 0.010613056409831515,
+      "max_nearest_plan_mesh_point_m": 0.015421006117810268
+    },
+    {
+      "seed": 1009,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.006533184351625455,
+      "max_nearest_plan_mesh_point_m": 0.0074133716427882326
+    },
+    {
+      "seed": 1010,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.004490546192451611,
+      "max_nearest_plan_mesh_point_m": 0.004490546192451611
+    },
+    {
+      "seed": 1011,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.00734340182913166,
+      "max_nearest_plan_mesh_point_m": 0.00735767879983833
+    },
+    {
+      "seed": 1012,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.006720728938765998,
+      "max_nearest_plan_mesh_point_m": 0.006726043152608088
+    },
+    {
+      "seed": 1013,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.007967523270783235,
+      "max_nearest_plan_mesh_point_m": 0.011102716794702889
+    },
+    {
+      "seed": 1014,
+      "contacts_checked": 6,
+      "median_nearest_plan_mesh_point_m": 0.010945581664582895,
+      "max_nearest_plan_mesh_point_m": 0.011685838048199141
+    },
+    {
+      "seed": 1015,
+      "contacts_checked": 7,
+      "median_nearest_plan_mesh_point_m": 0.004629203210176814,
+      "max_nearest_plan_mesh_point_m": 0.005642119264071781
+    },
+    {
+      "seed": 1016,
+      "contacts_checked": 35,
+      "median_nearest_plan_mesh_point_m": 0.010651064108180256,
+      "max_nearest_plan_mesh_point_m": 0.011282145108333823
+    },
+    {
+      "seed": 1017,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.006301743210276181,
+      "max_nearest_plan_mesh_point_m": 0.006301743210276181
+    },
+    {
+      "seed": 1018,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0034212457143133227,
+      "max_nearest_plan_mesh_point_m": 0.0034212457143133227
+    },
+    {
+      "seed": 1019,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0016313174608045481,
+      "max_nearest_plan_mesh_point_m": 0.0016313174608045481
+    },
+    {
+      "seed": 1020,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.009204070898918502,
+      "max_nearest_plan_mesh_point_m": 0.009204070898918502
+    },
+    {
+      "seed": 1021,
+      "contacts_checked": 3,
+      "median_nearest_plan_mesh_point_m": 0.00893216205306096,
+      "max_nearest_plan_mesh_point_m": 0.008959499914627606
+    },
+    {
+      "seed": 1022,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0074160296794399325,
+      "max_nearest_plan_mesh_point_m": 0.0074160296794399325
+    },
+    {
+      "seed": 1023,
+      "contacts_checked": 22,
+      "median_nearest_plan_mesh_point_m": 0.009153629218481254,
+      "max_nearest_plan_mesh_point_m": 0.011673890387730316
+    },
+    {
+      "seed": 1024,
+      "contacts_checked": 13,
+      "median_nearest_plan_mesh_point_m": 0.00914153303670214,
+      "max_nearest_plan_mesh_point_m": 0.01626117360722991
+    },
+    {
+      "seed": 1025,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.006802767496608901,
+      "max_nearest_plan_mesh_point_m": 0.0068070848137068134
+    },
+    {
+      "seed": 1026,
+      "contacts_checked": 30,
+      "median_nearest_plan_mesh_point_m": 0.01040984404654185,
+      "max_nearest_plan_mesh_point_m": 0.013848893908401433
+    },
+    {
+      "seed": 1027,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.004358947314432389,
+      "max_nearest_plan_mesh_point_m": 0.004358947314432389
+    },
+    {
+      "seed": 1028,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.009463167389929404,
+      "max_nearest_plan_mesh_point_m": 0.012125852780174617
+    },
+    {
+      "seed": 1029,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.00844685901709724,
+      "max_nearest_plan_mesh_point_m": 0.00844685901709724
+    },
+    {
+      "seed": 1030,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0069761419796968635,
+      "max_nearest_plan_mesh_point_m": 0.0069761419796968635
+    },
+    {
+      "seed": 1031,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.0038257504864055787,
+      "max_nearest_plan_mesh_point_m": 0.0038323473692773386
+    },
+    {
+      "seed": 1032,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.005198721389947827,
+      "max_nearest_plan_mesh_point_m": 0.005198721389947827
+    },
+    {
+      "seed": 1033,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.006808365066528768,
+      "max_nearest_plan_mesh_point_m": 0.006808365066528768
+    },
+    {
+      "seed": 1034,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0060523175145439975,
+      "max_nearest_plan_mesh_point_m": 0.0060523175145439975
+    },
+    {
+      "seed": 1035,
+      "contacts_checked": 19,
+      "median_nearest_plan_mesh_point_m": 0.0117596891204512,
+      "max_nearest_plan_mesh_point_m": 0.01491606355873235
+    },
+    {
+      "seed": 1036,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.006005613894664636,
+      "max_nearest_plan_mesh_point_m": 0.006005613894664636
+    },
+    {
+      "seed": 1037,
+      "contacts_checked": 50,
+      "median_nearest_plan_mesh_point_m": 0.0042730639540422815,
+      "max_nearest_plan_mesh_point_m": 0.013627655481001606
+    },
+    {
+      "seed": 1038,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.005083814574467127,
+      "max_nearest_plan_mesh_point_m": 0.005083814574467127
+    },
+    {
+      "seed": 1039,
+      "contacts_checked": 17,
+      "median_nearest_plan_mesh_point_m": 0.004778539442896073,
+      "max_nearest_plan_mesh_point_m": 0.01473450931130345
+    },
+    {
+      "seed": 1040,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.006495927351645503,
+      "max_nearest_plan_mesh_point_m": 0.006528449575048259
+    },
+    {
+      "seed": 1041,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.004543349794755623,
+      "max_nearest_plan_mesh_point_m": 0.004543349794755623
+    },
+    {
+      "seed": 1042,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.007326468052940597,
+      "max_nearest_plan_mesh_point_m": 0.007330244323717795
+    },
+    {
+      "seed": 1043,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.004855699356031534,
+      "max_nearest_plan_mesh_point_m": 0.004855699356031534
+    },
+    {
+      "seed": 1044,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.003867886800960174,
+      "max_nearest_plan_mesh_point_m": 0.003867886800960174
+    },
+    {
+      "seed": 1045,
+      "contacts_checked": 39,
+      "median_nearest_plan_mesh_point_m": 0.006165179705343356,
+      "max_nearest_plan_mesh_point_m": 0.009855946345376084
+    },
+    {
+      "seed": 1046,
+      "contacts_checked": 3,
+      "median_nearest_plan_mesh_point_m": 0.00866240912161386,
+      "max_nearest_plan_mesh_point_m": 0.008785395891836289
+    },
+    {
+      "seed": 1047,
+      "contacts_checked": 29,
+      "median_nearest_plan_mesh_point_m": 0.014695135656669248,
+      "max_nearest_plan_mesh_point_m": 0.015140795962629662
+    },
+    {
+      "seed": 1048,
+      "contacts_checked": 16,
+      "median_nearest_plan_mesh_point_m": 0.00564995247973368,
+      "max_nearest_plan_mesh_point_m": 0.019560838654611938
+    },
+    {
+      "seed": 1049,
+      "contacts_checked": 4,
+      "median_nearest_plan_mesh_point_m": 0.009219056604829537,
+      "max_nearest_plan_mesh_point_m": 0.011893404461616902
+    },
+    {
+      "seed": 1050,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.01715719394900865,
+      "max_nearest_plan_mesh_point_m": 0.017183911519764984
+    },
+    {
+      "seed": 1051,
+      "contacts_checked": 36,
+      "median_nearest_plan_mesh_point_m": 0.0039846871401514996,
+      "max_nearest_plan_mesh_point_m": 0.007097280434899879
+    },
+    {
+      "seed": 1052,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.007991616667552813,
+      "max_nearest_plan_mesh_point_m": 0.007991616667552813
+    },
+    {
+      "seed": 1053,
+      "contacts_checked": 17,
+      "median_nearest_plan_mesh_point_m": 0.009879173765704394,
+      "max_nearest_plan_mesh_point_m": 0.013396146420271437
+    },
+    {
+      "seed": 1054,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.011421606337608269,
+      "max_nearest_plan_mesh_point_m": 0.011421606337608269
+    },
+    {
+      "seed": 1055,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.004188604610113312,
+      "max_nearest_plan_mesh_point_m": 0.004188604610113312
+    },
+    {
+      "seed": 1056,
+      "contacts_checked": 3,
+      "median_nearest_plan_mesh_point_m": 0.00833290110188336,
+      "max_nearest_plan_mesh_point_m": 0.011591751600027962
+    },
+    {
+      "seed": 1057,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.006822347676730666,
+      "max_nearest_plan_mesh_point_m": 0.0068235087381294515
+    },
+    {
+      "seed": 1058,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.0057643014868537686,
+      "max_nearest_plan_mesh_point_m": 0.006124068882323682
+    },
+    {
+      "seed": 1059,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.014570335643017308,
+      "max_nearest_plan_mesh_point_m": 0.014570335643017308
+    },
+    {
+      "seed": 1060,
+      "contacts_checked": 44,
+      "median_nearest_plan_mesh_point_m": 0.01809157862014152,
+      "max_nearest_plan_mesh_point_m": 0.01953142926499439
+    },
+    {
+      "seed": 1061,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.012251271257040197,
+      "max_nearest_plan_mesh_point_m": 0.012251271257040197
+    },
+    {
+      "seed": 1062,
+      "contacts_checked": 16,
+      "median_nearest_plan_mesh_point_m": 0.004330468739555374,
+      "max_nearest_plan_mesh_point_m": 0.011694294022511723
+    },
+    {
+      "seed": 1063,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.00459999097835664,
+      "max_nearest_plan_mesh_point_m": 0.004642551262917721
+    },
+    {
+      "seed": 1064,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.005542322928275556,
+      "max_nearest_plan_mesh_point_m": 0.005542322928275556
+    },
+    {
+      "seed": 1065,
+      "contacts_checked": 4,
+      "median_nearest_plan_mesh_point_m": 0.0035619881928768775,
+      "max_nearest_plan_mesh_point_m": 0.005837167260490319
+    },
+    {
+      "seed": 1066,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.002931851829836354,
+      "max_nearest_plan_mesh_point_m": 0.002931851829836354
+    },
+    {
+      "seed": 1067,
+      "contacts_checked": 58,
+      "median_nearest_plan_mesh_point_m": 0.007821852013505055,
+      "max_nearest_plan_mesh_point_m": 0.01518488220708479
+    },
+    {
+      "seed": 1068,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.009655280947245149,
+      "max_nearest_plan_mesh_point_m": 0.011337581881303715
+    },
+    {
+      "seed": 1069,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.008552571395558574,
+      "max_nearest_plan_mesh_point_m": 0.008552571395558574
+    },
+    {
+      "seed": 1070,
+      "contacts_checked": 17,
+      "median_nearest_plan_mesh_point_m": 0.008932050969361538,
+      "max_nearest_plan_mesh_point_m": 0.014401728177303483
+    },
+    {
+      "seed": 1071,
+      "contacts_checked": 16,
+      "median_nearest_plan_mesh_point_m": 0.00961121746849447,
+      "max_nearest_plan_mesh_point_m": 0.016407454205605236
+    },
+    {
+      "seed": 1072,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.006079195028347152,
+      "max_nearest_plan_mesh_point_m": 0.0061092448579230935
+    },
+    {
+      "seed": 1073,
+      "contacts_checked": 16,
+      "median_nearest_plan_mesh_point_m": 0.004701688653192094,
+      "max_nearest_plan_mesh_point_m": 0.011934427739630944
+    },
+    {
+      "seed": 1074,
+      "contacts_checked": 20,
+      "median_nearest_plan_mesh_point_m": 0.007191866474426694,
+      "max_nearest_plan_mesh_point_m": 0.01254080615762319
+    },
+    {
+      "seed": 1075,
+      "contacts_checked": 15,
+      "median_nearest_plan_mesh_point_m": 0.00738739968449531,
+      "max_nearest_plan_mesh_point_m": 0.009714235073421479
+    },
+    {
+      "seed": 1076,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.007119336401117712,
+      "max_nearest_plan_mesh_point_m": 0.007119336401117712
+    },
+    {
+      "seed": 1077,
+      "contacts_checked": 6,
+      "median_nearest_plan_mesh_point_m": 0.004663980600754963,
+      "max_nearest_plan_mesh_point_m": 0.006401566393357947
+    },
+    {
+      "seed": 1078,
+      "contacts_checked": 4,
+      "median_nearest_plan_mesh_point_m": 0.003582470141558703,
+      "max_nearest_plan_mesh_point_m": 0.013441709597274538
+    },
+    {
+      "seed": 1079,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.004081477474569491,
+      "max_nearest_plan_mesh_point_m": 0.00418026768492214
+    },
+    {
+      "seed": 1080,
+      "contacts_checked": 62,
+      "median_nearest_plan_mesh_point_m": 0.007835979879076136,
+      "max_nearest_plan_mesh_point_m": 0.01641776633496757
+    },
+    {
+      "seed": 1081,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0043326579324169025,
+      "max_nearest_plan_mesh_point_m": 0.0043326579324169025
+    },
+    {
+      "seed": 1082,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0033625484252336017,
+      "max_nearest_plan_mesh_point_m": 0.0033625484252336017
+    },
+    {
+      "seed": 1083,
+      "contacts_checked": 6,
+      "median_nearest_plan_mesh_point_m": 0.011083568767485959,
+      "max_nearest_plan_mesh_point_m": 0.012766903869863884
+    },
+    {
+      "seed": 1084,
+      "contacts_checked": 14,
+      "median_nearest_plan_mesh_point_m": 0.01051536161092713,
+      "max_nearest_plan_mesh_point_m": 0.016242470200019492
+    },
+    {
+      "seed": 1085,
+      "contacts_checked": 18,
+      "median_nearest_plan_mesh_point_m": 0.005512384409844794,
+      "max_nearest_plan_mesh_point_m": 0.016004456718653776
+    },
+    {
+      "seed": 1086,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.00961458343931951,
+      "max_nearest_plan_mesh_point_m": 0.00961458343931951
+    },
+    {
+      "seed": 1087,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0032071606163523235,
+      "max_nearest_plan_mesh_point_m": 0.0032071606163523235
+    },
+    {
+      "seed": 1088,
+      "contacts_checked": 26,
+      "median_nearest_plan_mesh_point_m": 0.009733711583362906,
+      "max_nearest_plan_mesh_point_m": 0.018947342698709183
+    },
+    {
+      "seed": 1089,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.010200134285561536,
+      "max_nearest_plan_mesh_point_m": 0.010251939919880717
+    },
+    {
+      "seed": 1090,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.005493910881913585,
+      "max_nearest_plan_mesh_point_m": 0.005493910881913585
+    },
+    {
+      "seed": 1091,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0038934798151661217,
+      "max_nearest_plan_mesh_point_m": 0.0038934798151661217
+    },
+    {
+      "seed": 1092,
+      "contacts_checked": 19,
+      "median_nearest_plan_mesh_point_m": 0.008531746042995513,
+      "max_nearest_plan_mesh_point_m": 0.01320003557406324
+    },
+    {
+      "seed": 1093,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.004284609103007482,
+      "max_nearest_plan_mesh_point_m": 0.004325086201784151
+    },
+    {
+      "seed": 1094,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.004136496763643895,
+      "max_nearest_plan_mesh_point_m": 0.00413954022006615
+    },
+    {
+      "seed": 1095,
+      "contacts_checked": 32,
+      "median_nearest_plan_mesh_point_m": 0.010893649522477025,
+      "max_nearest_plan_mesh_point_m": 0.01908248041390269
+    },
+    {
+      "seed": 1096,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.006517540850249849,
+      "max_nearest_plan_mesh_point_m": 0.006517540850249849
+    },
+    {
+      "seed": 1097,
+      "contacts_checked": 3,
+      "median_nearest_plan_mesh_point_m": 0.012650389912965935,
+      "max_nearest_plan_mesh_point_m": 0.013022474043663598
+    },
+    {
+      "seed": 1098,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.012622176789259934,
+      "max_nearest_plan_mesh_point_m": 0.012622176789259934
+    },
+    {
+      "seed": 1099,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.007023187392819893,
+      "max_nearest_plan_mesh_point_m": 0.007023187392819893
+    },
+    {
+      "seed": 1100,
+      "contacts_checked": 3,
+      "median_nearest_plan_mesh_point_m": 0.012607033078403246,
+      "max_nearest_plan_mesh_point_m": 0.017338399056726704
+    },
+    {
+      "seed": 1101,
+      "contacts_checked": 56,
+      "median_nearest_plan_mesh_point_m": 0.007449287687173,
+      "max_nearest_plan_mesh_point_m": 0.010532042125635398
+    },
+    {
+      "seed": 1102,
+      "contacts_checked": 4,
+      "median_nearest_plan_mesh_point_m": 0.011180631517031369,
+      "max_nearest_plan_mesh_point_m": 0.011258993920169923
+    },
+    {
+      "seed": 1103,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.00880085416628393,
+      "max_nearest_plan_mesh_point_m": 0.00880085416628393
+    },
+    {
+      "seed": 1104,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.008030788003594896,
+      "max_nearest_plan_mesh_point_m": 0.008030788003594896
+    },
+    {
+      "seed": 1105,
+      "contacts_checked": 16,
+      "median_nearest_plan_mesh_point_m": 0.005170535070236436,
+      "max_nearest_plan_mesh_point_m": 0.015254194437680169
+    },
+    {
+      "seed": 1106,
+      "contacts_checked": 3,
+      "median_nearest_plan_mesh_point_m": 0.006557209695504593,
+      "max_nearest_plan_mesh_point_m": 0.012394994365620231
+    },
+    {
+      "seed": 1107,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.006058782696320018,
+      "max_nearest_plan_mesh_point_m": 0.006058782696320018
+    },
+    {
+      "seed": 1108,
+      "contacts_checked": 88,
+      "median_nearest_plan_mesh_point_m": 0.01006488432503624,
+      "max_nearest_plan_mesh_point_m": 0.013931140917528003
+    },
+    {
+      "seed": 1109,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0032391277431829194,
+      "max_nearest_plan_mesh_point_m": 0.0032391277431829194
+    },
+    {
+      "seed": 1110,
+      "contacts_checked": 10,
+      "median_nearest_plan_mesh_point_m": 0.006863148539069899,
+      "max_nearest_plan_mesh_point_m": 0.012269340046979651
+    },
+    {
+      "seed": 1111,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.002306202291114128,
+      "max_nearest_plan_mesh_point_m": 0.002306202291114128
+    },
+    {
+      "seed": 1112,
+      "contacts_checked": 3,
+      "median_nearest_plan_mesh_point_m": 0.0034965048620432754,
+      "max_nearest_plan_mesh_point_m": 0.005944569180393721
+    },
+    {
+      "seed": 1114,
+      "contacts_checked": 3,
+      "median_nearest_plan_mesh_point_m": 0.006935332327527984,
+      "max_nearest_plan_mesh_point_m": 0.008214354575096219
+    },
+    {
+      "seed": 1115,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0015071672249440948,
+      "max_nearest_plan_mesh_point_m": 0.0015071672249440948
+    },
+    {
+      "seed": 1116,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.007069686416083431,
+      "max_nearest_plan_mesh_point_m": 0.007139676991663435
+    },
+    {
+      "seed": 1117,
+      "contacts_checked": 24,
+      "median_nearest_plan_mesh_point_m": 0.004902067857121951,
+      "max_nearest_plan_mesh_point_m": 0.009049508938299857
+    },
+    {
+      "seed": 1118,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.002670369118203621,
+      "max_nearest_plan_mesh_point_m": 0.002735278333808573
+    },
+    {
+      "seed": 1119,
+      "contacts_checked": 5,
+      "median_nearest_plan_mesh_point_m": 0.006176413490637231,
+      "max_nearest_plan_mesh_point_m": 0.006722508771747912
+    },
+    {
+      "seed": 1120,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.004888198289736407,
+      "max_nearest_plan_mesh_point_m": 0.004888198289736407
+    },
+    {
+      "seed": 1121,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.005342592401645982,
+      "max_nearest_plan_mesh_point_m": 0.005342592401645982
+    },
+    {
+      "seed": 1122,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.008267345018876496,
+      "max_nearest_plan_mesh_point_m": 0.008267345018876496
+    },
+    {
+      "seed": 1123,
+      "contacts_checked": 12,
+      "median_nearest_plan_mesh_point_m": 0.005869592642334618,
+      "max_nearest_plan_mesh_point_m": 0.012341396526556095
+    },
+    {
+      "seed": 1124,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.004635826771861497,
+      "max_nearest_plan_mesh_point_m": 0.004635826771861497
+    },
+    {
+      "seed": 1125,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.007222081637620143,
+      "max_nearest_plan_mesh_point_m": 0.007222081637620143
+    },
+    {
+      "seed": 1126,
+      "contacts_checked": 11,
+      "median_nearest_plan_mesh_point_m": 0.011168050129804432,
+      "max_nearest_plan_mesh_point_m": 0.012126779532937967
+    },
+    {
+      "seed": 1127,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.004919801502871702,
+      "max_nearest_plan_mesh_point_m": 0.004926343316323386
+    },
+    {
+      "seed": 1128,
+      "contacts_checked": 20,
+      "median_nearest_plan_mesh_point_m": 0.0040024982647305024,
+      "max_nearest_plan_mesh_point_m": 0.007146115873875781
+    },
+    {
+      "seed": 1129,
+      "contacts_checked": 17,
+      "median_nearest_plan_mesh_point_m": 0.008362452051738743,
+      "max_nearest_plan_mesh_point_m": 0.01939435769532986
+    },
+    {
+      "seed": 1130,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.006747936308250718,
+      "max_nearest_plan_mesh_point_m": 0.006747936308250718
+    },
+    {
+      "seed": 1131,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.007344530262856154,
+      "max_nearest_plan_mesh_point_m": 0.007344530262856154
+    },
+    {
+      "seed": 1132,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.005498494387080251,
+      "max_nearest_plan_mesh_point_m": 0.005529504947215757
+    },
+    {
+      "seed": 1133,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.0018868460638811523,
+      "max_nearest_plan_mesh_point_m": 0.0019123993705871198
+    },
+    {
+      "seed": 1134,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.006187426572234237,
+      "max_nearest_plan_mesh_point_m": 0.006786966949523913
+    },
+    {
+      "seed": 1135,
+      "contacts_checked": 4,
+      "median_nearest_plan_mesh_point_m": 0.008340818132433824,
+      "max_nearest_plan_mesh_point_m": 0.016931996498982412
+    },
+    {
+      "seed": 1136,
+      "contacts_checked": 64,
+      "median_nearest_plan_mesh_point_m": 0.002618833038285427,
+      "max_nearest_plan_mesh_point_m": 0.016869532271022634
+    },
+    {
+      "seed": 1137,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.004541806426837606,
+      "max_nearest_plan_mesh_point_m": 0.004547521803301987
+    },
+    {
+      "seed": 1138,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.006966229554642185,
+      "max_nearest_plan_mesh_point_m": 0.006966229554642185
+    },
+    {
+      "seed": 1139,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.0028855939414102706,
+      "max_nearest_plan_mesh_point_m": 0.0028855939414102706
+    },
+    {
+      "seed": 1140,
+      "contacts_checked": 51,
+      "median_nearest_plan_mesh_point_m": 0.005774165590507209,
+      "max_nearest_plan_mesh_point_m": 0.011605988841427264
+    },
+    {
+      "seed": 1141,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.0039490680189938334,
+      "max_nearest_plan_mesh_point_m": 0.0039621476170814225
+    },
+    {
+      "seed": 1142,
+      "contacts_checked": 14,
+      "median_nearest_plan_mesh_point_m": 0.007450437592027269,
+      "max_nearest_plan_mesh_point_m": 0.01098462118554039
+    },
+    {
+      "seed": 1143,
+      "contacts_checked": 87,
+      "median_nearest_plan_mesh_point_m": 0.0123077952776271,
+      "max_nearest_plan_mesh_point_m": 0.013717793285769287
+    },
+    {
+      "seed": 1144,
+      "contacts_checked": 5,
+      "median_nearest_plan_mesh_point_m": 0.003182548138142413,
+      "max_nearest_plan_mesh_point_m": 0.0033302512582984558
+    },
+    {
+      "seed": 1145,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.003821661933357275,
+      "max_nearest_plan_mesh_point_m": 0.003821661933357275
+    },
+    {
+      "seed": 1146,
+      "contacts_checked": 43,
+      "median_nearest_plan_mesh_point_m": 0.008225445672363598,
+      "max_nearest_plan_mesh_point_m": 0.01621667005928986
+    },
+    {
+      "seed": 1147,
+      "contacts_checked": 7,
+      "median_nearest_plan_mesh_point_m": 0.004856922665079039,
+      "max_nearest_plan_mesh_point_m": 0.008319285561222535
+    },
+    {
+      "seed": 1148,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.012126237956186257,
+      "max_nearest_plan_mesh_point_m": 0.012141806076863541
+    },
+    {
+      "seed": 1149,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.005650844997102691,
+      "max_nearest_plan_mesh_point_m": 0.007519313091471405
+    },
+    {
+      "seed": 1150,
+      "contacts_checked": 22,
+      "median_nearest_plan_mesh_point_m": 0.005242026843980738,
+      "max_nearest_plan_mesh_point_m": 0.009267628908932493
+    },
+    {
+      "seed": 1151,
+      "contacts_checked": 33,
+      "median_nearest_plan_mesh_point_m": 0.004573256612016691,
+      "max_nearest_plan_mesh_point_m": 0.01099459799662046
+    },
+    {
+      "seed": 1152,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.004082215556310825,
+      "max_nearest_plan_mesh_point_m": 0.004082215556310825
+    },
+    {
+      "seed": 1153,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.005063208698973187,
+      "max_nearest_plan_mesh_point_m": 0.005063208698973187
+    },
+    {
+      "seed": 1154,
+      "contacts_checked": 1,
+      "median_nearest_plan_mesh_point_m": 0.008893526094992823,
+      "max_nearest_plan_mesh_point_m": 0.008893526094992823
+    },
+    {
+      "seed": 1155,
+      "contacts_checked": 7,
+      "median_nearest_plan_mesh_point_m": 0.005195466528699155,
+      "max_nearest_plan_mesh_point_m": 0.006302272771099576
+    },
+    {
+      "seed": 1156,
+      "contacts_checked": 2,
+      "median_nearest_plan_mesh_point_m": 0.01006973110088946,
+      "max_nearest_plan_mesh_point_m": 0.010833366551972364
+    },
+    {
+      "seed": 1157,
+      "contacts_checked": 17,
+      "median_nearest_plan_mesh_point_m": 0.0043308931675205995,
+      "max_nearest_plan_mesh_point_m": 0.009603433380815088
+    },
+    {
+      "seed": 1158,
+      "contacts_checked": 3,
+      "median_nearest_plan_mesh_point_m": 0.007499576175913076,
+      "max_nearest_plan_mesh_point_m": 0.008770536249411915
+    },
+    {
+      "seed": 1159,
+      "contacts_checked": 23,
+      "median_nearest_plan_mesh_point_m": 0.007984401099689982,
+      "max_nearest_plan_mesh_point_m": 0.008876005677622168
+    }
+  ],
+  "interpretation": "Distance combines finite surface sampling, linear interpolation and command-plan mismatch. Privileged contact positions are diagnostic only and never model inputs. Not an exact contact-surface or realized robot-path proof."
+}

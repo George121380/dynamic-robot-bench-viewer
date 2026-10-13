@@ -1,0 +1,50 @@
+{
+  "status": "splits_cameras_physics_fixed_before_collection_recipe_finalized_before_first_optimizer_update",
+  "horizon_s": 4.0,
+  "prediction_dt_s": 0.4,
+  "training_seeds": [
+    [
+      3,
+      50
+    ],
+    [
+      1000,
+      1159
+    ]
+  ],
+  "validation_seeds": [
+    51,
+    66
+  ],
+  "new_test_seeds": [
+    4000,
+    4029
+  ],
+  "input": "Current native 320x180 RGB-D; two fixed nearer cameras; backproject exactly the depth supplied to the feature encoder. Known gripper mesh, current robot state and frozen commands only.",
+  "physics": "Original OCBench Bowling unmodified; existing episodes rerendered from verified saved states; new episodes use original expert and same-reset frozen action replay.",
+  "sampling": "Official 0.015m grid_sample_transform; random within voxel for training, canonical first for validation/test; matched all-time GT indices; recenter after sampling.",
+  "normalization": "Training-only canonical-sample feature and per-time displacement means/variances; affine compensation of input projections and final output layer preserves initial physical function within numerical tolerance; saved buffers required on restore.",
+  "time": "Four-second adaptation with dense action conditioning and explicit relative timestamps. Native index derivatives retained at 0.1s input cadence, train-only renormalization. No variable-horizon claim.",
+  "loss": "Physical centimeter squared point MSE; 95% equally divided among present ball, moving-pin and static-pin groups, object-macro within pin groups; 5% background. IDs/motion used only for supervised loss.",
+  "selection": "0.4*ball_ADE + 0.4*moving_pin_ADE + 0.2*all_pin_ADE on the 16 fixed validation episodes; include step zero; no test selection.",
+  "base": "Released small-DROID; frozen DINOv3; same trained parameter architecture; optional explicit robot times enables denser conditioning.",
+  "optimizer": "AdamW",
+  "learning_rate": 3e-05,
+  "weight_decay": 0.01,
+  "batch_size": 1,
+  "training_seed": 42,
+  "steps": 5000,
+  "validation_interval": 250,
+  "overfit": "First eight accepted training episodes by seed, 1000 updates; diagnostic weights discarded before main training.",
+  "baselines": [
+    "stationary",
+    "pretrained_with_corrected_inputs",
+    "v3_weights_with_corrected_inputs",
+    "v4_adapted"
+  ],
+  "exclusion": "Undefined prepush query or incomplete horizon only; invalid inputs reported, never silently filtered; retain misses and all valid new-test episodes.",
+  "test_policy": "New seeds4000-4029 fixed before collection; collection QC may report GT counts, never used to change frozen training configuration or select checkpoints. New model forecasts and aggregate test metrics only after validation selection. Previous test cohorts exploratory. No rigid forecast correction.",
+  "robot_temporal_sampling": "41 command-only robot samples at 0.1s; explicit normalized physical times; ten uniform 0.4s prediction intervals unchanged; native default interface unchanged.",
+  "protocol_revision_reason": "Before any training or new forecasts: preserve entire 4s while giving command plan sufficient temporal resolution to represent the pushing phase; accept invalid-query exclusions instead of requiring 30 valid queries.",
+  "sparse_convolution": "Duplicate voxel indices are mean-coalesced only inside spatial convolution and gathered back to all temporal tokens; attention and residual point features remain distinct. Repaired core used for all model baselines; no claim of unchanged physical function versus buggy upstream duplicate behavior."
+}

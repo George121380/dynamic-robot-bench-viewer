@@ -1,0 +1,503 @@
+{
+  "episode": "bowling-seed0003",
+  "scope": "One training episode, native 11-frame robot plan, fixed parameters and torch seeds, FP32 eval.",
+  "before_source_commit": "038ac93",
+  "after_source_commit": "c30b972",
+  "runs": {
+    "before": [
+      {
+        "iteration": 1,
+        "drift_m": 0.011968523263931274,
+        "stage_drift": {
+          "scene_feature_encoder": 0.0,
+          "robot_proj": 0.0,
+          "time_embed": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc0.block0.cpe": 1.63217294216156,
+          "dynamics_predictor.predictor_model.enc.enc0.block1.cpe": 1.6190465688705444,
+          "dynamics_predictor.predictor_model.enc.enc1.block0.cpe": 0.35425806045532227,
+          "dynamics_predictor.predictor_model.enc.enc1.block1.cpe": 0.31176280975341797,
+          "dynamics_predictor.predictor_model.enc.enc2.block0.cpe": 0.2136540412902832,
+          "dynamics_predictor.predictor_model.enc.enc2.block1.cpe": 0.1488940417766571,
+          "dynamics_predictor.predictor_model.enc.enc3.block0.cpe": 0.0645093023777008,
+          "dynamics_predictor.predictor_model.enc.enc3.block1.cpe": 0.08147953450679779,
+          "dynamics_predictor.predictor_model.enc.enc3.block2.cpe": 0.047953128814697266,
+          "dynamics_predictor.predictor_model.enc.enc3.block3.cpe": 0.07414740324020386,
+          "dynamics_predictor.predictor_model.enc.enc3.block4.cpe": 0.05900895595550537,
+          "dynamics_predictor.predictor_model.enc.enc3.block5.cpe": 0.05071580410003662,
+          "dynamics_predictor.predictor_model.enc.enc4.block0.cpe": 0.036190032958984375,
+          "dynamics_predictor.predictor_model.enc.enc4.block1.cpe": 0.05496801435947418,
+          "dynamics_predictor.predictor_model.dec.dec3.block0.cpe": 0.02503049373626709,
+          "dynamics_predictor.predictor_model.dec.dec3.block1.cpe": 0.05859577655792236,
+          "dynamics_predictor.predictor_model.dec.dec2.block0.cpe": 0.09362280368804932,
+          "dynamics_predictor.predictor_model.dec.dec2.block1.cpe": 0.1379450559616089,
+          "dynamics_predictor.predictor_model.dec.dec1.block0.cpe": 0.14449208974838257,
+          "dynamics_predictor.predictor_model.dec.dec1.block1.cpe": 0.24051818251609802,
+          "dynamics_predictor.predictor_model.dec.dec0.block0.cpe": 1.4883084297180176,
+          "dynamics_predictor.predictor_model.dec.dec0.block1.cpe": 1.2573597431182861
+        },
+        "voxel_counts": {
+          "dynamics_predictor.predictor_model.enc.enc0.block0.cpe": [
+            3571,
+            2073
+          ],
+          "dynamics_predictor.predictor_model.enc.enc0.block1.cpe": [
+            3571,
+            2073
+          ],
+          "dynamics_predictor.predictor_model.enc.enc1.block0.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.enc.enc1.block1.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.enc.enc2.block0.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.enc.enc2.block1.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block0.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block1.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block2.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block3.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block4.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block5.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc4.block0.cpe": [
+            27,
+            27
+          ],
+          "dynamics_predictor.predictor_model.enc.enc4.block1.cpe": [
+            27,
+            27
+          ],
+          "dynamics_predictor.predictor_model.dec.dec3.block0.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.dec.dec3.block1.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.dec.dec2.block0.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.dec.dec2.block1.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.dec.dec1.block0.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.dec.dec1.block1.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.dec.dec0.block0.cpe": [
+            3571,
+            2073
+          ],
+          "dynamics_predictor.predictor_model.dec.dec0.block1.cpe": [
+            3571,
+            2073
+          ]
+        }
+      },
+      {
+        "iteration": 2,
+        "drift_m": 0.011163771152496338,
+        "stage_drift": {
+          "scene_feature_encoder": 0.0,
+          "robot_proj": 0.0,
+          "time_embed": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc0.block0.cpe": 1.5593644380569458,
+          "dynamics_predictor.predictor_model.enc.enc0.block1.cpe": 1.6768665313720703,
+          "dynamics_predictor.predictor_model.enc.enc1.block0.cpe": 0.2762376070022583,
+          "dynamics_predictor.predictor_model.enc.enc1.block1.cpe": 0.29631489515304565,
+          "dynamics_predictor.predictor_model.enc.enc2.block0.cpe": 0.1599118709564209,
+          "dynamics_predictor.predictor_model.enc.enc2.block1.cpe": 0.1359786093235016,
+          "dynamics_predictor.predictor_model.enc.enc3.block0.cpe": 0.05505802109837532,
+          "dynamics_predictor.predictor_model.enc.enc3.block1.cpe": 0.08964444696903229,
+          "dynamics_predictor.predictor_model.enc.enc3.block2.cpe": 0.06616273522377014,
+          "dynamics_predictor.predictor_model.enc.enc3.block3.cpe": 0.07074242830276489,
+          "dynamics_predictor.predictor_model.enc.enc3.block4.cpe": 0.04010140895843506,
+          "dynamics_predictor.predictor_model.enc.enc3.block5.cpe": 0.0508800745010376,
+          "dynamics_predictor.predictor_model.enc.enc4.block0.cpe": 0.028352737426757812,
+          "dynamics_predictor.predictor_model.enc.enc4.block1.cpe": 0.04856199026107788,
+          "dynamics_predictor.predictor_model.dec.dec3.block0.cpe": 0.018481969833374023,
+          "dynamics_predictor.predictor_model.dec.dec3.block1.cpe": 0.052439212799072266,
+          "dynamics_predictor.predictor_model.dec.dec2.block0.cpe": 0.07319045066833496,
+          "dynamics_predictor.predictor_model.dec.dec2.block1.cpe": 0.11713886260986328,
+          "dynamics_predictor.predictor_model.dec.dec1.block0.cpe": 0.18786084651947021,
+          "dynamics_predictor.predictor_model.dec.dec1.block1.cpe": 0.18611913919448853,
+          "dynamics_predictor.predictor_model.dec.dec0.block0.cpe": 1.590482234954834,
+          "dynamics_predictor.predictor_model.dec.dec0.block1.cpe": 1.2559866905212402
+        },
+        "voxel_counts": {
+          "dynamics_predictor.predictor_model.enc.enc0.block0.cpe": [
+            3571,
+            2073
+          ],
+          "dynamics_predictor.predictor_model.enc.enc0.block1.cpe": [
+            3571,
+            2073
+          ],
+          "dynamics_predictor.predictor_model.enc.enc1.block0.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.enc.enc1.block1.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.enc.enc2.block0.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.enc.enc2.block1.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block0.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block1.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block2.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block3.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block4.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block5.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc4.block0.cpe": [
+            27,
+            27
+          ],
+          "dynamics_predictor.predictor_model.enc.enc4.block1.cpe": [
+            27,
+            27
+          ],
+          "dynamics_predictor.predictor_model.dec.dec3.block0.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.dec.dec3.block1.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.dec.dec2.block0.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.dec.dec2.block1.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.dec.dec1.block0.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.dec.dec1.block1.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.dec.dec0.block0.cpe": [
+            3571,
+            2073
+          ],
+          "dynamics_predictor.predictor_model.dec.dec0.block1.cpe": [
+            3571,
+            2073
+          ]
+        }
+      }
+    ],
+    "after": [
+      {
+        "iteration": 1,
+        "drift_m": 0.0,
+        "stage_drift": {
+          "scene_feature_encoder": 0.0,
+          "robot_proj": 0.0,
+          "time_embed": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc0.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc0.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc1.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc1.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc2.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc2.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc3.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc3.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc3.block2.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc3.block3.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc3.block4.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc3.block5.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc4.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc4.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec3.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec3.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec2.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec2.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec1.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec1.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec0.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec0.block1.cpe": 0.0
+        },
+        "voxel_counts": {
+          "dynamics_predictor.predictor_model.enc.enc0.block0.cpe": [
+            2073,
+            2073
+          ],
+          "dynamics_predictor.predictor_model.enc.enc0.block1.cpe": [
+            2073,
+            2073
+          ],
+          "dynamics_predictor.predictor_model.enc.enc1.block0.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.enc.enc1.block1.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.enc.enc2.block0.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.enc.enc2.block1.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block0.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block1.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block2.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block3.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block4.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block5.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc4.block0.cpe": [
+            27,
+            27
+          ],
+          "dynamics_predictor.predictor_model.enc.enc4.block1.cpe": [
+            27,
+            27
+          ],
+          "dynamics_predictor.predictor_model.dec.dec3.block0.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.dec.dec3.block1.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.dec.dec2.block0.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.dec.dec2.block1.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.dec.dec1.block0.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.dec.dec1.block1.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.dec.dec0.block0.cpe": [
+            2073,
+            2073
+          ],
+          "dynamics_predictor.predictor_model.dec.dec0.block1.cpe": [
+            2073,
+            2073
+          ]
+        }
+      },
+      {
+        "iteration": 2,
+        "drift_m": 0.0,
+        "stage_drift": {
+          "scene_feature_encoder": 0.0,
+          "robot_proj": 0.0,
+          "time_embed": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc0.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc0.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc1.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc1.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc2.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc2.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc3.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc3.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc3.block2.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc3.block3.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc3.block4.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc3.block5.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc4.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.enc.enc4.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec3.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec3.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec2.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec2.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec1.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec1.block1.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec0.block0.cpe": 0.0,
+          "dynamics_predictor.predictor_model.dec.dec0.block1.cpe": 0.0
+        },
+        "voxel_counts": {
+          "dynamics_predictor.predictor_model.enc.enc0.block0.cpe": [
+            2073,
+            2073
+          ],
+          "dynamics_predictor.predictor_model.enc.enc0.block1.cpe": [
+            2073,
+            2073
+          ],
+          "dynamics_predictor.predictor_model.enc.enc1.block0.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.enc.enc1.block1.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.enc.enc2.block0.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.enc.enc2.block1.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block0.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block1.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block2.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block3.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block4.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc3.block5.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.enc.enc4.block0.cpe": [
+            27,
+            27
+          ],
+          "dynamics_predictor.predictor_model.enc.enc4.block1.cpe": [
+            27,
+            27
+          ],
+          "dynamics_predictor.predictor_model.dec.dec3.block0.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.dec.dec3.block1.cpe": [
+            106,
+            106
+          ],
+          "dynamics_predictor.predictor_model.dec.dec2.block0.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.dec.dec2.block1.cpe": [
+            381,
+            381
+          ],
+          "dynamics_predictor.predictor_model.dec.dec1.block0.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.dec.dec1.block1.cpe": [
+            1033,
+            1033
+          ],
+          "dynamics_predictor.predictor_model.dec.dec0.block0.cpe": [
+            2073,
+            2073
+          ],
+          "dynamics_predictor.predictor_model.dec.dec0.block1.cpe": [
+            2073,
+            2073
+          ]
+        }
+      }
+    ]
+  },
+  "regression": {
+    "unique_path_bitwise_unchanged": true,
+    "all_duplicate_tokens_receive_gradients": true,
+    "permutation_equivariant": true
+  },
+  "primary_source": "https://github.com/traveller59/spconv/issues/159",
+  "interpretation": "First divergence occurs in CPE sparse convolution with duplicate indices. Coalescing removes observed nondeterminism. This does not quantify isolated downstream test performance gains."
+}

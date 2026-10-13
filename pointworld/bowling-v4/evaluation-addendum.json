@@ -1,0 +1,75 @@
+{
+  "reason": "Cold-process forecast discrepancy with native FlashAttention; external AMP disabled still left its internal BF16 cast. Complete FP32 mathematical reference used for final artifact.",
+  "timing": "Evaluation-only correction after first BF16 fresh-test forecasts; original selection and weights retained, no further optimizer updates or test-based checkpoint selection.",
+  "selected_step": 4750,
+  "adapter_sha256": "3f2b69c05164727b47a26b3ad38258aebd9428cc36242b5e22de3bfc4ad67fc5",
+  "original_bf16_discrepancy_m": 0.003404557704925537,
+  "external_amp_disabled_native_flash_discrepancy_m": 0.0013925731182098389,
+  "reference_attention_formula_max_error": 2.980232238769531e-07,
+  "reference_independent_restoration_max_errors_m": [
+    0.0,
+    2.980232238769531e-07
+  ],
+  "training_and_original_validation_precision": "Native FlashAttention BF16; training uses external BF16 autocast",
+  "final_prediction_precision": "FP32 including DINO and variable-length PointTransformer attention, math SDPA reference",
+  "unchanged": "Fixed physics, cameras, splits, input arrays, output horizon, optimizer recipe, completed updates and selected checkpoint.",
+  "attribution": "The precise source of cross-process native-kernel numerical differences has not been isolated. The FP32 reference removes the observed millimeter discrepancy and leaves the poor collision result unchanged.",
+  "preserved_private_evaluations": [
+    ".runtime/bowling-runs/main-v4-bf16-evaluation",
+    ".runtime/bowling-runs/main-v4-fp32-flash-evaluation"
+  ],
+  "primary_numerical_reference": "https://docs.pytorch.org/docs/main/notes/numerical_accuracy.html",
+  "note": "Targeted implementation/numerical fixes after exploratory inspection; joint repairs are not an isolated causal ablation or a model-capability upper bound.",
+  "portable_sampling": {
+    "finding": "NumPy 2.2.6 on Mac and 1.26.4 on Linux can order ties within a voxel differently; seed4000 differs in 391 of 1416 selected scene point IDs, with the same voxel sequence.",
+    "timing": "After final evaluation, persist exactly the existing native Linux selections, without altering any original array or forecast.",
+    "receipt": {
+      "episodes": 251,
+      "numpy": "1.26.4",
+      "sha256": "5fdd9d3888f0888ec11c0c4ed7f644dd0904292cf2162e372970e99405fda9a6",
+      "policy": "Release test-mode FNV voxel sampling, frozen on preparation CPU. Only current geometry read; exact original arrays and selected points preserved. Training sampling remains random.",
+      "fields_read": [
+        "scene_flows[0]",
+        "robot_flows[0]"
+      ],
+      "future_labels_read": false
+    },
+    "verification": "Independent Mac checker recomputes all 116 saved forecasts with exact point/ground-truth correspondence and unchanged scores.",
+    "reproduction": "Freeze current-geometry sampling once on preparation CPU before future training; preserve sidecar with inputs. Training voxel choices remain random.",
+    "restoration_with_preserved_indices": {
+      "source_commit": "16bfdf5c3120d3ba1f638adf4646d44f693e575c",
+      "input_sha256": "3a89e80c307672d74fcc2109d056cd5e9eeea94dbdb361e3b8b95a62659a94d7",
+      "adapter_sha256": "3f2b69c05164727b47a26b3ad38258aebd9428cc36242b5e22de3bfc4ad67fc5",
+      "selected_step": 4750,
+      "serialization_seed": 1493277252,
+      "prediction_precision": "float32",
+      "attention_implementation": "fp32_math_reference",
+      "inference_only": true,
+      "bitwise_gpu_prediction_reproducibility": true,
+      "restored_trainable_tensors_exact": 489,
+      "restored_normalization_buffers_exact": 6,
+      "network_input_fields": [
+        "scene_flows",
+        "scene_colors",
+        "scene_normals",
+        "robot_flows",
+        "robot_normals",
+        "right_gripper_open",
+        "robot_dense_flows",
+        "robot_dense_normals",
+        "right_gripper_dense_open",
+        "robot_dense_times",
+        "cam0_initial_rgb",
+        "cam0_initial_depth",
+        "cam0_intrinsic",
+        "cam0_extrinsic",
+        "cam1_initial_rgb",
+        "cam1_initial_depth",
+        "cam1_intrinsic",
+        "cam1_extrinsic"
+      ],
+      "supervision_fields_available_to_batch": false,
+      "prediction_max_abs_error_m": 0.0
+    }
+  }
+}
