@@ -1,0 +1,454 @@
+{
+  "manifest_sha256": "55c98a382fb155820da5827752f95bb0f2308f4b430cb0bbb4e83d1319392a21",
+  "attempted": 270,
+  "accepted": 266,
+  "rejected": [
+    {
+      "seed": 38,
+      "rejected": "No robot-ball contact; no prepush query defined"
+    },
+    {
+      "seed": 79,
+      "rejected": "No robot-ball contact; no prepush query defined"
+    },
+    {
+      "seed": 1113,
+      "rejected": "No robot-ball contact; no prepush query defined"
+    },
+    {
+      "seed": 2025,
+      "rejected": "No robot-ball contact; no prepush query defined"
+    }
+  ],
+  "splits": {
+    "train": {
+      "episodes": 206,
+      "moving_episodes": 94,
+      "tipping_episodes": 93,
+      "tips": 472,
+      "moving_pin_frame_fraction": 0.12796116504854368,
+      "moving_pins_per_timestep": [
+        0,
+        0,
+        0,
+        24,
+        148,
+        369,
+        477,
+        521,
+        540,
+        557
+      ]
+    },
+    "validation": {
+      "episodes": 16,
+      "moving_episodes": 8,
+      "tipping_episodes": 8,
+      "tips": 48,
+      "moving_pin_frame_fraction": 0.155625,
+      "moving_pins_per_timestep": [
+        0,
+        0,
+        0,
+        0,
+        11,
+        34,
+        48,
+        52,
+        52,
+        52
+      ]
+    },
+    "test": {
+      "episodes": 15,
+      "moving_episodes": 9,
+      "tipping_episodes": 9,
+      "tips": 48,
+      "moving_pin_frame_fraction": 0.206,
+      "moving_pins_per_timestep": [
+        0,
+        0,
+        0,
+        5,
+        24,
+        42,
+        56,
+        60,
+        61,
+        61
+      ]
+    },
+    "fresh_test": {
+      "episodes": 29,
+      "moving_episodes": 17,
+      "tipping_episodes": 17,
+      "tips": 85,
+      "moving_pin_frame_fraction": 0.17517241379310344,
+      "moving_pins_per_timestep": [
+        0,
+        0,
+        0,
+        3,
+        20,
+        71,
+        94,
+        104,
+        106,
+        110
+      ]
+    }
+  },
+  "old_test_initial_fields_exact": 200,
+  "old_test_full_qpos_replay_exact": 15,
+  "wall_contact_episodes": [
+    {
+      "seed": 5,
+      "split": "train",
+      "records": 19
+    },
+    {
+      "seed": 7,
+      "split": "train",
+      "records": 21
+    },
+    {
+      "seed": 11,
+      "split": "train",
+      "records": 21
+    },
+    {
+      "seed": 18,
+      "split": "train",
+      "records": 58
+    },
+    {
+      "seed": 19,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 24,
+      "split": "train",
+      "records": 29
+    },
+    {
+      "seed": 27,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 36,
+      "split": "train",
+      "records": 54
+    },
+    {
+      "seed": 45,
+      "split": "train",
+      "records": 19
+    },
+    {
+      "seed": 46,
+      "split": "train",
+      "records": 21
+    },
+    {
+      "seed": 1000,
+      "split": "train",
+      "records": 22
+    },
+    {
+      "seed": 1016,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 1017,
+      "split": "train",
+      "records": 48
+    },
+    {
+      "seed": 1022,
+      "split": "train",
+      "records": 21
+    },
+    {
+      "seed": 1023,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 1024,
+      "split": "train",
+      "records": 75
+    },
+    {
+      "seed": 1026,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 1027,
+      "split": "train",
+      "records": 19
+    },
+    {
+      "seed": 1039,
+      "split": "train",
+      "records": 56
+    },
+    {
+      "seed": 1041,
+      "split": "train",
+      "records": 26
+    },
+    {
+      "seed": 1048,
+      "split": "train",
+      "records": 23
+    },
+    {
+      "seed": 1057,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 1066,
+      "split": "train",
+      "records": 18
+    },
+    {
+      "seed": 1067,
+      "split": "train",
+      "records": 60
+    },
+    {
+      "seed": 1068,
+      "split": "train",
+      "records": 19
+    },
+    {
+      "seed": 1072,
+      "split": "train",
+      "records": 60
+    },
+    {
+      "seed": 1074,
+      "split": "train",
+      "records": 19
+    },
+    {
+      "seed": 1076,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 1082,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 1083,
+      "split": "train",
+      "records": 31
+    },
+    {
+      "seed": 1088,
+      "split": "train",
+      "records": 26
+    },
+    {
+      "seed": 1090,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 1093,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 1100,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 1101,
+      "split": "train",
+      "records": 28
+    },
+    {
+      "seed": 1107,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 1108,
+      "split": "train",
+      "records": 26
+    },
+    {
+      "seed": 1115,
+      "split": "train",
+      "records": 28
+    },
+    {
+      "seed": 1117,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 1125,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 1126,
+      "split": "train",
+      "records": 18
+    },
+    {
+      "seed": 1149,
+      "split": "train",
+      "records": 42
+    },
+    {
+      "seed": 1150,
+      "split": "train",
+      "records": 28
+    },
+    {
+      "seed": 1151,
+      "split": "train",
+      "records": 19
+    },
+    {
+      "seed": 1155,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 1159,
+      "split": "train",
+      "records": 20
+    },
+    {
+      "seed": 55,
+      "split": "validation",
+      "records": 20
+    },
+    {
+      "seed": 74,
+      "split": "test",
+      "records": 18
+    },
+    {
+      "seed": 75,
+      "split": "test",
+      "records": 21
+    },
+    {
+      "seed": 76,
+      "split": "test",
+      "records": 20
+    },
+    {
+      "seed": 78,
+      "split": "test",
+      "records": 14
+    },
+    {
+      "seed": 2002,
+      "split": "fresh_test",
+      "records": 2
+    },
+    {
+      "seed": 2004,
+      "split": "fresh_test",
+      "records": 20
+    },
+    {
+      "seed": 2008,
+      "split": "fresh_test",
+      "records": 18
+    },
+    {
+      "seed": 2011,
+      "split": "fresh_test",
+      "records": 333
+    },
+    {
+      "seed": 2017,
+      "split": "fresh_test",
+      "records": 18
+    },
+    {
+      "seed": 2018,
+      "split": "fresh_test",
+      "records": 19
+    },
+    {
+      "seed": 2024,
+      "split": "fresh_test",
+      "records": 45
+    },
+    {
+      "seed": 2027,
+      "split": "fresh_test",
+      "records": 30
+    }
+  ],
+  "old_test_rgb_quantization_differences": [
+    {
+      "seed": 67,
+      "field": "scene_colors",
+      "max_difference_in_uint8_units": 0.9999999403953552
+    },
+    {
+      "seed": 67,
+      "field": "cam0_initial_rgb",
+      "max_difference_in_uint8_units": 1.0
+    },
+    {
+      "seed": 69,
+      "field": "cam0_initial_rgb",
+      "max_difference_in_uint8_units": 1.0
+    },
+    {
+      "seed": 70,
+      "field": "scene_colors",
+      "max_difference_in_uint8_units": 0.9999999403953552
+    },
+    {
+      "seed": 70,
+      "field": "cam0_initial_rgb",
+      "max_difference_in_uint8_units": 1.0
+    },
+    {
+      "seed": 74,
+      "field": "scene_colors",
+      "max_difference_in_uint8_units": 0.9999999403953552
+    },
+    {
+      "seed": 78,
+      "field": "cam0_initial_rgb",
+      "max_difference_in_uint8_units": 1.0
+    },
+    {
+      "seed": 81,
+      "field": "cam0_initial_rgb",
+      "max_difference_in_uint8_units": 1.0
+    },
+    {
+      "seed": 82,
+      "field": "scene_colors",
+      "max_difference_in_uint8_units": 0.9999999403953552
+    },
+    {
+      "seed": 82,
+      "field": "cam0_initial_rgb",
+      "max_difference_in_uint8_units": 1.0
+    }
+  ],
+  "minimum_pin_visible_points": 49,
+  "maximum_initial_ball_speed_m_s": 1.0765022158142064e-15
+}

@@ -1,0 +1,26 @@
+{
+  "episodes": 266,
+  "verified_arrays": 6650,
+  "bitwise_original_array_bytes": true,
+  "parts": [
+    {
+      "archive_sha256": "9e02ee003f5740c86649545aaec63f91c36c157bddc9a087d645b7c1861e09d5",
+      "verified_arrays": 2225,
+      "bitwise_original_array_bytes": true,
+      "manifest_sha256": "55c98a382fb155820da5827752f95bb0f2308f4b430cb0bbb4e83d1319392a21"
+    },
+    {
+      "archive_sha256": "72e41604f57c7d429326dc1b303665cb1813c09438ee95d6957660f14aa76bef",
+      "verified_arrays": 2225,
+      "bitwise_original_array_bytes": true,
+      "manifest_sha256": "55c98a382fb155820da5827752f95bb0f2308f4b430cb0bbb4e83d1319392a21"
+    },
+    {
+      "archive_sha256": "b5d5fe38c5f92728e68be937c918433fede94b7185328e3ee1e4ed4511ca12e0",
+      "verified_arrays": 2200,
+      "bitwise_original_array_bytes": true,
+      "manifest_sha256": "55c98a382fb155820da5827752f95bb0f2308f4b430cb0bbb4e83d1319392a21"
+    }
+  ],
+  "manifest_sha256": "55c98a382fb155820da5827752f95bb0f2308f4b430cb0bbb4e83d1319392a21"
+}
