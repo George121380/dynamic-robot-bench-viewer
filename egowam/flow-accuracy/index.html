@@ -8,7 +8,7 @@
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 system-ui,sans-serif}main{max-width:1060px;margin:auto;padding:30px 24px 60px}h1{font-size:26px;line-height:1.4}h2{font-size:20px;margin-top:32px}h3{font-size:17px;margin-bottom:8px}p{margin:8px 0 15px}a{color:var(--accent)}.muted,small{color:var(--muted)}.lead{border-left:3px solid var(--accent);padding:12px 18px;background:var(--panel)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:28px}table{border-collapse:collapse;width:100%;font-size:15px}th,td{padding:10px;text-align:left;border-bottom:1px solid var(--line)}section{border-top:1px solid var(--line);margin-top:28px;padding-top:10px}label{display:block;margin:10px 0}input{display:block;width:100%;accent-color:var(--accent)}output{font-weight:600;color:var(--accent)}details{margin-top:22px}summary{cursor:pointer;font-weight:600}.calc{padding:16px;border:1px solid var(--line)}code{overflow-wrap:anywhere}footer{margin-top:30px;font-size:13px}nav{display:flex;gap:20px;flex-wrap:wrap}
 </style>
 <main>
-<nav><a href="../">部署状态 / Deployment</a><a href="#english">English review</a><a href="geometry-sensitivity.json">算例 JSON / Analytic receipt</a></nav>
+<nav><a href="../">部署状态 / Deployment</a><a href="../flow-motion/">相机运动动画 / Motion demo</a><a href="#english">English review</a><a href="geometry-sensitivity.json">算例 JSON / Analytic receipt</a></nav>
 <p class="muted">2026-10-12 · 论文与发布代码核查 · 上游 c87617f</p>
 <h1>运动相机下，EgoWAM 的 3D flow 有多准？</h1>
 <p class="lead"><strong>相机运动补偿有正确的几何基础，但目前没有足够证据给 EgoWAM 的 human flow 标签承诺厘米级精度。</strong><br>已部署的预测头可作为辅助监督 baseline；标签提取器的测量误差、预测头的预测误差和策略成功率需要分别验收。本页未运行真实 human 视频或测量实际精度。</p>

@@ -1,0 +1,306 @@
+<div id="egowam-motion-demo">
+  <style>
+    #egowam-motion-demo { color: var(--foreground); }
+    #egowam-motion-demo .motion-heading { padding-right: 94px; }
+    #egowam-motion-demo .motion-controls { margin: 16px 0 12px; }
+    #egowam-motion-demo .motion-choice { flex: 1 1 260px; min-width: 0; }
+    #egowam-motion-demo .motion-clock { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; margin: 12px 0; }
+    #egowam-motion-demo .motion-world { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 12px 0 16px; }
+    #egowam-motion-demo .motion-panels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+    #egowam-motion-demo .motion-panel { min-width: 0; }
+    #egowam-motion-demo .motion-panel h3 { margin: 0 0 4px; }
+    #egowam-motion-demo .motion-panel-label { min-height: 2.2em; }
+    #egowam-motion-demo .motion-plot { display: block; width: 100%; overflow: visible; }
+    #egowam-motion-demo .motion-plot text { fill: var(--muted-foreground); font-size: calc(var(--font-size-base) * 0.86); font-weight: 400; }
+    #egowam-motion-demo .motion-result { display: grid; gap: 4px; margin-top: 8px; }
+    #egowam-motion-demo .motion-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 18px; }
+    #egowam-motion-demo .motion-legend span { display: inline-flex; align-items: center; gap: 6px; }
+    #egowam-motion-demo .motion-swatch { display: inline-block; width: 8px; height: 8px; }
+    #egowam-motion-demo .motion-circle { border-radius: 50%; background: var(--muted-foreground); }
+    #egowam-motion-demo .motion-square { background: var(--viz-series-1); }
+    #egowam-motion-demo .motion-line { width: 18px; height: 2px; background: var(--viz-series-2); }
+    #egowam-motion-demo .motion-notice { margin: 8px 0 0; }
+    @media (max-width: 820px) {
+      #egowam-motion-demo .motion-panels { grid-template-columns: 1fr; gap: 24px; }
+      #egowam-motion-demo .motion-panel-label { min-height: 0; }
+      #egowam-motion-demo .motion-result { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 420px) {
+      #egowam-motion-demo .motion-clock { grid-template-columns: 1fr; gap: 0; }
+      #egowam-motion-demo .motion-result { grid-template-columns: 1fr; }
+    }
+  </style>
+  <div class="motion-heading">
+    <h2>移动相机下的 3D flow</h2>
+    <div class="text-small text-muted">理想几何示意 · 非真实视频测量</div>
+  </div>
+  <div class="viz-controls motion-controls">
+    <div class="motion-choice">
+      <label class="form-label" for="egowam-motion-case">场景</label>
+      <select id="egowam-motion-case" class="form-select">
+        <option value="moving">物体右移 8 cm，相机右移 10 cm</option>
+        <option value="static">物体静止，相机右移 10 cm</option>
+        <option value="rotation">物体静止，相机转头 15°</option>
+      </select>
+    </div>
+    <button id="egowam-motion-play" class="btn btn-primary" type="button">播放一次</button>
+  </div>
+  <div class="motion-clock">
+    <label class="form-label" for="egowam-motion-time">过程 <output id="egowam-motion-time-value" class="tabular-nums">100%</output></label>
+    <input id="egowam-motion-time" class="form-range" type="range" min="0" max="100" step="1" value="100">
+  </div>
+  <div class="motion-world text-small tabular-nums" aria-label="物理世界中的实际运动">
+    <span>相机：<output id="egowam-motion-camera">向右 10.0 cm</output></span>
+    <span>物体：<output id="egowam-motion-object">向右 8.0 cm</output></span>
+    <span>背景：静止</span>
+    <span>误差假设：<output id="egowam-motion-error">共同尺度 +20%</output></span>
+  </div>
+  <div class="motion-panels">
+    <section class="motion-panel">
+      <h3>未补偿</h3>
+      <div class="motion-panel-label text-small text-muted">直接相减两帧的相机坐标</div>
+      <svg class="motion-plot" id="egowam-motion-raw" role="img" aria-labelledby="egowam-motion-raw-title"></svg>
+      <div class="motion-result text-small tabular-nums">
+        <span>背景位移 <output id="egowam-motion-raw-static">100.0 mm</output></span>
+        <span>物体横向 <output id="egowam-motion-raw-object">−20.0 mm</output></span>
+      </div>
+    </section>
+    <section class="motion-panel">
+      <h3>理想补偿</h3>
+      <div class="motion-panel-label text-small text-muted">位姿、深度、尺度都准确</div>
+      <svg class="motion-plot" id="egowam-motion-ideal" role="img" aria-labelledby="egowam-motion-ideal-title"></svg>
+      <div class="motion-result text-small tabular-nums">
+        <span>背景位移 <output id="egowam-motion-ideal-static">0.0 mm</output></span>
+        <span>物体横向 <output id="egowam-motion-ideal-object">+80.0 mm</output></span>
+      </div>
+    </section>
+    <section class="motion-panel">
+      <h3>带误差的补偿</h3>
+      <div class="motion-panel-label text-small text-muted" id="egowam-motion-bad-label">点坐标尺度 +20%，位姿仍用米</div>
+      <svg class="motion-plot" id="egowam-motion-bad" role="img" aria-labelledby="egowam-motion-bad-title"></svg>
+      <div class="motion-result text-small tabular-nums">
+        <span>背景假运动 <output id="egowam-motion-bad-static">20.0 mm</output></span>
+        <span>物体横向 <output id="egowam-motion-bad-object">+76.0 mm</output></span>
+      </div>
+    </section>
+  </div>
+  <div class="motion-legend text-small" aria-label="图例">
+    <span><i class="motion-swatch motion-circle" aria-hidden="true"></i>圆点：静止背景</span>
+    <span><i class="motion-swatch motion-square" aria-hidden="true"></i>方块：物体</span>
+    <span><i class="motion-swatch motion-line" aria-hidden="true"></i>背景表观／残余 flow</span>
+    <span>同一起点 · 箭头长度 ×3</span>
+  </div>
+  <div class="motion-notice text-small text-muted">x–z 三维切片 · y 位移为零 · 背景数值取初始距离 70 cm 的点</div>
+  <div class="sr-only" id="egowam-motion-announcement" aria-live="polite"></div>
+  <script>
+    (() => {
+      const root = document.getElementById('egowam-motion-demo');
+      const get = suffix => root.querySelector('#egowam-motion-' + suffix);
+      const ns = 'http://www.w3.org/2000/svg';
+      const points = [
+        { x: -0.24, z: 0.52 }, { x: 0.22, z: 0.52 },
+        { x: -0.27, z: 0.76 }, { x: 0.27, z: 0.76 },
+        { x: -0.20, z: 0.98 }, { x: 0.20, z: 0.98 },
+        { x: 0, z: 0.70, probe: true },
+        { x: 0.035, z: 0.61, object: true }
+      ];
+      const scenarios = {
+        moving: { translation: 0.1, rotation: 0, object: 0.08, scale: 1.2, angleError: 0 },
+        static: { translation: 0.1, rotation: 0, object: 0, scale: 1.2, angleError: 0 },
+        rotation: { translation: 0, rotation: 15 * Math.PI / 180, object: 0, scale: 1, angleError: Math.PI / 180 }
+      };
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const keys = ['raw', 'ideal', 'bad'];
+      let scenario = 'moving';
+      let time = 1;
+      let frameRequest = 0;
+      let playing = false;
+      let dimensions = {};
+      let domains;
+      const svgParts = {};
+      const rotate = (p, angle) => ({ x: Math.cos(angle) * p.x + Math.sin(angle) * p.z, z: -Math.sin(angle) * p.x + Math.cos(angle) * p.z });
+      const sub = (a, b) => ({ x: a.x - b.x, z: a.z - b.z });
+      const norm = p => Math.hypot(p.x, p.z);
+      const signed = v => Math.abs(v) < 0.00005 ? '0.0' : (v > 0 ? '+' : '−') + Math.abs(v * 1000).toFixed(1);
+
+      function flows(key, progress) {
+        const c = scenarios[key];
+        const b = c.translation * progress;
+        const theta = c.rotation * progress;
+        const error = c.angleError * progress;
+        return points.map(p => {
+          const world = { x: p.x + (p.object ? c.object * progress : 0), z: p.z };
+          const target = rotate({ x: world.x - b, z: world.z }, -theta);
+          const corrected = rotate(target, theta);
+          const scaled = { x: c.scale * target.x, z: c.scale * target.z };
+          const erroneous = rotate(scaled, theta + error);
+          return {
+            raw: sub(target, p),
+            ideal: { x: corrected.x + b - p.x, z: corrected.z - p.z },
+            bad: { x: erroneous.x + b - c.scale * p.x, z: erroneous.z - c.scale * p.z }
+          };
+        });
+      }
+
+      function element(tag, attrs, parent, text) {
+        const node = document.createElementNS(ns, tag);
+        Object.entries(attrs || {}).forEach(([name, value]) => node.setAttribute(name, String(value)));
+        if (text !== undefined) node.textContent = text;
+        parent.appendChild(node);
+        return node;
+      }
+
+      function calculateDomains() {
+        const endpoints = flows(scenario, 1);
+        const xs = [0], zs = [0];
+        points.forEach((p, i) => {
+          xs.push(p.x); zs.push(p.z);
+          keys.forEach(key => { xs.push(p.x + 3 * endpoints[i][key].x); zs.push(p.z + 3 * endpoints[i][key].z); });
+        });
+        domains = {
+          x: [Math.min(...xs) - 0.085, Math.max(...xs) + 0.085],
+          z: [Math.min(...zs) - 0.045, Math.max(...zs) + 0.09]
+        };
+      }
+
+      function setupPlot(key) {
+        const svg = get(key);
+        const width = svg.getBoundingClientRect().width;
+        if (width < 1) return;
+        const height = 282;
+        svg.setAttribute('viewBox', '0 0 ' + width + ' ' + height);
+        svg.setAttribute('height', height);
+        svg.replaceChildren();
+        element('title', { id: 'egowam-motion-' + key + '-title' }, svg, { raw: '未补偿的相机坐标差', ideal: '理想相机运动补偿后的三维位移', bad: '有尺度或相对旋转误差时的三维位移' }[key]);
+        element('desc', {}, svg, '全部箭头从相同的初始三维点绘制，长度放大三倍。圆点是静止背景，方块是物体。横轴为 x，竖轴为 z，单位厘米。');
+        const left = 40, right = 12, top = 14, bottom = 38;
+        const scale = Math.min((width - left - right) / (domains.x[1] - domains.x[0]), (height - top - bottom) / (domains.z[1] - domains.z[0]));
+        const plotWidth = scale * (domains.x[1] - domains.x[0]);
+        const plotHeight = scale * (domains.z[1] - domains.z[0]);
+        const originX = left + (width - left - right - plotWidth) / 2;
+        const originY = top + (height - top - bottom - plotHeight) / 2;
+        const x = value => originX + (value - domains.x[0]) * scale;
+        const z = value => originY + (domains.z[1] - value) * scale;
+        dimensions[key] = { x, z };
+        element('rect', { x: originX, y: originY, width: plotWidth, height: plotHeight, fill: 'none', stroke: 'var(--border)', 'stroke-width': 1, 'data-chart-frame': '' }, svg);
+        const xTicks = [Math.ceil(domains.x[0] / 0.3) * 0.3, 0, Math.floor(domains.x[1] / 0.3) * 0.3].filter((v, i, list) => list.findIndex(w => Math.abs(v - w) < 0.001) === i && v >= domains.x[0] && v <= domains.x[1]);
+        xTicks.forEach(value => {
+          element('line', { x1: x(value), x2: x(value), y1: originY, y2: originY + plotHeight, stroke: 'var(--border)', 'stroke-width': 1, opacity: 0.6 }, svg);
+          element('text', { x: x(value), y: originY + plotHeight + 17, 'text-anchor': 'middle' }, svg, String(Math.round(value * 100)));
+        });
+        [0, 0.7, 1].filter(v => v >= domains.z[0] && v <= domains.z[1]).forEach(value => {
+          element('line', { x1: originX, x2: originX + plotWidth, y1: z(value), y2: z(value), stroke: 'var(--border)', 'stroke-width': 1, opacity: 0.6 }, svg);
+          element('text', { x: originX - 8, y: z(value) + 4, 'text-anchor': 'end' }, svg, String(Math.round(value * 100)));
+        });
+        element('text', { x: originX + plotWidth, y: height - 2, 'text-anchor': 'end', class: 'axis-title', 'data-axis': 'x' }, svg, 'x / cm');
+        element('text', { x: originX, y: 10, 'text-anchor': 'start', class: 'axis-title', 'data-axis': 'y' }, svg, 'z / cm');
+        const layers = element('g', {}, svg);
+        svgParts[key] = points.map(p => {
+          const color = p.object ? 'var(--viz-series-1)' : (key === 'ideal' ? 'var(--muted-foreground)' : 'var(--viz-series-2)');
+          const line = element('line', { stroke: color, 'stroke-width': p.object ? 2.2 : 1.7 }, layers);
+          const head = element('path', { fill: 'none', stroke: color, 'stroke-width': p.object ? 2.2 : 1.7 }, layers);
+          if (p.object) {
+            element('rect', { x: x(p.x) - 4.5, y: z(p.z) - 4.5, width: 9, height: 9, fill: 'var(--viz-series-1)' }, layers);
+          } else {
+            element('circle', { cx: x(p.x), cy: z(p.z), r: p.probe ? 4.5 : 3.5, fill: 'var(--muted-foreground)' }, layers);
+            if (p.probe) element('circle', { cx: x(p.x), cy: z(p.z), r: 7, fill: 'none', stroke: 'var(--muted-foreground)', 'stroke-width': 1 }, layers);
+          }
+          return { line, head };
+        });
+      }
+
+      function draw(values = flows(scenario, time)) {
+        keys.forEach(key => {
+          const d = dimensions[key];
+          if (!d) return;
+          points.forEach((p, i) => {
+            const flow = values[i][key];
+            const x0 = d.x(p.x), y0 = d.z(p.z);
+            const x1 = d.x(p.x + 3 * flow.x), y1 = d.z(p.z + 3 * flow.z);
+            const length = Math.hypot(x1 - x0, y1 - y0);
+            const parts = svgParts[key][i];
+            const visible = length > 1.2;
+            parts.line.setAttribute('visibility', visible ? 'visible' : 'hidden');
+            parts.head.setAttribute('visibility', visible ? 'visible' : 'hidden');
+            if (!visible) return;
+            const ux = (x1 - x0) / length, uy = (y1 - y0) / length;
+            const gap = Math.min(p.object ? 5 : 4, length * 0.3);
+            parts.line.setAttribute('x1', x0 + ux * gap); parts.line.setAttribute('y1', y0 + uy * gap);
+            parts.line.setAttribute('x2', x1); parts.line.setAttribute('y2', y1);
+            const headLength = Math.min(4.5, length * 0.4), headWidth = Math.min(2.7, length * 0.24);
+            parts.head.setAttribute('d', 'M ' + (x1 - ux * headLength - uy * headWidth) + ' ' + (y1 - uy * headLength + ux * headWidth) + ' L ' + x1 + ' ' + y1 + ' L ' + (x1 - ux * headLength + uy * headWidth) + ' ' + (y1 - uy * headLength - ux * headWidth));
+          });
+          const probe = values[6][key], object = values[7][key];
+          get(key + '-static').textContent = (norm(probe) * 1000).toFixed(1) + ' mm';
+          get(key + '-object').textContent = signed(object.x) + ' mm';
+        });
+        const c = scenarios[scenario];
+        get('time').value = String(Math.round(time * 100));
+        get('time-value').textContent = Math.round(time * 100) + '%';
+        get('camera').textContent = c.rotation ? '转头 ' + (c.rotation * time * 180 / Math.PI).toFixed(1) + '°' : '向右 ' + (c.translation * time * 100).toFixed(1) + ' cm';
+        get('object').textContent = c.object ? '向右 ' + (c.object * time * 100).toFixed(1) + ' cm' : '静止';
+        get('error').textContent = c.angleError ? '相对旋转 +' + (c.angleError * time * 180 / Math.PI).toFixed(2) + '°' : '共同尺度 +20%';
+        get('bad-label').textContent = c.angleError ? '相对旋转多估计 1°，尺度准确' : '点坐标尺度 +20%，位姿仍用米';
+      }
+
+      function announce() {
+        get('announcement').textContent = get('case').selectedOptions[0].textContent + '。' +
+          '过程 ' + Math.round(time * 100) + '%。' +
+          '静止背景的未补偿位移 ' + get('raw-static').textContent + '，理想补偿后 ' + get('ideal-static').textContent + '，有误差的补偿后 ' + get('bad-static').textContent + '。所有数值为理想几何示意。';
+      }
+
+      function save() {
+        if (!window.openai || typeof window.openai.setWidgetState !== 'function') return;
+        const c = scenarios[scenario];
+        Promise.resolve(window.openai.setWidgetState({
+          modelContent: { synthetic_only: true, scenario, progress: Math.round(time * 100), camera_translation_m: c.translation, camera_rotation_deg: c.rotation * 180 / Math.PI, object_displacement_m: c.object, assumed_scale_factor: c.scale, assumed_rotation_error_deg: c.angleError * 180 / Math.PI },
+          privateContent: { scenario, time }
+        })).catch(() => {});
+      }
+
+      function stop() {
+        cancelAnimationFrame(frameRequest); playing = false;
+        get('play').textContent = '播放一次';
+      }
+
+      function layout() {
+        calculateDomains(); keys.forEach(setupPlot); draw();
+      }
+
+      function restore(state) {
+        const saved = state && state.privateContent;
+        if (!saved || !scenarios[saved.scenario]) return;
+        stop(); scenario = saved.scenario;
+        time = typeof saved.time === 'number' ? Math.max(0, Math.min(1, saved.time)) : 1;
+        get('case').value = scenario; layout();
+      }
+
+      get('case').addEventListener('change', () => {
+        stop(); scenario = get('case').value; time = 1; layout(); announce(); save();
+      });
+      get('time').addEventListener('input', () => { stop(); time = Number(get('time').value) / 100; draw(); });
+      get('time').addEventListener('change', () => { announce(); save(); });
+      get('play').addEventListener('click', () => {
+        if (playing) { stop(); announce(); save(); return; }
+        if (reducedMotion.matches) { time = 1; draw(); announce(); save(); return; }
+        stop(); playing = true; get('play').textContent = '暂停'; time = 0; draw();
+        const start = performance.now();
+        const tick = now => {
+          time = Math.min(1, (now - start) / 3000); draw();
+          if (time < 1) frameRequest = requestAnimationFrame(tick);
+          else { stop(); announce(); save(); }
+        };
+        frameRequest = requestAnimationFrame(tick);
+      });
+      window.addEventListener('openai:set_globals', event => {
+        if (event.detail && event.detail.globals && event.detail.globals.widgetState) restore(event.detail.globals.widgetState);
+      });
+      reducedMotion.addEventListener('change', () => { if (playing && reducedMotion.matches) { stop(); time = 1; draw(); announce(); save(); } });
+      layout();
+      restore(window.openai && window.openai.widgetState);
+      const resize = new ResizeObserver(() => layout());
+      keys.forEach(key => resize.observe(get(key).parentElement));
+      root.dataset.ready = 'true';
+    })();
+  </script>
+</div>
