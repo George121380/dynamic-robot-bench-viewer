@@ -1,0 +1,8 @@
+{
+  "source_summary_sha256": "9f2699e76cc293556f88ec798f7d010972676218968f85e3651effe186a1b821",
+  "source_cases_sha256": "98bceb386dee8fc6f94b413683ed093b1a8af852de40cdf588a437354797c73c",
+  "default_seed": 4009,
+  "cases": 29,
+  "copied_or_modified_forecasts": false,
+  "assets": "Existing ../seed*.json and ../seed*-cam*.jpg; no resampling or forecast changes."
+}
