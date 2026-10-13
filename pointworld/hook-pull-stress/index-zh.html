@@ -1,0 +1,95 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PointWorld · 勾拉任务的复杂条件测试</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#f6f8fa;color:#173047;font:16px/1.65 system-ui,sans-serif}main{max-width:1280px;margin:auto;padding:30px 24px}a{color:#126e92}h1{font-size:36px;line-height:1.2}h2{font-size:24px;margin-top:36px}.muted,label,footer{color:#506678}.stats,.views{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.stat{padding:15px 0;border-top:1px solid #c9d3dc}.number{font-size:30px;font-weight:600}.controls{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:18px 0}select,button{font:inherit;border:1px solid #bec9d2;border-radius:6px;background:white;color:inherit;padding:7px;max-width:100%}canvas{width:100%;height:320px;background:white;touch-action:none;display:block;border:1px solid #d3dce4;border-radius:8px}.views label{display:block;margin-bottom:6px}input[type=range]{width:100%;accent-color:#126e92}.rgb{display:flex;flex-wrap:wrap;gap:22px;align-items:center;margin-top:18px}.rgb>div{flex:1;min-width:280px}.rgb img{width:200px;height:200px;border-radius:6px}table{border-collapse:collapse;width:100%;font-size:14px;min-width:640px}th,td{padding:10px;text-align:left;border-bottom:1px solid #d3dce4}.scroll{overflow:auto}.note{border-left:3px solid #126e92;padding:8px 18px;background:white}.timeline{display:flex;gap:3px}.timeline span{flex:1;height:14px;border:1px solid #c2d0d9}.timeline span.on{background:#d39967}.timeline span.off{background:#edf1f4}details{margin:18px 0}summary{cursor:pointer;color:#126e92}details img{max-width:100%}.glossary{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.glossary p{margin:8px 0}.case-result{font-size:17px}.case-result strong{color:#126e92}@media(max-width:700px){.glossary{grid-template-columns:1fr}}footer{font-size:13px;margin:32px 0}@media(max-width:700px){main{padding:20px 14px}.stats,.views{grid-template-columns:1fr}h1{font-size:28px}canvas{height:280px}.rgb>div{flex:1;min-width:280px}.rgb img{width:150px;height:150px}}</style>
+<main><a href="../">← PointWorld</a>
+<h1>勾拉任务：更难的形状和拉法</h1>
+<p class="muted">用当前一张彩色图和深度图，预测方块未来两秒的位置。</p>
+<p id="conclusion"></p><div class="stats" id="stats"></div><p class="muted">偏差越小越准；“动／不动判断”只看会不会动，不表示移动方向和距离都预测对。</p>
+<h2>直接看：真实运动和模型预测</h2>
+<p class="muted">左栏是实际发生的运动，中栏是原模型，右栏是已适配模型。蓝点是方块，浅红点是实际钩子。三栏使用相同坐标、视角和尺度，比较同一时刻蓝点的位置即可看出预测偏差。拖动时间条看变化；拖动图旋转，滚轮缩放。</p>
+<div class="controls"><label>选择案例 <select id="episode"></select></label><label>中栏显示 <select id="method"><option value="pretrained">原模型</option><option value="stationary">假设方块一直不动</option></select></label><button id="play">播放</button><button id="reset">重置视角</button><span id="time"></span></div>
+<input id="frame" type="range" min="0" max="10" value="0" aria-label="未来两秒的播放进度">
+<div class="views"><div><label>真实运动</label><canvas id="ground_truth" aria-label="方块和钩子的真实运动"></canvas></div><div><label id="method-label">原模型预测</label><canvas id="baseline" aria-label="中栏预测对照"></canvas></div><div><label>已适配模型预测（本轮未训练）</label><canvas id="adapted" aria-label="已适配模型的原始预测"></canvas></div></div>
+<p class="muted" id="bounds"></p>
+<label>实际接触：棕色表示这段时间钩子碰到了方块，浅灰表示没有接触</label><div class="timeline" id="contact" aria-label="实际钩子与方块的接触时间"></div>
+<div class="rgb"><figure><img id="rgb" alt="当前播放时刻的仿真原图"><figcaption>同一时刻的仿真原图</figcaption></figure><div><p class="case-result" id="case"></p><p id="parameters"></p></div></div>
+<p class="muted">动作类别：<b>勾住并拉动</b>＝尝试勾住后拉；<b>没勾中</b>＝让钩子错开；<b>碰到但没拉到位</b>＝接触了但拉动不足；<b>拉动后脱钩</b>＝尝试拉动后让钩子脱开。名称表示预设动作，实际是否做到要看左栏和原图。</p>
+<details id="gif-section"><summary>查看这条案例的四栏动图</summary><img id="gif" alt="仿真原图、真实运动、原模型和已适配模型的同步动图"></details>
+<details><summary>查看更多显示设置：桌面点、钩子计划与实际执行</summary><div class="controls"><label>显示内容 <select id="scope"><option value="target">方块与钩子</option><option value="all">全部输入点（含桌面）</option></select></label><label>预测栏中的钩子 <select id="tool-reference"><option value="actual">实际执行的钩子</option><option value="plan">计划中的钩子（金色）</option><option value="both">实际钩子和计划都显示</option></select></label></div><p id="tool-caption"></p><p>左栏始终显示实际钩子。预测栏的实际钩子只用于位置对照，模型输入的是提前给定的运动计划，模型没有看到未来实际执行的位置。</p></details>
+<h2>这些数字怎么看</h2>
+<div class="glossary"><div><b>平均偏差：越小越好</b><p>逐点比较未来两秒内十帧的预测位置和真实位置，再取平均。比如 1 厘米，表示预测点平均离真实位置约 1 厘米。</p></div><div><b>两秒后偏差：越小越好</b><p>只看最后一帧，比较每个方块点的预测与真实位置，再取平均。它说明预测到两秒后偏离了多少。</p></div><div><b>动／不动判断：越高越好</b><p>看模型有没有判断对方块会不会动。方块点云中心最大移动超过 1.5 厘米算“动”。只判断会不会动；方向和移动距离准不准，要看前两项偏差。这不是机器人勾取成功率。</p></div></div>
+<p class="muted">距离统一用厘米。只比较方块点，钩子和桌面不计分；当前这一帧不计分。</p>
+<h2>三种预测方式的整体对照</h2>
+<div class="scroll"><table><thead><tr><th>预测方式</th><th>平均偏差（厘米）</th><th>两秒后偏差（厘米）</th></tr></thead><tbody id="comparison"></tbody></table></div>
+<h2>按变化类型和动作分别看</h2>
+<p class="muted">以下都是已适配模型。整体数字包含不动的方块；只看真正移动的方块时，偏差见下方展开说明。</p>
+<div class="scroll"><table><thead><tr><th>变化类型／动作</th><th>案例数</th><th>平均偏差（厘米）</th><th>两秒后偏差（厘米）</th><th>动／不动判断</th></tr></thead><tbody id="metrics"></tbody></table></div>
+<details><summary>只看移动方块，以及具体错在哪里</summary><p id="moving"></p><p id="diagnostics"></p><p>“该动却预测不动”表示漏掉运动；“不动却预测会动”表示凭空预测运动。这里只看移动方块的平均偏差，使用实际最大中心位移超过 1 厘米的案例，与上面的 1.5 厘米判断门槛不同。</p></details>
+<h2>这次为什么更难</h2>
+<p><b>形状变化：</b>分别改变钩柄的长、宽、高和钩尖形状；方块的长宽高分别在 2.6–7.2 厘米间变化，还会转斜 20–65 度，并改变钩子和方块的间隙。</p>
+<p><b>拉动方式变化：</b>快拉、慢拉、提前或延后起动、斜着拉、逐渐加速、停一下再拉、反向后再拉、左右扫动。</p>
+<p><b>同时变化：</b>形状和拉法一起改变，再改变方块重量（12–400 克）、滑动摩擦和碰撞弹性。</p>
+<p id="coverage"></p><p><a href="rejected-zh.html">查看未评分的 17 条：原图、参数和原因</a> · <a href="../hook-pull/">查看上一版简单条件测试</a></p>
+<details><summary>技术记录与原始文件（供复现核对）</summary>
+<p id="reference"></p><p>本轮沿用原有第二版适配权重，没有追加训练。四种动作意图共享场景参数；全部预定案例都保留，没有按预测误差或勾取结果挑选。</p>
+<p>输入只有当前彩色图、深度图、相机标定、可见颜色区域和预先冻结的平移请求。未来实测位姿、物体速度、重量、摩擦、接触及成功标签只用于评测。质量和摩擦没有提供给模型，误差可能来自未知物理或指令与实际执行的差异。</p>
+<p>真实点云由同一时刻的实际工具和目标位姿运输当前可见深度点。它是可见表面点云，保留原始深度采样偏差；模型未来点原样保留，没有吸附、平滑或刚体修正。动图按预定场景抽取，没有按误差选例。本轮是探索性复杂条件测试。</p>
+<p id="restoration"></p><p><a href="summary.json">完整统计与权重核对记录</a> · <a href="cases.json">案例和点轨迹索引</a> · <a href="gt-audit.json">真实位姿与点云核对</a> · <a href="https://github.com/George121380/pointworld-dev/tree/task/adapt-hook-pull">适配源码（私有）</a></p></details>
+<footer>当前帧是实际输入。三维页面保留全部未来预测点，所有案例共享固定世界坐标范围；点轨迹文件仅作小数精度压缩，原始模型数组单独保留。</footer></main>
+<script>
+const $=x=>document.getElementById(x),cm=x=>(100*x).toFixed(2);
+const domainNames={OOD_hook_geometry:'形状变化',OOD_hook_action:'拉动方式变化',OOD_hook_joint:'形状、动作和物理同时变化'};
+const modeNames={successful_engagement:'勾住并拉动',hook_miss:'没勾中',ineffective_contact:'碰到但没拉到位',detachment:'拉动后脱钩'};
+const actionNames={constant_pull:'持续拉动',ramp:'逐渐加速',stop_restart:'停一下再拉',reverse_resume:'反向后再拉',lateral_sweep:'左右扫动'};
+const label=x=>domainNames[x]||modeNames[x]||actionNames[x]||x;
+const motion=v=>`${Math.round(v.motion_accuracy*v.episodes)} / ${v.episodes} 条判断对（${(100*v.motion_accuracy).toFixed(1)}%）`;
+let cases=[],summary,active,t=0,playing=false,yaw=.9,pitch=.62,zoom=1,choiceToken=0;
+const normalize=v=>{let n=Math.hypot(...v);return v.map(x=>x/n)},cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]];
+function renderer(canvas){const gl=canvas.getContext('webgl',{antialias:true,preserveDrawingBuffer:true});if(!gl)throw Error('WebGL unavailable');function shader(type,source){let s=gl.createShader(type);gl.shaderSource(s,source);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error(gl.getShaderInfoLog(s));return s}
+let program=gl.createProgram();gl.attachShader(program,shader(gl.VERTEX_SHADER,`attribute vec3 position;attribute vec3 color;uniform vec3 center,right,up,forward;uniform float distance,aspect,nearPlane,farPlane,pixelSize;varying vec3 rgb;void main(){vec3 p=position-center;float z=distance+dot(p,forward);gl_Position=vec4(dot(p,right)*1.8/aspect,dot(p,up)*1.8,(farPlane+nearPlane)/(farPlane-nearPlane)*z-2.0*farPlane*nearPlane/(farPlane-nearPlane),z);gl_PointSize=pixelSize;rgb=color;}`));gl.attachShader(program,shader(gl.FRAGMENT_SHADER,`precision mediump float;varying vec3 rgb;void main(){if(length(gl_PointCoord-vec2(.5))>.5)discard;gl_FragColor=vec4(rgb,1.);}`));gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error(gl.getProgramInfoLog(program));const buffers={};for(let key of ['position','color'])buffers[key]=gl.createBuffer();gl.enable(gl.DEPTH_TEST);gl.clearColor(1,1,1,1);let dragging=false,last;canvas.onpointerdown=e=>{dragging=true;last=[e.clientX,e.clientY];canvas.setPointerCapture(e.pointerId)};canvas.onpointerup=()=>dragging=false;canvas.onpointermove=e=>{if(!dragging)return;yaw+=(e.clientX-last[0])*.008;pitch=Math.max(-1.4,Math.min(1.4,pitch+(e.clientY-last[1])*.008));last=[e.clientX,e.clientY];drawAll()};canvas.onwheel=e=>{e.preventDefault();zoom=Math.max(.3,Math.min(5,zoom*Math.exp(-e.deltaY*.001)));drawAll()};return(points,colors,bounds)=>{let dpr=Math.min(devicePixelRatio||1,2);canvas.width=canvas.clientWidth*dpr;canvas.height=canvas.clientHeight*dpr;gl.viewport(0,0,canvas.width,canvas.height);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);gl.useProgram(program);for(let [key,values] of [['position',points],['color',colors]]){gl.bindBuffer(gl.ARRAY_BUFFER,buffers[key]);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(values.flat()),gl.DYNAMIC_DRAW);let a=gl.getAttribLocation(program,key);gl.enableVertexAttribArray(a);gl.vertexAttribPointer(a,3,gl.FLOAT,false,0,0)}let forward=normalize([-Math.cos(pitch)*Math.cos(yaw),-Math.cos(pitch)*Math.sin(yaw),-Math.sin(pitch)]),right=normalize(cross(forward,[0,0,1])),up=cross(right,forward);for(let [k,v] of Object.entries({center:bounds.center,right,up,forward}))gl.uniform3fv(gl.getUniformLocation(program,k),v);for(let [k,v] of Object.entries({distance:bounds.span*1.35/zoom,aspect:canvas.width/canvas.height,nearPlane:bounds.span*.001,farPlane:bounds.span*20,pixelSize:3.3*dpr}))gl.uniform1f(gl.getUniformLocation(program,k),v);gl.drawArrays(gl.POINTS,0,points.length)}}
+const renders={};for(let id of ['ground_truth','baseline','adapted'])renders[id]=renderer($(id));
+function drawAll(){if(!active)return;let scope=$('scope').value,b=active.bounds[scope];for(let [id,method] of [['ground_truth','ground_truth'],['baseline',$('method').value],['adapted','adapted']]){let seq=active.trajectories[method],points=[],colors=[];for(let i=0;i<active.object_ids.length;i++){if(scope==='target'&&active.object_ids[i]!==1)continue;points.push(seq[t][i]);colors.push(active.object_ids[i]===1?[.08,.49,.73]:[.7,.74,.78])}let ref=id==='ground_truth'?'actual':$('tool-reference').value;if(ref==='actual'||ref==='both')for(let p of active.tool_actual[t]){points.push(p);colors.push([.75,.45,.31])}if(ref==='plan'||ref==='both')for(let p of active.tool_plan[t]){points.push(p);colors.push([.82,.66,.08])}renders[id](points,colors,b)}$('bounds').textContent=`三栏与所有案例使用相同尺度：展示范围 ${cm(b.span)} 厘米，当前缩放 ${zoom.toFixed(2)} 倍。`}
+function update(){
+ if(!active)return;t=+$('frame').value;
+ const ref=$('tool-reference').value;
+ $('tool-caption').textContent=`预测栏显示${ref==='actual'?'实际执行的钩子（仅供对照）':ref==='plan'?'计划中的钩子（模型输入）':'实际钩子与计划中的钩子'}。此帧计划与实际工具点的平均距离 ${cm(active.tool_plan_error_m[t])} 厘米；两秒后 ${cm(active.tool_plan_error_m[10])} 厘米。`;
+ $('time').textContent=t===0?'当前帧':`未来 ${(t*.2).toFixed(1)} 秒`;
+ $('rgb').src=active.rgb[t];
+ $('method-label').textContent=$('method').value==='pretrained'?'原模型预测':'假设方块一直不动';drawAll();
+}
+async function choose(){
+ const token=++choiceToken;active=null;playing=false;$('play').textContent='播放';
+ $('case').textContent='正在读取案例…';$('parameters').textContent='';
+ const meta=cases[+$('episode').value];
+ try{
+  const response=await fetch(meta.file);if(!response.ok)throw Error(response.status);
+  const c=await response.json();if(token!==choiceToken)return;
+  active=c;t=0;$('frame').value=0;zoom=1;$('gif-section').hidden=!c.gif;if(c.gif)$('gif').src=c.gif;
+  const a=c.metrics.adapted,p=c.parameters;
+  $('case').innerHTML=`<b>${label(c.domain)} · ${label(c.mode)}</b><br>已适配模型：平均偏差 <strong>${cm(a.ADE_m)} 厘米</strong>；两秒后偏差 <strong>${cm(a.FDE_m)} 厘米</strong><br>实际最大移动 ${cm(a.gt_max_displacement_m)} 厘米；模型预测 ${cm(a.predicted_max_displacement_m)} 厘米<br>动／不动判断：<strong>${a.gt_moving===a.predicted_moving?'判断正确':'判断错误'}</strong>（实际${a.gt_moving?'动':'不动'}，预测${a.predicted_moving?'动':'不动'}）<br>仿真实际完成拉动目标：${c.task_success?'是':'否'}；实际轨迹符合预设动作类别：${c.mode_verified?'是':'否'}`;
+  $('parameters').innerHTML=`方块长 × 宽 × 高：${p.target_half_m.map(v=>(200*v).toFixed(1)).join(' × ')} 厘米；初始转斜角度 ${(p.target_yaw_rad*180/Math.PI).toFixed(1)} 度<br>钩柄长 ${cm(p.handle_length_m)} 厘米；钩尖厚 ${cm(p.hook_tip_width_m)} 厘米；伸出 ${cm(p.hook_reach_m)} 厘米<br>重量 ${(1000*p.mass_kg).toFixed(1)} 克；滑动摩擦系数 ${p.friction.toFixed(3)}；碰撞弹性系数 ${p.restitution.toFixed(2)}<br>拉法：${label(p.action_pattern)}；计划速度 ${cm(p.speed_m_s)} 厘米／秒；从仿真开始后 ${(p.start_step/20).toFixed(2)} 秒起动；拉动方向转斜 ${((p.pull_angle_rad||0)*180/Math.PI).toFixed(1)} 度`;
+  $('contact').innerHTML=c.contact.map((v,i)=>`<span class="${v?'on':'off'}" title="未来 ${(i*.2).toFixed(1)}–${((i+1)*.2).toFixed(1)} 秒：${v?'有接触':'无接触'}"></span>`).join('');update();
+ }catch(e){if(token===choiceToken)$('case').textContent='案例读取失败：'+e.message}
+}
+Promise.all([fetch('summary.json').then(r=>r.json()),fetch('cases.json').then(r=>r.json())]).then(([s,c])=>{
+ summary=s;cases=c;
+ const a=s.methods.adapted.overall;
+ $('conclusion').textContent=`这次沿用已适配模型，没有重新训练。${a.episodes} 条可评分案例中，${a.episodes-Math.round(a.motion_accuracy*a.episodes)} 条把方块“动／不动”判断错；形状、拉法和物理同时变化时，25 条中有 7 条判断错。`;
+ $('stats').innerHTML=Object.entries(s.methods.adapted.OOD).map(([name,v])=>`<div class="stat"><label>${label(name)} · 平均偏差</label><div class="number">${cm(v.ADE_m)} 厘米</div><span>两秒后偏差 ${cm(v.FDE_m)} 厘米<br>${motion(v)}</span></div>`).join('');
+ $('episode').innerHTML=c.map((v,i)=>`<option value="${i}">${label(v.domain)} / ${label(v.mode)} / 场景组 ${v.family+1} · 样本 ${v.seed}</option>`).join('');
+ $('comparison').innerHTML=[['原模型','pretrained'],['假设方块一直不动','stationary'],['已适配模型（本轮未训练）','adapted']].map(([n,k])=>{const v=s.methods[k].overall;return `<tr><td>${n}</td><td>${cm(v.ADE_m)}</td><td>${cm(v.FDE_m)}</td></tr>`}).join('');
+ const paths=[['全部可评分案例','overall'],...Object.keys(s.methods.adapted.OOD).map(d=>[label(d),'OOD',d]),...Object.keys(s.methods.adapted.all_modes).map(m=>[label(m),'all_modes',m])];
+ $('metrics').innerHTML=paths.map(([name,key,sub])=>{const v=sub?s.methods.adapted[key][sub]:s.methods.adapted[key];return `<tr><td>${name}</td><td>${v.episodes}</td><td>${cm(v.ADE_m)}</td><td>${cm(v.FDE_m)}</td><td>${motion(v)}</td></tr>`}).join('');
+ $('moving').textContent=`真正移动的方块共 ${a.moving_episodes} 条，已适配模型平均偏差 ${cm(a.moving_object_ADE_m)} 厘米。`+Object.entries(s.methods.adapted.OOD).map(([d,v])=>`${label(d)}：${v.moving_episodes} 条移动，平均偏差 ${cm(v.moving_object_ADE_m)} 厘米。`).join('');
+ $('diagnostics').textContent=Object.entries(s.diagnostics).map(([d,v])=>`${label(d)}：${v.false_stationary} 条该动却预测不动，${v.false_moving} 条不动却预测会动；最大单条平均偏差 ${cm(v.ADE_max_m)} 厘米。`).join('');
+ const cov=s.coverage;$('coverage').textContent=`三种变化各预定 32 条，共 ${cov.planned} 条；全部记录并保留。其中 ${cov.eligible} 条可评分，${cov.rejected_windows.length} 条因当前图像中的方块点不够可靠而未评分。实际没勾住、没拉到位或脱钩的案例也参加评分。`;
+ const ref=s.old_reference.adapted.OOD;$('reference').textContent=`上一版简单条件：只统一缩放尺寸时，平均偏差 ${cm(ref.OOD_geometry.ADE_m)} 厘米；只在较窄范围改变物理时，平均偏差 ${cm(ref.OOD_physics.ADE_m)} 厘米。两批样本不同，仅供背景参考。`;
+ const r=s.restoration;$('restoration').textContent=`采用旧验证集第 ${s.selected_step} 次更新选出的权重，本轮新增训练 0 次。磁盘重载核对 ${r.trainable_tensors} 个可训练张量一致。重复计算的目标点平均差 ${(1000*r.repeat_target_mean_difference_m).toFixed(3)} 毫米。权重 SHA256：${s.checkpoint_sha256}。本轮推理耗时 ${s.elapsed_s.toFixed(2)} 秒，显存峰值 ${(s.peak_cuda_allocated_mib/1024).toFixed(2)} GiB。`;
+ choose();
+}).catch(e=>{$('conclusion').textContent='结果读取失败：'+e.message;console.error(e)});
+$('episode').onchange=choose;$('scope').onchange=drawAll;$('method').onchange=update;$('tool-reference').onchange=update;
+$('frame').oninput=()=>{playing=false;$('play').textContent='播放';update()};
+$('play').onclick=()=>{if(!playing&&t===10){t=0;$('frame').value=0;update()}playing=!playing;$('play').textContent=playing?'暂停':'播放'};
+$('reset').onclick=()=>{yaw=.9;pitch=.62;zoom=1;drawAll()};window.onresize=drawAll;
+setInterval(()=>{if(active&&playing){if(t===10){playing=false;$('play').textContent='重播';return}$('frame').value=t+1;update()}},250);
+</script></html>
