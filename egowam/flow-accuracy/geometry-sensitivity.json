@@ -1,0 +1,41 @@
+{
+  "type": "analytic_synthetic_geometry_only",
+  "no_human_video_or_model_accuracy_measured": true,
+  "depth_m": 0.7,
+  "focal_px": 500.0,
+  "rotation_error_1deg_mm": 12.217149697723508,
+  "tracking_error_2px_lateral_mm": 2.8,
+  "independent_endpoint_depth_noise_20mm_difference_rms_mm": 28.284271247461902,
+  "scale_static_case": {
+    "camera_translation_m": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "prediction_scale_factor": 1.2,
+    "source_point_m": [
+      0.2,
+      0.0,
+      0.7
+    ],
+    "residual_vector_m": [
+      -0.01999999999999999,
+      0.0,
+      0.0
+    ],
+    "residual_norm_mm": 19.99999999999999,
+    "correct_scale_residual_norm_m": 0.0
+  },
+  "timing_case": {
+    "angular_speed_deg_s": 100,
+    "time_error_ms": 10,
+    "equivalent_angle_deg": 1,
+    "at_0_7m_residual_mm": 12.217149697723508
+  },
+  "assumptions": [
+    "Each illustrative term considered separately; values are not estimates of Aria or Track4World errors.",
+    "Rotation example: near-axis static point, residual relative rotation about perpendicular axis.",
+    "Scale example: a static scene, perfect matching and poses, common 20% scale mismatch combined with metric 10cm translation.",
+    "Depth noise example: independent zero-mean per-endpoint standard deviation, ignoring correlations."
+  ]
+}

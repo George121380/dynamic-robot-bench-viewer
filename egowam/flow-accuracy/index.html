@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EgoWAM · Moving-camera 3D flow accuracy</title>
+<style>
+:root{color-scheme:light dark;--bg:#fafaf9;--fg:#202a32;--muted:#58636c;--line:#d1d7db;--accent:#245d80;--panel:#f0f3f4}
+@media(prefers-color-scheme:dark){:root{--bg:#161b20;--fg:#e6eaee;--muted:#abb4bc;--line:#3c4650;--accent:#88b9dc;--panel:#212a31}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 system-ui,sans-serif}main{max-width:1060px;margin:auto;padding:30px 24px 60px}h1{font-size:26px;line-height:1.4}h2{font-size:20px;margin-top:32px}h3{font-size:17px;margin-bottom:8px}p{margin:8px 0 15px}a{color:var(--accent)}.muted,small{color:var(--muted)}.lead{border-left:3px solid var(--accent);padding:12px 18px;background:var(--panel)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:28px}table{border-collapse:collapse;width:100%;font-size:15px}th,td{padding:10px;text-align:left;border-bottom:1px solid var(--line)}section{border-top:1px solid var(--line);margin-top:28px;padding-top:10px}label{display:block;margin:10px 0}input{display:block;width:100%;accent-color:var(--accent)}output{font-weight:600;color:var(--accent)}details{margin-top:22px}summary{cursor:pointer;font-weight:600}.calc{padding:16px;border:1px solid var(--line)}code{overflow-wrap:anywhere}footer{margin-top:30px;font-size:13px}nav{display:flex;gap:20px;flex-wrap:wrap}
+</style>
+<main>
+<nav><a href="../">部署状态 / Deployment</a><a href="#english">English review</a><a href="geometry-sensitivity.json">算例 JSON / Analytic receipt</a></nav>
+<p class="muted">2026-10-12 · 论文与发布代码核查 · 上游 c87617f</p>
+<h1>运动相机下，EgoWAM 的 3D flow 有多准？</h1>
+<p class="lead"><strong>相机运动补偿有正确的几何基础，但目前没有足够证据给 EgoWAM 的 human flow 标签承诺厘米级精度。</strong><br>已部署的预测头可作为辅助监督 baseline；标签提取器的测量误差、预测头的预测误差和策略成功率需要分别验收。本页未运行真实 human 视频或测量实际精度。</p>
+
+<section>
+<h2>它如何消除头部运动</h2>
+<p>发布代码先用 Track4World 从两帧 RGB 估计当前点 X₀ 和未来点 X₁，再用 Aria 位姿将未来点变到当前相机系。若位姿是 camera-to-world，目标为：</p>
+<p><code>F = R₀ᵀ(R₁X₁ + t₁ − t₀) − X₀</code></p>
+<p>静止物体在两帧中的像素可以大幅移动，但理想补偿后的 F 为零。前提是同一物理点匹配正确、深度正确、相对位姿正确，而且点坐标与位姿平移使用同一尺度。公开脚本在推理后应用 Aria 位姿，未将其传入 <code>infer_pair</code>。</p>
+<p><a href="https://github.com/GaTech-RL2/EgoWAM/blob/c87617fe37a6ed6a951e6b176ad552200c425c93/egowam/scripts/3dflow_process/scripts/compute_3d_flow_compensated.py#L238-L278">补偿代码 238–278 行</a>。<code>obs_head_pose</code> 在 Aria 预处理中已组合 RGB 相机外参和图像旋转，不能只因其名称就认定它遗漏相机外参。</p>
+</section>
+
+<section class="grid">
+<div>
+<h2>公开证据能支持什么</h2>
+<p>EgoWAM 附录 B.2 对 human 使用 10 mm 运动阈值、robot 使用 2 mm，并跳过 human 片段首尾各 20 帧。阈值用于压制噪声，不能当作精度保证。论文的 flow-matching loss 和策略成功率没有给出对独立 human 3D 真值的厘米误差。<a href="https://arxiv.org/html/2607.08436#A2.SS2">EgoWAM 附录 B.2</a></p>
+<h3>Track4World / ADT 外部测试</h3>
+<table><thead><tr><th>坐标系</th><th>16 帧 APD</th><th>50 帧 APD</th></tr></thead><tbody><tr><td>相机坐标</td><td>65.01%</td><td>60.91%</td></tr><tr><td>世界坐标</td><td>62.50%</td><td>56.22%</td></tr></tbody></table>
+<p><small>来源：<a href="https://arxiv.org/html/2603.02573#S4.SS2">Track4World 表 2</a>，2026-03-05 v2。APD 是按距离阈值计算的平均达标率，不等于“62.5% 的点误差小于 1 cm”。这是 tracker 的外部测试，不是 EgoVerse 标签或本次部署 head 的测试。</small></p>
+<p><small>该论文表 1 的 Kubric 4 / 16 帧 EPE3D 为 0.1537 / 0.4808 m，计算前使用真值对齐共享尺度和位移；场景和时距不同，不能拿它预估近距离 human 操作的误差。<a href="https://arxiv.org/html/2603.02573#S4.SS1">表 1 与对齐协议</a></small></p>
+</div>
+<div>
+<h2>代码核查发现的限制</h2>
+<h3>物理尺度需要先验证</h3>
+<p>DA3 分支将点云除以平均范数。补偿脚本随后直接组合 Aria 平移。Aria 官方格式规定平移单位为米；所检查的路径没有看到归一化尺度恢复。后续恢复 focal 和 depth shift 也没有重新估计绝对乘法尺度。</p>
+<p>这是公开代码中的尺度一致性风险，还没有在作者实际训练标签或我们的真实视频上验证。<a href="https://github.com/GaTech-RL2/EgoWAM/blob/c87617fe37a6ed6a951e6b176ad552200c425c93/external/Track4World/track4world/nets/model.py#L910-L923">模型 910–923 行</a>；<a href="https://facebookresearch.github.io/projectaria_tools/docs/data_formats/mps/slam/mps_trajectory">Aria 位姿单位</a>。</p>
+<h3>100 步不是逐帧真实轨迹</h3>
+<p>训练 loader 从两个估计端点线性插值，再重采样到 100 步。即使端点准确，绕行、往返或接触瞬间也可能无法表达；往返运动还可能因净位移小而被阈值过滤。<a href="https://github.com/GaTech-RL2/EgoWAM/blob/c87617fe37a6ed6a951e6b176ad552200c425c93/egowam/rldb/zarr/point_flow_loader.py#L392-L401">端点构造</a>；<a href="https://github.com/GaTech-RL2/EgoWAM/blob/c87617fe37a6ed6a951e6b176ad552200c425c93/egowam/rldb/zarr/zarr_dataset_multi.py#L1654-L1688">重采样及阈值入口</a>。</p>
+</div>
+</section>
+
+<section>
+<h2>误差敏感性：可调的理想几何算例</h2>
+<p class="muted">下面的误差均由假设参数解析计算。没有测量 Aria 或 Track4World；各项分别成立，不应相加视作总误差。</p>
+<div class="grid">
+<div class="calc">
+<h3>旋转与点匹配</h3>
+<label>点距 / Distance：<span id="z-label">0.70 m</span><input id="z" aria-label="点距（米）" type="range" min="0.2" max="2" step="0.05" value="0.7"></label>
+<label>相对旋转误差 / Rotation error：<span id="angle-label">1.00°</span><input id="angle" aria-label="相对旋转误差（度）" type="range" min="0" max="3" step="0.05" value="1"></label>
+<p>静态点假运动 / Static residual：<output id="rotation">12.22 mm</output></p>
+<p><small>2 Z sin(δθ/2)，点接近光轴，转轴垂直于点方向。假设角速度 100°/s，10 ms 的同步偏差相当于 1°；这不是实际同步误差。</small></p>
+<label>点匹配误差 / Tracking error：<span id="px-label">2.0 px</span><input id="px" aria-label="点匹配误差（像素）" type="range" min="0" max="10" step="0.5" value="2"></label>
+<label>处理分辨率下焦距 / Focal length：<span id="focal-label">500 px</span><input id="focal" aria-label="处理分辨率下焦距（像素）" type="range" min="200" max="900" step="25" value="500"></label>
+<p>深度准确时横向误差 / Lateral error with correct depth：<output id="lateral">2.80 mm</output></p>
+<p><small>Z δu / f。二维投影正确不证明三维深度正确。</small></p>
+</div>
+<div class="calc">
+<h3>尺度不一致与相机平移</h3>
+<label>共同尺度误差 / Shared scale error：<span id="scale-label">20%</span><input id="scale" aria-label="共同尺度误差（百分比）" type="range" min="0" max="50" step="1" value="20"></label>
+<label>相机平移 / Camera translation：<span id="baseline-label">10 cm</span><input id="baseline" aria-label="相机平移（厘米）" type="range" min="0" max="30" step="1" value="10"></label>
+<p>静止场景残余 / Static residual：<output id="scale-residual">20.0 mm</output></p>
+<p><small>共同尺度 s 的两帧点配合米制平移 b：F̂ = (1−s)b。即使匹配与位姿完全准确，也会有这一残余。纯旋转时该平移项消失；两帧尺度漂移仍可引入其他误差。</small></p>
+<h3>深度差的误差</h3>
+<p>如果两个端点的深度误差是相互独立、均值为零、标准差 20 mm，那么深度差的标准差是 √2 × 20 = 28.28 mm。实际误差可能相关、抵消或具有系统偏差。</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>建议的真实数据验收</h2>
+<ol>
+<li>静止桌面或墙面，佩戴相机转头和移动。在运动阈值过滤前，对已知静态背景统计残余位移 p50 / p95、超过 10 mm 的比例与有效覆盖率；按转速、平移量、距离分层。</li>
+<li>对移动物体使用独立 RGB-D、外部物体位姿或受控真值，报告 3D EPE、1 / 2 / 5 cm 达标率、方向误差、遮挡覆盖率。分别报告原始物理尺度与真值尺度对齐后的结果。</li>
+<li>分别评价标签提取器和预测头。不要只评价被运动阈值选中的点；也不要把与同一个深度模型的自洽性当作独立测量精度。</li>
+</ol>
+<p>静态残余小，只能说明静态补偿较好，不能证明动态深度或绝对尺度准确。Aria closed-loop 能减少累积漂移，但官方文档提醒其秒级相对精度可能比 open-loop 更差；这里应关注短时相对位姿。普通 RGB 视频缺少 Aria 位姿时也不能直接假定同等质量。<a href="https://facebookresearch.github.io/projectaria_tools/docs/data_formats/mps/slam/mps_trajectory">Aria 官方说明</a>。</p>
+</section>
+
+<section id="english" lang="en">
+<h2>English review</h2>
+<p><strong>Public evidence supports 3D flow as useful auxiliary supervision, but does not establish centimeter-level accuracy for EgoWAM human labels.</strong> Deployment correctness, label measurement accuracy, model prediction error, and policy success are separate questions. No real human video was evaluated in this review.</p>
+<p>The released extraction script runs Track4World on RGB pairs, then applies the Aria relative camera transform to the predicted future endpoint. Consistent metric point geometry, correct correspondences and accurate relative poses are required. The DA3 branch normalizes point geometry by its mean norm; the checked compensation path directly adds metric Aria translation without an observed scale restoration. This is a code-level concern requiring real-data validation, not a measured failure of the authors' training labels.</p>
+<p>The loader constructs a linear trajectory from estimated endpoints and later resamples it to 100 steps. It does not measure 100 independent physical positions. Movement filtering can suppress small motions and hide low-amplitude background residuals, while large errors can survive it.</p>
+<p>At 0.7 m, a hypothetical 1° relative rotation error causes a 12.22 mm static residual. A 20% shared scale mismatch with 10 cm camera translation causes exactly 20 mm of false static motion. These are separate analytic examples, not measured Aria or Track4World errors. The interactive controls above show their sensitivity.</p>
+<p>Validate unfiltered static-background residuals and independent dynamic 3D ground truth. Report coverage and error distributions, stratify by camera motion, and distinguish raw metric evaluation from ground-truth scale alignment. A static check alone cannot validate dynamic motion, absolute depth or scale.</p>
+</section>
+<footer>Research-only evidence page · Baseline architecture and weights unchanged · Code references pinned to c87617f · <a href="https://arxiv.org/html/2607.08436">EgoWAM</a> · <a href="https://arxiv.org/html/2603.02573">Track4World</a></footer>
+</main>
+<script>
+const el=id=>document.getElementById(id), value=id=>Number(el(id).value);
+function update(){const z=value('z'),a=value('angle'),p=value('px'),f=value('focal'),s=value('scale'),b=value('baseline');el('z-label').textContent=z.toFixed(2)+' m';el('angle-label').textContent=a.toFixed(2)+'°';el('px-label').textContent=p.toFixed(1)+' px';el('focal-label').textContent=f+' px';el('scale-label').textContent=s+'%';el('baseline-label').textContent=b+' cm';el('rotation').textContent=(2000*z*Math.sin(a*Math.PI/360)).toFixed(2)+' mm';el('lateral').textContent=(1000*z*p/f).toFixed(2)+' mm';el('scale-residual').textContent=(Math.abs(s/100)*b*10).toFixed(1)+' mm'}
+document.querySelectorAll('input').forEach(input=>input.addEventListener('input',update));update();
+</script>
+</html>
