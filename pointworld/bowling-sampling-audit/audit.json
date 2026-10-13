@@ -1,0 +1,482 @@
+{
+  "sampling": {
+    "pin_input_points": {
+      "min": 49.0,
+      "p05": 65.0,
+      "median": 96.0,
+      "p95": 162.0,
+      "max": 174.0
+    },
+    "pin_release_sampled_points": {
+      "min": 20.0,
+      "p05": 27.0,
+      "median": 37.0,
+      "p95": 50.0,
+      "max": 54.0
+    },
+    "pin_image_feature_coverage": {
+      "min": 0.0,
+      "p05": 0.21125978090766823,
+      "median": 0.5,
+      "p95": 0.8095704948646123,
+      "max": 0.9358974358974359
+    },
+    "pin_image_feature_coverage_10mm": {
+      "min": 0.2033898305084746,
+      "p05": 0.42249278805362295,
+      "median": 0.6796128707893414,
+      "p95": 0.9014360673847003,
+      "max": 0.9932432432432432
+    },
+    "scene_input_tokens": {
+      "min": 1644.0,
+      "p05": 1675.75,
+      "median": 1804.0,
+      "p95": 1940.75,
+      "max": 2008.0
+    },
+    "scene_release_sampled_tokens": {
+      "min": 889.0,
+      "p05": 914.0,
+      "median": 942.0,
+      "p95": 969.25,
+      "max": 987.0
+    },
+    "robot_release_sampled_tokens": {
+      "min": 169.0,
+      "p05": 176.0,
+      "median": 189.0,
+      "p95": 201.0,
+      "max": 213.0
+    },
+    "pin_projected_width_px": {
+      "min": 1.6071319580078125,
+      "p05": 2.4107208251953125,
+      "median": 4.0178680419921875,
+      "p95": 4.821441650390625,
+      "max": 5.625030517578125
+    },
+    "pin_projected_height_px": {
+      "min": 7.232139587402344,
+      "p05": 9.642852783203125,
+      "median": 13.660720825195312,
+      "p95": 16.071434020996094,
+      "max": 17.67858123779297
+    }
+  },
+  "geometry": [
+    {
+      "body": "ball",
+      "full_body_local_bbox_m": [
+        0.085,
+        0.085,
+        0.085
+      ],
+      "mass_kg": 0.06431101961286108
+    },
+    {
+      "body": "pin_0",
+      "full_body_local_bbox_m": [
+        0.04544766992330551,
+        0.04544767203814733,
+        0.15002714097499847
+      ],
+      "mass_kg": 0.0045
+    }
+  ],
+  "contact_and_motion": {
+    "contact_rows_on_gripper_mesh_body_fraction": {
+      "min": 1.0,
+      "p05": 1.0,
+      "median": 1.0,
+      "p95": 1.0,
+      "max": 1.0
+    },
+    "ball_targets_outside_release_axis_clip_fraction": {
+      "min": 0.0,
+      "p05": 0.0,
+      "median": 0.5519926512153759,
+      "p95": 0.7082308743169399,
+      "max": 0.7662857142857142
+    },
+    "pin_targets_outside_release_axis_clip_fraction": {
+      "min": 0.0,
+      "p05": 0.0,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "ball_max_axis_displacement_m": {
+      "min": 0.27554571628570557,
+      "p05": 0.38245075941085815,
+      "median": 0.9457562267780304,
+      "p95": 1.4482736885547638,
+      "max": 1.5055210590362549
+    },
+    "robot_mean_step_distance_m": {
+      "min": 0.03938380256295204,
+      "p05": 0.043511626310646534,
+      "median": 0.05902162380516529,
+      "p95": 0.08068872801959515,
+      "max": 0.1605246216058731
+    }
+  },
+  "reference": {
+    "droid": {
+      "clips": 64,
+      "unique_episodes": 8,
+      "summary": {
+        "scene_tokens": {
+          "min": 8867.0,
+          "p05": 9289.0,
+          "median": 11391.5,
+          "p95": 12000.0,
+          "max": 12000.0
+        },
+        "robot_tokens_per_time": {
+          "min": 175.0,
+          "p05": 182.15,
+          "median": 192.0,
+          "p95": 200.54999999999998,
+          "max": 202.0
+        },
+        "robot_mean_step_distance_m": {
+          "min": 0.00830576941370964,
+          "p05": 0.010922667616978288,
+          "median": 0.020821603015065193,
+          "p95": 0.03428339250385761,
+          "max": 0.036783505231142044
+        },
+        "image_feature_visible_fraction": {
+          "min": 0.5662115301257044,
+          "p05": 0.662873155690366,
+          "median": 0.7154186150310504,
+          "p95": 0.7821663852348427,
+          "max": 0.7920064431692339
+        }
+      }
+    },
+    "behavior": {
+      "clips": 32,
+      "unique_episodes": 2,
+      "summary": {
+        "scene_tokens": {
+          "min": 6080.0,
+          "p05": 6313.6,
+          "median": 7480.5,
+          "p95": 8769.3,
+          "max": 11450.0
+        },
+        "robot_tokens_per_time": {
+          "min": 145.0,
+          "p05": 151.1,
+          "median": 190.0,
+          "p95": 241.0,
+          "max": 246.0
+        },
+        "robot_mean_step_distance_m": {
+          "min": 0.006372382398694754,
+          "p05": 0.007853627111762762,
+          "median": 0.022133417427539825,
+          "p95": 0.0657304886728525,
+          "max": 0.08096804469823837
+        },
+        "image_feature_visible_fraction": {
+          "min": 0.9172161172161172,
+          "p05": 0.9183216603829859,
+          "median": 0.9528790519475407,
+          "p95": 0.9656415074481147,
+          "max": 0.9697816593886462
+        }
+      }
+    }
+  },
+  "native_episode_median_dt_s": 0.13400006294250488,
+  "native_episode_median_horizon_s": 1.4170000553131104,
+  "native_timing_episodes": 62,
+  "consistency": {
+    "existing_own_view_feature_coverage": {
+      "min": 0.0,
+      "p05": 0.034482758620689655,
+      "median": 0.39638906961613535,
+      "p95": 0.7241379310344828,
+      "max": 0.8709677419354839
+    },
+    "regenerated_own_view_feature_coverage": {
+      "min": 1.0,
+      "p05": 1.0,
+      "median": 1.0,
+      "p95": 1.0,
+      "max": 1.0
+    },
+    "existing_source_points": {
+      "min": 9.0,
+      "p05": 17.0,
+      "median": 58.0,
+      "p95": 97.0,
+      "max": 113.0
+    },
+    "resized_pixel_points": {
+      "min": 5.0,
+      "p05": 10.0,
+      "median": 37.0,
+      "p95": 64.0,
+      "max": 79.0
+    }
+  },
+  "checks": {
+    "status": "passed_CPU_official_function_checks",
+    "checked_inputs": 8,
+    "rows": [
+      {
+        "seed": 3,
+        "scene_sample_indices_exact": true,
+        "robot_sample_indices_exact": true,
+        "numpy_torch_visibility_mismatch_by_camera": [
+          0,
+          0
+        ],
+        "official_GridPooling_cluster_counts": [
+          2068,
+          874,
+          380,
+          111,
+          28
+        ],
+        "reconstructed_counts_exact": true,
+        "canonical_input_cluster_counts": [
+          1691,
+          854,
+          376,
+          110,
+          28
+        ]
+      },
+      {
+        "seed": 67,
+        "scene_sample_indices_exact": true,
+        "robot_sample_indices_exact": true,
+        "numpy_torch_visibility_mismatch_by_camera": [
+          0,
+          0
+        ],
+        "official_GridPooling_cluster_counts": [
+          2386,
+          985,
+          411,
+          114,
+          28
+        ],
+        "reconstructed_counts_exact": true,
+        "canonical_input_cluster_counts": [
+          1851,
+          932,
+          402,
+          114,
+          28
+        ]
+      },
+      {
+        "seed": 76,
+        "scene_sample_indices_exact": true,
+        "robot_sample_indices_exact": true,
+        "numpy_torch_visibility_mismatch_by_camera": [
+          0,
+          0
+        ],
+        "official_GridPooling_cluster_counts": [
+          2116,
+          869,
+          384,
+          110,
+          28
+        ],
+        "reconstructed_counts_exact": true,
+        "canonical_input_cluster_counts": [
+          1762,
+          851,
+          382,
+          110,
+          28
+        ]
+      },
+      {
+        "seed": 2000,
+        "scene_sample_indices_exact": true,
+        "robot_sample_indices_exact": true,
+        "numpy_torch_visibility_mismatch_by_camera": [
+          0,
+          0
+        ],
+        "official_GridPooling_cluster_counts": [
+          2747,
+          1032,
+          419,
+          117,
+          28
+        ],
+        "reconstructed_counts_exact": true,
+        "canonical_input_cluster_counts": [
+          2154,
+          982,
+          412,
+          117,
+          28
+        ]
+      },
+      {
+        "seed": 2001,
+        "scene_sample_indices_exact": true,
+        "robot_sample_indices_exact": true,
+        "numpy_torch_visibility_mismatch_by_camera": [
+          0,
+          0
+        ],
+        "official_GridPooling_cluster_counts": [
+          2226,
+          932,
+          380,
+          116,
+          28
+        ],
+        "reconstructed_counts_exact": true,
+        "canonical_input_cluster_counts": [
+          1740,
+          886,
+          375,
+          116,
+          28
+        ]
+      },
+      {
+        "seed": 3000,
+        "scene_sample_indices_exact": true,
+        "robot_sample_indices_exact": true,
+        "numpy_torch_visibility_mismatch_by_camera": [
+          0,
+          0
+        ],
+        "official_GridPooling_cluster_counts": [
+          2801,
+          1087,
+          419,
+          119,
+          28
+        ],
+        "reconstructed_counts_exact": true,
+        "canonical_input_cluster_counts": [
+          2206,
+          1025,
+          411,
+          119,
+          28
+        ]
+      },
+      {
+        "seed": 3004,
+        "scene_sample_indices_exact": true,
+        "robot_sample_indices_exact": true,
+        "numpy_torch_visibility_mismatch_by_camera": [
+          0,
+          0
+        ],
+        "official_GridPooling_cluster_counts": [
+          2484,
+          1012,
+          425,
+          115,
+          27
+        ],
+        "reconstructed_counts_exact": true,
+        "canonical_input_cluster_counts": [
+          1996,
+          948,
+          404,
+          114,
+          27
+        ]
+      },
+      {
+        "seed": 3029,
+        "scene_sample_indices_exact": true,
+        "robot_sample_indices_exact": true,
+        "numpy_torch_visibility_mismatch_by_camera": [
+          0,
+          0
+        ],
+        "official_GridPooling_cluster_counts": [
+          1999,
+          859,
+          375,
+          108,
+          28
+        ],
+        "reconstructed_counts_exact": true,
+        "canonical_input_cluster_counts": [
+          1649,
+          818,
+          370,
+          108,
+          28
+        ]
+      }
+    ],
+    "native_DROID_first_batch": {
+      "scene_tokens": 11859,
+      "robot_tokens_per_time": 193,
+      "pooling_cluster_counts": [
+        9077,
+        3219,
+        919,
+        277,
+        83
+      ]
+    }
+  },
+  "normalization": {
+    "robot_channel_median_p95_abs_z_bowling_train": [
+      1.239338200317353,
+      3.513179952170576,
+      1.5168301800395583,
+      0.2695657122056994,
+      0.0,
+      0.2695657122056994,
+      1.719783789913902,
+      1.7265359717227984,
+      1.9077296252329479,
+      0.7481943688114172,
+      2.385197509904878,
+      13.895991208774667,
+      1.4918976581736878,
+      3.206352331915334,
+      19.729068638584547,
+      2.267957998124078
+    ],
+    "robot_channel_median_p95_abs_z_droid_reference": [
+      1.7140398477892704,
+      1.560637341120588,
+      1.0113834846452878,
+      0.2695657122056994,
+      0.0,
+      0.2695657122056994,
+      1.7153677365540063,
+      1.7103028465516341,
+      1.8813990704041181,
+      1.3232807832682145,
+      2.4883629358624884,
+      1.5064441905264707,
+      1.6820381772501602,
+      2.350472384616723,
+      1.7673988483918524,
+      2.158732758449439
+    ]
+  },
+  "source_notes": [
+    "Existing locked development subsets, not full training-corpus statistics.",
+    "First 64 DROID and 32 BEHAVIOR train clips through the official deterministic pipeline; geometric/color augmentation disabled.",
+    "BEHAVIOR/task0000 is a secondary reference and was not used to pretrain small-DROID.",
+    "Scene bounding boxes describe workspaces, not individual object sizes.",
+    "DROID does not supply GT passive-object identities; exact object-size distribution cannot be established from these clouds.",
+    "DROID normalization z-scores on BEHAVIOR are comparison diagnostics, not the joint model normalization."
+  ]
+}
