@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "formal_runs": 6,
+  "html_sha256": "1dec63da6f49c3008e226d62d9dc3d5d137ae7c66202ebd9f468895e1b770872",
+  "audit_sha256": "09155803ebf4c9e11910a377823cc4821ab149117d9885bcc83b61d38bcdda6f",
+  "qa_script_sha256": "e6c1993a7ce7ecb2d5d13b772a2f362d8c28d3ba409e08bd040bf819ded0f0a6",
+  "control_combinations": 48,
+  "metric_display_comparisons": 288,
+  "early_motion_display_comparisons": 288,
+  "prefix_display_comparisons": 192,
+  "curve_combinations": 120,
+  "curve_point_comparisons": 20400,
+  "train_four_second_disabled": true,
+  "all_seed_cards_checked": true,
+  "no_private_paths_or_raw_state": true,
+  "no_external_dependencies": true,
+  "raw_arrays_opened": 0,
+  "model_loads": 0,
+  "optimizer_updates": 0,
+  "browser_visual_review": "separate root responsibility"
+}
