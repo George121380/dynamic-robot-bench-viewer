@@ -1,0 +1,45 @@
+{
+  "status": "generated_data_checked_and_local_browser_verified",
+  "browser_check": "Chrome local: final sections visible; best/mean numbers checked; latest/seed43 and amplitude5 interactions checked; all eight selector combinations and three amplitudes independently data-checked.",
+  "source_json_sha256": {
+    "factorial": "88821d5ed7c8b64b29b318d4051e918184f54e0cbfe00e5a9e5e9acae4160910",
+    "early-motion": "97119d632042c31351b94d0a57df47f7533539c84ee4acfda180db4a249d0d32",
+    "temporal": "2499e09a432a6a40fddd08ab2dd396b8b425f934abae3b46f87b4d3cdd03d896",
+    "sensitivity": "e054c38a0dd8a68b3db69f59561a132c986df9c4d0321bb0f77b1f0b4c834e24",
+    "offset100": "92821efd48ce26a19db0d2fb5b35936830d7805dac7a10a2b8822e1db8d95e40",
+    "causal_plan": "b3ba3886a2590cf92c5cdaef49de137ad3594adf68b2b9a4b598c9be6b022b65",
+    "causal_metadata": "132d061a5aea1d40e67f0cdc448b9edd92488b897cfe2b1cfde9c54be3ce7a98"
+  },
+  "html_sha256": "afe074901b98b716402d70dc665733acc1a5793e9912cf6cc0dbcca56212e765",
+  "renderer_sha256": "f0847e4a02f8b02f4dddd694c7fac5d4cb9d98953f9ef95b6aa067c18f373f16",
+  "payload_sha256": "99ccb66a5078312b63bf2b81afcfd8a7730f9ec756baff10c79875ee84ebd06f",
+  "cohort": {
+    "train_original_anchors": 206,
+    "validation_episodes": 16,
+    "validation_static_pins": 110,
+    "eight_fit_original_anchors": 8,
+    "eight_fit_pins": 80
+  },
+  "checks": {
+    "three_source_manifest_hashes_equal": true,
+    "fixed_six_checkpoints_present": true,
+    "temporal_checkpoint_hashes_match_selected": true,
+    "first_second_all_gt_under_1mm": true,
+    "display_payload_matches_source_aggregates": true,
+    "supplementary_audit_hashes_match": true,
+    "controller_plan_prefix_checks_passed": true,
+    "controller_plan_metadata_hash_matches": true,
+    "native109_ordering_unchanged": true,
+    "offset100_scores_match_sensitivity": true,
+    "no_absolute_paths_or_privileged_state_in_html": true,
+    "external_dependencies": 0,
+    "test_files_opened": 0,
+    "model_loads": 0,
+    "optimizer_updates": 0
+  },
+  "aggregation": {
+    "early": "Per-pin >5mm during first1s; mean of three equal-size seed cohorts when mean selected.",
+    "factorial": "Equal mean of fixed-seed micro-ADE over same 110 pins static by original10Hz GT criterion, endpoints and20 frames from2to4s.",
+    "temporal": "Per-seed average over XYZ axes and +/- probes, then equal mean across3 selected checkpoints."
+  }
+}
