@@ -1,0 +1,27 @@
+{
+  "status": "json_payload_verified",
+  "browser_validation": "Local Chrome desktop: main controls, postcontact NA, selected contact curve and four true-boundary comparison cards visually verified; public acceptance recorded separately.",
+  "html_sha256": "e69a42e25ae01e26599c3e5c811085f5726b9c3100a1b58715d9e58f50e9a699",
+  "renderer_sha256": "54f86ca8f9939a2d19e9d6ea3703b1ce04fadd515b83aca23d4c0e9a2da0a0e7",
+  "source_artifact_sha256": {
+    "report": "ce3cdbc0af4c2477e99a84e5b306b4e33840840fd00da798b9a4be40b5a21a7e",
+    "viewer_data": "e21198fbce3b3ba2d5885c4f02d86c5f91b6881100027c027c8e03b1bc719c0b",
+    "boundary_report": "9c1fd76c828ebdde729a1be4a683892b1170aaa4d09019c6f97350a8e33bfcca"
+  },
+  "validation_cases": 16,
+  "frozen_checkpoints": 12,
+  "boundary_panel_included": true,
+  "boundary_checkpoint_count": 12,
+  "preserved_case_order": true,
+  "curve_samples": 41,
+  "prediction_sampling_hz": 10,
+  "contact_record_sampling_hz": 500,
+  "contact_strip_bin_s": 0.02,
+  "raw_arrays_opened": 0,
+  "model_loads": 0,
+  "inferences": 0,
+  "optimizer_updates": 0,
+  "test_files_opened": 0,
+  "external_dependencies": 0,
+  "private_paths_or_privileged_states_in_html": false
+}
