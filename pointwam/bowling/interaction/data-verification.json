@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "report_sha256": "d2b6f0b11bcbf69bdd1a7d1a1ac5ac8f03a80fb2d656f82f36e046b18ddc9709",
+  "html_sha256": "6409ce27bc61786ccf8b8e7081e63bfcdf1c99aceeed5b4b4457dae248ad3599",
+  "gate_status": "fail",
+  "public_case_condition_files": 188,
+  "model_coordinate_archives_checked": 2256,
+  "exact_array_values_compared": 8879616,
+  "display_scalar_values_checked": 6627,
+  "coordinates_bit_value_exact": true,
+  "public_private_path_scan_passed": true,
+  "model_forwards": 0,
+  "optimizer_updates": 0
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "scope": "Node VM functional controls and derived numeric text; browser layout is checked separately",
+  "html_sha256": "6409ce27bc61786ccf8b8e7081e63bfcdf1c99aceeed5b4b4457dae248ad3599",
+  "qa_script_sha256": "ae38efa3dc6c201697fc100164a3157ac2034e803739036547c89e08d936d306",
+  "full_valid_episode_condition_checks": 188,
+  "model_seed_checkpoint_condition_layout_combinations": 144,
+  "numeric_display_checks": 3984,
+  "play_pause_seek_reset_passed": true,
+  "training_scope_metric_controls_passed": true,
+  "gate_immutable_fail": true,
+  "no_nonfinite_svg_coordinates": true,
+  "source_model_forwards": 0,
+  "optimizer_updates": 0
+}
