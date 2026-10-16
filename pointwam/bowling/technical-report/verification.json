@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "created_utc": "2026-10-16T17:20:26.186524+00:00",
+  "evidence_revision": "54d1fa0429a06844091e57f10f047ebe7c50472d",
+  "build_source_sha256": "875e756420960c2570817cce8952289ee02bd5c5e61a4692e16cef296b5c304b",
+  "content_sha256": {
+    "zh-CN": "4e1efa1e5227e030b648ac8ff998274da56ae7fb19c83d7b8225103989b62f12",
+    "en": "6b10a4af7d447565120435c523b2d2e220433ffcb932679136c34f2e0548aa26"
+  },
+  "source_files_cold_hashed": 20,
+  "source_primary_and_independent_gate_exact": true,
+  "generated_table_rows": {
+    "zh-CN": {
+      "datasets": 5,
+      "metrics": 6,
+      "history": 6,
+      "design": 11,
+      "primary": 3,
+      "seeds": 6,
+      "fit": 4,
+      "claims": 5,
+      "glossary": 14
+    },
+    "en": {
+      "datasets": 5,
+      "metrics": 6,
+      "history": 6,
+      "design": 11,
+      "primary": 3,
+      "seeds": 6,
+      "fit": 4,
+      "claims": 5,
+      "glossary": 14
+    }
+  },
+  "original_model_prediction_files_read": 0,
+  "model_forwards": 0,
+  "optimizer_updates": 0,
+  "physics_steps": 0,
+  "files": {
+    "en.html": "52cebe6ec1ea56eba197dbfdf8c1541d279acbd60a5b428fe0e5f6cb82a605be",
+    "figures/boundary.en.png": "0a2467ea822082192c7bb856fbd3c4fe85e88fe42b4909b355772cdb810a7ccb",
+    "figures/boundary.en.svg": "9cdff61e09a14db4addb27294b46d748477fcadba0367737aadbee491cdd697f",
+    "figures/boundary.zh-CN.png": "4c16337e14c6c769742db62ef212bfb98b2d14aba534062e03d77efc5b8e3426",
+    "figures/boundary.zh-CN.svg": "7b367554dff26c6728ab63101f8ea954371856246cbe153a37444eeb54ca6efc",
+    "figures/intervals.en.png": "20239af2b8a36408935ffffb3f7c5d45aa0c6a7aeebb5ceba8762ee0c0d9dce6",
+    "figures/intervals.en.svg": "fc92f28a9f9273d704296de4d1aedc71b2d05802d5759411d3b73861000fa8ee",
+    "figures/intervals.zh-CN.png": "598ad6f7f20d384ce54978529c2de30d1e4a957e21ea9b54543ed7b6c2e57816",
+    "figures/intervals.zh-CN.svg": "91dcadfee438855c334db40b5b07a1a36ea86c23c6b0fddbf6664af8ce16da48",
+    "figures/learning.en.png": "0a8bad9e1cd84f502091e7057dcf6ce18a757d046b1059f40a32b99d32a5e1d5",
+    "figures/learning.en.svg": "75ad5732a54c4c113fe49c37d0b6bc0e5a21d52ea0fe45c0da1750a10d084f94",
+    "figures/learning.zh-CN.png": "83452508766be64e5c29c30aa8218c8930366c0e33e312f2ea99ac8bd115d36e",
+    "figures/learning.zh-CN.svg": "215db311f2a1ee8e928c45fa7c88a37c214b1412dc39c453c4db724961a49f60",
+    "figures/primary.en.png": "396a667383adfcbacacfb915e0a39cd0a557fbc019c940f161293d534269fc83",
+    "figures/primary.en.svg": "894bda779350cb8a5cfa8595df60d0d43bac973ed44530800c141104ab8534c5",
+    "figures/primary.zh-CN.png": "059c03f1f5d005056c9096cb66173572d65e21c182a61d383a57ce813d09f558",
+    "figures/primary.zh-CN.svg": "2b050779a9c8860186a01fd7f7d882b0e7077124b3d0894d0d1f7576eb2a21d0",
+    "index.html": "3383376ef406496639b8637d9e03c3ab7d10b78864eb02e9cb7e78e1dd2f0754",
+    "report-data.json": "b6b6d9b66a61f81d5ec979af38d900eab08b1172317897e6735d09c955bbf96f",
+    "report.js": "956d6181126468eb715a2ba5e7e533167ce0d08e8b6fb357473103209f155fa9"
+  },
+  "quality_checks": {
+    "source_files_match_fixed_evidence_revision": 20,
+    "internal_anchors_valid": true,
+    "embedded_svg_figures_each_language": 4,
+    "all_eight_figure_pngs_visually_inspected": true,
+    "chrome_chinese_english_rendered": true,
+    "chrome_images_loaded": true,
+    "chrome_horizontal_overflow": false,
+    "prefix_button_visible_frames": [
+      5,
+      10,
+      15
+    ],
+    "javascript_syntax": "passed",
+    "canvas_syntax": "passed",
+    "canvas_embedded_data_exact": true,
+    "canvas_runtime_layout": "not independently inspected",
+    "private_path_scan": "passed"
+  },
+  "authoring_environment": {
+    "python": "3.12.6",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4",
+    "separate_report_environment": true,
+    "training_environment_unchanged": true
+  }
+}

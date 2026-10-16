@@ -1,0 +1,2961 @@
+{
+  "schema": "bowling-plain-language-report-v1",
+  "as_of": "2026-10-16",
+  "evidence_revision": "54d1fa0429a06844091e57f10f047ebe7c50472d",
+  "sources": [
+    {
+      "id": "E0",
+      "title": "UNITAS paper identity",
+      "url": "https://arxiv.org/abs/2610.12099",
+      "files": [],
+      "checked": "2026-10-16",
+      "note": "Title/identity only; experiment claims come from local evidence."
+    },
+    {
+      "id": "E1",
+      "title": "任务与原始数据 / Task and original data",
+      "url": "",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/README.zh-CN.md",
+          "sha256": "5f431d448ef08e63ed043a9f0e5039bbd63a8b3267caa9f6452a9a2dc6f6723a",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/README.zh-CN.md"
+        }
+      ]
+    },
+    {
+      "id": "E2",
+      "title": "压缩模块故障 / Compression diagnostics",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/diagnosis/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/DIAGNOSIS.zh-CN.md",
+          "sha256": "65dee621ec72eeefda5724d749f4d60af81ad016f28e8448b9ea3c81e77c4fb9",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/DIAGNOSIS.zh-CN.md"
+        }
+      ]
+    },
+    {
+      "id": "E3",
+      "title": "压缩结构对照 / Compression controls",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/diagnosis/",
+      "files": [
+        {
+          "path": "reports/pointwam_bowling/diagnosis-round2/ablation/summary.json",
+          "sha256": "f645b6f871bd896bb4b84c89e3b863ec5a9df08c353d5dad55635a103cf68eef",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/reports/pointwam_bowling/diagnosis-round2/ablation/summary.json"
+        }
+      ]
+    },
+    {
+      "id": "E4",
+      "title": "直接坐标预测 / Direct coordinate prediction",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/direct/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/DIRECT.zh-CN.md",
+          "sha256": "4b3fe0f584f59d639150520ab64e798f6f8ab061cfaed4bc5a5b0fd7492e31e8",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/DIRECT.zh-CN.md"
+        }
+      ]
+    },
+    {
+      "id": "E5",
+      "title": "提前运动与输入替换 / Early motion and input replacement",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/direct-diagnosis/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/STATIC_DRIFT_DIAGNOSIS.zh-CN.md",
+          "sha256": "cad7a1fe92c918157234668f14b3929be400d8794550c4a3ea843e4eac3cd2cc",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/STATIC_DRIFT_DIAGNOSIS.zh-CN.md"
+        }
+      ]
+    },
+    {
+      "id": "E6",
+      "title": "时间可见性对照 / Temporal visibility control",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/temporal-prefix/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/TEMPORAL_PREFIX.zh-CN.md",
+          "sha256": "cffd53197d3e3a3212d5126d905bdecfeebf44cadd667d6f889e93612257765b",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/TEMPORAL_PREFIX.zh-CN.md"
+        },
+        {
+          "path": "reports/pointwam_bowling/temporal-prefix/final-audit.json",
+          "sha256": "09155803ebf4c9e11910a377823cc4821ab149117d9885bcc83b61d38bcdda6f",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/reports/pointwam_bowling/temporal-prefix/final-audit.json"
+        }
+      ]
+    },
+    {
+      "id": "E7",
+      "title": "接触时序诊断 / Contact timing diagnosis",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/contact-diagnosis/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/CONTACT_DIAGNOSIS.zh-CN.md",
+          "sha256": "31f2755d59fdd82cdce8e8e04177090992a4ad18cbc7db0a94340321e5cf4a30",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/CONTACT_DIAGNOSIS.zh-CN.md"
+        },
+        {
+          "path": "reports/pointwam_bowling/contact-diagnosis/summary.json",
+          "sha256": "c8e0044fe5e13904c916020524fbf6a5ca3230e7578cdd56483fc66b74ec140c",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/reports/pointwam_bowling/contact-diagnosis/summary.json"
+        }
+      ]
+    },
+    {
+      "id": "E8",
+      "title": "新物体结构结果 / Fresh object-structure results",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/interaction/",
+      "files": [
+        {
+          "path": "reports/pointwam_bowling/interaction-v1/evaluation-summary.json",
+          "sha256": "650711283c80e575fc7bd37091198bfdaac632aebc65cf1d3d74c0f3df4a2ef8",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/reports/pointwam_bowling/interaction-v1/evaluation-summary.json"
+        },
+        {
+          "path": "experiments/pointwam_bowling/INTERACTION_EXPERIMENT.zh-CN.md",
+          "sha256": "05cf67d8b2a05171aa2ac6d907cb6b2ab38843629f39c0c50326793b9699b815",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/INTERACTION_EXPERIMENT.zh-CN.md"
+        }
+      ]
+    },
+    {
+      "id": "E9",
+      "title": "独立评分 / Independent scoring",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/interaction/",
+      "files": [
+        {
+          "path": "reports/pointwam_bowling/interaction-v1/independent-verification.json",
+          "sha256": "1a0916e8d229e0a206fdcab2980108d92b4e71f56cf8f49a64417c48db15c6f4",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/reports/pointwam_bowling/interaction-v1/independent-verification.json"
+        }
+      ]
+    },
+    {
+      "id": "E10",
+      "title": "数据与抽样核验 / Data and sampling checks",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/interaction/",
+      "files": [
+        {
+          "path": "reports/pointwam_bowling/interaction-v1/test-data-audit.json",
+          "sha256": "6de44112bede736a4065a4bc68709748e7decba39eafa32c95939d06bd22e3ba",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/reports/pointwam_bowling/interaction-v1/test-data-audit.json"
+        },
+        {
+          "path": "reports/pointwam_bowling/interaction-v1/validation-data-audit.json",
+          "sha256": "f437690df1cc555dec189b25cbe63254661415dcdaa94aa824f731a76a7e6e6e",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/reports/pointwam_bowling/interaction-v1/validation-data-audit.json"
+        },
+        {
+          "path": "reports/pointwam_bowling/interaction-v1/independent-training-audit.json",
+          "sha256": "5f3ecc68d25cbadac48c359e4edf9e51db20e9c3e4cf73fb9c9d447bdb1355c0",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/reports/pointwam_bowling/interaction-v1/independent-training-audit.json"
+        },
+        {
+          "path": "reports/pointwam_bowling/interaction-v1/training-archive-verification.json",
+          "sha256": "ca1fcf8dbfd2dedf96e429f890033ae95d9aaa636c151e86252198539ee4773b",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/reports/pointwam_bowling/interaction-v1/training-archive-verification.json"
+        }
+      ]
+    },
+    {
+      "id": "E11",
+      "title": "结构实现 / Model implementations",
+      "url": "",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/temporal_model.py",
+          "sha256": "bca42ce9d8239d032dbfb4532e5016bddb8473b6f0d6b7935a9fa8d0b9a72c30",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/temporal_model.py"
+        },
+        {
+          "path": "experiments/pointwam_bowling/interaction_model.py",
+          "sha256": "5f1f7ce192bf80c206414e2d37e090487616a0eb27575fac864447068df01ec8",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/interaction_model.py"
+        },
+        {
+          "path": "experiments/pointwam_bowling/protocol.interaction.json",
+          "sha256": "5a6c2fb05d89dc430c39dbdc295c864ba4d1545797901becc2fbcfc00ed3c4f7",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/protocol.interaction.json"
+        },
+        {
+          "path": "experiments/pointwam_bowling/protocol.interaction_data.json",
+          "sha256": "85b44f881cab777ff4fd58acf881e55a7acad8af21e13dce9869f338dceb02e4",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/protocol.interaction_data.json"
+        }
+      ]
+    }
+  ],
+  "data": {
+    "means": {
+      "mlp": {
+        "pre": 22.5525876925597,
+        "post": 52.882562551699614,
+        "ball": 199.92503686904357
+      },
+      "relation": {
+        "pre": 13.73019991712811,
+        "post": 57.57174447972391,
+        "ball": 207.30030884513613
+      }
+    },
+    "seeds": [
+      {
+        "arm": "mlp",
+        "seed": 42,
+        "step": 2000,
+        "pre": 23.513260132908233,
+        "post": 53.97899889751829,
+        "ball": 215.48409934428912
+      },
+      {
+        "arm": "mlp",
+        "seed": 43,
+        "step": 500,
+        "pre": 22.438319623757284,
+        "post": 52.26646213771543,
+        "ball": 191.46677771761313
+      },
+      {
+        "arm": "mlp",
+        "seed": 44,
+        "step": 1500,
+        "pre": 21.706183321013587,
+        "post": 52.40222661986514,
+        "ball": 192.82423354522845
+      },
+      {
+        "arm": "relation",
+        "seed": 42,
+        "step": 10500,
+        "pre": 14.62680254005771,
+        "post": 57.52945140381872,
+        "ball": 207.98288034516926
+      },
+      {
+        "arm": "relation",
+        "seed": 43,
+        "step": 13000,
+        "pre": 11.916468969949227,
+        "post": 57.932446485725336,
+        "ball": 206.31248954755216
+      },
+      {
+        "arm": "relation",
+        "seed": 44,
+        "step": 8500,
+        "pre": 14.647328241377393,
+        "post": 57.253335549627664,
+        "ball": 207.60555664268696
+      }
+    ],
+    "fit": [
+      {
+        "arm": "mlp",
+        "checkpoint": "best",
+        "values": [
+          58.31947702171245,
+          33.005244749955615,
+          17.982518111041617
+        ]
+      },
+      {
+        "arm": "mlp",
+        "checkpoint": "latest",
+        "values": [
+          9.467185907185879,
+          7.62669106890518,
+          6.114771678876495
+        ]
+      },
+      {
+        "arm": "relation",
+        "checkpoint": "best",
+        "values": [
+          10.996525259330964,
+          10.324452882297061,
+          4.392584067403656
+        ]
+      },
+      {
+        "arm": "relation",
+        "checkpoint": "latest",
+        "values": [
+          7.615602095507298,
+          7.588735218205068,
+          3.3011055498413606
+        ]
+      }
+    ],
+    "boundary": [
+      {
+        "arm": "mlp",
+        "original": 65.38194405902324,
+        "observed": 36.307964861316066
+      },
+      {
+        "arm": "relation",
+        "original": 56.017037441585906,
+        "observed": 25.88500534035754
+      }
+    ],
+    "curves": [
+      {
+        "arm": "mlp",
+        "seed": 42,
+        "selected": 2000,
+        "steps": [
+          0,
+          500,
+          1000,
+          1500,
+          2000,
+          2500,
+          3000,
+          3500,
+          4000,
+          4500,
+          5000,
+          5500,
+          6000,
+          6500,
+          7000,
+          7500,
+          8000,
+          8500,
+          9000,
+          9500,
+          10000,
+          10500,
+          11000,
+          11500,
+          12000,
+          12500,
+          13000,
+          13500,
+          14000,
+          14500,
+          15000
+        ],
+        "train": [
+          310.5309469529031,
+          90.96716791045282,
+          71.02936037048887,
+          61.12483702974259,
+          50.51065709647287,
+          35.04567644038306,
+          30.699950821272957,
+          26.895340304040825,
+          28.998158665164915,
+          20.132735869835315,
+          17.327288226598778,
+          17.955586379105615,
+          15.82037319708874,
+          11.420481118478863,
+          15.311029944791155,
+          16.407326455983803,
+          10.216675156303209,
+          12.143766796548533,
+          10.722797016065067,
+          10.89023513521116,
+          10.818605768483675,
+          11.855542221245365,
+          12.879401927276712,
+          10.724536296629282,
+          10.860125980400298,
+          10.483044554703845,
+          7.954044428348239,
+          9.424374375114372,
+          10.242070954058054,
+          8.185075410011718,
+          9.647149509047377
+        ],
+        "validation": [
+          201.94513982280625,
+          111.99142244339357,
+          122.26587230798374,
+          113.84559166069718,
+          109.4824730117481,
+          117.57532138773948,
+          116.71418718376634,
+          118.6193611925893,
+          111.26180097105828,
+          120.5415623134039,
+          114.50702287477493,
+          121.55986157718954,
+          120.0117311767745,
+          123.46562303086937,
+          122.54070947902765,
+          120.98137519412356,
+          118.9891634587057,
+          118.88475184458362,
+          119.46077029817184,
+          121.27266469064652,
+          119.59871395697867,
+          118.55503142488668,
+          116.2531318742044,
+          118.01711075829891,
+          115.31302644215285,
+          114.82479005658301,
+          116.97082116549284,
+          117.04184785324829,
+          115.39040627033629,
+          115.63352283296373,
+          114.43103293236352
+        ]
+      },
+      {
+        "arm": "mlp",
+        "seed": 43,
+        "selected": 500,
+        "steps": [
+          0,
+          500,
+          1000,
+          1500,
+          2000,
+          2500,
+          3000,
+          3500,
+          4000,
+          4500,
+          5000,
+          5500,
+          6000,
+          6500,
+          7000,
+          7500,
+          8000,
+          8500,
+          9000,
+          9500,
+          10000,
+          10500,
+          11000,
+          11500,
+          12000,
+          12500,
+          13000,
+          13500,
+          14000,
+          14500,
+          15000
+        ],
+        "train": [
+          310.5309469529031,
+          85.50737181757567,
+          71.16709858353585,
+          64.64425495950222,
+          49.60703963331363,
+          41.88303123894621,
+          30.20330522640103,
+          25.559222379246762,
+          20.416551833914884,
+          18.06516900000926,
+          17.018709907443927,
+          14.821250685816224,
+          14.75028916373791,
+          15.094140982443783,
+          13.119877889708093,
+          11.238732200606627,
+          13.522789482086072,
+          13.33612044893634,
+          9.516484311978006,
+          12.17586896526082,
+          9.506465981928324,
+          10.822373131524675,
+          10.03959908676998,
+          8.996413817511435,
+          9.33333299729935,
+          11.980474831971595,
+          8.876105182234008,
+          7.814991962497484,
+          13.950022093907645,
+          7.599782119039387,
+          10.824552321116345
+        ],
+        "validation": [
+          201.94513982280625,
+          106.77292534350198,
+          110.41322417473953,
+          118.73564809907859,
+          114.15877068851815,
+          114.84255345851366,
+          113.65562862808754,
+          115.17153436650845,
+          116.5678792980558,
+          117.16570370771166,
+          118.52651405690324,
+          120.52896217260903,
+          115.56735606997894,
+          117.14380854057383,
+          120.37149074793373,
+          120.0272861441329,
+          121.10989624483899,
+          117.13909541047141,
+          118.78970431329928,
+          116.4474767938456,
+          118.07996218149565,
+          117.69839763343442,
+          115.65961960484609,
+          116.94820803095216,
+          115.9327399417923,
+          111.74362954331387,
+          115.02194217922982,
+          111.4177635758495,
+          113.62631234820901,
+          112.67902733579082,
+          113.98034694856226
+        ]
+      },
+      {
+        "arm": "mlp",
+        "seed": 44,
+        "selected": 1500,
+        "steps": [
+          0,
+          500,
+          1000,
+          1500,
+          2000,
+          2500,
+          3000,
+          3500,
+          4000,
+          4500,
+          5000,
+          5500,
+          6000,
+          6500,
+          7000,
+          7500,
+          8000,
+          8500,
+          9000,
+          9500,
+          10000,
+          10500,
+          11000,
+          11500,
+          12000,
+          12500,
+          13000,
+          13500,
+          14000,
+          14500,
+          15000
+        ],
+        "train": [
+          310.5309469529031,
+          95.08210371055308,
+          74.55418566927935,
+          60.03098794889153,
+          46.23287781590359,
+          35.44542358711633,
+          29.59668627329622,
+          24.843138101205117,
+          20.785430001319398,
+          18.74819568435729,
+          17.984985347502803,
+          14.308331259120838,
+          14.148275024118924,
+          11.979677492717395,
+          14.250140965108049,
+          12.671159225207818,
+          14.625871513401435,
+          11.712691707256665,
+          13.586121819099105,
+          9.722860821311285,
+          12.487369534734992,
+          7.965930603115014,
+          10.755293807066169,
+          11.122803894167797,
+          12.678405172390994,
+          10.061236061747541,
+          7.945115433211594,
+          11.42276304036246,
+          8.097748422466509,
+          10.088790280822538,
+          8.718317362430534
+        ],
+        "validation": [
+          201.94513982280625,
+          114.92720465920458,
+          107.97088496526918,
+          105.01561152217471,
+          110.73673741840057,
+          110.2675872095417,
+          118.01613553779993,
+          120.49279224059077,
+          119.8611223012288,
+          115.78054861060345,
+          123.4105969208569,
+          123.78445716830686,
+          124.0034690168304,
+          118.53755204294019,
+          119.44140555810648,
+          118.34440128640563,
+          121.24922332675946,
+          118.67534065278619,
+          117.02854463722228,
+          117.56631839926382,
+          118.00125117062312,
+          117.8308675218952,
+          115.51515215286496,
+          117.4758192148412,
+          119.06412791370161,
+          116.93104587242686,
+          117.82331433388654,
+          118.34011655475332,
+          115.40974015633924,
+          116.72704131561632,
+          115.42041822553607
+        ]
+      },
+      {
+        "arm": "relation",
+        "seed": 42,
+        "selected": 10500,
+        "steps": [
+          0,
+          500,
+          1000,
+          1500,
+          2000,
+          2500,
+          3000,
+          3500,
+          4000,
+          4500,
+          5000,
+          5500,
+          6000,
+          6500,
+          7000,
+          7500,
+          8000,
+          8500,
+          9000,
+          9500,
+          10000,
+          10500,
+          11000,
+          11500,
+          12000,
+          12500,
+          13000,
+          13500,
+          14000,
+          14500,
+          15000
+        ],
+        "train": [
+          310.5309469529031,
+          69.54640539696689,
+          47.15743128715289,
+          36.508757465897695,
+          28.07092153558671,
+          23.984189195624282,
+          20.67786383731122,
+          17.787324345264334,
+          18.2761543074018,
+          16.719492307445336,
+          15.700563966884951,
+          15.303876585837655,
+          15.3592948919867,
+          12.207218199040616,
+          15.438273246587691,
+          13.972323185241967,
+          12.333023964342958,
+          10.845713827666746,
+          11.877711369740558,
+          10.49105280401208,
+          10.598096554340863,
+          12.147569832923022,
+          10.446205738682886,
+          11.926524784867166,
+          11.50270259807164,
+          8.741231263662707,
+          7.428811817320414,
+          8.963521160326177,
+          8.49291170224583,
+          10.868783456237535,
+          9.034257315838097
+        ],
+        "validation": [
+          201.94513982280625,
+          101.92378356177997,
+          101.60959532424432,
+          96.57967400448035,
+          98.33251293088857,
+          101.07764175207917,
+          105.82816672084779,
+          102.73748670923848,
+          103.28924831620397,
+          108.12398210770114,
+          103.24646118995076,
+          102.27157677959556,
+          103.32889879000227,
+          99.75285447484306,
+          97.63928996919161,
+          98.84586699651872,
+          102.22324691226669,
+          95.56933900753718,
+          98.33589794983105,
+          97.33053817882532,
+          97.96133333602623,
+          94.66400726486397,
+          99.07982357948411,
+          100.1237976606585,
+          98.93609358760462,
+          100.20474282796944,
+          100.66574414164516,
+          100.62851782493166,
+          99.90172404987896,
+          97.98788296898707,
+          101.60680522574748
+        ]
+      },
+      {
+        "arm": "relation",
+        "seed": 43,
+        "selected": 13000,
+        "steps": [
+          0,
+          500,
+          1000,
+          1500,
+          2000,
+          2500,
+          3000,
+          3500,
+          4000,
+          4500,
+          5000,
+          5500,
+          6000,
+          6500,
+          7000,
+          7500,
+          8000,
+          8500,
+          9000,
+          9500,
+          10000,
+          10500,
+          11000,
+          11500,
+          12000,
+          12500,
+          13000,
+          13500,
+          14000,
+          14500,
+          15000
+        ],
+        "train": [
+          310.5309469529031,
+          74.00402707052027,
+          45.17792404307501,
+          33.351146668253364,
+          27.99530429343307,
+          24.212993125933338,
+          18.750385216745986,
+          17.405706848798992,
+          15.668567599945101,
+          14.804223821261953,
+          13.569491328080128,
+          15.71435253819652,
+          13.800081370718093,
+          11.63895655369043,
+          12.956938035325035,
+          12.556181949246735,
+          11.565949489868066,
+          9.746002041181276,
+          9.295531752891472,
+          10.105067267825385,
+          9.728087363172795,
+          13.00715861880883,
+          9.042001862375711,
+          10.176291459831637,
+          8.568584511271094,
+          9.806044309504077,
+          10.772879163632076,
+          14.644951160690155,
+          6.645300634977283,
+          9.237712285325317,
+          7.862425657738067
+        ],
+        "validation": [
+          201.94513982280625,
+          106.9705016248862,
+          105.19562881829656,
+          108.00610721844284,
+          107.19695999817718,
+          107.07901686900983,
+          105.65665172092451,
+          105.88662668338395,
+          102.60879202793691,
+          106.36368823909504,
+          105.87034424953191,
+          105.79486607588527,
+          105.95736424579663,
+          101.64891331314004,
+          103.2095787460679,
+          103.388835974321,
+          103.10403371701406,
+          100.02029537183907,
+          102.30477082185476,
+          101.94737797269201,
+          99.95082473722142,
+          100.43461722658493,
+          100.26820741915391,
+          99.94598362210914,
+          100.99363195613019,
+          101.6492495062034,
+          98.12627894351704,
+          105.66083574518908,
+          99.12724879250474,
+          99.4596047412489,
+          98.24880928429727
+        ]
+      },
+      {
+        "arm": "relation",
+        "seed": 44,
+        "selected": 8500,
+        "steps": [
+          0,
+          500,
+          1000,
+          1500,
+          2000,
+          2500,
+          3000,
+          3500,
+          4000,
+          4500,
+          5000,
+          5500,
+          6000,
+          6500,
+          7000,
+          7500,
+          8000,
+          8500,
+          9000,
+          9500,
+          10000,
+          10500,
+          11000,
+          11500,
+          12000,
+          12500,
+          13000,
+          13500,
+          14000,
+          14500,
+          15000
+        ],
+        "train": [
+          310.5309469529031,
+          79.6920951744426,
+          47.631591454211005,
+          35.99833664020549,
+          26.084712600372217,
+          23.731080852079756,
+          22.949542656324816,
+          19.394989544066643,
+          17.889280572594537,
+          16.11478098492667,
+          16.940527082696335,
+          15.015158097024388,
+          18.81371571445669,
+          11.525564296178349,
+          13.329178191852503,
+          12.809675883989483,
+          13.449288200344553,
+          15.384268925650861,
+          13.002203202048,
+          11.712412063406903,
+          12.551802893805096,
+          10.921163976325355,
+          11.130036920498648,
+          10.544831284064575,
+          10.02823217613349,
+          8.190847594860402,
+          10.01288338785162,
+          7.563060825659241,
+          9.23101650502574,
+          17.25104355305086,
+          6.798202699134032
+        ],
+        "validation": [
+          201.94513982280625,
+          105.82535684672193,
+          99.24999044468743,
+          103.77564896497927,
+          103.5516944456228,
+          99.44417617759319,
+          96.7625368298035,
+          102.51861884192563,
+          102.16536528358321,
+          102.52792362780532,
+          100.63741756776628,
+          99.7552539966385,
+          102.69968670169027,
+          99.66577001361605,
+          99.31849401912352,
+          98.78346907254485,
+          98.7610383395419,
+          95.82235167672722,
+          98.77412490725004,
+          101.6405246157807,
+          99.79892392546239,
+          100.01466116624844,
+          100.47942934686405,
+          98.3861813875495,
+          99.72062575113836,
+          100.03102480348441,
+          102.90108621267187,
+          100.99456420294797,
+          100.87476772311824,
+          102.99083604401766,
+          98.3808931768828
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "arm": "mlp",
+        "elapsed_s": 397.7839842294343,
+        "parameter_count": 2479340
+      },
+      {
+        "arm": "relation",
+        "elapsed_s": 807.7985912160948,
+        "parameter_count": 2474388
+      }
+    ],
+    "gate": {
+      "status": "fail",
+      "passed": false,
+      "eligibility": {
+        "fixed_draws": 64,
+        "paired_valid_queries": 63,
+        "minimum_valid_queries": 48,
+        "complete_postcontact_episodes": 31,
+        "minimum_postcontact_episodes": 16
+      },
+      "inconclusive_reasons": [],
+      "primary": {
+        "precontact_endpoint_ADE_m": {
+          "metric": "precontact_endpoint_ADE_m",
+          "cohort_episodes": 63,
+          "supported_episodes": 63,
+          "mlp_mean_m": 0.022552587692559703,
+          "relation_mean_m": 0.013730199917128108,
+          "relation_minus_mlp_m": -0.008822387775431591,
+          "relative_reduction": 0.3911918177949122,
+          "per_seed_difference_m": {
+            "42": -0.008886457592850526,
+            "43": -0.010521850653808059,
+            "44": -0.007058855079636196
+          },
+          "ci95_difference_m": [
+            -0.010911510883771897,
+            -0.006895200889808049
+          ],
+          "repetitions": 10000,
+          "bootstrap_seed": 20261015,
+          "valid_resamples": 10000,
+          "statistical_unit": "episode; three fixed training seeds averaged before resampling"
+        },
+        "postcontact_increment_ADE_m": {
+          "metric": "postcontact_increment_ADE_m",
+          "cohort_episodes": 63,
+          "supported_episodes": 31,
+          "mlp_mean_m": 0.052882562551699604,
+          "relation_mean_m": 0.0575717444797239,
+          "relation_minus_mlp_m": 0.004689181928024282,
+          "relative_reduction": -0.08867160935024679,
+          "per_seed_difference_m": {
+            "42": 0.0035504525063004234,
+            "43": 0.0056659843480098985,
+            "44": 0.004851108929762527
+          },
+          "ci95_difference_m": [
+            0.003143430921698033,
+            0.0061919630969000826
+          ],
+          "repetitions": 10000,
+          "bootstrap_seed": 20261015,
+          "valid_resamples": 10000,
+          "statistical_unit": "episode; three fixed training seeds averaged before resampling"
+        }
+      },
+      "conditions": {
+        "precontact_endpoint_ADE_m": {
+          "all_three_seed_differences_negative": true,
+          "reduction_at_least_10_percent": true,
+          "paired_ci_upper_below_zero": true
+        },
+        "postcontact_increment_ADE_m": {
+          "all_three_seed_differences_negative": false,
+          "reduction_at_least_10_percent": false,
+          "paired_ci_upper_below_zero": false
+        }
+      },
+      "ball_guard": {
+        "mlp_mean_m": 0.19992503686904353,
+        "relation_mean_m": 0.20730030884513614,
+        "maximum_allowed_ratio": 1.1,
+        "passed": true
+      },
+      "interpretation": "Preregistered engineering continuation gate, not a universal statistical threshold or proof of a single architecture component."
+    },
+    "stationary": {
+      "precontact_endpoint_ADE_m": 0.05093058409407467,
+      "postcontact_increment_ADE_m": 57.800122729072534,
+      "ball_ADE_m": 473.6369665071189
+    },
+    "constant_velocity": {
+      "precontact_endpoint_ADE_m": 0.08173415791452199,
+      "postcontact_increment_ADE_m": 57.80125944712859,
+      "ball_ADE_m": 473.6369665071187
+    },
+    "verification": {
+      "scalar_comparisons": 2155910,
+      "max_absolute_scalar_error": 5.68460751561306e-17,
+      "prediction_archives_hashed": 2632,
+      "prepared_archives_hashed": 188,
+      "contact_archives_hashed": 96,
+      "source_arrays_compared": 26320,
+      "model_forwards": 0,
+      "optimizer_updates": 0,
+      "old_test_arrays_opened": 0
+    },
+    "full_report_sha256": "d2b6f0b11bcbf69bdd1a7d1a1ac5ac8f03a80fb2d656f82f36e046b18ddc9709",
+    "full_audit_sha256": "bdf8d771df7f24cdb7eb334b0b0c24cb1ff90748e601faccc5e3a897e675db2a"
+  },
+  "languages": {
+    "zh-CN": {
+      "lang": "zh-CN",
+      "title": "用21个点预测保龄球运动的实验技术报告",
+      "subtitle": "任务设定、模型实现、实验结果与仍未解决的问题",
+      "date": "2026年10月16日",
+      "audience": "面向未参与项目的研究人员与工程人员。正文从任务和数据开始解释；复核文件和实现细节放在后部。",
+      "summary": "现有模型能够准确记住少量训练轨迹，但还不能在新场景中可靠预测瓶子何时开始运动、碰撞后怎样运动。时间约束修正了一个明确的结构问题；共享物体结构减少了部分碰撞前漂移，却使新测试集上的碰撞后误差增大。原论文的完整方法尚未复现成功。",
+      "sections": [
+        {
+          "id": "conclusion",
+          "title": "1 目前能够交付什么结论",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "这项工作最初希望检验：只用球心和每个瓶子的两个端点，能否学出由机器人动作决定的物体运动。到本报告截止时，已完成轨迹准备、轨迹压缩模块试验、直接坐标预测、小数据拟合、时间结构对照、接触时序诊断，以及使用新测试场景的物体结构对照。本报告整理既有结果，没有新增训练或物理实验。",
+              "sources": [
+                "E1",
+                "E2",
+                "E4",
+                "E6",
+                "E7",
+                "E8"
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                "已确认：在瓶子真正受到非支撑接触之前，模型就会预测明显运动；错误位置又会进入后续预测，放大误差。",
+                "已确认：原全连接模型会让较晚的机器人计划影响较早的预测。时间前缀约束消除了这条依赖，但没有消除瓶子漂移。",
+                "已确认：在最新的新测试场景上，共享物体模型将接触前误差降低39.1%，同时将接触后位移误差增大8.9%；三个训练随机数编号的后者都变差。",
+                "仍未确认：剩余失败究竟主要来自输入信息不足、有限训练场景、损失函数、学习过程，还是片段内缺少逐步状态更新。当前证据不能把它归结为唯一原因。"
+              ]
+            },
+            {
+              "type": "callout",
+              "text": "实际判断：本轮物体结构方案没有通过训练前确定的继续投入标准。建议结束这版方案的重复调参，保留其局部收益证据；如果继续研究，应先用能够区分原因的实验决定下一步。"
+            },
+            {
+              "type": "p",
+              "text": "本轮结果没有使用额外的静止惩罚，也没有在模型输出后强行固定瓶子、修正瓶长或按照真实接触时间开关预测。报告中的位置误差来自保存的原始输出。",
+              "sources": [
+                "E6",
+                "E8"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "task",
+          "title": "2 任务究竟要求模型做什么",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "场景包含一个球、十个瓶子和机器人。机器人推动球，球可能撞到瓶子，瓶子之间也可能互相碰撞。我们希望给模型一段过去的观察和一份未来机器人运动计划，让它预测球和瓶子接下来几秒的位置。这里研究的是在给定动作条件下预测环境运动，没有训练模型自动选择机器人动作。"
+            },
+            {
+              "type": "p",
+              "text": "每个瓶子用上、下两个语义端点表示，共20个点；球只用中心一个点，总计21个场景点。瓶端点固定在瓶体局部轴线上，间距为150毫米，与实际网格极值有至多约0.261毫米的差异。两个端点能描述瓶子的中心和轴线朝向，但不直接记录绕这根轴的转动。球心也不直接记录球的自旋。这些信息是否会造成无法预测的歧义，尚未通过实验判定。",
+              "sources": [
+                "E1"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "输入坐标由仿真器的物理状态计算，具有固定身份和顺序，并非由视频中的视觉跟踪算法估计。因此，本轮失败发生在准确坐标输入的条件下；它没有评估遮挡、跟踪丢失和相机误差，也不是实物机器人实验。机器人另用20个夹爪点描述，不计入21个场景点。",
+              "sources": [
+                "E1"
+              ]
+            },
+            {
+              "type": "pipeline",
+              "key": "task"
+            },
+            {
+              "type": "p",
+              "text": "最初任务给出的论文链接对应UNITAS。历史工作目录沿用了pointwam_bowling这个名称。当前实现是自行编写的简化版本，去掉了视觉和语言等组件；后续的全连接模型和共享物体模型则是单独建立的对照。它们的成功或失败都不能直接当成完整UNITAS方法的复现结论。",
+              "sources": [
+                "E0",
+                "E1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "title": "3 输入数据和预测时间怎样安排",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "一次完整的机器人推动过程称为一条轨迹。同一条轨迹可以从多个时刻截取训练片段，称为窗口。训练集有206条轨迹，每条取11个窗口，共2266个窗口。这提高了训练片段数量，却没有把独立物理试验增加到2266次。",
+              "sources": [
+                "E1",
+                "E4"
+              ]
+            },
+            {
+              "type": "table",
+              "key": "datasets",
+              "caption": "数据范围。旧验证和旧测试已参与过开发，不能与最新的新测试集混为一谈。"
+            },
+            {
+              "type": "p",
+              "text": "每个查询时刻记为0秒。模型接收过去1秒的10帧场景和机器人坐标，以及当前坐标；还接收机器人未来的名义运动计划。计划由当前机器人状态和已固定的控制命令，在关闭接触的独立仿真中生成。它是一份提前可计算的计划，不是机器人实际执行后的未来真值。预测器只接收这五类输入。",
+              "sources": [
+                "E1",
+                "E4"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "模型以每秒10帧输出未来两秒，即0.1至2.0秒的20帧。四秒预测由两段拼接：先预测前两秒，再把第一段预测出来的位置作为第二段的当前状态和历史。第二段沿用原名义机器人计划，不会收到真实场景更新。训练标签只有两秒，因此四秒结果还包含使用自身预测继续运行的额外难度。",
+              "sources": [
+                "E4",
+                "E6",
+                "E8"
+              ]
+            },
+            {
+              "type": "pipeline",
+              "key": "rollout"
+            },
+            {
+              "type": "p",
+              "text": "查询时刻沿用原数据定义：在第一次记录到机器人与球的正力接触之前0.1秒，并要求具有足够历史和未来。这个时间是事后利用仿真记录确定的；没有按照瓶子碰撞时刻移动查询点。因而这些成绩也不代表已经解决了在线系统何时发起预测的问题。",
+              "sources": [
+                "E8"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "新评估保留全部预先确定的物理场景，不采用旧训练采集中的视觉可见性接受筛选。因此，虽然物理和控制设置保持一致，也不能声称训练集与新评估集经过筛选后的分布完全相同。",
+              "sources": [
+                "E8"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metrics",
+          "title": "4 怎样判断模型真的预测对了",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "平均位置误差通常写作ADE：在各个预测时刻计算预测点与真实点之间的直线距离，再取平均，数值越小越好。末帧误差通常写作FDE，只看预测终点。例如ADE为10毫米，表示按指定平均方法统计后，预测点与真实点平均相距1厘米；它不是准确率。不同预测时长、物体分组和平均方法的ADE不能直接相减。"
+            },
+            {
+              "type": "table",
+              "key": "metrics",
+              "caption": "本报告主要指标的直观含义。所有位置或位移误差均以毫米展示。"
+            },
+            {
+              "type": "p",
+              "text": "只看所有点的平均误差，会掩盖两个相反问题：没碰到时瓶子乱动，以及碰到之后瓶子动得不对。最新实验将它们设为两项共同主要指标。接触前误差只看严格早于首次非支撑接触的帧；如果瓶子在查询之前已经有这类接触，就不进入该瓶的接触前评分。这里统计的接触包括球、其他瓶子、机器人和墙体，支撑面接触不算。",
+              "sources": [
+                "E7",
+                "E8"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "接触后误差专门比较位移变化：以事件时刻或之前最后一个保存帧为起点，比较接触后半秒内预测与真实的端点位移。这样可以减轻接触前已积累的位置偏差对响应判断的混淆。评分需要事件之后完整的五个10赫兹帧；窗口不完整时记为没有可用指标，绝不补成零误差。",
+              "sources": [
+                "E7",
+                "E9"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "接触来自仿真器每2毫秒记录的活跃约束和正法向力，沿用大于0.000001牛顿的阈值；物体看起来靠近不能替代接触记录。事件时间采用积分步的起点。不同瓶子的误差先在各自时间帧内平均，再在每条场景内平均；最新主比较使每条场景具有相同权重，最后平均三个训练随机数编号的误差，而非先平均三条预测轨迹。",
+              "sources": [
+                "E7",
+                "E9"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "还必须放入一个简单参考：始终预测瓶子停在当前位置。它可能在碰撞前非常准确，却完全没有预测碰撞后的运动。如果复杂模型只在接触前改善，而接触后接近这个参考，就不能据此宣布学会了物理。恒速参考则根据过去点坐标估计速度，再假设速度保持不变。",
+              "sources": [
+                "E8",
+                "E9"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "诊断还暴露了早期评价的限制：旧验证集的原两秒窗口中只有4条轨迹、14个瓶子出现新接触，没有任何瓶子拥有完整接触后半秒。因此该窗口无法评价完整碰撞响应；这不代表训练没有碰撞，因为879个训练窗口包含新接触，来自95条训练轨迹。最新评价改为四秒并采集新场景，正是为了补足这项观察范围。",
+              "sources": [
+                "E7",
+                "E8"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "history",
+          "title": "5 每一轮实验解决了什么问题",
+          "blocks": [
+            {
+              "type": "table",
+              "key": "history",
+              "caption": "实验顺序与结论。各轮数据范围和训练方式不同，这是一条诊断路径，不是可横向排序的模型排行榜。"
+            },
+            {
+              "type": "h3",
+              "text": "5.1 先检查轨迹压缩是否能保留原始运动"
+            },
+            {
+              "type": "p",
+              "text": "原路线先把一段点轨迹压缩成较短的数字表示，再从中还原轨迹。这个模块在代码中称为tokenizer。它此时已经拿到了真实未来轨迹，任务只是压缩和还原，还没有开始预测未知未来。因此，重建成绩不能被当成动力学预测成绩。",
+              "sources": [
+                "E1",
+                "E2"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "两次各5000步的压缩模块训练都未达到事先设定的精度目标。原运行选中模型的未来球和运动瓶重建平均误差分别为16.114和13.047毫米；真正全零的未来位移输入，也被还原出7.587毫米平均误差。最终第5000步还出现了明确的解码端故障：不同内部表示输出相同的重建，解码器中被检查的一层计算结果全部为零。这里不能把最终模型与第2000步选中的模型混为一谈。降低学习率避免了被检查最终模型的这一失效，却没有解决重建误差。",
+              "sources": [
+                "E1",
+                "E2"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "随后改动时间表示的对照，将真实小训练集的分组平均重建误差从20.094降到11.323毫米，改善43.6%，但静止瓶这一组反而变差，所有组也仍未同时达到精度目标。扩大网络同样只有部分改善。工程目标中的1毫米平均误差、3毫米末帧误差是本项目选择的标准，不能当成论文规定或所有有用模型的必要条件。",
+              "sources": [
+                "E2",
+                "E3"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "5.2 绕过轨迹压缩后 先检查能否记住少量样本"
+            },
+            {
+              "type": "p",
+              "text": "为分开检查压缩和动力学问题，我们使用直接输出坐标的普通全连接网络。它把输入数字组合起来，经三层宽度512的隐藏层，输出21个点在20个未来时刻的位移，再加回当前位置。这个独立对照约有248万个可训练参数。",
+              "sources": [
+                "E4"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "八条训练轨迹的全部88个窗口中，球、运动瓶和静止瓶的平均位置误差分别达到0.440、0.133和0.194毫米。说明计算流程能够拟合指定小样本，也能表达近乎静止的输出。但三个全量模型在旧验证集上仍出现提前运动和较大的四秒误差。小样本拟合成功不能证明输入完整、所有碰撞都可预测，或模型能处理未见场景。",
+              "sources": [
+                "E4"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "5.3 提前运动可以在物理接触前直接测到"
+            },
+            {
+              "type": "p",
+              "text": "对早期16条验证轨迹的接触记录重新计时后，真实瓶子在各自首次非支撑接触之前最大只移动0.324毫米；检查的12份模型权重却都让全部160个瓶子在这个区间内预测移动超过5毫米。这是原始世界坐标与真实物理事件的对照，覆盖整个可观察接触前时段，不是观看动画后作出的主观判断。",
+              "sources": [
+                "E7"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prefix",
+          "title": "6 时间前缀约束究竟是什么",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "时间前缀就是从现在开始、到某个时刻为止的那一段。这里的约束是：预测第0.5秒的场景，只能使用截至第0.5秒的机器人计划；预测第1.5秒，才可以使用截至第1.5秒的计划。所有时刻仍然可以使用同一份过去和当前观察。"
+            },
+            {
+              "type": "p",
+              "text": "考虑两份机器人计划。前1秒完全一样，1秒之后一份继续推、一份停下。在同一初始状态下，真实物理系统的前1秒应保持一样。受约束的模型也必须给出相同的前1秒预测，不能因为后来停下，就改变此前瓶子的位置预测。下面可切换所预测的时刻，看模型允许读取哪一段计划。"
+            },
+            {
+              "type": "prefix"
+            },
+            {
+              "type": "p",
+              "text": "原全连接模型一次读入全部两秒的计划，再一起输出两秒轨迹。控制器生成的两份计划在前1秒命令、名义位置和真实物理状态都逐值相同时，旧模型的前1秒瓶子预测仍平均改变4.399毫米。它使用的是合法的机器人计划，不是偷看未来真实瓶子；问题是预测缺少上述时间一致性。",
+              "sources": [
+                "E5",
+                "E6"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "实现时，我们保留原网络的参数和各时刻输出头，让每个输出时刻分别计算。经过训练集统计标准化后，该时刻之后的计划项被置零，使其不能影响这个输出。不是简单把未来机器人的原始世界坐标设成零，也没有强制瓶子保持不动。两组从相同权重开始，使用相同数据、采样和损失，各三个训练随机数编号，每组15000步。",
+              "sources": [
+                "E6"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "结果有两层：结构检查中，后段计划对早期输出的影响降为严格零；旧16条验证轨迹上，首秒预测移动超过10毫米的瓶子比例从49.38%降至33.54%。但超过2毫米的比例仍为100%，两秒综合位置误差也从22.310升到23.330毫米，四秒静止瓶误差没有改善。这说明改动修好了一个确切性质，却没有解决整体预测问题。这里的比例来自重复使用的旧验证集，不能当作最新测试集结果。",
+              "sources": [
+                "E6"
+              ]
+            },
+            {
+              "type": "callout",
+              "text": "这个约束保证较晚动作不能改变较早输出。它不保证模型知道碰撞何时发生，不保证预测足够准确，也不等于已经实现了逐帧的物理状态更新。"
+            }
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "7 错误位置为什么会越预测越严重",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "当模型把第一段预测的瓶子位置作为第二段输入时，即使真实瓶子仍未移动，第二段也会把已经漂移的坐标当成当前状态。如果模型没有学会纠正这类状态，后面的误差就会被放大。为了检查这一点，我们在两秒处提供真实坐标，让同一个冻结模型重新预测后两秒。"
+            },
+            {
+              "type": "p",
+              "text": "早期对照分别替换真实场景输入和真实机器人输入。对同一组静止瓶，原预测后半段误差为50.844毫米；只纠正场景后为27.657毫米；只纠正机器人整组输入后为45.988毫米；两组都纠正后为23.095毫米。它们说明场景反馈是一个较大的放大因素，但两种替换之间有相互作用，不能将改善相加后当作根因比例。",
+              "sources": [
+                "E5"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "最新实验也重复了真实边界条件诊断。以下始终比较原查询之后同一段2至4秒，真实轨迹和计分时长相同。替换内容包括场景历史与当前坐标、机器人历史与当前状态，并从该真实机器人边界重新计算名义计划。",
+              "sources": [
+                "E8",
+                "E9"
+              ]
+            },
+            {
+              "type": "figure",
+              "key": "boundary",
+              "caption": "同一段2至4秒的全瓶平均端点误差。真实边界能明显降低误差，但这是额外获得真实观察的条件诊断。来源E8。"
+            },
+            {
+              "type": "p",
+              "text": "即使给了真实边界，两个模型的接触后增量误差仍分别为41.199和39.702毫米，对应真值响应幅度为43.358毫米。剩余误差仍然明显，因此不能把失败全部归给连续预测的积累。这一后移查询有28条完整接触后轨迹，与原查询的31条不是同一评分支持集合；它不能替换主要测试成绩，也不能被宣传为从原始起点预测四秒的部署收益。",
+              "sources": [
+                "E8",
+                "E9"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "interaction",
+          "title": "8 最新的物体结构对照怎样进行",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "普通全连接网络把所有点展平后一起处理。新模型则把球、十个瓶子和机器人分别作为对象，十个瓶子使用同一套编码和输出规则，再通过两层注意力计算交换对象信息。对象之间的相对位置和距离参与计算。这里的注意力可以理解为模型学习决定：当前预测应从哪些其他对象读取多少信息。它没有接收真实接触标签，也没有按某个距离阈值强行开关运动。",
+              "sources": [
+                "E8",
+                "E11"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "两种模型都保留时间前缀约束，也仍然并行输出20个未来时刻。在单个两秒片段内部，新模型没有先预测球下一步位置，再用那个预测位置更新瓶子的显式过程。新方案同时改变了瓶子参数共享、相对几何计算和输入统计的合并方式，因此实验比较的是这一整套结构，无法把收益或失败唯一归到某一个部件。",
+              "sources": [
+                "E8",
+                "E11"
+              ]
+            },
+            {
+              "type": "table",
+              "key": "design",
+              "caption": "最新两种模型的固定设置。参数数量相近不等于计算量相近。"
+            },
+            {
+              "type": "p",
+              "text": "验证和测试都使用事先确定的新物理场景。先采集32条验证轨迹，31条有合法查询、12条具有完整接触后半秒，再按四秒综合位置误差选择模型。每500次更新评估一次，分数相同保留较早模型。每次训练必须跑满15000步，不因中途成绩变化而停止。",
+              "sources": [
+                "E8"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "完成两种模型各三个随机数编号的六次训练后，记录全部选中模型和末步模型的文件指纹，才采集固定64条新测试轨迹。63条有合法查询，31条具有完整接触后半秒。唯一不能评分的编号820035没有机器人与球接触，因此无法定义约定的查询时刻；原记录保留，没有补抽。之后没有根据测试结果重新选择权重、选择随机数编号或追加训练。",
+              "sources": [
+                "E8",
+                "E9"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "全部训练仍只用原206条轨迹和原坐标误差损失。选中模型是按验证集规则产生的；末步模型仅作为附加检查，不能拿来挽救主要比较的失败。训练随机数编号42、43、44控制权重初始化和抽样，与物理场景编号810000或820000等是两种不同编号。",
+              "sources": [
+                "E8",
+                "E10"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "results",
+          "title": "9 新测试集的结果和它们的含义",
+          "blocks": [
+            {
+              "type": "table",
+              "key": "primary",
+              "caption": "验证选中的模型在新测试集上原查询四秒预测的主要结果。误差越小越好；数字平均三个固定训练随机数编号。"
+            },
+            {
+              "type": "figure",
+              "key": "primary",
+              "caption": "接触前、接触后和球位置误差分开绘制，三个纵轴尺度不同。柱子没有表示置信区间；差值区间见下一图。来源E8。"
+            },
+            {
+              "type": "p",
+              "text": "接触前误差从22.553降至13.730毫米，改善39.1%，三个训练编号均改善。但在每个瓶子可观察的整个接触前区间内，曾被预测移动超过5毫米的比例仍从100%仅降至98.36%。这不是固定首秒比例，也不表示98.36%的独立场景失败；它是先在每条场景内按瓶子统计，再平均模型和场景的比例。平均误差下降没有消除提前运动。",
+              "sources": [
+                "E8"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "接触后位移误差从52.883升至57.572毫米，恶化8.9%，三个训练编号都变差。始终预测瓶子不动的误差为57.800毫米，新模型只比它低约0.23毫米。真实响应平均幅度为57.800毫米，普通模型和新模型预测的响应幅度分别为21.571和18.643毫米。新模型有非零运动预测，球预测也包含信息；但响应幅度明显偏小，碰撞后位移的方向、时序或幅度仍不够准确。不能把它说成完全没学到任何信息，也不能据此说学会了碰撞。",
+              "sources": [
+                "E8",
+                "E9"
+              ]
+            },
+            {
+              "type": "table",
+              "key": "seeds",
+              "caption": "三个训练随机数编号全部列出。接触后误差的恶化没有依赖挑选某个编号。"
+            },
+            {
+              "type": "figure",
+              "key": "intervals",
+              "caption": "新模型减普通模型的误差差值及95%区间。小于零表示改善，大于零表示恶化。按场景配对重采样，先在每条场景内平均三个固定训练编号。来源E8和E9。"
+            },
+            {
+              "type": "p",
+              "text": "区间通过重复抽取测试场景10000次计算。接触前差值区间为负，接触后差值区间为正；在本轮场景与三个固定训练编号下，方向明确。它没有覆盖所有可能训练随机性、开发过程中多次尝试和更广泛的真实场景，也不能证明某个网络组件的因果作用。"
+            },
+            {
+              "type": "p",
+              "text": "训练前确定的继续投入标准要求：两项主要误差在三个训练编号上都下降，平均改善至少10%，配对区间上界小于零，同时球误差恶化不超过10%。至少还需48条合法测试轨迹和16条完整接触后轨迹。本轮样本支持充足、球误差只恶化3.69%，但接触后指标的三个改善条件全不满足，因此结论是未通过，而不是样本不足无法判断。这是本项目的工程决策标准，不是物理模型普遍成功的定义。",
+              "sources": [
+                "E8",
+                "E9"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "training",
+          "title": "10 继续训练和增加计算为什么没有自动解决问题",
+          "blocks": [
+            {
+              "type": "table",
+              "key": "fit",
+              "caption": "全部2266个训练窗口的两秒平均位置误差。每格依次为球、运动瓶、静止瓶，单位毫米。这些窗口来自206条轨迹。"
+            },
+            {
+              "type": "p",
+              "text": "普通模型按四秒验证选中的步骤为2000、500和1500；新模型为10500、13000和8500。新模型通常需要更久才达到验证最优，不能笼统说两种模型都在早期过拟合。两种模型后期都能继续改善训练拟合，但四秒验证没有同步改善。训练预测两秒、验证连续预测四秒，数据范围也不同，不能把两者的数值差直接解释成单一的泛化差距。",
+              "sources": [
+                "E8"
+              ]
+            },
+            {
+              "type": "figure",
+              "key": "learning",
+              "caption": "左图为固定前八条轨迹88个窗口上的两秒球误差；右图为新验证集上的四秒加权误差。全部31个评估时刻保留，圆点标出验证选中的步骤。两图含义不同，不能直接相减。来源E8。"
+            },
+            {
+              "type": "p",
+              "text": "最新六次正式训练共90000次参数更新，运行器内部计时约20.09分钟。普通模型合计397.78秒，新模型807.80秒；预先进行的短程同步计时中，新模型单步约为普通模型的2.84倍。每个窗口的估算乘加运算量约为13.84倍，因此本轮只能称参数量和更新数相近，不能称计算预算相同。新模型计算更贵，没有换来主要碰撞响应指标改善。",
+              "sources": [
+                "E8"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "这里的20.09分钟只包含最新六次运行内部的训练、周期评估和输出工作，不包含前几轮实验、数据准备、独立复核、文件传输和报告制作。其余工程检查中的临时训练更新单独记录，没有混入正式90000次更新。"
+            }
+          ]
+        },
+        {
+          "id": "causes",
+          "title": "11 已确认的原因与尚未证实的解释",
+          "blocks": [
+            {
+              "type": "table",
+              "key": "claims",
+              "caption": "结论强度。存在某个现象，不等于已经证明它贡献了多少误差。"
+            },
+            {
+              "type": "p",
+              "text": "一个需要检验的可能性是位置平方误差会偏好折中的未来。假设同一可见输入之后有一半向左10毫米、一半向右10毫米，始终预测零位移的平均平方误差反而低于始终向一边预测。这个数学例子说明平均化可能让响应变小，但我们还没有证明本数据中存在足够相似输入对应不同未来的歧义，因此不能把它当成已经定位的失败原因。"
+            },
+            {
+              "type": "p",
+              "text": "另一个可能性是输入状态不够完整。点坐标历史能间接提供速度线索，但没有直接给出完整的角速度和接触状态。即使输入来自准确仿真，也不等于它包含决定未来所需的全部信息。是否缺少关键状态、是否可从已有历史恢复，以及完整状态是否真能改善同预算结果，都还需要对照。"
+            },
+            {
+              "type": "p",
+              "text": "也可能是网络对碰撞转换的学习不足，或两秒片段内并行输出未来位置的方式不利于描述球撞瓶、瓶再撞瓶的过程。不过普通网络已有对象间信息路径，小集合拟合也成功，因而现有结果不支持网络在数学上绝对不能表达碰撞的强结论。"
+            },
+            {
+              "type": "p",
+              "text": "本轮也没有检验增加独立训练轨迹、改变接触阶段采样比例、加入更完整物理状态或使用另一种损失的效果。因此不应把任何一种改进当成已经证明有效的解决方案。"
+            }
+          ]
+        },
+        {
+          "id": "next",
+          "title": "12 如果继续研究 应怎样决定下一步",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "建议停止对当前共享物体模型重复更换训练随机数、学习率和训练时长。下一轮应从一个能被否证的问题开始，并单独确定数据、预算和评价标准。本报告列出的后续检查都是建议，尚未执行。"
+            },
+            {
+              "type": "list",
+              "items": [
+                "先区分短期预测与误差积累：在真实当前状态下，用固定的短预测时长分别检查训练场景和未参与选模的开发场景，单独报告接触前、接触附近和接触后。若接触后短期训练误差仍大，应先解决这一步的学习问题；若短期已准而连续预测迅速变差，才优先处理反馈稳定性。",
+                "检验状态信息是否充分：在一致的数据划分和训练预算下，对照现有点历史与增加仿真速度、角速度等状态的输入。新增状态只用于机制诊断；若改善明显，再研究能否从实际可观测信息恢复它们。不能把仿真中特有的完整状态成绩当成可部署成绩。",
+                "只有前两项结果支持时，再对照逐步状态更新：让每一步使用上一步预测的位置更新对象关系，其他输入、数据和损失尽量保持一致。继续使用接触前与接触后两项标准，并与静止参考比较；逐步更新本身不是成功保证。",
+                "本轮测试集已经用于最终报告，不再拿它选择下一轮方案。下一轮需要独立开发范围，并在方案固定后使用新的留出场景。"
+              ]
+            },
+            {
+              "type": "callout",
+              "text": "继续投入的理由应是新的、能区分失败原因的证据。当前最可靠的收益是缩小了问题范围；尚未获得能可靠处理新场景碰撞的模型。"
+            }
+          ]
+        },
+        {
+          "id": "verification",
+          "title": "13 结果如何复核 有哪些使用限制",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "新验证和新测试的原始仿真回放状态、坐标时间索引、物体坐标计算及首次接触表均经过核对。新测试的63个合法场景在两种预测条件下形成126个准备窗口；加上验证共188个。独立数据核验使用另一条坐标计算与索引检查路径，没有重新执行完整物理来独立证明仿真真实性。",
+              "sources": [
+                "E10"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "最终评分核验从保存数组重新计算接触主要指标、位置与末帧误差、运动与长度指标、静止及恒速参考、配对区间和继续投入标准，共比较2155910个标量，最大绝对差约为5.7×10⁻¹⁷米，远小于百万分之一毫米。它核对2632份预测文件、188份准备数据和96份接触文件的指纹，并逐值比较26320个输入和真值数组；没有进行新训练。它没有独立重算所有倾倒事件、接触排序指标、误差分解、训练曲线或性能计时，因此不能把核验通过扩张成报告每一个字段都获得了第二次独立实现。",
+              "sources": [
+                "E9"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "另独立重建三个训练编号各15000次、每次64个窗口的抽样，确认两种模型的实际采样顺序及最终随机数状态相同。完整28620份训练运行预测文件在复制到本地后，也与36份保存清单中的文件指纹一致。这些检查确认实验来源和数据一致性，不保证模型具有物理正确性。",
+              "sources": [
+                "E10"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "公开交互页面保留全部合法场景、三个训练编号、验证选中与固定末步模型，以及全部无效抽样记录。公开的是原始点坐标与派生指标，没有用平滑或形状修正改变轨迹。本报告中的图表只重新组织已有结果，不产生新的模型预测。"
+            },
+            {
+              "type": "p",
+              "text": "截至上次实验同步回执，源码和已跟踪报告在本地、GitHub和Baidu一致；完整训练权重与训练预测保留本地及Baidu。新测试原始数据、准备数组和完整最终评估保留本地；Baidu上中止的慢速可选副本已隔离为不完整备份，不作为可用输入。gpu17因SSH连接超时仍待同步。新报告的实际发布和同步状态以随附验收回执为准。"
+            },
+            {
+              "type": "table",
+              "key": "glossary",
+              "caption": "常见词的完整解释。代码中的名称保留在括号中，方便接手人员寻找实现。"
+            }
+          ]
+        }
+      ],
+      "tables": {
+        "datasets": {
+          "headers": [
+            "数据",
+            "抽取的物理轨迹",
+            "可评分查询",
+            "完整接触后支持或覆盖说明",
+            "用途"
+          ],
+          "rows": [
+            [
+              "原训练集",
+              "206",
+              "2266个窗口",
+              "879个窗口有新接触；不是完整半秒数量",
+              "训练参数；不是2266次独立试验"
+            ],
+            [
+              "旧验证集",
+              "16",
+              "16",
+              "原2秒查询为0；4秒为8",
+              "早期开发、选模和诊断，多次使用"
+            ],
+            [
+              "旧探索性测试",
+              "29",
+              "29",
+              "本报告不用于主结论",
+              "此前已查看，不能当作新留出"
+            ],
+            [
+              "新验证集",
+              "32",
+              "31",
+              "12",
+              "最新实验按4秒误差选模型"
+            ],
+            [
+              "新测试集",
+              "64",
+              "63",
+              "31",
+              "六次训练和权重锁定之后才采集"
+            ]
+          ]
+        },
+        "metrics": {
+          "headers": [
+            "名称",
+            "计算对象和范围",
+            "回答的问题"
+          ],
+          "rows": [
+            [
+              "接触前端点平均误差",
+              "每瓶首次非支撑接触前的可评分帧",
+              "还没有接触时，位置是否已预测错误"
+            ],
+            [
+              "接触后半秒增量误差",
+              "完整事件后五帧的端点位移变化",
+              "接触之后的运动变化是否正确"
+            ],
+            [
+              "球平均位置误差",
+              "指定预测时长内的球心",
+              "是否以牺牲球预测换取瓶子改善"
+            ],
+            [
+              "全瓶平均端点误差",
+              "全部十个瓶子的两个端点",
+              "所有瓶子总体位置是否准确"
+            ],
+            [
+              "预测响应幅度",
+              "与接触后指标相同窗口的位移长度",
+              "模型预测多大运动；不检查方向是否正确"
+            ],
+            [
+              "提前越过5毫米比例",
+              "各瓶整个可观察接触前区间的最大位移",
+              "有多少瓶子被预测提前明显运动"
+            ]
+          ]
+        },
+        "history": {
+          "headers": [
+            "阶段",
+            "主要问题",
+            "完成的工作和发现"
+          ],
+          "rows": [
+            [
+              "轨迹压缩检查",
+              "真实轨迹能否先被准确还原",
+              "两次5000步失败；零运动有偏差，原最终解码器失效"
+            ],
+            [
+              "时间表示和无损参照",
+              "是否全由压缩错误造成",
+              "时间表示改善部分重建；绕过压缩后动力学仍有误差"
+            ],
+            [
+              "直接坐标小集与全量训练",
+              "计算流程能否学习样本",
+              "八轨迹拟合通过；未见场景与4秒预测仍不可靠"
+            ],
+            [
+              "时间约束对照",
+              "后来的动作是否改变早先预测",
+              "不合理依赖消除；整体预测和漂移未解决"
+            ],
+            [
+              "接触和真实边界诊断",
+              "何时出错、哪些输入放大错误",
+              "接触前已漂移；旧2秒评价不足；真实输入减误差但仍不准"
+            ],
+            [
+              "共享物体结构与新测试",
+              "对象共享能否同时改善静止和响应",
+              "接触前改善39.1%；接触后恶化8.9%，继续投入标准失败"
+            ]
+          ]
+        },
+        "design": {
+          "headers": [
+            "设置",
+            "普通全连接模型",
+            "共享物体模型"
+          ],
+          "rows": [
+            [
+              "可训练参数",
+              "2,479,340",
+              "2,474,388"
+            ],
+            [
+              "输入",
+              "同五类输入",
+              "同五类输入"
+            ],
+            [
+              "训练数据",
+              "同206条／2266窗口",
+              "同206条／2266窗口"
+            ],
+            [
+              "每次更新抽取窗口",
+              "64",
+              "64"
+            ],
+            [
+              "训练编号和更新数",
+              "42、43、44，各15000步",
+              "42、43、44，各15000步"
+            ],
+            [
+              "损失与优化",
+              "原坐标分组平方误差；AdamW",
+              "相同"
+            ],
+            [
+              "学习率和预热",
+              "0.0001；前500步逐步升高",
+              "相同"
+            ],
+            [
+              "模型选择",
+              "新验证集4秒加权误差最低",
+              "相同"
+            ],
+            [
+              "片段内部时间计算",
+              "20时刻并行；各自只看计划前缀",
+              "相同时间可见性，增加对象信息交换"
+            ],
+            [
+              "每窗口乘加量估算",
+              "12,438,016",
+              "172,168,416"
+            ],
+            [
+              "短程单步耗时",
+              "1倍",
+              "约2.84倍"
+            ]
+          ]
+        },
+        "primary": {
+          "headers": [
+            "指标",
+            "普通模型 mm",
+            "共享物体 mm",
+            "相对变化",
+            "静止参考 mm",
+            "有效场景"
+          ],
+          "rows": [
+            [
+              "接触前端点误差",
+              "22.553",
+              "13.730",
+              "-39.12%",
+              "0.051",
+              "63"
+            ],
+            [
+              "接触后增量误差",
+              "52.883",
+              "57.572",
+              "+8.87%",
+              "57.800",
+              "31"
+            ],
+            [
+              "球位置误差",
+              "199.925",
+              "207.300",
+              "+3.69%",
+              "473.637",
+              "63"
+            ]
+          ]
+        },
+        "seeds": {
+          "headers": [
+            "模型",
+            "训练编号",
+            "选中步骤",
+            "接触前 mm",
+            "接触后 mm",
+            "球 mm"
+          ],
+          "rows": [
+            [
+              "普通全连接模型",
+              "42",
+              "2000",
+              "23.513",
+              "53.979",
+              "215.484"
+            ],
+            [
+              "普通全连接模型",
+              "43",
+              "500",
+              "22.438",
+              "52.266",
+              "191.467"
+            ],
+            [
+              "普通全连接模型",
+              "44",
+              "1500",
+              "21.706",
+              "52.402",
+              "192.824"
+            ],
+            [
+              "共享物体模型",
+              "42",
+              "10500",
+              "14.627",
+              "57.529",
+              "207.983"
+            ],
+            [
+              "共享物体模型",
+              "43",
+              "13000",
+              "11.916",
+              "57.932",
+              "206.312"
+            ],
+            [
+              "共享物体模型",
+              "44",
+              "8500",
+              "14.647",
+              "57.253",
+              "207.606"
+            ]
+          ]
+        },
+        "fit": {
+          "headers": [
+            "模型",
+            "保存模型的方式",
+            "球／运动瓶／静止瓶 mm"
+          ],
+          "rows": [
+            [
+              "普通全连接模型",
+              "按验证选中",
+              "58.32 / 33.01 / 17.98"
+            ],
+            [
+              "普通全连接模型",
+              "第15000步",
+              "9.47 / 7.63 / 6.11"
+            ],
+            [
+              "共享物体模型",
+              "按验证选中",
+              "11.00 / 10.32 / 4.39"
+            ],
+            [
+              "共享物体模型",
+              "第15000步",
+              "7.62 / 7.59 / 3.30"
+            ]
+          ]
+        },
+        "claims": {
+          "headers": [
+            "判断",
+            "目前证据",
+            "不能进一步推出什么"
+          ],
+          "rows": [
+            [
+              "提前运动真实存在",
+              "物理接触和原生坐标时间核查",
+              "不是只靠图像判断；但未定位唯一训练原因"
+            ],
+            [
+              "时间约束确实有效",
+              "后段计划对前段影响4.399毫米降至0",
+              "不能保证静止或碰撞正确"
+            ],
+            [
+              "错误反馈放大一部分误差",
+              "同时间段真实边界条件明显改善",
+              "不能把所有残差归给网络结构"
+            ],
+            [
+              "物体结构有局部收益",
+              "新测试接触前改善；接触后全三编号恶化",
+              "不能归因单一组件，不能否定所有物体模型"
+            ],
+            [
+              "状态、数据或损失可能重要",
+              "仍是竞争解释",
+              "尚未证明缺失状态、平方损失或数据量是主因"
+            ]
+          ]
+        },
+        "glossary": {
+          "headers": [
+            "常见名称",
+            "在本报告中的含义"
+          ],
+          "rows": [
+            [
+              "轨迹 episode",
+              "一次完整物理执行"
+            ],
+            [
+              "窗口 window",
+              "从轨迹某时刻截取的历史与未来片段"
+            ],
+            [
+              "训练随机数编号 seed",
+              "控制初始化和抽样，不是额外真实场景"
+            ],
+            [
+              "保存的模型 checkpoint",
+              "训练某一步的参数文件；best按验证选择，latest是固定末步"
+            ],
+            [
+              "连续预测 rollout",
+              "把先前预测当作后续输入，继续向前算"
+            ],
+            [
+              "真实边界诊断",
+              "中途提供真实场景与机器人观察，再预测后续"
+            ],
+            [
+              "轨迹压缩模块 tokenizer",
+              "将轨迹编码为较短数字，再还原轨迹"
+            ],
+            [
+              "全连接网络 MLP",
+              "输入数字通过多个共享计算层组合，直接输出坐标位移"
+            ],
+            [
+              "共享物体模型 relation",
+              "同类瓶子共享规则，并结合其他对象信息"
+            ],
+            [
+              "时间前缀约束",
+              "某个时刻输出只读取该时刻及以前的计划"
+            ],
+            [
+              "平均位置误差 ADE",
+              "指定范围内预测点与真值点的平均直线距离"
+            ],
+            [
+              "末帧误差 FDE",
+              "预测终点的距离误差"
+            ],
+            [
+              "配对重采样 bootstrap",
+              "按同一批场景成对重复抽样，估计两模型误差差值的不确定性"
+            ],
+            [
+              "文件指纹 SHA256",
+              "根据文件内容计算的一串校验值，用来发现文件是否改变"
+            ]
+          ]
+        }
+      }
+    },
+    "en": {
+      "lang": "en",
+      "title": "Technical report on predicting bowling motion from 21 points",
+      "subtitle": "Task definition, implementations, experiments and unresolved causes",
+      "date": "16 October 2026",
+      "audience": "For researchers and engineers who have not followed the project. The report introduces the task before discussing models, evidence and implementation details.",
+      "summary": "The models can fit a small set of training trajectories accurately, but do not reliably predict when pins should move or how they should respond to collisions in new scenes. Restricting access to later robot plans repairs a specific structural inconsistency. Shared object processing reduces some precontact drift but worsens postcontact displacement accuracy on fresh heldout scenes. A faithful reproduction of the complete original paper has not been achieved.",
+      "sections": [
+        {
+          "id": "conclusion",
+          "title": "1 Conclusions supported by the completed work",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The initial question was whether a ball center and two endpoints per pin are enough to learn motion conditioned on robot actions. Completed work includes data preparation, trajectory compression checks, direct coordinate prediction, small-set fitting, temporal visibility controls, contact diagnostics and a shared-object comparison using fresh evaluation scenes. This report reorganizes completed evidence; it adds no training or physics experiments.",
+              "sources": [
+                "E1",
+                "E2",
+                "E4",
+                "E6",
+                "E7",
+                "E8"
+              ]
+            },
+            {
+              "type": "list",
+              "items": [
+                "Confirmed: models predict substantial pin motion before the first recorded nonsupport contact. Feeding these erroneous positions into later predictions amplifies errors.",
+                "Confirmed: later nominal robot plans influence earlier predictions in the original fully connected model. Restricting temporal visibility removes this dependence but does not remove drift.",
+                "Confirmed: on fresh heldout scenes, the shared-object package improves precontact error by 39.1% while worsening postcontact increment error by 8.9%. The latter worsens for all three fixed training seeds.",
+                "Unresolved: the relative roles of incomplete input state, limited independent trajectories, the training objective, learning difficulty and the absence of within-chunk sequential state updates. No single remaining cause has been established."
+              ]
+            },
+            {
+              "type": "callout",
+              "text": "Decision: the tested object-structure package fails the continuation criterion fixed before training. End repeated tuning of this version. Preserve its local benefit and use a discriminating diagnostic before committing to another architecture."
+            },
+            {
+              "type": "p",
+              "text": "No added static-motion penalty, ground-truth contact input, hard motion switch, rigid projection or output correction was used in the final comparisons. Position errors are computed from saved original predictions.",
+              "sources": [
+                "E6",
+                "E8"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "task",
+          "title": "2 What the model is asked to predict",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "A robot pushes a ball toward ten pins. Given past observations, the current scene and a planned robot motion, the model predicts ball and pin coordinates over the next few seconds. It does not learn to select robot actions in these experiments."
+            },
+            {
+              "type": "p",
+              "text": "Each pin has two fixed semantic axis endpoints,150 mm apart, and the ball has one center point:21 scene points in total. The endpoints differ from mesh extrema by at most approximately 0.261 mm. They describe pin position and axis direction but do not directly encode rotation about that axis; the ball center does not directly encode spin. Whether missing state is decisive remains untested. Twenty additional gripper points describe the robot.",
+              "sources": [
+                "E1"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Coordinates and identities come from simulator state, not visual tracking. The study therefore examines prediction with accurate coordinates. It does not evaluate camera noise, occlusion, lost tracks or real-robot operation.",
+              "sources": [
+                "E1"
+              ]
+            },
+            {
+              "type": "pipeline",
+              "key": "task"
+            },
+            {
+              "type": "p",
+              "text": "The initially supplied paper link is UNITAS; pointwam_bowling is a historical directory name. The initial implementation is a simplified independent version with visual and language components removed. Later fully connected and shared-object predictors are separate controls. Their results do not establish the performance of the complete UNITAS method.",
+              "sources": [
+                "E0",
+                "E1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "data",
+          "title": "3 Data and prediction times",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "An episode is one complete physical execution. Multiple windows can be extracted at different query times from that episode. The 206 training episodes yield 2266 windows, eleven per episode; these are not 2266 independent physical experiments.",
+              "sources": [
+                "E1",
+                "E4"
+              ]
+            },
+            {
+              "type": "table",
+              "key": "datasets",
+              "caption": "Dataset scopes. Reused development sets and fresh heldout scenes must be interpreted separately."
+            },
+            {
+              "type": "p",
+              "text": "At query time 0, the five allowed inputs are past scene points, current scene points, past robot points, current robot points and a nominal future robot plan. History consists of ten frames from−1.0 to−0.1 s. The plan is generated from current robot state and fixed commands in an independent contact-disabled simulation. It is a legitimately available plan, not future executed robot ground truth.",
+              "sources": [
+                "E1",
+                "E4"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "The model predicts twenty frames at 10 Hz, from 0.1 to 2.0 s. A four-second forecast uses two chunks. The second receives the first chunk's predicted scene history and current state plus the original nominal robot plan; it receives no new scene truth. Training labels cover only 2 s. Four-second evaluation therefore also tests operation on self-generated inputs.",
+              "sources": [
+                "E4",
+                "E6",
+                "E8"
+              ]
+            },
+            {
+              "type": "pipeline",
+              "key": "rollout"
+            },
+            {
+              "type": "p",
+              "text": "The historical query is defined retrospectively as 0.1 s before the first positive-force robot–ball contact, with sufficient history and future required. It is not shifted according to pin impact. The experiment does not solve online query triggering. Fresh evaluation retains every predetermined physical draw, whereas old accepted training collection included visual eligibility filtering; identical accepted-data distributions are not claimed.",
+              "sources": [
+                "E8"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "metrics",
+          "title": "4 What a correct prediction means",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Average displacement error, abbreviated ADE, is the mean Euclidean distance between predicted and true points at saved future times. Final displacement error, FDE, measures the final frame. An ADE of 10 mm means an average position discrepancy of 1 cm under the specified averaging rule. It is not an accuracy percentage. Different horizons, groups and averaging rules are not interchangeable."
+            },
+            {
+              "type": "table",
+              "key": "metrics",
+              "caption": "Interpretation of the main measures. Position and increment errors are displayed in millimetres."
+            },
+            {
+              "type": "p",
+              "text": "A single average can hide both premature movement and incorrect collision response. The final experiment uses two co-primary measures. Precontact endpoint error uses frames strictly before each pin's first nonsupport event and excludes pins contacted before the query. Ball, other pins, robot and wall contacts count; support-surface contact does not.",
+              "sources": [
+                "E7",
+                "E8"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Postcontact increment error compares predicted and true endpoint changes over the complete next half-second, relative to the saved frame at or immediately before contact. It reduces confounding by an already accumulated position offset. Exactly five 10 Hz frames strictly after contact must be available; otherwise the metric is unavailable rather than zero.",
+              "sources": [
+                "E7",
+                "E9"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Events use active simulation constraints and positive normal force above 10⁻⁶N at 2 ms integration-start timestamps. Geometric proximity is not treated as contact. Scores average frames within pin, pins within episode, then the three fixed training seeds; episodes have equal weight. Predictions are not coordinate-averaged into an ensemble. A stationary reference holds every point at its current position; a constant-velocity reference extrapolates a velocity estimated from past coordinates. These expose apparent gains caused mainly by suppressing motion.",
+              "sources": [
+                "E7",
+                "E8",
+                "E9"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "The old original two-second validation window contains new contact in only 4 episodes and 14 pins, with no complete postcontact half-second for any pin. It cannot evaluate complete responses. This is not absence of training collisions: 879 training windows from 95 episodes contain new contact. Four-second fresh evaluation addresses this coverage problem.",
+              "sources": [
+                "E7",
+                "E8"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "history",
+          "title": "5 What each experimental stage established",
+          "blocks": [
+            {
+              "type": "table",
+              "key": "history",
+              "caption": "A diagnostic sequence, not a leaderboard. Stages use different scopes and training procedures."
+            },
+            {
+              "type": "h3",
+              "text": "5.1 Check trajectory compression before future prediction"
+            },
+            {
+              "type": "p",
+              "text": "The original route first compresses a point trajectory into a shorter numerical representation, then reconstructs it. This component is called a tokenizer in code. It already receives true future coordinates during this check, so reconstruction is not forecasting.",
+              "sources": [
+                "E1",
+                "E2"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Two 5000-update runs failed the chosen reconstruction goal. The original selected model has future ball/moving-pin ADE 16.114/13.047 mm and reconstructs an actually zero-motion future with 7.587 mm ADE. At the final 5000-step checkpoint, the inspected decoder activations are all zero and different internal representations produce identical reconstruction. This final checkpoint is different from the selected 2000-step model. Lower learning rate avoids the inspected final collapse but leaves substantial reconstruction error.",
+              "sources": [
+                "E1",
+                "E2"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Changing the time representation reduces real-small-set group-mean reconstruction error 20.094→11.323 mm, a 43.6% improvement, while static-pin error worsens. Increasing width also gives only partial improvement. The 1 mm ADE/3 mm FDE target is a project engineering choice, not a paper requirement or a necessary condition for every useful model.",
+              "sources": [
+                "E2",
+                "E3"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "5.2 Bypass compression and test small-set fitting"
+            },
+            {
+              "type": "p",
+              "text": "The direct-coordinate control uses three fully connected hidden layers of width 512 and approximately 2.48 million parameters. It outputs displacements for 21 points at 20 future times. On all 88 windows from eight training episodes, ball/moving-pin/static-pin ADE reaches 0.440/0.133/0.194 mm. The computational pipeline can fit these samples and near-stationary outputs. Full-data models still drift on unseen scenes. Small-set fitting does not prove sufficient state, collision identifiability or generalization.",
+              "sources": [
+                "E4"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "5.3 Premature movement is measurable before physical contact"
+            },
+            {
+              "type": "p",
+              "text": "In the earlier 16 validation episodes, native true coordinates move by at most 0.324 mm before each first nonsupport contact. Every one of 12 inspected checkpoints predicts more than 5 mm movement for all 160 pins in their observable precontact intervals. This uses physical event times and raw world coordinates, not a visual impression or a fixed-first-second measure.",
+              "sources": [
+                "E7"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "prefix",
+          "title": "6 Why later actions must not change an earlier prediction",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "A temporal prefix is the segment from now up to a specified time. Under the constraint used here, the 0.5 s output can use robot plans only through 0.5 s; the 1.5 s output can use plans through 1.5 s. All outputs still use past and current observations."
+            },
+            {
+              "type": "p",
+              "text": "Consider two plans identical for the first second, followed by continuing versus stopping. With the same initial state and first-second commands, the first-second physical execution is identical. The predictor must likewise keep its first-second outputs unchanged. The control below illustrates which planned frames are visible at each output time; it is a schematic, not a measured trajectory."
+            },
+            {
+              "type": "prefix"
+            },
+            {
+              "type": "p",
+              "text": "The original predictor reads the complete two-second plan before outputting all frames. In controller-generated pairs with exact first-second command, nominal-plan and physical-state agreement, its first-second pin predictions change by 4.399 mm on average. This concerns dependence on a legal plan input, not future scene-ground-truth leakage.",
+              "sources": [
+                "E5",
+                "E6"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "The control preserves parameters and time-specific output heads but evaluates each output with only its allowed plan prefix. Later plan features are zeroed after training-only standardization; raw world coordinates are not simply set to zero. Matched initialization, samples, loss and 3×15000 updates per arm are used. Early dependence becomes exactly zero; old-validation first-second motion over 10 mm decreases 49.38%→33.54%. Motion over 2 mm remains 100%, and two-second weighted error worsens 22.310→23.330 mm. Four-second static error does not improve.",
+              "sources": [
+                "E6"
+              ]
+            },
+            {
+              "type": "callout",
+              "text": "Temporal visibility guarantees a consistency property. It does not tell the model when contact occurs, force pins to remain still, guarantee accuracy, or implement sequential physical state updates."
+            }
+          ]
+        },
+        {
+          "id": "feedback",
+          "title": "7 How errors accumulate through predicted inputs",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "An incorrect first chunk becomes the second chunk's assumed observation. We diagnose this by restarting frozen models from true observations at 2 s and comparing the same 2–4 s interval."
+            },
+            {
+              "type": "p",
+              "text": "An earlier fixed-static-pin comparison gives 50.844 mm error with original inputs,27.657 mm after correcting scene inputs,45.988 mm after correcting the robot input block, and 23.095 mm after both. Scene feedback is a substantial amplifier. The replacements interact and their gains are not additive causal percentages.",
+              "sources": [
+                "E5"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "The final study repeats a jointly observed boundary diagnostic: replace scene history/current and robot history/current, then regenerate the nominal plan from that robot boundary. Both conditions below score the identical true 2–4 s interval.",
+              "sources": [
+                "E8",
+                "E9"
+              ]
+            },
+            {
+              "type": "figure",
+              "key": "boundary",
+              "caption": "All-pin endpoint ADE on the same 2–4 s interval. True boundary observations reduce error but are privileged conditioning, not an original-query deployment gain. SourceE 8."
+            },
+            {
+              "type": "p",
+              "text": "Postcontact increment errors remain 41.199/39.702 mm against 43.358 mm true response. Accumulation therefore does not explain all failure. The shifted query has 28 complete-postcontact episodes rather than the original query's 31; it cannot replace the co-primary result or isolate scene versus robot causes.",
+              "sources": [
+                "E8",
+                "E9"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "interaction",
+          "title": "8 Design of the fresh shared-object comparison",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "The new model treats the ball, ten pins and robot as objects. Pins share an encoder and output rules. Two attention blocks learn how much information each object should receive from others, using relative current positions and distances. There are no true contact inputs or hard distance switches.",
+              "sources": [
+                "E8",
+                "E11"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Both models retain temporal prefixes and output twenty future slots in parallel. Within a two-second chunk, neither explicitly predicts a next ball state and then uses that predicted state to update pins. Sharing, relative geometry and pooled normalization change together, so this tests a package rather than one mechanism.",
+              "sources": [
+                "E8",
+                "E11"
+              ]
+            },
+            {
+              "type": "table",
+              "key": "design",
+              "caption": "Fixed settings. Similar parameter and update counts do not imply similar compute."
+            },
+            {
+              "type": "p",
+              "text": "Fresh validation is fixed to 32 physical draws:31 valid queries and 12 episodes with complete postcontact support. Selection minimizes the original four-second weighted ADE every 500 updates, retaining the earlier checkpoint on ties. Every formal run completes 15000 updates. After all six runs finish and 12 selected/final checkpoint hashes are locked,64 fixed heldout draws are collected:63 valid queries and 31 complete-postcontact episodes. Draw 820035 has no robot–ball query and is retained without replacement.",
+              "sources": [
+                "E8",
+                "E9"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "No checkpoint, seed or recipe is changed after heldout evaluation. Training still uses the original 206 episodes and coordinate group-MSE objective. Fixed final-step models are secondary and cannot rescue a failed selected-checkpoint comparison. Training seeds 42/43/44 control initialization and sampling; physical scene seeds 810000/820000 etc. identify different things.",
+              "sources": [
+                "E8",
+                "E10"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "results",
+          "title": "9 Results on fresh heldout scenes",
+          "blocks": [
+            {
+              "type": "table",
+              "key": "primary",
+              "caption": "Validation-selected checkpoints, original-query four-second forecast. Lower errors are better. Scalars average three fixed training seeds."
+            },
+            {
+              "type": "figure",
+              "key": "primary",
+              "caption": "Separate precontact, postcontact and ball panels with different vertical scales. Bars are means, not confidence intervals. SourceE 8."
+            },
+            {
+              "type": "p",
+              "text": "Precontact error improves 22.553→13.730 mm,39.1%, in all three seeds. Yet the episode-macro fraction of pins ever predicted to move beyond 5 mm anywhere in their observable precontact interval remains 100%→98.36%. This is neither a fixed-first-second rate nor a fraction of independent episodes. Reduced ADE does not remove premature motion.",
+              "sources": [
+                "E8"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Postcontact increment error worsens 52.883→57.572 mm,8.9%, in all three seeds. A stationary predictor scores 57.800 mm, only about 0.23 mm worse than the new model. True response amplitude averages 57.800 mm, compared with 21.571 mm from the fully connected model and 18.643 mm from the new model. Predictions have nonzero response and informative ball motion, but collision timing, direction and/or amplitude remain inaccurate. This is not proof of zero learned information or reliable collision learning.",
+              "sources": [
+                "E8",
+                "E9"
+              ]
+            },
+            {
+              "type": "table",
+              "key": "seeds",
+              "caption": "All three training seeds. No favorable seed is selected."
+            },
+            {
+              "type": "figure",
+              "key": "intervals",
+              "caption": "Shared-object minus fully connected error with 95%paired episode-bootstrap intervals. Negative means improvement. Average the three fixed seeds within episode before 10000 resamples. SourcesE 8/E 9."
+            },
+            {
+              "type": "p",
+              "text": "Precontact and postcontact intervals lie on opposite sides of zero. They quantify episode uncertainty conditional on these three seeds, not all training randomness, repeated development choices or real-world environments."
+            },
+            {
+              "type": "p",
+              "text": "The predeclared continuation rule requires improvement in both metrics for all seeds, at least 10%mean reductions, both interval upper bounds below zero, and ball ADE worsening no more than 10%. Coverage requires 48 valid and 16 complete-postcontact episodes. Coverage passes and ball worsening is 3.69%, but all three postcontact improvement conditions fail. The result is a failure, not inconclusive support. This is a project decision rule, not a universal physical success criterion.",
+              "sources": [
+                "E8",
+                "E9"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "training",
+          "title": "10 Fitting and computational cost",
+          "blocks": [
+            {
+              "type": "table",
+              "key": "fit",
+              "caption": "Two-second ADE over all 2266 training windows from 206 episodes. Cells show ball/moving-pin/static-pin errors in millimetres."
+            },
+            {
+              "type": "p",
+              "text": "Selected steps are 2000/500/1500 for the fully connected arm and 10500/13000/8500 for the shared-object arm. Both improve training fit later without matching four-second validation gains; this is not uniformly early overfitting. Training and validation horizons and cohorts differ, so their numerical difference is not a single clean generalization gap.",
+              "sources": [
+                "E8"
+              ]
+            },
+            {
+              "type": "figure",
+              "key": "learning",
+              "caption": "Left: two-second ball ADE on a fixed 88 window training diagnostic. Right: fresh-validation four-second weighted ADE. All 31 evaluations retained; circles mark selected steps. Different measures must not be directly subtracted. SourceE 8."
+            },
+            {
+              "type": "p",
+              "text": "Six formal runs total 90000 updates and 20.09 minutes of runner-recorded elapsed time:397.78 s fully connected and 807.80 s shared-object. A separate disposable synchronized profile measures a 2.84×step-time ratio; estimated multiply-accumulate count is 13.84×per window. The experiment is parameter/update matched, not compute matched. Runtime excludes earlier experiments, preparation, independent audits, transfer and report creation. Disposable engineering updates are recorded separately.",
+              "sources": [
+                "E8"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "causes",
+          "title": "11 Established findings and competing explanations",
+          "blocks": [
+            {
+              "type": "table",
+              "key": "claims",
+              "caption": "Evidence strength. Observing a mechanism does not identify its percentage contribution to error."
+            },
+            {
+              "type": "p",
+              "text": "Squared position error may favor an average future if visible inputs are ambiguous. For a purely illustrative input followed equally often by−10 mm or+10 mm displacement, predicting zero minimizes mean squared error. This explains a possible small-response tendency mathematically; ambiguity of this kind has not been established in the actual dataset."
+            },
+            {
+              "type": "p",
+              "text": "Accurate point histories do not automatically supply complete physical state. Missing angular or contact state, limited independent episodes and contact-phase sampling remain possible contributors. A global network already has paths connecting objects, and small-set fitting succeeds; the evidence does not establish a mathematical inability to express collisions. Within-chunk sequential interaction is another untested design hypothesis, not a demonstrated cure."
+            }
+          ]
+        },
+        {
+          "id": "next",
+          "title": "12 How to decide the next experiment",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Stop repeated seed, learning-rate and duration tuning of this shared-object version. The following are proposed checks, not completed work. Each needs its own fixed budget, data policy and decision rule."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Separate short-term learning from accumulation: with true current inputs, score a fixed short horizon on training and separate development scenes, stratified before, around and after contact. Large short-term training error calls for learning/fit diagnosis; accurate short-term forecasts followed by rapid autonomous deterioration support prioritizing feedback stability.",
+                "Test state sufficiency: under matched data splits and budgets, compare point history with additional simulator velocities/angular velocities. Added privileged state is diagnostic; if it helps, determine whether practical observations can recover it before claiming deployment value.",
+                "Only if preceding evidence supports it, test sequential state updates that recompute object relations from each predicted step. Preserve inputs, objective and budget where feasible; use both contact measures and the stationary reference. Sequential updating is not a guarantee of success.",
+                "Do not select another method on the already reported heldout set. Use a separate development scope and new heldout scenes after fixing the next method."
+              ]
+            },
+            {
+              "type": "callout",
+              "text": "Further investment needs evidence that distinguishes causes. The completed work narrows the failure modes; it does not yet deliver reliable collision prediction in new scenes."
+            }
+          ]
+        },
+        {
+          "id": "verification",
+          "title": "13 Verification and use limitations",
+          "blocks": [
+            {
+              "type": "p",
+              "text": "Fresh collection checks include exact proposal/replay state agreement, timestamps, coordinate extraction, first-contact tables and original/shifted query seams. Independent data checks use a separate coordinate/index path; they do not independently reexecute physics to prove simulator fidelity.",
+              "sources": [
+                "E10"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Independent final scoring compares 2155910 scalars with maximum absolute difference 5.6846×10⁻¹⁷m. It hashes 2632 forecast archives,188 prepared archives and 96 contact archives, and compares 26320 input/ground-truth arrays. It independently recomputes main contact measures, raw ADE/FDE/motion/length, stationary/constant-velocity references, intervals and the continuation rule, with no training. It does not independently recompute every tipping event, contact-rank statistic, residual decomposition, training curve or performance timing.",
+              "sources": [
+                "E9"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "Separate CPU reconstruction verifies all training sample traces and final sampling states. The 28620 copied training forecast archives match 36 saved result manifests. These establish provenance and consistency, not physical correctness. Public viewers retain every valid case, all three training seeds, selected/final checkpoints and invalid-draw ledgers, without smoothing or geometry correction.",
+              "sources": [
+                "E10"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "The previous synchronization receipt verifies source and tracked reports on local/GitHub/Baidu, with complete formal weights/training forecasts on local and Baidu. Fresh heldout raw/prepared data and full final evaluation remain local; the stopped slow optional Baidu copy is isolated as incomplete and unusable. gpu 17 remains pending after SSH timeout. The new report's actual publication and synchronization state is recorded in its accompanying receipt."
+            },
+            {
+              "type": "table",
+              "key": "glossary",
+              "caption": "Terms and their code names for readers taking over the implementation."
+            }
+          ]
+        }
+      ],
+      "tables": {
+        "datasets": {
+          "headers": [
+            "Data",
+            "Physical episodes",
+            "Valid queries",
+            "Postcontact support or coverage note",
+            "Use"
+          ],
+          "rows": [
+            [
+              "Original training",
+              "206",
+              "2266windows",
+              "879windows have new contact; not a complete0.5s count",
+              "Training; windows are correlated"
+            ],
+            [
+              "Old validation",
+              "16",
+              "16",
+              "0at original2s;8at4s",
+              "Repeated development/selection/diagnosis"
+            ],
+            [
+              "Old exploratory test",
+              "29",
+              "29",
+              "Not used for this report's main claim",
+              "Previously accessed"
+            ],
+            [
+              "Fresh validation",
+              "32",
+              "31",
+              "12",
+              "Select by4s weighted error"
+            ],
+            [
+              "Fresh heldout",
+              "64",
+              "63",
+              "31",
+              "Collected after six runs and locks"
+            ]
+          ]
+        },
+        "metrics": {
+          "headers": [
+            "Measure",
+            "Scope",
+            "Question"
+          ],
+          "rows": [
+            [
+              "Precontact endpoint ADE",
+              "Scorable frames before each first nonsupport event",
+              "Position error before contact"
+            ],
+            [
+              "Postcontact increment ADE",
+              "Five complete frames in the next0.5s",
+              "Accuracy of displacement changes"
+            ],
+            [
+              "Ball ADE",
+              "Ball center across the stated horizon",
+              "Guard against sacrificing ball accuracy"
+            ],
+            [
+              "All-pin endpoint ADE",
+              "Both endpoints of all ten pins",
+              "Overall pin-position accuracy"
+            ],
+            [
+              "Response amplitude",
+              "Displacement length in the response window",
+              "Motion magnitude, not directional accuracy"
+            ],
+            [
+              "Precontact movement over5mm",
+              "Maximum over each observable precontact interval",
+              "Premature motion occurrence"
+            ]
+          ]
+        },
+        "history": {
+          "headers": [
+            "Stage",
+            "Question",
+            "Completed finding"
+          ],
+          "rows": [
+            [
+              "Trajectory compression",
+              "Can true trajectories be reconstructed?",
+              "Two5000-update failures; zero-motion bias and a final decoder collapse"
+            ],
+            [
+              "Time representation and lossless control",
+              "Is compression the only issue?",
+              "Partial reconstruction gain; dynamics errors remain without learned compression"
+            ],
+            [
+              "Direct-coordinate fitting",
+              "Can the pipeline fit samples?",
+              "Eight-episode fit passes; new-scene and4s forecasts remain unreliable"
+            ],
+            [
+              "Temporal visibility",
+              "Do later actions alter earlier outputs?",
+              "Dependence removed; overall prediction/drift remain poor"
+            ],
+            [
+              "Contact/boundary diagnosis",
+              "When and how do errors grow?",
+              "Precontact drift; short old evaluation; partial improvement with true inputs"
+            ],
+            [
+              "Shared objects and fresh heldout",
+              "Can sharing improve both phases?",
+              "Precontact39.1%better; postcontact8.9%worse; criterion fails"
+            ]
+          ]
+        },
+        "design": {
+          "headers": [
+            "Setting",
+            "Fully connected",
+            "Shared object"
+          ],
+          "rows": [
+            [
+              "Parameters",
+              "2,479,340",
+              "2,474,388"
+            ],
+            [
+              "Inputs",
+              "Same five fields",
+              "Same five fields"
+            ],
+            [
+              "Training",
+              "206episodes/2266windows",
+              "Same"
+            ],
+            [
+              "Windows per update",
+              "64",
+              "64"
+            ],
+            [
+              "Seeds and updates",
+              "42/43/44;15000each",
+              "Same"
+            ],
+            [
+              "Objective/optimizer",
+              "Original coordinate group-MSE;AdamW",
+              "Same"
+            ],
+            [
+              "Learning rate/warmup",
+              "0.0001;500update warmup",
+              "Same"
+            ],
+            [
+              "Selection",
+              "Lowest fresh-validation4s weighted error",
+              "Same"
+            ],
+            [
+              "Within-chunk computation",
+              "20parallel slots; plan prefix per slot",
+              "Same visibility; object messages added"
+            ],
+            [
+              "Estimated MAC/window",
+              "12,438,016",
+              "172,168,416"
+            ],
+            [
+              "Disposable profile step time",
+              "1×",
+              "2.84×"
+            ]
+          ]
+        },
+        "primary": {
+          "headers": [
+            "Measure",
+            "Fully connected mm",
+            "Shared object mm",
+            "Relative change",
+            "Stationary mm",
+            "Supported episodes"
+          ],
+          "rows": [
+            [
+              "Precontact endpoint",
+              "22.553",
+              "13.730",
+              "-39.12%",
+              "0.051",
+              "63"
+            ],
+            [
+              "Postcontact increment",
+              "52.883",
+              "57.572",
+              "+8.87%",
+              "57.800",
+              "31"
+            ],
+            [
+              "Ball position",
+              "199.925",
+              "207.300",
+              "+3.69%",
+              "473.637",
+              "63"
+            ]
+          ]
+        },
+        "seeds": {
+          "headers": [
+            "Model",
+            "Training seed",
+            "Selected step",
+            "Precontact mm",
+            "Postcontact mm",
+            "Ball mm"
+          ],
+          "rows": [
+            [
+              "Fully connected model",
+              "42",
+              "2000",
+              "23.513",
+              "53.979",
+              "215.484"
+            ],
+            [
+              "Fully connected model",
+              "43",
+              "500",
+              "22.438",
+              "52.266",
+              "191.467"
+            ],
+            [
+              "Fully connected model",
+              "44",
+              "1500",
+              "21.706",
+              "52.402",
+              "192.824"
+            ],
+            [
+              "Shared-object model",
+              "42",
+              "10500",
+              "14.627",
+              "57.529",
+              "207.983"
+            ],
+            [
+              "Shared-object model",
+              "43",
+              "13000",
+              "11.916",
+              "57.932",
+              "206.312"
+            ],
+            [
+              "Shared-object model",
+              "44",
+              "8500",
+              "14.647",
+              "57.253",
+              "207.606"
+            ]
+          ]
+        },
+        "fit": {
+          "headers": [
+            "Model",
+            "Checkpoint",
+            "Ball/moving/static mm"
+          ],
+          "rows": [
+            [
+              "Fully connected model",
+              "Validation selected",
+              "58.32 / 33.01 / 17.98"
+            ],
+            [
+              "Fully connected model",
+              "Step15000",
+              "9.47 / 7.63 / 6.11"
+            ],
+            [
+              "Shared-object model",
+              "Validation selected",
+              "11.00 / 10.32 / 4.39"
+            ],
+            [
+              "Shared-object model",
+              "Step15000",
+              "7.62 / 7.59 / 3.30"
+            ]
+          ]
+        },
+        "claims": {
+          "headers": [
+            "Claim",
+            "Evidence",
+            "Not established"
+          ],
+          "rows": [
+            [
+              "Premature motion exists",
+              "Contact/native-coordinate timing checks",
+              "No unique learning cause identified"
+            ],
+            [
+              "Temporal visibility works structurally",
+              "4.399mm early dependence becomes0",
+              "No guarantee of stationary/collision accuracy"
+            ],
+            [
+              "Feedback amplifies some error",
+              "True boundary improves same-interval error",
+              "Residual not uniquely architectural"
+            ],
+            [
+              "Object package has a local gain",
+              "Fresh precontact gain; all-seed postcontact worsening",
+              "No one-component attribution or universal rejection"
+            ],
+            [
+              "State/data/objective may matter",
+              "Competing hypotheses",
+              "No demonstrated dominant cause yet"
+            ]
+          ]
+        },
+        "glossary": {
+          "headers": [
+            "Term",
+            "Meaning here"
+          ],
+          "rows": [
+            [
+              "Episode",
+              "One complete physical execution"
+            ],
+            [
+              "Window",
+              "History/future segment from an episode"
+            ],
+            [
+              "Training seed",
+              "Initialization/sampling randomness, not more physical episodes"
+            ],
+            [
+              "Checkpoint",
+              "Saved parameters; best selected by validation, latest fixed final update"
+            ],
+            [
+              "Rollout",
+              "Continue using earlier predictions as inputs"
+            ],
+            [
+              "True-boundary diagnostic",
+              "Supply actual intermediate observations and predict onward"
+            ],
+            [
+              "Tokenizer",
+              "Trajectory compression/reconstruction module"
+            ],
+            [
+              "MLP",
+              "Fully connected coordinate predictor"
+            ],
+            [
+              "Relation model",
+              "Shared pin rules with object information exchange"
+            ],
+            [
+              "Temporal prefix constraint",
+              "Output at time t sees plans only through t"
+            ],
+            [
+              "ADE",
+              "Mean Euclidean point discrepancy over a stated scope"
+            ],
+            [
+              "FDE",
+              "Final-frame discrepancy"
+            ],
+            [
+              "Paired bootstrap",
+              "Repeated episode resampling of paired model errors"
+            ],
+            [
+              "SHA256",
+              "Content fingerprint for detecting file changes"
+            ]
+          ]
+        }
+      }
+    }
+  }
+}
