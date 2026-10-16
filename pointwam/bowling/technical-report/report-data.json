@@ -1194,6 +1194,14 @@
             },
             {
               "type": "p",
+              "text": "训练时，模型把预测坐标与真实坐标的差平方后求平均，并据此逐步调整参数。球、运动瓶、静止瓶先分别计算，实际存在的组等权。这里的运动瓶是指在所评分未来片段中，端点最大位移超过10毫米；静止组只表示没有超过这个阈值，不等于严格不动，也不等于没有接触。真实未来只用于监督和评分，不能作为预测器输入。验证选模型时，综合位置误差采用球、运动瓶、静止瓶0.4、0.4、0.2的权重；缺少某组时，对存在的组重新归一。两秒与四秒的分组可能不同。",
+              "sources": [
+                "E4",
+                "E8"
+              ]
+            },
+            {
+              "type": "p",
               "text": "只看所有点的平均误差，会掩盖两个相反问题：没碰到时瓶子乱动，以及碰到之后瓶子动得不对。最新实验将它们设为两项共同主要指标。接触前误差只看严格早于首次非支撑接触的帧；如果瓶子在查询之前已经有这类接触，就不进入该瓶的接触前评分。这里统计的接触包括球、其他瓶子、机器人和墙体，支撑面接触不算。",
               "sources": [
                 "E7",
@@ -1269,6 +1277,13 @@
               "sources": [
                 "E2",
                 "E3"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "另做了一个不学习轨迹压缩的对照：按时间顺序直接保存全部坐标，往返转换没有原始坐标损失，再训练原有的较复杂动力学网络。它在同一批八条训练轨迹的88个窗口上运行2000步，球、运动瓶、静止瓶平均误差仍为29.308、30.581和9.371毫米，训练曲线末段还在下降。这个结果说明压缩不是唯一障碍，同时也不足以断言复杂网络容量不够；随后才用直接坐标回归做更充分的小样本拟合检查。",
+              "sources": [
+                "E2"
               ]
             },
             {
@@ -2170,6 +2185,14 @@
             },
             {
               "type": "p",
+              "text": "Training squares and averages predicted-minus-true coordinate differences, then adjusts model parameters to reduce this error. Ball, moving-pin and static-pin groups are computed separately and present groups have equal training weight. A moving pin exceeds10mm endpoint displacement within the evaluated horizon; static means below this threshold, not exactly motionless or uncontacted. Future truth defines supervision and scoring, never predictor inputs. Validation selection uses ball/moving/static ADE weights0.4/0.4/0.2, renormalized over present groups. Groups can differ between two- and four-second horizons.",
+              "sources": [
+                "E4",
+                "E8"
+              ]
+            },
+            {
+              "type": "p",
               "text": "A single average can hide both premature movement and incorrect collision response. The final experiment uses two co-primary measures. Precontact endpoint error uses frames strictly before each pin's first nonsupport event and excludes pins contacted before the query. Ball, other pins, robot and wall contacts count; support-surface contact does not.",
               "sources": [
                 "E7",
@@ -2238,6 +2261,13 @@
               "sources": [
                 "E2",
                 "E3"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "A separate lossless-coordinate control stores all samples in time order without learned trajectory compression, then trains the existing more complex dynamics network. After2000updates on the same eight-episode88window set, ball/moving/static ADE remains29.308/30.581/9.371mm and the curve is still improving. Compression is therefore not the only obstacle; the limited run does not prove insufficient network capacity. The subsequent direct-coordinate predictor tests small-set fitting more thoroughly.",
+              "sources": [
+                "E2"
               ]
             },
             {

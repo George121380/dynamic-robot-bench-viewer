@@ -1,11 +1,11 @@
 {
   "status": "passed",
-  "created_utc": "2026-10-16T17:20:26.186524+00:00",
+  "created_utc": "2026-10-16T17:24:21.444760+00:00",
   "evidence_revision": "54d1fa0429a06844091e57f10f047ebe7c50472d",
-  "build_source_sha256": "875e756420960c2570817cce8952289ee02bd5c5e61a4692e16cef296b5c304b",
+  "build_source_sha256": "60d15da19b0fa3dceeadd436c0790af21400d0efa2f559fe10073f1afc62158c",
   "content_sha256": {
-    "zh-CN": "4e1efa1e5227e030b648ac8ff998274da56ae7fb19c83d7b8225103989b62f12",
-    "en": "6b10a4af7d447565120435c523b2d2e220433ffcb932679136c34f2e0548aa26"
+    "zh-CN": "26d686cf0718378031fdc88d156b02b8c51c936aa6074542a99dea1c1a1e5755",
+    "en": "cadaa7b39b4fbee26357c3aec3872868057c0e53b450cb9fc672d908b7483c32"
   },
   "source_files_cold_hashed": 20,
   "source_primary_and_independent_gate_exact": true,
@@ -38,7 +38,7 @@
   "optimizer_updates": 0,
   "physics_steps": 0,
   "files": {
-    "en.html": "52cebe6ec1ea56eba197dbfdf8c1541d279acbd60a5b428fe0e5f6cb82a605be",
+    "en.html": "6656538dc5bf3351d3642dff41854a5638d1b3ea6cd8d3ac6a6243b3e464b183",
     "figures/boundary.en.png": "0a2467ea822082192c7bb856fbd3c4fe85e88fe42b4909b355772cdb810a7ccb",
     "figures/boundary.en.svg": "9cdff61e09a14db4addb27294b46d748477fcadba0367737aadbee491cdd697f",
     "figures/boundary.zh-CN.png": "4c16337e14c6c769742db62ef212bfb98b2d14aba534062e03d77efc5b8e3426",
@@ -55,8 +55,8 @@
     "figures/primary.en.svg": "894bda779350cb8a5cfa8595df60d0d43bac973ed44530800c141104ab8534c5",
     "figures/primary.zh-CN.png": "059c03f1f5d005056c9096cb66173572d65e21c182a61d383a57ce813d09f558",
     "figures/primary.zh-CN.svg": "2b050779a9c8860186a01fd7f7d882b0e7077124b3d0894d0d1f7576eb2a21d0",
-    "index.html": "3383376ef406496639b8637d9e03c3ab7d10b78864eb02e9cb7e78e1dd2f0754",
-    "report-data.json": "b6b6d9b66a61f81d5ec979af38d900eab08b1172317897e6735d09c955bbf96f",
+    "index.html": "c8405eab63f2450f3b25a3a4039c648e755ecdbf7d1226c51b73389b31791ab4",
+    "report-data.json": "c70be969fc56db190253160d115a81d33825fe129415d51fea2344cc0cab87c9",
     "report.js": "956d6181126468eb715a2ba5e7e533167ce0d08e8b6fb357473103209f155fa9"
   },
   "quality_checks": {
@@ -76,7 +76,8 @@
     "canvas_syntax": "passed",
     "canvas_embedded_data_exact": true,
     "canvas_runtime_layout": "not independently inspected",
-    "private_path_scan": "passed"
+    "private_path_scan": "passed",
+    "final_narrative_additions": "Training loss/selection grouping and earlier lossless-coordinate control explained; underlying metrics unchanged"
   },
   "authoring_environment": {
     "python": "3.12.6",

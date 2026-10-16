@@ -143,6 +143,14 @@
         },
         {
           "type": "p",
+          "text": "Training squares and averages predicted-minus-true coordinate differences, then adjusts model parameters to reduce this error. Ball, moving-pin and static-pin groups are computed separately and present groups have equal training weight. A moving pin exceeds10mm endpoint displacement within the evaluated horizon; static means below this threshold, not exactly motionless or uncontacted. Future truth defines supervision and scoring, never predictor inputs. Validation selection uses ball/moving/static ADE weights0.4/0.4/0.2, renormalized over present groups. Groups can differ between two- and four-second horizons.",
+          "sources": [
+            "E4",
+            "E8"
+          ]
+        },
+        {
+          "type": "p",
           "text": "A single average can hide both premature movement and incorrect collision response. The final experiment uses two co-primary measures. Precontact endpoint error uses frames strictly before each pin's first nonsupport event and excludes pins contacted before the query. Ball, other pins, robot and wall contacts count; support-surface contact does not.",
           "sources": [
             "E7",
@@ -211,6 +219,13 @@
           "sources": [
             "E2",
             "E3"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A separate lossless-coordinate control stores all samples in time order without learned trajectory compression, then trains the existing more complex dynamics network. After2000updates on the same eight-episode88window set, ball/moving/static ADE remains29.308/30.581/9.371mm and the curve is still improving. Compression is therefore not the only obstacle; the limited run does not prove insufficient network capacity. The subsequent direct-coordinate predictor tests small-set fitting more thoroughly.",
+          "sources": [
+            "E2"
           ]
         },
         {
