@@ -167,6 +167,11 @@
       "url": "",
       "files": [
         {
+          "path": "experiments/pointwam_bowling/direct_model.py",
+          "sha256": "b0dc0f02af53bfb7eb930af6c262dafaeea4838d2195e0dbc104146210a159b7",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/direct_model.py"
+        },
+        {
           "path": "experiments/pointwam_bowling/temporal_model.py",
           "sha256": "bca42ce9d8239d032dbfb4532e5016bddb8473b6f0d6b7935a9fa8d0b9a72c30",
           "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/temporal_model.py"
@@ -175,6 +180,21 @@
           "path": "experiments/pointwam_bowling/interaction_model.py",
           "sha256": "5f1f7ce192bf80c206414e2d37e090487616a0eb27575fac864447068df01ec8",
           "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/interaction_model.py"
+        },
+        {
+          "path": "experiments/pointwam_bowling/model.py",
+          "sha256": "2b603297a50484def6473ba0e3847986eb4f129989b40de0afaf546512235d85",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/model.py"
+        },
+        {
+          "path": "experiments/pointwam_bowling/lossless_overfit.py",
+          "sha256": "393d2c9430371e9719a04f71839f83ade0397b549f53c7b249ade43537166294",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/lossless_overfit.py"
+        },
+        {
+          "path": "experiments/pointwam_bowling/lossless_tokenizer_diagnostic.py",
+          "sha256": "e54c463d63a2f973b7e5780ff45fca7477aad88e117653a05bfa682c3532afb1",
+          "url": "https://github.com/George121380/dynamic-robot-bench/blob/54d1fa0429a06844091e57f10f047ebe7c50472d/experiments/pointwam_bowling/lossless_tokenizer_diagnostic.py"
         },
         {
           "path": "experiments/pointwam_bowling/protocol.interaction.json",
@@ -1055,6 +1075,10 @@
           "title": "1 目前能够交付什么结论",
           "blocks": [
             {
+              "type": "callout",
+              "text": "模型身份：最新正式比较为时间前缀全连接模型C与共享物体注意力模型D。第4章给出逐层架构图、输入输出维度和每轮结果与模型的对应关系。"
+            },
+            {
               "type": "p",
               "text": "这项工作最初希望检验：只用球心和每个瓶子的两个端点，能否学出由机器人动作决定的物体运动。到本报告截止时，已完成轨迹准备、轨迹压缩模块试验、直接坐标预测、小数据拟合、时间结构对照、接触时序诊断，以及使用新测试场景的物体结构对照。本报告整理既有结果，没有新增训练或物理实验。",
               "sources": [
@@ -1180,8 +1204,415 @@
           ]
         },
         {
+          "id": "architecture",
+          "title": "4 实际使用的模型架构：输入怎样变成预测",
+          "blocks": [
+            {
+              "type": "callout",
+              "text": "最新正式实验比较的是两个独立训练的模型：C＝带时间前缀约束的三层全连接网络，D＝共享物体注意力网络。接触前改善39.1%、接触后恶化8.9%，指D与C的比较。两者直接预测坐标位移，都不使用轨迹压缩模块，也不从随机噪声迭代生成轨迹。"
+            },
+            {
+              "type": "p",
+              "text": "前一版报告没有把具体网络和各轮结果对应起来，这是报告的缺漏。这里用A、A′、B、C、D区分实际实现，字母不代表排名。图中省略同时处理的样本数这一维；20×21×3表示20个时刻、21个场景点、每点3个坐标。",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "spec",
+              "headers": [
+                "模型与代码中的名称",
+                "实际结构",
+                "做过什么，哪些结果属于它"
+              ],
+              "rows": [
+                [
+                  "A 原始参考路线：TrajectoryTokenizer + SparseDynamics，model.py",
+                  "每点整段轨迹→256维；计划中的动力学为6层、宽256、8头注意力，最后解码坐标",
+                  "训练和检查过压缩模块；重建未过关，正式主动力学训练没有开展。本地独立实现，不是论文官方模型或权重。"
+                ],
+                [
+                  "A′ 无损坐标诊断：LosslessTrajectoryTokenizer + SparseDynamics",
+                  "每点20×3坐标直接存成60维；6层、宽256、8头动力学，输入输出投影随维度改变",
+                  "8条训练轨迹、88窗口、2000步诊断；球29.308毫米等训练误差来自这里。"
+                ],
+                [
+                  "B 直接坐标网络：DirectDynamics，direct_model.py",
+                  "2553→512→512→512→1260，读取完整两秒机器人计划",
+                  "八轨迹拟合0.440／0.133／0.194毫米，以及早期全量训练；不是最新正式比较的基线。"
+                ],
+                [
+                  "C 时间前缀全连接网络：TemporalDynamics(variant=causal)，temporal_model.py",
+                  "沿用B全部参数，每个输出时刻只读取截至该时刻的计划",
+                  "历史时间约束实验的受约束组；最新六次训练中的mlp组。"
+                ],
+                [
+                  "D 共享物体网络：InteractionDynamics，interaction_model.py",
+                  "物体编码→12×256维→2层物体注意力→球与共享瓶输出层",
+                  "最新六次训练中的relation组；新测试集与C比较。"
+                ]
+              ],
+              "caption": "实验与模型身份对应表。A′是独立诊断配置，B、C、D是为查明问题而实现的坐标预测对照。"
+            },
+            {
+              "type": "h3",
+              "text": "4.1 最新模型的输入和输出"
+            },
+            {
+              "type": "p",
+              "text": "C和D读取相同五类原始信息。场景21个点＝球心1个＋十个瓶子各上、下端点2个；机器人20个点。输入没有未来场景真值或真实接触事件。C将这些数字展平，D改按物体组织。",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "spec",
+              "headers": [
+                "输入字段",
+                "单样本形状",
+                "C中的数字个数和处理"
+              ],
+              "rows": [
+                [
+                  "scene_current 当前场景",
+                  "21×3",
+                  "63，绝对坐标"
+                ],
+                [
+                  "scene_history 场景历史",
+                  "10×21×3",
+                  "630，过去点减对应当前点"
+                ],
+                [
+                  "robot_current 当前机器人",
+                  "20×3",
+                  "60，绝对坐标"
+                ],
+                [
+                  "robot_history 机器人历史",
+                  "10×20×3",
+                  "600，过去点减对应当前点"
+                ],
+                [
+                  "robot_plan 机器人计划",
+                  "20×20×3",
+                  "1200，计划点减对应当前机器人点"
+                ],
+                [
+                  "合计／输出",
+                  "2553维输入；20×21×3输出",
+                  "输出1260个位移，再加当前场景坐标"
+                ]
+              ],
+              "caption": "单位米，间隔0.1秒；每次预测两秒。四秒调用可接收40帧计划，每段使用对应的20帧。"
+            },
+            {
+              "type": "p",
+              "text": "输入均值和标准差仅从训练集计算，标准差下限0.001米。输出位置＝当前位置＋预测位移。输出层零初始化，所以训练开始时预测静止；训练后没有强制静止、固定瓶长或坐标修正。下图a→b表示一层把a个数字变为b个；GELU是层与层之间的非线性函数，使网络能表达复杂关系。",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "4.2 最新基线C：带时间前缀约束的全连接网络",
+              "id": "architecture-c"
+            },
+            {
+              "type": "architecture",
+              "label": "C · TemporalDynamics(variant=\"causal\") · 2,479,340个可训练参数",
+              "stages": [
+                [
+                  {
+                    "title": "过去与当前：1353维",
+                    "lines": [
+                      "场景63+630；机器人60+600"
+                    ]
+                  },
+                  {
+                    "title": "机器人计划：20×60维",
+                    "lines": [
+                      "第t个输出只读取第1至t帧"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "第1隐藏层：2553→512，接GELU",
+                    "lines": [
+                      "过去／当前贡献 + 截至t的计划贡献",
+                      "并行得到20×512；较晚计划在标准化后置零"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "第2、3隐藏层依次计算：512→512→512",
+                    "lines": [
+                      "两层各自接GELU，依次处理",
+                      "两层参数均在20个时刻之间共享"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "输出层：每个时刻512→63",
+                    "lines": [
+                      "总权重1260×512，按20个时刻分组",
+                      "第t个隐藏向量只使用该时刻对应的63行"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "位移20×21×3 + 当前场景",
+                    "lines": [
+                      "未来0.1、0.2、…、2.0秒的位置"
+                    ]
+                  }
+                ]
+              ],
+              "caption": "三层隐藏层，不是时间注意力网络。各输出时刻独立计算隐藏向量，不交换信息。前缀约束不增加可训练参数。"
+            },
+            {
+              "type": "p",
+              "text": "具体做法是先计算过去与当前的512维贡献，再把每帧60维计划映射为512维贡献，按时间累加。0.5秒输出加前5帧，1.5秒输出加前15帧，再经过另外两层512维计算和该时刻的输出层。没有把0.1秒的预测场景作为0.2秒的输入。unmasked版本让所有输出读取完整计划，数学上与B等价，只有浮点求和顺序可能不同；它用于历史时间可见性对照。",
+              "sources": [
+                "E6",
+                "E11"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "4.3 模型D：共享物体编码和两层物体注意力",
+              "id": "architecture-d"
+            },
+            {
+              "type": "architecture",
+              "label": "D · InteractionDynamics · 2,474,388个可训练参数",
+              "stages": [
+                [
+                  {
+                    "title": "球：33→480→480→256",
+                    "lines": [
+                      "当前3 + 过去相对位置30"
+                    ]
+                  },
+                  {
+                    "title": "每瓶：66→480→480→256",
+                    "lines": [
+                      "中心、半轴及历史；十瓶共享"
+                    ]
+                  },
+                  {
+                    "title": "机器人：660→480→480→256",
+                    "lines": [
+                      "当前60 + 过去相对坐标600"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "12个物体向量，每个256维",
+                    "lines": [
+                      "球1＋瓶10＋机器人1；编码器前两层后接GELU",
+                      "每帧计划60→256，前缀累加后只加到机器人向量"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "每个未来时刻各自交换物体信息",
+                    "lines": [
+                      "20×12×256 → 第1层物体注意力 → 第2层物体注意力",
+                      "每层8头，每头32维；使用当前相对位置与距离"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "球：每时刻256→3",
+                    "lines": [
+                      "保存为256→60层，取对应3行"
+                    ]
+                  },
+                  {
+                    "title": "每瓶：每时刻256→6",
+                    "lines": [
+                      "保存为256→120层，取对应6行",
+                      "十瓶共享；上、下端点各3维"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "合为20×21×3个位移，再加当前场景",
+                    "lines": [
+                      "机器人向量只提供条件，不预测机器人未来"
+                    ]
+                  }
+                ]
+              ],
+              "caption": "十瓶共用编码器与输出参数。注意力只沿12个物体计算，不跨20个未来时刻。两层不是两个物理时间步，也没有片段内逐步状态更新。"
+            },
+            {
+              "type": "p",
+              "text": "“编码器”就是把当前和历史数字变成256个内部数字的三层全连接网络。每瓶66维＝当前中心3＋当前半轴3＋十帧中心变化30＋十帧半轴变化30。中心＝(上端点＋下端点)/2，半轴＝(上端点－下端点)/2，两者能还原原端点，没有丢掉端点信息；但输出仍直接预测两端点位移，不强制保持长度。十瓶还共享训练输入统计量。",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "spec",
+              "headers": [
+                "一层物体注意力内部",
+                "具体计算",
+                "作用"
+              ],
+              "rows": [
+                [
+                  "比较对象",
+                  "LayerNorm(256)；无偏置256→768产生Q/K/V，8头×32维",
+                  "对12个发送物体计算读取权重；不沿时间归一化。"
+                ],
+                [
+                  "加入当前几何",
+                  "相对位置3＋距离1；4→64→264，中间GELU",
+                  "264＝8个分数偏置＋256个几何消息数字；没有距离开关。"
+                ],
+                [
+                  "汇总消息",
+                  "加权对象信息与几何消息→256→256，再加回原向量",
+                  "保留本物体信息，并补充从其他物体读取的信息。"
+                ],
+                [
+                  "物体内部处理",
+                  "LayerNorm(256)；256→128→256，中间GELU，再加回原向量",
+                  "输出仍为20×12×256；完整结构重复两次。"
+                ]
+              ],
+              "caption": "LayerNorm是对内部向量调整尺度；8个头是8组并行的读取权重。"
+            },
+            {
+              "type": "p",
+              "text": "当前相对位置和距离在两秒片段开始时计算，片段内部不会用预测的新球位置逐帧更新。因此D能学习物体关系，却没有内置碰撞求解器，也没有“未接触就必须静止”的规则。片段内缺少状态推进是否为主要原因，尚需单独实验，不能由现有结果认定。",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "4.4 早期B和原参考路线A，分别是什么"
+            },
+            {
+              "type": "architecture",
+              "label": "B · DirectDynamics · 2,479,340个可训练参数",
+              "stages": [
+                [
+                  {
+                    "title": "五类输入展平并标准化：2553维",
+                    "lines": [
+                      "所有输出读取完整两秒机器人计划"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "2553→512→512→512",
+                    "lines": [
+                      "三层隐藏层，每层后接GELU"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "512→1260 → 重排为20×21×3",
+                    "lines": [
+                      "一次输出所有位移，再加当前场景"
+                    ]
+                  }
+                ]
+              ],
+              "caption": "B无注意力、物体编码器或轨迹压缩；八轨迹拟合成绩属于B，新测试集正式比较用C和D。"
+            },
+            {
+              "type": "architecture",
+              "label": "A · 本地独立参考实现；压缩训练与未开展的主训练分开标示",
+              "stages": [
+                [
+                  {
+                    "title": "实际训练过：每点整段轨迹→256维",
+                    "lines": [
+                      "坐标层3→256→256，时间调制后沿时间求和",
+                      "解码：按时间调制，再经256→256→3还原"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "以下动力学已实现，正式主训练未开展",
+                    "lines": [
+                      "61个条件向量＝场景历史21＋机器人历史20＋计划20",
+                      "加21个待生成场景向量，共82×256"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "6层带条件注意力，宽256、8头×32维",
+                    "lines": [
+                      "每层内部全连接256→1024→256",
+                      "加入当前空间位置、信息类型、生成进度"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "从随机表示开始，10次迭代，再解码轨迹",
+                    "lines": [
+                      "10次是生成计算，不是10个物理时间步",
+                      "压缩模块重建检查失败，未进入正式主训练"
+                    ]
+                  }
+                ]
+              ],
+              "caption": "这不是论文官方网络或预训练权重，最新39.1%的改善也不来自这套6层生成网络。"
+            },
+            {
+              "type": "p",
+              "text": "A先训练轨迹压缩与还原，原计划冻结它再训练动力学。61个条件向量不读取待生成向量，但21个未来向量可以读取完整计划；这与C、D限制物理时间前缀不同。生成部分学习从噪声向真实表示移动的方向，常称flow matching；它没有产生最新正式结果。",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "A′把每点未来20×3坐标按时间顺序直接存成60维；历史10×3放前30维，其余补零。适配器不学习参数；动力学保留6层、宽256、8头，但输入投影由256→256改为60→256，输出投影由256→256改为256→60，共减少100,548个参数。因此A′不是A所有层和参数都原样不动，只做过88窗口、2000步拟合诊断。",
+              "sources": [
+                "E2",
+                "E11"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "4.5 两秒网络怎样预测四秒；这些结构能解释什么"
+            },
+            {
+              "type": "p",
+              "text": "B、C、D每次输出两秒。四秒评估先预测第1至20帧，再把预测第20帧作为新当前场景，第10至19帧作为十帧场景历史；机器人使用计划中对应的当前、历史和后20帧，再调用同一模型。第二段不读取真实场景，会继承第一段误差。这是两秒片段之间的反馈，片段内部20个时刻仍并行输出。",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "callout",
+              "text": "瓶子乱动不能笼统归结为论文架构失败。现有预测证据涉及B、C和D：C消除了后段计划影响前段输出的通道；D增加对象共享和几何关系后，接触前更准，接触后响应反而更差。已确认这些改动的局部作用，尚未找出唯一主因。"
+            }
+          ]
+        },
+        {
           "id": "metrics",
-          "title": "4 怎样判断模型真的预测对了",
+          "title": "5 怎样判断模型真的预测对了",
           "blocks": [
             {
               "type": "p",
@@ -1244,7 +1675,7 @@
         },
         {
           "id": "history",
-          "title": "5 每一轮实验解决了什么问题",
+          "title": "6 每一轮实验解决了什么问题",
           "blocks": [
             {
               "type": "table",
@@ -1253,7 +1684,7 @@
             },
             {
               "type": "h3",
-              "text": "5.1 先检查轨迹压缩是否能保留原始运动"
+              "text": "6.1 先检查轨迹压缩是否能保留原始运动"
             },
             {
               "type": "p",
@@ -1288,7 +1719,7 @@
             },
             {
               "type": "h3",
-              "text": "5.2 绕过轨迹压缩后 先检查能否记住少量样本"
+              "text": "6.2 绕过轨迹压缩后 先检查能否记住少量样本"
             },
             {
               "type": "p",
@@ -1306,7 +1737,7 @@
             },
             {
               "type": "h3",
-              "text": "5.3 提前运动可以在物理接触前直接测到"
+              "text": "6.3 提前运动可以在物理接触前直接测到"
             },
             {
               "type": "p",
@@ -1319,7 +1750,7 @@
         },
         {
           "id": "prefix",
-          "title": "6 时间前缀约束究竟是什么",
+          "title": "7 时间前缀约束究竟是什么",
           "blocks": [
             {
               "type": "p",
@@ -1362,7 +1793,7 @@
         },
         {
           "id": "feedback",
-          "title": "7 错误位置为什么会越预测越严重",
+          "title": "8 错误位置为什么会越预测越严重",
           "blocks": [
             {
               "type": "p",
@@ -1400,11 +1831,11 @@
         },
         {
           "id": "interaction",
-          "title": "8 最新的物体结构对照怎样进行",
+          "title": "9 最新的物体结构对照怎样进行",
           "blocks": [
             {
               "type": "p",
-              "text": "普通全连接网络把所有点展平后一起处理。新模型则把球、十个瓶子和机器人分别作为对象，十个瓶子使用同一套编码和输出规则，再通过两层注意力计算交换对象信息。对象之间的相对位置和距离参与计算。这里的注意力可以理解为模型学习决定：当前预测应从哪些其他对象读取多少信息。它没有接收真实接触标签，也没有按某个距离阈值强行开关运动。",
+              "text": "时间前缀全连接基线C把所有点展平后一起处理。共享物体模型D则把球、十个瓶子和机器人分别作为对象，十个瓶子使用同一套编码和输出规则，再通过两层注意力计算交换对象信息。对象之间的相对位置和距离参与计算。这里的注意力可以理解为模型学习决定：当前预测应从哪些其他对象读取多少信息。它没有接收真实接触标签，也没有按某个距离阈值强行开关运动。",
               "sources": [
                 "E8",
                 "E11"
@@ -1450,7 +1881,7 @@
         },
         {
           "id": "results",
-          "title": "9 新测试集的结果和它们的含义",
+          "title": "10 新测试集的结果和它们的含义",
           "blocks": [
             {
               "type": "table",
@@ -1471,7 +1902,7 @@
             },
             {
               "type": "p",
-              "text": "接触后位移误差从52.883升至57.572毫米，恶化8.9%，三个训练编号都变差。始终预测瓶子不动的误差为57.800毫米，新模型只比它低约0.23毫米。真实响应平均幅度为57.800毫米，普通模型和新模型预测的响应幅度分别为21.571和18.643毫米。新模型有非零运动预测，球预测也包含信息；但响应幅度明显偏小，碰撞后位移的方向、时序或幅度仍不够准确。不能把它说成完全没学到任何信息，也不能据此说学会了碰撞。",
+              "text": "接触后位移误差从52.883升至57.572毫米，恶化8.9%，三个训练编号都变差。始终预测瓶子不动的误差为57.800毫米，新模型只比它低约0.23毫米。真实响应平均幅度为57.800毫米，时间前缀模型C和共享物体模型D预测的响应幅度分别为21.571和18.643毫米。新模型有非零运动预测，球预测也包含信息；但响应幅度明显偏小，碰撞后位移的方向、时序或幅度仍不够准确。不能把它说成完全没学到任何信息，也不能据此说学会了碰撞。",
               "sources": [
                 "E8",
                 "E9"
@@ -1503,7 +1934,7 @@
         },
         {
           "id": "training",
-          "title": "10 继续训练和增加计算为什么没有自动解决问题",
+          "title": "11 继续训练和增加计算为什么没有自动解决问题",
           "blocks": [
             {
               "type": "table",
@@ -1512,7 +1943,7 @@
             },
             {
               "type": "p",
-              "text": "普通模型按四秒验证选中的步骤为2000、500和1500；新模型为10500、13000和8500。新模型通常需要更久才达到验证最优，不能笼统说两种模型都在早期过拟合。两种模型后期都能继续改善训练拟合，但四秒验证没有同步改善。训练预测两秒、验证连续预测四秒，数据范围也不同，不能把两者的数值差直接解释成单一的泛化差距。",
+              "text": "时间前缀模型C按四秒验证选中的步骤为2000、500和1500；共享物体模型D为10500、13000和8500。新模型通常需要更久才达到验证最优，不能笼统说两种模型都在早期过拟合。两种模型后期都能继续改善训练拟合，但四秒验证没有同步改善。训练预测两秒、验证连续预测四秒，数据范围也不同，不能把两者的数值差直接解释成单一的泛化差距。",
               "sources": [
                 "E8"
               ]
@@ -1524,7 +1955,7 @@
             },
             {
               "type": "p",
-              "text": "最新六次正式训练共90000次参数更新，运行器内部计时约20.09分钟。普通模型合计397.78秒，新模型807.80秒；预先进行的短程同步计时中，新模型单步约为普通模型的2.84倍。每个窗口的估算乘加运算量约为13.84倍，因此本轮只能称参数量和更新数相近，不能称计算预算相同。新模型计算更贵，没有换来主要碰撞响应指标改善。",
+              "text": "最新六次正式训练共90000次参数更新，运行器内部计时约20.09分钟。时间前缀模型C合计397.78秒，共享物体模型D807.80秒；预先进行的短程同步计时中，新模型单步约为普通模型的2.84倍。每个窗口的估算乘加运算量约为13.84倍，因此本轮只能称参数量和更新数相近，不能称计算预算相同。新模型计算更贵，没有换来主要碰撞响应指标改善。",
               "sources": [
                 "E8"
               ]
@@ -1537,7 +1968,7 @@
         },
         {
           "id": "causes",
-          "title": "11 已确认的原因与尚未证实的解释",
+          "title": "12 已确认的原因与尚未证实的解释",
           "blocks": [
             {
               "type": "table",
@@ -1564,7 +1995,7 @@
         },
         {
           "id": "next",
-          "title": "12 如果继续研究 应怎样决定下一步",
+          "title": "13 如果继续研究 应怎样决定下一步",
           "blocks": [
             {
               "type": "p",
@@ -1587,7 +2018,7 @@
         },
         {
           "id": "verification",
-          "title": "13 结果如何复核 有哪些使用限制",
+          "title": "14 结果如何复核 有哪些使用限制",
           "blocks": [
             {
               "type": "p",
@@ -1754,8 +2185,8 @@
         "design": {
           "headers": [
             "设置",
-            "普通全连接模型",
-            "共享物体模型"
+            "时间前缀全连接模型C",
+            "共享物体模型D"
           ],
           "rows": [
             [
@@ -1818,8 +2249,8 @@
         "primary": {
           "headers": [
             "指标",
-            "普通模型 mm",
-            "共享物体 mm",
+            "时间前缀模型C mm",
+            "共享物体模型D mm",
             "相对变化",
             "静止参考 mm",
             "有效场景"
@@ -1862,7 +2293,7 @@
           ],
           "rows": [
             [
-              "普通全连接模型",
+              "时间前缀全连接模型C",
               "42",
               "2000",
               "23.513",
@@ -1870,7 +2301,7 @@
               "215.484"
             ],
             [
-              "普通全连接模型",
+              "时间前缀全连接模型C",
               "43",
               "500",
               "22.438",
@@ -1878,7 +2309,7 @@
               "191.467"
             ],
             [
-              "普通全连接模型",
+              "时间前缀全连接模型C",
               "44",
               "1500",
               "21.706",
@@ -1886,7 +2317,7 @@
               "192.824"
             ],
             [
-              "共享物体模型",
+              "共享物体模型D",
               "42",
               "10500",
               "14.627",
@@ -1894,7 +2325,7 @@
               "207.983"
             ],
             [
-              "共享物体模型",
+              "共享物体模型D",
               "43",
               "13000",
               "11.916",
@@ -1902,7 +2333,7 @@
               "206.312"
             ],
             [
-              "共享物体模型",
+              "共享物体模型D",
               "44",
               "8500",
               "14.647",
@@ -1919,22 +2350,22 @@
           ],
           "rows": [
             [
-              "普通全连接模型",
+              "时间前缀全连接模型C",
               "按验证选中",
               "58.32 / 33.01 / 17.98"
             ],
             [
-              "普通全连接模型",
+              "时间前缀全连接模型C",
               "第15000步",
               "9.47 / 7.63 / 6.11"
             ],
             [
-              "共享物体模型",
+              "共享物体模型D",
               "按验证选中",
               "11.00 / 10.32 / 4.39"
             ],
             [
-              "共享物体模型",
+              "共享物体模型D",
               "第15000步",
               "7.62 / 7.59 / 3.30"
             ]
@@ -2052,6 +2483,10 @@
           "id": "conclusion",
           "title": "1 Conclusions supported by the completed work",
           "blocks": [
+            {
+              "type": "callout",
+              "text": "Model identity:the latest formal comparison is temporal-prefix fully connected C versus shared-object attention D.Section4 provides layer diagrams,dimensions and experiment-to-model mapping."
+            },
             {
               "type": "p",
               "text": "The initial question was whether a ball center and two endpoints per pin are enough to learn motion conditioned on robot actions. Completed work includes data preparation, trajectory compression checks, direct coordinate prediction, small-set fitting, temporal visibility controls, contact diagnostics and a shared-object comparison using fresh evaluation scenes. This report reorganizes completed evidence; it adds no training or physics experiments.",
@@ -2171,8 +2606,415 @@
           ]
         },
         {
+          "id": "architecture",
+          "title": "4 The actual architectures: from inputs to predictions",
+          "blocks": [
+            {
+              "type": "callout",
+              "text": "The latest formal comparison uses C, a three-hidden-layer fully connected temporal-prefix predictor, and D, a shared-object attention predictor. The 39.1% precontact improvement and 8.9% postcontact worsening compare D against C. Both directly output coordinate displacements, without learned trajectory compression or iterative noise-to-trajectory generation."
+            },
+            {
+              "type": "p",
+              "text": "The previous report did not identify the exact networks and connect them to results clearly enough. A/A′/B/C/D identify implementations, not rankings. Diagrams omit the sample-batch dimension:20×21×3 means twenty future times,twenty-one scene points and three coordinates per point.",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "spec",
+              "headers": [
+                "Model / code identity",
+                "Structure",
+                "Completed work and associated results"
+              ],
+              "rows": [
+                [
+                  "A:TrajectoryTokenizer + SparseDynamics,model.py",
+                  "Each point trajectory→256 numbers;planned dynamics:6 attention blocks,width256,8 heads,then decoding",
+                  "Tokenizer trained/diagnosed;reconstruction gate failed,so formal main dynamics training did not proceed.Independent implementation,not official model/weights."
+                ],
+                [
+                  "A′:LosslessTrajectoryTokenizer + SparseDynamics",
+                  "Each20×3 point trajectory stored as60 numbers;6 blocks,width256,8 heads;input/output projections changed",
+                  "8 training episodes,88 windows,2000 updates only;29.308mm ball training error etc."
+                ],
+                [
+                  "B:DirectDynamics,direct_model.py",
+                  "2553→512→512→512→1260;complete two-second plan visible",
+                  "Eight-episode fit0.440/0.133/0.194mm and early full-data runs.Not the latest formal baseline."
+                ],
+                [
+                  "C:TemporalDynamics(variant=causal),temporal_model.py",
+                  "All B parameters;each output sees only its allowed plan prefix",
+                  "Constrained historical visibility arm;mlp arm of latest six formal runs."
+                ],
+                [
+                  "D:InteractionDynamics,interaction_model.py",
+                  "Object encoders→12×256→2 object-attention blocks→ball/shared-pin heads",
+                  "relation arm of latest six formal runs;fresh-heldout comparison against C."
+                ]
+              ],
+              "caption": "Model-to-experiment mapping.A′ is a separate diagnostic configuration.B/C/D are coordinate-prediction controls."
+            },
+            {
+              "type": "h3",
+              "text": "4.1 Latest-model inputs and outputs"
+            },
+            {
+              "type": "p",
+              "text": "C and D receive the same five raw fields.The21 scene points are one ball center and two endpoints per pin for ten pins;the robot has20 points.Future scene truth and true contact events are excluded.C flattens the inputs;D reorganizes them by object.",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "spec",
+              "headers": [
+                "Input field",
+                "Per-sample shape",
+                "Count and preprocessing in C"
+              ],
+              "rows": [
+                [
+                  "scene_current",
+                  "21×3",
+                  "63 absolute coordinates"
+                ],
+                [
+                  "scene_history",
+                  "10×21×3",
+                  "630 past-minus-current coordinates"
+                ],
+                [
+                  "robot_current",
+                  "20×3",
+                  "60 absolute coordinates"
+                ],
+                [
+                  "robot_history",
+                  "10×20×3",
+                  "600 past-minus-current coordinates"
+                ],
+                [
+                  "robot_plan",
+                  "20×20×3",
+                  "1200 plan-minus-current robot coordinates"
+                ],
+                [
+                  "Total/output",
+                  "2553 input;20×21×3 output",
+                  "1260 displacements + current scene"
+                ]
+              ],
+              "caption": "Metres;0.1s sampling;two seconds per call.Four-second calls accept40 plan frames,using20 per chunk."
+            },
+            {
+              "type": "p",
+              "text": "Input means/standard deviations use training only;the standard-deviation floor is0.001m.Position=current position+predicted displacement.Zero-initialized heads initially predict stationarity;learned outputs receive no stationary,rigid-length or coordinate correction.In diagrams,a→b maps a numbers to b.GELU is the nonlinear function between layers.",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "4.2 Latest baseline C:fully connected network with plan prefixes",
+              "id": "architecture-c"
+            },
+            {
+              "type": "architecture",
+              "label": "C · TemporalDynamics(variant=\"causal\") · 2,479,340 trainable parameters",
+              "stages": [
+                [
+                  {
+                    "title": "Past/current:1353 numbers",
+                    "lines": [
+                      "Scene63+630;robot60+600"
+                    ]
+                  },
+                  {
+                    "title": "Robot plan:20×60 numbers",
+                    "lines": [
+                      "Output t reads frames1…t only"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "Hidden1:2553→512,then GELU",
+                    "lines": [
+                      "Past/current contribution + plan-prefix contributions",
+                      "20×512 in parallel;later standardized plan features are zero"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "Hidden2 then hidden3:512→512→512",
+                    "lines": [
+                      "Two sequential layers;GELU after each",
+                      "Both share parameters across output times"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "Output:512→63 per time",
+                    "lines": [
+                      "Stored1260×512 weights split by20 times",
+                      "Each hidden vector uses its matching63 rows"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "20×21×3 displacements + current scene",
+                    "lines": [
+                      "Positions at0.1,0.2,…,2.0s"
+                    ]
+                  }
+                ]
+              ],
+              "caption": "Three hidden layers,not temporal attention.Output-time hidden vectors never exchange information.Prefix visibility adds no trainable parameters."
+            },
+            {
+              "type": "p",
+              "text": "Past/current inputs provide512 numbers.Each60-number plan frame contributes512 numbers;prefix sums give allowed plan information.0.5s uses five frames,1.5s fifteen.Two further512-wide layers and matching output rows produce scene points.A0.1s predicted scene is not fed into0.2s.The unmasked variant exposes all20 plan frames to every output and is algebraically B,apart from floating-point reduction order;it is used for the historical visibility control.",
+              "sources": [
+                "E6",
+                "E11"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "4.3 D:shared object encoders and two object-attention blocks",
+              "id": "architecture-d"
+            },
+            {
+              "type": "architecture",
+              "label": "D · InteractionDynamics · 2,474,388 trainable parameters",
+              "stages": [
+                [
+                  {
+                    "title": "Ball:33→480→480→256",
+                    "lines": [
+                      "Current3 + past offsets30"
+                    ]
+                  },
+                  {
+                    "title": "Pin:66→480→480→256",
+                    "lines": [
+                      "Center/half-axis/history;shared"
+                    ]
+                  },
+                  {
+                    "title": "Robot:660→480→480→256",
+                    "lines": [
+                      "Current60 + past offsets600"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "Twelve object vectors,256 numbers each",
+                    "lines": [
+                      "Ball1+pins10+robot1;GELU after first two encoder layers",
+                      "Each plan frame60→256;prefix sum added only to robot"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "Object exchange separately at each output time",
+                    "lines": [
+                      "20×12×256 → attention block1 → attention block2",
+                      "8heads×32 per block;current relative positions/distances"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "Ball:256→3 per time",
+                    "lines": [
+                      "Stored256→60 head;matching3 rows"
+                    ]
+                  },
+                  {
+                    "title": "Pin:256→6 per pin/time",
+                    "lines": [
+                      "Stored256→120 head;matching6 rows",
+                      "Shared by ten pins;two XYZ endpoints"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "Merge20×21×3 displacements;add current scene",
+                    "lines": [
+                      "Robot vector conditions outputs;robot future is not predicted"
+                    ]
+                  }
+                ]
+              ],
+              "caption": "Pins share encoder and head.Attention operates over twelve objects,never twenty output times.Two blocks are not two physical timesteps.No within-chunk sequential state update."
+            },
+            {
+              "type": "p",
+              "text": "An encoder is a three-layer fully connected mapping to256 internal numbers.Pin inputs have66 numbers:current center3,current half-axis3,ten past center offsets30,and half-axis offsets30.Center=(top+bottom)/2 and half-axis=(top−bottom)/2 preserve both endpoints invertibly.Outputs are unconstrained endpoint displacements,without a fixed-length projection.Pins also share pooled training normalization statistics.",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "spec",
+              "headers": [
+                "Inside one object-attention block",
+                "Exact computation",
+                "Function"
+              ],
+              "rows": [
+                [
+                  "Object comparison",
+                  "LayerNorm256;bias-free256→768 Q/K/V;8heads×32",
+                  "Read weights over twelve sender objects,never over output times."
+                ],
+                [
+                  "Current geometry",
+                  "Relative XYZ3+distance1;4→64→264 with GELU",
+                  "264=8 score biases+256 geometry-message values;no distance gate."
+                ],
+                [
+                  "Message aggregation",
+                  "Weighted object/geometry messages→256→256;residual addition",
+                  "Retain the original vector and add information from other objects."
+                ],
+                [
+                  "Within-object processing",
+                  "LayerNorm256;256→128→256 with GELU;residual addition",
+                  "Output remains20×12×256;repeat the complete block twice."
+                ]
+              ],
+              "caption": "LayerNorm rescales an internal vector;heads are eight parallel read-weight computations."
+            },
+            {
+              "type": "p",
+              "text": "Relative geometry comes from the current observation at the start of each two-second chunk.It is not refreshed from sequential predicted ball states inside that chunk.D learns object relationships but has no built-in contact solver or precontact stationarity rule.Whether absent within-chunk state advancement is a dominant cause requires a separate experiment.",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "4.4 Earlier B and original reference-inspired route A"
+            },
+            {
+              "type": "architecture",
+              "label": "B · DirectDynamics · 2,479,340 trainable parameters",
+              "stages": [
+                [
+                  {
+                    "title": "Five fields flattened/standardized:2553",
+                    "lines": [
+                      "All outputs read the complete two-second plan"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "2553→512→512→512",
+                    "lines": [
+                      "Three hidden layers;GELU after each"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "512→1260 → reshape20×21×3",
+                    "lines": [
+                      "All displacements in one pass;add current scene"
+                    ]
+                  }
+                ]
+              ],
+              "caption": "No attention,object encoder or learned compression.Eight-episode fitting belongs to B;the latest heldout comparison uses C/D."
+            },
+            {
+              "type": "architecture",
+              "label": "A · Independent reference implementation;trained tokenizer separated from unrun main model",
+              "stages": [
+                [
+                  {
+                    "title": "Trained:each point trajectory→256 numbers",
+                    "lines": [
+                      "Coordinate3→256→256;time modulation;sum over time",
+                      "Decode:time modulation,then256→256→3"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "Dynamics below implemented;formal main training did not proceed",
+                    "lines": [
+                      "61 context vectors=scene-history21+robot-history20+plan20",
+                      "Add21 future-scene query vectors,total82×256"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "6 conditioned attention blocks;width256,8heads×32",
+                    "lines": [
+                      "Within each block:256→1024→256",
+                      "Spatial anchors,type and generation-progress conditioning"
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "title": "Start from noise;ten iterative updates;decode",
+                    "lines": [
+                      "Ten generation computations,not physical timesteps",
+                      "Tokenizer reconstruction gate failed;formal main run not started"
+                    ]
+                  }
+                ]
+              ],
+              "caption": "Not official paper architecture or pretrained weights.The latest39.1% improvement did not come from this six-block generator."
+            },
+            {
+              "type": "p",
+              "text": "A trains reconstruction first,and was intended to freeze that tokenizer before dynamics.Context cannot read future-query vectors,but future queries can read the complete plan.This context mask differs from C/D’s physical-time prefix constraint.The generator learns directions from noise toward the true representation,commonly called flow matching.It did not produce the latest formal results.",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "p",
+              "text": "A′ stores each20×3 future point trajectory as60 ordered coordinates;10×3 history fills the first30 entries with zeros after that.The adapter has no learned parameters.Dynamics retains six256-wide/eight-head blocks,but input projection changes256→256 to60→256 and output256→256 to256→60,removing100,548 parameters.Hence not every A layer/parameter is unchanged.A′ only has the88-window/2000-update fit diagnostic.",
+              "sources": [
+                "E2",
+                "E11"
+              ]
+            },
+            {
+              "type": "h3",
+              "text": "4.5 Four-second forecasting and architecture conclusions"
+            },
+            {
+              "type": "p",
+              "text": "B/C/D each output two seconds.Four-second evaluation uses predicted frame20 as the next current scene,and predicted frames10–19 as its ten-frame history.Corresponding robot-plan frames supply robot current/history and the next20 plan frames.The same model predicts again without true intermediate scene input,propagating first-chunk errors.This feedback between chunks differs from the parallel twenty-slot calculation within a chunk.",
+              "sources": [
+                "E11"
+              ]
+            },
+            {
+              "type": "callout",
+              "text": "Pin drift is not simply a demonstrated failure of the paper architecture.The forecasting evidence concerns B/C/D.C removes later-plan influence on earlier outputs.D adds shared objects/geometry messages,improving precontact position but worsening postcontact response.These changes have partial effects;the unique dominant cause remains unestablished."
+            }
+          ]
+        },
+        {
           "id": "metrics",
-          "title": "4 What a correct prediction means",
+          "title": "5 What a correct prediction means",
           "blocks": [
             {
               "type": "p",
@@ -2228,7 +3070,7 @@
         },
         {
           "id": "history",
-          "title": "5 What each experimental stage established",
+          "title": "6 What each experimental stage established",
           "blocks": [
             {
               "type": "table",
@@ -2237,7 +3079,7 @@
             },
             {
               "type": "h3",
-              "text": "5.1 Check trajectory compression before future prediction"
+              "text": "6.1 Check trajectory compression before future prediction"
             },
             {
               "type": "p",
@@ -2272,7 +3114,7 @@
             },
             {
               "type": "h3",
-              "text": "5.2 Bypass compression and test small-set fitting"
+              "text": "6.2 Bypass compression and test small-set fitting"
             },
             {
               "type": "p",
@@ -2283,7 +3125,7 @@
             },
             {
               "type": "h3",
-              "text": "5.3 Premature movement is measurable before physical contact"
+              "text": "6.3 Premature movement is measurable before physical contact"
             },
             {
               "type": "p",
@@ -2296,7 +3138,7 @@
         },
         {
           "id": "prefix",
-          "title": "6 Why later actions must not change an earlier prediction",
+          "title": "7 Why later actions must not change an earlier prediction",
           "blocks": [
             {
               "type": "p",
@@ -2332,7 +3174,7 @@
         },
         {
           "id": "feedback",
-          "title": "7 How errors accumulate through predicted inputs",
+          "title": "8 How errors accumulate through predicted inputs",
           "blocks": [
             {
               "type": "p",
@@ -2370,7 +3212,7 @@
         },
         {
           "id": "interaction",
-          "title": "8 Design of the fresh shared-object comparison",
+          "title": "9 Design of the fresh shared-object comparison",
           "blocks": [
             {
               "type": "p",
@@ -2413,7 +3255,7 @@
         },
         {
           "id": "results",
-          "title": "9 Results on fresh heldout scenes",
+          "title": "10 Results on fresh heldout scenes",
           "blocks": [
             {
               "type": "table",
@@ -2466,7 +3308,7 @@
         },
         {
           "id": "training",
-          "title": "10 Fitting and computational cost",
+          "title": "11 Fitting and computational cost",
           "blocks": [
             {
               "type": "table",
@@ -2496,7 +3338,7 @@
         },
         {
           "id": "causes",
-          "title": "11 Established findings and competing explanations",
+          "title": "12 Established findings and competing explanations",
           "blocks": [
             {
               "type": "table",
@@ -2515,7 +3357,7 @@
         },
         {
           "id": "next",
-          "title": "12 How to decide the next experiment",
+          "title": "13 How to decide the next experiment",
           "blocks": [
             {
               "type": "p",
@@ -2538,7 +3380,7 @@
         },
         {
           "id": "verification",
-          "title": "13 Verification and use limitations",
+          "title": "14 Verification and use limitations",
           "blocks": [
             {
               "type": "p",
@@ -2701,8 +3543,8 @@
         "design": {
           "headers": [
             "Setting",
-            "Fully connected",
-            "Shared object"
+            "Temporal-prefix MLP C",
+            "Shared object D"
           ],
           "rows": [
             [
@@ -2765,8 +3607,8 @@
         "primary": {
           "headers": [
             "Measure",
-            "Fully connected mm",
-            "Shared object mm",
+            "Prefix MLP C mm",
+            "Shared object D mm",
             "Relative change",
             "Stationary mm",
             "Supported episodes"
@@ -2809,7 +3651,7 @@
           ],
           "rows": [
             [
-              "Fully connected model",
+              "Temporal-prefix MLP C",
               "42",
               "2000",
               "23.513",
@@ -2817,7 +3659,7 @@
               "215.484"
             ],
             [
-              "Fully connected model",
+              "Temporal-prefix MLP C",
               "43",
               "500",
               "22.438",
@@ -2825,7 +3667,7 @@
               "191.467"
             ],
             [
-              "Fully connected model",
+              "Temporal-prefix MLP C",
               "44",
               "1500",
               "21.706",
@@ -2833,7 +3675,7 @@
               "192.824"
             ],
             [
-              "Shared-object model",
+              "Shared-object model D",
               "42",
               "10500",
               "14.627",
@@ -2841,7 +3683,7 @@
               "207.983"
             ],
             [
-              "Shared-object model",
+              "Shared-object model D",
               "43",
               "13000",
               "11.916",
@@ -2849,7 +3691,7 @@
               "206.312"
             ],
             [
-              "Shared-object model",
+              "Shared-object model D",
               "44",
               "8500",
               "14.647",
@@ -2866,22 +3708,22 @@
           ],
           "rows": [
             [
-              "Fully connected model",
+              "Temporal-prefix MLP C",
               "Validation selected",
               "58.32 / 33.01 / 17.98"
             ],
             [
-              "Fully connected model",
+              "Temporal-prefix MLP C",
               "Step15000",
               "9.47 / 7.63 / 6.11"
             ],
             [
-              "Shared-object model",
+              "Shared-object model D",
               "Validation selected",
               "11.00 / 10.32 / 4.39"
             ],
             [
-              "Shared-object model",
+              "Shared-object model D",
               "Step15000",
               "7.62 / 7.59 / 3.30"
             ]

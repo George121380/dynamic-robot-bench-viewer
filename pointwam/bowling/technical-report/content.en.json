@@ -11,6 +11,10 @@
       "title": "1 Conclusions supported by the completed work",
       "blocks": [
         {
+          "type": "callout",
+          "text": "Model identity:the latest formal comparison is temporal-prefix fully connected C versus shared-object attention D.Section4 provides layer diagrams,dimensions and experiment-to-model mapping."
+        },
+        {
           "type": "p",
           "text": "The initial question was whether a ball center and two endpoints per pin are enough to learn motion conditioned on robot actions. Completed work includes data preparation, trajectory compression checks, direct coordinate prediction, small-set fitting, temporal visibility controls, contact diagnostics and a shared-object comparison using fresh evaluation scenes. This report reorganizes completed evidence; it adds no training or physics experiments.",
           "sources": [
@@ -129,8 +133,415 @@
       ]
     },
     {
+      "id": "architecture",
+      "title": "4 The actual architectures: from inputs to predictions",
+      "blocks": [
+        {
+          "type": "callout",
+          "text": "The latest formal comparison uses C, a three-hidden-layer fully connected temporal-prefix predictor, and D, a shared-object attention predictor. The 39.1% precontact improvement and 8.9% postcontact worsening compare D against C. Both directly output coordinate displacements, without learned trajectory compression or iterative noise-to-trajectory generation."
+        },
+        {
+          "type": "p",
+          "text": "The previous report did not identify the exact networks and connect them to results clearly enough. A/A′/B/C/D identify implementations, not rankings. Diagrams omit the sample-batch dimension:20×21×3 means twenty future times,twenty-one scene points and three coordinates per point.",
+          "sources": [
+            "E11"
+          ]
+        },
+        {
+          "type": "spec",
+          "headers": [
+            "Model / code identity",
+            "Structure",
+            "Completed work and associated results"
+          ],
+          "rows": [
+            [
+              "A:TrajectoryTokenizer + SparseDynamics,model.py",
+              "Each point trajectory→256 numbers;planned dynamics:6 attention blocks,width256,8 heads,then decoding",
+              "Tokenizer trained/diagnosed;reconstruction gate failed,so formal main dynamics training did not proceed.Independent implementation,not official model/weights."
+            ],
+            [
+              "A′:LosslessTrajectoryTokenizer + SparseDynamics",
+              "Each20×3 point trajectory stored as60 numbers;6 blocks,width256,8 heads;input/output projections changed",
+              "8 training episodes,88 windows,2000 updates only;29.308mm ball training error etc."
+            ],
+            [
+              "B:DirectDynamics,direct_model.py",
+              "2553→512→512→512→1260;complete two-second plan visible",
+              "Eight-episode fit0.440/0.133/0.194mm and early full-data runs.Not the latest formal baseline."
+            ],
+            [
+              "C:TemporalDynamics(variant=causal),temporal_model.py",
+              "All B parameters;each output sees only its allowed plan prefix",
+              "Constrained historical visibility arm;mlp arm of latest six formal runs."
+            ],
+            [
+              "D:InteractionDynamics,interaction_model.py",
+              "Object encoders→12×256→2 object-attention blocks→ball/shared-pin heads",
+              "relation arm of latest six formal runs;fresh-heldout comparison against C."
+            ]
+          ],
+          "caption": "Model-to-experiment mapping.A′ is a separate diagnostic configuration.B/C/D are coordinate-prediction controls."
+        },
+        {
+          "type": "h3",
+          "text": "4.1 Latest-model inputs and outputs"
+        },
+        {
+          "type": "p",
+          "text": "C and D receive the same five raw fields.The21 scene points are one ball center and two endpoints per pin for ten pins;the robot has20 points.Future scene truth and true contact events are excluded.C flattens the inputs;D reorganizes them by object.",
+          "sources": [
+            "E11"
+          ]
+        },
+        {
+          "type": "spec",
+          "headers": [
+            "Input field",
+            "Per-sample shape",
+            "Count and preprocessing in C"
+          ],
+          "rows": [
+            [
+              "scene_current",
+              "21×3",
+              "63 absolute coordinates"
+            ],
+            [
+              "scene_history",
+              "10×21×3",
+              "630 past-minus-current coordinates"
+            ],
+            [
+              "robot_current",
+              "20×3",
+              "60 absolute coordinates"
+            ],
+            [
+              "robot_history",
+              "10×20×3",
+              "600 past-minus-current coordinates"
+            ],
+            [
+              "robot_plan",
+              "20×20×3",
+              "1200 plan-minus-current robot coordinates"
+            ],
+            [
+              "Total/output",
+              "2553 input;20×21×3 output",
+              "1260 displacements + current scene"
+            ]
+          ],
+          "caption": "Metres;0.1s sampling;two seconds per call.Four-second calls accept40 plan frames,using20 per chunk."
+        },
+        {
+          "type": "p",
+          "text": "Input means/standard deviations use training only;the standard-deviation floor is0.001m.Position=current position+predicted displacement.Zero-initialized heads initially predict stationarity;learned outputs receive no stationary,rigid-length or coordinate correction.In diagrams,a→b maps a numbers to b.GELU is the nonlinear function between layers.",
+          "sources": [
+            "E11"
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "4.2 Latest baseline C:fully connected network with plan prefixes",
+          "id": "architecture-c"
+        },
+        {
+          "type": "architecture",
+          "label": "C · TemporalDynamics(variant=\"causal\") · 2,479,340 trainable parameters",
+          "stages": [
+            [
+              {
+                "title": "Past/current:1353 numbers",
+                "lines": [
+                  "Scene63+630;robot60+600"
+                ]
+              },
+              {
+                "title": "Robot plan:20×60 numbers",
+                "lines": [
+                  "Output t reads frames1…t only"
+                ]
+              }
+            ],
+            [
+              {
+                "title": "Hidden1:2553→512,then GELU",
+                "lines": [
+                  "Past/current contribution + plan-prefix contributions",
+                  "20×512 in parallel;later standardized plan features are zero"
+                ]
+              }
+            ],
+            [
+              {
+                "title": "Hidden2 then hidden3:512→512→512",
+                "lines": [
+                  "Two sequential layers;GELU after each",
+                  "Both share parameters across output times"
+                ]
+              }
+            ],
+            [
+              {
+                "title": "Output:512→63 per time",
+                "lines": [
+                  "Stored1260×512 weights split by20 times",
+                  "Each hidden vector uses its matching63 rows"
+                ]
+              }
+            ],
+            [
+              {
+                "title": "20×21×3 displacements + current scene",
+                "lines": [
+                  "Positions at0.1,0.2,…,2.0s"
+                ]
+              }
+            ]
+          ],
+          "caption": "Three hidden layers,not temporal attention.Output-time hidden vectors never exchange information.Prefix visibility adds no trainable parameters."
+        },
+        {
+          "type": "p",
+          "text": "Past/current inputs provide512 numbers.Each60-number plan frame contributes512 numbers;prefix sums give allowed plan information.0.5s uses five frames,1.5s fifteen.Two further512-wide layers and matching output rows produce scene points.A0.1s predicted scene is not fed into0.2s.The unmasked variant exposes all20 plan frames to every output and is algebraically B,apart from floating-point reduction order;it is used for the historical visibility control.",
+          "sources": [
+            "E6",
+            "E11"
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "4.3 D:shared object encoders and two object-attention blocks",
+          "id": "architecture-d"
+        },
+        {
+          "type": "architecture",
+          "label": "D · InteractionDynamics · 2,474,388 trainable parameters",
+          "stages": [
+            [
+              {
+                "title": "Ball:33→480→480→256",
+                "lines": [
+                  "Current3 + past offsets30"
+                ]
+              },
+              {
+                "title": "Pin:66→480→480→256",
+                "lines": [
+                  "Center/half-axis/history;shared"
+                ]
+              },
+              {
+                "title": "Robot:660→480→480→256",
+                "lines": [
+                  "Current60 + past offsets600"
+                ]
+              }
+            ],
+            [
+              {
+                "title": "Twelve object vectors,256 numbers each",
+                "lines": [
+                  "Ball1+pins10+robot1;GELU after first two encoder layers",
+                  "Each plan frame60→256;prefix sum added only to robot"
+                ]
+              }
+            ],
+            [
+              {
+                "title": "Object exchange separately at each output time",
+                "lines": [
+                  "20×12×256 → attention block1 → attention block2",
+                  "8heads×32 per block;current relative positions/distances"
+                ]
+              }
+            ],
+            [
+              {
+                "title": "Ball:256→3 per time",
+                "lines": [
+                  "Stored256→60 head;matching3 rows"
+                ]
+              },
+              {
+                "title": "Pin:256→6 per pin/time",
+                "lines": [
+                  "Stored256→120 head;matching6 rows",
+                  "Shared by ten pins;two XYZ endpoints"
+                ]
+              }
+            ],
+            [
+              {
+                "title": "Merge20×21×3 displacements;add current scene",
+                "lines": [
+                  "Robot vector conditions outputs;robot future is not predicted"
+                ]
+              }
+            ]
+          ],
+          "caption": "Pins share encoder and head.Attention operates over twelve objects,never twenty output times.Two blocks are not two physical timesteps.No within-chunk sequential state update."
+        },
+        {
+          "type": "p",
+          "text": "An encoder is a three-layer fully connected mapping to256 internal numbers.Pin inputs have66 numbers:current center3,current half-axis3,ten past center offsets30,and half-axis offsets30.Center=(top+bottom)/2 and half-axis=(top−bottom)/2 preserve both endpoints invertibly.Outputs are unconstrained endpoint displacements,without a fixed-length projection.Pins also share pooled training normalization statistics.",
+          "sources": [
+            "E11"
+          ]
+        },
+        {
+          "type": "spec",
+          "headers": [
+            "Inside one object-attention block",
+            "Exact computation",
+            "Function"
+          ],
+          "rows": [
+            [
+              "Object comparison",
+              "LayerNorm256;bias-free256→768 Q/K/V;8heads×32",
+              "Read weights over twelve sender objects,never over output times."
+            ],
+            [
+              "Current geometry",
+              "Relative XYZ3+distance1;4→64→264 with GELU",
+              "264=8 score biases+256 geometry-message values;no distance gate."
+            ],
+            [
+              "Message aggregation",
+              "Weighted object/geometry messages→256→256;residual addition",
+              "Retain the original vector and add information from other objects."
+            ],
+            [
+              "Within-object processing",
+              "LayerNorm256;256→128→256 with GELU;residual addition",
+              "Output remains20×12×256;repeat the complete block twice."
+            ]
+          ],
+          "caption": "LayerNorm rescales an internal vector;heads are eight parallel read-weight computations."
+        },
+        {
+          "type": "p",
+          "text": "Relative geometry comes from the current observation at the start of each two-second chunk.It is not refreshed from sequential predicted ball states inside that chunk.D learns object relationships but has no built-in contact solver or precontact stationarity rule.Whether absent within-chunk state advancement is a dominant cause requires a separate experiment.",
+          "sources": [
+            "E11"
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "4.4 Earlier B and original reference-inspired route A"
+        },
+        {
+          "type": "architecture",
+          "label": "B · DirectDynamics · 2,479,340 trainable parameters",
+          "stages": [
+            [
+              {
+                "title": "Five fields flattened/standardized:2553",
+                "lines": [
+                  "All outputs read the complete two-second plan"
+                ]
+              }
+            ],
+            [
+              {
+                "title": "2553→512→512→512",
+                "lines": [
+                  "Three hidden layers;GELU after each"
+                ]
+              }
+            ],
+            [
+              {
+                "title": "512→1260 → reshape20×21×3",
+                "lines": [
+                  "All displacements in one pass;add current scene"
+                ]
+              }
+            ]
+          ],
+          "caption": "No attention,object encoder or learned compression.Eight-episode fitting belongs to B;the latest heldout comparison uses C/D."
+        },
+        {
+          "type": "architecture",
+          "label": "A · Independent reference implementation;trained tokenizer separated from unrun main model",
+          "stages": [
+            [
+              {
+                "title": "Trained:each point trajectory→256 numbers",
+                "lines": [
+                  "Coordinate3→256→256;time modulation;sum over time",
+                  "Decode:time modulation,then256→256→3"
+                ]
+              }
+            ],
+            [
+              {
+                "title": "Dynamics below implemented;formal main training did not proceed",
+                "lines": [
+                  "61 context vectors=scene-history21+robot-history20+plan20",
+                  "Add21 future-scene query vectors,total82×256"
+                ]
+              }
+            ],
+            [
+              {
+                "title": "6 conditioned attention blocks;width256,8heads×32",
+                "lines": [
+                  "Within each block:256→1024→256",
+                  "Spatial anchors,type and generation-progress conditioning"
+                ]
+              }
+            ],
+            [
+              {
+                "title": "Start from noise;ten iterative updates;decode",
+                "lines": [
+                  "Ten generation computations,not physical timesteps",
+                  "Tokenizer reconstruction gate failed;formal main run not started"
+                ]
+              }
+            ]
+          ],
+          "caption": "Not official paper architecture or pretrained weights.The latest39.1% improvement did not come from this six-block generator."
+        },
+        {
+          "type": "p",
+          "text": "A trains reconstruction first,and was intended to freeze that tokenizer before dynamics.Context cannot read future-query vectors,but future queries can read the complete plan.This context mask differs from C/D’s physical-time prefix constraint.The generator learns directions from noise toward the true representation,commonly called flow matching.It did not produce the latest formal results.",
+          "sources": [
+            "E11"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A′ stores each20×3 future point trajectory as60 ordered coordinates;10×3 history fills the first30 entries with zeros after that.The adapter has no learned parameters.Dynamics retains six256-wide/eight-head blocks,but input projection changes256→256 to60→256 and output256→256 to256→60,removing100,548 parameters.Hence not every A layer/parameter is unchanged.A′ only has the88-window/2000-update fit diagnostic.",
+          "sources": [
+            "E2",
+            "E11"
+          ]
+        },
+        {
+          "type": "h3",
+          "text": "4.5 Four-second forecasting and architecture conclusions"
+        },
+        {
+          "type": "p",
+          "text": "B/C/D each output two seconds.Four-second evaluation uses predicted frame20 as the next current scene,and predicted frames10–19 as its ten-frame history.Corresponding robot-plan frames supply robot current/history and the next20 plan frames.The same model predicts again without true intermediate scene input,propagating first-chunk errors.This feedback between chunks differs from the parallel twenty-slot calculation within a chunk.",
+          "sources": [
+            "E11"
+          ]
+        },
+        {
+          "type": "callout",
+          "text": "Pin drift is not simply a demonstrated failure of the paper architecture.The forecasting evidence concerns B/C/D.C removes later-plan influence on earlier outputs.D adds shared objects/geometry messages,improving precontact position but worsening postcontact response.These changes have partial effects;the unique dominant cause remains unestablished."
+        }
+      ]
+    },
+    {
       "id": "metrics",
-      "title": "4 What a correct prediction means",
+      "title": "5 What a correct prediction means",
       "blocks": [
         {
           "type": "p",
@@ -186,7 +597,7 @@
     },
     {
       "id": "history",
-      "title": "5 What each experimental stage established",
+      "title": "6 What each experimental stage established",
       "blocks": [
         {
           "type": "table",
@@ -195,7 +606,7 @@
         },
         {
           "type": "h3",
-          "text": "5.1 Check trajectory compression before future prediction"
+          "text": "6.1 Check trajectory compression before future prediction"
         },
         {
           "type": "p",
@@ -230,7 +641,7 @@
         },
         {
           "type": "h3",
-          "text": "5.2 Bypass compression and test small-set fitting"
+          "text": "6.2 Bypass compression and test small-set fitting"
         },
         {
           "type": "p",
@@ -241,7 +652,7 @@
         },
         {
           "type": "h3",
-          "text": "5.3 Premature movement is measurable before physical contact"
+          "text": "6.3 Premature movement is measurable before physical contact"
         },
         {
           "type": "p",
@@ -254,7 +665,7 @@
     },
     {
       "id": "prefix",
-      "title": "6 Why later actions must not change an earlier prediction",
+      "title": "7 Why later actions must not change an earlier prediction",
       "blocks": [
         {
           "type": "p",
@@ -290,7 +701,7 @@
     },
     {
       "id": "feedback",
-      "title": "7 How errors accumulate through predicted inputs",
+      "title": "8 How errors accumulate through predicted inputs",
       "blocks": [
         {
           "type": "p",
@@ -328,7 +739,7 @@
     },
     {
       "id": "interaction",
-      "title": "8 Design of the fresh shared-object comparison",
+      "title": "9 Design of the fresh shared-object comparison",
       "blocks": [
         {
           "type": "p",
@@ -371,7 +782,7 @@
     },
     {
       "id": "results",
-      "title": "9 Results on fresh heldout scenes",
+      "title": "10 Results on fresh heldout scenes",
       "blocks": [
         {
           "type": "table",
@@ -424,7 +835,7 @@
     },
     {
       "id": "training",
-      "title": "10 Fitting and computational cost",
+      "title": "11 Fitting and computational cost",
       "blocks": [
         {
           "type": "table",
@@ -454,7 +865,7 @@
     },
     {
       "id": "causes",
-      "title": "11 Established findings and competing explanations",
+      "title": "12 Established findings and competing explanations",
       "blocks": [
         {
           "type": "table",
@@ -473,7 +884,7 @@
     },
     {
       "id": "next",
-      "title": "12 How to decide the next experiment",
+      "title": "13 How to decide the next experiment",
       "blocks": [
         {
           "type": "p",
@@ -496,7 +907,7 @@
     },
     {
       "id": "verification",
-      "title": "13 Verification and use limitations",
+      "title": "14 Verification and use limitations",
       "blocks": [
         {
           "type": "p",

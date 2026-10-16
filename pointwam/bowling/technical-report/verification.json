@@ -1,14 +1,21 @@
 {
-  "status": "passed",
-  "created_utc": "2026-10-16T17:24:21.444760+00:00",
+  "status": "built",
+  "created_utc": "2026-10-16T18:02:55.447714+00:00",
   "evidence_revision": "54d1fa0429a06844091e57f10f047ebe7c50472d",
-  "build_source_sha256": "60d15da19b0fa3dceeadd436c0790af21400d0efa2f559fe10073f1afc62158c",
+  "build_source_sha256": "0f5f305fcfd3795febf2b288dbff401143480280f54314e7e741780f354642cf",
   "content_sha256": {
-    "zh-CN": "26d686cf0718378031fdc88d156b02b8c51c936aa6074542a99dea1c1a1e5755",
-    "en": "cadaa7b39b4fbee26357c3aec3872868057c0e53b450cb9fc672d908b7483c32"
+    "zh-CN": "4e4041f3a28b4c3c956cf3a5acef40255c5d4aee08593e5ab697046f39852ae1",
+    "en": "f775a1fd6e9199bb47da44282edb5ddeb5efa02d8068f6e214dfecfdd1a0bd72"
   },
-  "source_files_cold_hashed": 20,
+  "source_files_cold_hashed": 24,
   "source_primary_and_independent_gate_exact": true,
+  "architecture_parameter_counts": {
+    "mlp": 2479340,
+    "relation": 2474388
+  },
+  "architecture_count_matches_recorded_runs": true,
+  "architecture_diagrams_per_language": 4,
+  "architecture_specification_tables_per_language": 3,
   "generated_table_rows": {
     "zh-CN": {
       "datasets": 5,
@@ -38,52 +45,25 @@
   "optimizer_updates": 0,
   "physics_steps": 0,
   "files": {
-    "en.html": "6656538dc5bf3351d3642dff41854a5638d1b3ea6cd8d3ac6a6243b3e464b183",
-    "figures/boundary.en.png": "0a2467ea822082192c7bb856fbd3c4fe85e88fe42b4909b355772cdb810a7ccb",
-    "figures/boundary.en.svg": "9cdff61e09a14db4addb27294b46d748477fcadba0367737aadbee491cdd697f",
-    "figures/boundary.zh-CN.png": "4c16337e14c6c769742db62ef212bfb98b2d14aba534062e03d77efc5b8e3426",
-    "figures/boundary.zh-CN.svg": "7b367554dff26c6728ab63101f8ea954371856246cbe153a37444eeb54ca6efc",
-    "figures/intervals.en.png": "20239af2b8a36408935ffffb3f7c5d45aa0c6a7aeebb5ceba8762ee0c0d9dce6",
-    "figures/intervals.en.svg": "fc92f28a9f9273d704296de4d1aedc71b2d05802d5759411d3b73861000fa8ee",
-    "figures/intervals.zh-CN.png": "598ad6f7f20d384ce54978529c2de30d1e4a957e21ea9b54543ed7b6c2e57816",
-    "figures/intervals.zh-CN.svg": "91dcadfee438855c334db40b5b07a1a36ea86c23c6b0fddbf6664af8ce16da48",
-    "figures/learning.en.png": "0a8bad9e1cd84f502091e7057dcf6ce18a757d046b1059f40a32b99d32a5e1d5",
-    "figures/learning.en.svg": "75ad5732a54c4c113fe49c37d0b6bc0e5a21d52ea0fe45c0da1750a10d084f94",
-    "figures/learning.zh-CN.png": "83452508766be64e5c29c30aa8218c8930366c0e33e312f2ea99ac8bd115d36e",
-    "figures/learning.zh-CN.svg": "215db311f2a1ee8e928c45fa7c88a37c214b1412dc39c453c4db724961a49f60",
-    "figures/primary.en.png": "396a667383adfcbacacfb915e0a39cd0a557fbc019c940f161293d534269fc83",
-    "figures/primary.en.svg": "894bda779350cb8a5cfa8595df60d0d43bac973ed44530800c141104ab8534c5",
-    "figures/primary.zh-CN.png": "059c03f1f5d005056c9096cb66173572d65e21c182a61d383a57ce813d09f558",
-    "figures/primary.zh-CN.svg": "2b050779a9c8860186a01fd7f7d882b0e7077124b3d0894d0d1f7576eb2a21d0",
-    "index.html": "c8405eab63f2450f3b25a3a4039c648e755ecdbf7d1226c51b73389b31791ab4",
-    "report-data.json": "c70be969fc56db190253160d115a81d33825fe129415d51fea2344cc0cab87c9",
+    "en.html": "01e9684f8391fe515b6e5dfbd8868563b6d9e304f5d98fd704182397096644b7",
+    "figures/boundary.en.png": "e804103530a356bd0f864be05efcd8b1cb65fce6e3c27b68ec5daca1d3ab5c6c",
+    "figures/boundary.en.svg": "fe74965220dca6fd8c9fb7b83316dc4487af5f98ffe21471314fd6e91b7b2d10",
+    "figures/boundary.zh-CN.png": "41745e2e7980766c78943cfa9aba11afd4a70955715befe4e5307dc241e5e8c6",
+    "figures/boundary.zh-CN.svg": "dfc9309a6a98fcac9082744d4efd8773d87d83194f11a62af21931e66f497c64",
+    "figures/intervals.en.png": "ee5a858859945ce904724fcadbbc943fb66c1f304ac2f1211356cfe68f3ac9bf",
+    "figures/intervals.en.svg": "5a8720b516351c86f5545e860bcf14a0fb2147456f7faaf4c1e16b6208751912",
+    "figures/intervals.zh-CN.png": "551d4d8c54200927f4eba073835832396f1478ea005f9fc7cdb90136bc9c9d4b",
+    "figures/intervals.zh-CN.svg": "a558e4cc92bf592f7ca421d826ba98d66620a0c6ded75df915ac1bb7bd79f837",
+    "figures/learning.en.png": "6deced923024da82c2a3d1e6f5b9980b0bee7da5da87bc524c9df9471b0a80a4",
+    "figures/learning.en.svg": "87518bf89e38ec26cb6303cfeb9b6f5be0c790a05e576dc8b9421952796731fd",
+    "figures/learning.zh-CN.png": "6b0e6938fe8baea7816fe4e00be27de9c970df4c04a82cd15a536efaec00063a",
+    "figures/learning.zh-CN.svg": "c6fd9d52ed21133cdd0b9eb217900efa868fa2999b2e7c22851180b20dcbd02c",
+    "figures/primary.en.png": "92f9ed85f591bea37f84d0819abf4000376171b260bb7658b09bbfd2919f0d4f",
+    "figures/primary.en.svg": "191ec60007a075dd26ae4348cc7016af521670d7296086cf29888ece65133477",
+    "figures/primary.zh-CN.png": "fc326ca3f6129c698f7076360e2641576c2b8b16a20201e380b50193a7a65605",
+    "figures/primary.zh-CN.svg": "0db8ab918ade625eb708c4cc8ae3c6edf4acae11f490b2bc6f02cf8f04dfef53",
+    "index.html": "0a645a112b6708f58b4c6f49e7e6baca0a39b79dd54b61fa3f1687d7310d693f",
+    "report-data.json": "6116ac326c47e183a0ffd2aef7bf47c8c053d118cdf93937577b3ff13db0bc13",
     "report.js": "956d6181126468eb715a2ba5e7e533167ce0d08e8b6fb357473103209f155fa9"
-  },
-  "quality_checks": {
-    "source_files_match_fixed_evidence_revision": 20,
-    "internal_anchors_valid": true,
-    "embedded_svg_figures_each_language": 4,
-    "all_eight_figure_pngs_visually_inspected": true,
-    "chrome_chinese_english_rendered": true,
-    "chrome_images_loaded": true,
-    "chrome_horizontal_overflow": false,
-    "prefix_button_visible_frames": [
-      5,
-      10,
-      15
-    ],
-    "javascript_syntax": "passed",
-    "canvas_syntax": "passed",
-    "canvas_embedded_data_exact": true,
-    "canvas_runtime_layout": "not independently inspected",
-    "private_path_scan": "passed",
-    "final_narrative_additions": "Training loss/selection grouping and earlier lossless-coordinate control explained; underlying metrics unchanged"
-  },
-  "authoring_environment": {
-    "python": "3.12.6",
-    "matplotlib": "3.11.2",
-    "numpy": "2.5.4",
-    "separate_report_environment": true,
-    "training_environment_unchanged": true
   }
 }
