@@ -1,0 +1,63 @@
+{
+  "status": "built",
+  "implementation_revision": "cf070df4f9ab461f3ab72cdd9e473211adaf8344",
+  "sources": [
+    {
+      "name": "direct_model.py",
+      "sha256": "b0dc0f02af53bfb7eb930af6c262dafaeea4838d2195e0dbc104146210a159b7",
+      "url": "https://github.com/George121380/dynamic-robot-bench/blob/cf070df4f9ab461f3ab72cdd9e473211adaf8344/experiments/pointwam_bowling/direct_model.py"
+    },
+    {
+      "name": "temporal_model.py",
+      "sha256": "bca42ce9d8239d032dbfb4532e5016bddb8473b6f0d6b7935a9fa8d0b9a72c30",
+      "url": "https://github.com/George121380/dynamic-robot-bench/blob/cf070df4f9ab461f3ab72cdd9e473211adaf8344/experiments/pointwam_bowling/temporal_model.py"
+    },
+    {
+      "name": "interaction_model.py",
+      "sha256": "5f1f7ce192bf80c206414e2d37e090487616a0eb27575fac864447068df01ec8",
+      "url": "https://github.com/George121380/dynamic-robot-bench/blob/cf070df4f9ab461f3ab72cdd9e473211adaf8344/experiments/pointwam_bowling/interaction_model.py"
+    },
+    {
+      "name": "model.py",
+      "sha256": "2b603297a50484def6473ba0e3847986eb4f129989b40de0afaf546512235d85",
+      "url": "https://github.com/George121380/dynamic-robot-bench/blob/cf070df4f9ab461f3ab72cdd9e473211adaf8344/experiments/pointwam_bowling/model.py"
+    },
+    {
+      "name": "lossless_tokenizer_diagnostic.py",
+      "sha256": "e54c463d63a2f973b7e5780ff45fca7477aad88e117653a05bfa682c3532afb1",
+      "url": "https://github.com/George121380/dynamic-robot-bench/blob/cf070df4f9ab461f3ab72cdd9e473211adaf8344/experiments/pointwam_bowling/lossless_tokenizer_diagnostic.py"
+    },
+    {
+      "name": "lossless_overfit.py",
+      "sha256": "393d2c9430371e9719a04f71839f83ade0397b549f53c7b249ade43537166294",
+      "url": "https://github.com/George121380/dynamic-robot-bench/blob/cf070df4f9ab461f3ab72cdd9e473211adaf8344/experiments/pointwam_bowling/lossless_overfit.py"
+    },
+    {
+      "name": "protocol.interaction.json",
+      "sha256": "5a6c2fb05d89dc430c39dbdc295c864ba4d1545797901becc2fbcfc00ed3c4f7",
+      "url": "https://github.com/George121380/dynamic-robot-bench/blob/cf070df4f9ab461f3ab72cdd9e473211adaf8344/experiments/pointwam_bowling/protocol.interaction.json"
+    },
+    {
+      "name": "protocol.interaction_data.json",
+      "sha256": "85b44f881cab777ff4fd58acf881e55a7acad8af21e13dce9869f338dceb02e4",
+      "url": "https://github.com/George121380/dynamic-robot-bench/blob/cf070df4f9ab461f3ab72cdd9e473211adaf8344/experiments/pointwam_bowling/protocol.interaction_data.json"
+    }
+  ],
+  "parameter_counts": {
+    "C": 2479340,
+    "D": 2474388
+  },
+  "counts_match_all_formal_runs": true,
+  "models_modified": false,
+  "model_forwards": 0,
+  "optimizer_updates": 0,
+  "physics_steps": 0,
+  "template_sha256": "a8ef7c385d19b330207a3ac8b6f69077d2c08e55985113ff09caa3e7ee4df941",
+  "build_source_sha256": "8954085801596026470561ca28675862f8dcd848935d4574e72202d0b9769117",
+  "index_sha256": "86cf2763a09808ec93179c154d40832fb96d4f2dc727659026db1807104969d5",
+  "languages": [
+    "zh-CN",
+    "en"
+  ],
+  "external_runtime_dependencies": 0
+}
