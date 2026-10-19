@@ -1,0 +1,3702 @@
+{
+  "series": [
+    "truth",
+    "points-seed42",
+    "state-seed42",
+    "points-seed43",
+    "state-seed43",
+    "points-seed44",
+    "state-seed44"
+  ],
+  "shape": [
+    7,
+    67,
+    21,
+    21,
+    3
+  ],
+  "dtype": "little_endian_float32",
+  "units": "m",
+  "dt_s": 0.1,
+  "rows": [
+    {
+      "episode_id": "bowling-seed0051",
+      "seed": 51,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 162,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        2736,
+        2845,
+        2832,
+        2794,
+        2823,
+        2936,
+        2878,
+        2957,
+        2948
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        2736,
+        2845,
+        2832,
+        2794,
+        2823,
+        2936,
+        2878,
+        2957,
+        2948
+      ],
+      "partners": [
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ]
+      ],
+      "source_sha256": "d67cbaa69aa9e46dea83c73b442c2c33138ec3796110b75a154defc66b518330"
+    },
+    {
+      "episode_id": "bowling-seed0051",
+      "seed": 51,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "legacy",
+      "anchor_control": 263,
+      "offset_control": 101,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        2736,
+        2845,
+        2832,
+        2794,
+        2823,
+        2936,
+        2878,
+        2957,
+        2948
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        2736,
+        2845,
+        2832,
+        2794,
+        2823,
+        2936,
+        2878,
+        2957,
+        2948
+      ],
+      "partners": [
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ]
+      ],
+      "source_sha256": "d67cbaa69aa9e46dea83c73b442c2c33138ec3796110b75a154defc66b518330"
+    },
+    {
+      "episode_id": "bowling-seed0052",
+      "seed": 52,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 110,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "ec9159fa4d29750d22b11c7ea2b99f7331bd63a55a478f970ebe274fc5819b4e"
+    },
+    {
+      "episode_id": "bowling-seed0053",
+      "seed": 53,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 97,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "f201e12461afbaa7f09dce48fdc1fdbd3a8d9b5f58409711274422eae5fab4e8"
+    },
+    {
+      "episode_id": "bowling-seed0054",
+      "seed": 54,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 109,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        2299,
+        1000000,
+        1000000,
+        2341,
+        2682,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        2299,
+        1000000,
+        1000000,
+        2341,
+        2682,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [
+          "ball"
+        ],
+        [],
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        []
+      ],
+      "source_sha256": "719f0848a8296fda3f969fedc88a2631fb15960a466a6044dd2d2543cfb5aae8"
+    },
+    {
+      "episode_id": "bowling-seed0054",
+      "seed": 54,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "legacy",
+      "anchor_control": 219,
+      "offset_control": 110,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        2299,
+        1000000,
+        1000000,
+        2341,
+        2682,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        2299,
+        1000000,
+        1000000,
+        2341,
+        2682,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [
+          "ball"
+        ],
+        [],
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        []
+      ],
+      "source_sha256": "719f0848a8296fda3f969fedc88a2631fb15960a466a6044dd2d2543cfb5aae8"
+    },
+    {
+      "episode_id": "bowling-seed0055",
+      "seed": 55,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 164,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        2549,
+        2654,
+        1000000,
+        2600,
+        2601,
+        2621,
+        2748
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        2549,
+        2654,
+        1000000,
+        2600,
+        2601,
+        2621,
+        2748
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ]
+      ],
+      "source_sha256": "1b48f431b5da336eefb92100995f581fd1391ecc08ed2c6b6f56a24a962a83e9"
+    },
+    {
+      "episode_id": "bowling-seed0055",
+      "seed": 55,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "legacy",
+      "anchor_control": 244,
+      "offset_control": 80,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        2549,
+        2654,
+        1000000,
+        2600,
+        2601,
+        2621,
+        2748
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        2549,
+        2654,
+        1000000,
+        2600,
+        2601,
+        2621,
+        2748
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ]
+      ],
+      "source_sha256": "1b48f431b5da336eefb92100995f581fd1391ecc08ed2c6b6f56a24a962a83e9"
+    },
+    {
+      "episode_id": "bowling-seed0056",
+      "seed": 56,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 108,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        2413,
+        2117,
+        2219,
+        2158,
+        2228,
+        2513,
+        2234,
+        2289,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        2413,
+        2117,
+        2219,
+        2158,
+        2228,
+        2513,
+        2234,
+        2289,
+        1000000
+      ],
+      "partners": [
+        [],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        []
+      ],
+      "source_sha256": "53f7e0e07296a31c344b67cbde70635d0a2986ff067b789aa95d25cd0c6f20c8"
+    },
+    {
+      "episode_id": "bowling-seed0056",
+      "seed": 56,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "legacy",
+      "anchor_control": 201,
+      "offset_control": 93,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        2413,
+        2117,
+        2219,
+        2158,
+        2228,
+        2513,
+        2234,
+        2289,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        2413,
+        2117,
+        2219,
+        2158,
+        2228,
+        2513,
+        2234,
+        2289,
+        1000000
+      ],
+      "partners": [
+        [],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        []
+      ],
+      "source_sha256": "53f7e0e07296a31c344b67cbde70635d0a2986ff067b789aa95d25cd0c6f20c8"
+    },
+    {
+      "episode_id": "bowling-seed0057",
+      "seed": 57,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 159,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        2868,
+        1000000,
+        2903,
+        3039,
+        3028,
+        2977,
+        2977,
+        3202
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        2868,
+        1000000,
+        2903,
+        3039,
+        3028,
+        2977,
+        2977,
+        3202
+      ],
+      "partners": [
+        [],
+        [],
+        [
+          "ball"
+        ],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ]
+      ],
+      "source_sha256": "4a27c09fc3ef80f59f92fc9893b2c00ce293d42c9757aa0bb730d50badf3dc78"
+    },
+    {
+      "episode_id": "bowling-seed0057",
+      "seed": 57,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "legacy",
+      "anchor_control": 276,
+      "offset_control": 117,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        1000000,
+        2868,
+        1000000,
+        2903,
+        3039,
+        3028,
+        2977,
+        2977,
+        3202
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        2868,
+        1000000,
+        2903,
+        3039,
+        3028,
+        2977,
+        2977,
+        3202
+      ],
+      "partners": [
+        [],
+        [],
+        [
+          "ball"
+        ],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ]
+      ],
+      "source_sha256": "4a27c09fc3ef80f59f92fc9893b2c00ce293d42c9757aa0bb730d50badf3dc78"
+    },
+    {
+      "episode_id": "bowling-seed0058",
+      "seed": 58,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 178,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "7371c93ef2033cd58a9958b3ed46e0d2b44b70e476987caccb8f8ffcbac9c35f"
+    },
+    {
+      "episode_id": "bowling-seed0059",
+      "seed": 59,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 167,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "47d2ebefe255e86ef6d609a626a3970f7776ac44668c746676afd87dd69ffb5b"
+    },
+    {
+      "episode_id": "bowling-seed0060",
+      "seed": 60,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 131,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "de5e780ac0162eb4843287d783ff1d39c06555dfeefdc4a19e2e9c38b1e857da"
+    },
+    {
+      "episode_id": "bowling-seed0061",
+      "seed": 61,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 89,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "1bd22c871e9f8dac8431a3c93ed819d98db29618443c11a08dd9355d01a7128e"
+    },
+    {
+      "episode_id": "bowling-seed0062",
+      "seed": 62,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 174,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        2542,
+        2568,
+        2607,
+        2643,
+        2609,
+        2957,
+        2768,
+        2714,
+        2748,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        2542,
+        2568,
+        2607,
+        2643,
+        2609,
+        2957,
+        2768,
+        2714,
+        2748,
+        1000000
+      ],
+      "partners": [
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        []
+      ],
+      "source_sha256": "fdd78c2f74cdac9050c38a0721da9b00fa2d66a8179048d174c51d8609d88afb"
+    },
+    {
+      "episode_id": "bowling-seed0062",
+      "seed": 62,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "legacy",
+      "anchor_control": 244,
+      "offset_control": 70,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        2542,
+        2568,
+        2607,
+        2643,
+        2609,
+        2957,
+        2768,
+        2714,
+        2748,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        2542,
+        2568,
+        2607,
+        2643,
+        2609,
+        2957,
+        2768,
+        2714,
+        2748,
+        1000000
+      ],
+      "partners": [
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        []
+      ],
+      "source_sha256": "fdd78c2f74cdac9050c38a0721da9b00fa2d66a8179048d174c51d8609d88afb"
+    },
+    {
+      "episode_id": "bowling-seed0063",
+      "seed": 63,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 186,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        2791,
+        2855,
+        2816,
+        2939,
+        2887,
+        2880,
+        3197,
+        2952,
+        2958,
+        2977
+      ],
+      "dynamic_first_contacts": [
+        2791,
+        2855,
+        2816,
+        2939,
+        2887,
+        2880,
+        3197,
+        2952,
+        2958,
+        2977
+      ],
+      "partners": [
+        [
+          "ball"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ]
+      ],
+      "source_sha256": "fa703fe4ded2f69e9b7b99161e06e2e5d57b65e2f897a7515c65b4b9e6657177"
+    },
+    {
+      "episode_id": "bowling-seed0063",
+      "seed": 63,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "legacy",
+      "anchor_control": 269,
+      "offset_control": 83,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        2791,
+        2855,
+        2816,
+        2939,
+        2887,
+        2880,
+        3197,
+        2952,
+        2958,
+        2977
+      ],
+      "dynamic_first_contacts": [
+        2791,
+        2855,
+        2816,
+        2939,
+        2887,
+        2880,
+        3197,
+        2952,
+        2958,
+        2977
+      ],
+      "partners": [
+        [
+          "ball"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ]
+      ],
+      "source_sha256": "fa703fe4ded2f69e9b7b99161e06e2e5d57b65e2f897a7515c65b4b9e6657177"
+    },
+    {
+      "episode_id": "bowling-seed0064",
+      "seed": 64,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 171,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "dd2d3001748260e1a5c2a73d2901a9270358a40cd26083dc3c3f72a82dcda837"
+    },
+    {
+      "episode_id": "bowling-seed0065",
+      "seed": 65,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 171,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "27ab5dd21dc2d3665a7e641ebb4ebc63f828705a25cf22a0fe9b00b950288eb6"
+    },
+    {
+      "episode_id": "bowling-seed0066",
+      "seed": 66,
+      "split": "validation",
+      "view": "original",
+      "cohort": "legacy",
+      "anchor_control": 106,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        2158,
+        2058,
+        2145,
+        2125,
+        2122,
+        2269,
+        2527,
+        2166,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        2158,
+        2058,
+        2145,
+        2125,
+        2122,
+        2269,
+        2527,
+        2166,
+        1000000
+      ],
+      "partners": [
+        [],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        []
+      ],
+      "source_sha256": "f730a910aaeafe89c4eeccdf9cb88ccc9a2fe437c1080f9cc34ee5fb9f9250f6"
+    },
+    {
+      "episode_id": "bowling-seed0066",
+      "seed": 66,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "legacy",
+      "anchor_control": 195,
+      "offset_control": 89,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        2158,
+        2058,
+        2145,
+        2125,
+        2122,
+        2269,
+        2527,
+        2166,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        2158,
+        2058,
+        2145,
+        2125,
+        2122,
+        2269,
+        2527,
+        2166,
+        1000000
+      ],
+      "partners": [
+        [],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        []
+      ],
+      "source_sha256": "f730a910aaeafe89c4eeccdf9cb88ccc9a2fe437c1080f9cc34ee5fb9f9250f6"
+    },
+    {
+      "episode_id": "bowling-seed810000",
+      "seed": 810000,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 183,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "e29b08851884bf6d3234eb36a8cfdbbb483ca75b0f5245f216777afae598787e"
+    },
+    {
+      "episode_id": "bowling-seed810001",
+      "seed": 810001,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 144,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "80e22d23094acb78a08597b66da611a5584132c7a3f606fb28ed7adc66c78fb2"
+    },
+    {
+      "episode_id": "bowling-seed810002",
+      "seed": 810002,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 128,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2591
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2591
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "ball"
+        ]
+      ],
+      "source_sha256": "d5423ebc07d4bd37a0d035d81ce3b3d4b7b382e89a76dc22963afd2469afc40b"
+    },
+    {
+      "episode_id": "bowling-seed810002",
+      "seed": 810002,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "previous_fresh",
+      "anchor_control": 249,
+      "offset_control": 121,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2591
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2591
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "ball"
+        ]
+      ],
+      "source_sha256": "d5423ebc07d4bd37a0d035d81ce3b3d4b7b382e89a76dc22963afd2469afc40b"
+    },
+    {
+      "episode_id": "bowling-seed810003",
+      "seed": 810003,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 161,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "932e1a01a68a1ded82f7af0e0b41a7ec5532e220da3d066e11dc6fd90614ce04"
+    },
+    {
+      "episode_id": "bowling-seed810004",
+      "seed": 810004,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 116,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "238a9120e5365cd34d99935b7470c863583c23e052c8d3462be3c1a1905b677c"
+    },
+    {
+      "episode_id": "bowling-seed810005",
+      "seed": 810005,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 159,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        2400,
+        2437,
+        2455,
+        2558,
+        2503,
+        2555,
+        2763,
+        2590,
+        2547,
+        2686
+      ],
+      "dynamic_first_contacts": [
+        2400,
+        2437,
+        2455,
+        2558,
+        2503,
+        2555,
+        2763,
+        2590,
+        2547,
+        2686
+      ],
+      "partners": [
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ]
+      ],
+      "source_sha256": "b88fa9551b8d63c4080aff656d34ed5ca379b1d17d007e0498c52d8c6dca1a35"
+    },
+    {
+      "episode_id": "bowling-seed810005",
+      "seed": 810005,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "previous_fresh",
+      "anchor_control": 230,
+      "offset_control": 71,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        2400,
+        2437,
+        2455,
+        2558,
+        2503,
+        2555,
+        2763,
+        2590,
+        2547,
+        2686
+      ],
+      "dynamic_first_contacts": [
+        2400,
+        2437,
+        2455,
+        2558,
+        2503,
+        2555,
+        2763,
+        2590,
+        2547,
+        2686
+      ],
+      "partners": [
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ]
+      ],
+      "source_sha256": "b88fa9551b8d63c4080aff656d34ed5ca379b1d17d007e0498c52d8c6dca1a35"
+    },
+    {
+      "episode_id": "bowling-seed810006",
+      "seed": 810006,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 172,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2881,
+        2548,
+        1000000,
+        2665,
+        2571,
+        2604
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2881,
+        2548,
+        1000000,
+        2665,
+        2571,
+        2604
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ]
+      ],
+      "source_sha256": "a7f1733591bd1185cb4d7e92d8956a07eb26e75e8ee08dc01037d5b52595829f"
+    },
+    {
+      "episode_id": "bowling-seed810006",
+      "seed": 810006,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "previous_fresh",
+      "anchor_control": 244,
+      "offset_control": 72,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2881,
+        2548,
+        1000000,
+        2665,
+        2571,
+        2604
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2881,
+        2548,
+        1000000,
+        2665,
+        2571,
+        2604
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ]
+      ],
+      "source_sha256": "a7f1733591bd1185cb4d7e92d8956a07eb26e75e8ee08dc01037d5b52595829f"
+    },
+    {
+      "episode_id": "bowling-seed810007",
+      "seed": 810007,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 133,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "c910e7de4d94a6c4ff16d98d5fcfac9d176bfe1cef5c6eae84b5944471b7bb22"
+    },
+    {
+      "episode_id": "bowling-seed810008",
+      "seed": 810008,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 134,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "8cc5e42b72e497056c60bda87555f481e9f30c78258924f7cd42f576ea584b84"
+    },
+    {
+      "episode_id": "bowling-seed810009",
+      "seed": 810009,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 163,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "fb61a3a6f0ebd680cd09c38c457b4907d65aa09d4891f7f5bf926b36cec81733"
+    },
+    {
+      "episode_id": "bowling-seed810010",
+      "seed": 810010,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 133,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2782,
+        2350,
+        1000000,
+        2557,
+        2374,
+        2462
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2782,
+        2350,
+        1000000,
+        2557,
+        2374,
+        2462
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ]
+      ],
+      "source_sha256": "5a543b01a7e140d2aba62cbb448129e1cefac1edc92bb7798e3ccef0566aaa92"
+    },
+    {
+      "episode_id": "bowling-seed810010",
+      "seed": 810010,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "previous_fresh",
+      "anchor_control": 225,
+      "offset_control": 92,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2782,
+        2350,
+        1000000,
+        2557,
+        2374,
+        2462
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2782,
+        2350,
+        1000000,
+        2557,
+        2374,
+        2462
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ]
+      ],
+      "source_sha256": "5a543b01a7e140d2aba62cbb448129e1cefac1edc92bb7798e3ccef0566aaa92"
+    },
+    {
+      "episode_id": "bowling-seed810011",
+      "seed": 810011,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 141,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "fe9144538dd5729f62543717a7eb8a56ea1424b121fcc86a4f88b6e68a10cac2"
+    },
+    {
+      "episode_id": "bowling-seed810012",
+      "seed": 810012,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 147,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        2207,
+        2275,
+        2228,
+        1000000,
+        2281,
+        2283,
+        2446,
+        2372,
+        1000000,
+        2356
+      ],
+      "dynamic_first_contacts": [
+        2207,
+        2275,
+        2228,
+        1000000,
+        2281,
+        2283,
+        2446,
+        2372,
+        1000000,
+        2356
+      ],
+      "partners": [
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        [
+          "pin"
+        ]
+      ],
+      "source_sha256": "3ddf190df423f45261dcfa8a3d8afb5bc3f204679e176796da7d6684317681b7"
+    },
+    {
+      "episode_id": "bowling-seed810012",
+      "seed": 810012,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "previous_fresh",
+      "anchor_control": 210,
+      "offset_control": 63,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        2207,
+        2275,
+        2228,
+        1000000,
+        2281,
+        2283,
+        2446,
+        2372,
+        1000000,
+        2356
+      ],
+      "dynamic_first_contacts": [
+        2207,
+        2275,
+        2228,
+        1000000,
+        2281,
+        2283,
+        2446,
+        2372,
+        1000000,
+        2356
+      ],
+      "partners": [
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        [
+          "pin"
+        ]
+      ],
+      "source_sha256": "3ddf190df423f45261dcfa8a3d8afb5bc3f204679e176796da7d6684317681b7"
+    },
+    {
+      "episode_id": "bowling-seed810014",
+      "seed": 810014,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 188,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "056e32981a1247c48a8a1bf9e0aa4975c99eca64e337c65a370480d3ec850fde"
+    },
+    {
+      "episode_id": "bowling-seed810015",
+      "seed": 810015,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 157,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "079b7b4d10056f02965fc95eff1649b355140749be170d1362fd3ecf7f915907"
+    },
+    {
+      "episode_id": "bowling-seed810016",
+      "seed": 810016,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 130,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "438d9d4aa9ab768e638279a505f27eb6f4bca640fe7db23e63a0316e01414997"
+    },
+    {
+      "episode_id": "bowling-seed810017",
+      "seed": 810017,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 164,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "89d2a82aa032a6d60f00e241dc86df5844be77adba82cd920d9f7dbab3113553"
+    },
+    {
+      "episode_id": "bowling-seed810018",
+      "seed": 810018,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 156,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        2405,
+        2441,
+        2446,
+        2559,
+        2490,
+        2581,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        2405,
+        2441,
+        2446,
+        2559,
+        2490,
+        2581,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "2cc6212f061b6f17f0a0fc6420d42264080407653b58d53a59c1c86c0a86b289"
+    },
+    {
+      "episode_id": "bowling-seed810018",
+      "seed": 810018,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "previous_fresh",
+      "anchor_control": 230,
+      "offset_control": 74,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        2405,
+        2441,
+        2446,
+        2559,
+        2490,
+        2581,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        2405,
+        2441,
+        2446,
+        2559,
+        2490,
+        2581,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "2cc6212f061b6f17f0a0fc6420d42264080407653b58d53a59c1c86c0a86b289"
+    },
+    {
+      "episode_id": "bowling-seed810019",
+      "seed": 810019,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 140,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2722,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2722,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "ball"
+        ],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "d89d728372e9519d17930cc92847d87f969420f51ff451387a54f77a4f0b9cd1"
+    },
+    {
+      "episode_id": "bowling-seed810019",
+      "seed": 810019,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "previous_fresh",
+      "anchor_control": 262,
+      "offset_control": 122,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2722,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2722,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "ball"
+        ],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "d89d728372e9519d17930cc92847d87f969420f51ff451387a54f77a4f0b9cd1"
+    },
+    {
+      "episode_id": "bowling-seed810020",
+      "seed": 810020,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 140,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        2254,
+        2551,
+        2330,
+        2285,
+        2320,
+        2435,
+        2366,
+        2344,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        2254,
+        2551,
+        2330,
+        2285,
+        2320,
+        2435,
+        2366,
+        2344,
+        1000000
+      ],
+      "partners": [
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        []
+      ],
+      "source_sha256": "bce393b1be3860fe38b25a6a629261ca979a51152d450939811caba664446ad4"
+    },
+    {
+      "episode_id": "bowling-seed810020",
+      "seed": 810020,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "previous_fresh",
+      "anchor_control": 215,
+      "offset_control": 75,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        2254,
+        2551,
+        2330,
+        2285,
+        2320,
+        2435,
+        2366,
+        2344,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        2254,
+        2551,
+        2330,
+        2285,
+        2320,
+        2435,
+        2366,
+        2344,
+        1000000
+      ],
+      "partners": [
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        []
+      ],
+      "source_sha256": "bce393b1be3860fe38b25a6a629261ca979a51152d450939811caba664446ad4"
+    },
+    {
+      "episode_id": "bowling-seed810021",
+      "seed": 810021,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 138,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2601,
+        1000000,
+        1000000,
+        2628,
+        2713
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2601,
+        1000000,
+        1000000,
+        2628,
+        2713
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "ball"
+        ],
+        [],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ]
+      ],
+      "source_sha256": "23e6233f70ee4f4f09c178aeda84e13d95cd5cb91f83836bf6cdf37351e16d14"
+    },
+    {
+      "episode_id": "bowling-seed810021",
+      "seed": 810021,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "previous_fresh",
+      "anchor_control": 250,
+      "offset_control": 112,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2601,
+        1000000,
+        1000000,
+        2628,
+        2713
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        2601,
+        1000000,
+        1000000,
+        2628,
+        2713
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+          "ball"
+        ],
+        [],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ]
+      ],
+      "source_sha256": "23e6233f70ee4f4f09c178aeda84e13d95cd5cb91f83836bf6cdf37351e16d14"
+    },
+    {
+      "episode_id": "bowling-seed810022",
+      "seed": 810022,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 169,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        2848,
+        2893,
+        2904,
+        3084,
+        2924,
+        3340,
+        1000000,
+        3061,
+        3075,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        2848,
+        2893,
+        2904,
+        3084,
+        2924,
+        3340,
+        1000000,
+        3061,
+        3075,
+        1000000
+      ],
+      "partners": [
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        []
+      ],
+      "source_sha256": "7efd637b20dfe9aa3578197ef7d28c5cb5723974f92a8f63a158bcba838a1771"
+    },
+    {
+      "episode_id": "bowling-seed810022",
+      "seed": 810022,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "previous_fresh",
+      "anchor_control": 274,
+      "offset_control": 105,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        2848,
+        2893,
+        2904,
+        3084,
+        2924,
+        3340,
+        1000000,
+        3061,
+        3075,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        2848,
+        2893,
+        2904,
+        3084,
+        2924,
+        3340,
+        1000000,
+        3061,
+        3075,
+        1000000
+      ],
+      "partners": [
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        []
+      ],
+      "source_sha256": "7efd637b20dfe9aa3578197ef7d28c5cb5723974f92a8f63a158bcba838a1771"
+    },
+    {
+      "episode_id": "bowling-seed810023",
+      "seed": 810023,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 157,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "4cc40306ad625ce57eb439cb168ead6f820b8d0a3ba1f0fbcb846962cdb75af6"
+    },
+    {
+      "episode_id": "bowling-seed810024",
+      "seed": 810024,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 150,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "78b957e19ffde94f55204af29173a4c3e334895a68054ae359ab85a9ace6b8c5"
+    },
+    {
+      "episode_id": "bowling-seed810025",
+      "seed": 810025,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 167,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "39e1a68e6dddab8c13f88302a6442dbc7a88c32a1cc2833f338322b9557c1a33"
+    },
+    {
+      "episode_id": "bowling-seed810026",
+      "seed": 810026,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 95,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "eff806bff5400832dde2ec138c6f55a1ecaf09f3566559c51a28a51005aa7eb7"
+    },
+    {
+      "episode_id": "bowling-seed810027",
+      "seed": 810027,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 173,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        2979,
+        3097,
+        3015,
+        3143,
+        3198,
+        3132,
+        3051,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        2979,
+        3097,
+        3015,
+        3143,
+        3198,
+        3132,
+        3051,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        []
+      ],
+      "source_sha256": "5c7aad2d031c01ad65988f878967d7cf1118f7665d65b868020471b9d301f3fb"
+    },
+    {
+      "episode_id": "bowling-seed810027",
+      "seed": 810027,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "previous_fresh",
+      "anchor_control": 287,
+      "offset_control": 114,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        2979,
+        3097,
+        3015,
+        3143,
+        3198,
+        3132,
+        3051,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        2979,
+        3097,
+        3015,
+        3143,
+        3198,
+        3132,
+        3051,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [],
+        []
+      ],
+      "source_sha256": "5c7aad2d031c01ad65988f878967d7cf1118f7665d65b868020471b9d301f3fb"
+    },
+    {
+      "episode_id": "bowling-seed810028",
+      "seed": 810028,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 161,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        2516,
+        2812,
+        2604,
+        2539,
+        2631,
+        2663,
+        2644,
+        2592,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        2516,
+        2812,
+        2604,
+        2539,
+        2631,
+        2663,
+        2644,
+        2592,
+        1000000
+      ],
+      "partners": [
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        []
+      ],
+      "source_sha256": "e69d1dc7dcae4ea4f4b140a92539910ab43910d191c8b605c6ea9cee759f50d9"
+    },
+    {
+      "episode_id": "bowling-seed810028",
+      "seed": 810028,
+      "split": "validation",
+      "view": "aligned",
+      "cohort": "previous_fresh",
+      "anchor_control": 241,
+      "offset_control": 80,
+      "kind": "contact_aligned",
+      "first_contacts": [
+        1000000,
+        2516,
+        2812,
+        2604,
+        2539,
+        2631,
+        2663,
+        2644,
+        2592,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        2516,
+        2812,
+        2604,
+        2539,
+        2631,
+        2663,
+        2644,
+        2592,
+        1000000
+      ],
+      "partners": [
+        [],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "ball"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        [
+          "pin"
+        ],
+        []
+      ],
+      "source_sha256": "e69d1dc7dcae4ea4f4b140a92539910ab43910d191c8b605c6ea9cee759f50d9"
+    },
+    {
+      "episode_id": "bowling-seed810029",
+      "seed": 810029,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 55,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "bf2e89a339024e03e97ab736859dd650b8e1a1325765099081069d7760f43fae"
+    },
+    {
+      "episode_id": "bowling-seed810030",
+      "seed": 810030,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 139,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "11bad7c06e6ecbb4525da0fd9c5d016727765eda97b975f55a95a1cfa2bfbc7f"
+    },
+    {
+      "episode_id": "bowling-seed810031",
+      "seed": 810031,
+      "split": "validation",
+      "view": "original",
+      "cohort": "previous_fresh",
+      "anchor_control": 96,
+      "offset_control": 0,
+      "kind": "prepush",
+      "first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "dynamic_first_contacts": [
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000,
+        1000000
+      ],
+      "partners": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "source_sha256": "4438e289d57fb0076fae835cd9a5e668778f8ee68872217672b9243d42f8bca2"
+    }
+  ],
+  "source_prediction_sha256": {
+    "points-seed42": "74752041de9378d66f1c66641dca2b5aecdbed77037cbabc07c58c4f8b53c278",
+    "state-seed42": "f411ba7b192f6d7beedb43bea876bc7b422a862dbcfba125a882621308c2387c",
+    "points-seed43": "590ea24196e2448a787acb0b56212216d5719bd2b947ace76a457eb91d6ec577",
+    "state-seed43": "f4e3e8f22df068ba5ee0118f467e75864195dfe3b81e6c10aaca9bb6f02cd72f",
+    "points-seed44": "4ee46cd82237e5b174570741c5d018d38559f499819fa46b2f8982d475b9dc0a",
+    "state-seed44": "ce7b0b63e7e430d3e6d7c90209086986b58022152f7f4f05f6974b192c9d0007"
+  },
+  "raw_trajectories_sha256": "ff90c195ac1f0bea2f5a292d21c92abcddd80b4771ccfd4127754c751513ae36",
+  "display": "Exact original float32 outputs; no spatial or temporal correction,quantization or interpolation."
+}

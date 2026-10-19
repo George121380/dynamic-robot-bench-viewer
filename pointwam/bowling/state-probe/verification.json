@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "viewer_shape": [
+    7,
+    67,
+    21,
+    21,
+    3
+  ],
+  "viewer_float_values": 620487,
+  "renderer_sha256": "3a176f6bc66b0a8acfdf40a5427e0891e2cc7f8ca74614052ac4bf39fe69ff07",
+  "template_sha256": "0c75e3dcd562fa491fe3a0662d92f697c00d42a19b805f0b676346023fe0b68f",
+  "raw_trajectory_sha256": "ff90c195ac1f0bea2f5a292d21c92abcddd80b4771ccfd4127754c751513ae36",
+  "display_quantization": "none; original_float32",
+  "source_export_sha256": "92817a408902586dc8af5f30118f15750aa0037f2f82b37c4e307cbedf09c421",
+  "files": {
+    "audit.json": "0d79b82388d74e17ad657fe23348c6f3963d1576de6163b587049852745d7bdc",
+    "curves.svg": "8afba253ff31d8d8c78e602bdb5731587ee5d9996556ef726d0c9d7ee26d5017",
+    "index.html": "101891ac62328676cc7fba37352d8fa38fca789bad4db1f271db0f939957e965",
+    "paired.svg": "d59e5502ed6e1732a2d2e943069a5bed742dfae7cab948012e7f9aa108d47175",
+    "protocol.json": "423fac001a172ab97a2cce998993624840569c3ddede566bf3e42a7b01d05ce3",
+    "viewer-meta.json": "3d606cd31a6cda632e8a97c8187b67e7b17420cb61cc50b909bed143694abf22"
+  }
+}
