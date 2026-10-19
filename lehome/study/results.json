@@ -335,13 +335,13 @@
       }
     },
     "source_commit": "ac703750a47c930ce87169132850d4c93deced03",
-    "completed_replays": 69,
+    "completed_replays": 71,
     "expected_replays": 250,
     "active_condition": null,
     "snapshot_utc": "2026-10-19T18:27:45.102796+00:00",
     "paused_by_user": true,
     "reason": "User requested settings review before starting training",
-    "collection_count_snapshot_utc": "2026-10-19T22:14:11.802365+00:00"
+    "collection_count_snapshot_utc": "2026-10-19T22:21:58.013127+00:00"
   },
   "architecture_review": {
     "schema": 1,
@@ -849,7 +849,7 @@
     "offline_matches_checkpoint_receipt": true,
     "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b"
   },
-  "snapshot_utc": "2026-10-19T22:14:11.802365+00:00",
+  "snapshot_utc": "2026-10-19T22:21:58.013127+00:00",
   "capacity": {
     "total_instantiated": 74929807,
     "track_encoder": 3293952,
@@ -3605,7 +3605,7 @@
       "fingerprint": "c0bd927fd9cfaebac8f535c350b0c842e3b55352f54eaeb2c94527605de1c4dd"
     },
     "lease": {
-      "snapshot_utc": "2026-10-19T22:13:28.338712+00:00",
+      "snapshot_utc": "2026-10-19T22:21:23.966620+00:00",
       "hard_deadline_utc": "2026-10-19T22:56:28Z",
       "cleanup_target_utc": "2026-10-19T22:53:28+00:00",
       "jobs": [
@@ -3765,7 +3765,7 @@
           "submitted_utc": "2026-10-19T22:06:33.918686+00:00",
           "deadline_utc": "2026-10-19T22:56:28Z",
           "code_commit": "c8249e822c8861aa2fd406ed30883b6e2f4c7ef5",
-          "status": "Running"
+          "status": "Succeeded"
         },
         {
           "job_id": "job-pgdgliulwvo7",
@@ -3780,7 +3780,7 @@
           "status": "Running"
         }
       ],
-      "active_owned_jobs": 4
+      "active_owned_jobs": 3
     },
     "jobs": [
       {
@@ -64956,25 +64956,428 @@
         "retry_rule": "Only an explicit pre-actor initial_state_rejected_before_actor record may retry; completed outcomes and other errors never retry",
         "scope": "One fixed development pose, four trained seeds, accepted starts conditioned on one canonical full state. No environment-generalization success-rate claim."
       },
-      "audit": null,
+      "audit": {
+        "status": "partial",
+        "completed_cells": 1,
+        "planned_cells": 64,
+        "strict_start_tolerances": {
+          "world_points": 1e-05,
+          "finite_difference_velocity": 0.001,
+          "joint_position": 1e-05,
+          "joint_velocity": 1e-05
+        },
+        "maximum_actual_start_differences": {
+          "world_points": 0.0,
+          "finite_difference_velocity": 0.0,
+          "joint_position": 0.0,
+          "joint_velocity": 0.0
+        },
+        "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+        "records": [
+          {
+            "training_seed": 1000,
+            "condition": "act",
+            "execution_horizon": 100,
+            "final_success": false,
+            "ever_success": false,
+            "path": "cases/seed-1000/execute-100/act/attempt-001",
+            "accepted_attempt": 1
+          }
+        ],
+        "rejected_initializations": [
+          "cases/seed-1000/execute-100/rgb_history/attempt-001",
+          "cases/seed-1000/execute-100/completion_gain100_w01/attempt-001",
+          "cases/seed-1000/execute-10/act/attempt-001",
+          "cases/seed-1000/execute-10/rgb_history/attempt-001",
+          "cases/seed-1000/execute-10/geometry/attempt-001",
+          "cases/seed-1000/execute-10/tracks/attempt-001",
+          "cases/seed-1000/execute-10/tracks_completion/attempt-001",
+          "cases/seed-1000/execute-10/completion_gain100_w01/attempt-001",
+          "cases/seed-1001/execute-100/act/attempt-001",
+          "cases/seed-1001/execute-100/act/attempt-002",
+          "cases/seed-1001/execute-100/rgb_history/attempt-001",
+          "cases/seed-1001/execute-100/rgb_history/attempt-002",
+          "cases/seed-1001/execute-100/geometry/attempt-001",
+          "cases/seed-1001/execute-100/geometry/attempt-002",
+          "cases/seed-1001/execute-100/tracks/attempt-001",
+          "cases/seed-1001/execute-100/tracks/attempt-002",
+          "cases/seed-1001/execute-100/completion_gain100_w01/attempt-001",
+          "cases/seed-1001/execute-100/completion_gain100_w01/attempt-002",
+          "cases/seed-1001/execute-100/completion_gain100_w1/attempt-001",
+          "cases/seed-1001/execute-100/completion_gain100_w1/attempt-002",
+          "cases/seed-1001/execute-100/completion_gain100_w10/attempt-001",
+          "cases/seed-1001/execute-100/completion_gain100_w10/attempt-002",
+          "cases/seed-1001/execute-10/act/attempt-001",
+          "cases/seed-1001/execute-10/act/attempt-002",
+          "cases/seed-1001/execute-10/rgb_history/attempt-001",
+          "cases/seed-1001/execute-10/rgb_history/attempt-002",
+          "cases/seed-1001/execute-10/geometry/attempt-001",
+          "cases/seed-1001/execute-10/geometry/attempt-002",
+          "cases/seed-1001/execute-10/tracks/attempt-001",
+          "cases/seed-1001/execute-10/tracks/attempt-002",
+          "cases/seed-1001/execute-10/tracks_completion/attempt-001",
+          "cases/seed-1001/execute-10/tracks_completion/attempt-002",
+          "cases/seed-1001/execute-10/completion_gain100_w01/attempt-001",
+          "cases/seed-1001/execute-10/completion_gain100_w1/attempt-001",
+          "cases/seed-1001/execute-10/completion_gain100_w10/attempt-001",
+          "cases/seed-1002/execute-100/geometry/attempt-001",
+          "cases/seed-1002/execute-100/tracks/attempt-001",
+          "cases/seed-1002/execute-100/completion_gain100_w01/attempt-001",
+          "cases/seed-1002/execute-100/completion_gain100_w1/attempt-001",
+          "cases/seed-1002/execute-10/act/attempt-001",
+          "cases/seed-1002/execute-10/rgb_history/attempt-001",
+          "cases/seed-1002/execute-10/geometry/attempt-001",
+          "cases/seed-1002/execute-10/tracks/attempt-001",
+          "cases/seed-1002/execute-10/tracks_completion/attempt-001",
+          "cases/seed-1002/execute-10/completion_gain100_w01/attempt-001",
+          "cases/seed-1002/execute-10/completion_gain100_w1/attempt-001",
+          "cases/seed-1002/execute-10/completion_gain100_w10/attempt-001"
+        ],
+        "attempts": [
+          {
+            "path": "cases/seed-1000/execute-100/act/attempt-001",
+            "status": "complete"
+          },
+          {
+            "path": "cases/seed-1000/execute-100/rgb_history/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1000/execute-100/geometry/attempt-001",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1000/execute-100/tracks/attempt-001",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1000/execute-100/tracks_completion/attempt-001",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1000/execute-100/completion_gain100_w01/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1000/execute-100/completion_gain100_w1/attempt-001",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1000/execute-100/completion_gain100_w10/attempt-001",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1000/execute-10/act/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1000/execute-10/rgb_history/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1000/execute-10/geometry/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1000/execute-10/tracks/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1000/execute-10/tracks_completion/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1000/execute-10/completion_gain100_w01/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1000/execute-10/completion_gain100_w1/attempt-001",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1000/execute-10/completion_gain100_w10/attempt-001",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/act/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/act/attempt-002",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/rgb_history/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/rgb_history/attempt-002",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/geometry/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/geometry/attempt-002",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/tracks/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/tracks/attempt-002",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/tracks_completion/attempt-001",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/completion_gain100_w01/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/completion_gain100_w01/attempt-002",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/completion_gain100_w1/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/completion_gain100_w1/attempt-002",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/completion_gain100_w10/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-100/completion_gain100_w10/attempt-002",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/act/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/act/attempt-002",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/rgb_history/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/rgb_history/attempt-002",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/geometry/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/geometry/attempt-002",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/tracks/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/tracks/attempt-002",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/tracks_completion/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/tracks_completion/attempt-002",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/completion_gain100_w01/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/completion_gain100_w01/attempt-002",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/completion_gain100_w1/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/completion_gain100_w1/attempt-002",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/completion_gain100_w10/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1001/execute-10/completion_gain100_w10/attempt-002",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1002/execute-100/act/attempt-001",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1002/execute-100/rgb_history/attempt-001",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1002/execute-100/geometry/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1002/execute-100/geometry/attempt-002",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1002/execute-100/tracks/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1002/execute-100/tracks/attempt-002",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1002/execute-100/tracks_completion/attempt-001",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1002/execute-100/completion_gain100_w01/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1002/execute-100/completion_gain100_w01/attempt-002",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1002/execute-100/completion_gain100_w1/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1002/execute-100/completion_gain100_w1/attempt-002",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1002/execute-100/completion_gain100_w10/attempt-001",
+            "status": "starting"
+          },
+          {
+            "path": "cases/seed-1002/execute-10/act/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1002/execute-10/rgb_history/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1002/execute-10/geometry/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1002/execute-10/tracks/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1002/execute-10/tracks_completion/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1002/execute-10/completion_gain100_w01/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1002/execute-10/completion_gain100_w1/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1002/execute-10/completion_gain100_w10/attempt-001",
+            "status": "initial_state_rejected_before_actor"
+          },
+          {
+            "path": "cases/seed-1003/execute-100/act/attempt-001",
+            "status": "starting"
+          }
+        ],
+        "videos": [],
+        "all_videos_decoded": false,
+        "scope": "One fixed development pose, four trained seeds, accepted starts conditioned on one canonical full state. No environment-generalization success-rate claim.",
+        "selection": "Only pre-actor state predicates trigger retries; no completed outcome is resampled"
+      },
       "workers": {
         "worker-1000": {
           "status": "running",
-          "completed": [],
+          "completed": [
+            "cases/seed-1000/execute-100/act/attempt-001",
+            "cases/seed-1000/execute-100/tracks_completion/attempt-001",
+            "cases/seed-1000/execute-100/geometry/attempt-001",
+            "cases/seed-1000/execute-100/tracks/attempt-001",
+            "cases/seed-1000/execute-100/completion_gain100_w1/attempt-001",
+            "cases/seed-1000/execute-100/completion_gain100_w10/attempt-001"
+          ],
           "rejected_initializations": [
             "cases/seed-1000/execute-100/rgb_history/attempt-001",
             "cases/seed-1000/execute-100/completion_gain100_w01/attempt-001",
             "cases/seed-1000/execute-10/act/attempt-001",
-            "cases/seed-1000/execute-10/rgb_history/attempt-001"
+            "cases/seed-1000/execute-10/rgb_history/attempt-001",
+            "cases/seed-1000/execute-10/geometry/attempt-001",
+            "cases/seed-1000/execute-10/tracks/attempt-001",
+            "cases/seed-1000/execute-10/tracks_completion/attempt-001",
+            "cases/seed-1000/execute-10/completion_gain100_w01/attempt-001",
+            "cases/seed-1000/execute-10/completion_gain100_w1/attempt-001",
+            "cases/seed-1000/execute-10/completion_gain100_w10/attempt-001",
+            "cases/seed-1003/execute-100/act/attempt-001",
+            "cases/seed-1003/execute-100/rgb_history/attempt-001",
+            "cases/seed-1003/execute-100/geometry/attempt-001",
+            "cases/seed-1003/execute-100/tracks/attempt-001",
+            "cases/seed-1003/execute-100/tracks_completion/attempt-001",
+            "cases/seed-1003/execute-10/geometry/attempt-001",
+            "cases/seed-1003/execute-10/rgb_history/attempt-001",
+            "cases/seed-1003/execute-10/tracks/attempt-001",
+            "cases/seed-1003/execute-100/completion_gain100_w01/attempt-001",
+            "cases/seed-1003/execute-100/completion_gain100_w1/attempt-001",
+            "cases/seed-1003/execute-100/completion_gain100_w10/attempt-001",
+            "cases/seed-1003/execute-10/act/attempt-001",
+            "cases/seed-1003/execute-10/tracks_completion/attempt-001",
+            "cases/seed-1003/execute-10/completion_gain100_w01/attempt-001",
+            "cases/seed-1003/execute-10/completion_gain100_w1/attempt-001",
+            "cases/seed-1003/execute-10/completion_gain100_w10/attempt-001",
+            "cases/seed-1000/execute-100/rgb_history/attempt-002",
+            "cases/seed-1000/execute-100/completion_gain100_w01/attempt-002",
+            "cases/seed-1000/execute-10/act/attempt-002",
+            "cases/seed-1000/execute-10/rgb_history/attempt-002",
+            "cases/seed-1000/execute-10/geometry/attempt-002",
+            "cases/seed-1000/execute-10/tracks/attempt-002",
+            "cases/seed-1000/execute-10/completion_gain100_w01/attempt-002",
+            "cases/seed-1000/execute-10/tracks_completion/attempt-002",
+            "cases/seed-1000/execute-10/completion_gain100_w1/attempt-002",
+            "cases/seed-1000/execute-10/completion_gain100_w10/attempt-002",
+            "cases/seed-1003/execute-100/act/attempt-002",
+            "cases/seed-1003/execute-100/rgb_history/attempt-002",
+            "cases/seed-1003/execute-100/geometry/attempt-002",
+            "cases/seed-1003/execute-100/tracks_completion/attempt-002",
+            "cases/seed-1003/execute-100/tracks/attempt-002",
+            "cases/seed-1003/execute-10/geometry/attempt-002",
+            "cases/seed-1003/execute-10/tracks/attempt-002"
           ],
           "failures": [],
-          "pending": 24,
-          "active": 8,
-          "snapshot_utc": "2026-10-19T22:14:11.693142+00:00"
+          "pending": 19,
+          "active": 7,
+          "snapshot_utc": "2026-10-19T22:21:57.752268+00:00"
         },
         "worker-1001": {
-          "status": "running",
-          "completed": [],
+          "status": "incomplete",
+          "completed": [
+            "cases/seed-1001/execute-100/tracks_completion/attempt-001"
+          ],
           "rejected_initializations": [
             "cases/seed-1001/execute-100/act/attempt-001",
             "cases/seed-1001/execute-100/rgb_history/attempt-001",
@@ -64985,30 +65388,1509 @@
             "cases/seed-1001/execute-100/completion_gain100_w10/attempt-001",
             "cases/seed-1001/execute-10/act/attempt-001",
             "cases/seed-1001/execute-10/rgb_history/attempt-001",
-            "cases/seed-1001/execute-10/geometry/attempt-001"
+            "cases/seed-1001/execute-10/geometry/attempt-001",
+            "cases/seed-1001/execute-10/tracks/attempt-001",
+            "cases/seed-1001/execute-10/tracks_completion/attempt-001",
+            "cases/seed-1001/execute-10/completion_gain100_w01/attempt-001",
+            "cases/seed-1001/execute-10/completion_gain100_w1/attempt-001",
+            "cases/seed-1001/execute-10/completion_gain100_w10/attempt-001",
+            "cases/seed-1001/execute-100/act/attempt-002",
+            "cases/seed-1001/execute-100/rgb_history/attempt-002",
+            "cases/seed-1001/execute-100/completion_gain100_w1/attempt-002",
+            "cases/seed-1001/execute-100/geometry/attempt-002",
+            "cases/seed-1001/execute-100/completion_gain100_w01/attempt-002",
+            "cases/seed-1001/execute-100/tracks/attempt-002",
+            "cases/seed-1001/execute-100/completion_gain100_w10/attempt-002",
+            "cases/seed-1001/execute-10/act/attempt-002",
+            "cases/seed-1001/execute-10/rgb_history/attempt-002",
+            "cases/seed-1001/execute-10/tracks/attempt-002",
+            "cases/seed-1001/execute-10/geometry/attempt-002",
+            "cases/seed-1001/execute-10/tracks_completion/attempt-002",
+            "cases/seed-1001/execute-10/completion_gain100_w01/attempt-002",
+            "cases/seed-1001/execute-10/completion_gain100_w1/attempt-002",
+            "cases/seed-1001/execute-10/completion_gain100_w10/attempt-002",
+            "cases/seed-1001/execute-100/act/attempt-003",
+            "cases/seed-1001/execute-100/rgb_history/attempt-003",
+            "cases/seed-1001/execute-100/completion_gain100_w1/attempt-003",
+            "cases/seed-1001/execute-100/geometry/attempt-003",
+            "cases/seed-1001/execute-100/completion_gain100_w01/attempt-003",
+            "cases/seed-1001/execute-100/tracks/attempt-003",
+            "cases/seed-1001/execute-100/completion_gain100_w10/attempt-003",
+            "cases/seed-1001/execute-10/act/attempt-003",
+            "cases/seed-1001/execute-10/rgb_history/attempt-003",
+            "cases/seed-1001/execute-10/tracks/attempt-003",
+            "cases/seed-1001/execute-10/geometry/attempt-003",
+            "cases/seed-1001/execute-10/tracks_completion/attempt-003",
+            "cases/seed-1001/execute-10/completion_gain100_w1/attempt-003",
+            "cases/seed-1001/execute-10/completion_gain100_w10/attempt-003",
+            "cases/seed-1001/execute-100/act/attempt-004",
+            "cases/seed-1001/execute-100/rgb_history/attempt-004",
+            "cases/seed-1001/execute-100/completion_gain100_w1/attempt-004",
+            "cases/seed-1001/execute-10/completion_gain100_w01/attempt-003",
+            "cases/seed-1001/execute-100/geometry/attempt-004",
+            "cases/seed-1001/execute-100/completion_gain100_w01/attempt-004",
+            "cases/seed-1001/execute-100/tracks/attempt-004",
+            "cases/seed-1001/execute-100/completion_gain100_w10/attempt-004",
+            "cases/seed-1001/execute-10/act/attempt-004",
+            "cases/seed-1001/execute-10/rgb_history/attempt-004",
+            "cases/seed-1001/execute-10/tracks/attempt-004",
+            "cases/seed-1001/execute-10/tracks_completion/attempt-004",
+            "cases/seed-1001/execute-10/geometry/attempt-004",
+            "cases/seed-1001/execute-10/completion_gain100_w1/attempt-004"
           ],
           "failures": [],
-          "pending": 9,
-          "active": 7,
-          "snapshot_utc": "2026-10-19T22:14:09.306634+00:00"
+          "pending": 7,
+          "active": 8
         },
         "worker-1002": {
           "status": "running",
-          "completed": [],
+          "completed": [
+            "cases/seed-1002/execute-100/rgb_history/attempt-001",
+            "cases/seed-1002/execute-100/act/attempt-001",
+            "cases/seed-1002/execute-100/tracks_completion/attempt-001",
+            "cases/seed-1002/execute-100/completion_gain100_w10/attempt-001"
+          ],
           "rejected_initializations": [
             "cases/seed-1002/execute-100/tracks/attempt-001",
             "cases/seed-1002/execute-100/geometry/attempt-001",
             "cases/seed-1002/execute-100/completion_gain100_w1/attempt-001",
-            "cases/seed-1002/execute-100/completion_gain100_w01/attempt-001"
+            "cases/seed-1002/execute-100/completion_gain100_w01/attempt-001",
+            "cases/seed-1002/execute-10/act/attempt-001",
+            "cases/seed-1002/execute-10/rgb_history/attempt-001",
+            "cases/seed-1002/execute-10/geometry/attempt-001",
+            "cases/seed-1002/execute-10/tracks/attempt-001",
+            "cases/seed-1002/execute-10/tracks_completion/attempt-001",
+            "cases/seed-1002/execute-10/completion_gain100_w01/attempt-001",
+            "cases/seed-1002/execute-10/completion_gain100_w1/attempt-001",
+            "cases/seed-1002/execute-10/completion_gain100_w10/attempt-001",
+            "cases/seed-1002/execute-100/tracks/attempt-002",
+            "cases/seed-1002/execute-100/geometry/attempt-002",
+            "cases/seed-1002/execute-100/completion_gain100_w1/attempt-002",
+            "cases/seed-1002/execute-100/completion_gain100_w01/attempt-002",
+            "cases/seed-1002/execute-10/rgb_history/attempt-002",
+            "cases/seed-1002/execute-10/act/attempt-002",
+            "cases/seed-1002/execute-10/tracks/attempt-002",
+            "cases/seed-1002/execute-10/tracks_completion/attempt-002",
+            "cases/seed-1002/execute-10/geometry/attempt-002",
+            "cases/seed-1002/execute-10/completion_gain100_w01/attempt-002",
+            "cases/seed-1002/execute-10/completion_gain100_w1/attempt-002",
+            "cases/seed-1002/execute-10/completion_gain100_w10/attempt-002",
+            "cases/seed-1002/execute-100/tracks/attempt-003",
+            "cases/seed-1002/execute-100/geometry/attempt-003",
+            "cases/seed-1002/execute-100/completion_gain100_w1/attempt-003",
+            "cases/seed-1002/execute-100/completion_gain100_w01/attempt-003",
+            "cases/seed-1002/execute-10/act/attempt-003",
+            "cases/seed-1002/execute-10/rgb_history/attempt-003",
+            "cases/seed-1002/execute-10/tracks_completion/attempt-003",
+            "cases/seed-1002/execute-10/completion_gain100_w1/attempt-003",
+            "cases/seed-1002/execute-10/geometry/attempt-003",
+            "cases/seed-1002/execute-10/completion_gain100_w01/attempt-003",
+            "cases/seed-1002/execute-10/completion_gain100_w10/attempt-003",
+            "cases/seed-1002/execute-10/tracks/attempt-003",
+            "cases/seed-1002/execute-100/tracks/attempt-004",
+            "cases/seed-1002/execute-100/geometry/attempt-004",
+            "cases/seed-1002/execute-100/completion_gain100_w1/attempt-004",
+            "cases/seed-1002/execute-100/completion_gain100_w01/attempt-004",
+            "cases/seed-1002/execute-10/rgb_history/attempt-004",
+            "cases/seed-1002/execute-10/act/attempt-004",
+            "cases/seed-1002/execute-10/completion_gain100_w1/attempt-004",
+            "cases/seed-1002/execute-10/tracks_completion/attempt-004",
+            "cases/seed-1002/execute-10/geometry/attempt-004",
+            "cases/seed-1002/execute-10/completion_gain100_w01/attempt-004"
           ],
           "failures": [],
-          "pending": 8,
+          "pending": 4,
           "active": 8,
-          "snapshot_utc": "2026-10-19T22:14:10.119095+00:00"
+          "snapshot_utc": "2026-10-19T22:21:55.011553+00:00"
         }
       },
-      "cases": [],
-      "videos": []
+      "cases": [
+        {
+          "training_seed": 1000,
+          "execution_horizon": 100,
+          "condition": "act",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "act",
+            "steps": 600,
+            "policy_GT_track_reads": 0,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 25.89 <= 7.2",
+                  "value": 25.892560272825367,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 35.07 <= 8.55",
+                  "value": 35.07429427348146,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 28.12 <= 7.2",
+                  "value": 28.120775566014395,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 20.16 >= 9.9",
+                  "value": 20.15508496388243,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 14.39 >= 9.0",
+                  "value": 14.390455983556489,
+                  "threshold": 9.0,
+                  "passed": true
+                }
+              }
+            },
+            "elapsed_seconds": 503.00888323783875,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          }
+        },
+        {
+          "training_seed": 1000,
+          "execution_horizon": 100,
+          "condition": "completion_gain100_w1",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "tracks_completion",
+            "steps": 600,
+            "policy_GT_track_reads": 601,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 25.90 <= 7.2",
+                  "value": 25.898634156085617,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 42.99 <= 8.55",
+                  "value": 42.986076857360416,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 24.07 <= 7.2",
+                  "value": 24.06823253653249,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 15.83 >= 9.9",
+                  "value": 15.829506141017898,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 1.42 >= 9.0",
+                  "value": 1.4172201612085609,
+                  "threshold": 9.0,
+                  "passed": false
+                }
+              }
+            },
+            "elapsed_seconds": 629.9784781932831,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          }
+        },
+        {
+          "training_seed": 1000,
+          "execution_horizon": 100,
+          "condition": "completion_gain100_w10",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "tracks_completion",
+            "steps": 600,
+            "policy_GT_track_reads": 601,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 26.04 <= 7.2",
+                  "value": 26.038711058139555,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 43.43 <= 8.55",
+                  "value": 43.43060485080797,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 24.74 <= 7.2",
+                  "value": 24.7415704490168,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 16.41 >= 9.9",
+                  "value": 16.40505572068838,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 3.22 >= 9.0",
+                  "value": 3.2221809711561646,
+                  "threshold": 9.0,
+                  "passed": false
+                }
+              }
+            },
+            "elapsed_seconds": 634.9417855739594,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          }
+        },
+        {
+          "training_seed": 1000,
+          "execution_horizon": 100,
+          "condition": "geometry",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "geometry",
+            "steps": 600,
+            "policy_GT_track_reads": 601,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 20.66 <= 7.2",
+                  "value": 20.659807797881232,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 32.54 <= 8.55",
+                  "value": 32.544618847632805,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 24.33 <= 7.2",
+                  "value": 24.328994357895034,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 16.00 >= 9.9",
+                  "value": 16.003415103934696,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 16.15 >= 9.0",
+                  "value": 16.152458378408543,
+                  "threshold": 9.0,
+                  "passed": true
+                }
+              }
+            },
+            "elapsed_seconds": 624.3218569755554,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          }
+        },
+        {
+          "training_seed": 1000,
+          "execution_horizon": 100,
+          "condition": "tracks",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "tracks",
+            "steps": 600,
+            "policy_GT_track_reads": 601,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 20.49 <= 7.2",
+                  "value": 20.492466336930683,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 27.05 <= 8.55",
+                  "value": 27.049195526374174,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 21.10 <= 7.2",
+                  "value": 21.096776576322867,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 15.20 >= 9.9",
+                  "value": 15.19801435794256,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 15.44 >= 9.0",
+                  "value": 15.443452483093637,
+                  "threshold": 9.0,
+                  "passed": true
+                }
+              }
+            },
+            "elapsed_seconds": 626.1391055583954,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          }
+        },
+        {
+          "training_seed": 1000,
+          "execution_horizon": 100,
+          "condition": "tracks_completion",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "tracks_completion",
+            "steps": 600,
+            "policy_GT_track_reads": 601,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 25.56 <= 7.2",
+                  "value": 25.562464265608643,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 43.97 <= 8.55",
+                  "value": 43.97396980471739,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 24.67 <= 7.2",
+                  "value": 24.665318347437477,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 16.13 >= 9.9",
+                  "value": 16.13495207917226,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 3.63 >= 9.0",
+                  "value": 3.63208500226671,
+                  "threshold": 9.0,
+                  "passed": false
+                }
+              }
+            },
+            "elapsed_seconds": 619.5466179847717,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          }
+        },
+        {
+          "training_seed": 1001,
+          "execution_horizon": 100,
+          "condition": "tracks_completion",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "tracks_completion",
+            "steps": 600,
+            "policy_GT_track_reads": 601,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 22.20 <= 7.2",
+                  "value": 22.201199840438463,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 45.50 <= 8.55",
+                  "value": 45.496627669336476,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 10.66 <= 7.2",
+                  "value": 10.662318495814159,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 20.18 >= 9.9",
+                  "value": 20.183992996703687,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 15.27 >= 9.0",
+                  "value": 15.26948293841608,
+                  "threshold": 9.0,
+                  "passed": true
+                }
+              }
+            },
+            "elapsed_seconds": 645.5425720214844,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          }
+        },
+        {
+          "training_seed": 1002,
+          "execution_horizon": 100,
+          "condition": "act",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "act",
+            "steps": 600,
+            "policy_GT_track_reads": 0,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 25.92 <= 7.2",
+                  "value": 25.92391615372629,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 45.50 <= 8.55",
+                  "value": 45.50078171597789,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 28.15 <= 7.2",
+                  "value": 28.154931752306798,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 19.45 >= 9.9",
+                  "value": 19.453535922689245,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 14.48 >= 9.0",
+                  "value": 14.478564283368232,
+                  "threshold": 9.0,
+                  "passed": true
+                }
+              }
+            },
+            "elapsed_seconds": 524.5217392444611,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          }
+        },
+        {
+          "training_seed": 1002,
+          "execution_horizon": 100,
+          "condition": "completion_gain100_w10",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "tracks_completion",
+            "steps": 600,
+            "policy_GT_track_reads": 601,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 26.11 <= 7.2",
+                  "value": 26.113489165467666,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 41.34 <= 8.55",
+                  "value": 41.33619995456329,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 23.09 <= 7.2",
+                  "value": 23.094533675590405,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 16.22 >= 9.9",
+                  "value": 16.217131314841687,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 3.23 >= 9.0",
+                  "value": 3.2348304745277723,
+                  "threshold": 9.0,
+                  "passed": false
+                }
+              }
+            },
+            "elapsed_seconds": 649.8337347507477,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          }
+        },
+        {
+          "training_seed": 1002,
+          "execution_horizon": 100,
+          "condition": "rgb_history",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "rgb_history",
+            "steps": 600,
+            "policy_GT_track_reads": 0,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 13.84 <= 7.2",
+                  "value": 13.840274410148867,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 32.92 <= 8.55",
+                  "value": 32.91522858554264,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 22.76 <= 7.2",
+                  "value": 22.75721810421921,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 13.72 >= 9.9",
+                  "value": 13.722754123127427,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 11.60 >= 9.0",
+                  "value": 11.595793139068979,
+                  "threshold": 9.0,
+                  "passed": true
+                }
+              }
+            },
+            "elapsed_seconds": 517.2959523200989,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          }
+        },
+        {
+          "training_seed": 1002,
+          "execution_horizon": 100,
+          "condition": "tracks_completion",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "tracks_completion",
+            "steps": 600,
+            "policy_GT_track_reads": 601,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 15.17 <= 7.2",
+                  "value": 15.168992827841997,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 33.61 <= 8.55",
+                  "value": 33.60521834281265,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 23.62 <= 7.2",
+                  "value": 23.624894022562742,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 15.33 >= 9.9",
+                  "value": 15.330599102914789,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 13.95 >= 9.0",
+                  "value": 13.950307973729535,
+                  "threshold": 9.0,
+                  "passed": true
+                }
+              }
+            },
+            "elapsed_seconds": 621.629045009613,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          }
+        }
+      ],
+      "videos": [
+        {
+          "training_seed": 1000,
+          "execution_horizon": 100,
+          "condition": "act",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "act",
+            "steps": 600,
+            "policy_GT_track_reads": 0,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 25.89 <= 7.2",
+                  "value": 25.892560272825367,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 35.07 <= 8.55",
+                  "value": 35.07429427348146,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 28.12 <= 7.2",
+                  "value": 28.120775566014395,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 20.16 >= 9.9",
+                  "value": 20.15508496388243,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 14.39 >= 9.0",
+                  "value": 14.390455983556489,
+                  "threshold": 9.0,
+                  "passed": true
+                }
+              }
+            },
+            "elapsed_seconds": 503.00888323783875,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          },
+          "path": "canonical-v5-videos/execute-100/act"
+        },
+        {
+          "training_seed": 1000,
+          "execution_horizon": 100,
+          "condition": "completion_gain100_w1",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "tracks_completion",
+            "steps": 600,
+            "policy_GT_track_reads": 601,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 25.90 <= 7.2",
+                  "value": 25.898634156085617,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 42.99 <= 8.55",
+                  "value": 42.986076857360416,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 24.07 <= 7.2",
+                  "value": 24.06823253653249,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 15.83 >= 9.9",
+                  "value": 15.829506141017898,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 1.42 >= 9.0",
+                  "value": 1.4172201612085609,
+                  "threshold": 9.0,
+                  "passed": false
+                }
+              }
+            },
+            "elapsed_seconds": 629.9784781932831,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          },
+          "path": "canonical-v5-videos/execute-100/completion_gain100_w1"
+        },
+        {
+          "training_seed": 1000,
+          "execution_horizon": 100,
+          "condition": "completion_gain100_w10",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "tracks_completion",
+            "steps": 600,
+            "policy_GT_track_reads": 601,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 26.04 <= 7.2",
+                  "value": 26.038711058139555,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 43.43 <= 8.55",
+                  "value": 43.43060485080797,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 24.74 <= 7.2",
+                  "value": 24.7415704490168,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 16.41 >= 9.9",
+                  "value": 16.40505572068838,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 3.22 >= 9.0",
+                  "value": 3.2221809711561646,
+                  "threshold": 9.0,
+                  "passed": false
+                }
+              }
+            },
+            "elapsed_seconds": 634.9417855739594,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          },
+          "path": "canonical-v5-videos/execute-100/completion_gain100_w10"
+        },
+        {
+          "training_seed": 1000,
+          "execution_horizon": 100,
+          "condition": "geometry",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "geometry",
+            "steps": 600,
+            "policy_GT_track_reads": 601,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 20.66 <= 7.2",
+                  "value": 20.659807797881232,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 32.54 <= 8.55",
+                  "value": 32.544618847632805,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 24.33 <= 7.2",
+                  "value": 24.328994357895034,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 16.00 >= 9.9",
+                  "value": 16.003415103934696,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 16.15 >= 9.0",
+                  "value": 16.152458378408543,
+                  "threshold": 9.0,
+                  "passed": true
+                }
+              }
+            },
+            "elapsed_seconds": 624.3218569755554,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          },
+          "path": "canonical-v5-videos/execute-100/geometry"
+        },
+        {
+          "training_seed": 1000,
+          "execution_horizon": 100,
+          "condition": "tracks",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "tracks",
+            "steps": 600,
+            "policy_GT_track_reads": 601,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 20.49 <= 7.2",
+                  "value": 20.492466336930683,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 27.05 <= 8.55",
+                  "value": 27.049195526374174,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 21.10 <= 7.2",
+                  "value": 21.096776576322867,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 15.20 >= 9.9",
+                  "value": 15.19801435794256,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 15.44 >= 9.0",
+                  "value": 15.443452483093637,
+                  "threshold": 9.0,
+                  "passed": true
+                }
+              }
+            },
+            "elapsed_seconds": 626.1391055583954,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          },
+          "path": "canonical-v5-videos/execute-100/tracks"
+        },
+        {
+          "training_seed": 1000,
+          "execution_horizon": 100,
+          "condition": "tracks_completion",
+          "report": {
+            "status": "complete",
+            "mode": "learned_policy_closed_loop",
+            "pilot": true,
+            "condition": "tracks_completion",
+            "steps": 600,
+            "policy_GT_track_reads": 601,
+            "first_success_step": null,
+            "ever_success": false,
+            "final_success": false,
+            "geometry": {
+              "success": false,
+              "garment_type": "top-long-sleeve",
+              "thresholds": [
+                7.2,
+                8.55,
+                7.2,
+                9.9,
+                9.0
+              ],
+              "details": {
+                "condition_1": {
+                  "description": "dist(p[0], p[4]) = 25.56 <= 7.2",
+                  "value": 25.562464265608643,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_2": {
+                  "description": "dist(p[2], p[3]) = 43.97 <= 8.55",
+                  "value": 43.97396980471739,
+                  "threshold": 8.55,
+                  "passed": false
+                },
+                "condition_3": {
+                  "description": "dist(p[1], p[5]) = 24.67 <= 7.2",
+                  "value": 24.665318347437477,
+                  "threshold": 7.2,
+                  "passed": false
+                },
+                "condition_4": {
+                  "description": "dist(p[0], p[1]) = 16.13 >= 9.9",
+                  "value": 16.13495207917226,
+                  "threshold": 9.9,
+                  "passed": true
+                },
+                "condition_5": {
+                  "description": "dist(p[4], p[5]) = 3.63 >= 9.0",
+                  "value": 3.63208500226671,
+                  "threshold": 9.0,
+                  "passed": false
+                }
+              }
+            },
+            "elapsed_seconds": 619.5466179847717,
+            "auxiliary_head_removed": true,
+            "claim": "single_seed_development_pilot_not_formal_generalization"
+          },
+          "pairing": {
+            "accepted": true,
+            "maximum_absolute_differences": {
+              "world_points": 0.0,
+              "finite_difference_velocity": 0.0,
+              "joint_position": 0.0,
+              "joint_velocity": 0.0
+            },
+            "tolerances": {
+              "world_points": 1e-05,
+              "finite_difference_velocity": 0.001,
+              "joint_position": 1e-05,
+              "joint_velocity": 1e-05
+            },
+            "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+            "before_actor_construction": true,
+            "policy_actions_executed": 0,
+            "purpose": "Evaluation-only initial-state matching; never an actor input"
+          },
+          "path": "canonical-v5-videos/execute-100/tracks_completion"
+        }
+      ]
     },
     "counted_native": {
       "gate": {
@@ -69260,7 +71142,7 @@
       "job_name": "ei-liupeiqi-wam-training-actpilot-residual-1n8g-b20z-20261019-212607",
       "status": "running",
       "stage": "training",
-      "snapshot_utc": "2026-10-19T22:14:05.265495+00:00",
+      "snapshot_utc": "2026-10-19T22:21:50.460493+00:00",
       "exit_codes": {
         "seed-1000/connected": null,
         "seed-1000/detached": null,
@@ -69274,9 +71156,9 @@
     },
     "raw_action_metric_audit": {
       "status": "partial",
-      "verified_checkpoints": 20,
+      "verified_checkpoints": 34,
       "planned_checkpoints": 48,
-      "checks_passed": 200,
+      "checks_passed": 340,
       "records": [
         {
           "training_seed": 1000,
@@ -69296,6 +71178,22 @@
         },
         {
           "training_seed": 1000,
+          "condition": "connected",
+          "step": 750,
+          "raw_action_chunk_MSE": 0.07962435708454745,
+          "raw_action_chunk_RMSE": 0.28217788199032795,
+          "checkpoint_sha256": "8fb10d73f91d67f42e73e3a98cc568f7c488f5c78e931f6dfce670b5f860ccfa"
+        },
+        {
+          "training_seed": 1000,
+          "condition": "connected",
+          "step": 1000,
+          "raw_action_chunk_MSE": 0.07126766115393132,
+          "raw_action_chunk_RMSE": 0.26696003662333306,
+          "checkpoint_sha256": "ef051bd90a11383ddd1e9af8d965f8a9f07077683d6197524afd0c5e4e419b90"
+        },
+        {
+          "training_seed": 1000,
           "condition": "detached",
           "step": 250,
           "raw_action_chunk_MSE": 0.2852392661783005,
@@ -69309,6 +71207,22 @@
           "raw_action_chunk_MSE": 0.10314619517640213,
           "raw_action_chunk_RMSE": 0.3211638136160457,
           "checkpoint_sha256": "53dba3025cdf5232d55b5b76d4ade437b2fb03a7fa1fac3dc59b5f6dbf9966e0"
+        },
+        {
+          "training_seed": 1000,
+          "condition": "detached",
+          "step": 750,
+          "raw_action_chunk_MSE": 0.08955771345368226,
+          "raw_action_chunk_RMSE": 0.2992619478879369,
+          "checkpoint_sha256": "927ab9945acb1bc0d6874c95ca476501b314f29da8d91359b4553a3d3dc4f405"
+        },
+        {
+          "training_seed": 1000,
+          "condition": "detached",
+          "step": 1000,
+          "raw_action_chunk_MSE": 0.08160933236040314,
+          "raw_action_chunk_RMSE": 0.2856734715727086,
+          "checkpoint_sha256": "b184b9c7c0d559991ff38d0ed231496cd4d815eaca2faad45352ab822ec93738"
         },
         {
           "training_seed": 1001,
@@ -69336,6 +71250,14 @@
         },
         {
           "training_seed": 1001,
+          "condition": "connected",
+          "step": 1000,
+          "raw_action_chunk_MSE": 0.07891645551397647,
+          "raw_action_chunk_RMSE": 0.2809207281671761,
+          "checkpoint_sha256": "87a394eb9a926c4ff02fcff9fc4135cb23f0a937643e89185bd50019688fca3d"
+        },
+        {
+          "training_seed": 1001,
           "condition": "detached",
           "step": 250,
           "raw_action_chunk_MSE": 0.3046238941442993,
@@ -69357,6 +71279,14 @@
           "raw_action_chunk_MSE": 0.08660690117644537,
           "raw_action_chunk_RMSE": 0.29429050473375007,
           "checkpoint_sha256": "091c0b658d9d6b3d633abbb46658b17ec7a1d1674b6d14243086126306f0a9fd"
+        },
+        {
+          "training_seed": 1001,
+          "condition": "detached",
+          "step": 1000,
+          "raw_action_chunk_MSE": 0.08030768567251216,
+          "raw_action_chunk_RMSE": 0.2833861070562778,
+          "checkpoint_sha256": "943cc6a79c06ce9268ba3c0f4aa4cdf032448d4c1a8739fe8dd2f38a8c9105ca"
         },
         {
           "training_seed": 1002,
@@ -69384,6 +71314,22 @@
         },
         {
           "training_seed": 1002,
+          "condition": "connected",
+          "step": 1000,
+          "raw_action_chunk_MSE": 0.0886463094018609,
+          "raw_action_chunk_RMSE": 0.29773530089974365,
+          "checkpoint_sha256": "e8a0b8ab0e733febbf1b786cd2ed28b971934a5da1a98e72a04bcc5b17ff1e63"
+        },
+        {
+          "training_seed": 1002,
+          "condition": "connected",
+          "step": 1250,
+          "raw_action_chunk_MSE": 0.0753691202400322,
+          "raw_action_chunk_RMSE": 0.2745343698702081,
+          "checkpoint_sha256": "93a30da5616d4a881f6ed5e730a2de9be129d619dae41d549e7729fba8983008"
+        },
+        {
+          "training_seed": 1002,
           "condition": "detached",
           "step": 250,
           "raw_action_chunk_MSE": 0.3003898942489557,
@@ -69397,6 +71343,22 @@
           "raw_action_chunk_MSE": 0.10333352836416368,
           "raw_action_chunk_RMSE": 0.3214553287226138,
           "checkpoint_sha256": "d4dc2e6dd9835caef23f75e02a596a0deceb5fcaef5831a910cdc446df2d56df"
+        },
+        {
+          "training_seed": 1002,
+          "condition": "detached",
+          "step": 750,
+          "raw_action_chunk_MSE": 0.08128000424863546,
+          "raw_action_chunk_RMSE": 0.2850964823505114,
+          "checkpoint_sha256": "efea2c495b34240a873b949c1a6de80df3fb4b3c45f6b1020b6b353824f2b2b1"
+        },
+        {
+          "training_seed": 1002,
+          "condition": "detached",
+          "step": 1000,
+          "raw_action_chunk_MSE": 0.07465571308276688,
+          "raw_action_chunk_RMSE": 0.27323197668422133,
+          "checkpoint_sha256": "2033cfac466ca25f1d4ef6e61a320fb525e18fa2da1f235f5d2f38d805d00e17"
         },
         {
           "training_seed": 1003,
@@ -69413,6 +71375,22 @@
           "raw_action_chunk_MSE": 0.10509692179698782,
           "raw_action_chunk_RMSE": 0.3241865540039991,
           "checkpoint_sha256": "b7dd4660c46369503c06187780f624733582a1a2db6597f024a77823753c42c8"
+        },
+        {
+          "training_seed": 1003,
+          "condition": "connected",
+          "step": 750,
+          "raw_action_chunk_MSE": 0.081000049882305,
+          "raw_action_chunk_RMSE": 0.28460507704941773,
+          "checkpoint_sha256": "551e8853616442ae0f403df1522966289ae352840f1a4d89512973f56e20c08a"
+        },
+        {
+          "training_seed": 1003,
+          "condition": "connected",
+          "step": 1000,
+          "raw_action_chunk_MSE": 0.07046462181262363,
+          "raw_action_chunk_RMSE": 0.26545173160599955,
+          "checkpoint_sha256": "3db58124afc0c415de7657c3f40fa1d2ca66516eba1c8bc6a03f72d88d508fc8"
         },
         {
           "training_seed": 1003,
@@ -69437,6 +71415,22 @@
           "raw_action_chunk_MSE": 0.09025445703674613,
           "raw_action_chunk_RMSE": 0.30042379572321853,
           "checkpoint_sha256": "d6b94f7fdf4a3d0a25700dbb06ebd3a1c212ce2d408b8a7fb2697c434aaba626"
+        },
+        {
+          "training_seed": 1003,
+          "condition": "detached",
+          "step": 1000,
+          "raw_action_chunk_MSE": 0.0735044415474958,
+          "raw_action_chunk_RMSE": 0.27111702555814493,
+          "checkpoint_sha256": "adf3ddf162219c74fa559d7bbcf7e148711320568a791f7fc7eaa970e87534d5"
+        },
+        {
+          "training_seed": 1003,
+          "condition": "detached",
+          "step": 1250,
+          "raw_action_chunk_MSE": 0.07042905528363119,
+          "raw_action_chunk_RMSE": 0.2653847306904284,
+          "checkpoint_sha256": "b9b4dd11672ed8d14504583f746c6055e4f14a1e583fe7f9c5a629a2893c9598"
         }
       ],
       "comparisons": [
@@ -69500,11 +71494,61 @@
         },
         {
           "step": 750,
-          "conditions": {}
+          "conditions": {
+            "connected": {
+              "raw_action_chunk_MSE": {
+                "mean": 0.08405208677789315,
+                "sample_std": 0.004367482639727505,
+                "n": 4
+              },
+              "raw_action_chunk_RMSE": {
+                "mean": 0.2898438902850307,
+                "sample_std": 0.0075371119431090925,
+                "n": 4
+              }
+            },
+            "detached": {
+              "raw_action_chunk_MSE": {
+                "mean": 0.0869247689788773,
+                "sample_std": 0.004081814464578441,
+                "n": 4
+              },
+              "raw_action_chunk_RMSE": {
+                "mean": 0.29476818267385424,
+                "sample_std": 0.0069749515678713195,
+                "n": 4
+              }
+            }
+          }
         },
         {
           "step": 1000,
-          "conditions": {}
+          "conditions": {
+            "connected": {
+              "raw_action_chunk_MSE": {
+                "mean": 0.07732376197059808,
+                "sample_std": 0.008454996823667548,
+                "n": 4
+              },
+              "raw_action_chunk_RMSE": {
+                "mean": 0.2777669493240631,
+                "sample_std": 0.015023707212333419,
+                "n": 4
+              }
+            },
+            "detached": {
+              "raw_action_chunk_MSE": {
+                "mean": 0.07751929316579449,
+                "sample_std": 0.004034132612008944,
+                "n": 4
+              },
+              "raw_action_chunk_RMSE": {
+                "mean": 0.2783521452178382,
+                "sample_std": 0.007245818879144643,
+                "n": 4
+              }
+            }
+          }
         },
         {
           "step": 1250,
@@ -71973,18 +74017,18 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 1150,
-          "elapsed_seconds": 2705.546641725581,
+          "completed_optimizer_steps": 1350,
+          "elapsed_seconds": 3183.936610240955,
           "latest_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.3967336666058455,
-            "action_MAE_radians": 0.17064821106805633,
+            "prior_action_L1": 0.3970832734397463,
+            "action_MAE_radians": 0.17306755051851364,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.283753282829343,
+            "completion_EPE_mm": 12.2685938025661,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.913078934311894,
+            "moving_EPE_mm": 27.705327050512913,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
@@ -72156,6 +74200,47 @@
               "1": 0.06908828943819821,
               "10": 0.05224970864455431,
               "100": 0.07126766115393132
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1250,
+            "windows": 427,
+            "prior_action_L1": 0.3970832734397463,
+            "action_MAE_radians": 0.17306755051851364,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.2685938025661,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.705327050512913,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.07647116677856462,
+            "raw_action_chunk_RMSE": 0.2765342054404204,
+            "raw_action_chunk_MAE": 0.17306755058442067,
+            "raw_action_chunk_MSE_per_joint": [
+              0.02417991685523048,
+              0.12501699301258462,
+              0.21607812765540424,
+              0.02228094701842939,
+              0.02643146525705011,
+              0.033125496422197274,
+              0.0785554101683686,
+              0.13417633068159399,
+              0.18117697456976609,
+              0.02083857918728291,
+              0.0059473804805606,
+              0.04984638003430686
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.07025945863551036,
+              "10": 0.05316178395786918,
+              "100": 0.07647116677856462
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -72386,6 +74471,61 @@
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T22:08:38.962377+00:00",
             "example_download": "raw-action-examples/act-b20z-residual-iteration-01/connected/step-1000-actual-action-example.npz"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1000,
+            "condition": "connected",
+            "optimizer_step": 1250,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "ebc3ec8d93d84dbf58c82de8d62d5d6a82852130f049845d7854e8c589b9bd8b",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.3970832734397463,
+              "action_MAE_radians": 0.17306755051851364,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.07647116677856462,
+              "raw_action_chunk_RMSE": 0.2765342054404204,
+              "raw_action_chunk_MAE": 0.17306755058442067,
+              "raw_action_chunk_MSE_per_joint": [
+                0.02417991685523048,
+                0.12501699301258462,
+                0.21607812765540424,
+                0.02228094701842939,
+                0.02643146525705011,
+                0.033125496422197274,
+                0.0785554101683686,
+                0.13417633068159399,
+                0.18117697456976609,
+                0.02083857918728291,
+                0.0059473804805606,
+                0.04984638003430686
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.07025945863551036,
+                "10": 0.05316178395786918,
+                "100": 0.07647116677856462
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.3970832734397463,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1250-actual-action-example.npz",
+            "example_sha256": "3bc53b3a210b2d91393595f41838cde43c8c6c47ba34c78bd39fd25cc2f82d23",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.05756131147587366,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:18:30.534357+00:00",
+            "example_download": "raw-action-examples/act-b20z-residual-iteration-01/connected/step-1250-actual-action-example.npz"
           }
         ]
       },
@@ -72468,30 +74608,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 1150,
-          "elapsed_seconds": 2688.6262004738674,
+          "completed_optimizer_steps": 1350,
+          "elapsed_seconds": 3165.9710717927665,
           "latest_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.41059779338943825,
-            "action_MAE_radians": 0.17952018549655,
+            "prior_action_L1": 0.40564115915755156,
+            "action_MAE_radians": 0.18249979022431229,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.109590660565848,
+            "completion_EPE_mm": 12.162499232505843,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.724928401849578,
+            "moving_EPE_mm": 27.758315931086663,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.41059779338943825,
-            "action_MAE_radians": 0.17952018549655,
+            "prior_action_L1": 0.40564115915755156,
+            "action_MAE_radians": 0.18249979022431229,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.109590660565848,
+            "completion_EPE_mm": 12.162499232505843,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.724928401849578,
+            "moving_EPE_mm": 27.758315931086663,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -72651,6 +74791,47 @@
               "1": 0.06879706969609342,
               "10": 0.056487247641807244,
               "100": 0.08160933236040314
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1250,
+            "windows": 427,
+            "prior_action_L1": 0.40564115915755156,
+            "action_MAE_radians": 0.18249979022431229,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.162499232505843,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.758315931086663,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.0870961662273493,
+            "raw_action_chunk_RMSE": 0.295120596074468,
+            "raw_action_chunk_MAE": 0.18249979049010365,
+            "raw_action_chunk_MSE_per_joint": [
+              0.027266337404517622,
+              0.14476737393260972,
+              0.21319766393025386,
+              0.02271356237441903,
+              0.018818710589013774,
+              0.03642314306110805,
+              0.0859468255382208,
+              0.17899653966360932,
+              0.23539561803118117,
+              0.024137535538431926,
+              0.005884013949000909,
+              0.05160667071582523
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.05793521741584897,
+              "10": 0.050725970204715136,
+              "100": 0.0870961662273493
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -72881,6 +75062,61 @@
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T22:08:33.543519+00:00",
             "example_download": "raw-action-examples/act-b20z-residual-iteration-01/detached/step-1000-actual-action-example.npz"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1000,
+            "condition": "detached",
+            "optimizer_step": 1250,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "41c2f301737f100687f54e571d35a96adca868a8e787e68cc3f8ce73d1404d55",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.40564115915755156,
+              "action_MAE_radians": 0.18249979022431229,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.0870961662273493,
+              "raw_action_chunk_RMSE": 0.295120596074468,
+              "raw_action_chunk_MAE": 0.18249979049010365,
+              "raw_action_chunk_MSE_per_joint": [
+                0.027266337404517622,
+                0.14476737393260972,
+                0.21319766393025386,
+                0.02271356237441903,
+                0.018818710589013774,
+                0.03642314306110805,
+                0.0859468255382208,
+                0.17899653966360932,
+                0.23539561803118117,
+                0.024137535538431926,
+                0.005884013949000909,
+                0.05160667071582523
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.05793521741584897,
+                "10": 0.050725970204715136,
+                "100": 0.0870961662273493
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.40564115915755156,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1250-actual-action-example.npz",
+            "example_sha256": "4d400a6fc03b0d961399b9e2c966c544df91af604b39dba9d00c701dd11ec7d6",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.03923962896482893,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:18:10.653922+00:00",
+            "example_download": "raw-action-examples/act-b20z-residual-iteration-01/detached/step-1250-actual-action-example.npz"
           }
         ]
       },
@@ -72963,30 +75199,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 1200,
-          "elapsed_seconds": 2716.4281767481007,
+          "completed_optimizer_steps": 1400,
+          "elapsed_seconds": 3180.6137294550426,
           "latest_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.40577652423605864,
-            "action_MAE_radians": 0.1767688360243618,
+            "prior_action_L1": 0.3974807421452152,
+            "action_MAE_radians": 0.17052274978304152,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.503332989015282,
+            "completion_EPE_mm": 12.460471857732108,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.831984430991763,
+            "moving_EPE_mm": 27.6524904565314,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.40577652423605864,
-            "action_MAE_radians": 0.1767688360243618,
+            "prior_action_L1": 0.3974807421452152,
+            "action_MAE_radians": 0.17052274978304152,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.503332989015282,
+            "completion_EPE_mm": 12.460471857732108,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.831984430991763,
+            "moving_EPE_mm": 27.6524904565314,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -73146,6 +75382,47 @@
               "1": 0.06857097804866909,
               "10": 0.05460734000399797,
               "100": 0.07891645551397647
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1250,
+            "windows": 427,
+            "prior_action_L1": 0.3974807421452152,
+            "action_MAE_radians": 0.17052274978304152,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.460471857732108,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.6524904565314,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.07364713335178051,
+            "raw_action_chunk_RMSE": 0.2713800533417674,
+            "raw_action_chunk_MAE": 0.17052274973716855,
+            "raw_action_chunk_MSE_per_joint": [
+              0.02254226252913532,
+              0.1081604035873538,
+              0.16968586513557254,
+              0.022756907028994664,
+              0.03377151331521993,
+              0.03320199787748165,
+              0.06900157321204702,
+              0.14857331851622502,
+              0.20511752081566317,
+              0.020900610012464398,
+              0.006154650364453573,
+              0.04389897782675595
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.056190388705910456,
+              "10": 0.047182075858776276,
+              "100": 0.07364713335178051
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -73372,6 +75649,60 @@
             "example_raw_action_chunk_MSE": 0.05242455698829265,
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T22:07:20.449057+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1001,
+            "condition": "connected",
+            "optimizer_step": 1250,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "0c3f06208e10308133a5fff5153f946fdff6c5ac884016ee1c792e4b918a44d5",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.3974807421452152,
+              "action_MAE_radians": 0.17052274978304152,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.07364713335178051,
+              "raw_action_chunk_RMSE": 0.2713800533417674,
+              "raw_action_chunk_MAE": 0.17052274973716855,
+              "raw_action_chunk_MSE_per_joint": [
+                0.02254226252913532,
+                0.1081604035873538,
+                0.16968586513557254,
+                0.022756907028994664,
+                0.03377151331521993,
+                0.03320199787748165,
+                0.06900157321204702,
+                0.14857331851622502,
+                0.20511752081566317,
+                0.020900610012464398,
+                0.006154650364453573,
+                0.04389897782675595
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.056190388705910456,
+                "10": 0.047182075858776276,
+                "100": 0.07364713335178051
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.3974807421452152,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1250-actual-action-example.npz",
+            "example_sha256": "09d14dac5f64a482a9d24392e84d756f34663ba10eacb3a1ca30d5da17290c91",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.060658906307133525,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:16:53.402203+00:00"
           }
         ]
       },
@@ -73454,30 +75785,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 1200,
-          "elapsed_seconds": 2710.319249072112,
+          "completed_optimizer_steps": 1400,
+          "elapsed_seconds": 3175.467106793076,
           "latest_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.4009350757869234,
-            "action_MAE_radians": 0.17599179584677213,
+            "prior_action_L1": 0.39114382977773743,
+            "action_MAE_radians": 0.1719239653399521,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.090173739712009,
+            "completion_EPE_mm": 12.149690358431908,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.721942836497927,
+            "moving_EPE_mm": 27.720531159487262,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.4009350757869234,
-            "action_MAE_radians": 0.17599179584677213,
+            "prior_action_L1": 0.39114382977773743,
+            "action_MAE_radians": 0.1719239653399521,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.090173739712009,
+            "completion_EPE_mm": 12.149690358431908,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.721942836497927,
+            "moving_EPE_mm": 27.720531159487262,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -73637,6 +75968,47 @@
               "1": 0.06492021348734507,
               "10": 0.05417597499817629,
               "100": 0.08030768567251216
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1250,
+            "windows": 427,
+            "prior_action_L1": 0.39114382977773743,
+            "action_MAE_radians": 0.1719239653399521,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.149690358431908,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.720531159487262,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.0780230676841996,
+            "raw_action_chunk_RMSE": 0.2793260956018961,
+            "raw_action_chunk_MAE": 0.1719239647625415,
+            "raw_action_chunk_MSE_per_joint": [
+              0.023886041994085068,
+              0.12203998298652072,
+              0.18850925911373306,
+              0.02333046378434814,
+              0.021945019676307433,
+              0.03309628927570995,
+              0.0713741819629065,
+              0.15679371495246608,
+              0.22316720555063735,
+              0.02014924309324667,
+              0.006019157273580821,
+              0.04596625254685354
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.053504718413251696,
+              "10": 0.04692641033161529,
+              "100": 0.0780230676841996
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -73863,6 +76235,60 @@
             "example_raw_action_chunk_MSE": 0.05338791626239128,
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T22:07:10.039377+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1001,
+            "condition": "detached",
+            "optimizer_step": 1250,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "09ca4c3cd75fd821b8f178d95f01fb1807fbfc4ec42722a2f1f2f6ddc41a6284",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.39114382977773743,
+              "action_MAE_radians": 0.1719239653399521,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.0780230676841996,
+              "raw_action_chunk_RMSE": 0.2793260956018961,
+              "raw_action_chunk_MAE": 0.1719239647625415,
+              "raw_action_chunk_MSE_per_joint": [
+                0.023886041994085068,
+                0.12203998298652072,
+                0.18850925911373306,
+                0.02333046378434814,
+                0.021945019676307433,
+                0.03309628927570995,
+                0.0713741819629065,
+                0.15679371495246608,
+                0.22316720555063735,
+                0.02014924309324667,
+                0.006019157273580821,
+                0.04596625254685354
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.053504718413251696,
+                "10": 0.04692641033161529,
+                "100": 0.0780230676841996
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.39114382977773743,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1250-actual-action-example.npz",
+            "example_sha256": "84db7834a25847807724b3868778aebc209c3fbd8b0a22409c9c215675c02e9e",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.05225334505058722,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:16:42.670014+00:00"
           }
         ]
       },
@@ -73945,30 +76371,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 1225,
-          "elapsed_seconds": 2715.8813811908476,
+          "completed_optimizer_steps": 1425,
+          "elapsed_seconds": 3170.0338250948116,
           "latest_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.4241236519539266,
-            "action_MAE_radians": 0.18681991605168377,
+            "prior_action_L1": 0.39738662914888484,
+            "action_MAE_radians": 0.1716632967132749,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.46315429013343,
+            "completion_EPE_mm": 12.483935204011017,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.809551082079714,
+            "moving_EPE_mm": 27.606960162486406,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.4241236519539266,
-            "action_MAE_radians": 0.18681991605168377,
+            "prior_action_L1": 0.39738662914888484,
+            "action_MAE_radians": 0.1716632967132749,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.46315429013343,
+            "completion_EPE_mm": 12.483935204011017,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.809551082079714,
+            "moving_EPE_mm": 27.606960162486406,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -74128,6 +76554,47 @@
               "1": 0.0776944094521382,
               "10": 0.06591304783591517,
               "100": 0.0886463094018609
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1250,
+            "windows": 427,
+            "prior_action_L1": 0.39738662914888484,
+            "action_MAE_radians": 0.1716632967132749,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.483935204011017,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.606960162486406,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.0753691202400322,
+            "raw_action_chunk_RMSE": 0.2745343698702081,
+            "raw_action_chunk_MAE": 0.17166329678202066,
+            "raw_action_chunk_MSE_per_joint": [
+              0.026585821698673844,
+              0.12295847989446121,
+              0.20321867511645883,
+              0.02343344250260774,
+              0.023658432119765437,
+              0.030583238411581108,
+              0.07007943681633129,
+              0.13421952346980032,
+              0.1910640317323738,
+              0.019987975974968174,
+              0.007310306099988803,
+              0.05133007904337492
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.04954357161947582,
+              "10": 0.04497618297520047,
+              "100": 0.0753691202400322
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -74354,6 +76821,60 @@
             "example_raw_action_chunk_MSE": 0.05483740972655898,
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T22:06:33.797541+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1002,
+            "condition": "connected",
+            "optimizer_step": 1250,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "93a30da5616d4a881f6ed5e730a2de9be129d619dae41d549e7729fba8983008",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.39738662914888484,
+              "action_MAE_radians": 0.1716632967132749,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.0753691202400322,
+              "raw_action_chunk_RMSE": 0.2745343698702081,
+              "raw_action_chunk_MAE": 0.17166329678202066,
+              "raw_action_chunk_MSE_per_joint": [
+                0.026585821698673844,
+                0.12295847989446121,
+                0.20321867511645883,
+                0.02343344250260774,
+                0.023658432119765437,
+                0.030583238411581108,
+                0.07007943681633129,
+                0.13421952346980032,
+                0.1910640317323738,
+                0.019987975974968174,
+                0.007310306099988803,
+                0.05133007904337492
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.04954357161947582,
+                "10": 0.04497618297520047,
+                "100": 0.0753691202400322
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.39738662914888484,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1250-actual-action-example.npz",
+            "example_sha256": "53e71d7ea470a9ea55d2cf7222ddac63540f524859c0205ac0080d451cd4d8a1",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.03882485462247558,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:15:52.330840+00:00"
           }
         ]
       },
@@ -74436,30 +76957,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 1150,
-          "elapsed_seconds": 2739.3142280490138,
+          "completed_optimizer_steps": 1325,
+          "elapsed_seconds": 3169.194178310223,
           "latest_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.4024643124517382,
-            "action_MAE_radians": 0.1736563354207411,
+            "prior_action_L1": 0.3928739025970692,
+            "action_MAE_radians": 0.16832122807276248,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.08787769008475,
+            "completion_EPE_mm": 12.168506536666833,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.733349674127723,
+            "moving_EPE_mm": 27.763247815695586,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.4024643124517382,
-            "action_MAE_radians": 0.1736563354207411,
+            "prior_action_L1": 0.3928739025970692,
+            "action_MAE_radians": 0.16832122807276248,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.08787769008475,
+            "completion_EPE_mm": 12.168506536666833,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.733349674127723,
+            "moving_EPE_mm": 27.763247815695586,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -74619,6 +77140,47 @@
               "1": 0.05976770542177269,
               "10": 0.053096734277031564,
               "100": 0.07465571308276688
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1250,
+            "windows": 427,
+            "prior_action_L1": 0.3928739025970692,
+            "action_MAE_radians": 0.16832122807276248,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.168506536666833,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.763247815695586,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.07455616122244296,
+            "raw_action_chunk_RMSE": 0.2730497412971544,
+            "raw_action_chunk_MAE": 0.1683212285774785,
+            "raw_action_chunk_MSE_per_joint": [
+              0.027552146801431036,
+              0.11410731932845307,
+              0.181538891160865,
+              0.023049776991308814,
+              0.02462751754771261,
+              0.03240196238199047,
+              0.07192545576768351,
+              0.14578633221467513,
+              0.1975337866889777,
+              0.020252525659956826,
+              0.00677793291026694,
+              0.049120287215994686
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.045341211991085144,
+              "10": 0.047004444350571564,
+              "100": 0.07455616122244296
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -74845,6 +77407,60 @@
             "example_raw_action_chunk_MSE": 0.05143060377302408,
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T22:09:12.469789+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1002,
+            "condition": "detached",
+            "optimizer_step": 1250,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "532ee3ca1e9f232be7b7d8bbad47d8e13ec7da31d9d8e66ba0300f6d3fbe7b6b",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.3928739025970692,
+              "action_MAE_radians": 0.16832122807276248,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.07455616122244296,
+              "raw_action_chunk_RMSE": 0.2730497412971544,
+              "raw_action_chunk_MAE": 0.1683212285774785,
+              "raw_action_chunk_MSE_per_joint": [
+                0.027552146801431036,
+                0.11410731932845307,
+                0.181538891160865,
+                0.023049776991308814,
+                0.02462751754771261,
+                0.03240196238199047,
+                0.07192545576768351,
+                0.14578633221467513,
+                0.1975337866889777,
+                0.020252525659956826,
+                0.00677793291026694,
+                0.049120287215994686
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.045341211991085144,
+                "10": 0.047004444350571564,
+                "100": 0.07455616122244296
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.3928739025970692,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1250-actual-action-example.npz",
+            "example_sha256": "f0bfc6cbbdb8fb282549d97df2aacfd62edad9fb531ee08fa9e07255a1fe907d",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.03997914868750453,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:19:13.711153+00:00"
           }
         ]
       },
@@ -74927,30 +77543,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 1150,
-          "elapsed_seconds": 2735.377581051085,
+          "completed_optimizer_steps": 1325,
+          "elapsed_seconds": 3167.7587458877824,
           "latest_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.39604988670684316,
-            "action_MAE_radians": 0.17162122719369186,
+            "prior_action_L1": 0.3849511938480701,
+            "action_MAE_radians": 0.16604687830307796,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.321976743056931,
+            "completion_EPE_mm": 12.379967840506307,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.885442743595302,
+            "moving_EPE_mm": 27.993004952275573,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.39604988670684316,
-            "action_MAE_radians": 0.17162122719369186,
+            "prior_action_L1": 0.3849511938480701,
+            "action_MAE_radians": 0.16604687830307796,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.321976743056931,
+            "completion_EPE_mm": 12.379967840506307,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.885442743595302,
+            "moving_EPE_mm": 27.993004952275573,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -75110,6 +77726,47 @@
               "1": 0.053729929543874934,
               "10": 0.054977469116327934,
               "100": 0.07046462181262363
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1250,
+            "windows": 427,
+            "prior_action_L1": 0.3849511938480701,
+            "action_MAE_radians": 0.16604687830307796,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.379967840506307,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.993004952275573,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.07296000304381872,
+            "raw_action_chunk_RMSE": 0.2701110938925292,
+            "raw_action_chunk_MAE": 0.1660468781476283,
+            "raw_action_chunk_MSE_per_joint": [
+              0.021767953866697727,
+              0.10891880312703602,
+              0.17447304575940079,
+              0.022619669890311264,
+              0.022852538752504693,
+              0.03225763363063917,
+              0.06505377404209509,
+              0.15095649936762856,
+              0.20157321557706984,
+              0.02040404373237228,
+              0.006047102072113751,
+              0.04859575670795573
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.04490959213419214,
+              "10": 0.05013010674902979,
+              "100": 0.07296000304381872
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -75336,6 +77993,60 @@
             "example_raw_action_chunk_MSE": 0.05803269142178793,
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T22:09:08.368154+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1003,
+            "condition": "connected",
+            "optimizer_step": 1250,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "ed582035c79c59eba510ab53d5eb361271a51a6291bf0a61200c4693dfc5d972",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.3849511938480701,
+              "action_MAE_radians": 0.16604687830307796,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.07296000304381872,
+              "raw_action_chunk_RMSE": 0.2701110938925292,
+              "raw_action_chunk_MAE": 0.1660468781476283,
+              "raw_action_chunk_MSE_per_joint": [
+                0.021767953866697727,
+                0.10891880312703602,
+                0.17447304575940079,
+                0.022619669890311264,
+                0.022852538752504693,
+                0.03225763363063917,
+                0.06505377404209509,
+                0.15095649936762856,
+                0.20157321557706984,
+                0.02040404373237228,
+                0.006047102072113751,
+                0.04859575670795573
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.04490959213419214,
+                "10": 0.05013010674902979,
+                "100": 0.07296000304381872
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.3849511938480701,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1250-actual-action-example.npz",
+            "example_sha256": "bb17034977439038b628be8c07fe4fe037698322be1f61c088176475d46b4bf8",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.07696359256730187,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:19:10.320801+00:00"
           }
         ]
       },
@@ -75418,30 +78129,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 1225,
-          "elapsed_seconds": 2699.524760134984,
+          "completed_optimizer_steps": 1450,
+          "elapsed_seconds": 3206.661656634882,
           "latest_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.3999760905223059,
-            "action_MAE_radians": 0.1728504304549392,
+            "prior_action_L1": 0.3910576950103911,
+            "action_MAE_radians": 0.1681505017267316,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.024631876519418,
+            "completion_EPE_mm": 12.153208776640426,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.708122548960652,
+            "moving_EPE_mm": 27.78936191133316,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 1000,
+            "step": 1250,
             "windows": 427,
-            "prior_action_L1": 0.3999760905223059,
-            "action_MAE_radians": 0.1728504304549392,
+            "prior_action_L1": 0.3910576950103911,
+            "action_MAE_radians": 0.1681505017267316,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.024631876519418,
+            "completion_EPE_mm": 12.153208776640426,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.708122548960652,
+            "moving_EPE_mm": 27.78936191133316,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -75601,6 +78312,47 @@
               "1": 0.05056452509040358,
               "10": 0.05706662546415573,
               "100": 0.0735044415474958
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1250,
+            "windows": 427,
+            "prior_action_L1": 0.3910576950103911,
+            "action_MAE_radians": 0.1681505017267316,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.153208776640426,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.78936191133316,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.07042905528363119,
+            "raw_action_chunk_RMSE": 0.2653847306904284,
+            "raw_action_chunk_MAE": 0.16815050190917638,
+            "raw_action_chunk_MSE_per_joint": [
+              0.022520250125331397,
+              0.11290842160634143,
+              0.18724386353213193,
+              0.02314342310201391,
+              0.024957207552860433,
+              0.032256488797926884,
+              0.06231147777218506,
+              0.1315217938340691,
+              0.17709689269365184,
+              0.01989181905412232,
+              0.006923538387913546,
+              0.04437348694502647
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.04689758788647429,
+              "10": 0.054720226783632565,
+              "100": 0.07042905528363119
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -75827,6 +78579,60 @@
             "example_raw_action_chunk_MSE": 0.05526470585557784,
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T22:06:22.100693+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1003,
+            "condition": "detached",
+            "optimizer_step": 1250,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "b9b4dd11672ed8d14504583f746c6055e4f14a1e583fe7f9c5a629a2893c9598",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.3910576950103911,
+              "action_MAE_radians": 0.1681505017267316,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.07042905528363119,
+              "raw_action_chunk_RMSE": 0.2653847306904284,
+              "raw_action_chunk_MAE": 0.16815050190917638,
+              "raw_action_chunk_MSE_per_joint": [
+                0.022520250125331397,
+                0.11290842160634143,
+                0.18724386353213193,
+                0.02314342310201391,
+                0.024957207552860433,
+                0.032256488797926884,
+                0.06231147777218506,
+                0.1315217938340691,
+                0.17709689269365184,
+                0.01989181905412232,
+                0.006923538387913546,
+                0.04437348694502647
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.04689758788647429,
+                "10": 0.054720226783632565,
+                "100": 0.07042905528363119
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.3910576950103911,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1250-actual-action-example.npz",
+            "example_sha256": "e85d9b3d951c2ae3f42a9ab85afe0200ae4a40350dece62820c12c2909f78e26",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.05388881710185681,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:15:35.273780+00:00"
           }
         ]
       }

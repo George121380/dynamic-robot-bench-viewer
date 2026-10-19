@@ -1,0 +1,19 @@
+{
+  "accepted": true,
+  "maximum_absolute_differences": {
+    "world_points": 0.0,
+    "finite_difference_velocity": 0.0,
+    "joint_position": 0.0,
+    "joint_velocity": 0.0
+  },
+  "tolerances": {
+    "world_points": 1e-05,
+    "finite_difference_velocity": 0.001,
+    "joint_position": 1e-05,
+    "joint_velocity": 1e-05
+  },
+  "canonical_reference_sha256": "99f44d01d05c701257b4603168cc99e2432460d7ede446473bd54c58f8e08f72",
+  "before_actor_construction": true,
+  "policy_actions_executed": 0,
+  "purpose": "Evaluation-only initial-state matching; never an actor input"
+}
