@@ -29,7 +29,7 @@
 <h2>4. 补点任务学会了什么</h2>
 <div class="scroll"><table><thead><tr><th>2,000步补全 / 参考</th><th>全部点EPE（mm）</th><th>运动点EPE（mm）</th></tr></thead><tbody id="completion"></tbody></table></div>
 <p>强补全全部点比3NN好约<strong>4.0%</strong>，但运动点反而差约<strong>10.7%</strong>。运动标签向量只占29.66%，这是点×时间标签比例，不能当作动态窗口或episode比例。平均EPE改善并不等于学到了更有用的动态机制。</p>
-<p>默认补全最后训练窗口的加权aux/action共享梯度比只有<strong>0.0064%–0.0702%</strong>；强补全达到<strong>4.5%–102.1%</strong>，强度也不稳定。这是最后一个训练窗口的抽样诊断，非全程均值。辅助梯度只经过CNN、图像投影、点MLP，不直接训练主ACT Transformer。</p>
+<p>默认补全最后训练窗口在图像投影/点MLP上测得的加权aux/action梯度比只有<strong>0.0064%–0.0702%</strong>；强补全达到<strong>4.5%–102.1%</strong>，强度也不稳定。这是最后一个训练窗口的抽样诊断，非全程均值。辅助梯度只经过CNN、图像投影、点MLP，不直接训练主ACT Transformer。</p>
 <div class="note"><strong>辅助梯度的直接对照没有通过。</strong>同1,500步，3NN残差connected为0.071372 ± 0.005146，detached为0.068747 ± 0.001082；配对差+0.002625 ± 0.005215rad²，3/4种子更差。中途一度略好，最终没有保持。它不支持“把辅助做强自然就改善策略”，也不足以证明辅助永久有害。</div>
 <h2>5. 哪些判断还不能做</h2>
 <p><strong>不能给闭环方法成功率排名。</strong>严格起点检查只完成11/64段、覆盖3个训练种子、一个开发pose，分组不平衡，完成片段均未折叠成功。专家正对照仅在其自己记录的训练pose成功。可观测初态一致也未恢复PhysX内部接触状态。</p>
