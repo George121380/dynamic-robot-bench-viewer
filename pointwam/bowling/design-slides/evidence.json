@@ -1,0 +1,213 @@
+{
+  "title": "Bowling sparse-point dynamics teaching deck",
+  "language": "zh-CN",
+  "as_of": "2026-10-19",
+  "evidence_revision": "fe13943662396f4e157c1ced5990568026ce4b22",
+  "slides": 52,
+  "sources": {
+    "task": {
+      "label": "原始任务与接口",
+      "url": "",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/INTERFACE.md",
+          "sha256": "27bd6123fb25a7f010bf8d64a219683073c4924a8af86c6497825b531e41fa01"
+        },
+        {
+          "path": "experiments/pointwam_bowling/protocol.json",
+          "sha256": "6986bbcfbabdb7cdbebec20e6e441f2e69d3a2da7b9737d57c6db8322c5cb4ed"
+        }
+      ]
+    },
+    "token": {
+      "label": "轨迹压缩与生成实现",
+      "url": "",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/model.py",
+          "sha256": "2b603297a50484def6473ba0e3847986eb4f129989b40de0afaf546512235d85"
+        },
+        {
+          "path": "experiments/pointwam_bowling/train.py",
+          "sha256": "832dca5175eb2ef3d0df0ec86de7c787062c23682d2118919191d9cdc2b8b190"
+        }
+      ]
+    },
+    "token-diagnostic": {
+      "label": "轨迹压缩诊断",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/diagnosis/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/DIAGNOSIS.zh-CN.md",
+          "sha256": "65dee621ec72eeefda5724d749f4d60af81ad016f28e8448b9ea3c81e77c4fb9"
+        }
+      ]
+    },
+    "direct": {
+      "label": "直接坐标预测",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/direct/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/direct_model.py",
+          "sha256": "b0dc0f02af53bfb7eb930af6c262dafaeea4838d2195e0dbc104146210a159b7"
+        },
+        {
+          "path": "experiments/pointwam_bowling/DIRECT.zh-CN.md",
+          "sha256": "4b3fe0f584f59d639150520ab64e798f6f8ab061cfaed4bc5a5b0fd7492e31e8"
+        }
+      ]
+    },
+    "prefix": {
+      "label": "时间前缀对照",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/temporal-prefix/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/temporal_model.py",
+          "sha256": "bca42ce9d8239d032dbfb4532e5016bddb8473b6f0d6b7935a9fa8d0b9a72c30"
+        },
+        {
+          "path": "experiments/pointwam_bowling/TEMPORAL_PREFIX.zh-CN.md",
+          "sha256": "cffd53197d3e3a3212d5126d905bdecfeebf44cadd667d6f889e93612257765b"
+        }
+      ]
+    },
+    "relation": {
+      "label": "共享物体关系模型",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/interaction/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/interaction_model.py",
+          "sha256": "5f1f7ce192bf80c206414e2d37e090487616a0eb27575fac864447068df01ec8"
+        },
+        {
+          "path": "experiments/pointwam_bowling/INTERACTION_EXPERIMENT.zh-CN.md",
+          "sha256": "05cf67d8b2a05171aa2ac6d907cb6b2ab38843629f39c0c50326793b9699b815"
+        }
+      ]
+    },
+    "state": {
+      "label": "真实状态对照",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/state-probe/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/state_probe/model.py",
+          "sha256": "adc5fb30ac047f76b48034750a2c4dbd0becd551250853d689cc518af8d249af"
+        },
+        {
+          "path": "experiments/pointwam_bowling/state_probe/README.zh-CN.md",
+          "sha256": "b3d289bc9af20060e8bcb58ffe6b44eca0132519f35a2d279a68caf265005d12"
+        }
+      ]
+    },
+    "short": {
+      "label": "100毫秒监督对照",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/local-collision/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/local_collision/model.py",
+          "sha256": "6e99aa765b7bacff88bde7e8029ecdac7a3f86eedbd5cbb199ecc8cf86cdaeee"
+        },
+        {
+          "path": "experiments/pointwam_bowling/local_collision/README.zh-CN.md",
+          "sha256": "c0db1805dc17855543dd2976082e85b954b3855c18c19c24f95cd5a36b85a78b"
+        }
+      ]
+    },
+    "coverage": {
+      "label": "数据覆盖与精度诊断",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/coverage-state/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/neighborhood/README.zh-CN.md",
+          "sha256": "573549563a7d065eaa906c8b7d0393cdc42a0e007358a7980f5eb9caff65739f"
+        }
+      ]
+    },
+    "response": {
+      "label": "运动历史价值",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/paired-response/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/paired_response/model.py",
+          "sha256": "f65310dae554d07048b30d0e13412cfce45a9dd2833c4b91a2d34393ec4b7eba"
+        },
+        {
+          "path": "experiments/pointwam_bowling/paired_response/protocol.json",
+          "sha256": "431b391ef30744518b42dc5b97e046af8b46ec59ae4e67907b2871ce4878e2ae"
+        },
+        {
+          "path": "reports/pointwam_bowling/paired-response-v1/audit.json",
+          "sha256": "dff33dba4cfafae0962ad4212eaa399cf006235a947a346442a061f8f22eef01"
+        },
+        {
+          "path": "reports/pointwam_bowling/paired-response-v1/index.html",
+          "sha256": "cb13b4aa63b2327b6c78cbadd1ffe23214ec91b76984a7b7e6791095d53c0612"
+        }
+      ]
+    },
+    "completion": {
+      "label": "部分历史补全",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/history-completion/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/history_completion/model.py",
+          "sha256": "69e08b53618cb3dc84f490fe694dbb430d8eb5d4a863aa71fe1563acdeb4ebbd"
+        },
+        {
+          "path": "experiments/pointwam_bowling/history_completion/protocol.json",
+          "sha256": "6b3ac597c519d253d0c297d11e9db5bd33f7082d403daf1748fcb285693047a6"
+        },
+        {
+          "path": "reports/pointwam_bowling/history-completion-v1/audit.json",
+          "sha256": "2f646cf2011d329b40e8bc789bee7e972333e97b71679ed7ff447380cb7e1ed5"
+        },
+        {
+          "path": "reports/pointwam_bowling/history-completion-v1/index.html",
+          "sha256": "b24dbe182397f043af383ce82f6f981452a478aa3279d4ebc07f87b49ea41efb"
+        }
+      ]
+    },
+    "scope": {
+      "label": "数据范围复核与收尾",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/history-completion/#scope-review",
+      "files": [
+        {
+          "path": "reports/pointwam_bowling/research-closeout-v1/scope-audit.json",
+          "sha256": "88961cfa3d3adb03839bd4233fb282391edd84747e66c47b072ea822add9c348"
+        },
+        {
+          "path": "experiments/pointwam_bowling/research_status.json",
+          "sha256": "43594f154249f2c75ab4a4f95712a0a72b68e991b42cde4aa499df8f7401e655"
+        }
+      ]
+    },
+    "spin": {
+      "label": "可观测状态诊断",
+      "url": "https://peiqil.com/dynamic-robot-bench-viewer/pointwam/bowling/technical-report/",
+      "files": [
+        {
+          "path": "experiments/pointwam_bowling/VISIBLE_STATE.zh-CN.md",
+          "sha256": "58550b10640fc138757d3af4cd5d230958ba9becd8c87b4a96d605755fc2b573"
+        }
+      ]
+    }
+  },
+  "saved_original_validation_forecasts": 16,
+  "paired_windows": 360,
+  "completion_windows": 360,
+  "complete_original_payload_arrays": true,
+  "coordinate_rounding": false,
+  "display_transforms": "Documented projection/current subtraction/metres-to-mm only;no inference,trajectory interpolation or prediction correction",
+  "new_training_updates": 0,
+  "new_model_forwards": 0,
+  "new_physics_steps": 0,
+  "historical_research_decision_unchanged": true,
+  "build_sources": {
+    "build.py": "ab855ef6ec07998338eace0308e27cf9a86df5af0074e9558c46da976d037d80",
+    "slides.json": "7eb210d3b950088b6c04505d9b4f539b96f59344f313a45edd1c896ff68e13d0",
+    "style.css": "1a84478f7932597a76658a1f9b5b1b9de8e3adf6f5a5c073754fd2846f7e6d44",
+    "deck.js": "7fddefd94a2af37256f95ec98633be9950c2f8ab3b0cba78aa29ee200d86636d",
+    "verify.py": "c42ccbc78fc80bc030bc50ac6c13725bf3335142bf9a18ef5e2e22e4b4b49f7a"
+  },
+  "html_sha256": "7759a60325c810a630cefba4a0a3ce8dcd245f407810bdc8d8d96c2206076f80"
+}

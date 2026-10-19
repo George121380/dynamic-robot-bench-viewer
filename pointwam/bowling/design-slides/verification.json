@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "slides": 52,
+  "every_slide_has_notes": true,
+  "paired_arrays": 23,
+  "paired_coordinate_scalars": 56160,
+  "completion_arrays": 29,
+  "completion_coordinate_scalars": 113400,
+  "old_validation_coordinate_and_time_scalars": 141488,
+  "saved_prediction_values_unchanged": true,
+  "private_absolute_host_paths": false,
+  "external_runtime_dependencies": 0,
+  "old_python_files_unchanged": 133,
+  "endpoint_default_case_errors_mm": {
+    "current": [
+      24.79181497721402,
+      8.912843004124912,
+      19.978902801916366
+    ],
+    "self_history": [
+      24.481571662506454,
+      9.4003374147018,
+      20.037293845856293
+    ],
+    "all_history": [
+      0.2507985579815278,
+      4.9365522317737875,
+      2.2118270217042886
+    ],
+    "true_state": [
+      0.5530520439444168,
+      3.069654646672925,
+      3.483248766892884
+    ],
+    "completion-full": [
+      5.506956786853975,
+      53.02409286183124,
+      92.86020098728204
+    ],
+    "completion-masked": [
+      77.06747477619707,
+      15.713784511339254,
+      4.909625859811447
+    ]
+  },
+  "new_model_forwards": 0,
+  "new_training_updates": 0,
+  "new_physics_steps": 0,
+  "html_sha256": "7759a60325c810a630cefba4a0a3ce8dcd245f407810bdc8d8d96c2206076f80"
+}
