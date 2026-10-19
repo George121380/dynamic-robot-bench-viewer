@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240mm" height="135mm" viewBox="0 0 2400 1350" role="img">
+  <title>Trajectory encoder, controlled baselines, and residual completion control</title>
+  <defs>
+    <marker id="arrow-ink" viewBox="0 0 12 10" refX="10.5" refY="5" markerWidth="9" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 12 5 L 0 10 Z" fill="#253448" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 12 10" refX="10.5" refY="5" markerWidth="9" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 12 5 L 0 10 Z" fill="#4C76AA" />
+    </marker>
+    <marker id="arrow-teal" viewBox="0 0 12 10" refX="10.5" refY="5" markerWidth="9" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 12 5 L 0 10 Z" fill="#258A80" />
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 12 10" refX="10.5" refY="5" markerWidth="9" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 12 5 L 0 10 Z" fill="#B17B38" />
+    </marker>
+    <marker id="arrow-muted" viewBox="0 0 12 10" refX="10.5" refY="5" markerWidth="9" markerHeight="8" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+      <path d="M 0 0 L 12 5 L 0 10 Z" fill="#677587" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="2400" height="1350" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.8" id="element-1" />
+  <text x="45" y="65" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="600" text-anchor="start" id="element-2">Trajectory encoding and experimental controls</text>
+  <text x="45" y="108" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="400" text-anchor="start" id="element-3">Implemented design: fixed causal windows, shared ACT core and an auxiliary-gradient control</text>
+  <path d="M45,143H2355" fill="none" stroke="#CFD7E1" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1" id="element-4" />
+  <text x="45" y="198" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="start" id="element-5">a</text>
+  <text x="90" y="198" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="600" text-anchor="start" id="element-6">Point-wise trajectory representation</text>
+  <text x="1550" y="198" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="start" id="element-7">b</text>
+  <text x="1595" y="198" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="600" text-anchor="start" id="element-8">Observed / hidden point split</text>
+  <path d="M1495,230V705" fill="none" stroke="#CFD7E1" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1" id="element-9" />
+  <text x="45" y="256" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-10">Persistent point identities within each window</text>
+  <text x="45" y="339" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="start" id="element-11">Point 1</text>
+  <path d="M 160,330.0 L 175,333.2162514703088 L 190,336.2325320018546 L 205,338.86130388030335 L 220,340.93912280250265 L 235,342.3368000516226 L 250,342.9674348258527 L 265,342.7918173093612 L 280,341.8208665487339 L 295,340.114951559543 L 310,337.7801378733514 L 325,334.9615928966803 L 340,331.8345601047783 L 355,328.5934632511086 L 370,325.43981804003494 L 385,322.5697028563495" fill="none" stroke="#258A80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1" id="element-12" />
+  <circle cx="160" cy="330.0" r="3.2" fill="#C9E6DE" id="element-13" />
+  <circle cx="175" cy="333.2162514703088" r="3.2" fill="#C9E6DE" id="element-14" />
+  <circle cx="190" cy="336.2325320018546" r="3.2" fill="#C9E6DE" id="element-15" />
+  <circle cx="205" cy="338.86130388030335" r="3.2" fill="#C9E6DE" id="element-16" />
+  <circle cx="220" cy="340.93912280250265" r="3.2" fill="#C9E6DE" id="element-17" />
+  <circle cx="235" cy="342.3368000516226" r="3.2" fill="#C9E6DE" id="element-18" />
+  <circle cx="250" cy="342.9674348258527" r="3.2" fill="#C9E6DE" id="element-19" />
+  <circle cx="265" cy="342.7918173093612" r="3.2" fill="#C9E6DE" id="element-20" />
+  <circle cx="280" cy="341.8208665487339" r="3.2" fill="#C9E6DE" id="element-21" />
+  <circle cx="295" cy="340.114951559543" r="3.2" fill="#C9E6DE" id="element-22" />
+  <circle cx="310" cy="337.7801378733514" r="3.2" fill="#C9E6DE" id="element-23" />
+  <circle cx="325" cy="334.9615928966803" r="3.2" fill="#C9E6DE" id="element-24" />
+  <circle cx="340" cy="331.8345601047783" r="3.2" fill="#C9E6DE" id="element-25" />
+  <circle cx="355" cy="328.5934632511086" r="3.2" fill="#C9E6DE" id="element-26" />
+  <circle cx="370" cy="325.43981804003494" r="3.2" fill="#C9E6DE" id="element-27" />
+  <circle cx="385" cy="322.5697028563495" r="3.2" fill="#258A80" id="element-28" />
+  <text x="45" y="441" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="start" id="element-29">Point 2</text>
+  <path d="M 160,442.93912280250265 L 175,444.3368000516226 L 190,444.9674348258527 L 205,444.7918173093612 L 220,443.8208665487339 L 235,442.114951559543 L 250,439.7801378733514 L 265,436.9615928966803 L 280,433.8345601047783 L 295,430.5934632511086 L 310,427.43981804003494 L 325,424.5697028563495 L 340,422.16156756099696 L 355,420.36513834302843 L 370,419.29210847035375 L 385,419.0091937433201" fill="none" stroke="#258A80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1" id="element-30" />
+  <circle cx="160" cy="442.93912280250265" r="3.2" fill="#C9E6DE" id="element-31" />
+  <circle cx="175" cy="444.3368000516226" r="3.2" fill="#C9E6DE" id="element-32" />
+  <circle cx="190" cy="444.9674348258527" r="3.2" fill="#C9E6DE" id="element-33" />
+  <circle cx="205" cy="444.7918173093612" r="3.2" fill="#C9E6DE" id="element-34" />
+  <circle cx="220" cy="443.8208665487339" r="3.2" fill="#C9E6DE" id="element-35" />
+  <circle cx="235" cy="442.114951559543" r="3.2" fill="#C9E6DE" id="element-36" />
+  <circle cx="250" cy="439.7801378733514" r="3.2" fill="#C9E6DE" id="element-37" />
+  <circle cx="265" cy="436.9615928966803" r="3.2" fill="#C9E6DE" id="element-38" />
+  <circle cx="280" cy="433.8345601047783" r="3.2" fill="#C9E6DE" id="element-39" />
+  <circle cx="295" cy="430.5934632511086" r="3.2" fill="#C9E6DE" id="element-40" />
+  <circle cx="310" cy="427.43981804003494" r="3.2" fill="#C9E6DE" id="element-41" />
+  <circle cx="325" cy="424.5697028563495" r="3.2" fill="#C9E6DE" id="element-42" />
+  <circle cx="340" cy="422.16156756099696" r="3.2" fill="#C9E6DE" id="element-43" />
+  <circle cx="355" cy="420.36513834302843" r="3.2" fill="#C9E6DE" id="element-44" />
+  <circle cx="370" cy="419.29210847035375" r="3.2" fill="#C9E6DE" id="element-45" />
+  <circle cx="385" cy="419.0091937433201" r="3.2" fill="#258A80" id="element-46" />
+  <text x="45" y="543" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="start" id="element-47">Point 3</text>
+  <path d="M 160,545.8208665487339 L 175,544.114951559543 L 190,541.7801378733515 L 205,538.9615928966803 L 220,535.8345601047782 L 235,532.5934632511086 L 250,529.439818040035 L 265,526.5697028563495 L 280,524.1615675609969 L 295,522.3651383430284 L 310,521.2921084703537 L 325,521.0091937433201 L 340,521.5339844293792 L 355,522.8338515854543 L 370,524.8279757675849 L 385,527.3923719925097" fill="none" stroke="#258A80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="1" id="element-48" />
+  <circle cx="160" cy="545.8208665487339" r="3.2" fill="#C9E6DE" id="element-49" />
+  <circle cx="175" cy="544.114951559543" r="3.2" fill="#C9E6DE" id="element-50" />
+  <circle cx="190" cy="541.7801378733515" r="3.2" fill="#C9E6DE" id="element-51" />
+  <circle cx="205" cy="538.9615928966803" r="3.2" fill="#C9E6DE" id="element-52" />
+  <circle cx="220" cy="535.8345601047782" r="3.2" fill="#C9E6DE" id="element-53" />
+  <circle cx="235" cy="532.5934632511086" r="3.2" fill="#C9E6DE" id="element-54" />
+  <circle cx="250" cy="529.439818040035" r="3.2" fill="#C9E6DE" id="element-55" />
+  <circle cx="265" cy="526.5697028563495" r="3.2" fill="#C9E6DE" id="element-56" />
+  <circle cx="280" cy="524.1615675609969" r="3.2" fill="#C9E6DE" id="element-57" />
+  <circle cx="295" cy="522.3651383430284" r="3.2" fill="#C9E6DE" id="element-58" />
+  <circle cx="310" cy="521.2921084703537" r="3.2" fill="#C9E6DE" id="element-59" />
+  <circle cx="325" cy="521.0091937433201" r="3.2" fill="#C9E6DE" id="element-60" />
+  <circle cx="340" cy="521.5339844293792" r="3.2" fill="#C9E6DE" id="element-61" />
+  <circle cx="355" cy="522.8338515854543" r="3.2" fill="#C9E6DE" id="element-62" />
+  <circle cx="370" cy="524.8279757675849" r="3.2" fill="#C9E6DE" id="element-63" />
+  <circle cx="385" cy="527.3923719925097" r="3.2" fill="#258A80" id="element-64" />
+  <text x="163" y="626" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" id="element-65">t − 0.5 s</text>
+  <text x="387" y="626" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" text-anchor="middle" id="element-66">t</text>
+  <text x="45" y="678" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" text-anchor="start" id="element-67">K = 16 trajectories, T = 16 slots</text>
+  <path d="M 422,430 L 500,430" fill="none" stroke="#258A80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-teal)" id="element-68" />
+  <rect x="500" y="280" width="410" height="305" rx="9" fill="#EAF5F1" stroke="#258A80" stroke-width="1.8" id="element-69" />
+  <text x="705" y="322" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="600" text-anchor="middle" id="element-70">8-D feature at each time</text>
+  <text x="524" y="376" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" id="element-71">Current XYZ / 0.5 m</text>
+  <text x="884" y="376" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="end" id="element-72">3</text>
+  <text x="524" y="424" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" id="element-73">Past − current XYZ / 0.05 m</text>
+  <text x="884" y="424" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="end" id="element-74">3</text>
+  <text x="524" y="472" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" id="element-75">Relative time</text>
+  <text x="884" y="472" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="end" id="element-76">1</text>
+  <text x="524" y="520" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" id="element-77">Validity mask</text>
+  <text x="884" y="520" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="end" id="element-78">1</text>
+  <text x="705" y="625" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="middle" id="element-79">Invalid slots are zeroed</text>
+  <path d="M 910,430 L 970,430" fill="none" stroke="#258A80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-teal)" id="element-80" />
+  <rect x="980" y="328" width="85" height="188" rx="3" fill="#EAF5F1" stroke="#258A80" stroke-width="1.4" id="element-81" />
+  <rect x="975" y="333" width="85" height="188" rx="3" fill="#EAF5F1" stroke="#258A80" stroke-width="1.4" id="element-82" />
+  <rect x="970" y="338" width="85" height="188" rx="3" fill="#EAF5F1" stroke="#258A80" stroke-width="1.4" id="element-83" />
+  <path d="M984.1666666666666,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-84" />
+  <path d="M998.3333333333334,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-85" />
+  <path d="M1012.5,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-86" />
+  <path d="M1026.6666666666667,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-87" />
+  <path d="M1040.8333333333333,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-88" />
+  <text x="1013" y="570" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="middle" id="element-89">128</text>
+  <rect x="1120" y="328" width="85" height="188" rx="3" fill="#EAF5F1" stroke="#258A80" stroke-width="1.4" id="element-90" />
+  <rect x="1115" y="333" width="85" height="188" rx="3" fill="#EAF5F1" stroke="#258A80" stroke-width="1.4" id="element-91" />
+  <rect x="1110" y="338" width="85" height="188" rx="3" fill="#EAF5F1" stroke="#258A80" stroke-width="1.4" id="element-92" />
+  <path d="M1124.1666666666667,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-93" />
+  <path d="M1138.3333333333333,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-94" />
+  <path d="M1152.5,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-95" />
+  <path d="M1166.6666666666667,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-96" />
+  <path d="M1180.8333333333333,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-97" />
+  <text x="1153" y="570" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="middle" id="element-98">128</text>
+  <rect x="1260" y="328" width="85" height="188" rx="3" fill="#EAF5F1" stroke="#258A80" stroke-width="1.4" id="element-99" />
+  <rect x="1255" y="333" width="85" height="188" rx="3" fill="#EAF5F1" stroke="#258A80" stroke-width="1.4" id="element-100" />
+  <rect x="1250" y="338" width="85" height="188" rx="3" fill="#EAF5F1" stroke="#258A80" stroke-width="1.4" id="element-101" />
+  <path d="M1264.1666666666667,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-102" />
+  <path d="M1278.3333333333333,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-103" />
+  <path d="M1292.5,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-104" />
+  <path d="M1306.6666666666667,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-105" />
+  <path d="M1320.8333333333333,338V526" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" id="element-106" />
+  <text x="1293" y="570" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="middle" id="element-107">512</text>
+  <path d="M 1065,430 L 1105,430" fill="none" stroke="#258A80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-teal)" id="element-108" />
+  <path d="M 1205,430 L 1245,430" fill="none" stroke="#258A80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-teal)" id="element-109" />
+  <text x="1087" y="316" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="middle" id="element-110">ReLU</text>
+  <text x="1227" y="316" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="middle" id="element-111">ReLU</text>
+  <text x="1160" y="626" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" text-anchor="middle" id="element-112">Shared MLP across points</text>
+  <text x="1160" y="663" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="middle" id="element-113">16 × 8 flattened to 128 inputs</text>
+  <text x="1160" y="698" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="middle" id="element-114">K × 512 tokens, 99,072 parameters</text>
+  <path d="M1570.0,328.1 L1632.7,283.55 L1673.95,272.0 L1698.7,296.75 L1735.0,296.75 L1759.75,272.0 L1801.0,283.55 L1863.7,328.1 L1832.35,392.45 L1789.45,364.4 L1787.8,504.65 L1647.55,504.65 L1645.9,364.4 L1603.0,392.45 Z" fill="#EAF5F1" stroke="#258A80" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" opacity="1" id="element-115" />
+  <path d="M1649.2,336.35 Q1718.5,344.6 1787.8,336.35" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" id="element-116" />
+  <path d="M1649.2,362.75 Q1718.5,371.0 1787.8,362.75" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" id="element-117" />
+  <path d="M1649.2,389.15 Q1718.5,397.4 1787.8,389.15" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" id="element-118" />
+  <path d="M1649.2,415.54999999999995 Q1718.5,423.79999999999995 1787.8,415.54999999999995" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" id="element-119" />
+  <path d="M1649.2,441.95 Q1718.5,450.2 1787.8,441.95" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" id="element-120" />
+  <path d="M1649.2,468.35 Q1718.5,476.6 1787.8,468.35" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" id="element-121" />
+  <path d="M1670.65,308.3 Q1677.25,407.29999999999995 1670.65,503.0" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" id="element-122" />
+  <path d="M1693.75,308.3 Q1700.35,407.29999999999995 1693.75,503.0" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" id="element-123" />
+  <path d="M1716.85,308.3 Q1723.4499999999998,407.29999999999995 1716.85,503.0" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" id="element-124" />
+  <path d="M1739.95,308.3 Q1746.55,407.29999999999995 1739.95,503.0" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" id="element-125" />
+  <path d="M1763.05,308.3 Q1769.6499999999999,407.29999999999995 1763.05,503.0" fill="none" stroke="#258A80" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="0.35" id="element-126" />
+  <circle cx="1657.45" cy="321.5" r="5.28" fill="#B17B38" id="element-127" />
+  <circle cx="1674.775" cy="321.5" r="5.28" fill="#B17B38" id="element-128" />
+  <circle cx="1692.1" cy="321.5" r="5.28" fill="#B17B38" id="element-129" />
+  <circle cx="1709.425" cy="321.5" r="5.28" fill="#B17B38" id="element-130" />
+  <circle cx="1726.75" cy="321.5" r="5.28" fill="#B17B38" id="element-131" />
+  <circle cx="1744.075" cy="321.5" r="5.28" fill="#B17B38" id="element-132" />
+  <circle cx="1761.4" cy="321.5" r="5.28" fill="#258A80" id="element-133" />
+  <circle cx="1778.725" cy="321.5" r="5.28" fill="#B17B38" id="element-134" />
+  <circle cx="1657.45" cy="354.5" r="5.28" fill="#B17B38" id="element-135" />
+  <circle cx="1674.775" cy="354.5" r="5.28" fill="#B17B38" id="element-136" />
+  <circle cx="1692.1" cy="354.5" r="5.28" fill="#B17B38" id="element-137" />
+  <circle cx="1709.425" cy="354.5" r="5.28" fill="#B17B38" id="element-138" />
+  <circle cx="1726.75" cy="354.5" r="5.28" fill="#B17B38" id="element-139" />
+  <circle cx="1744.075" cy="354.5" r="5.28" fill="#B17B38" id="element-140" />
+  <circle cx="1761.4" cy="354.5" r="5.28" fill="#258A80" id="element-141" />
+  <circle cx="1778.725" cy="354.5" r="5.28" fill="#258A80" id="element-142" />
+  <circle cx="1657.45" cy="387.5" r="5.28" fill="#B17B38" id="element-143" />
+  <circle cx="1674.775" cy="387.5" r="5.28" fill="#B17B38" id="element-144" />
+  <circle cx="1692.1" cy="387.5" r="5.28" fill="#B17B38" id="element-145" />
+  <circle cx="1709.425" cy="387.5" r="5.28" fill="#B17B38" id="element-146" />
+  <circle cx="1726.75" cy="387.5" r="5.28" fill="#258A80" id="element-147" />
+  <circle cx="1744.075" cy="387.5" r="5.28" fill="#B17B38" id="element-148" />
+  <circle cx="1761.4" cy="387.5" r="5.28" fill="#B17B38" id="element-149" />
+  <circle cx="1778.725" cy="387.5" r="5.28" fill="#B17B38" id="element-150" />
+  <circle cx="1657.45" cy="420.5" r="5.28" fill="#B17B38" id="element-151" />
+  <circle cx="1674.775" cy="420.5" r="5.28" fill="#B17B38" id="element-152" />
+  <circle cx="1692.1" cy="420.5" r="5.28" fill="#258A80" id="element-153" />
+  <circle cx="1709.425" cy="420.5" r="5.28" fill="#B17B38" id="element-154" />
+  <circle cx="1726.75" cy="420.5" r="5.28" fill="#B17B38" id="element-155" />
+  <circle cx="1744.075" cy="420.5" r="5.28" fill="#B17B38" id="element-156" />
+  <circle cx="1761.4" cy="420.5" r="5.28" fill="#B17B38" id="element-157" />
+  <circle cx="1778.725" cy="420.5" r="5.28" fill="#B17B38" id="element-158" />
+  <circle cx="1657.45" cy="453.5" r="5.28" fill="#258A80" id="element-159" />
+  <circle cx="1674.775" cy="453.5" r="5.28" fill="#B17B38" id="element-160" />
+  <circle cx="1692.1" cy="453.5" r="5.28" fill="#B17B38" id="element-161" />
+  <circle cx="1709.425" cy="453.5" r="5.28" fill="#258A80" id="element-162" />
+  <circle cx="1726.75" cy="453.5" r="5.28" fill="#258A80" id="element-163" />
+  <circle cx="1744.075" cy="453.5" r="5.28" fill="#B17B38" id="element-164" />
+  <circle cx="1761.4" cy="453.5" r="5.28" fill="#258A80" id="element-165" />
+  <circle cx="1778.725" cy="453.5" r="5.28" fill="#258A80" id="element-166" />
+  <circle cx="1657.45" cy="486.5" r="5.28" fill="#B17B38" id="element-167" />
+  <circle cx="1674.775" cy="486.5" r="5.28" fill="#258A80" id="element-168" />
+  <circle cx="1692.1" cy="486.5" r="5.28" fill="#B17B38" id="element-169" />
+  <circle cx="1709.425" cy="486.5" r="5.28" fill="#B17B38" id="element-170" />
+  <circle cx="1726.75" cy="486.5" r="5.28" fill="#B17B38" id="element-171" />
+  <circle cx="1744.075" cy="486.5" r="5.28" fill="#B17B38" id="element-172" />
+  <circle cx="1761.4" cy="486.5" r="5.28" fill="#B17B38" id="element-173" />
+  <circle cx="1778.725" cy="486.5" r="5.28" fill="#B17B38" id="element-174" />
+  <circle cx="1603.0" cy="328.1" r="5.28" fill="#B17B38" id="element-175" />
+  <circle cx="1617.85" cy="316.55" r="5.28" fill="#B17B38" id="element-176" />
+  <circle cx="1632.7" cy="305.0" r="5.28" fill="#258A80" id="element-177" />
+  <circle cx="1591.45" cy="346.25" r="5.28" fill="#B17B38" id="element-178" />
+  <circle cx="1609.6" cy="351.2" r="5.28" fill="#258A80" id="element-179" />
+  <circle cx="1626.1" cy="336.35" r="5.28" fill="#B17B38" id="element-180" />
+  <circle cx="1617.85" cy="369.35" r="5.28" fill="#B17B38" id="element-181" />
+  <circle cx="1640.95" cy="349.55" r="5.28" fill="#258A80" id="element-182" />
+  <circle cx="1830.7" cy="328.1" r="5.28" fill="#B17B38" id="element-183" />
+  <circle cx="1815.85" cy="316.55" r="5.28" fill="#B17B38" id="element-184" />
+  <circle cx="1801.0" cy="305.0" r="5.28" fill="#B17B38" id="element-185" />
+  <circle cx="1842.25" cy="346.25" r="5.28" fill="#B17B38" id="element-186" />
+  <circle cx="1824.1" cy="351.2" r="5.28" fill="#258A80" id="element-187" />
+  <circle cx="1807.6" cy="336.35" r="5.28" fill="#258A80" id="element-188" />
+  <circle cx="1815.85" cy="369.35" r="5.28" fill="#B17B38" id="element-189" />
+  <circle cx="1792.75" cy="349.55" r="5.28" fill="#B17B38" id="element-190" />
+  <text x="1940" y="286" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" text-anchor="start" id="element-191">Current visible surface</text>
+  <text x="1940" y="330" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-192">Farthest-point sampling</text>
+  <text x="1940" y="368" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-193">64 candidate vertices</text>
+  <text x="1940" y="406" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-194">Seeded random split</text>
+  <path d="M 1960,443 L 1960,482 L 1840,482 L 1840,530" fill="none" stroke="#258A80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-teal)" id="element-195" />
+  <path d="M 1960,482 L 2180,482 L 2180,530" fill="none" stroke="#B17B38" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-amber)" id="element-196" />
+  <rect x="1680" y="530" width="310" height="106" rx="9" fill="#EAF5F1" stroke="#258A80" stroke-width="1.8" id="element-197" />
+  <text x="1835.0" y="569" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="middle" id="element-198">16 observed points</text>
+  <text x="1835.0" y="605.0" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="middle" id="element-199">Past XYZ enters the actor</text>
+  <rect x="2030" y="530" width="310" height="106" rx="9" fill="#FBF3E7" stroke="#B17B38" stroke-width="1.8" id="element-200" />
+  <text x="2185.0" y="569" fill="#B17B38" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="middle" id="element-201">48 hidden points</text>
+  <text x="2185.0" y="605.0" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="middle" id="element-202">Train-only queries / targets</text>
+  <text x="1550" y="694" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" id="element-203">Resample identities across windows, retain identity across time</text>
+  <path d="M45,747H2355" fill="none" stroke="#CFD7E1" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1" id="element-204" />
+  <text x="45" y="807" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="start" id="element-205">c</text>
+  <text x="90" y="807" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="600" text-anchor="start" id="element-206">Matched observation controls</text>
+  <text x="1220" y="807" fill="#B17B38" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" text-anchor="start" id="element-207">d</text>
+  <text x="1265" y="807" fill="#B17B38" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="600" text-anchor="start" id="element-208">3NN residual completion control</text>
+  <text x="45" y="850" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" id="element-209">Every condition uses current RGB and current joint state</text>
+  <text x="45" y="890" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="start" id="element-210">Condition</text>
+  <text x="370" y="890" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="start" id="element-211">RGB history</text>
+  <text x="575" y="890" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="start" id="element-212">Current XYZ</text>
+  <text x="790" y="890" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="start" id="element-213">Past motion</text>
+  <text x="1010" y="890" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600" text-anchor="start" id="element-214">Aux. loss</text>
+  <path d="M45,908H1165" fill="none" stroke="#253448" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" opacity="1" id="element-215" />
+  <text x="45" y="950" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="start" id="element-216">ACT</text>
+  <text x="370" y="950" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-217">—</text>
+  <text x="575" y="950" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-218">—</text>
+  <text x="790" y="950" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-219">—</text>
+  <text x="1010" y="950" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-220">—</text>
+  <path d="M45,968H1165" fill="none" stroke="#CFD7E1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="1" id="element-221" />
+  <text x="45" y="1008" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="start" id="element-222">RGB-H</text>
+  <text x="370" y="1008" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-223">16 frames</text>
+  <text x="575" y="1008" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-224">—</text>
+  <text x="790" y="1008" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-225">—</text>
+  <text x="1010" y="1008" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-226">—</text>
+  <path d="M45,1026H1165" fill="none" stroke="#CFD7E1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="1" id="element-227" />
+  <text x="45" y="1066" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="start" id="element-228">Geometry</text>
+  <text x="370" y="1066" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-229">16 frames</text>
+  <text x="575" y="1066" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-230">✓</text>
+  <text x="790" y="1066" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-231">—</text>
+  <text x="1010" y="1066" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-232">—</text>
+  <path d="M45,1084H1165" fill="none" stroke="#CFD7E1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="1" id="element-233" />
+  <text x="45" y="1124" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="start" id="element-234">Tracks</text>
+  <text x="370" y="1124" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-235">16 frames</text>
+  <text x="575" y="1124" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-236">✓</text>
+  <text x="790" y="1124" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-237">✓</text>
+  <text x="1010" y="1124" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-238">—</text>
+  <path d="M45,1142H1165" fill="none" stroke="#CFD7E1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="1" id="element-239" />
+  <rect x="35" y="1149" width="1130" height="53" rx="0" fill="#FBF3E7" stroke="none" stroke-width="1.8" id="element-240" />
+  <text x="45" y="1182" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="600" text-anchor="start" id="element-241">Tracks + Completion</text>
+  <text x="370" y="1182" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-242">16 frames</text>
+  <text x="575" y="1182" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-243">✓</text>
+  <text x="790" y="1182" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-244">✓</text>
+  <text x="1010" y="1182" fill="#B17B38" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400" text-anchor="start" id="element-245">✓</text>
+  <path d="M45,1200H1165" fill="none" stroke="#CFD7E1" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" opacity="1" id="element-246" />
+  <text x="45" y="1280" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" id="element-247">T = 16 at stride 3, 90 Hz. Predict 100 joint targets in every condition.</text>
+  <text x="45" y="1311" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" id="element-248">History-enabled variants share the RGB window. GT point tracks are privileged inputs.</text>
+  <text x="1220" y="850" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="400" text-anchor="start" id="element-249">Same actor inputs and architecture in both variants</text>
+  <rect x="1235" y="889" width="240" height="96" rx="9" fill="#EAF5F1" stroke="#258A80" stroke-width="1.8" id="element-250" />
+  <text x="1355.0" y="928" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" text-anchor="middle" id="element-251">Observed tracks</text>
+  <text x="1355.0" y="964.0" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" id="element-252">+ hidden current XYZ</text>
+  <rect x="1550" y="889" width="240" height="96" rx="9" fill="#EAF5F1" stroke="#258A80" stroke-width="1.8" id="element-253" />
+  <text x="1670.0" y="928" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" text-anchor="middle" id="element-254">3NN interpolation</text>
+  <text x="1670.0" y="964.0" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" text-anchor="middle" id="element-255">Inverse squared distance</text>
+  <path d="M 1475,937 L 1550,937" fill="none" stroke="#258A80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-teal)" id="element-256" />
+  <path d="M 1790,937 L 2210,937 L 2210,1073" fill="none" stroke="#258A80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-teal)" id="element-257" />
+  <text x="1990" y="920" fill="#258A80" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="middle" id="element-258">Fixed displacement prior</text>
+  <rect x="1235" y="1040" width="240" height="96" rx="9" fill="#FBF3E7" stroke="#B17B38" stroke-width="1.8" id="element-259" />
+  <text x="1355.0" y="1079" fill="#B17B38" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" text-anchor="middle" id="element-260">Observation O<tspan font-size="17.28" baseline-shift="sub">t</tspan>
+  </text>
+  <text x="1355.0" y="1115.0" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" id="element-261">Before ACT attention</text>
+  <rect x="1550" y="1040" width="240" height="96" rx="9" fill="#FBF3E7" stroke="#B17B38" stroke-width="1.8" id="element-262" />
+  <text x="1670.0" y="1079" fill="#B17B38" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" text-anchor="middle" id="element-263">Gradient switch</text>
+  <text x="1670.0" y="1115.0" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" id="element-264">Connected / stop-grad</text>
+  <path d="M 1475,1088 L 1550,1088" fill="none" stroke="#B17B38" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-amber)" id="element-265" />
+  <rect x="1850" y="1040" width="240" height="96" rx="9" fill="#FBF3E7" stroke="#B17B38" stroke-width="1.8" id="element-266" />
+  <text x="1970.0" y="1079" fill="#B17B38" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" text-anchor="middle" id="element-267">Residual decoder</text>
+  <text x="1970.0" y="1115.0" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" id="element-268">Learned displacement</text>
+  <path d="M 1790,1088 L 1850,1088" fill="none" stroke="#B17B38" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-amber)" id="element-269" />
+  <path d="M 2090,1088 L 2186,1088" fill="none" stroke="#B17B38" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-amber)" id="element-270" />
+  <circle cx="2210" cy="1088" r="24" fill="#FBF3E7" id="element-271" />
+  <circle cx="2210" cy="1088" r="24" fill="none" stroke="#B17B38" stroke-width="2" id="element-272" />
+  <text x="2210" y="1098" fill="#B17B38" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="400" text-anchor="middle" id="element-273">+</text>
+  <text x="2139" y="1068" fill="#B17B38" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" id="element-274">× 0.1</text>
+  <path d="M 2234,1088 L 2320,1088 L 2320,1195 L 1830,1195" fill="none" stroke="#B17B38" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="1" marker-end="url(#arrow-amber)" id="element-275" />
+  <text x="2140" y="1175" fill="#B17B38" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="middle" id="element-276">Predicted hidden past motion</text>
+  <rect x="1510" y="1150" width="320" height="96" rx="9" fill="#FBF3E7" stroke="#B17B38" stroke-width="1.8" id="element-277" />
+  <text x="1670.0" y="1189" fill="#B17B38" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" text-anchor="middle" id="element-278">Masked Smooth L1</text>
+  <text x="1670.0" y="1225.0" fill="#253448" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="400" text-anchor="middle" id="element-279">GT hidden past displacements</text>
+  <text x="1235" y="1290" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" id="element-280">Connected: auxiliary gradients reach shared observation encoders.</text>
+  <text x="1235" y="1321" fill="#677587" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="400" text-anchor="start" id="element-281">Detached: the auxiliary head learns, with its memory input detached.</text>
+</svg>

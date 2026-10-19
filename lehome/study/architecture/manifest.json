@@ -1,0 +1,80 @@
+{
+  "status": "complete",
+  "canvas": "16:9",
+  "figure_language": "English",
+  "editable_format": "SVG",
+  "PNG_resolution": [
+    4800,
+    2700
+  ],
+  "PDF_vector_only": true,
+  "all_text_bounds_inside_canvas": true,
+  "figures": [
+    {
+      "file": "README.md",
+      "bytes": 4411,
+      "sha256": "30ee75a34897d767180e84dc32641db81b85b2f5563035fbe18152e519a4cb08"
+    },
+    {
+      "file": "README.zh-CN.md",
+      "bytes": 1373,
+      "sha256": "b0c9fe436a15b02f2d234898d6d932243ff90354678251c5660df2b77f15e0b7"
+    },
+    {
+      "file": "architecture-details.pdf",
+      "bytes": 387768,
+      "sha256": "6b33488d0f8fb2e7a4e84008e5ec6131d897e7e8cadba585efb6518624415e2a"
+    },
+    {
+      "file": "architecture-details.png",
+      "bytes": 1066051,
+      "sha256": "f0704e989f85b58c88196c66178b169b72c589776c66220d32066f8949d30116",
+      "resolution": [
+        4800,
+        2700
+      ]
+    },
+    {
+      "file": "architecture-details.svg",
+      "bytes": 40659,
+      "sha256": "6b2585de6c4b743ccf830578514a0ce21b380a6e78ce69e08826a56a942f50d5"
+    },
+    {
+      "file": "architecture-figures.pdf",
+      "bytes": 818162,
+      "sha256": "27217355dc9e4adb07123fac262349a82dac9fef53fa4b6f76adf6c1b2c779d7"
+    },
+    {
+      "file": "architecture-overview.pdf",
+      "bytes": 432610,
+      "sha256": "31a62971a2cfdf06d7434cf90e694b4f2424d158eaa94a4569368d746fd1f468"
+    },
+    {
+      "file": "architecture-overview.png",
+      "bytes": 1079745,
+      "sha256": "86ad43a5008b44f9b5377fa7b2638de00ad529f7de2ceb248adc0b02190acd3b",
+      "resolution": [
+        4800,
+        2700
+      ]
+    },
+    {
+      "file": "architecture-overview.svg",
+      "bytes": 78808,
+      "sha256": "efa97181f74ef734d8100184331b362e076acbb960c876b62ebd25fb05f403fa"
+    },
+    {
+      "file": "index.html",
+      "bytes": 3377,
+      "sha256": "87468d02c7df8256fd2d3ae5cb9f27deccf1abd83e5e272e585b19ff9b0bfcc1"
+    }
+  ],
+  "source_commit_before_figure_creation": "4ab423ce636705f19676b25883cfa7ae234e8ed4",
+  "implementation_hashes": {
+    "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+    "act_residual_policy.py": "9d9b23bc9ab3aa4571ff7dec9f54ded483d4ff9ec5a51ef2c0677a040e9d62c0",
+    "act_pilot_data.py": "2b867602c8df684ef38512d561903ac4821da15609989ffa3828b81bcc2b2161",
+    "flow_data.py": "f4060cab4201fa91a4a42200f811ce00c9aa064f3e0627a4f77e48d5a9ce4679"
+  },
+  "new_training": false
+}
