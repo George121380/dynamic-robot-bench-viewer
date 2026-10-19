@@ -1,0 +1,354 @@
+{
+  "schema": 1,
+  "status": "draft_pending_user_review",
+  "snapshot_utc": "2026-10-19T18:54:33.795692+00:00",
+  "new_training_started": false,
+  "node_allocated": false,
+  "ACT_core_rebase_implemented": false,
+  "existing_implementation": "Custom four-condition FlowACT; its old engineering checks do not validate the proposed ACT rebase.",
+  "policy_pilot": {
+    "status": "not_run",
+    "garment": "Top_Long_Seen_0",
+    "train_episode_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "validation_episode_ids": [
+      16,
+      17,
+      18,
+      19
+    ],
+    "unused_episode_ids": [
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "split_unit": "episode, before constructing windows; no random window split",
+    "task": "complete garment folding; unchanged native success geometry, cameras and control",
+    "modes": [
+      "ACT",
+      "ACT-H",
+      "ACT-H+Geometry",
+      "ACT-H+Tracks",
+      "ACT-H+Tracks+Completion"
+    ],
+    "training_seeds": [
+      1000
+    ],
+    "maximum_optimizer_steps_per_run": 2000,
+    "effective_batch": 16,
+    "matched_checkpoints": [
+      500,
+      1000,
+      2000
+    ],
+    "baseline_feasibility_first": true,
+    "maximum_policy_updates": 10000,
+    "previous_full_proposal_policy_updates": 450000,
+    "fraction_of_previous_policy_updates": 0.022222222222222223,
+    "development_environment_seeds": [
+      5001,
+      5002,
+      5003,
+      5004,
+      5005
+    ],
+    "closed_loop_rollouts_per_execution_horizon": 25,
+    "execution_horizons": [
+      100,
+      10
+    ],
+    "primary_execution_horizon": 100,
+    "max_control_steps": 600,
+    "followup_after_success": 50,
+    "validation_and_selection": "same full four validation episodes, prior-zero action L1; new development poses never select best",
+    "speedups": "smaller task distribution, fewer updates, lossless decoded-RGB caching; retain native 640x480 and end-to-end training",
+    "wall_time": "requires new throughput measurement after ACT rebase; no current wall-time promise",
+    "scope": "single-garment, single-seed screening; cannot establish broad generalization or a reliable ranking",
+    "baseline_gate": "Expert replay quality and tiny-episode fit establish a valid pipeline. Low ACT closed-loop success alone does not invalidate the task or forbid history/flow comparisons."
+  },
+  "point_encoder": {
+    "implemented_input_shape": [
+      "B",
+      16,
+      16,
+      8
+    ],
+    "features": [
+      "current world XYZ / 0.5m (3)",
+      "past minus current XYZ / 0.05m (3)",
+      "relative time seconds (1)",
+      "valid flag (1)"
+    ],
+    "implemented_path": [
+      "shared Linear 8->256",
+      "two temporal Transformer layers per point",
+      "read current-time token",
+      "two inter-point Transformer layers",
+      "Linear 256->512",
+      "16 ACT observation tokens"
+    ],
+    "implemented_parameters": 3293952,
+    "rationale": [
+      "Within-window vertex identity links the same point through time.",
+      "Explicit time values distinguish histories.",
+      "Shared weights and no semantic vertex-ID embedding preserve point order symmetry.",
+      "Metric current position provides robot-frame location while displacement exposes motion."
+    ],
+    "unvalidated_choices": [
+      "256 width",
+      "two temporal plus two point layers",
+      "auxiliary weight 0.1",
+      "K=16 sufficiency",
+      "point identities are reselected per observation window"
+    ],
+    "simple_candidate": {
+      "status": "not_implemented_or_trained",
+      "path": "shared per-point 16x8 flatten -> MLP 128->128->128->512 -> ACT tokens",
+      "linear_sizes": [
+        128,
+        128,
+        128,
+        512
+      ],
+      "parameters_linear_layers_including_bias": 99072,
+      "nonlinearity": "ReLU between linear layers",
+      "separate_point_attention": false,
+      "point_interaction": "native ACT encoder",
+      "scope": "fixed 16-frame history with explicit masks; no universal variable-length claim"
+    },
+    "selection": "Compare the simple candidate and existing factorized encoder on the same diagnostic split before keeping extra complexity."
+  },
+  "gates": [
+    {
+      "name": "ACT output/loss/gradient parity with extensions disabled",
+      "status": "pending_ACT_rebase"
+    },
+    {
+      "name": "Existing point-encoder CPU invariants and gradients",
+      "status": "executed_on_old_encoder"
+    },
+    {
+      "name": "Static, nearest and 3NN development references",
+      "status": "executed_no_training"
+    },
+    {
+      "name": "Synthetic static/rigid/affine and tiny real-data learning, 200-500 updates per point candidate",
+      "status": "not_run"
+    },
+    {
+      "name": "Completion validation on held-out episodes and >5mm moving points vs 3NN",
+      "status": "not_run"
+    },
+    {
+      "name": "Original ACT baseline feasibility, then five matched short policy runs",
+      "status": "not_run"
+    },
+    {
+      "name": "Additional seeds before any robust policy claim",
+      "status": "not_run"
+    }
+  ],
+  "diagnostic_reference": {
+    "status": "complete",
+    "training_performed": false,
+    "GPU_used": false,
+    "scope": "development train/validation diagnostic; not independent formal results",
+    "source_commit": "dc0411e7d5f9f2103f23562cc0a79d460cc0f12f",
+    "script_sha256": "3e6a6b4789829b73734967f805b7375bd7b9f183400e91b2f5c0312d5beccfd8",
+    "flow_data_sha256": "f4060cab4201fa91a4a42200f811ce00c9aa064f3e0627a4f77e48d5a9ce4679",
+    "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b",
+    "manifest_sha256": "58d5ebd26bfc759426cfc1db87da23c19d4de1345ab8eecceb416c30176842b8",
+    "history": 16,
+    "input_points": 16,
+    "hidden_points": 48,
+    "point_seed": 2026,
+    "moving_definition": "hidden track maximum displacement over valid past >5mm",
+    "analytical_checks": {
+      "uniform_translation_exact": true,
+      "point_permutation": true,
+      "joint_coordinate_translation": true,
+      "masked_nan": true,
+      "empty_history": true
+    },
+    "episodes": [
+      {
+        "path": "Top_Long_Seen_0-episode-000",
+        "split": "train",
+        "windows": 105,
+        "trajectory_sha256": "b25eac3a74acf3eb96f6085d0c9f1bbb339b0f4fbea59cbc223f9547a22fb69c"
+      },
+      {
+        "path": "Top_Long_Seen_1-episode-000/attempt-002",
+        "split": "train",
+        "windows": 118,
+        "trajectory_sha256": "283168d07477a098e8174b028b0bfdc71459d2b2e506bc7583aef68b4d3c36f6"
+      },
+      {
+        "path": "Top_Long_Seen_8-episode-000/attempt-001",
+        "split": "validation",
+        "windows": 119,
+        "trajectory_sha256": "da962763389700b680b8e08ebfa3e8b480061a862d5f560ce2df300f014d51b8"
+      }
+    ],
+    "metrics": {
+      "train": {
+        "windows": 223,
+        "valid_vectors": 149040,
+        "moving_vectors": 48859,
+        "static_EPE_mm": 14.538156037689586,
+        "static_moving_EPE_mm": 42.709812836214894,
+        "nearest_EPE_mm": 12.565098124184017,
+        "nearest_moving_EPE_mm": 28.25945716127971,
+        "knn3_EPE_mm": 12.073940362767889,
+        "knn3_moving_EPE_mm": 25.478348398163753
+      },
+      "validation": {
+        "windows": 119,
+        "valid_vectors": 79920,
+        "moving_vectors": 25977,
+        "static_EPE_mm": 13.815952982649787,
+        "static_moving_EPE_mm": 41.220951689981725,
+        "nearest_EPE_mm": 10.838167316998609,
+        "nearest_moving_EPE_mm": 25.505168018408657,
+        "knn3_EPE_mm": 10.671284850058093,
+        "knn3_moving_EPE_mm": 22.969568123198467
+      }
+    },
+    "limitations": [
+      "Interpolation receives current query XYZ, exactly as the auxiliary task permits.",
+      "Current-space neighbors can join distinct cloth layers at a fold.",
+      "GT tracks include occluded past; this is privileged simulation information.",
+      "No neural fit, policy rollout or convergence claim is made."
+    ]
+  },
+  "point_encoder_CPU_checks": {
+    "status": "complete",
+    "scope": "existing 2+2-layer point encoder, synthetic CPU forward/gradient checks; not learning validation",
+    "training_performed": false,
+    "optimizer_steps": 0,
+    "GPU_used": false,
+    "parameters": 3293952,
+    "output_shape": [
+      2,
+      16,
+      512
+    ],
+    "point_permutation_max_difference": 1.0728836059570312e-06,
+    "changed_past_motion_output_difference": 0.025195956230163574,
+    "geometry_ignores_past_exactly": true,
+    "cold_mask_ignores_nan_exactly": true,
+    "all_invalid_zero_and_masked": true,
+    "finite_connected_gradient_norm": 1.7098921537399292,
+    "source_sha256": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480"
+  },
+  "interpretation": [
+    "Old six-step completion scores used only two validation windows and cannot be compared numerically with this full 119-window reference.",
+    "Passing invariants is not evidence that an encoder learns useful dynamics.",
+    "Failure of auxiliary completion does not refute the usefulness of tracked inputs; disable auxiliary weight separately.",
+    "Sparse tracks plus current query XYZ do not uniquely determine all cloth histories, especially at folded layers.",
+    "GT histories include occlusion and privileged geometry; estimated-RGB tracking remains a separate experiment.",
+    "No all-node request, optimizer update or new policy training is performed in this audit.",
+    "A simple single-garment task may reach an ACT ceiling; no gain there does not refute flow on harder dynamic tasks."
+  ],
+  "expert_replay_quality_snapshot": {
+    "snapshot_utc": "2026-10-19T18:57:20.901525+00:00",
+    "complete_replays": 15,
+    "source_end_successes": 13,
+    "rows": [
+      {
+        "case": "Top_Long_Seen_0-episode-000",
+        "actions": 315,
+        "final_success_at_source_end": false
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-001",
+        "actions": 308,
+        "final_success_at_source_end": true
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-002",
+        "actions": 297,
+        "final_success_at_source_end": true
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-003",
+        "actions": 312,
+        "final_success_at_source_end": true
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-004",
+        "actions": 350,
+        "final_success_at_source_end": true
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-005",
+        "actions": 299,
+        "final_success_at_source_end": true
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-006",
+        "actions": 298,
+        "final_success_at_source_end": true
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-007",
+        "actions": 309,
+        "final_success_at_source_end": true
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-008",
+        "actions": 307,
+        "final_success_at_source_end": true
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-009",
+        "actions": 336,
+        "final_success_at_source_end": true
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-010",
+        "actions": 325,
+        "final_success_at_source_end": true
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-011",
+        "actions": 318,
+        "final_success_at_source_end": false
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-012",
+        "actions": 322,
+        "final_success_at_source_end": true
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-013",
+        "actions": 323,
+        "final_success_at_source_end": true
+      },
+      {
+        "case": "Top_Long_Seen_0-episode-014",
+        "actions": 307,
+        "final_success_at_source_end": true
+      }
+    ],
+    "note": "Expert replay endpoints, not learned-policy results or a policy success ceiling. Retain all complete episodes; no silent success filtering."
+  }
+}

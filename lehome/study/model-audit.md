@@ -2,6 +2,32 @@
 
 Training is on hold for the user's settings review. The task-owned coordinator has been stopped before any formal updates; synchronized replay continues independently and cannot transition automatically into training. One eight-GPU node is permitted in principle, but no node allocation or new training has been launched. See the task's `training-hold.json`. No formal policy result exists yet.
 
+## Latest proposal: small-task screening and architecture gates (no training started)
+
+The existing four-condition custom FlowACT is not a minimal extension of native ACT. The proposed LeRobot ACT rebase is not implemented. The old recipe and 31 checks below are archived implementation evidence, not validation of the new architecture. The training hold remains active; this audit made zero optimizer updates and used no GPU.
+
+Proposed pilot: one training garment, Top_Long_Seen_0; episodes 0–15 train, 16–19 validation, 20–24 unused. Split episodes before windows. Keep complete folding, native success geometry, three 640×480 cameras and sixteen-frame/0.5s history for history models. Do not truncate an arbitrary prefix and call it a folding task. Native ACT still gets one observation.
+
+First check native ACT at 500/1000/2000 updates, then at most five conditions × one seed (1000) × 2000 updates: 10,000 policy updates, 1/45 of the previous five-condition/three-seed/30k proposal. Reuse the baseline run rather than retraining it. First verify expert replay quality, tiny-episode fitting and control correctness. Low ACT closed-loop success alone does not forbid history/flow comparisons: partial observability may be the reason. Do not independently extend budgets for winners. Five new development pose seeds 5001–5005 produce 25 paired rollouts per execution horizon; primary prefix 100 and secondary prefix 10 give 50 rollouts in total. Formal test assets/seeds remain untouched. A single seed is screening only.
+
+Speedups should prioritize small data, fewer updates and byte-equivalent decoded RGB caching, retaining end-to-end training. Frozen-backbone feature caching is useful for cheaper engineering diagnostics but removes a path through which completion may improve vision; a negative frozen-backbone result cannot refute Completion. New architecture throughput must be measured; old time estimates do not apply.
+
+Existing point encoder: B×16×16×8 features comprise current world XYZ/0.5m, past-minus-current displacement/0.05m, time in seconds and validity. Shared 8→256 projection, two per-point temporal Transformer layers, current-token readout, two inter-point layers, then 256→512 yields sixteen ACT observation tokens. IDs associate points within the window only; no semantic mesh-ID embeddings. Shared weights preserve point-order symmetry and explicit times encode chronology. Current positions locate the cloth, displacements expose motion.
+
+The rationale is plausible, but width 256, 2+2 layers, K=16 and auxiliary weight 0.1 are not established optima. The existing encoder has 3,293,952 parameters. Compare against a proposed, unimplemented per-point fixed-history MLP: flatten 16×8, then linear 128→128→128→512 with ReLU, 99,072 linear parameters including biases. Let native ACT handle interactions between points. Less capacity is a hypothesis, not evidence of better learning.
+
+Required gates: (1) output/loss/gradient parity with original ACT when extensions are disabled; keep native ACT classes, current spatial features and padding loss; (2) synthetic static/rigid/affine checks followed by 200–500-update tiny-data learning for both encoders; (3) held-out-episode completion versus static, nearest and 3NN interpolation, reporting all and >5mm moving points; (4) action/auxiliary gradient norms, directions and weighted ratios, without assuming balanced gradients imply benefit; (5) baseline learnability and paired native rollouts before interpreting Geometry−ACT-H, Tracks−Geometry or Completion−Tracks. Auxiliary failure need not invalidate tracked inputs; set auxiliary weight zero separately. Hidden current query XYZ and future-action posterior cannot enter the actor/auxiliary branch respectively.
+
+Expert replay quality snapshot: 13 of 15 completed new replays pass native geometry at the source action endpoint. These are not learned-policy results or a success ceiling. Retain complete failures with labels and inspect control/contact/termination before blaming architecture. A simple task may reach an ACT ceiling; no gain there does not refute flow on harder dynamic tasks.
+
+Executed CPU-only diagnostics: frozen SHA checks on all three old development trajectories, 223 train and 119 validation windows, no formal test. Validation EPE in mm is static 13.816, nearest 10.838, 3NN 10.671; moving-point EPE is 41.221, 25.505, 22.970. These references have no learned parameters. They use current hidden query coordinates just as the auxiliary task permits. Only one development validation episode is available. The old six-update neural score used two windows and cannot be compared numerically with these full-window references.
+
+Existing full point-encoder CPU checks passed point-order equivariance (maximum error 1.07e-6), exact geometry history masking, cold-start NaN masking, zero/masked empty inputs and finite connected gradients. Changing historical motion changes untrained features, establishing connectivity rather than learned usefulness. No optimizer was instantiated.
+
+Nearby points on separate folded layers need not be cloth neighbors. Sixteen tracks plus current queries do not uniquely determine all missing histories; RGB and data priors matter. GT histories through occlusion remain privileged simulation information. See [proposal and executed receipts](flow-pilot-review.json) and the read-only audit_track_interpolation.py. Native reference: [LeRobot v0.4.3](https://github.com/huggingface/lerobot/blob/v0.4.3/src/lerobot/policies/act/modeling_act.py).
+
+## Archived four-condition implementation and frozen recipe (paused)
+
 ## Settings pending user review
 
 The effective recipe is `configs/flow-study-01.json` plus `FlowConfig` defaults. These are proposed settings, not approval to start.
