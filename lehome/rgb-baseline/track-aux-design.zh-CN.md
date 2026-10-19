@@ -22,7 +22,7 @@ flowchart LR
  Z[训练时：未来专家动作的 CVAE posterior] --> A
 ```
 
-辅助分支必须取自 **ACT CVAE 动作 posterior 之前**的共享观测表征。ACT 训练 posterior 会看到未来专家动作块，不能把该 latent 或被其调制后的动作 decoder 表征提供给历史补全头。隐藏点当前坐标是辅助 decoder 的 query，只在训练时使用，不能进入 actor；预测出的补全轨迹也不回灌 actor。部署时删除整个辅助头。
+辅助分支必须取自 **ACT CVAE 动作 posterior 之前**的共享观测表征。ACT 训练 posterior 会看到未来专家动作块，不能把该 latent 或被其调制后的动作 decoder 表征提供给历史补全头。正式模型需要自定义 history/token 接口；不能直接把原 ACT 的 n_obs_steps 改成 16 或把历史帧拼成 ResNet 通道。先产生 `B×S×512` 观测 tokens，再送 ACT 核心；点 ID 只用于历史对应，不作为语义 mesh-ID embedding。隐藏点当前坐标是辅助 decoder 的 query，只在训练时使用，不能进入 actor；预测出的补全轨迹也不回灌 actor。部署时删除整个辅助头。
 
 联合训练 `L = L_ACT + 0.1 L_history`。L_ACT 保留 ACT 动作损失与 KL（权重 10）；L_history 为归一化位移的 masked SmoothL1，只统计 48 个隐藏点的 15 个过去时刻，排除当前时刻和无效位置，并按有效元素数归一化。记录共享编码器上两种损失的梯度范数；只用验证集决定是否调辅助权重。
 

@@ -163,5 +163,17 @@
   "evaluation_motion_subset": {
     "window_max_displacement_gt_meters": 0.005,
     "report_all_and_moving_separately": true
+  },
+  "implementation_interface": {
+    "stock_checkpoint_unchanged": true,
+    "formal_custom_policy_required": true,
+    "formal_ACT_core_inputs": [
+      "observation_tokens_B_S_512",
+      "current_joint_state_B_12",
+      "training_only_expert_action_chunk_B_100_12"
+    ],
+    "rgb_history_is_encoded_as_tokens_not_stacked_input_channels": true,
+    "auxiliary_memory": "observation_tokens_before_inserting_action_posterior_latent",
+    "point_id_usage": "history_association_only_no_semantic_mesh_id_embedding"
   }
 }

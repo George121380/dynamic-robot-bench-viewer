@@ -1,0 +1,99 @@
+{
+  "status": "complete",
+  "case": {
+    "id": "top_long_seen_0-s102",
+    "garment": "Top_Long_Seen_0",
+    "seed": 102,
+    "group": "seen"
+  },
+  "checkpoint_revision": "6ee6f94974b20ffb785b063706d3a7b4af156041",
+  "mode": "closed-loop-learned-policy",
+  "learned_policy": true,
+  "steps": 306,
+  "frames": 307,
+  "first_success_step": 256,
+  "ever_success": true,
+  "final_success": true,
+  "final_geometric_check": {
+    "success": true,
+    "garment_type": "top-long-sleeve",
+    "thresholds": [
+      7.2,
+      8.55,
+      7.2,
+      9.9,
+      9.0
+    ],
+    "details": {
+      "condition_1": {
+        "description": "dist(p[0], p[4]) = 4.41 <= 7.2",
+        "value": 4.410592761773006,
+        "threshold": 7.2,
+        "passed": true
+      },
+      "condition_2": {
+        "description": "dist(p[2], p[3]) = 7.69 <= 8.55",
+        "value": 7.690102947380527,
+        "threshold": 8.55,
+        "passed": true
+      },
+      "condition_3": {
+        "description": "dist(p[1], p[5]) = 3.87 <= 7.2",
+        "value": 3.8660948814544134,
+        "threshold": 7.2,
+        "passed": true
+      },
+      "condition_4": {
+        "description": "dist(p[0], p[1]) = 18.57 >= 9.9",
+        "value": 18.571017870444628,
+        "threshold": 9.9,
+        "passed": true
+      },
+      "condition_5": {
+        "description": "dist(p[4], p[5]) = 15.60 >= 9.0",
+        "value": 15.603658800798152,
+        "threshold": 9.0,
+        "passed": true
+      }
+    }
+  },
+  "original_checker_parity": true,
+  "initialization_fingerprint": "a8e81628d67fae799479bc29502406cc9c9e368f96b6c6cbf602c65292deb52c",
+  "physics_dt_seconds": 0.011111111111111112,
+  "action_rate_hz": 90.0,
+  "inference_ms": {
+    "mean": 6.578896286763445,
+    "p50": 4.107035463675857,
+    "p95": 5.2958077867515385,
+    "chunk_calls_mean": 186.25730701023713
+  },
+  "action_min": [
+    -0.4696495234966278,
+    -1.780871868133545,
+    -1.6460199356079102,
+    0.807159960269928,
+    -1.1453659534454346,
+    -0.18635863065719604,
+    -1.182327151298523,
+    -1.733150839805603,
+    -1.8226945400238037,
+    0.8775856494903564,
+    0.1813124716281891,
+    -0.19018596410751343
+  ],
+  "action_max": [
+    1.105604648590088,
+    1.2433249950408936,
+    1.6309094429016113,
+    1.7226085662841797,
+    -0.19258050620555878,
+    0.6119500398635864,
+    0.3021089732646942,
+    1.2653694152832031,
+    1.6178768873214722,
+    1.7959967851638794,
+    0.5550976395606995,
+    0.7323775887489319
+  ],
+  "elapsed_seconds": 207.69019627571106
+}
