@@ -1,0 +1,226 @@
+[
+  {
+    "id": "atm",
+    "name": "ATM",
+    "year": "2024",
+    "role": "plan",
+    "url": "https://arxiv.org/html/2401.00025v3",
+    "section": "IV-A/B; V-C, Table III; VI",
+    "points": {
+      "zh": "任意点的未来 2D 轨迹",
+      "en": "Future 2D any-point tracks"
+    },
+    "pipeline": {
+      "zh": "视频经 tracker 生成伪标签 → 预训练未来轨迹预测器 → 预测轨迹同时在 policy Transformer 输入端和动作 MLP 前融合。轨迹充当细粒度 subgoal；policy 仍读取图像。",
+      "en": "Tracker pseudo-labels pretrain a future-track predictor. Predicted tracks enter both the policy Transformer and the final action MLP, alongside images."
+    },
+    "evidence": {
+      "zh": "最有针对性的消融：LIBERO-Goal 上，仅 early fusion 为 5.33%，仅 late fusion 为 72.83%，两者为 77.83%。这是同文架构消融，不是跨论文排名。",
+      "en": "LIBERO-Goal: early-only 5.33%, late-only 72.83%, both 77.83% (Table III)."
+    },
+    "caution": {
+      "zh": "学习到的未来计划与已观察历史不同；额外视频预训练也是条件。单个任务套件的融合结果不能直接外推成 ACT 的保证。",
+      "en": "Future plans and video pretraining differ from observed history. This ablation does not guarantee the same effect in ACT."
+    },
+    "lesson": {
+      "zh": "优先借鉴动作头附近的显式计划接口。",
+      "en": "Test an explicit plan interface near the action head."
+    }
+  },
+  {
+    "id": "im2",
+    "name": "Im2Flow2Act",
+    "year": "2024",
+    "role": "plan",
+    "url": "https://arxiv.org/html/2407.15208v1",
+    "section": "3.1–3.2; 4.3; Appendix A/B/D/E",
+    "points": {
+      "zh": "物体未来 2D 轨迹＋visibility；初始 3D 锚点",
+      "en": "Future object 2D tracks, visibility, initial 3D anchors"
+    },
+    "pipeline": {
+      "zh": "人类视频训练整段物体 flow 生成器；4,800 条仿真 play 训练 flow→action。执行时在线跟踪当前点，temporal alignment 估计剩余计划，再交 diffusion action head。",
+      "en": "Human videos train task-flow generation; 4,800 simulated play episodes train execution. Online tracking and temporal alignment identify the remaining plan for a diffusion action head."
+    },
+    "evidence": {
+      "zh": "flow 明确描述物体应如何移动，减少 human/robot 外观依赖；低层策略依靠 play 中动作与物体响应的配对学习。",
+      "en": "Object motion bridges embodiments; play data pairs actions with their effects."
+    },
+    "caution": {
+      "zh": "不是纯 3D scene-flow 模型。附录中布料仿真生成 flow 难以精确引导抓取隐藏的细小辅助块；轨迹合理仍可能抓不住。",
+      "en": "This is not full 3D scene flow. The cloth simulation exposes grasp precision failures despite plausible generated motion."
+    },
+    "lesson": {
+      "zh": "借鉴进度对齐和接触附近的可执行性检查。",
+      "en": "Borrow progress alignment and grasp-feasibility checks."
+    }
+  },
+  {
+    "id": "fdp",
+    "name": "3D Flow Diffusion Policy",
+    "year": "2025",
+    "role": "plan",
+    "url": "https://arxiv.org/html/2509.18676v1",
+    "section": "IV-B–E; V-A/B, Tables I–III",
+    "points": {
+      "zh": "scene-level query points 的未来 3D 位移",
+      "en": "Future 3D displacement of scene query points"
+    },
+    "pipeline": {
+      "zh": "RGB-D→PointNet 全局／局部特征→flow diffusion 预测未来 16 步→1D temporal conv＋pooling→与 observation 特征拼接→action diffusion。仿真用 mesh 轨迹；真机用 CoTracker＋逐帧 depth。",
+      "en": "PointNet features condition 16-step flow diffusion. Temporal convolution and pooling encode the predicted plan, concatenated with observation features for action diffusion. Labels use meshes in simulation and CoTracker plus depth on hardware."
+    },
+    "evidence": {
+      "zh": "真机八任务平均成功率 27.5%→56.9%；每任务 50 demos、20 次评测。scene 采样相对仅 object 采样更好，例如 Hammer 48.3%→68.3%。",
+      "en": "Eight hardware tasks: 27.5%→56.9%; 50 demos and 20 evaluation trials per task. Scene sampling improves Hammer from 48.3% to 68.3%."
+    },
+    "caution": {
+      "zh": "仿真只训练一个 seed，三个 evaluation seeds 不能充当三个训练重复。主结果支持该系统，未独立证明 flow 比等容量额外网络更优。",
+      "en": "Simulation uses one training seed. Evaluation seeds do not establish training-seed robustness; capacity is not fully isolated."
+    },
+    "lesson": {
+      "zh": "最接近可借鉴的未来 scene-flow→action 接口。",
+      "en": "A close template for future scene-flow conditioning."
+    }
+  },
+  {
+    "id": "roboflow",
+    "name": "RoboFlow4D",
+    "year": "2026",
+    "role": "plan",
+    "url": "https://arxiv.org/html/2605.17522v1",
+    "section": "3.2–3.5; 4.2–4.4; Appendix C/D",
+    "points": {
+      "zh": "主要是夹爪未来 3D 轨迹",
+      "en": "Primarily future gripper 3D tracks"
+    },
+    "pipeline": {
+      "zh": "RGB 历史＋语言→DINOv2/SigLIP 特征、VGGT 几何蒸馏→FlowDiT。冻结 planner；flow 经 MLP＋attention pooling 后拼到 DP/DiT 条件。按夹爪开闭切 atomic task，慢规划配快执行。",
+      "en": "RGB history and language condition FlowDiT with distilled VGGT geometry. A frozen planner supplies MLP/attention-pooled flow to DP or DiT. Gripper-state transitions define atomic tasks."
+    },
+    "evidence": {
+      "zh": "LIBERO 的 DP 平均成功率 78.9%→85.1%。主数据管线跟踪夹爪；不可见夹爪的数据才 fallback 到 scene flow。",
+      "en": "LIBERO DP average: 78.9%→85.1%. Labels are gripper-centric, with scene-flow fallback when the gripper is absent."
+    },
+    "caution": {
+      "zh": "夹爪路径规划成功不直接证明学会物体碰撞传播。时间重采样是任务进度，也不能直接当作物理速度。",
+      "en": "Gripper plans do not establish object interaction dynamics. Progress-resampled tracks do not preserve physical velocity."
+    },
+    "lesson": {
+      "zh": "可借鉴冻结 planner 和动作条件接口；慎用来支持动态 WM claim。",
+      "en": "Borrow the stable plan interface; narrow the dynamics claim."
+    }
+  },
+  {
+    "id": "3p",
+    "name": "3PoinTr",
+    "year": "2026",
+    "role": "plan",
+    "url": "https://arxiv.org/html/2603.08485v1",
+    "section": "III; IV-B/E, Table III; VI",
+    "points": {
+      "zh": "去掉人／机器人后的 dense 未来 3D 轨迹",
+      "en": "Dense future 3D tracks excluding embodiment points"
+    },
+    "pipeline": {
+      "zh": "人类 stereo 视频的 2D tracks＋depth→3D 伪标签；可见位置 L1 训练两层 Transformer。冻结预测器，逐点轨迹 embedding→Perceiver IO→Diffusion Policy；策略只读预测轨迹。",
+      "en": "Stereo-derived 3D tracks supervise a small Transformer with visible-position L1. A frozen predictor feeds per-track embeddings through Perceiver IO to a policy conditioned only on those tracks."
+    },
+    "evidence": {
+      "zh": "20 条 robot demos 下，Fold Sock 为 9/10，DP3 为 2/10；每项真机结果仅 10 次。flow 是主要任务接口，不会被另一路图像轻易绕开。",
+      "en": "With 20 robot demos, Fold Sock scores 9/10 versus DP3's 2/10; hardware evaluation uses only ten trials per task."
+    },
+    "caution": {
+      "zh": "固定相机、单任务实验；整段开环执行，作者明确指出不能应对意外动态或在线恢复。",
+      "en": "Fixed-camera, single-task experiments execute open-loop and cannot recover from unexpected dynamics."
+    },
+    "lesson": {
+      "zh": "一个 learned query 可压缩大量轨迹；不必按点数直接堆入视觉 token。",
+      "en": "A learned query can compress many trajectories."
+    }
+  },
+  {
+    "id": "ego",
+    "name": "EgoWAM",
+    "year": "2026",
+    "role": "aux",
+    "url": "https://arxiv.org/html/2607.08436v1",
+    "section": "3.2; 4.1–4.3; 5; Appendix A.2/B.2",
+    "points": {
+      "zh": "相机补偿后的未来 dense 3D flow",
+      "en": "Camera-stabilized future dense 3D flow"
+    },
+    "pipeline": {
+      "zh": "action tokens 与 future tokens 经过共享 trunk；flow head 用 trunk 特征预测未来运动，梯度塑造主干。推理删除 world head。Track4World＋Aria VIO 生成相机稳定目标，过滤低运动噪声。",
+      "en": "Action and future tokens share the trunk. A future-flow head shapes that trunk and is discarded at inference. Track4World labels are stabilized with Aria VIO and filtered for low-motion noise."
+    },
+    "evidence": {
+      "zh": "每任务 300–360 robot demos，加约 10:1 人类数据。附录比较 human action-only、flow-only 和两者联合；联合最好。",
+      "en": "Each task uses 300–360 robot demos and roughly 10:1 human data. Human action/flow supervision ablations favor their combination."
+    },
+    "caution": {
+      "zh": "研究重点是 human→robot transfer；不能据此期待在 16 条单衣服数据上，补全过去轨迹就获得同样收益。DINO 对某些 OOD 更强。",
+      "en": "Its transfer setting differs from 16 same-garment episodes and past completion; DINO is stronger on some OOD splits."
+    },
+    "lesson": {
+      "zh": "借鉴未来目标和共享主干梯度路径。",
+      "en": "Borrow future targets and supervision of the shared trunk."
+    }
+  },
+  {
+    "id": "point",
+    "name": "PointWorld",
+    "year": "2026",
+    "role": "dynamics",
+    "url": "https://arxiv.org/html/2601.03782v1",
+    "section": "3.1–3.2; 5.1–5.2; Appendix A.1/A.4",
+    "points": {
+      "zh": "输入候选机器人 flow，输出场景响应 flow",
+      "en": "Candidate robot flow in; scene response flow out"
+    },
+    "pipeline": {
+      "zh": "当前 RGB-D scene points＋FK 构造的未来夹爪表面点→point backbone→10 步 scene displacement。运动加权、Huber、uncertainty 和 visibility mask 训练；MPPI 用预测点目标代价选择动作。",
+      "en": "Current scene points and FK-generated candidate gripper trajectories predict ten-step scene displacement. Training combines motion weights, robust loss, uncertainty and visibility; MPPI scores predicted point goals."
+    },
+    "evidence": {
+      "zh": "flow 同时约束动作几何与结果评分。论文指出单纯运动加权会放大噪声，需要 robust loss／uncertainty 配合。",
+      "en": "Flow represents both action geometry and scored outcomes. Motion weighting alone amplifies noisy labels."
+    },
+    "caution": {
+      "zh": "附录明确：没有历史或速度输入，默认初始场景静止；也假设机器人能实现给定路径。这限制已在运动的球／布料。",
+      "en": "The appendix assumes a static initial scene and realized robot paths, limiting moving initial conditions."
+    },
+    "lesson": {
+      "zh": "动态任务要验证 action→flow 响应，而不只优化全点 EPE。",
+      "en": "Test action-dependent responses, beyond aggregate EPE."
+    }
+  },
+  {
+    "id": "dream",
+    "name": "FlowDreamer",
+    "year": "2025 / RA-L 2026",
+    "role": "dynamics",
+    "url": "https://arxiv.org/html/2505.10075v1",
+    "section": "3.2–3.3; 4.2–4.3; Appendix C/D",
+    "points": {
+      "zh": "动作条件下的下一步 dense 3D flow",
+      "en": "Action-conditioned next-step dense 3D flow"
+    },
+    "pipeline": {
+      "zh": "当前 RGB-D＋action→U-Net 预测 flow→降采样 flow/depth 与 RGB latent 通道拼接→diffusion 生成下一帧；联合 flow MSE 与生成损失。MPC 在预测图像上评分。",
+      "en": "An action-conditioned U-Net predicts flow, concatenated with depth and RGB latents for next-frame diffusion. Joint flow/generation losses support image-scored MPC."
+    },
+    "evidence": {
+      "zh": "反转 flow、保持 action 不变，生成质量下降，说明下游使用了 flow；这仍不是独立的控制机制因果证明。",
+      "en": "Reversing flow while holding actions fixed degrades generated frames, supporting downstream use."
+    },
+    "caution": {
+      "zh": "作者承认单帧不含初速度，推动后自由运动物体预测困难；真实伪 flow 噪声缩小收益。没有显式几何 warp，不应误写成 warp renderer。",
+      "en": "Missing velocity and noisy real pseudo-labels limit results. The generator conditions on flow; it is not an explicit geometric warp renderer."
+    },
+    "lesson": {
+      "zh": "有可验证的下游消费路径，仍需匹配任务的信息。",
+      "en": "Downstream use and adequate state information both matter."
+    }
+  }
+]

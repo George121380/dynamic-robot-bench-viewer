@@ -1,0 +1,48 @@
+{
+  "retrieved": "2026-10-19",
+  "scope": "Focused manipulation point-track and scene-flow review; not exhaustive",
+  "papers": [
+    {
+      "name": "ATM",
+      "source": "https://arxiv.org/html/2401.00025v3",
+      "sections": "IV-A/B; V-C, Table III; VI"
+    },
+    {
+      "name": "Im2Flow2Act",
+      "source": "https://arxiv.org/html/2407.15208v1",
+      "sections": "3.1–3.2; 4.3; Appendix A/B/D/E"
+    },
+    {
+      "name": "3D Flow Diffusion Policy",
+      "source": "https://arxiv.org/html/2509.18676v1",
+      "sections": "IV-B–E; V-A/B, Tables I–III"
+    },
+    {
+      "name": "RoboFlow4D",
+      "source": "https://arxiv.org/html/2605.17522v1",
+      "sections": "3.2–3.5; 4.2–4.4; Appendix C/D"
+    },
+    {
+      "name": "3PoinTr",
+      "source": "https://arxiv.org/html/2603.08485v1",
+      "sections": "III; IV-B/E, Table III; VI"
+    },
+    {
+      "name": "EgoWAM",
+      "source": "https://arxiv.org/html/2607.08436v1",
+      "sections": "3.2; 4.1–4.3; 5; Appendix A.2/B.2"
+    },
+    {
+      "name": "PointWorld",
+      "source": "https://arxiv.org/html/2601.03782v1",
+      "sections": "3.1–3.2; 5.1–5.2; Appendix A.1/A.4"
+    },
+    {
+      "name": "FlowDreamer",
+      "source": "https://arxiv.org/html/2505.10075v1",
+      "sections": "3.2–3.3; 4.2–4.3; Appendix C/D"
+    }
+  ],
+  "local_evidence": "LeHome existing four-seed short-run analysis; no new model computation",
+  "verification": "Method/experiment/ablation/limitation passages checked; selected versions pinned"
+}
