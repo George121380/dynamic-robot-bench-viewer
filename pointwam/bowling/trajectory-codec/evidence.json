@@ -1,0 +1,22 @@
+{
+  "data_manifest_sha256": "d5519510f293dd2111b54637c119570943d709894eb462451bc6ab09d397886a",
+  "formal_completion_sha256": "14e8297f565caa4eb1745073317a642dfd8394be541515438041460afcde7f9f",
+  "source_files": {
+    "metrics.py": "aaeb33be3e47eea90c5217c35cb260e7a6f293fc868733d3d6e0dc47870765cc",
+    "audit.py": "5607afd5cdd3fe67499ddf2d5296160addba6402a1ff47a3bb706e8a81e98ca1",
+    "render.py": "2ac4dcd7ac6fcd3dd4b301a69689bb23fc78ec38499009cfa8108d021288ca03",
+    "run.sh": "a5993c87de7c806dd2c16d2bb4d0b70ea9c368f0c0e35d4cb0ae368cbe9e9465",
+    "model.py": "b758c9b8727cc4a5745d88052f524885abebde872d48bb0a3d1ad930e0cf089d",
+    "README.md": "2d9dbe94b691cd375b8c0f6e1f5f6e0e75968789e2778d53af5f3201302812bf",
+    "train.py": "056af74d2b2f02859eb814bfb675c906b50bc93508bd74920836c6401c4a0288",
+    "README.zh-CN.md": "8fc04dfe9eb8ab52393621cff129bef1ef11cf567aac735dddae5e05fa08bbf9",
+    "protocol.json": "7a7edf4dda0ffada9e6c9f77b7c75a2531e2a85e398b869a21987bda84930afb",
+    "prepare.py": "716931de457f834ff7930c74f4945d4302f601435ec609c22e688fcbe4e15c9a",
+    "preflight.py": "f89212ce64a88c9407a43e4dff1be6d9e4d0104c703245cc4c38e2001f1cee2c"
+  },
+  "raw_reference": "fixed grid observed coordinates retained, no learned weights",
+  "scope": "reconstruction only",
+  "test_arrays_read": 0,
+  "html_sha256": "6aa8064c6298a1eb1d3644b96268587a2f058e197f85c0f98815733b23a3479a",
+  "display_arrays_equal_saved": true
+}

@@ -1,0 +1,2138 @@
+{
+  "scope": "reconstruction only, not forecasting",
+  "training_protocol_source": "d648da96f43c6d1f25af4db7332090c023c96aa4",
+  "runs": {
+    "time_pool": [
+      {
+        "arm": "time_pool",
+        "seed": 42,
+        "encoder_parameters": 264192,
+        "decoder_parameters": 81212,
+        "decoder_initial_sha256": "ddf716341bf8d0f0c53805872e67d0eeee5ae5ba78b8b61d98fbb415312cc1f9",
+        "encoder_initial_sha256": "ef941354e6ed31c4fb30678681f08dc60d8d999f559b8d5eb22e4ec2b29afd65",
+        "sampling_sha256": "ca36982076992fe86870c35fae939919bcab739b575527539fc4b0beb4feab8d",
+        "steps": 5000,
+        "source": {
+          "audit.py": "5607afd5cdd3fe67499ddf2d5296160addba6402a1ff47a3bb706e8a81e98ca1",
+          "metrics.py": "aaeb33be3e47eea90c5217c35cb260e7a6f293fc868733d3d6e0dc47870765cc",
+          "model.py": "b758c9b8727cc4a5745d88052f524885abebde872d48bb0a3d1ad930e0cf089d",
+          "preflight.py": "f89212ce64a88c9407a43e4dff1be6d9e4d0104c703245cc4c38e2001f1cee2c",
+          "prepare.py": "716931de457f834ff7930c74f4945d4302f601435ec609c22e688fcbe4e15c9a",
+          "protocol.json": "7a7edf4dda0ffada9e6c9f77b7c75a2531e2a85e398b869a21987bda84930afb",
+          "run.sh": "a5993c87de7c806dd2c16d2bb4d0b70ea9c368f0c0e35d4cb0ae368cbe9e9465",
+          "train.py": "056af74d2b2f02859eb814bfb675c906b50bc93508bd74920836c6401c4a0288"
+        },
+        "torch": "2.5.1+cu124",
+        "final": {
+          "step": 5000,
+          "validation": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.003645655011347818,
+                "fde_m": 0.003474120848030343,
+                "last_velocity_error_m_s": 0.030918404266332584
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 164,
+                "episodes": 11,
+                "ade_m": 0.003876419462910478,
+                "fde_m": 0.008668215582891929,
+                "last_velocity_error_m_s": 0.11123473992025094
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 8856,
+                "episodes": 41,
+                "ade_m": 0.0005822818746773549,
+                "fde_m": 0.0006251982086255528,
+                "last_velocity_error_m_s": 0.004858657510521695
+              },
+              "robot_history": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.004087602066195423,
+                "fde_m": 0.0034370728355289297,
+                "last_velocity_error_m_s": 0.034645954381087134
+              },
+              "robot_plan": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.005564395383637127,
+                "fde_m": 0.009091649475970113,
+                "last_velocity_error_m_s": 0.04995245999696677
+              },
+              "scene_future_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.007006554197300677,
+                "fde_m": 0.013500910835840518,
+                "last_velocity_error_m_s": 0.08252647090321431
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 1740,
+                "episodes": 18,
+                "ade_m": 0.008436633693085942,
+                "fde_m": 0.015156428423752885,
+                "last_velocity_error_m_s": 0.11942929599559725
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 7280,
+                "episodes": 41,
+                "ade_m": 0.0011113839940452201,
+                "fde_m": 0.0023412281825174863,
+                "last_velocity_error_m_s": 0.01513050549187028
+              }
+            },
+            "mean_group_ade_m": 0.0042888657104000055,
+            "true_displacement_at_most1mm": {
+              "trajectories": 15879,
+              "episodes": 41,
+              "reconstruction_above1mm_rate": 0.909791481900758
+            }
+          },
+          "fixed_train_subset": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.003675242831137777,
+                "fde_m": 0.003521827920502694,
+                "last_velocity_error_m_s": 0.029244984638385332
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 54,
+                "episodes": 3,
+                "ade_m": 0.004333072395413869,
+                "fde_m": 0.00998754370605151,
+                "last_velocity_error_m_s": 0.14087676766223498
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 1706,
+                "episodes": 8,
+                "ade_m": 0.0005824058647756844,
+                "fde_m": 0.0006249798814307963,
+                "last_velocity_error_m_s": 0.00488579987841729
+              },
+              "robot_history": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.0036529048566593465,
+                "fde_m": 0.003148000678677737,
+                "last_velocity_error_m_s": 0.03141277266959566
+              },
+              "robot_plan": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.005249197773867249,
+                "fde_m": 0.008491066084376475,
+                "last_velocity_error_m_s": 0.04433297831978152
+              },
+              "scene_future_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.00770613332487423,
+                "fde_m": 0.01450738808045459,
+                "last_velocity_error_m_s": 0.08642234789350986
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 330,
+                "episodes": 4,
+                "ade_m": 0.01109913905723301,
+                "fde_m": 0.02100450391416359,
+                "last_velocity_error_m_s": 0.16229658060821223
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 1430,
+                "episodes": 8,
+                "ade_m": 0.0011373007841594105,
+                "fde_m": 0.002354799274514217,
+                "last_velocity_error_m_s": 0.015612090589327055
+              }
+            },
+            "mean_group_ade_m": 0.004679424611015072,
+            "true_displacement_at_most1mm": {
+              "trajectories": 3094,
+              "episodes": 8,
+              "reconstruction_above1mm_rate": 0.8958021061363554
+            }
+          }
+        },
+        "zero_probes": [
+          {
+            "length": 10,
+            "maximum_decoded_movement_m": 0.001026851823553443
+          },
+          {
+            "length": 20,
+            "maximum_decoded_movement_m": 0.0026576591189950705
+          }
+        ],
+        "wall_seconds_including_evaluations": 13.782229044009,
+        "peak_allocated_bytes": 130787840,
+        "peak_reserved_bytes": 150994944,
+        "checkpoint_sha256": "212870defa5b94b24dec5538296f03741c9ad2fed567fedb156013ef4bb9ffea"
+      },
+      {
+        "arm": "time_pool",
+        "seed": 43,
+        "encoder_parameters": 264192,
+        "decoder_parameters": 81212,
+        "decoder_initial_sha256": "b19e44590a31f99bcf127f6479aa72736958aedddabc2811708d640fc78bbb2e",
+        "encoder_initial_sha256": "b99078d426796e3fed545281983cc62b046865c74fa4f6e1687d0849fc7c067d",
+        "sampling_sha256": "5d50e7d043cbb128b1e329d90a9393b36310bd7763c3096e3c8e3bdec2a001ff",
+        "steps": 5000,
+        "source": {
+          "audit.py": "5607afd5cdd3fe67499ddf2d5296160addba6402a1ff47a3bb706e8a81e98ca1",
+          "metrics.py": "aaeb33be3e47eea90c5217c35cb260e7a6f293fc868733d3d6e0dc47870765cc",
+          "model.py": "b758c9b8727cc4a5745d88052f524885abebde872d48bb0a3d1ad930e0cf089d",
+          "preflight.py": "f89212ce64a88c9407a43e4dff1be6d9e4d0104c703245cc4c38e2001f1cee2c",
+          "prepare.py": "716931de457f834ff7930c74f4945d4302f601435ec609c22e688fcbe4e15c9a",
+          "protocol.json": "7a7edf4dda0ffada9e6c9f77b7c75a2531e2a85e398b869a21987bda84930afb",
+          "run.sh": "a5993c87de7c806dd2c16d2bb4d0b70ea9c368f0c0e35d4cb0ae368cbe9e9465",
+          "train.py": "056af74d2b2f02859eb814bfb675c906b50bc93508bd74920836c6401c4a0288"
+        },
+        "torch": "2.5.1+cu124",
+        "final": {
+          "step": 5000,
+          "validation": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0038405086014871486,
+                "fde_m": 0.003814700883582821,
+                "last_velocity_error_m_s": 0.03332042502011289
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 164,
+                "episodes": 11,
+                "ade_m": 0.0038953380946768184,
+                "fde_m": 0.007708116776235138,
+                "last_velocity_error_m_s": 0.10752843557792352
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 8856,
+                "episodes": 41,
+                "ade_m": 0.00034491259604536574,
+                "fde_m": 0.0005835846657977997,
+                "last_velocity_error_m_s": 0.002815203154789411
+              },
+              "robot_history": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.003962608474818188,
+                "fde_m": 0.0035335603079354474,
+                "last_velocity_error_m_s": 0.034192410166783774
+              },
+              "robot_plan": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.0054129470966459295,
+                "fde_m": 0.00891651762569224,
+                "last_velocity_error_m_s": 0.048394372246173635
+              },
+              "scene_future_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.007039102773277177,
+                "fde_m": 0.013893607235340794,
+                "last_velocity_error_m_s": 0.08245317367088745
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 1740,
+                "episodes": 18,
+                "ade_m": 0.008304874044210493,
+                "fde_m": 0.014471677917405133,
+                "last_velocity_error_m_s": 0.116264787827962
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 7280,
+                "episodes": 41,
+                "ade_m": 0.0009707066715212536,
+                "fde_m": 0.0016026367801374403,
+                "last_velocity_error_m_s": 0.01335844713542654
+              }
+            },
+            "mean_group_ade_m": 0.004221374794085297,
+            "true_displacement_at_most1mm": {
+              "trajectories": 15879,
+              "episodes": 41,
+              "reconstruction_above1mm_rate": 0.41990165050745487
+            }
+          },
+          "fixed_train_subset": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0037850400953909256,
+                "fde_m": 0.003625784407810687,
+                "last_velocity_error_m_s": 0.03391400572811852
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 54,
+                "episodes": 3,
+                "ade_m": 0.004398789052687657,
+                "fde_m": 0.010762121540441273,
+                "last_velocity_error_m_s": 0.15561048748547776
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 1706,
+                "episodes": 8,
+                "ade_m": 0.0003442952199403343,
+                "fde_m": 0.0005852495791844174,
+                "last_velocity_error_m_s": 0.002851766575983356
+              },
+              "robot_history": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.003549104921796499,
+                "fde_m": 0.0032789933820377903,
+                "last_velocity_error_m_s": 0.029500021402782624
+              },
+              "robot_plan": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.005144373858181992,
+                "fde_m": 0.00892093304490332,
+                "last_velocity_error_m_s": 0.04692921428582963
+              },
+              "scene_future_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.007319161873751117,
+                "fde_m": 0.013834507368332366,
+                "last_velocity_error_m_s": 0.08407083346407507
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 330,
+                "episodes": 4,
+                "ade_m": 0.010856892713465282,
+                "fde_m": 0.019887991972326158,
+                "last_velocity_error_m_s": 0.15108286738852014
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 1430,
+                "episodes": 8,
+                "ade_m": 0.000998766636007634,
+                "fde_m": 0.0016339738222643438,
+                "last_velocity_error_m_s": 0.013988276299311007
+              }
+            },
+            "mean_group_ade_m": 0.00454955304640268,
+            "true_displacement_at_most1mm": {
+              "trajectories": 3094,
+              "episodes": 8,
+              "reconstruction_above1mm_rate": 0.42106835288262845
+            }
+          }
+        },
+        "zero_probes": [
+          {
+            "length": 10,
+            "maximum_decoded_movement_m": 0.0006820125272497535
+          },
+          {
+            "length": 20,
+            "maximum_decoded_movement_m": 0.002184289274737239
+          }
+        ],
+        "wall_seconds_including_evaluations": 13.386124135926366,
+        "peak_allocated_bytes": 130787840,
+        "peak_reserved_bytes": 150994944,
+        "checkpoint_sha256": "310b245498450dd6c4b05f37ebef69b6107f7ade3526e48933321052364bd86d"
+      },
+      {
+        "arm": "time_pool",
+        "seed": 44,
+        "encoder_parameters": 264192,
+        "decoder_parameters": 81212,
+        "decoder_initial_sha256": "cbb3e7867c3c44b4bab47f35239902f4caffe822a5d5d770ef1f293aec6bcacb",
+        "encoder_initial_sha256": "fe278d18fb245f6f9eb1c612a39208aa16682175a6804bdc5676e42ee0582d6f",
+        "sampling_sha256": "3d6d7df65bc0eb8fe1e1f5b7879cfa2af2ed70e67e16b2c861ae6192a778eff4",
+        "steps": 5000,
+        "source": {
+          "audit.py": "5607afd5cdd3fe67499ddf2d5296160addba6402a1ff47a3bb706e8a81e98ca1",
+          "metrics.py": "aaeb33be3e47eea90c5217c35cb260e7a6f293fc868733d3d6e0dc47870765cc",
+          "model.py": "b758c9b8727cc4a5745d88052f524885abebde872d48bb0a3d1ad930e0cf089d",
+          "preflight.py": "f89212ce64a88c9407a43e4dff1be6d9e4d0104c703245cc4c38e2001f1cee2c",
+          "prepare.py": "716931de457f834ff7930c74f4945d4302f601435ec609c22e688fcbe4e15c9a",
+          "protocol.json": "7a7edf4dda0ffada9e6c9f77b7c75a2531e2a85e398b869a21987bda84930afb",
+          "run.sh": "a5993c87de7c806dd2c16d2bb4d0b70ea9c368f0c0e35d4cb0ae368cbe9e9465",
+          "train.py": "056af74d2b2f02859eb814bfb675c906b50bc93508bd74920836c6401c4a0288"
+        },
+        "torch": "2.5.1+cu124",
+        "final": {
+          "step": 5000,
+          "validation": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0038444523776712883,
+                "fde_m": 0.0037264230784040003,
+                "last_velocity_error_m_s": 0.035287239919040404
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 164,
+                "episodes": 11,
+                "ade_m": 0.0037844182162350792,
+                "fde_m": 0.007408671008203618,
+                "last_velocity_error_m_s": 0.10999790495311546
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 8856,
+                "episodes": 41,
+                "ade_m": 0.0004823178538158406,
+                "fde_m": 0.0010359031168953247,
+                "last_velocity_error_m_s": 0.0054501180701652776
+              },
+              "robot_history": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.004206148788304739,
+                "fde_m": 0.003769585787645517,
+                "last_velocity_error_m_s": 0.03743662497786418
+              },
+              "robot_plan": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.005859107697457049,
+                "fde_m": 0.009786759453374155,
+                "last_velocity_error_m_s": 0.05409446942651077
+              },
+              "scene_future_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.007813941931384535,
+                "fde_m": 0.014720452265736253,
+                "last_velocity_error_m_s": 0.08224331460793355
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 1740,
+                "episodes": 18,
+                "ade_m": 0.008490247192233683,
+                "fde_m": 0.015765775189328094,
+                "last_velocity_error_m_s": 0.11943043516002233
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 7280,
+                "episodes": 41,
+                "ade_m": 0.0010034309458849557,
+                "fde_m": 0.0021933128124711674,
+                "last_velocity_error_m_s": 0.013882019169755733
+              }
+            },
+            "mean_group_ade_m": 0.004435508125373396,
+            "true_displacement_at_most1mm": {
+              "trajectories": 15879,
+              "episodes": 41,
+              "reconstruction_above1mm_rate": 0.9214311134814799
+            }
+          },
+          "fixed_train_subset": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.003775500349632529,
+                "fde_m": 0.0036844686594538654,
+                "last_velocity_error_m_s": 0.03545399076760987
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 54,
+                "episodes": 3,
+                "ade_m": 0.004309068962784625,
+                "fde_m": 0.009646030966980593,
+                "last_velocity_error_m_s": 0.1427777678977867
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 1706,
+                "episodes": 8,
+                "ade_m": 0.0004823749647050674,
+                "fde_m": 0.0010370948188817295,
+                "last_velocity_error_m_s": 0.005448301749296447
+              },
+              "robot_history": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.003817354268091038,
+                "fde_m": 0.003485577469437116,
+                "last_velocity_error_m_s": 0.03253131686116965
+              },
+              "robot_plan": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.00559370780338852,
+                "fde_m": 0.00921012745539664,
+                "last_velocity_error_m_s": 0.0481908365192283
+              },
+              "scene_future_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.008422550394793891,
+                "fde_m": 0.01588778393329509,
+                "last_velocity_error_m_s": 0.09006345050017475
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 330,
+                "episodes": 4,
+                "ade_m": 0.011737803877443836,
+                "fde_m": 0.02360482822231557,
+                "last_velocity_error_m_s": 0.16718970144817716
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 1430,
+                "episodes": 8,
+                "ade_m": 0.0010311939519165696,
+                "fde_m": 0.002219661113069103,
+                "last_velocity_error_m_s": 0.014434574659728514
+              }
+            },
+            "mean_group_ade_m": 0.004896194321594509,
+            "true_displacement_at_most1mm": {
+              "trajectories": 3094,
+              "episodes": 8,
+              "reconstruction_above1mm_rate": 0.9078992833566825
+            }
+          }
+        },
+        "zero_probes": [
+          {
+            "length": 10,
+            "maximum_decoded_movement_m": 0.0010356152197346091
+          },
+          {
+            "length": 20,
+            "maximum_decoded_movement_m": 0.0025676898658275604
+          }
+        ],
+        "wall_seconds_including_evaluations": 13.439552505966276,
+        "peak_allocated_bytes": 130787840,
+        "peak_reserved_bytes": 150994944,
+        "checkpoint_sha256": "40a3209e78b25612d11c817f3407099197ceb1bde0e8ac0255a8fd3f60923b06"
+      }
+    ],
+    "flat_mlp": [
+      {
+        "arm": "flat_mlp",
+        "seed": 42,
+        "encoder_parameters": 183040,
+        "decoder_parameters": 81212,
+        "decoder_initial_sha256": "ddf716341bf8d0f0c53805872e67d0eeee5ae5ba78b8b61d98fbb415312cc1f9",
+        "encoder_initial_sha256": "dd9c152962cfaef110f5f97528f781282835424a3bb71d83535f288928f7de75",
+        "sampling_sha256": "ca36982076992fe86870c35fae939919bcab739b575527539fc4b0beb4feab8d",
+        "steps": 5000,
+        "source": {
+          "audit.py": "5607afd5cdd3fe67499ddf2d5296160addba6402a1ff47a3bb706e8a81e98ca1",
+          "metrics.py": "aaeb33be3e47eea90c5217c35cb260e7a6f293fc868733d3d6e0dc47870765cc",
+          "model.py": "b758c9b8727cc4a5745d88052f524885abebde872d48bb0a3d1ad930e0cf089d",
+          "preflight.py": "f89212ce64a88c9407a43e4dff1be6d9e4d0104c703245cc4c38e2001f1cee2c",
+          "prepare.py": "716931de457f834ff7930c74f4945d4302f601435ec609c22e688fcbe4e15c9a",
+          "protocol.json": "7a7edf4dda0ffada9e6c9f77b7c75a2531e2a85e398b869a21987bda84930afb",
+          "run.sh": "a5993c87de7c806dd2c16d2bb4d0b70ea9c368f0c0e35d4cb0ae368cbe9e9465",
+          "train.py": "056af74d2b2f02859eb814bfb675c906b50bc93508bd74920836c6401c4a0288"
+        },
+        "torch": "2.5.1+cu124",
+        "final": {
+          "step": 5000,
+          "validation": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0012459295496080388,
+                "fde_m": 0.0009107710928917578,
+                "last_velocity_error_m_s": 0.01600473141783634
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 164,
+                "episodes": 11,
+                "ade_m": 0.0013969830166048053,
+                "fde_m": 0.00237925186360463,
+                "last_velocity_error_m_s": 0.04958318899939302
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 8856,
+                "episodes": 41,
+                "ade_m": 0.0002229126431396122,
+                "fde_m": 0.00027452241363870686,
+                "last_velocity_error_m_s": 0.0039594026562451345
+              },
+              "robot_history": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.001375953196479825,
+                "fde_m": 0.0009038039226790673,
+                "last_velocity_error_m_s": 0.01606302449871356
+              },
+              "robot_plan": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.0012916218026103087,
+                "fde_m": 0.0014610714132589997,
+                "last_velocity_error_m_s": 0.019438608400366812
+              },
+              "scene_future_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0016731700366793669,
+                "fde_m": 0.0018383004198294836,
+                "last_velocity_error_m_s": 0.02645332712568304
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 1740,
+                "episodes": 18,
+                "ade_m": 0.0031176588101274683,
+                "fde_m": 0.003966260717309158,
+                "last_velocity_error_m_s": 0.07381301485725578
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 7280,
+                "episodes": 41,
+                "ade_m": 0.0004075780067653537,
+                "fde_m": 0.0006364382620459746,
+                "last_velocity_error_m_s": 0.01002990046032339
+              }
+            },
+            "mean_group_ade_m": 0.0013414758827518473,
+            "true_displacement_at_most1mm": {
+              "trajectories": 15879,
+              "episodes": 41,
+              "reconstruction_above1mm_rate": 0.0012532733661662777
+            }
+          },
+          "fixed_train_subset": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0011826761370771416,
+                "fde_m": 0.0009254645596317982,
+                "last_velocity_error_m_s": 0.01602661589797326
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 54,
+                "episodes": 3,
+                "ade_m": 0.0014682899033110156,
+                "fde_m": 0.002742569655815027,
+                "last_velocity_error_m_s": 0.05718829774295717
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 1706,
+                "episodes": 8,
+                "ade_m": 0.0002230222015494803,
+                "fde_m": 0.0002736338760343574,
+                "last_velocity_error_m_s": 0.003946089094372127
+              },
+              "robot_history": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.0012459987766754378,
+                "fde_m": 0.0008255033272524797,
+                "last_velocity_error_m_s": 0.014985850981874653
+              },
+              "robot_plan": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.001231378814273481,
+                "fde_m": 0.0012833971184250078,
+                "last_velocity_error_m_s": 0.017000580426052632
+              },
+              "scene_future_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0016213012300778796,
+                "fde_m": 0.001654888378278345,
+                "last_velocity_error_m_s": 0.02399469364919144
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 330,
+                "episodes": 4,
+                "ade_m": 0.004015184612371343,
+                "fde_m": 0.005698144455642589,
+                "last_velocity_error_m_s": 0.10150300271953772
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 1430,
+                "episodes": 8,
+                "ade_m": 0.0004315318568105492,
+                "fde_m": 0.0006468163032817005,
+                "last_velocity_error_m_s": 0.010564472208197652
+              }
+            },
+            "mean_group_ade_m": 0.001427422941518291,
+            "true_displacement_at_most1mm": {
+              "trajectories": 3094,
+              "episodes": 8,
+              "reconstruction_above1mm_rate": 0.006914893617021276
+            }
+          }
+        },
+        "zero_probes": [
+          {
+            "length": 10,
+            "maximum_decoded_movement_m": 0.0003138838801532984
+          },
+          {
+            "length": 20,
+            "maximum_decoded_movement_m": 0.0006504027405753732
+          }
+        ],
+        "wall_seconds_including_evaluations": 9.361743235960603,
+        "peak_allocated_bytes": 74495488,
+        "peak_reserved_bytes": 75497472,
+        "checkpoint_sha256": "b74bb8550daebbebb65754cfaebb17ae0f62307f09e8bc3ebac70dc60bb7be38"
+      },
+      {
+        "arm": "flat_mlp",
+        "seed": 43,
+        "encoder_parameters": 183040,
+        "decoder_parameters": 81212,
+        "decoder_initial_sha256": "b19e44590a31f99bcf127f6479aa72736958aedddabc2811708d640fc78bbb2e",
+        "encoder_initial_sha256": "d90d3141bbb1a84ff6ad9b4a3c70a985291dbccb21fed4592d728e7fb8d59227",
+        "sampling_sha256": "5d50e7d043cbb128b1e329d90a9393b36310bd7763c3096e3c8e3bdec2a001ff",
+        "steps": 5000,
+        "source": {
+          "audit.py": "5607afd5cdd3fe67499ddf2d5296160addba6402a1ff47a3bb706e8a81e98ca1",
+          "metrics.py": "aaeb33be3e47eea90c5217c35cb260e7a6f293fc868733d3d6e0dc47870765cc",
+          "model.py": "b758c9b8727cc4a5745d88052f524885abebde872d48bb0a3d1ad930e0cf089d",
+          "preflight.py": "f89212ce64a88c9407a43e4dff1be6d9e4d0104c703245cc4c38e2001f1cee2c",
+          "prepare.py": "716931de457f834ff7930c74f4945d4302f601435ec609c22e688fcbe4e15c9a",
+          "protocol.json": "7a7edf4dda0ffada9e6c9f77b7c75a2531e2a85e398b869a21987bda84930afb",
+          "run.sh": "a5993c87de7c806dd2c16d2bb4d0b70ea9c368f0c0e35d4cb0ae368cbe9e9465",
+          "train.py": "056af74d2b2f02859eb814bfb675c906b50bc93508bd74920836c6401c4a0288"
+        },
+        "torch": "2.5.1+cu124",
+        "final": {
+          "step": 5000,
+          "validation": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0012262949232095136,
+                "fde_m": 0.0010142404050036795,
+                "last_velocity_error_m_s": 0.016487835797685306
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 164,
+                "episodes": 11,
+                "ade_m": 0.0014477071624305114,
+                "fde_m": 0.002777096341736784,
+                "last_velocity_error_m_s": 0.053839702110306954
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 8856,
+                "episodes": 41,
+                "ade_m": 0.00018767673202616807,
+                "fde_m": 0.0002602403124710585,
+                "last_velocity_error_m_s": 0.0022369637783848676
+              },
+              "robot_history": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.001380648061450502,
+                "fde_m": 0.0008758018273261874,
+                "last_velocity_error_m_s": 0.017593341453362683
+              },
+              "robot_plan": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.0013892137105421928,
+                "fde_m": 0.0013341464575553708,
+                "last_velocity_error_m_s": 0.018353233437441965
+              },
+              "scene_future_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.001784137764552901,
+                "fde_m": 0.001997420813799781,
+                "last_velocity_error_m_s": 0.026700326116395622
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 1740,
+                "episodes": 18,
+                "ade_m": 0.003147214671237474,
+                "fde_m": 0.0037114405033431977,
+                "last_velocity_error_m_s": 0.0723741509424416
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 7280,
+                "episodes": 41,
+                "ade_m": 0.0003734798631036632,
+                "fde_m": 0.00028977358277637854,
+                "last_velocity_error_m_s": 0.010938840063828227
+              }
+            },
+            "mean_group_ade_m": 0.001367046611069116,
+            "true_displacement_at_most1mm": {
+              "trajectories": 15879,
+              "episodes": 41,
+              "reconstruction_above1mm_rate": 0.004537367668744955
+            }
+          },
+          "fixed_train_subset": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0011784526014912507,
+                "fde_m": 0.0010889663992007493,
+                "last_velocity_error_m_s": 0.017219279783678588
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 54,
+                "episodes": 3,
+                "ade_m": 0.0015067435000121413,
+                "fde_m": 0.0029668780192576376,
+                "last_velocity_error_m_s": 0.0595834319117417
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 1706,
+                "episodes": 8,
+                "ade_m": 0.0001880635283297366,
+                "fde_m": 0.0002615052074609341,
+                "last_velocity_error_m_s": 0.002238142959612603
+              },
+              "robot_history": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.00122870722796057,
+                "fde_m": 0.000829034929109793,
+                "last_velocity_error_m_s": 0.01584453507008134
+              },
+              "robot_plan": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.0013254375602168183,
+                "fde_m": 0.0011548708523076614,
+                "last_velocity_error_m_s": 0.01650623650150515
+              },
+              "scene_future_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0017670983387883768,
+                "fde_m": 0.0017456122866651744,
+                "last_velocity_error_m_s": 0.024248639464327273
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 330,
+                "episodes": 4,
+                "ade_m": 0.0040538933099882055,
+                "fde_m": 0.0053448328531634035,
+                "last_velocity_error_m_s": 0.09598129225352464
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 1430,
+                "episodes": 8,
+                "ade_m": 0.00039922529998639034,
+                "fde_m": 0.00031419355264217285,
+                "last_velocity_error_m_s": 0.01151979069806632
+              }
+            },
+            "mean_group_ade_m": 0.0014559526708466863,
+            "true_displacement_at_most1mm": {
+              "trajectories": 3094,
+              "episodes": 8,
+              "reconstruction_above1mm_rate": 0.009183469856214025
+            }
+          }
+        },
+        "zero_probes": [
+          {
+            "length": 10,
+            "maximum_decoded_movement_m": 0.0002592487435322255
+          },
+          {
+            "length": 20,
+            "maximum_decoded_movement_m": 0.0008514689397998154
+          }
+        ],
+        "wall_seconds_including_evaluations": 9.254764348268509,
+        "peak_allocated_bytes": 74495488,
+        "peak_reserved_bytes": 75497472,
+        "checkpoint_sha256": "9428000cb74c82e1320a43bdea7ed78e69f1587308bf8d1c11dbb643727d4336"
+      },
+      {
+        "arm": "flat_mlp",
+        "seed": 44,
+        "encoder_parameters": 183040,
+        "decoder_parameters": 81212,
+        "decoder_initial_sha256": "cbb3e7867c3c44b4bab47f35239902f4caffe822a5d5d770ef1f293aec6bcacb",
+        "encoder_initial_sha256": "b822971f3b9e862047f18854147998aa3ccad4295fb85516f273b384bcdddf65",
+        "sampling_sha256": "3d6d7df65bc0eb8fe1e1f5b7879cfa2af2ed70e67e16b2c861ae6192a778eff4",
+        "steps": 5000,
+        "source": {
+          "audit.py": "5607afd5cdd3fe67499ddf2d5296160addba6402a1ff47a3bb706e8a81e98ca1",
+          "metrics.py": "aaeb33be3e47eea90c5217c35cb260e7a6f293fc868733d3d6e0dc47870765cc",
+          "model.py": "b758c9b8727cc4a5745d88052f524885abebde872d48bb0a3d1ad930e0cf089d",
+          "preflight.py": "f89212ce64a88c9407a43e4dff1be6d9e4d0104c703245cc4c38e2001f1cee2c",
+          "prepare.py": "716931de457f834ff7930c74f4945d4302f601435ec609c22e688fcbe4e15c9a",
+          "protocol.json": "7a7edf4dda0ffada9e6c9f77b7c75a2531e2a85e398b869a21987bda84930afb",
+          "run.sh": "a5993c87de7c806dd2c16d2bb4d0b70ea9c368f0c0e35d4cb0ae368cbe9e9465",
+          "train.py": "056af74d2b2f02859eb814bfb675c906b50bc93508bd74920836c6401c4a0288"
+        },
+        "torch": "2.5.1+cu124",
+        "final": {
+          "step": 5000,
+          "validation": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0012616418757281495,
+                "fde_m": 0.0010371591425419626,
+                "last_velocity_error_m_s": 0.0165895720291952
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 164,
+                "episodes": 11,
+                "ade_m": 0.0014473069628001315,
+                "fde_m": 0.0025404351168779008,
+                "last_velocity_error_m_s": 0.05282856631318758
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 8856,
+                "episodes": 41,
+                "ade_m": 0.00017834572342438187,
+                "fde_m": 0.0001900881144814997,
+                "last_velocity_error_m_s": 0.001196146068563418
+              },
+              "robot_history": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.0013943739502396007,
+                "fde_m": 0.000984762427402032,
+                "last_velocity_error_m_s": 0.016085990893368415
+              },
+              "robot_plan": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.0013222389262108692,
+                "fde_m": 0.0013441597436314907,
+                "last_velocity_error_m_s": 0.021789126281682565
+              },
+              "scene_future_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0016980536157902137,
+                "fde_m": 0.0020268515658510714,
+                "last_velocity_error_m_s": 0.03106480896007737
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 1740,
+                "episodes": 18,
+                "ade_m": 0.0031703403279597954,
+                "fde_m": 0.0037814057362484596,
+                "last_velocity_error_m_s": 0.07194654267316264
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 7280,
+                "episodes": 41,
+                "ade_m": 0.0003107277441677743,
+                "fde_m": 0.000551666656499757,
+                "last_velocity_error_m_s": 0.010061768102341339
+              }
+            },
+            "mean_group_ade_m": 0.0013478786407901144,
+            "true_displacement_at_most1mm": {
+              "trajectories": 15879,
+              "episodes": 41,
+              "reconstruction_above1mm_rate": 0.001352991263226202
+            }
+          },
+          "fixed_train_subset": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0011815421804544292,
+                "fde_m": 0.0010800899195435331,
+                "last_velocity_error_m_s": 0.016711365711490157
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 54,
+                "episodes": 3,
+                "ade_m": 0.0015823215241643543,
+                "fde_m": 0.0030408213970429068,
+                "last_velocity_error_m_s": 0.059964796139291426
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 1706,
+                "episodes": 8,
+                "ade_m": 0.00017847704378955395,
+                "fde_m": 0.00018898550061780163,
+                "last_velocity_error_m_s": 0.0011769799098479466
+              },
+              "robot_history": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.0012641858554270176,
+                "fde_m": 0.0009325062979619619,
+                "last_velocity_error_m_s": 0.014375611865451592
+              },
+              "robot_plan": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.0012303058865583013,
+                "fde_m": 0.0011579715002851055,
+                "last_velocity_error_m_s": 0.017543008097753856
+              },
+              "scene_future_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0016583903455717017,
+                "fde_m": 0.0018810456535311522,
+                "last_velocity_error_m_s": 0.029561123599653648
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 330,
+                "episodes": 4,
+                "ade_m": 0.004049883167809481,
+                "fde_m": 0.005207360015201255,
+                "last_velocity_error_m_s": 0.0956943455866539
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 1430,
+                "episodes": 8,
+                "ade_m": 0.00033650472116495555,
+                "fde_m": 0.0005648584600179635,
+                "last_velocity_error_m_s": 0.01054774917079609
+              }
+            },
+            "mean_group_ade_m": 0.0014352013406174744,
+            "true_displacement_at_most1mm": {
+              "trajectories": 3094,
+              "episodes": 8,
+              "reconstruction_above1mm_rate": 0.006382978723404255
+            }
+          }
+        },
+        "zero_probes": [
+          {
+            "length": 10,
+            "maximum_decoded_movement_m": 0.0002902953128796071
+          },
+          {
+            "length": 20,
+            "maximum_decoded_movement_m": 0.000521523121278733
+          }
+        ],
+        "wall_seconds_including_evaluations": 9.157847118098289,
+        "peak_allocated_bytes": 74495488,
+        "peak_reserved_bytes": 75497472,
+        "checkpoint_sha256": "c2375f05b1a22fcec0cc202dd68d1ad1da30704f36e5b11afc2eb1c7f54913e5"
+      }
+    ],
+    "gru": [
+      {
+        "arm": "gru",
+        "seed": 42,
+        "encoder_parameters": 164032,
+        "decoder_parameters": 81212,
+        "decoder_initial_sha256": "ddf716341bf8d0f0c53805872e67d0eeee5ae5ba78b8b61d98fbb415312cc1f9",
+        "encoder_initial_sha256": "3a53d2c76487a6ebaa4811b0750c2c1681ea66fcf5ecab085f74ca7e32e28c86",
+        "sampling_sha256": "ca36982076992fe86870c35fae939919bcab739b575527539fc4b0beb4feab8d",
+        "steps": 5000,
+        "source": {
+          "audit.py": "5607afd5cdd3fe67499ddf2d5296160addba6402a1ff47a3bb706e8a81e98ca1",
+          "metrics.py": "aaeb33be3e47eea90c5217c35cb260e7a6f293fc868733d3d6e0dc47870765cc",
+          "model.py": "b758c9b8727cc4a5745d88052f524885abebde872d48bb0a3d1ad930e0cf089d",
+          "preflight.py": "f89212ce64a88c9407a43e4dff1be6d9e4d0104c703245cc4c38e2001f1cee2c",
+          "prepare.py": "716931de457f834ff7930c74f4945d4302f601435ec609c22e688fcbe4e15c9a",
+          "protocol.json": "7a7edf4dda0ffada9e6c9f77b7c75a2531e2a85e398b869a21987bda84930afb",
+          "run.sh": "a5993c87de7c806dd2c16d2bb4d0b70ea9c368f0c0e35d4cb0ae368cbe9e9465",
+          "train.py": "056af74d2b2f02859eb814bfb675c906b50bc93508bd74920836c6401c4a0288"
+        },
+        "torch": "2.5.1+cu124",
+        "final": {
+          "step": 5000,
+          "validation": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0036304766511080825,
+                "fde_m": 0.003534290606490801,
+                "last_velocity_error_m_s": 0.03410338463894767
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 164,
+                "episodes": 11,
+                "ade_m": 0.004179693109707701,
+                "fde_m": 0.007688061203223384,
+                "last_velocity_error_m_s": 0.10608502882712999
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 8856,
+                "episodes": 41,
+                "ade_m": 0.00027241954993494327,
+                "fde_m": 0.0003595584731716913,
+                "last_velocity_error_m_s": 0.0050570886073700045
+              },
+              "robot_history": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.004242217347942091,
+                "fde_m": 0.0035418745763089892,
+                "last_velocity_error_m_s": 0.03757084649528765
+              },
+              "robot_plan": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.0051914762132598095,
+                "fde_m": 0.006447708891860655,
+                "last_velocity_error_m_s": 0.03967683016112469
+              },
+              "scene_future_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.007108683153725529,
+                "fde_m": 0.010192381644223446,
+                "last_velocity_error_m_s": 0.0630424496299308
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 1740,
+                "episodes": 18,
+                "ade_m": 0.008531360199573554,
+                "fde_m": 0.0112541112064085,
+                "last_velocity_error_m_s": 0.10999435086960666
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 7280,
+                "episodes": 41,
+                "ade_m": 0.0006094626577669614,
+                "fde_m": 0.0016844537983837541,
+                "last_velocity_error_m_s": 0.014133939995496812
+              }
+            },
+            "mean_group_ade_m": 0.004220723610377335,
+            "true_displacement_at_most1mm": {
+              "trajectories": 15879,
+              "episodes": 41,
+              "reconstruction_above1mm_rate": 0.4194425950890929
+            }
+          },
+          "fixed_train_subset": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0036074805633157948,
+                "fde_m": 0.0031877178690561062,
+                "last_velocity_error_m_s": 0.03503756111294341
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 54,
+                "episodes": 3,
+                "ade_m": 0.004780655644189198,
+                "fde_m": 0.011043059574863102,
+                "last_velocity_error_m_s": 0.15425068282585844
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 1706,
+                "episodes": 8,
+                "ade_m": 0.00027268432364878717,
+                "fde_m": 0.00036047863757732515,
+                "last_velocity_error_m_s": 0.005083097677854035
+              },
+              "robot_history": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.0037219097769916974,
+                "fde_m": 0.003128306057727142,
+                "last_velocity_error_m_s": 0.03445624886800276
+              },
+              "robot_plan": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.005144303540854012,
+                "fde_m": 0.0067469208151709655,
+                "last_velocity_error_m_s": 0.0385379140930794
+              },
+              "scene_future_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.007453873798614048,
+                "fde_m": 0.01172616199219282,
+                "last_velocity_error_m_s": 0.06909450117619646
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 330,
+                "episodes": 4,
+                "ade_m": 0.011397209180979057,
+                "fde_m": 0.017031352875425766,
+                "last_velocity_error_m_s": 0.15579275293507722
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 1430,
+                "episodes": 8,
+                "ade_m": 0.0006393794833380276,
+                "fde_m": 0.0016833908556540514,
+                "last_velocity_error_m_s": 0.014608463780691255
+              }
+            },
+            "mean_group_ade_m": 0.004627187038991328,
+            "true_displacement_at_most1mm": {
+              "trajectories": 3094,
+              "episodes": 8,
+              "reconstruction_above1mm_rate": 0.42106835288262845
+            }
+          }
+        },
+        "zero_probes": [
+          {
+            "length": 10,
+            "maximum_decoded_movement_m": 0.00039935539825819433
+          },
+          {
+            "length": 20,
+            "maximum_decoded_movement_m": 0.0016593338223174214
+          }
+        ],
+        "wall_seconds_including_evaluations": 17.856606910936534,
+        "peak_allocated_bytes": 216840192,
+        "peak_reserved_bytes": 234881024,
+        "checkpoint_sha256": "11626c49d5ebd8d8e57279628ebe0a5831f8a8a412c21900d260c99d89f4294f"
+      },
+      {
+        "arm": "gru",
+        "seed": 43,
+        "encoder_parameters": 164032,
+        "decoder_parameters": 81212,
+        "decoder_initial_sha256": "b19e44590a31f99bcf127f6479aa72736958aedddabc2811708d640fc78bbb2e",
+        "encoder_initial_sha256": "2b6ed10a4ee7f43184b93c737fdc11a66fa5fd5b81b3881cee9e895bcd087e9f",
+        "sampling_sha256": "5d50e7d043cbb128b1e329d90a9393b36310bd7763c3096e3c8e3bdec2a001ff",
+        "steps": 5000,
+        "source": {
+          "audit.py": "5607afd5cdd3fe67499ddf2d5296160addba6402a1ff47a3bb706e8a81e98ca1",
+          "metrics.py": "aaeb33be3e47eea90c5217c35cb260e7a6f293fc868733d3d6e0dc47870765cc",
+          "model.py": "b758c9b8727cc4a5745d88052f524885abebde872d48bb0a3d1ad930e0cf089d",
+          "preflight.py": "f89212ce64a88c9407a43e4dff1be6d9e4d0104c703245cc4c38e2001f1cee2c",
+          "prepare.py": "716931de457f834ff7930c74f4945d4302f601435ec609c22e688fcbe4e15c9a",
+          "protocol.json": "7a7edf4dda0ffada9e6c9f77b7c75a2531e2a85e398b869a21987bda84930afb",
+          "run.sh": "a5993c87de7c806dd2c16d2bb4d0b70ea9c368f0c0e35d4cb0ae368cbe9e9465",
+          "train.py": "056af74d2b2f02859eb814bfb675c906b50bc93508bd74920836c6401c4a0288"
+        },
+        "torch": "2.5.1+cu124",
+        "final": {
+          "step": 5000,
+          "validation": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0039010816367925877,
+                "fde_m": 0.003754236210826151,
+                "last_velocity_error_m_s": 0.032417347429470805
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 164,
+                "episodes": 11,
+                "ade_m": 0.004075994498624132,
+                "fde_m": 0.007714642737365191,
+                "last_velocity_error_m_s": 0.10073063421074231
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 8856,
+                "episodes": 41,
+                "ade_m": 0.0002867373724662537,
+                "fde_m": 0.0003450663358245489,
+                "last_velocity_error_m_s": 0.0020415886790875588
+              },
+              "robot_history": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.004149464820858636,
+                "fde_m": 0.003679073657393532,
+                "last_velocity_error_m_s": 0.03371476510966373
+              },
+              "robot_plan": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.0050791758924363765,
+                "fde_m": 0.006434322639671417,
+                "last_velocity_error_m_s": 0.03961878744352133
+              },
+              "scene_future_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0069340884304515005,
+                "fde_m": 0.009293803483831032,
+                "last_velocity_error_m_s": 0.0634026589497004
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 1740,
+                "episodes": 18,
+                "ade_m": 0.008224472083588442,
+                "fde_m": 0.01112549541674281,
+                "last_velocity_error_m_s": 0.11174830725728367
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 7280,
+                "episodes": 41,
+                "ade_m": 0.0005170981418523157,
+                "fde_m": 0.001408050579535068,
+                "last_velocity_error_m_s": 0.01479568737668953
+              }
+            },
+            "mean_group_ade_m": 0.00414601410963378,
+            "true_displacement_at_most1mm": {
+              "trajectories": 15879,
+              "episodes": 41,
+              "reconstruction_above1mm_rate": 0.41954255510508653
+            }
+          },
+          "fixed_train_subset": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.00390580739908056,
+                "fde_m": 0.0033595290737674123,
+                "last_velocity_error_m_s": 0.03421038357188769
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 54,
+                "episodes": 3,
+                "ade_m": 0.004965775032574878,
+                "fde_m": 0.011075076213629046,
+                "last_velocity_error_m_s": 0.15313968503833308
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 1706,
+                "episodes": 8,
+                "ade_m": 0.00028655469379668634,
+                "fde_m": 0.0003441899344249833,
+                "last_velocity_error_m_s": 0.002041107149372906
+              },
+              "robot_history": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.0036998244819762887,
+                "fde_m": 0.0032936011716702043,
+                "last_velocity_error_m_s": 0.02985654589295699
+              },
+              "robot_plan": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.004932364248499877,
+                "fde_m": 0.006810949697669082,
+                "last_velocity_error_m_s": 0.03906210371806785
+              },
+              "scene_future_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.007394088752391073,
+                "fde_m": 0.01048862490751477,
+                "last_velocity_error_m_s": 0.06382905508123057
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 330,
+                "episodes": 4,
+                "ade_m": 0.010850168220397164,
+                "fde_m": 0.016160182119436033,
+                "last_velocity_error_m_s": 0.14665894007584707
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 1430,
+                "episodes": 8,
+                "ade_m": 0.0005486036421905791,
+                "fde_m": 0.0014176557149632148,
+                "last_velocity_error_m_s": 0.015314907002268157
+              }
+            },
+            "mean_group_ade_m": 0.004572898308863389,
+            "true_displacement_at_most1mm": {
+              "trajectories": 3094,
+              "episodes": 8,
+              "reconstruction_above1mm_rate": 0.42106835288262845
+            }
+          }
+        },
+        "zero_probes": [
+          {
+            "length": 10,
+            "maximum_decoded_movement_m": 0.0004421373305376619
+          },
+          {
+            "length": 20,
+            "maximum_decoded_movement_m": 0.0013809421798214316
+          }
+        ],
+        "wall_seconds_including_evaluations": 17.51211535325274,
+        "peak_allocated_bytes": 216840192,
+        "peak_reserved_bytes": 234881024,
+        "checkpoint_sha256": "45c5fb83b59aad0baf2d3ad8810d62bfa8c970a2622ced193c72ed61be555262"
+      },
+      {
+        "arm": "gru",
+        "seed": 44,
+        "encoder_parameters": 164032,
+        "decoder_parameters": 81212,
+        "decoder_initial_sha256": "cbb3e7867c3c44b4bab47f35239902f4caffe822a5d5d770ef1f293aec6bcacb",
+        "encoder_initial_sha256": "fba921354ab9cfdcaec41fce9123357808a6a2491dca2b77f489842f956c985f",
+        "sampling_sha256": "3d6d7df65bc0eb8fe1e1f5b7879cfa2af2ed70e67e16b2c861ae6192a778eff4",
+        "steps": 5000,
+        "source": {
+          "audit.py": "5607afd5cdd3fe67499ddf2d5296160addba6402a1ff47a3bb706e8a81e98ca1",
+          "metrics.py": "aaeb33be3e47eea90c5217c35cb260e7a6f293fc868733d3d6e0dc47870765cc",
+          "model.py": "b758c9b8727cc4a5745d88052f524885abebde872d48bb0a3d1ad930e0cf089d",
+          "preflight.py": "f89212ce64a88c9407a43e4dff1be6d9e4d0104c703245cc4c38e2001f1cee2c",
+          "prepare.py": "716931de457f834ff7930c74f4945d4302f601435ec609c22e688fcbe4e15c9a",
+          "protocol.json": "7a7edf4dda0ffada9e6c9f77b7c75a2531e2a85e398b869a21987bda84930afb",
+          "run.sh": "a5993c87de7c806dd2c16d2bb4d0b70ea9c368f0c0e35d4cb0ae368cbe9e9465",
+          "train.py": "056af74d2b2f02859eb814bfb675c906b50bc93508bd74920836c6401c4a0288"
+        },
+        "torch": "2.5.1+cu124",
+        "final": {
+          "step": 5000,
+          "validation": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.003605364973177897,
+                "fde_m": 0.003264114360300155,
+                "last_velocity_error_m_s": 0.03308719466769042
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 164,
+                "episodes": 11,
+                "ade_m": 0.003890576201105526,
+                "fde_m": 0.007849141527911566,
+                "last_velocity_error_m_s": 0.11030157504730648
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 8856,
+                "episodes": 41,
+                "ade_m": 0.000228319249426296,
+                "fde_m": 0.0003600525711139405,
+                "last_velocity_error_m_s": 0.0030418614786523854
+              },
+              "robot_history": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.004250041872751267,
+                "fde_m": 0.003414929433851758,
+                "last_velocity_error_m_s": 0.035686450734533054
+              },
+              "robot_plan": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.004987265359510888,
+                "fde_m": 0.006144855072382324,
+                "last_velocity_error_m_s": 0.03931491013417676
+              },
+              "scene_future_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.00664948517023605,
+                "fde_m": 0.0086045994507876,
+                "last_velocity_error_m_s": 0.058992923809264304
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 1740,
+                "episodes": 18,
+                "ade_m": 0.008400000164121825,
+                "fde_m": 0.010629889055260947,
+                "last_velocity_error_m_s": 0.1094210863986821
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 7280,
+                "episodes": 41,
+                "ade_m": 0.0005691059110012632,
+                "fde_m": 0.0011814794837823107,
+                "last_velocity_error_m_s": 0.008644861209661561
+              }
+            },
+            "mean_group_ade_m": 0.004072519862666377,
+            "true_displacement_at_most1mm": {
+              "trajectories": 15879,
+              "episodes": 41,
+              "reconstruction_above1mm_rate": 0.4158237025467628
+            }
+          },
+          "fixed_train_subset": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0035721881184759188,
+                "fde_m": 0.0029904103177900527,
+                "last_velocity_error_m_s": 0.03344612192643462
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 54,
+                "episodes": 3,
+                "ade_m": 0.004637779307974822,
+                "fde_m": 0.011071856991629554,
+                "last_velocity_error_m_s": 0.15704230848974085
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 1706,
+                "episodes": 8,
+                "ade_m": 0.00022859981510466864,
+                "fde_m": 0.00036120380084828443,
+                "last_velocity_error_m_s": 0.0030727646081239817
+              },
+              "robot_history": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.0037560292342781187,
+                "fde_m": 0.0029019540700898263,
+                "last_velocity_error_m_s": 0.03091796247920689
+              },
+              "robot_plan": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.004762393599535928,
+                "fde_m": 0.005658624453661344,
+                "last_velocity_error_m_s": 0.033904296375789345
+              },
+              "scene_future_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.007199382022058367,
+                "fde_m": 0.010066691364366356,
+                "last_velocity_error_m_s": 0.06290328487825568
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 330,
+                "episodes": 4,
+                "ade_m": 0.010706139214847601,
+                "fde_m": 0.015240471221198319,
+                "last_velocity_error_m_s": 0.1474416295853414
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 1430,
+                "episodes": 8,
+                "ade_m": 0.0005990219953345669,
+                "fde_m": 0.001185521281370193,
+                "last_velocity_error_m_s": 0.009238603116877665
+              }
+            },
+            "mean_group_ade_m": 0.004432691663451249,
+            "true_displacement_at_most1mm": {
+              "trajectories": 3094,
+              "episodes": 8,
+              "reconstruction_above1mm_rate": 0.41536046329720744
+            }
+          }
+        },
+        "zero_probes": [
+          {
+            "length": 10,
+            "maximum_decoded_movement_m": 0.00035778817255049944
+          },
+          {
+            "length": 20,
+            "maximum_decoded_movement_m": 0.0011532590724527836
+          }
+        ],
+        "wall_seconds_including_evaluations": 17.633339160121977,
+        "peak_allocated_bytes": 216840192,
+        "peak_reserved_bytes": 234881024,
+        "checkpoint_sha256": "73d7007e3e4e1bb204d7f75618b0525fdecbe16bce095fcb99de9bee0a37f816"
+      }
+    ],
+    "tcn": [
+      {
+        "arm": "tcn",
+        "seed": 42,
+        "encoder_parameters": 175456,
+        "decoder_parameters": 81212,
+        "decoder_initial_sha256": "ddf716341bf8d0f0c53805872e67d0eeee5ae5ba78b8b61d98fbb415312cc1f9",
+        "encoder_initial_sha256": "cc247ebd1d895ba5c24aa306d39e54d0fd3c4aaf6922ee7bd94c3b5fd5f8f808",
+        "sampling_sha256": "ca36982076992fe86870c35fae939919bcab739b575527539fc4b0beb4feab8d",
+        "steps": 5000,
+        "source": {
+          "audit.py": "5607afd5cdd3fe67499ddf2d5296160addba6402a1ff47a3bb706e8a81e98ca1",
+          "metrics.py": "aaeb33be3e47eea90c5217c35cb260e7a6f293fc868733d3d6e0dc47870765cc",
+          "model.py": "b758c9b8727cc4a5745d88052f524885abebde872d48bb0a3d1ad930e0cf089d",
+          "preflight.py": "f89212ce64a88c9407a43e4dff1be6d9e4d0104c703245cc4c38e2001f1cee2c",
+          "prepare.py": "716931de457f834ff7930c74f4945d4302f601435ec609c22e688fcbe4e15c9a",
+          "protocol.json": "7a7edf4dda0ffada9e6c9f77b7c75a2531e2a85e398b869a21987bda84930afb",
+          "run.sh": "a5993c87de7c806dd2c16d2bb4d0b70ea9c368f0c0e35d4cb0ae368cbe9e9465",
+          "train.py": "056af74d2b2f02859eb814bfb675c906b50bc93508bd74920836c6401c4a0288"
+        },
+        "torch": "2.5.1+cu124",
+        "final": {
+          "step": 5000,
+          "validation": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0015920328053430422,
+                "fde_m": 0.001269181156383114,
+                "last_velocity_error_m_s": 0.022138714675119436
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 164,
+                "episodes": 11,
+                "ade_m": 0.0017930826630687792,
+                "fde_m": 0.0023705479549253083,
+                "last_velocity_error_m_s": 0.061275871372910413
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 8856,
+                "episodes": 41,
+                "ade_m": 0.00022857281715409829,
+                "fde_m": 0.0002668407340157368,
+                "last_velocity_error_m_s": 0.004058763828138289
+              },
+              "robot_history": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.0017786613767584829,
+                "fde_m": 0.0012397028806254468,
+                "last_velocity_error_m_s": 0.022265171687126672
+              },
+              "robot_plan": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.0019044447256636116,
+                "fde_m": 0.0016422333680020046,
+                "last_velocity_error_m_s": 0.02179064038222069
+              },
+              "scene_future_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.002263151059138111,
+                "fde_m": 0.0018255262606790225,
+                "last_velocity_error_m_s": 0.028522327493181062
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 1740,
+                "episodes": 18,
+                "ade_m": 0.004051197048684097,
+                "fde_m": 0.0034642334170803695,
+                "last_velocity_error_m_s": 0.06986430000778039
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 7280,
+                "episodes": 41,
+                "ade_m": 0.00036262798767485387,
+                "fde_m": 0.0002564694765560301,
+                "last_velocity_error_m_s": 0.006535050243431817
+              }
+            },
+            "mean_group_ade_m": 0.0017467213104356346,
+            "true_displacement_at_most1mm": {
+              "trajectories": 15879,
+              "episodes": 41,
+              "reconstruction_above1mm_rate": 0.0011117924214230415
+            }
+          },
+          "fixed_train_subset": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0015017493969337026,
+                "fde_m": 0.0012576487692362033,
+                "last_velocity_error_m_s": 0.022869527294297157
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 54,
+                "episodes": 3,
+                "ade_m": 0.0020534197822805423,
+                "fde_m": 0.0031585568879722863,
+                "last_velocity_error_m_s": 0.07167840445562175
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 1706,
+                "episodes": 8,
+                "ade_m": 0.00022875556813762497,
+                "fde_m": 0.0002678745269198093,
+                "last_velocity_error_m_s": 0.004088051795808604
+              },
+              "robot_history": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.001587027117605496,
+                "fde_m": 0.0011398961463646193,
+                "last_velocity_error_m_s": 0.02035497124479367
+              },
+              "robot_plan": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.0017959599396549539,
+                "fde_m": 0.001473537492856268,
+                "last_velocity_error_m_s": 0.018378858280759882
+              },
+              "scene_future_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0022627556251317606,
+                "fde_m": 0.001954334855323343,
+                "last_velocity_error_m_s": 0.026966968186326427
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 330,
+                "episodes": 4,
+                "ade_m": 0.004951825805923303,
+                "fde_m": 0.004691322367968435,
+                "last_velocity_error_m_s": 0.09685822255524844
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 1430,
+                "episodes": 8,
+                "ade_m": 0.00038873397983119236,
+                "fde_m": 0.000268870086490343,
+                "last_velocity_error_m_s": 0.007210001545219091
+              }
+            },
+            "mean_group_ade_m": 0.0018462784019373218,
+            "true_displacement_at_most1mm": {
+              "trajectories": 3094,
+              "episodes": 8,
+              "reconstruction_above1mm_rate": 0.0031914893617021275
+            }
+          }
+        },
+        "zero_probes": [
+          {
+            "length": 10,
+            "maximum_decoded_movement_m": 0.00033757282653823495
+          },
+          {
+            "length": 20,
+            "maximum_decoded_movement_m": 0.0006183457444421947
+          }
+        ],
+        "wall_seconds_including_evaluations": 19.225642721168697,
+        "peak_allocated_bytes": 104210944,
+        "peak_reserved_bytes": 119537664,
+        "checkpoint_sha256": "d497ddd8ac2e85db45dd9fbc11c91efa997e6afd07cd03d5fa4acb4332568b74"
+      },
+      {
+        "arm": "tcn",
+        "seed": 43,
+        "encoder_parameters": 175456,
+        "decoder_parameters": 81212,
+        "decoder_initial_sha256": "b19e44590a31f99bcf127f6479aa72736958aedddabc2811708d640fc78bbb2e",
+        "encoder_initial_sha256": "549438d47ca06e7c67c1d969d401624958cf930d63206622b491678d6531d4fe",
+        "sampling_sha256": "5d50e7d043cbb128b1e329d90a9393b36310bd7763c3096e3c8e3bdec2a001ff",
+        "steps": 5000,
+        "source": {
+          "audit.py": "5607afd5cdd3fe67499ddf2d5296160addba6402a1ff47a3bb706e8a81e98ca1",
+          "metrics.py": "aaeb33be3e47eea90c5217c35cb260e7a6f293fc868733d3d6e0dc47870765cc",
+          "model.py": "b758c9b8727cc4a5745d88052f524885abebde872d48bb0a3d1ad930e0cf089d",
+          "preflight.py": "f89212ce64a88c9407a43e4dff1be6d9e4d0104c703245cc4c38e2001f1cee2c",
+          "prepare.py": "716931de457f834ff7930c74f4945d4302f601435ec609c22e688fcbe4e15c9a",
+          "protocol.json": "7a7edf4dda0ffada9e6c9f77b7c75a2531e2a85e398b869a21987bda84930afb",
+          "run.sh": "a5993c87de7c806dd2c16d2bb4d0b70ea9c368f0c0e35d4cb0ae368cbe9e9465",
+          "train.py": "056af74d2b2f02859eb814bfb675c906b50bc93508bd74920836c6401c4a0288"
+        },
+        "torch": "2.5.1+cu124",
+        "final": {
+          "step": 5000,
+          "validation": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0016611074178545873,
+                "fde_m": 0.0013043813948669706,
+                "last_velocity_error_m_s": 0.022237303991478663
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 164,
+                "episodes": 11,
+                "ade_m": 0.001990570482793767,
+                "fde_m": 0.002904105682325922,
+                "last_velocity_error_m_s": 0.07000376123666555
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 8856,
+                "episodes": 41,
+                "ade_m": 0.0002655345453465455,
+                "fde_m": 0.0002362595755783109,
+                "last_velocity_error_m_s": 0.0036539298167939807
+              },
+              "robot_history": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.0018896231796687987,
+                "fde_m": 0.0013987387947171168,
+                "last_velocity_error_m_s": 0.024262394602807682
+              },
+              "robot_plan": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.0019807091385061607,
+                "fde_m": 0.0015196983507151528,
+                "last_velocity_error_m_s": 0.022218891137511448
+              },
+              "scene_future_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0024737519408310166,
+                "fde_m": 0.0019212089819316408,
+                "last_velocity_error_m_s": 0.028792093392667806
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 1740,
+                "episodes": 18,
+                "ade_m": 0.004220272659953849,
+                "fde_m": 0.003440534971994806,
+                "last_velocity_error_m_s": 0.07185487612490978
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 7280,
+                "episodes": 41,
+                "ade_m": 0.0003804466462024999,
+                "fde_m": 0.00010447163624544684,
+                "last_velocity_error_m_s": 0.008571292613937237
+              }
+            },
+            "mean_group_ade_m": 0.001857752001394653,
+            "true_displacement_at_most1mm": {
+              "trajectories": 15879,
+              "episodes": 41,
+              "reconstruction_above1mm_rate": 0.024695448347249526
+            }
+          },
+          "fixed_train_subset": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0015582068728654465,
+                "fde_m": 0.001265267052969125,
+                "last_velocity_error_m_s": 0.022921279760744442
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 54,
+                "episodes": 3,
+                "ade_m": 0.001989471549620965,
+                "fde_m": 0.0028766972899500628,
+                "last_velocity_error_m_s": 0.06579554579795181
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 1706,
+                "episodes": 8,
+                "ade_m": 0.0002657538153389747,
+                "fde_m": 0.00023699776110413053,
+                "last_velocity_error_m_s": 0.003639684657578902
+              },
+              "robot_history": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.001679632525201786,
+                "fde_m": 0.0012881313882572069,
+                "last_velocity_error_m_s": 0.022784914613170976
+              },
+              "robot_plan": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.0018926628184637918,
+                "fde_m": 0.0013803350738551114,
+                "last_velocity_error_m_s": 0.01967876364225798
+              },
+              "scene_future_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0024254451192437373,
+                "fde_m": 0.0018027129495618685,
+                "last_velocity_error_m_s": 0.0239264541423067
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 330,
+                "episodes": 4,
+                "ade_m": 0.005283649017560722,
+                "fde_m": 0.004885788768387065,
+                "last_velocity_error_m_s": 0.09405329127276588
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 1430,
+                "episodes": 8,
+                "ade_m": 0.0004086530648860419,
+                "fde_m": 0.00011743060538286239,
+                "last_velocity_error_m_s": 0.009181962361672059
+              }
+            },
+            "mean_group_ade_m": 0.001937934347897683,
+            "true_displacement_at_most1mm": {
+              "trajectories": 3094,
+              "episodes": 8,
+              "reconstruction_above1mm_rate": 0.037987155719990645
+            }
+          }
+        },
+        "zero_probes": [
+          {
+            "length": 10,
+            "maximum_decoded_movement_m": 0.0003659419307950884
+          },
+          {
+            "length": 20,
+            "maximum_decoded_movement_m": 0.0009525081259198487
+          }
+        ],
+        "wall_seconds_including_evaluations": 18.940282202791423,
+        "peak_allocated_bytes": 104210944,
+        "peak_reserved_bytes": 119537664,
+        "checkpoint_sha256": "3aedc2155215ccfffecd27eb35eefed485215e4a4bf2a7f1556e7a9e387b591e"
+      },
+      {
+        "arm": "tcn",
+        "seed": 44,
+        "encoder_parameters": 175456,
+        "decoder_parameters": 81212,
+        "decoder_initial_sha256": "cbb3e7867c3c44b4bab47f35239902f4caffe822a5d5d770ef1f293aec6bcacb",
+        "encoder_initial_sha256": "d898dca60df97b920cbbae779c6d51df225be65582e040a0e6dd8882245906aa",
+        "sampling_sha256": "3d6d7df65bc0eb8fe1e1f5b7879cfa2af2ed70e67e16b2c861ae6192a778eff4",
+        "steps": 5000,
+        "source": {
+          "audit.py": "5607afd5cdd3fe67499ddf2d5296160addba6402a1ff47a3bb706e8a81e98ca1",
+          "metrics.py": "aaeb33be3e47eea90c5217c35cb260e7a6f293fc868733d3d6e0dc47870765cc",
+          "model.py": "b758c9b8727cc4a5745d88052f524885abebde872d48bb0a3d1ad930e0cf089d",
+          "preflight.py": "f89212ce64a88c9407a43e4dff1be6d9e4d0104c703245cc4c38e2001f1cee2c",
+          "prepare.py": "716931de457f834ff7930c74f4945d4302f601435ec609c22e688fcbe4e15c9a",
+          "protocol.json": "7a7edf4dda0ffada9e6c9f77b7c75a2531e2a85e398b869a21987bda84930afb",
+          "run.sh": "a5993c87de7c806dd2c16d2bb4d0b70ea9c368f0c0e35d4cb0ae368cbe9e9465",
+          "train.py": "056af74d2b2f02859eb814bfb675c906b50bc93508bd74920836c6401c4a0288"
+        },
+        "torch": "2.5.1+cu124",
+        "final": {
+          "step": 5000,
+          "validation": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0016947482330051215,
+                "fde_m": 0.0013537607641788028,
+                "last_velocity_error_m_s": 0.022625327997061448
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 164,
+                "episodes": 11,
+                "ade_m": 0.001993473692211546,
+                "fde_m": 0.002972030859602979,
+                "last_velocity_error_m_s": 0.0672867188936174
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 8856,
+                "episodes": 41,
+                "ade_m": 0.00022425161011162527,
+                "fde_m": 0.0002198778235010208,
+                "last_velocity_error_m_s": 0.003300094823561599
+              },
+              "robot_history": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.0019077417469095712,
+                "fde_m": 0.0014705961102360096,
+                "last_velocity_error_m_s": 0.024601339785464093
+              },
+              "robot_plan": {
+                "trajectories": 9020,
+                "episodes": 41,
+                "ade_m": 0.002016314393172611,
+                "fde_m": 0.001603848215505774,
+                "last_velocity_error_m_s": 0.022322314992424652
+              },
+              "scene_future_ball": {
+                "trajectories": 451,
+                "episodes": 41,
+                "ade_m": 0.0024000575460529573,
+                "fde_m": 0.0020883731690742933,
+                "last_velocity_error_m_s": 0.030080848790406088
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 1740,
+                "episodes": 18,
+                "ade_m": 0.004215418723273337,
+                "fde_m": 0.0033941155040809736,
+                "last_velocity_error_m_s": 0.0726457898086816
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 7280,
+                "episodes": 41,
+                "ade_m": 0.00048672464677343365,
+                "fde_m": 0.0005870160099989126,
+                "last_velocity_error_m_s": 0.008779643025505487
+              }
+            },
+            "mean_group_ade_m": 0.0018673413239387753,
+            "true_displacement_at_most1mm": {
+              "trajectories": 15879,
+              "episodes": 41,
+              "reconstruction_above1mm_rate": 0.003791139439747538
+            }
+          },
+          "fixed_train_subset": {
+            "groups": {
+              "scene_history_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0016065464304724423,
+                "fde_m": 0.001362007292568839,
+                "last_velocity_error_m_s": 0.023824813459900875
+              },
+              "scene_history_moving_pin": {
+                "trajectories": 54,
+                "episodes": 3,
+                "ade_m": 0.002159760150582605,
+                "fde_m": 0.003481822874327552,
+                "last_velocity_error_m_s": 0.07406403852110235
+              },
+              "scene_history_quiet_pin": {
+                "trajectories": 1706,
+                "episodes": 8,
+                "ade_m": 0.00022429573280752032,
+                "fde_m": 0.00021997101972111543,
+                "last_velocity_error_m_s": 0.0032913653808385518
+              },
+              "robot_history": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.0016904519131680767,
+                "fde_m": 0.0012717400273994188,
+                "last_velocity_error_m_s": 0.021354867858191358
+              },
+              "robot_plan": {
+                "trajectories": 1760,
+                "episodes": 8,
+                "ade_m": 0.0019460227191876412,
+                "fde_m": 0.001513673523443055,
+                "last_velocity_error_m_s": 0.019210370211879723
+              },
+              "scene_future_ball": {
+                "trajectories": 88,
+                "episodes": 8,
+                "ade_m": 0.0023881293487852495,
+                "fde_m": 0.00212714802552339,
+                "last_velocity_error_m_s": 0.028143110422987908
+              },
+              "scene_future_moving_pin": {
+                "trajectories": 330,
+                "episodes": 4,
+                "ade_m": 0.005100196854518443,
+                "fde_m": 0.004483944917663925,
+                "last_velocity_error_m_s": 0.09452064451787953
+              },
+              "scene_future_quiet_pin": {
+                "trajectories": 1430,
+                "episodes": 8,
+                "ade_m": 0.0005124012785947152,
+                "fde_m": 0.0005897166712539771,
+                "last_velocity_error_m_s": 0.00934666875854711
+              }
+            },
+            "mean_group_ade_m": 0.0019534755535145867,
+            "true_displacement_at_most1mm": {
+              "trajectories": 3094,
+              "episodes": 8,
+              "reconstruction_above1mm_rate": 0.008590991162848474
+            }
+          }
+        },
+        "zero_probes": [
+          {
+            "length": 10,
+            "maximum_decoded_movement_m": 0.00042518600821495056
+          },
+          {
+            "length": 20,
+            "maximum_decoded_movement_m": 0.0008932985947467387
+          }
+        ],
+        "wall_seconds_including_evaluations": 18.822325801011175,
+        "peak_allocated_bytes": 104210944,
+        "peak_reserved_bytes": 119537664,
+        "checkpoint_sha256": "fda8bd4ffc42890cb1a7ce75542a6beb400ac77474716092c86b84f2b962e038"
+      }
+    ]
+  },
+  "summary": {
+    "time_pool": {
+      "mean_group_ade_mm": 4.315249543286233,
+      "seed_values_mm": [
+        4.288865710400006,
+        4.221374794085297,
+        4.435508125373396
+      ],
+      "worst_group_ade_mm": 8.490247192233683,
+      "passes_all_seeds_and_groups": false,
+      "encoder_parameters": 264192,
+      "decoder_parameters": 81212,
+      "seconds": 40.60790568590164,
+      "max_reserved_mib": 144.0,
+      "zero_max_movement_mm": 2.6576591189950705
+    },
+    "flat_mlp": {
+      "mean_group_ade_mm": 1.3521337115370258,
+      "seed_values_mm": [
+        1.3414758827518474,
+        1.367046611069116,
+        1.3478786407901144
+      ],
+      "worst_group_ade_mm": 3.1703403279597953,
+      "passes_all_seeds_and_groups": false,
+      "encoder_parameters": 183040,
+      "decoder_parameters": 81212,
+      "seconds": 27.7743547023274,
+      "max_reserved_mib": 72.0,
+      "zero_max_movement_mm": 0.8514689397998154
+    },
+    "gru": {
+      "mean_group_ade_mm": 4.146419194225831,
+      "seed_values_mm": [
+        4.220723610377335,
+        4.14601410963378,
+        4.072519862666377
+      ],
+      "worst_group_ade_mm": 8.531360199573554,
+      "passes_all_seeds_and_groups": false,
+      "encoder_parameters": 164032,
+      "decoder_parameters": 81212,
+      "seconds": 53.00206142431125,
+      "max_reserved_mib": 224.0,
+      "zero_max_movement_mm": 1.6593338223174214
+    },
+    "tcn": {
+      "mean_group_ade_mm": 1.8239382119230207,
+      "seed_values_mm": [
+        1.7467213104356345,
+        1.857752001394653,
+        1.8673413239387753
+      ],
+      "worst_group_ade_mm": 4.220272659953849,
+      "passes_all_seeds_and_groups": false,
+      "encoder_parameters": 175456,
+      "decoder_parameters": 81212,
+      "seconds": 56.988250724971294,
+      "max_reserved_mib": 114.0,
+      "zero_max_movement_mm": 0.9525081259198487
+    }
+  },
+  "verdict": "四个学习编码器都没有在全部三个种子、全部组同时达到预定精度目标。",
+  "learned_mean_error_minimizer": "flat_mlp",
+  "unlearned_flatten_ade_m": 0.0,
+  "raw_reference_checks": {
+    "reference": "unlearned flatten/inverse",
+    "splits": {
+      "train": {
+        "trajectories": 148830,
+        "unscaled_roundtrip_exact": true,
+        "normalized_roundtrip_mean_point_error_m": 1.1297155551121815e-09,
+        "normalized_roundtrip_max_point_error_m": 7.300048299977713e-08
+      },
+      "validation": {
+        "trajectories": 36982,
+        "unscaled_roundtrip_exact": true,
+        "normalized_roundtrip_mean_point_error_m": 1.0384638991352569e-09,
+        "normalized_roundtrip_max_point_error_m": 6.664001874625056e-08
+      }
+    }
+  },
+  "display_cases": 192,
+  "display_selection": "first8heldout episodes; first/middle/lastquery; scene ball/pin0endpoints and firstrobotpoint, no error sorting"
+}

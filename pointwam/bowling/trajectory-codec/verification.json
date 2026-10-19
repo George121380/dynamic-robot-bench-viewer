@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "display_cases": 192,
+  "embedded_coordinate_time_scalars_verified": 115200,
+  "exact_float32_saved_values": true,
+  "offline_core": true,
+  "old_python_files_unchanged": 137,
+  "browser_numeric_examples": [
+    {
+      "case_index": 0,
+      "arm": "time_pool",
+      "seed": 42,
+      "ade_mm": 0.5800945842757541,
+      "fde_mm": 0.6226102133301075
+    },
+    {
+      "case_index": 21,
+      "arm": "flat_mlp",
+      "seed": 44,
+      "ade_mm": 2.742385254399094,
+      "fde_mm": 3.564092248450372
+    },
+    {
+      "case_index": 191,
+      "arm": "gru",
+      "seed": 43,
+      "ade_mm": 0.48234908338566995,
+      "fde_mm": 1.3812261016850993
+    }
+  ],
+  "html_sha256": "6aa8064c6298a1eb1d3644b96268587a2f058e197f85c0f98815733b23a3479a"
+}

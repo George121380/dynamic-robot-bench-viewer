@@ -1,0 +1,90 @@
+{
+  "experiment": "trajectory_codec_v1",
+  "status": "fixed_before_training",
+  "authorization": "2026-10-19 user asks to explore better trajectory encoders and stop tricky auxiliary research",
+  "question": "Which simple encoder can reliably preserve observed point trajectories under the same decoder and training recipe?",
+  "scope": "Representation/reconstruction only. Not future forecasting, collision generalization, MAE, policy control, or paper reproduction.",
+  "data": {
+    "source": "immutable original206training episodes only; sort by(seed,episode_id), reserve ranks4,9,14,...for codec validation (41episodes/451windows), remaining165episodes/1815windows for codec training",
+    "test_access": false,
+    "streams": [
+      "scene_history",
+      "robot_history",
+      "robot_plan",
+      "scene_future"
+    ],
+    "history": "10samples from-1.0to-0.1seconds",
+    "future": "20samples from0.1to2.0seconds; true future is deliberately input for reconstruction, never a forecast claim",
+    "coordinates": "point trajectory minus its query current point, metres, conventional past-minus-current and future-minus-current",
+    "single_sample": "one point trajectory, up to20steps; zero-padded coordinates/time plus explicit valid length",
+    "features_per_step": "XYZ divided by one train-only global RMS scale, physical time in seconds, validity bit",
+    "groups": [
+      "scene_history_ball",
+      "scene_history_moving_pin",
+      "scene_history_quiet_pin",
+      "robot_history",
+      "robot_plan",
+      "scene_future_ball",
+      "scene_future_moving_pin",
+      "scene_future_quiet_pin"
+    ],
+    "movement_group": "encoded trajectory endpoint displacement magnitude>1cm for either endpoint of the same pin; training/metrics grouping only, not encoder input",
+    "training_fit_display": "all88windows from the first8 codec-training episodes sorted by original seed; no held-out episode included",
+    "legacy_validation": "initial data-preparation draft read original16validation windows, then discarded before formal training because historical scene trajectories were entirely quiet; formal comparison does not use that draft",
+    "validation_split": "episode-disjoint deterministic1in5holdout of originaltraining trajectories; no split chosen by reconstruction scores"
+  },
+  "architecture": {
+    "latent_dim": 256,
+    "learned_arms": [
+      "time_pool",
+      "flat_mlp",
+      "gru",
+      "tcn"
+    ],
+    "time_pool": "original FiLM time-pooling encoder modules, freshly initialized; new common decoder and input normalization, not the historical full tokenizer recipe",
+    "flat_mlp": "flatten20x5features;100->512->256 with GELU",
+    "gru": "unidirectional one-layer GRU5->192; last valid hidden192->256",
+    "tcn": "5->80 projection; four causal residual Conv1d blocks, kernel3/dilations1,2,4,8, GELU; last valid hidden80->256",
+    "common_decoder": "256->256->60, GELU between linear layers; reshaped20x3; valid steps scored",
+    "common_initialization": "decoder parameters copied exactly within each seed; encoder shapes and counts differ and are disclosed",
+    "raw_reference": "flatten20x5observed features and zero-pad100to256; inverse returns coordinates exactly up to normalization arithmetic; no learned weights",
+    "no_information_bottleneck_claim": "256dimensions exceed both10x3and20x3coordinates; this tests preservation and optimization, not compression"
+  },
+  "training": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "updates_per_run": 5000,
+    "total_formal_runs": 12,
+    "total_formal_updates": 60000,
+    "batch_size": 256,
+    "balanced_group_sampling": "32trajectories per group per step; identical saved index plan for all arms within seed",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "schedule": "200step linear warmup then cosine decay to0.0001",
+    "loss": "normalized XYZ MSE, valid times only, trajectory mean then equal group mean via balanced sampling",
+    "selection": "fixed last5000step only; no validation selection, no hyperparameter sweep, no automatic extension",
+    "evaluation_interval": 1000,
+    "precision": "FP32, noTF32; encoder comparisons are nominal interface matches, not equal parameter or wall-time matches"
+  },
+  "evaluation": {
+    "primary": "mean of eight per-group ADEs, each first averaged within episode; also every group and per-seed result",
+    "secondary": [
+      "per-group endpoint FDE",
+      "quiet-pin reconstructed movement>1mm",
+      "zero-input decoded movement",
+      "final displacement/velocity reconstruction",
+      "parameter counts",
+      "wall time and allocator memory"
+    ],
+    "decision": "Call a candidate accurately preserving trajectories only if all3seeds have all supported validation groups ADE<=1mm and FDE<=3mm. This is an engineering target, not a paper rule. Report failures unchanged.",
+    "interpretation": "Prefer the simplest successful representation. Reconstruction does not establish best downstream dynamics. No significance or unseen-environment claims from reused16validation episodes."
+  },
+  "compute": "one rechecked development GPU, sequential runs, allocator<=6GiB; never change others processes",
+  "closed_branch": "previous history-completion optimization remains closed; this is a separately authorized encoder study",
+  "planned_followup": "none automatic; no long-horizon dynamics or auxiliary-loss run in this protocol",
+  "protocol_revision_note": "Amended before formal training: deterministic episode holdout includes moving histories unlike original16validation anchors. Early4-step module checks are disposable; no candidate comparison results informed this split."
+}

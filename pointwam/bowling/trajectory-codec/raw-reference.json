@@ -1,0 +1,17 @@
+{
+  "reference": "unlearned flatten/inverse",
+  "splits": {
+    "train": {
+      "trajectories": 148830,
+      "unscaled_roundtrip_exact": true,
+      "normalized_roundtrip_mean_point_error_m": 1.1297155551121815e-09,
+      "normalized_roundtrip_max_point_error_m": 7.300048299977713e-08
+    },
+    "validation": {
+      "trajectories": 36982,
+      "unscaled_roundtrip_exact": true,
+      "normalized_roundtrip_mean_point_error_m": 1.0384638991352569e-09,
+      "normalized_roundtrip_max_point_error_m": 6.664001874625056e-08
+    }
+  }
+}
