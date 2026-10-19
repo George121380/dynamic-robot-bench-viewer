@@ -1,11 +1,70 @@
 {
-  "title": "LeHome 部署验收进行中",
-  "summary": "官方示范已下载并完成数字检查，原生环境正在服务器独立环境中验收。此页当前播放的是官方原始录像的派生预览。",
+  "title": "LeHome 部署验收通过",
+  "summary": "服务器已实际执行短袖上衣 episode 0 全段 364 个官方关节动作，三路相机正常，末态通过原始 5 条几何条件。下方视频是本次新渲染的仿真结果。",
   "facts": [
-    "完整双 SO101 机械臂，12 维关节与夹爪动作。",
-    "四类衣物各 250 条示范，共 1000 条；265,798 帧数值检查通过。",
-    "上游任务与 Isaac Lab 分支已锁定版本；没有启动策略训练或额外遥操作采集。",
-    "原生物理与相机回放尚未验收完成。"
+    "完整双 SO101 机械臂，12 维关节与夹爪动作；当前关节观测与独立 articulation 读取最大误差 0 rad。",
+    "四类各 250 条官方示范，共 1000 条、265,798 帧；资产与数据在本地和服务器均通过全部上游哈希校验。",
+    "四类数据的 episode 0 首末帧均能通过 LeRobot / PyAV 读取，含三路 RGB、12 维状态和动作。",
+    "本次回放 364 步、9774 个有限布料粒子；最终原始折叠判据 5/5 通过。这只验收一条动作回放，不能当作策略成功率。",
+    "为当前单场景 CPU 物理使用普通相机，并修复旧关节观测；相机位姿、光学、分辨率、动作、物理和成功阈值保持原配置。",
+    "原场景仍有碰撞体与布料 API 警告；本次没有训练模型或新增遥操作采集。"
   ],
-  "replays": []
+  "replays": [
+    {
+      "title": "本次原生仿真 · 短袖 episode 0",
+      "description": "起始衣物、动作来自固定版本官方数据。首、中、末画面已检查，末态形成紧凑折叠，边缘仍有小幅外露和皱褶。腕部视角在部分阶段主要看到桌面，俯视更适合判断整体折叠。",
+      "video": "native/replay-05.mp4",
+      "poster": "native/frame-0000.jpg",
+      "caption": "左侧大图：俯视；右上：左腕；右下：右腕。完整 364 帧，按 30 fps 展示（12.13 s）；物理 90 Hz，每动作推进一步，播放速度并非物理实时时间。",
+      "snapshots": [
+        {
+          "image": "native/frame-0000.jpg",
+          "caption": "起始 · frame 0"
+        },
+        {
+          "image": "native/frame-0182.jpg",
+          "caption": "中间 · frame 182"
+        },
+        {
+          "image": "native/frame-0363.jpg",
+          "caption": "结束 · frame 363"
+        }
+      ]
+    }
+  ],
+  "native_report": "native-report.json",
+  "source_commit": "86693165256d361d0e9ea0febc07beee38721fef",
+  "upstream": {
+    "upstream": {
+      "repository": "https://github.com/lehome-official/lehome-challenge",
+      "commit": "a805ad2f7ab52a4583066fc4ee5180459a7f9d15",
+      "license": "Apache-2.0"
+    },
+    "isaaclab": {
+      "repository": "https://github.com/lehome-official/IsaacLab",
+      "commit": "69f6fa548c3a3520e3cb26ed24bb8abe60baeef3"
+    },
+    "assets": {
+      "repository": "lehome/asset_challenge",
+      "revision": "bea65fd960ad5a1bb3bd3fa77164b28001c08ef9"
+    },
+    "demonstrations": {
+      "repository": "lehome/dataset_challenge_merged",
+      "revision": "17e8dee8fac294ffd21d250501d3b31bf8679042"
+    },
+    "task": "LeHome-BiSO101-Direct-Garment-v2",
+    "python": "3.11",
+    "isaacsim": "5.1.0.0",
+    "torch": "2.7.0+cu128",
+    "lerobot": "0.4.3"
+  },
+  "sha256": {
+    "native/replay-05.mp4": "b26c8d2a55f16a038e541f121c2ee6ebe055b416e1c7c17e7ba9c03ff312d6a3",
+    "native/frame-0000.jpg": "34b919c8b294dfc5e972e09e2a7cc44ce67bd6557abaab31b8a7967fffb8e7df",
+    "native/frame-0182.jpg": "c9d27de3625cbe995319b24064f1ea2e4acc1442a92c63c2d3421cd2baff3428",
+    "native/frame-0363.jpg": "ae9ff86d97f5b29dcc6dfe1c500fe41916743d43aedc60a1cc4b73eb38b2b690",
+    "native-report.json": "6dc5ce5e03dde52c71c31b058af8dee747251f5890009ecddf1d84b7081df529"
+  },
+  "learned_policy": false,
+  "acceptance_scope": "one full official-action replay; not policy evaluation or dataset success rate"
 }

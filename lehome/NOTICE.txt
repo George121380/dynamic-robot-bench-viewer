@@ -1,0 +1,14 @@
+LeHome demonstration viewer
+
+Original code, assets and demonstration recordings: LeHome contributors.
+Code: https://github.com/lehome-official/lehome-challenge
+Dataset: https://huggingface.co/datasets/lehome/dataset_challenge_merged
+Dataset revision: 17e8dee8fac294ffd21d250501d3b31bf8679042
+
+Official preview videos are complete fixed episodes extracted from the original
+recordings and re-encoded as H.264 for browser playback. Numeric curves are rounded
+to five decimal places. Visual review notes and this viewer were added for inspection.
+Native replay videos, if present, are newly rendered simulation output and labelled
+separately. No new demonstrations or autonomous-policy evaluations are claimed.
+
+Apache License 2.0: see LICENSE.txt and the linked upstream license information.

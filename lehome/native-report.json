@@ -1,0 +1,74 @@
+{
+  "status": "complete",
+  "mode": "official-action-replay",
+  "episode": 0,
+  "substeps_per_action": 1,
+  "camera_backend": "standard",
+  "garment": "Top_Short_Seen_0",
+  "seed": 42,
+  "frames": 364,
+  "dataset_fps": 30,
+  "physics_dt": 0.011111111111111112,
+  "action_rate_hz": 90.0,
+  "cameras": [
+    "top_rgb",
+    "left_rgb",
+    "right_rgb"
+  ],
+  "image_std_min": {
+    "top_rgb": 55.58566382979921,
+    "left_rgb": 19.62211296245963,
+    "right_rgb": 26.560784174893232
+  },
+  "observation_state_error_max_rad": 0.0,
+  "observed_joint_range_max_rad": 3.1600332260131836,
+  "success_ever": true,
+  "success_last_sparse_poll": false,
+  "success_final": true,
+  "final_geometric_check": {
+    "success": true,
+    "garment_type": "top-short-sleeve",
+    "thresholds": [
+      9.450000000000001,
+      12.15,
+      9.0,
+      13.05,
+      8.55
+    ],
+    "details": {
+      "condition_1": {
+        "description": "dist(p[0], p[4]) = 6.66 <= 9.450000000000001",
+        "value": 6.66004120131324,
+        "threshold": 9.450000000000001,
+        "passed": true
+      },
+      "condition_2": {
+        "description": "dist(p[2], p[3]) = 3.12 <= 12.15",
+        "value": 3.1204718722822613,
+        "threshold": 12.15,
+        "passed": true
+      },
+      "condition_3": {
+        "description": "dist(p[1], p[5]) = 6.39 <= 9.0",
+        "value": 6.393109518514201,
+        "threshold": 9.0,
+        "passed": true
+      },
+      "condition_4": {
+        "description": "dist(p[0], p[1]) = 19.07 >= 13.05",
+        "value": 19.071248825874246,
+        "threshold": 13.05,
+        "passed": true
+      },
+      "condition_5": {
+        "description": "dist(p[4], p[5]) = 17.09 >= 8.55",
+        "value": 17.086400786796457,
+        "threshold": 8.55,
+        "passed": true
+      }
+    }
+  },
+  "cloth_points": 9774,
+  "elapsed_seconds": 133.1974606513977,
+  "learned_policy": false
+}
