@@ -1,0 +1,11 @@
+{
+  "question": "Are inexpensive observation-only action baselines already competitive, and can a pooled motion probe transfer across episodes?",
+  "status": "frozen before probe execution; the primary neural interface experiment is unchanged",
+  "data": "existing episodes0..15 train,16..19 development; never20..24",
+  "models": ["current-joint persistence for all100 offsets", "ridge from current joints", "ridge from joints plus current point mean/std and past validity fractions", "same ridge plus past displacement mean/std at each of15 lags"],
+  "ridge_alphas": [0.0001,0.01,1,100],
+  "selection": "leave-one-training-episode-out CV on16 training episodes; minimize pooled valid-scalar full-chunk action MSE; validation never selects alpha",
+  "normalization": "training-fold mean/std only, std floor0.001; centered targets, unpenalized intercept; objective mean squared residual plus alpha times coefficient squared norm",
+  "motion_control": "Both geometry and motion probes receive identical past-valid fractions; only the motion probe receives pooled current-relative past displacements. Same present points and no future features.",
+  "interpretation": "A positive transfer is evidence for this restricted probe's predictive utility, not closed-loop benefit or a necessary information upper bound. A negative pooled linear probe cannot rule out useful nonlinear or spatially resolved motion information. Four reused validation episodes are development evidence only."
+}

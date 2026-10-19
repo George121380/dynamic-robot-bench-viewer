@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-19T23:52:59.408914+00:00",
+  "updated_utc": "2026-10-19T23:57:05.029855+00:00",
   "checks": {
     "checks": {
       "geometry_initial_core_exact": true,
@@ -48,7 +48,7 @@
       "mode": "geometry",
       "fusion": "late",
       "status": "running",
-      "step": 25,
+      "step": 125,
       "initial_core": "b5a97db5347f325014b8fe0bdc9afdccdf08d7e8452503920baaf7e2c98ed012",
       "hardware": {
         "name": "NVIDIA H800",
@@ -62,11 +62,11 @@
       "parameters": 53109263,
       "source_commit": "49d6ea15c9e4e927360a4029a4694809a64793e8",
       "latest_training": {
-        "step": 27,
-        "action_loss": 0.5608067093417048,
-        "kl_loss": 0.6378318816423416,
-        "gradient_norm": 141.8979949951172,
-        "elapsed_seconds": 59.40277232788503,
+        "step": 143,
+        "action_loss": 0.5986700557405129,
+        "kl_loss": 0.2811012603342533,
+        "gradient_norm": 71.38709259033203,
+        "elapsed_seconds": 304.92487732181326,
         "peak_reserved_bytes": 6754926592
       }
     },
@@ -92,7 +92,7 @@
       "mode": "tracks",
       "fusion": "late",
       "status": "running",
-      "step": 25,
+      "step": 125,
       "initial_core": "7f965109ca7026e49bc50d834a41cda1d6ef48e5cd2ad53f6b624002725c8f00",
       "hardware": {
         "name": "NVIDIA H800",
@@ -106,11 +106,11 @@
       "parameters": 53109263,
       "source_commit": "49d6ea15c9e4e927360a4029a4694809a64793e8",
       "latest_training": {
-        "step": 25,
-        "action_loss": 0.8014915585517883,
-        "kl_loss": 0.573890071362257,
-        "gradient_norm": 123.09082794189453,
-        "elapsed_seconds": 57.21772482804954,
+        "step": 139,
+        "action_loss": 0.7052974943071604,
+        "kl_loss": 0.26776194758713245,
+        "gradient_norm": 64.482177734375,
+        "elapsed_seconds": 303.2162991389632,
         "peak_reserved_bytes": 6794772480
       }
     },
@@ -119,8 +119,28 @@
       "seed": 1002,
       "mode": "geometry",
       "fusion": "late",
-      "status": "pending",
-      "step": 0
+      "status": "running",
+      "step": 100,
+      "initial_core": "552c6f640c0548cae26b009e6395a1255dc379661011e9a3fa7d9531e45651d9",
+      "hardware": {
+        "name": "NVIDIA H800",
+        "capability": [
+          9,
+          0
+        ],
+        "torch": "2.7.0+cu128",
+        "cuda": "12.8"
+      },
+      "parameters": 53109263,
+      "source_commit": "49d6ea15c9e4e927360a4029a4694809a64793e8",
+      "latest_training": {
+        "step": 104,
+        "action_loss": 0.5203962294617668,
+        "kl_loss": 0.3416278064250946,
+        "gradient_norm": 82.0931625366211,
+        "elapsed_seconds": 222.04084690008312,
+        "peak_reserved_bytes": 6750732288
+      }
     },
     {
       "name": "late-tracks-seed-1002",
@@ -4731,5 +4751,177 @@
   ],
   "paired": [],
   "protocol": "protocol.json",
-  "test_used": false
+  "test_used": false,
+  "probe": {
+    "schema": "act-state-probe-1",
+    "source_sha256": "7e88d0e39f61fa5ba83aea0d9adde26380ecf8df1bf2423f3213ab87b8f9c626",
+    "test_used": false,
+    "selection": "16-fold leave-one-training-episode-out, pooled valid-scalar MSE; no validation selection",
+    "models": {
+      "current_joint_persistence": {
+        "train": {
+          "overall": {
+            "MSE_rad2": 0.7076427738958815,
+            "valid_scalar_actions": 1708800,
+            "windows": 1688,
+            "MSE_prefix_rad2": {
+              "1": 0.05059166827978272,
+              "10": 0.1339031598831009,
+              "100": 0.7076427738958815
+            }
+          }
+        },
+        "validation": {
+          "overall": {
+            "MSE_rad2": 0.6848075730438434,
+            "valid_scalar_actions": 433596,
+            "windows": 427,
+            "MSE_prefix_rad2": {
+              "1": 0.04502420795142973,
+              "10": 0.12302647956971371,
+              "100": 0.6848075730438434
+            }
+          }
+        }
+      },
+      "ridge_joints": {
+        "alphas": [
+          0.0001,
+          0.01,
+          1.0,
+          100.0
+        ],
+        "CV_MSE_rad2": [
+          0.11376731787994433,
+          0.11687499703605507,
+          0.19566492056560644,
+          0.38029259934973225
+        ],
+        "selected_alpha": 0.0001,
+        "input_dimensions": 12,
+        "train": {
+          "overall": {
+            "MSE_rad2": 0.10579627857907901,
+            "valid_scalar_actions": 1708800,
+            "windows": 1688,
+            "MSE_prefix_rad2": {
+              "1": 0.020421466146743814,
+              "10": 0.04885137669237244,
+              "100": 0.10579627857907901
+            }
+          }
+        },
+        "validation": {
+          "overall": {
+            "MSE_rad2": 0.1285670422998933,
+            "valid_scalar_actions": 433596,
+            "windows": 427,
+            "MSE_prefix_rad2": {
+              "1": 0.01878406464086939,
+              "10": 0.04698617425999094,
+              "100": 0.1285670422998933
+            }
+          }
+        }
+      },
+      "ridge_geometry_validity": {
+        "alphas": [
+          0.0001,
+          0.01,
+          1.0,
+          100.0
+        ],
+        "CV_MSE_rad2": [
+          0.09289507083526591,
+          0.0958942936543135,
+          0.16093080521836078,
+          0.3701848407309412
+        ],
+        "selected_alpha": 0.0001,
+        "input_dimensions": 33,
+        "train": {
+          "overall": {
+            "MSE_rad2": 0.0828869644632725,
+            "valid_scalar_actions": 1708800,
+            "windows": 1688,
+            "MSE_prefix_rad2": {
+              "1": 0.015868262303549013,
+              "10": 0.03716007831672776,
+              "100": 0.0828869644632725
+            }
+          }
+        },
+        "validation": {
+          "overall": {
+            "MSE_rad2": 0.09502872197989315,
+            "valid_scalar_actions": 433596,
+            "windows": 427,
+            "MSE_prefix_rad2": {
+              "1": 0.015365386835744415,
+              "10": 0.038380888769739385,
+              "100": 0.09502872197989315
+            }
+          }
+        }
+      },
+      "ridge_motion": {
+        "alphas": [
+          0.0001,
+          0.01,
+          1.0,
+          100.0
+        ],
+        "CV_MSE_rad2": [
+          0.07818910724518764,
+          0.07805741925766747,
+          0.12400406960620251,
+          0.3434929596241914
+        ],
+        "selected_alpha": 0.01,
+        "input_dimensions": 123,
+        "train": {
+          "overall": {
+            "MSE_rad2": 0.06514627536642204,
+            "valid_scalar_actions": 1708800,
+            "windows": 1688,
+            "MSE_prefix_rad2": {
+              "1": 0.010303352203785095,
+              "10": 0.02443900792041905,
+              "100": 0.06514627536642204
+            }
+          }
+        },
+        "validation": {
+          "overall": {
+            "MSE_rad2": 0.0821279142443473,
+            "valid_scalar_actions": 433596,
+            "windows": 427,
+            "MSE_prefix_rad2": {
+              "1": 0.010993015104562425,
+              "10": 0.02767161828123019,
+              "100": 0.0821279142443473
+            }
+          }
+        }
+      }
+    },
+    "motion_distribution": {
+      "train": {
+        "windows": 1688,
+        "with_past": 1672,
+        "motion_gt_5mm_windows": 311,
+        "motion_gt_5mm_valid_scalar_fraction": 0.07759129213483146,
+        "median_observed_motion_m": 0.001551928547855175,
+        "p90_observed_motion_m": 0.053422095231507004
+      },
+      "validation": {
+        "windows": 427,
+        "with_past": 423,
+        "motion_gt_5mm_windows": 73,
+        "motion_gt_5mm_valid_scalar_fraction": 0.07868153765256138,
+        "median_observed_motion_m": 0.0014221989250206186,
+        "p90_observed_motion_m": 0.0312877964185023
+      }
+    }
+  }
 }
