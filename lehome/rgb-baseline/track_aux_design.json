@@ -23,7 +23,8 @@
       "relative_time_seconds",
       "valid_mask"
     ],
-    "spatial_normalizer_meters": 0.5
+    "spatial_normalizer_meters": 0.5,
+    "selection_criterion": "FPS_on_current_visible_world_xyz_then_seeded_random_K; never_use_hidden_or_future_motion"
   },
   "encoder": {
     "temporal_layers": 2,

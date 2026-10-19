@@ -1,6 +1,6 @@
 # Long-sleeve folding with auxiliary past-track completion
 
-**Status: design complete; the current implementation runs the public RGB ACT reference, not an enhanced-model training run.** The executable specification for later model work is [track_aux_design.json](track_aux_design.json). The question is whether reconstructing masked **past** cloth motion improves an observation representation used for action learning.
+**Status: design complete; the current implementation runs the public RGB ACT reference, not an enhanced-model training run.** The machine-readable specification for later model work is [track_aux_design.json](track_aux_design.json). The question is whether reconstructing masked **past** cloth motion improves an observation representation used for action learning.
 
 ## Architecture and objective
 
