@@ -18,6 +18,8 @@ Additional executed evidence: full640x480/two-worker/effective-batch16 continuou
 
 Auxiliary scope: the new native-ACT extension reads observation tokens before main-Transformer mixing. Auxiliary gradients reach the shared CNN, image projection and point MLP, not the native main Transformer directly. This preserves the actor core and excludes future-posterior leakage while limiting the auxiliary supervision pathway.
 
+Additional real BF16 gate: one complete16-frame/three640x480-camera training window passes forward/backward with finite CNN/native-encoder/point/aux gradients and exact action invariance after head removal, zero optimizer updates. However initial weighted auxiliary/action shared-observation gradient ratio is only2.134e-6 on this single training window. Weight0.1 plus tiny output initialization may be too weak; later gradients and held-out completion remain necessary before approving formal long training. ACT-H step250 full-validation L1=0.64413 versus native ACT0.65747; this small single-seed difference is not a method conclusion.
+
 The following proposal and legacy implementation notes are historical. Their unimplemented/not-trained wording describes the earlier snapshot; current execution receipts take precedence.
 
 Training is on hold for the user's settings review. The task-owned coordinator has been stopped before any formal updates; synchronized replay continues independently and cannot transition automatically into training. One eight-GPU node is permitted in principle, but no node allocation or new training has been launched. See the task's `training-hold.json`. No formal policy result exists yet.
