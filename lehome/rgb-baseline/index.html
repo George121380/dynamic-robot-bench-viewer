@@ -8,7 +8,7 @@
 <div class="eyebrow">LEHOME / LONG-SLEEVE / POLICY EVALUATION</div>
 <h1>RGB ACT 闭环评估</h1>
 <p class="muted">公开学习策略自主输出关节目标 · 三路 RGB + 12 维实测关节 · 固定 20 个场景，全部保留</p>
-<p><a href="../">官方示范与环境回放</a> · <a href="results.json">原始指标 JSON</a> · <a href="track-aux-design.zh-CN.md">增强模型设计（中文）</a> · <a href="track-aux-design.md">English design</a></p>
+<p><a href="../">官方示范与环境回放</a> · <a href="../flow-model/">Flow 模型实现与训练验收</a> · <a href="results.json">原始指标 JSON</a> · <a href="track-aux-design.zh-CN.md">增强模型设计（中文）</a> · <a href="track-aux-design.md">English design</a></p>
 <div id="status" role="status">正在读取结果…</div><div class="cards" id="scores"></div>
 <p class="muted small">这是开发场景的管线参考。第三方 checkpoint 的完整训练数据版本未固定，不能和新训练的轨迹模型直接作公平比较。成功采用上游 5 条几何条件；“曾成功”与“末态成功”分别统计。首次成功后继续执行策略 50 步，总上限 600 步。</p>
 <div class="layout"><aside id="case-list" aria-label="全部 20 个场景"></aside><article>
@@ -22,12 +22,12 @@
 <details><summary>末态几何测量（cm）</summary><pre id="geometry"></pre></details>
 </article></div>
 <article class="design"><h2>已完成场景的顶视末帧</h2><p class="small muted">点击缩略图查看完整三视角过程与指标。几何条件和外观质量分别检查。</p><div id="gallery" class="gallery"></div></article>
-<article class="design"><h2>下一步：用过去轨迹补全训练共享表征</h2>
+<article class="design"><h2>已实现：用过去轨迹补全训练共享表征</h2>
 <div class="flow"><div>同窗口 16 帧 RGB<br>+ 16 条衣服点历史</div><span>→</span><div>共享观测表征</div><span>→</span><div>ACT + 当前 12 维关节<br>→ 100×12 关节目标</div></div>
 <div class="flow" style="margin-top:12px"><div>共享观测表征<br>（CVAE 动作 latent 之前）</div><span>→</span><div>训练专用辅助 decoder<br>+ 48 个隐藏点当前坐标 query</div><span>→</span><div>48×15×3 过去位移<br>masked SmoothL1</div></div>
 <p>训练时，从共享观测表征分出辅助头，补全另外 48 个点在同一段过去的位移；辅助头位于 ACT 的未来专家动作 latent 之前。补全预测不进入 actor，部署时移除辅助头。</p>
 <p class="muted">正式对照：RGB-H → +当前几何 → +过去轨迹 → +补全辅助损失。统一历史窗口、数据划分、初始化与训练预算。GT 上界先行；真实 tracker 后续只允许访问当前观察前缀。</p>
-<p class="small">增强模型目前为设计，尚未实现或训练。<a href="track_aux_design.json">查看完整模型与实验配置</a>。</p></article>
+<p class="small">增强模型现已实现，并执行真实窗口工程训练；正式训练与闭环评估尚未完成。<a href="../flow-model/">查看模型与验收结果</a>。<a href="track_aux_design.json">查看完整模型与实验配置</a>。</p></article>
 <footer>源环境 Apache-2.0 · <a href="../LICENSE.txt">License</a> · <a href="../NOTICE.txt">Attribution</a> · <a href="https://huggingface.co/Papercold/lehome-act-top-long">第三方 ACT checkpoint</a> · 视频 30 fps，动作与物理 90 Hz。该页面无需认证。</footer>
 </main>
 <script>

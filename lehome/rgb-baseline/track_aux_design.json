@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "design_only_not_trained_or_implemented",
+  "status": "implemented_contract_tested_formal_training_pending",
   "task": "long_sleeve_folding",
   "question": "Does completing masked past cloth motion improve a shared policy representation?",
   "history": {

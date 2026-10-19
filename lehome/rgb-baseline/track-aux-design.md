@@ -1,6 +1,6 @@
 # Long-sleeve folding with auxiliary past-track completion
 
-**Status: design complete; the current implementation runs the public RGB ACT reference, not an enhanced-model training run.** The machine-readable specification for later model work is [track_aux_design.json](track_aux_design.json). The question is whether reconstructing masked **past** cloth motion improves an observation representation used for action learning.
+**Status update: the enhanced model is implemented and ten flow contract tests pass; formal training and closed-loop evaluation remain pending.** See [implementation and engineering validation](flow-model.md). The machine-readable experiment specification is [track_aux_design.json](track_aux_design.json). The question is whether reconstructing masked **past** cloth motion improves an observation representation used for action learning.
 
 ## Architecture and objective
 
@@ -35,6 +35,6 @@ A GT upper bound does not establish deployability. A later RGB tracker must use 
 
 ## Required later acceptance checks
 
-These are requirements for the future implementation, not tests claimed as executed now: replacing hidden targets must not alter actor conditions; replacing future expert actions must not alter completion; replacing auxiliary queries must not alter actor output; persistent identity, timing and camera projection must agree; a tiny batch must overfit and auxiliary gradients must reach the shared encoder; cold-start/invalid masks must work. Compare against the static-current-position completion reference and report errors on points moving more than 5 mm within the window. Judge policy benefit through paired closed-loop success, not completion error alone.
+Acceptance requirements follow; executed checks and their numerical receipts are listed in [the implementation record](flow-model.md), separately from pending formal experiments: replacing hidden targets must not alter actor conditions; replacing future expert actions must not alter completion; replacing auxiliary queries must not alter actor output; persistent identity, timing and camera projection must agree; a tiny batch must overfit and auxiliary gradients must reach the shared encoder; cold-start/invalid masks must work. Compare against the static-current-position completion reference and report errors on points moving more than 5 mm within the window. Judge policy benefit through paired closed-loop success, not completion error alone.
 
 [PointZero](https://pointzero-wm.github.io/) already studies track completion and downstream policy. The proposed distinguishing question concerns **auxiliary representation learning from the same past history**; a generic claim that completion helps policies would be insufficient novelty.
