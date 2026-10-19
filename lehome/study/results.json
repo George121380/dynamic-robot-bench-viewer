@@ -335,13 +335,13 @@
       }
     },
     "source_commit": "ac703750a47c930ce87169132850d4c93deced03",
-    "completed_replays": 30,
+    "completed_replays": 33,
     "expected_replays": 250,
     "active_condition": null,
     "snapshot_utc": "2026-10-19T18:27:45.102796+00:00",
     "paused_by_user": true,
     "reason": "User requested settings review before starting training",
-    "collection_count_snapshot_utc": "2026-10-19T19:55:39.415820+00:00"
+    "collection_count_snapshot_utc": "2026-10-19T20:03:49.270278+00:00"
   },
   "architecture_review": {
     "schema": 1,
@@ -849,7 +849,7 @@
     "offline_matches_checkpoint_receipt": true,
     "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b"
   },
-  "snapshot_utc": "2026-10-19T19:55:39.415820+00:00",
+  "snapshot_utc": "2026-10-19T20:03:49.270278+00:00",
   "capacity": {
     "total_instantiated": 74929807,
     "track_encoder": 3293952,
@@ -913,7 +913,7 @@
     "status": {
       "status": "running",
       "stage": "training",
-      "snapshot_utc": "2026-10-19T19:55:33.019652+00:00",
+      "snapshot_utc": "2026-10-19T20:03:43.110725+00:00",
       "formal_training": false,
       "protocol_fingerprint": "f8fe7d29b6b8fbe7f630ce2a335d45d1d284c22c691ba2c9d61c2bfc10b49808",
       "planned_rollouts": 10,
@@ -1284,6 +1284,196 @@
       "wrapper_sha256": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
       "script_sha256": "483a72b5416f16f5387691a4e2f338bbe00d466d7786df7ed52632c22ca145b6",
       "scope": "One complete real-data window, no optimization; a numerical gate, not a policy score."
+    },
+    "auxiliary_scale_probe": {
+      "status": "complete",
+      "optimizer_steps": 0,
+      "split": "train_only",
+      "precision": "bfloat16",
+      "rows": [
+        {
+          "train_window_index": 20,
+          "output_gain": 1,
+          "nominal_initial_output_weight_std": 0.0001,
+          "valid_action_steps": 100,
+          "valid_hidden_vectors": 720,
+          "moving_hidden_vectors": 135,
+          "initial_EPE_mm": 2.98514636233449,
+          "static_EPE_mm": 2.9462191741913557,
+          "initial_moving_EPE_mm": 11.780797503888607,
+          "action_shared_gradient_norm": 2.7880216881260194,
+          "auxiliary_shared_gradient_norm": 5.950684048171752e-05,
+          "gradient_cosine": 0.015175532357605418,
+          "weighted_auxiliary_action_gradient_ratio": {
+            "0.1": 2.134375092387294e-06,
+            "1": 2.134375092387294e-05,
+            "10": 0.0002134375092387294
+          }
+        },
+        {
+          "train_window_index": 20,
+          "output_gain": 10,
+          "nominal_initial_output_weight_std": 0.001,
+          "valid_action_steps": 100,
+          "valid_hidden_vectors": 720,
+          "moving_hidden_vectors": 135,
+          "initial_EPE_mm": 3.7307150196284056,
+          "static_EPE_mm": 2.9462191741913557,
+          "initial_moving_EPE_mm": 12.330994009971619,
+          "action_shared_gradient_norm": 2.7880216881260194,
+          "auxiliary_shared_gradient_norm": 0.0008253991592551159,
+          "gradient_cosine": -0.0032772895024900162,
+          "weighted_auxiliary_action_gradient_ratio": {
+            "0.1": 2.9605191479335712e-05,
+            "1": 0.0002960519147933571,
+            "10": 0.002960519147933571
+          }
+        },
+        {
+          "train_window_index": 20,
+          "output_gain": 100,
+          "nominal_initial_output_weight_std": 0.01,
+          "valid_action_steps": 100,
+          "valid_hidden_vectors": 720,
+          "moving_hidden_vectors": 135,
+          "initial_EPE_mm": 13.490588404238224,
+          "static_EPE_mm": 2.9462191741913557,
+          "initial_moving_EPE_mm": 20.381096750497818,
+          "action_shared_gradient_norm": 2.7880216881260194,
+          "auxiliary_shared_gradient_norm": 0.04003718712216188,
+          "gradient_cosine": -0.0302663196934948,
+          "weighted_auxiliary_action_gradient_ratio": {
+            "0.1": 0.0014360428863475967,
+            "1": 0.014360428863475968,
+            "10": 0.14360428863475966
+          }
+        },
+        {
+          "train_window_index": 50,
+          "output_gain": 1,
+          "nominal_initial_output_weight_std": 0.0001,
+          "valid_action_steps": 100,
+          "valid_hidden_vectors": 720,
+          "moving_hidden_vectors": 120,
+          "initial_EPE_mm": 9.283574298024178,
+          "static_EPE_mm": 9.252490475773811,
+          "initial_moving_EPE_mm": 50.52561312913895,
+          "action_shared_gradient_norm": 3.1170427407763803,
+          "auxiliary_shared_gradient_norm": 0.00021287755851688383,
+          "gradient_cosine": 0.026235561525334735,
+          "weighted_auxiliary_action_gradient_ratio": {
+            "0.1": 6.829471913620958e-06,
+            "1": 6.829471913620959e-05,
+            "10": 0.0006829471913620958
+          }
+        },
+        {
+          "train_window_index": 50,
+          "output_gain": 10,
+          "nominal_initial_output_weight_std": 0.001,
+          "valid_action_steps": 100,
+          "valid_hidden_vectors": 720,
+          "moving_hidden_vectors": 120,
+          "initial_EPE_mm": 9.937544353306293,
+          "static_EPE_mm": 9.252490475773811,
+          "initial_moving_EPE_mm": 50.84327608346939,
+          "action_shared_gradient_norm": 3.1170427407763803,
+          "auxiliary_shared_gradient_norm": 0.0023342863045935722,
+          "gradient_cosine": 0.01992579987990419,
+          "weighted_auxiliary_action_gradient_ratio": {
+            "0.1": 7.488785039925881e-05,
+            "1": 0.0007488785039925881,
+            "10": 0.007488785039925881
+          }
+        },
+        {
+          "train_window_index": 50,
+          "output_gain": 100,
+          "nominal_initial_output_weight_std": 0.01,
+          "valid_action_steps": 100,
+          "valid_hidden_vectors": 720,
+          "moving_hidden_vectors": 120,
+          "initial_EPE_mm": 19.11412738263607,
+          "static_EPE_mm": 9.252490475773811,
+          "initial_moving_EPE_mm": 56.22255429625511,
+          "action_shared_gradient_norm": 3.1170427407763803,
+          "auxiliary_shared_gradient_norm": 0.049549118603756694,
+          "gradient_cosine": -0.009582510477312824,
+          "weighted_auxiliary_action_gradient_ratio": {
+            "0.1": 0.0015896194798860923,
+            "1": 0.015896194798860924,
+            "10": 0.15896194798860921
+          }
+        },
+        {
+          "train_window_index": 80,
+          "output_gain": 1,
+          "nominal_initial_output_weight_std": 0.0001,
+          "valid_action_steps": 75,
+          "valid_hidden_vectors": 720,
+          "moving_hidden_vectors": 285,
+          "initial_EPE_mm": 3.1125356908887625,
+          "static_EPE_mm": 3.095468506217003,
+          "initial_moving_EPE_mm": 6.0120257548987865,
+          "action_shared_gradient_norm": 2.179674873565079,
+          "auxiliary_shared_gradient_norm": 4.629479885927179e-05,
+          "gradient_cosine": -0.061930451293727165,
+          "weighted_auxiliary_action_gradient_ratio": {
+            "0.1": 2.1239313909028993e-06,
+            "1": 2.1239313909028994e-05,
+            "10": 0.00021239313909028992
+          }
+        },
+        {
+          "train_window_index": 80,
+          "output_gain": 10,
+          "nominal_initial_output_weight_std": 0.001,
+          "valid_action_steps": 75,
+          "valid_hidden_vectors": 720,
+          "moving_hidden_vectors": 285,
+          "initial_EPE_mm": 3.4227597061544657,
+          "static_EPE_mm": 3.095468506217003,
+          "initial_moving_EPE_mm": 5.814495496451855,
+          "action_shared_gradient_norm": 2.179674873565079,
+          "auxiliary_shared_gradient_norm": 0.0004434001097994976,
+          "gradient_cosine": -0.07419929107421588,
+          "weighted_auxiliary_action_gradient_ratio": {
+            "0.1": 2.034248846821232e-05,
+            "1": 0.0002034248846821232,
+            "10": 0.002034248846821232
+          }
+        },
+        {
+          "train_window_index": 80,
+          "output_gain": 100,
+          "nominal_initial_output_weight_std": 0.01,
+          "valid_action_steps": 75,
+          "valid_hidden_vectors": 720,
+          "moving_hidden_vectors": 285,
+          "initial_EPE_mm": 11.25851459801197,
+          "static_EPE_mm": 3.095468506217003,
+          "initial_moving_EPE_mm": 11.172184720635414,
+          "action_shared_gradient_norm": 2.179674873565079,
+          "auxiliary_shared_gradient_norm": 0.03439504145119664,
+          "gradient_cosine": -0.02173870321324112,
+          "weighted_auxiliary_action_gradient_ratio": {
+            "0.1": 0.0015779895372625033,
+            "1": 0.01577989537262503,
+            "10": 0.15779895372625033
+          }
+        }
+      ],
+      "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+      "wrapper_sha256": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+      "script_sha256": "300b6c245d1ca774664f77eb51e06e57e002d412602c1bd198dc3ea239109ab5",
+      "all_policy_recipes_unchanged": true,
+      "model_parameters_and_buffers_unchanged": true,
+      "state_before_after_sha256": "fe251ee4725665e4944a4bf346c41850a02efdd77f5c2562754d2e49df7bafaf",
+      "limitations": [
+        "Three fixed training windows, no validation/test or optimization.",
+        "Gradient balance and initial EPE do not establish learned completion or policy benefit.",
+        "Current five500-step runs retain std1e-4 and auxiliary weight0.1; this probe changes no checkpoint."
+      ]
     },
     "audit": null,
     "evaluation_amendment": {
@@ -1887,19 +2077,33 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 175,
-          "elapsed_seconds": 367.3849824019708
+          "completed_optimizer_steps": 400,
+          "elapsed_seconds": 866.5818679812364,
+          "latest_validation": {
+            "step": 250,
+            "windows": 427,
+            "prior_action_L1": 0.6401359713107567,
+            "action_MAE_radians": 0.33134480249855464,
+            "aggregation": "valid_element_weighted"
+          },
+          "best_validation": {
+            "step": 250,
+            "windows": 427,
+            "prior_action_L1": 0.6401359713107567,
+            "action_MAE_radians": 0.33134480249855464,
+            "aggregation": "valid_element_weighted"
+          }
         },
         "latest": {
-          "step": 198,
-          "loss": 2.8129453361034393,
-          "action_loss": 0.49764750781469047,
-          "kl_loss": 0.23152978159487247,
+          "step": 418,
+          "loss": 2.174418516457081,
+          "action_loss": 0.41505949140992016,
+          "kl_loss": 0.17593590170145035,
           "auxiliary_loss": 0.0,
-          "gradient_norm": 53.85422897338867,
-          "update_seconds": 1.9882549908943474,
-          "elapsed_seconds": 414.3709463821724,
-          "peak_reserved_bytes": 6784286720
+          "gradient_norm": 54.48289489746094,
+          "update_seconds": 2.0771017968654633,
+          "elapsed_seconds": 903.4137570052408,
+          "peak_reserved_bytes": 6924795904
         },
         "active_training_parameters": 51708556,
         "inference_parameters": 51708556,
@@ -1991,9 +2195,116 @@
             "update_seconds": 2.0366998659446836,
             "elapsed_seconds": 367.3849824019708,
             "peak_reserved_bytes": 6784286720
+          },
+          {
+            "step": 200,
+            "loss": 3.1784845292568207,
+            "action_loss": 0.5676593775860965,
+            "kl_loss": 0.26108252070844173,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 71.48785400390625,
+            "update_seconds": 2.135565740056336,
+            "elapsed_seconds": 418.5674954690039,
+            "peak_reserved_bytes": 6784286720
+          },
+          {
+            "step": 225,
+            "loss": 2.882804796099663,
+            "action_loss": 0.6737299226224422,
+            "kl_loss": 0.22090748697519302,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 60.98950958251953,
+            "update_seconds": 2.120792361907661,
+            "elapsed_seconds": 471.1321802800521,
+            "peak_reserved_bytes": 6784286720
+          },
+          {
+            "step": 250,
+            "loss": 2.7196571677923203,
+            "action_loss": 0.6262901816517115,
+            "kl_loss": 0.20933669991791248,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 62.1221923828125,
+            "update_seconds": 2.1156267118640244,
+            "elapsed_seconds": 523.246314371936,
+            "peak_reserved_bytes": 6784286720
+          },
+          {
+            "step": 275,
+            "loss": 2.5847610011696815,
+            "action_loss": 0.5028248664457351,
+            "kl_loss": 0.20819361321628094,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 51.47218322753906,
+            "update_seconds": 2.0894855172373354,
+            "elapsed_seconds": 607.518688660115,
+            "peak_reserved_bytes": 6924795904
+          },
+          {
+            "step": 300,
+            "loss": 2.511044442653656,
+            "action_loss": 0.4750857122708112,
+            "kl_loss": 0.203595869243145,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 59.15623092651367,
+            "update_seconds": 2.0523410602472723,
+            "elapsed_seconds": 659.4247310440987,
+            "peak_reserved_bytes": 6924795904
+          },
+          {
+            "step": 325,
+            "loss": 2.427267514169216,
+            "action_loss": 0.5034976075403392,
+            "kl_loss": 0.1923769898712635,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 62.25563430786133,
+            "update_seconds": 2.127088299021125,
+            "elapsed_seconds": 711.6406566081569,
+            "peak_reserved_bytes": 6924795904
+          },
+          {
+            "step": 350,
+            "loss": 2.5670353546738625,
+            "action_loss": 0.507663284894079,
+            "kl_loss": 0.20593720860779285,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 55.208778381347656,
+            "update_seconds": 2.0219664559699595,
+            "elapsed_seconds": 763.1179374679923,
+            "peak_reserved_bytes": 6924795904
+          },
+          {
+            "step": 375,
+            "loss": 2.1933590322732925,
+            "action_loss": 0.5222242344170809,
+            "kl_loss": 0.16711348108947277,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 49.95703887939453,
+            "update_seconds": 2.103768724948168,
+            "elapsed_seconds": 814.6059754430316,
+            "peak_reserved_bytes": 6924795904
+          },
+          {
+            "step": 400,
+            "loss": 1.8892684429883957,
+            "action_loss": 0.3476310747792013,
+            "kl_loss": 0.15416373871266842,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 47.31889343261719,
+            "update_seconds": 2.215173315256834,
+            "elapsed_seconds": 866.5818679812364,
+            "peak_reserved_bytes": 6924795904
           }
         ],
-        "validation": []
+        "validation": [
+          {
+            "step": 250,
+            "windows": 427,
+            "prior_action_L1": 0.6401359713107567,
+            "action_MAE_radians": 0.33134480249855464,
+            "aggregation": "valid_element_weighted"
+          }
+        ]
       },
       "rgb_history": {
         "manifest": {
@@ -2338,6 +2649,577 @@
       }
     },
     "videos": []
+  },
+  "cluster_pilot": {
+    "protocol": {
+      "schema": "act-b20z-bounded-pilot-1",
+      "start_utc": "2026-10-19T19:56:28Z",
+      "hard_deadline_utc": "2026-10-19T22:56:28Z",
+      "cleanup_target_utc": "2026-10-19T22:53:28Z",
+      "max_nodes": 4,
+      "gpus_per_node": 8,
+      "training_seeds": [
+        1000,
+        1001,
+        1002,
+        1003
+      ],
+      "optimizer_steps_per_run": 2000,
+      "matched_intermediate_steps": [
+        250,
+        500,
+        750,
+        1000,
+        1250,
+        1500,
+        1750,
+        2000
+      ],
+      "conditions": [
+        {
+          "name": "act",
+          "mode": "act",
+          "auxiliary_weight": 0.1,
+          "auxiliary_output_gain": 1
+        },
+        {
+          "name": "rgb_history",
+          "mode": "rgb_history",
+          "auxiliary_weight": 0.1,
+          "auxiliary_output_gain": 1
+        },
+        {
+          "name": "geometry",
+          "mode": "geometry",
+          "auxiliary_weight": 0.1,
+          "auxiliary_output_gain": 1
+        },
+        {
+          "name": "tracks",
+          "mode": "tracks",
+          "auxiliary_weight": 0.1,
+          "auxiliary_output_gain": 1
+        },
+        {
+          "name": "tracks_completion",
+          "mode": "tracks_completion",
+          "auxiliary_weight": 0.1,
+          "auxiliary_output_gain": 1
+        },
+        {
+          "name": "completion_gain100_w01",
+          "mode": "tracks_completion",
+          "auxiliary_weight": 0.1,
+          "auxiliary_output_gain": 100
+        },
+        {
+          "name": "completion_gain100_w1",
+          "mode": "tracks_completion",
+          "auxiliary_weight": 1,
+          "auxiliary_output_gain": 100
+        },
+        {
+          "name": "completion_gain100_w10",
+          "mode": "tracks_completion",
+          "auxiliary_weight": 10,
+          "auxiliary_output_gain": 100
+        }
+      ],
+      "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+      "training_episodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "validation_episodes": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "test_used": false,
+      "effective_batch": 16,
+      "micro_batch": 1,
+      "gradient_accumulation": 16,
+      "history_frames": 16,
+      "history_stride": 3,
+      "cameras": 3,
+      "RGB_hw": [
+        480,
+        640
+      ],
+      "action_chunk": 100,
+      "learning_rate": 1e-05,
+      "backbone_learning_rate": 1e-05,
+      "weight_decay": 0.0001,
+      "clip_gradient_norm": 10,
+      "precision_training": "bfloat16",
+      "precision_validation": "float32",
+      "schedule": "constant",
+      "checkpoint_selection": "full_validation_prior_zero_action_L1",
+      "primary_offline_comparison": "fixed 2000-step validation; also report all matched intermediate budgets, without comparing unequal budgets",
+      "point_information": "privileged simulation GT upper bound",
+      "formal_training": false,
+      "scientific_source_commit": "2df3b6333b726b5fce419b34e4651a252146331f",
+      "purpose": "20 principal paired runs test repeatability and information increments; 12 exploratory auxiliary-scale runs test weak-gradient mechanism. No final-test or success-rate claim.",
+      "iteration_gate": "Each node passes full-resolution BF16 forward/backward before launch; every update fails on nonfinite loss/gradient; inspect common 500-step results before further experiments; current runs cap at 2000.",
+      "stop_guards": [
+        "absolute UTC worker deadline with owned child process groups",
+        "independent developer-host exact-ID AIHC watchdog cancelling queued or active jobs three minutes before expiry"
+      ],
+      "frozen_developer_pilot_unchanged": true,
+      "fingerprint": "c0bd927fd9cfaebac8f535c350b0c842e3b55352f54eaeb2c94527605de1c4dd"
+    },
+    "lease": {
+      "snapshot_utc": "2026-10-19T20:03:14.051106+00:00",
+      "hard_deadline_utc": "2026-10-19T22:56:28Z",
+      "cleanup_target_utc": "2026-10-19T22:53:28+00:00",
+      "jobs": [
+        {
+          "job_id": "job-wfslzx5cs6i7",
+          "name": "ei-liupeiqi-wam-training-actpilot-s1000-1n8g-b20z-20261019-200055",
+          "seed": 1000,
+          "gpus": 8,
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T20:00:58.934829+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f",
+          "status": "Running"
+        },
+        {
+          "job_id": "job-jx0os5wqemwi",
+          "name": "ei-liupeiqi-wam-training-actpilot-s1001-1n8g-b20z-20261019-200250",
+          "seed": 1001,
+          "gpus": 8,
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T20:02:53.090377+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f",
+          "status": "Scheduled"
+        },
+        {
+          "job_id": "job-wbux06gind9v",
+          "name": "ei-liupeiqi-wam-training-actpilot-s1002-1n8g-b20z-20261019-200253",
+          "seed": 1002,
+          "gpus": 8,
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T20:02:55.844849+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f",
+          "status": "Scheduled"
+        },
+        {
+          "job_id": "job-wucxuzwhboan",
+          "name": "ei-liupeiqi-wam-training-actpilot-s1003-1n8g-b20z-20261019-200255",
+          "seed": 1003,
+          "gpus": 8,
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T20:02:58.844978+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f",
+          "status": "Scheduled"
+        }
+      ],
+      "active_owned_jobs": 4
+    },
+    "jobs": [
+      {
+        "job_id": "job-wfslzx5cs6i7",
+        "name": "ei-liupeiqi-wam-training-actpilot-s1000-1n8g-b20z-20261019-200055",
+        "seed": 1000,
+        "gpus": 8,
+        "queue": "aihcq-91xvvs6bot18",
+        "submitted_utc": "2026-10-19T20:00:58.934829+00:00",
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f"
+      },
+      {
+        "job_id": "job-jx0os5wqemwi",
+        "name": "ei-liupeiqi-wam-training-actpilot-s1001-1n8g-b20z-20261019-200250",
+        "seed": 1001,
+        "gpus": 8,
+        "queue": "aihcq-91xvvs6bot18",
+        "submitted_utc": "2026-10-19T20:02:53.090377+00:00",
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f"
+      },
+      {
+        "job_id": "job-wbux06gind9v",
+        "name": "ei-liupeiqi-wam-training-actpilot-s1002-1n8g-b20z-20261019-200253",
+        "seed": 1002,
+        "gpus": 8,
+        "queue": "aihcq-91xvvs6bot18",
+        "submitted_utc": "2026-10-19T20:02:55.844849+00:00",
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f"
+      },
+      {
+        "job_id": "job-wucxuzwhboan",
+        "name": "ei-liupeiqi-wam-training-actpilot-s1003-1n8g-b20z-20261019-200255",
+        "seed": 1003,
+        "gpus": 8,
+        "queue": "aihcq-91xvvs6bot18",
+        "submitted_utc": "2026-10-19T20:02:58.844978+00:00",
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f"
+      }
+    ],
+    "nodes": {
+      "seed-1000": {
+        "status": "preflight",
+        "seed": 1000,
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "job_name": "ei-liupeiqi-wam-training-actpilot-s1000-1n8g-b20z-20261019-200055",
+        "formal_training": false,
+        "snapshot_utc": "2026-10-19T20:01:44.127103+00:00",
+        "devices": [
+          {
+            "index": 0,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 2,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 3,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 4,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 5,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 6,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 7,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          }
+        ],
+        "torch": "2.7.0+cu128",
+        "cuda": "12.8",
+        "stage": "copy_lossless_cache"
+      },
+      "seed-1001": {
+        "status": "preflight",
+        "seed": 1001,
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "job_name": "ei-liupeiqi-wam-training-actpilot-s1001-1n8g-b20z-20261019-200250",
+        "formal_training": false,
+        "snapshot_utc": "2026-10-19T20:03:39.587815+00:00",
+        "devices": [
+          {
+            "index": 0,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 2,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 3,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 4,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 5,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 6,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 7,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          }
+        ],
+        "torch": "2.7.0+cu128",
+        "cuda": "12.8",
+        "stage": "copy_lossless_cache"
+      },
+      "seed-1002": {
+        "status": "preflight",
+        "seed": 1002,
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "job_name": "ei-liupeiqi-wam-training-actpilot-s1002-1n8g-b20z-20261019-200253",
+        "formal_training": false,
+        "snapshot_utc": "2026-10-19T20:03:39.689322+00:00",
+        "devices": [
+          {
+            "index": 0,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 2,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 3,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 4,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 5,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 6,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 7,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          }
+        ],
+        "torch": "2.7.0+cu128",
+        "cuda": "12.8",
+        "stage": "copy_lossless_cache"
+      },
+      "seed-1003": {
+        "status": "preflight",
+        "seed": 1003,
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "job_name": "ei-liupeiqi-wam-training-actpilot-s1003-1n8g-b20z-20261019-200255",
+        "formal_training": false,
+        "snapshot_utc": "2026-10-19T20:03:39.730162+00:00",
+        "devices": [
+          {
+            "index": 0,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 2,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 3,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 4,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 5,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 6,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 7,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          }
+        ],
+        "torch": "2.7.0+cu128",
+        "cuda": "12.8",
+        "stage": "copy_lossless_cache"
+      }
+    },
+    "training": {}
   },
   "videos": []
 }
