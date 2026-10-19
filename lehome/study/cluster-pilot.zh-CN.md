@@ -9,3 +9,9 @@
 结果根目录`results/lehome_garment_folding/act-b20z-validation-01`。`jobs.json`记录确切job ID；`lease-status.json`记录平台状态；各seed的`node-status.json`、各条件manifest/metrics/validation/checkpoint保存真实进度。冻结执行源码在独立个人目录clone，主开发机pilot不改源码、不停止同事进程。每节点复制并哈希验证lossless缓存到自己的/tmp后训练，避免32卡反复读取共享RGB文件。每节点先做真实全分辨率BF16反向验收；独立watchdog只停止登记且名字匹配的本轮任务，worker也有绝对UTC截止保护。
 
 GT轨迹是仿真特权信息。这是单衣服的小实验，四种子也不能替代独立任务测试或多场景闭环成功率。当前原500步、单pose10次开发机闭环协议保持不变。
+
+## 评估初始化修复与第二轮机制验证
+
+实测发现原环境在PhysX启动后保存初始cloth顶点，跨GPU初始状态可差0.0113456m。比较闭环产生结果前已暂停评估并留存旧协议；`paired_cloth_initialization.py`只在本进程里把asset rest mesh和随机pose在play之前写入。三次真实检查（同节点GPU0/GPU7、另一节点GPU7）布料、关节和20步预热后的差分速度差均为0。`paired-runtime-pairing-audit.json`绑定实际脚本哈希；`native-initialization-amendment.json`保留原因。64个2k闭环单元固定四训练种子、8条件、pose5001、执行100/10，最大600控制步；这仍不是环境成功率实验。
+
+共同500步时补全仍差于静态14.21mm和3NN11.81mm，因而不盲目扩大训练。准备一组8卡机制迭代：3NN插值加小残差，同初始参数的connected/detached辅助观察梯度对照，各四种子。三个固定训练窗口零更新标定λ=275.1，目标共享梯度比0.1；没有用验证或测试调权重。各最多1500更新，与原组不可变的1500步快照比较。仅在原节点终结、总活动GPU≤32且至少剩80分钟时提交，否则跳过；继续使用原三小时截止及同一个确切ID清理台账。新增任务前缀`ei-liupeiqi-wam-training-actpilot-residual`，根目录`act-b20z-residual-iteration-01`。这是根据500步观察产生的探索，不能视为独立确认。
