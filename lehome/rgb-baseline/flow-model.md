@@ -17,3 +17,13 @@ The auxiliary decoder branches from observation-only memory **before** the futur
 Ten tests in `tests/test_lehome_flow.py` cover current-visible selection, ROS projection, hidden-target/query isolation, future-action isolation during training, actual flow influence, auxiliary shared gradients, cold/empty/NaN masks, paired initialization/permutation behavior, checkpoint/queue reset, and offline/online identity/time/action alignment. Full-resolution real-data validation and pilot receipts belong in `flow-validation.json`; tiny tests do not substitute for them.
 
 Outstanding formal work: complete garment-disjoint synchronized data, four conditions at equal budgets and multiple seeds, paired unseen-garment closed-loop success rates, then causal estimated RGB tracks. Report the static-position baseline and moving-point (>5 mm) errors; lower completion error alone does not establish a policy improvement.
+
+## Executed numerical checks
+
+The full 74,929,807-parameter architecture completed native-resolution forward/backward in 4.45 s, peaking at 0.97 GiB allocated CUDA memory (single-batch check, not full optimizer training memory). Auxiliary shared gradients are nonzero, gradients finite, and removing the head changes actions by exactly zero. Replay produced 315 actions, 316 observations, 14746 cloth vertices and 948 lossless RGB files; all 951 artifacts match full SHA-256 between Mac and Baidu.
+
+Three small-Transformer/full-ResNet18 runs use the same tick-180 window, 500 steps, seed 1000, batch 1, lr 3e-4 and identical initialization. Final prior-zero normalized action L1: RGB-H 0.02198, Tracks 0.02011, Tracks+Completion 0.01863. Training errors do not establish policy superiority.
+
+**Completion quality gate failed:** all-point EPE 28.35 mm versus static 19.50 mm. For the 12 moving points, EPE is 64.07 mm versus static 75.71 mm. The earlier 100-step runs are preserved. The auxiliary head is not yet an effective trained completion model, and no flow-policy success improvement is claimed.
+
+[Anonymous model/training/track viewer](https://peiqil.com/dynamic-robot-bench-viewer/lehome/flow-model/) · [machine receipt](flow-validation.json). Source/records are synchronized through GitHub to Mac/Baidu; gpu17 again timed out during SSH banner exchange and remains unsynchronized.

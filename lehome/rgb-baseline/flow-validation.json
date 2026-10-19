@@ -1,0 +1,153 @@
+{
+  "schema": 1,
+  "status": "implemented_runtime_validated_completion_quality_gate_failed",
+  "formal_training_complete": false,
+  "flow_policy_closed_loop_evaluated": false,
+  "tests": {
+    "flow_contracts": {
+      "passed": 10,
+      "skipped": 0
+    },
+    "lehome_suite_server": {
+      "passed": 16,
+      "skipped": 0
+    },
+    "full_CPU_suite_mac": {
+      "passed": 55,
+      "skipped": 10
+    }
+  },
+  "data": {
+    "official_expert_replay": true,
+    "human_demonstrations_collected": false,
+    "actions": 315,
+    "observations": 316,
+    "persistent_cloth_vertices": 14746,
+    "RGB_PNG_files": 948,
+    "all_camera_frames_fresh": true,
+    "mac_baidu_full_sha256_files": 951,
+    "mac_baidu_bytes": 324979566,
+    "replay_source_commit": "892bbf765ff4b8d70bfef1bc374cf4ea58d3facb"
+  },
+  "full_architecture": {
+    "parameters": 74929807,
+    "observation_shapes": {
+      "state": [
+        1,
+        12
+      ],
+      "track_xyz": [
+        1,
+        16,
+        16,
+        3
+      ],
+      "track_valid": [
+        1,
+        16,
+        16
+      ],
+      "rgb_valid": [
+        1,
+        16
+      ],
+      "relative_time": [
+        1,
+        16
+      ],
+      "rgb": [
+        1,
+        16,
+        3,
+        3,
+        480,
+        640
+      ]
+    },
+    "forward_backward_seconds": 4.453588865231723,
+    "finite_gradients": true,
+    "shared_aux_gradient_norm": 2.060349225997925,
+    "head_removal_max_action_difference": 0.0,
+    "peak_cuda_allocated_bytes": 1044360704,
+    "action_shape": [
+      1,
+      100,
+      12
+    ],
+    "history_shape": [
+      1,
+      48,
+      15,
+      3
+    ]
+  },
+  "pilot": {
+    "tiny_architecture": true,
+    "same_single_training_window": true,
+    "physics_tick": 180,
+    "paired_initialization": true,
+    "effective_batch": 1,
+    "lr": 0.0003,
+    "controls": {
+      "rgb_history": {
+        "optimizer_steps": 500,
+        "parameters": 11455871,
+        "seed": 1000,
+        "initial_model_sha256": "7cd1188d6664d8c5583fff63380d651c98ac01fe54327f34b8b978911000336f",
+        "step_1_prior_action_L1": 0.8954958319664001,
+        "step_500_prior_action_L1": 0.021982278674840927,
+        "source_commit": "40962c8c5da78a132b42b011bf62b549bad62b6c",
+        "execution_source_sha256": {
+          "train_flow.py": "622ff5ddf7f2dd41bf6cebca2ba797f59bc9ef0aae4622db03e8a05a39b2ac4b",
+          "flow_data.py": "bba42372689649dc8e164f7ba702e67f60a563d38e969be61c89a07c3adb6af6",
+          "flow_policy.py": "dcfc34f11bdb93996df017ee01ef7c35efcfa80fd766b0d247c98b319abc308d"
+        }
+      },
+      "tracks": {
+        "optimizer_steps": 500,
+        "parameters": 11455871,
+        "seed": 1000,
+        "initial_model_sha256": "7cd1188d6664d8c5583fff63380d651c98ac01fe54327f34b8b978911000336f",
+        "step_1_prior_action_L1": 0.8985223174095154,
+        "step_500_prior_action_L1": 0.020112616941332817,
+        "source_commit": "40962c8c5da78a132b42b011bf62b549bad62b6c",
+        "execution_source_sha256": {
+          "train_flow.py": "622ff5ddf7f2dd41bf6cebca2ba797f59bc9ef0aae4622db03e8a05a39b2ac4b",
+          "flow_data.py": "bba42372689649dc8e164f7ba702e67f60a563d38e969be61c89a07c3adb6af6",
+          "flow_policy.py": "dcfc34f11bdb93996df017ee01ef7c35efcfa80fd766b0d247c98b319abc308d"
+        }
+      },
+      "tracks_completion": {
+        "optimizer_steps": 500,
+        "parameters": 11455871,
+        "seed": 1000,
+        "initial_model_sha256": "7cd1188d6664d8c5583fff63380d651c98ac01fe54327f34b8b978911000336f",
+        "step_1_prior_action_L1": 0.8978770971298218,
+        "step_500_prior_action_L1": 0.01862633414566517,
+        "source_commit": "b141180de97621022b7ba8fda6983047c10f87c9",
+        "execution_source_sha256": {
+          "train_flow.py": "622ff5ddf7f2dd41bf6cebca2ba797f59bc9ef0aae4622db03e8a05a39b2ac4b",
+          "flow_data.py": "bba42372689649dc8e164f7ba702e67f60a563d38e969be61c89a07c3adb6af6",
+          "flow_policy.py": "dcfc34f11bdb93996df017ee01ef7c35efcfa80fd766b0d247c98b319abc308d"
+        }
+      }
+    },
+    "completion_EPE_mm": 28.3507127314806,
+    "static_EPE_mm": 19.495313987135887,
+    "moving_points": 12,
+    "moving_completion_EPE_mm": 64.06627595424652,
+    "moving_static_EPE_mm": 75.71142166852951,
+    "completion_all_point_static_gate_pass": false,
+    "claim": "engineering_training_only_not_policy_generalization"
+  },
+  "evidence": {
+    "results": "results/lehome_garment_folding/flow-training-pilot-02",
+    "full_model": "results/lehome_garment_folding/flow-full-preflight-01/report.json",
+    "prediction": "results/lehome_garment_folding/flow-pilot-inspection-02/predictions.npz",
+    "preserved_first_100_step_runs": "results/lehome_garment_folding/flow-training-pilot-01",
+    "server_tests": ".runtime/flow-lehome-all-tests.log",
+    "mac_tests": ".runtime/flow-cpu-tests.log"
+  },
+  "public_url": "https://peiqil.com/dynamic-robot-bench-viewer/lehome/flow-model/",
+  "gpu17_sync": "SSH_banner_timeout_no_sync"
+}

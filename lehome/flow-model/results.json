@@ -1,5 +1,6 @@
 {
-  "status": "implemented_and_engineering_validated_not_formally_evaluated",
+  "status": "runtime_validated_completion_quality_gate_failed",
+  "completion_quality_gate_pass": false,
   "replay": {
     "status": "complete",
     "mode": "synchronized_expert_replay_GT",
@@ -21214,10 +21215,10 @@
       6745,
       4703
     ],
-    "error_mm": 28.3507127314806,
-    "static_error_mm": 19.495313987135887,
+    "error_mm": 28.350711822509766,
+    "static_error_mm": 19.49531364440918,
     "moving_points": 12,
-    "moving_error_mm": 64.06627595424652,
-    "moving_static_error_mm": 75.71142166852951
+    "moving_error_mm": 64.06627655029297,
+    "moving_static_error_mm": 75.71141815185547
   }
 }

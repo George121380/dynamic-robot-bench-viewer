@@ -49,3 +49,13 @@ CUDA_VISIBLE_DEVICES=2 .runtime/venv/bin/python integrations/LeHome/train_flow.p
 `tests/test_lehome_flow.py` 的 10 项检查覆盖当前可见点选择、ROS 相机投影、无隐藏目标/query 泄漏、训练期未来动作隔离、轨迹对动作的影响、辅助共享梯度、冷启动/空轨迹/NaN padding、成对初始化和点顺序、checkpoint/动作队列、离线与在线窗口及动作时间对齐。完整尺寸模型和真实窗口训练的数值验收另记录在 `flow-validation.json`，不能由 tiny 单测替代。
 
 尚待正式实验：完整按衣服分割的同步数据、四组完整预算和多随机种子训练、未见衣服闭环成功率、估计轨迹版本。静态预测“过去位置等于当前位置”及运动点（窗口位移 >5 mm）误差必须同时报告；仅补全误差改善不足以证明 policy 获益。
+
+## 本次实际数值验收
+
+完整模型为 74,929,807 参数，原始 RGB 输入上前向/反向 4.45 秒，峰值 CUDA 分配 0.97 GiB（单批检查，不含完整优化器训练内存）。共享辅助梯度非零，全部梯度有限；删除辅助头，动作最大差值 0。真实回放 315 动作、316 观测、14746 顶点、948 张无损 RGB；951 个源产物在 Mac/Baidu 完整 SHA-256 一致。
+
+三组小型 Transformer、完整 ResNet18、原始分辨率，同一 tick=180 窗口各训练 500 步、seed=1000、有效 batch=1、lr=3e-4，初始权重 SHA 相同。step 500 的 prior-zero 归一化动作 L1：RGB-H 0.02198，Tracks 0.02011，Tracks＋Completion 0.01863。这些都是训练误差，不是策略优劣证据。
+
+**补全质量验收未通过。** 全部 48 个隐藏点平均误差 28.35 mm，高于静态预测 19.50 mm；12 个运动点上为 64.07 mm，静态为 75.71 mm。初始 100 步短跑也保留，未删掉不理想结果。现阶段不能把辅助头称为已学好的轨迹补全模型，更不能声称 Flow 提高了叠衣成功率。
+
+[免认证模型/训练/轨迹查看页](https://peiqil.com/dynamic-robot-bench-viewer/lehome/flow-model/) · [机器验收记录](flow-validation.json)。源码与记录通过 GitHub 同步 Mac/Baidu；gpu17 再次 SSH banner 超时，未同步。
