@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "status": "design_only_not_trained_or_implemented",
+  "task": "long_sleeve_folding",
+  "question": "Does completing masked past cloth motion improve a shared policy representation?",
+  "history": {
+    "frames": 16,
+    "physics_stride": 3,
+    "physics_hz": 90,
+    "span_seconds": 0.5,
+    "cold_start": "explicit_invalid_mask"
+  },
+  "tracks": {
+    "source_first_stage": "simulator_persistent_mesh_vertex_GT",
+    "query_count": 64,
+    "input_count": 16,
+    "hidden_count": 48,
+    "selection": "current_visible_cloth_surface_only",
+    "coordinates": "fixed_world_meters",
+    "features": [
+      "current_xyz",
+      "past_minus_current_xyz",
+      "relative_time_seconds",
+      "valid_mask"
+    ],
+    "spatial_normalizer_meters": 0.5
+  },
+  "encoder": {
+    "temporal_layers": 2,
+    "cross_point_layers": 2,
+    "width": 256,
+    "heads": 4,
+    "ACT_projection_width": 512
+  },
+  "rgb": {
+    "cameras": [
+      "top_rgb",
+      "left_rgb",
+      "right_rgb"
+    ],
+    "history_frames": 16,
+    "size_hw": [
+      480,
+      640
+    ],
+    "backbone": "resnet18",
+    "tokens_per_camera_frame": [
+      4,
+      4
+    ],
+    "pooling": "adaptive_average",
+    "normalization": "same_ImageNet_statistics_in_all_formal_controls"
+  },
+  "actor": {
+    "measured_joint_state_dim": 12,
+    "action_chunk_shape": [
+      100,
+      12
+    ],
+    "n_action_steps": 100,
+    "input": "RGB_history_plus_shared_observation_tokens",
+    "completion_predictions_as_input": false,
+    "hidden_query_coordinates_as_input": false
+  },
+  "auxiliary": {
+    "branch_point": "shared_observation_representation_before_ACT_CVAE_action_posterior",
+    "queries": [
+      "hidden_point_current_xyz",
+      "negative_relative_time"
+    ],
+    "output_shape": [
+      48,
+      15,
+      3
+    ],
+    "target": "same_past_history_displacement",
+    "loss": "masked_smooth_l1",
+    "weight": 0.1,
+    "exclude_current_time": true,
+    "future_expert_actions_visible": false,
+    "inference_head": false
+  },
+  "controls": [
+    {
+      "name": "RGB-H",
+      "point_input": "masked_context_slots",
+      "auxiliary_weight": 0.0
+    },
+    {
+      "name": "RGB-H+Geometry",
+      "point_input": "K_current_xyz_only",
+      "auxiliary_weight": 0.0
+    },
+    {
+      "name": "RGB-H+Tracks",
+      "point_input": "K_past_trajectories",
+      "auxiliary_weight": 0.0
+    },
+    {
+      "name": "RGB-H+Tracks+Completion",
+      "point_input": "K_past_trajectories",
+      "auxiliary_weight": 0.1
+    }
+  ],
+  "formal_training": {
+    "status": "future_work",
+    "joint_action_and_aux_training": true,
+    "steps": 30000,
+    "effective_batch_size": 16,
+    "microbatch_size": 1,
+    "gradient_accumulation": 16,
+    "lr": 1e-05,
+    "backbone_lr": 1e-05,
+    "kl_weight": 10,
+    "seeds": [
+      1000,
+      1001,
+      1002
+    ],
+    "identical_data_order_and_initialization_per_paired_seed": true,
+    "log_shared_encoder_action_and_aux_gradient_norms": true
+  },
+  "split": {
+    "before_windowing": true,
+    "train_garments": "Top_Long_Seen_0..7",
+    "validation_garment": "Top_Long_Seen_8",
+    "offline_test_garment": "Top_Long_Seen_9",
+    "future_online_test_garments": [
+      "Top_Long_Seen_9",
+      "Top_Long_Unseen_0",
+      "Top_Long_Unseen_1"
+    ],
+    "current_twenty_cases": "development_reference_only"
+  },
+  "data_contract": {
+    "source": "unmerged_official_expert_trajectories_with_unambiguous_pose_identity",
+    "rgb": "new_replay_render_synchronized_with_tracks",
+    "pair_original_RGB_with_replayed_GT": false,
+    "observation_action_alignment": "pre_action_observation_t_then_action_t_then_step",
+    "persistent_ids": true,
+    "save_all_physics_ticks": true,
+    "depth_or_gripper_tracks_as_policy_input": false
+  },
+  "tracker_followup": {
+    "causality": "observed_prefix_only",
+    "full_episode_future_tracking_forbidden": true,
+    "retrain_or_finetune_on_estimated_tracks": true,
+    "metric_world_3d_from_rgb_required": true,
+    "simulator_depth_as_tracker_input_forbidden": true,
+    "if_observed_depth_is_used": "name_RGBD_condition_and_add_matched_RGBD_control"
+  },
+  "required_future_tests": [
+    "hidden_target_permutation_does_not_change_policy_condition",
+    "future_action_replacement_does_not_change_history_prediction",
+    "aux_query_replacement_does_not_change_actor",
+    "point_identity_time_and_camera_projection",
+    "tiny_batch_overfit",
+    "aux_gradient_reaches_shared_encoder",
+    "static_current_position_reference",
+    "moving_subset_error",
+    "invalid_and_cold_start_masking"
+  ],
+  "evaluation_motion_subset": {
+    "window_max_displacement_gt_meters": 0.005,
+    "report_all_and_moving_separately": true
+  }
+}
