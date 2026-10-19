@@ -1,0 +1,12 @@
+{
+ "experiment":"lawful_quantized_point_twins_v1",
+ "status":"frozen_before_point_precision_comparison;after_state_coverage_confirmation;before_viewing_point_only_formal_results",
+ "question":"At explicitly reduced scene-coordinate precision, do lawful trajectories have exactly identical entire five-input point histories/plans but different100ms futures? This is a changed observation-resolution scenario,not a claim about the original float32 contract.",
+ "sources":"all20original first-eligible-impact queries and all12lawful nearby reset trajectories per center,240pairs; use saved original/new arrays only,no simulation/training or future-dependent pair selection",
+ "scene_quantization_m":[0.000001,0.00001,0.0001,0.0005,0.001,0.002,0.005],
+ "operation":"for scene_history and scene_current only,cast original float32 values tofloat64,divide by step,rint ties-to-even,int64. Both full integer arrays must match bitwise. Robot history,current and full20frame nominal plan must remain bitwise identical without quantization. Also report original five-float32-input equality as zero-change control.",
+ "outcomes":"for matched full inputs only,report every pair's100ms true target endpoint distance; original first eligible pin(s),endpoints averaged. Preserve counts by precision and distinctsource centers. Display the maximum-distance exact-input witness per precision with deterministic input-row-order tie break,clearly an existence example not a typical or global error bound.",
+ "lower_bound":"for each identical-input pair evaluated with equal probability,the same deterministic prediction must have mean endpoint Euclidean error at least half the mean endpoint distance between their two true futures,by triangle inequality. This is a two-example bound,not a bound on the original evaluation distribution.",
+ "decision":"any identical-five-input lawful pair with future endpoint distance>10mm proves a>=5mm two-example mean-error lower bound for that explicitly quantized interface. Do not infer ambiguity for original unquantized float32 histories.",
+ "verification":"save both complete5input arrays,both true100ms futures,target IDs and integerquantizedscene arrays for every selectedwitness; independent reread must establish allfive equalities,source row match and scalartriangle bound. No state-channel inputs,query-time interventions or output repair."
+}

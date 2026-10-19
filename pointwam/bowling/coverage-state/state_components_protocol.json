@@ -1,0 +1,22 @@
+{
+ "experiment":"first_impact_state_components_v1",
+ "status":"frozen_before_component_forks",
+ "motivation":"Completed state_control_v1: axial orientation/spin swaps reduce first-impact disagreement only0.25percent; full object R/v restore reduces13.539to2.269mm,83.24percent. Warmstart changes negligible. Need distinguish other orientation vs velocity components.",
+ "sources":"same20centers,80lawful0.1mm neighbors,first eligible event queries,unchanged physics/actions; original and neighbor native exact continuation controls repeated",
+ "arms":["original_native","original_forward","original_zero_warmstart","original_float32_qpos_qvel","neighbor_native","neighbor_forward","neighbor_pin_orientation_from_original","neighbor_pin_velocity_from_original","neighbor_pin_linear_from_original","neighbor_pin_angular_from_original","neighbor_pin_transverse_angular_from_original","neighbor_target_pin_state_from_original","neighbor_other_pins_state_from_original","neighbor_ball_state_from_original","neighbor_positions_from_original","neighbor_full_object_state_from_original","neighbor_all_qpos_qvel_from_original"],
+ "definitions":{
+  "orientation":"all10pin quaternions from original, retain neighbor world angular velocities by converting into new body frames; retain positions/linear velocities",
+  "velocity":"all10pin original world linear/angular velocities, neighbor pose retained",
+  "linear":"only pin world linear velocities restored",
+  "angular":"only pin world angular velocities restored, neighbor pose retained",
+  "transverse_angular":"restore original world angular velocity projected perpendicular to each neighbor pin's long axis; retain neighbor axial component",
+  "target_pin_state":"only first-impact target pin(s) quaternion and full velocity restored",
+  "other_pins_state":"only non-target pins quaternion/full velocity restored",
+  "ball_state":"only ball quaternion/full velocity restored; negative control if its original/neighbor state is identical",
+  "positions":"all11 object positions restored; orientations/velocities unchanged",
+  "float32":"original full native qpos/qvel rounded through float32 then converted back to float64; normalize all11quaternions, no other change. Measures numerical precision sensitivity, not an exact identical-input witness. Record active input coordinate changes."
+ },
+ "analysis":"same100ms raw endpoint displacement difference from original,4neighbors within episode then20episode macro;10000paired bootstrap seed20261022; all individual rows reported",
+ "decision":{"component_mediation":"for each orientation,velocity,linear,angular,transverse-angle,target-only,other-only restore, report relative reduction and pairedCI vsneighbor_forward. A major component must reduce>=50percent and pairedCIupper<0. Multiple passes or interactions do not identify a unique single cause.","precision":"original float32 fork episode-macro>1mm requires further quantization controls before declaring float32 privileged input adequate.","none":"if no individual component passes despite combined R/v success, freeze a matched pose/velocity factorial interaction diagnostic; do not attribute failure to architecture by exclusion."},
+ "limits":["Query forks need not be consistent with entire observed history.","These are sensitivity/mediation checks, not model generalization scores.","Do not change training targets, physical parameters or output coordinates based on these controls."]
+}

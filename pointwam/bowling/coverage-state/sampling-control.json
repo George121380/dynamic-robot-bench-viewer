@@ -1,0 +1,3911 @@
+{
+  "status": "complete",
+  "protocol_sha256": "9c81eccae62a3a28b6a9f2e0404bc0993d6cdc2f2c4f63b270eb91700374fa58",
+  "source_sha256": "134bd5d9e925ae28872dd3c18c7de38df1b9c5229bc6b4bba80f68e8a77f2e09",
+  "rows": [
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.0038490981092329747,
+      "velocity_estimate_error_m_s": 0.01069023641958103
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0038490941631984365,
+      "velocity_estimate_error_m_s": 0.010690143463691933
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.005086027763282819,
+      "velocity_estimate_error_m_s": 0.010233778357106824
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.005086026320595734,
+      "velocity_estimate_error_m_s": 0.010233605729415665
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.012820084898715493,
+      "velocity_estimate_error_m_s": 0.011387325315775043
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.012820082985670174,
+      "velocity_estimate_error_m_s": 0.01138762493649966
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.013390216499021295,
+      "velocity_estimate_error_m_s": 0.014458052298148186
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.013390216304921824,
+      "velocity_estimate_error_m_s": 0.01445865161919263
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 7.725824011758238e-07,
+      "velocity_estimate_error_m_s": 1.026325345316147e-05
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 3.971488253203822e-09,
+      "velocity_estimate_error_m_s": 1.1296407780866351e-07
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 1.658208720645847e-05,
+      "velocity_estimate_error_m_s": 0.0015732921510393759
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 1.5725338355245178e-05,
+      "velocity_estimate_error_m_s": 0.0015613998024163157
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.005863061039560741,
+      "velocity_estimate_error_m_s": 0.007373130077381723
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.005863065612006573,
+      "velocity_estimate_error_m_s": 0.007373183548806339
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.002071802107409404,
+      "velocity_estimate_error_m_s": 0.0069193880551291125
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0020718109303637013,
+      "velocity_estimate_error_m_s": 0.006919481893795468
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.006715352171752352,
+      "velocity_estimate_error_m_s": 0.009099480381813067
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.006715354696785218,
+      "velocity_estimate_error_m_s": 0.009099737041196477
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.006798370337067324,
+      "velocity_estimate_error_m_s": 0.011359142179449926
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.006798373380405523,
+      "velocity_estimate_error_m_s": 0.011359479345399605
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 5.746735932782114e-07,
+      "velocity_estimate_error_m_s": 8.257312212523053e-06
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 1.2318102982437847e-09,
+      "velocity_estimate_error_m_s": 6.091913399347005e-08
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 9.223377656206932e-05,
+      "velocity_estimate_error_m_s": 0.0015583699769942832
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 9.29544050270585e-05,
+      "velocity_estimate_error_m_s": 0.001558196161798381
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.015893227827911027,
+      "velocity_estimate_error_m_s": 0.007893895838404962
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.015893240438267286,
+      "velocity_estimate_error_m_s": 0.007894003020097804
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.01221580772275597,
+      "velocity_estimate_error_m_s": 0.008403940194131628
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.01221582126985755,
+      "velocity_estimate_error_m_s": 0.008404101634535921
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.014125804032057236,
+      "velocity_estimate_error_m_s": 0.009025474108520264
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.014125806971926887,
+      "velocity_estimate_error_m_s": 0.009025951411332429
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.015530959326793343,
+      "velocity_estimate_error_m_s": 0.010524678139936428
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.01553093271700258,
+      "velocity_estimate_error_m_s": 0.010525447919804184
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 7.291770417774734e-07,
+      "velocity_estimate_error_m_s": 1.4475022491349575e-05
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 3.581675193477903e-10,
+      "velocity_estimate_error_m_s": 4.979461631789006e-08
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0001243903527461874,
+      "velocity_estimate_error_m_s": 0.001579028856676818
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0001235013120468829,
+      "velocity_estimate_error_m_s": 0.0015722068949479973
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.00041098507940507165,
+      "velocity_estimate_error_m_s": 0.006518207287879713
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.00041098418359693234,
+      "velocity_estimate_error_m_s": 0.006518191051645493
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.00042670599070730774,
+      "velocity_estimate_error_m_s": 0.006715247317477895
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0004267046544353673,
+      "velocity_estimate_error_m_s": 0.0067152553454357085
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.002440744438313249,
+      "velocity_estimate_error_m_s": 0.00832164269033647
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0024407775860368843,
+      "velocity_estimate_error_m_s": 0.008321174776061957
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0023198107235428275,
+      "velocity_estimate_error_m_s": 0.010795722676630282
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0023199068762937403,
+      "velocity_estimate_error_m_s": 0.01079498501938096
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 2.764792523217977e-07,
+      "velocity_estimate_error_m_s": 1.0561594066466292e-05
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 3.141788453515891e-10,
+      "velocity_estimate_error_m_s": 4.459401836621679e-08
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 6.0547766768109416e-05,
+      "velocity_estimate_error_m_s": 0.001550052613889563
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 6.05863697186436e-05,
+      "velocity_estimate_error_m_s": 0.00155919854473476
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.0038691789557472036,
+      "velocity_estimate_error_m_s": 0.005973746309003909
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0038691884724311562,
+      "velocity_estimate_error_m_s": 0.0059739098767902146
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.003792777329546327,
+      "velocity_estimate_error_m_s": 0.006046208695912434
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0037927929824346476,
+      "velocity_estimate_error_m_s": 0.006046489656950031
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.01502454948783581,
+      "velocity_estimate_error_m_s": 0.007172803996420411
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.015024488640888976,
+      "velocity_estimate_error_m_s": 0.007173697378894448
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.013261913511281991,
+      "velocity_estimate_error_m_s": 0.007973912941497243
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.013261797579723362,
+      "velocity_estimate_error_m_s": 0.007975496447817634
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 3.681080294259753e-07,
+      "velocity_estimate_error_m_s": 3.431157166632716e-06
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 2.826921088302713e-10,
+      "velocity_estimate_error_m_s": 3.6185834804048206e-08
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.001399230090439199,
+      "velocity_estimate_error_m_s": 0.0015731163691733892
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.001399841978947491,
+      "velocity_estimate_error_m_s": 0.001571275544964614
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.008067918171476552,
+      "velocity_estimate_error_m_s": 0.010726747254115444
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.008067925528111752,
+      "velocity_estimate_error_m_s": 0.010726840345698329
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.008014250392326077,
+      "velocity_estimate_error_m_s": 0.010868231577036548
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.008014260316886731,
+      "velocity_estimate_error_m_s": 0.010868436510420017
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.005972050479401533,
+      "velocity_estimate_error_m_s": 0.010968235736438417
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.005972095499760518,
+      "velocity_estimate_error_m_s": 0.010968023585683027
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0021536241658917958,
+      "velocity_estimate_error_m_s": 0.014397535311979548
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.002153638684649852,
+      "velocity_estimate_error_m_s": 0.014396469623255862
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 3.003896583184966e-07,
+      "velocity_estimate_error_m_s": 8.131673701561805e-06
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 1.6482764695642479e-09,
+      "velocity_estimate_error_m_s": 1.0733749343619488e-07
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 7.911107485813181e-05,
+      "velocity_estimate_error_m_s": 0.001566554721192732
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 7.93581235384538e-05,
+      "velocity_estimate_error_m_s": 0.001564802373233365
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.0032171340081901725,
+      "velocity_estimate_error_m_s": 0.006731851181441889
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0032171299142110203,
+      "velocity_estimate_error_m_s": 0.006731831450012555
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0032085427824396105,
+      "velocity_estimate_error_m_s": 0.006730953999917305
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0032085300734704925,
+      "velocity_estimate_error_m_s": 0.006730942774262324
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.0032797517934342246,
+      "velocity_estimate_error_m_s": 0.007694850964831152
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0032797316124958177,
+      "velocity_estimate_error_m_s": 0.007694662700666425
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0034392583531531553,
+      "velocity_estimate_error_m_s": 0.008638434957489729
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.003439207839086826,
+      "velocity_estimate_error_m_s": 0.008638020530385464
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 1.2011236966928875e-07,
+      "velocity_estimate_error_m_s": 5.190454766400972e-06
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 3.289242107203357e-10,
+      "velocity_estimate_error_m_s": 4.213474673329419e-08
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.00042274454847482444,
+      "velocity_estimate_error_m_s": 0.0015958003265670636
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.00042266809122938056,
+      "velocity_estimate_error_m_s": 0.0015890650219742904
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.006675818059364598,
+      "velocity_estimate_error_m_s": 0.004962880902889393
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0066758066485844755,
+      "velocity_estimate_error_m_s": 0.0049629455166152955
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.01899090738503157,
+      "velocity_estimate_error_m_s": 0.004978861319975809
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.018990919085711447,
+      "velocity_estimate_error_m_s": 0.0049790053909430304
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.018937473013031867,
+      "velocity_estimate_error_m_s": 0.004932539364947579
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.01893745828542474,
+      "velocity_estimate_error_m_s": 0.004932563298670568
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.007191068514465097,
+      "velocity_estimate_error_m_s": 0.004797936969607091
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.007191082200067776,
+      "velocity_estimate_error_m_s": 0.004797965831382646
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 2.046086702108923e-07,
+      "velocity_estimate_error_m_s": 1.0281848029944954e-05
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 8.619990603821628e-10,
+      "velocity_estimate_error_m_s": 2.571033098515049e-08
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.00013562458769720274,
+      "velocity_estimate_error_m_s": 0.0015863741398101777
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.00013608626421485542,
+      "velocity_estimate_error_m_s": 0.0015792375866726036
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.002893564836044147,
+      "velocity_estimate_error_m_s": 0.003880010942180814
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0028935570090199395,
+      "velocity_estimate_error_m_s": 0.0038799730077594087
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0013403752896085864,
+      "velocity_estimate_error_m_s": 0.0037732039080410926
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0013403702430715677,
+      "velocity_estimate_error_m_s": 0.0037730855831502198
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.0013555018981968568,
+      "velocity_estimate_error_m_s": 0.0035963443505406026
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0013554780125225423,
+      "velocity_estimate_error_m_s": 0.003597197413727754
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0013588262869635528,
+      "velocity_estimate_error_m_s": 0.0033225073467598003
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.001358805414487724,
+      "velocity_estimate_error_m_s": 0.003323675003958435
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 3.792381539620665e-07,
+      "velocity_estimate_error_m_s": 7.848008838754217e-06
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 5.347742905738322e-10,
+      "velocity_estimate_error_m_s": 1.776358289057284e-08
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.000134908897792815,
+      "velocity_estimate_error_m_s": 0.0015754082375510144
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.00013439016148647992,
+      "velocity_estimate_error_m_s": 0.001573123347726322
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.001337928018393069,
+      "velocity_estimate_error_m_s": 0.0036009916281737084
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0013379348632980743,
+      "velocity_estimate_error_m_s": 0.0036010253827565572
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.002841004217247521,
+      "velocity_estimate_error_m_s": 0.0035412161875244966
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0028409970644508306,
+      "velocity_estimate_error_m_s": 0.0035412312262921176
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.014316952988305518,
+      "velocity_estimate_error_m_s": 0.0033438378744362392
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.014316955822548709,
+      "velocity_estimate_error_m_s": 0.003344001983010174
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.02187758659023383,
+      "velocity_estimate_error_m_s": 0.0029664664901270024
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.021877597970009332,
+      "velocity_estimate_error_m_s": 0.002966473201330697
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 8.067725398715699e-07,
+      "velocity_estimate_error_m_s": 1.1891425143613545e-05
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 1.093356109125467e-10,
+      "velocity_estimate_error_m_s": 1.0570458726061555e-08
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.019807746405058887,
+      "velocity_estimate_error_m_s": 0.0015648185748659935
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.019817614727037913,
+      "velocity_estimate_error_m_s": 0.0015667486843537074
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.002101992209224251,
+      "velocity_estimate_error_m_s": 0.010827559968874963
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0021019882001523157,
+      "velocity_estimate_error_m_s": 0.010827375574697824
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0021528640847089152,
+      "velocity_estimate_error_m_s": 0.010542475831139746
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0021528514073944328,
+      "velocity_estimate_error_m_s": 0.01054207042898609
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.0023359809320035356,
+      "velocity_estimate_error_m_s": 0.011175416101644478
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0023359882238652326,
+      "velocity_estimate_error_m_s": 0.01117471966783824
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.019915765213369283,
+      "velocity_estimate_error_m_s": 0.014338069745630363
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.019915729887527746,
+      "velocity_estimate_error_m_s": 0.014336509479715421
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 8.196074472999664e-07,
+      "velocity_estimate_error_m_s": 1.251855573032031e-05
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 1.0586307255315743e-09,
+      "velocity_estimate_error_m_s": 1.1214773225780833e-07
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 2.7575016981988013e-05,
+      "velocity_estimate_error_m_s": 0.001574186082714476
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 2.8939696092080117e-05,
+      "velocity_estimate_error_m_s": 0.0015656201153020145
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.010313120549377348,
+      "velocity_estimate_error_m_s": 0.005813973022180052
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.010313114891474615,
+      "velocity_estimate_error_m_s": 0.005814157574156166
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.010520205664297093,
+      "velocity_estimate_error_m_s": 0.0057658005941374005
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.010520180951617632,
+      "velocity_estimate_error_m_s": 0.00576615396916858
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.007962904079975871,
+      "velocity_estimate_error_m_s": 0.006471679024694419
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.007962853054548264,
+      "velocity_estimate_error_m_s": 0.006472427286476883
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.009348673126013967,
+      "velocity_estimate_error_m_s": 0.006991109085724439
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.009348623512352276,
+      "velocity_estimate_error_m_s": 0.006992578427065276
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 6.877272720234483e-05,
+      "velocity_estimate_error_m_s": 1.338873009724341e-05
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 7.990426357944929e-10,
+      "velocity_estimate_error_m_s": 3.590132975533066e-08
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0023647793488409292,
+      "velocity_estimate_error_m_s": 0.0015613056592884834
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0023628769597834522,
+      "velocity_estimate_error_m_s": 0.0015745953503229066
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.006000196791573709,
+      "velocity_estimate_error_m_s": 0.009745098311692367
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.006000198463035074,
+      "velocity_estimate_error_m_s": 0.009745037478556609
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.004730023946330381,
+      "velocity_estimate_error_m_s": 0.00963417902601439
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.004730031203511248,
+      "velocity_estimate_error_m_s": 0.00963405466177162
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.029618173468342515,
+      "velocity_estimate_error_m_s": 0.011231843834317858
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.029618213734600794,
+      "velocity_estimate_error_m_s": 0.01123156550445738
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.021308789087168087,
+      "velocity_estimate_error_m_s": 0.013231544683934587
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.021308854627785607,
+      "velocity_estimate_error_m_s": 0.013231076593305073
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 2.0808367989534948e-07,
+      "velocity_estimate_error_m_s": 1.1062880238484646e-05
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 1.7782792395177189e-09,
+      "velocity_estimate_error_m_s": 6.620033375099745e-08
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0017870072667528377,
+      "velocity_estimate_error_m_s": 0.0016004390918155894
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0017872913794507225,
+      "velocity_estimate_error_m_s": 0.0016029923012053954
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.008469571293025982,
+      "velocity_estimate_error_m_s": 0.008290697560308237
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.00846956647735962,
+      "velocity_estimate_error_m_s": 0.008290685237135033
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0029609533723631357,
+      "velocity_estimate_error_m_s": 0.007563081699963529
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.002960968126076272,
+      "velocity_estimate_error_m_s": 0.007563083878225747
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.015154995391028974,
+      "velocity_estimate_error_m_s": 0.011320766087559551
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.015155031607479864,
+      "velocity_estimate_error_m_s": 0.01132087197858751
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.01699964103469135,
+      "velocity_estimate_error_m_s": 0.01626251689189987
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.016999678794136875,
+      "velocity_estimate_error_m_s": 0.016262660789913064
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 4.2938820818281816e-07,
+      "velocity_estimate_error_m_s": 9.944740038765324e-06
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 2.6637233864807576e-09,
+      "velocity_estimate_error_m_s": 8.956460805386087e-08
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0029365339194384094,
+      "velocity_estimate_error_m_s": 0.0015783196910994757
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0029361104085338296,
+      "velocity_estimate_error_m_s": 0.0015885154746637196
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.012163529522794612,
+      "velocity_estimate_error_m_s": 0.006768155141176083
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.012163551879794694,
+      "velocity_estimate_error_m_s": 0.006767833340648864
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.012161838347738532,
+      "velocity_estimate_error_m_s": 0.006572301101043302
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.01216187502121114,
+      "velocity_estimate_error_m_s": 0.006571717687780871
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.014170285203744911,
+      "velocity_estimate_error_m_s": 0.010050650030022564
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.014170402703934498,
+      "velocity_estimate_error_m_s": 0.01004974479285484
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.01768583460002555,
+      "velocity_estimate_error_m_s": 0.014056236588584325
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.01768608198530187,
+      "velocity_estimate_error_m_s": 0.014054835778520612
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 6.844980943350946e-07,
+      "velocity_estimate_error_m_s": 1.6786666138899224e-05
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 1.609601795591224e-09,
+      "velocity_estimate_error_m_s": 5.4484485998432184e-08
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0015815273721220841,
+      "velocity_estimate_error_m_s": 0.0015879573888703757
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0015804311568746387,
+      "velocity_estimate_error_m_s": 0.0016026882395498371
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.024201664116136144,
+      "velocity_estimate_error_m_s": 0.01046030395532747
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.024201663854940908,
+      "velocity_estimate_error_m_s": 0.010460108040072627
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.02621179133568479,
+      "velocity_estimate_error_m_s": 0.01077158943659068
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.02621178843712642,
+      "velocity_estimate_error_m_s": 0.010771278550574545
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.00774472030670137,
+      "velocity_estimate_error_m_s": 0.010348371745021897
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0077446983646766825,
+      "velocity_estimate_error_m_s": 0.010347992085119755
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.007925247667706532,
+      "velocity_estimate_error_m_s": 0.013225439219412908
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.007925196410426574,
+      "velocity_estimate_error_m_s": 0.013225532229444139
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 7.332024532248956e-07,
+      "velocity_estimate_error_m_s": 8.25262213167817e-06
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 1.8004749474715858e-09,
+      "velocity_estimate_error_m_s": 9.005140674503198e-08
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.003062645940067885,
+      "velocity_estimate_error_m_s": 0.0015948543393219665
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.003061986422252981,
+      "velocity_estimate_error_m_s": 0.0015876394574586405
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.002207950994460971,
+      "velocity_estimate_error_m_s": 0.007846983497357924
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.002207943934673695,
+      "velocity_estimate_error_m_s": 0.007846949044735364
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.002215322421294476,
+      "velocity_estimate_error_m_s": 0.008048330990938228
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.002215306628430716,
+      "velocity_estimate_error_m_s": 0.008048318132690729
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.0020346793436745343,
+      "velocity_estimate_error_m_s": 0.009449293570579206
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0020346692642812182,
+      "velocity_estimate_error_m_s": 0.009449199760347218
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.002056764261309403,
+      "velocity_estimate_error_m_s": 0.013411905354724139
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.002056758888110088,
+      "velocity_estimate_error_m_s": 0.013411931295194123
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 3.162558969385027e-07,
+      "velocity_estimate_error_m_s": 1.1334689334197171e-05
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 1.4637866444819014e-09,
+      "velocity_estimate_error_m_s": 6.352210915514539e-08
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0001269627150707558,
+      "velocity_estimate_error_m_s": 0.001568649690731339
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.00012681105982348674,
+      "velocity_estimate_error_m_s": 0.0015552970352860614
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.0007866615212279415,
+      "velocity_estimate_error_m_s": 0.009350026359674916
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0007866491739926705,
+      "velocity_estimate_error_m_s": 0.009349970071676502
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.003194743580039615,
+      "velocity_estimate_error_m_s": 0.009254471325523372
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0031947399557132696,
+      "velocity_estimate_error_m_s": 0.009254387636590568
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.0008222835124985983,
+      "velocity_estimate_error_m_s": 0.010074074640032567
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.0008221937410466432,
+      "velocity_estimate_error_m_s": 0.01007426404202408
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.004375132044090103,
+      "velocity_estimate_error_m_s": 0.012609406970984147
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0043750066163928195,
+      "velocity_estimate_error_m_s": 0.01260998066414131
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 1.3616624285297066e-06,
+      "velocity_estimate_error_m_s": 1.1867873537876658e-05
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 2.5974204517892012e-09,
+      "velocity_estimate_error_m_s": 7.926845337934035e-08
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.0032923071498573942,
+      "velocity_estimate_error_m_s": 0.0015691179307909253
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0032908356510068354,
+      "velocity_estimate_error_m_s": 0.001559065898585652
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.002127900833861074,
+      "velocity_estimate_error_m_s": 0.007044885798902128
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.002127904890368645,
+      "velocity_estimate_error_m_s": 0.00704484260775842
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.002996054572704289,
+      "velocity_estimate_error_m_s": 0.006501670105382098
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.002996061971468896,
+      "velocity_estimate_error_m_s": 0.006501573289826061
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.005962648674620836,
+      "velocity_estimate_error_m_s": 0.007818215598733467
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.005962655455865802,
+      "velocity_estimate_error_m_s": 0.007818579728466488
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.005781199258059463,
+      "velocity_estimate_error_m_s": 0.009690992164951822
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.005781205822663579,
+      "velocity_estimate_error_m_s": 0.009692073453802267
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 1.8391398721048697e-07,
+      "velocity_estimate_error_m_s": 7.960474665050197e-06
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 7.842310275826888e-10,
+      "velocity_estimate_error_m_s": 5.3703525515286643e-08
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.00018457427357284738,
+      "velocity_estimate_error_m_s": 0.0016438950467987303
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.00018475086884359176,
+      "velocity_estimate_error_m_s": 0.0016358635994543269
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "original_native",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "original_forward",
+      "dt_s": null,
+      "order": null,
+      "precision": null,
+      "error_m": 0.0,
+      "velocity_estimate_error_m_s": 0.0
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order1-float32",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.006941239172100738,
+      "velocity_estimate_error_m_s": 0.006877687972542607
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order1-float64",
+      "dt_s": 0.1,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.006941231754864973,
+      "velocity_estimate_error_m_s": 0.0068776165405678436
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order2-float32",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.006917310780155153,
+      "velocity_estimate_error_m_s": 0.0068638310881746715
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "10Hz-order2-float64",
+      "dt_s": 0.1,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.006917292205898693,
+      "velocity_estimate_error_m_s": 0.006863707066753156
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order1-float32",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 0.004775259891712448,
+      "velocity_estimate_error_m_s": 0.00794464947505034
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order1-float64",
+      "dt_s": 0.02,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 0.004724940860198455,
+      "velocity_estimate_error_m_s": 0.00794454876840496
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order2-float32",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.007060925398957719,
+      "velocity_estimate_error_m_s": 0.009052673453738244
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "50Hz-order2-float64",
+      "dt_s": 0.02,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.0070608300047363655,
+      "velocity_estimate_error_m_s": 0.009052678991422982
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order1-float32",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float32",
+      "error_m": 2.5968236364359803e-07,
+      "velocity_estimate_error_m_s": 1.176588844835837e-05
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order1-float64",
+      "dt_s": 0.002,
+      "order": 1,
+      "precision": "float64",
+      "error_m": 8.215821319680044e-10,
+      "velocity_estimate_error_m_s": 4.231567470169584e-08
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order2-float32",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float32",
+      "error_m": 0.004166474962134839,
+      "velocity_estimate_error_m_s": 0.0015661332159177899
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "500Hz-order2-float64",
+      "dt_s": 0.002,
+      "order": 2,
+      "precision": "float64",
+      "error_m": 0.004166297450230247,
+      "velocity_estimate_error_m_s": 0.0015746570680393362
+    }
+  ],
+  "summary": {
+    "original_native": {
+      "error_m": 0.0,
+      "velocity_error_m_s": 0.0
+    },
+    "original_forward": {
+      "error_m": 0.0,
+      "velocity_error_m_s": 0.0
+    },
+    "10Hz-order1-float32": {
+      "error_m": 0.006369587055455417,
+      "velocity_error_m_s": 0.007568853471454466
+    },
+    "10Hz-order1-float64": {
+      "error_m": 0.0063695870176691425,
+      "velocity_error_m_s": 0.00756883110869396
+    },
+    "10Hz-order2-float32": {
+      "error_m": 0.006602465454283578,
+      "velocity_error_m_s": 0.007486438040558029
+    },
+    "10Hz-order2-float64": {
+      "error_m": 0.0066024664424863405,
+      "velocity_error_m_s": 0.007486399052378423
+    },
+    "50Hz-order1-float32": {
+      "error_m": 0.009278509800267388,
+      "velocity_error_m_s": 0.008571374744585778
+    },
+    "50Hz-order1-float64": {
+      "error_m": 0.009275993856227896,
+      "velocity_error_m_s": 0.008571427407016014
+    },
+    "50Hz-order2-float32": {
+      "error_m": 0.009988980299990282,
+      "velocity_error_m_s": 0.010605214173560504
+    },
+    "50Hz-order2-float64": {
+      "error_m": 0.009988976275804116,
+      "velocity_error_m_s": 0.010605326112221621
+    },
+    "500Hz-order1-float32": {
+      "error_m": 3.915058173580842e-06,
+      "velocity_error_m_s": 1.0260743511564104e-05
+    },
+    "500Hz-order1-float64": {
+      "error_m": 1.2509209826669766e-09,
+      "velocity_error_m_s": 5.975669766872461e-08
+    },
+    "500Hz-order2-float32": {
+      "error_m": 0.0020901753776221923,
+      "velocity_error_m_s": 0.0015783837052554782
+    },
+    "500Hz-order2-float64": {
+      "error_m": 0.0020904528912247134,
+      "velocity_error_m_s": 0.0015771094251345124
+    }
+  },
+  "comparison": {
+    "low10Hz_m": 0.006369587055455417,
+    "high500Hz_m": 3.915058173580842e-06,
+    "delta_m": -0.006365671997281834,
+    "relative_reduction": 0.999385351336045,
+    "paired95CI_m": [
+      -0.009062082613280373,
+      -0.004153564355932482
+    ]
+  },
+  "decisions": {
+    "sampling_sensitivity": true
+  },
+  "traces": [
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "file": "traces/seed000051.npz",
+      "sha256": "564c8fc4c24d8216adf05b166145481e9a523926a36d593f2a904e103538a3ef"
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "file": "traces/seed000054.npz",
+      "sha256": "e927fbffd4c36bf93d9abbe8db5d7ff132a04af6cc7b826760d61fc64b8f5efa"
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "file": "traces/seed000055.npz",
+      "sha256": "a7470217a6fcc6a3b7e2d9a354201dc58c91faf1eeb7871060d78d359739106d"
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "file": "traces/seed000056.npz",
+      "sha256": "081259ead4cf48d81a4d335691c76d8e86b2836e13927e648a07a731c38b4ffd"
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "file": "traces/seed000057.npz",
+      "sha256": "e6771941e7f8c8e36e944b789971ac7465b26fb9f0662c20c42af38c7e33aeae"
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "file": "traces/seed000062.npz",
+      "sha256": "07ed36d2b9694ece1bf2fa12cc57c505420d98e64c0c25c7baa5d04b050e3cfb"
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "file": "traces/seed000063.npz",
+      "sha256": "5fe7faf7a07bba8f8b654fa83226c0c9483bfe43b0962ff7347cbcee993f772c"
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "file": "traces/seed000066.npz",
+      "sha256": "01bd72be386d1e219123c25e9fe4aaaa447850d24a6042e5823458a64db1d7df"
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "file": "traces/seed810002.npz",
+      "sha256": "33d77a46e82781a6fa40a5213dcd671a58621b539d8adb37d549854c63b08561"
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "file": "traces/seed810005.npz",
+      "sha256": "6dcdac5099aa101a3b520f50d98bcc7e4b06182a012c8540cf8708762c8e9c40"
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "file": "traces/seed810006.npz",
+      "sha256": "d73c3e043d18df4789da064c1253ef45d7fb47106a0082870b80f2be63fc1b61"
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "file": "traces/seed810010.npz",
+      "sha256": "10efdc82a3f6484882ccce5b9eb7988ad9d1634d7bd5399a13012d9039b701ff"
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "file": "traces/seed810012.npz",
+      "sha256": "e0f36b0a4a72fedfc0bbed81880005d5cd6f87fd1470a2bf7a46d4e39d43f89d"
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "file": "traces/seed810018.npz",
+      "sha256": "08e28125c27607b1cbff5803ac44f21e58c5f9db8e78bce88fbc106720380456"
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "file": "traces/seed810019.npz",
+      "sha256": "d92d1c1f66f1233cd0b3dbab4c1109f1c3bca59ec4fa76116d8fd108d0acad07"
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "file": "traces/seed810020.npz",
+      "sha256": "75df0c4ea27828b07097cef2fc332a5fe6cb38a9108c14b6e13b4395423b0d2f"
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "file": "traces/seed810021.npz",
+      "sha256": "58d9b504e88065f0ebdac9a9fce2a5be7b1de42e41b8372f8c504d44f09dd8ef"
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "file": "traces/seed810022.npz",
+      "sha256": "f6eb7f9b314648d77cfa5b05b615dc1d505d3b9787e2c1c2d3903f96ecc325b0"
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "file": "traces/seed810027.npz",
+      "sha256": "8339b7ce84ef8025293af9a54264873dd67f09730c5f8c406a1cc529bc81459f"
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "file": "traces/seed810028.npz",
+      "sha256": "996be0a3c56bacabc42ac0bc94bc4102391777442ce7bf92c4b9b85182efe549"
+    }
+  ],
+  "forks_sha256": "4eb7f8183efa656ea9e97c026e267dd244ea503f2d55ffea510ef0bd354bfe42",
+  "verification": {
+    "exact_control_boundaries": 5046,
+    "exact_native_future_continuations": 20,
+    "past_only_estimates": true,
+    "point_positions_unchanged": true
+  },
+  "optimizer_updates": 0,
+  "test_arrays_opened": 0,
+  "elapsed_s": 4.30420245899586,
+  "limitation": "Simulator-oracle sensitivity with native pose and other state retained. This does not establish that full10Hzhistory is information-theoretically insufficient."
+}

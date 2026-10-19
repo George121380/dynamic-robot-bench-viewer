@@ -1,0 +1,6 @@
+{
+  "analysis_commit": "717ddd70b3125c42c887919320d32de5feb1dbfa",
+  "recorded_at_utc": "2026-10-19T05:36:29.177236+00:00",
+  "formal_neural_scores_or_curves_viewed": false,
+  "notes": "Variation analysis added after physical controls, before reading any formal neural score or curve; does not change primary protocol, checkpoints or training."
+}

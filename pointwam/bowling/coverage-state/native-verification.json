@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "zero_trajectories": 40,
+  "perturbed_trajectories": 480,
+  "max_zero_replay_error": 0.0,
+  "max_reset_translation_error": 0.0,
+  "independent_FK_coordinates": 124992,
+  "max_FK_coordinate_error_m": 2.9802121104260948e-08,
+  "independent_state_scalars": 10560,
+  "max_state_jacobian_error": 0.0,
+  "manifest_sha256": "8ffac9c77aa26c37db2d9886d3ddd26252a952fc688a856b9c3626ac382f9c95",
+  "source_sha256": "2347931eacf645ffecde29e567a8ea89e2a39859c14518a8fe0fb33dcb6719af",
+  "test_arrays_opened": 0
+}

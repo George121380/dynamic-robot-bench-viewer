@@ -1,0 +1,7777 @@
+{
+  "status": "complete",
+  "protocol_sha256": "b276e17eb54928a9450c49a31bdbea3fe6b0c2b2a54469eb0c23d829f17b75bb",
+  "source_sha256": "fa6bf2bf5de58905975a994ccfe0d2357fb7d9f33db4d7cef0c439f5f63a141f",
+  "neighbor_manifest_sha256": "8ffac9c77aa26c37db2d9886d3ddd26252a952fc688a856b9c3626ac382f9c95",
+  "test_arrays_opened": 0,
+  "optimizer_updates": 0,
+  "rows": [
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 1.8893535053633486e-16
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.015679680607556777
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.015679680607556777
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.015696686060191582
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.015681389426693858
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.015538010303562944
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.000302880892656329
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 2.1294478361500947e-16
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.015026336636096156
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.015026336636096156
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.014995598853524434
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.015026288750898066
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.014995551503827375
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.002562748194040357
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 2.4361707023699964e-16
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.014960882186464297
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.014960882186464297
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.015127380451109954
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.014963706887086979
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.01513063632990077
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0002867972831737436
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 2.1227075181236588e-16
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.006044823959976429
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.006044823959976429
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.006014343086597156
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.006045634625267492
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.006015093374301752
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0014772213817041242
+    },
+    {
+      "seed": 51,
+      "query_control": 273,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 1.8907651360568598e-16
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 2.921355767929585e-15
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.003218979094560298
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.003218979094560298
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0032186520528352303
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.003219196736959869
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.003218869757925941
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.003084040732516823
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.1145430237265545e-16
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0057008177201042344
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0057008177201042344
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.005677240853182975
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.005700482865821047
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.005676911557026743
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0005419143044197099
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 2.913212154329302e-15
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0028918258103057064
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0028918258103057064
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.002900993530125768
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0028924620786046434
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0029016297049822047
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.002630552342681581
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.2412670766236366e-16
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.005446464113924509
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.005446464113924509
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.005458736616716207
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.005447691413770334
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.005459952350377762
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.002747108574906972
+    },
+    {
+      "seed": 54,
+      "query_control": 229,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 2.921355767929585e-15
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 1.2604605824301006e-16
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.010197434043131302
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.010197434043131302
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.010054674195700303
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.010197490489399982
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.01005467948798899
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007193714635140466
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.2134928933452618e-16
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.022456921497979787
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.022456921497979787
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.022262365419258794
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02245674181869507
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.022262180564827615
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0013456905315843053
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 1.3158301088337094e-16
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.020841528210478247
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.020841528210478247
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.020758207950315372
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.020840475563985324
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.02075714727388518
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0001329161712156845
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.2604605824301006e-16
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0014201771441033633
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0014201771441033633
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.001318900691442124
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0014183776356757737
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0013171136251261969
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0002817585777153367
+    },
+    {
+      "seed": 55,
+      "query_control": 254,
+      "target_pins": [
+        3
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 5.96414694063549e-17
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 5.551115123125783e-17
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011861887308596665
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011861887308596665
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011878890868035182
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.009644915011691384
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.009661749891076796
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0007466450606148303
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 2.7755575615628914e-17
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.016840903831624853
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.016840903831624853
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.016758494192149413
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.016839997330738585
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.016757591305514633
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0013482972377689716
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 5.96414694063549e-17
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0196027946441733
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0196027946441733
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.019602625965903057
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.019602837540117803
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.01960266886131881
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0013684695808246139
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 5.96414694063549e-17
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020904790606273635
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020904790606273635
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02084540113116399
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020904383295057897
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020844996034619263
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.000763541852677369
+    },
+    {
+      "seed": 56,
+      "query_control": 211,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 2.7755575615628914e-17
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 1.1145430237265545e-16
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.005038457834172824
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.005038457834172824
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.004995420896994824
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.005114055600835797
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.004914809185295875
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00040113567711885117
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 8.981892944681074e-17
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.004857961392806025
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.004857961392806025
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0046781717250986895
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0048573839856230075
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.004694720906220248
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.004211254618850058
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 2.9237174203604126e-16
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011146539443124033
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011146539443124033
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011211367376757568
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011147199238842779
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011212037138864723
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.004020585815821331
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.570092458683775e-16
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009388670185362505
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009388670185362505
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009032484095915894
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009385928848718313
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009018838612552474
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0006446834843393042
+    },
+    {
+      "seed": 57,
+      "query_control": 286,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 1.1187651933765073e-16
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 7.64069512195201e-16
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.027891500840364708
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.027891500840364708
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.027952749573300288
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.027849029616452428
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.027954492739807376
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.002329506417492334
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 4.636544771806197e-16
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0012453413434000977
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0012453413434000977
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0011224101635748528
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0012419142104741847
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0011154598914347059
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.000545205737716626
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 3.991653668882593e-16
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.028281719848703965
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.028281719848703965
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.02822002769734221
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.028282085483590003
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.028220395066407673
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00026421719941060654
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 4.289223695300478e-16
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.03360794054026216
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.03360794054026216
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.033750456001432644
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.03361052680538609
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.03375302964771727
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0035547052997696297
+    },
+    {
+      "seed": 62,
+      "query_control": 254,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 1.7113860104364561e-15
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 1.8401268908111366e-14
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.004267006967317915
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.004267006967317915
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.004187950004202111
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.004267217381216851
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.004122643244464061
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0010488299505767996
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 4.27697515948136e-15
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0020062275213603544
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0020062275213603544
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0022981487981332885
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0020064391015059404
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0022983195474468973
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0012335206948310249
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 2.2609594445464524e-15
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00658413438211321
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00658413438211321
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.006587326558213934
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.006582958538799147
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.006554555147291392
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0013540938173762923
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.3906903662491702e-14
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.01147647159956651
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.01147647159956651
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.011549840856636615
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.01149090865785873
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.01159517973232959
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0007338283399559723
+    },
+    {
+      "seed": 63,
+      "query_control": 279,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 3.342961909731869e-15
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 5.551115123125783e-17
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011382303152627221
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011382303152627221
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011395582700916578
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011382253605801985
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011395533059481799
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0003756455565487104
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 2.0816681711721685e-17
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.01938123402718335
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.01938123402718335
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.019409898619668946
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.01938485177514635
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.019413512439688183
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0007412778017541478
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 5.551115123125783e-17
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00869603123443626
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00869603123443626
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.008745878927724604
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.008697700489653067
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.008747551771659607
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00047472322129073257
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 5.96414694063549e-17
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.016595623848089405
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.016595623848089405
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.016653835445773448
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.016601586511913156
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.01668581966119919
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.00043729884516319813
+    },
+    {
+      "seed": 66,
+      "query_control": 205,
+      "target_pins": [
+        2
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 6.938893903907228e-18
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 3.570577884791521e-14
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.016557378399969395
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.016557378399969395
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.01696687238885415
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0165568309450249
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.016966325265912154
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.003752487133606641
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 4.85722573273506e-17
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0012322072057125964
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0012322072057125964
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0033979575970893424
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0012325200068303884
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.003398188505672269
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0009938865917456458
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 3.570577884791521e-14
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.03272539072813478
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.03272539072813478
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.033097366126145666
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0327236308565019
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.03309557533641051
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0005290866744436863
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 8.369872675702653e-17
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0020466558208481842
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0020466558208481842
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0016396139886322805
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0020469748172725053
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.001639468957283494
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.004122513654500187
+    },
+    {
+      "seed": 810002,
+      "query_control": 259,
+      "target_pins": [
+        9
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 4.163336342344337e-17
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 2.0661656435136802e-16
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0010672645945930964
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0010672645945930964
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0010516991506916828
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0010702751836481378
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0010531427303020037
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0008304001110244959
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 5.351712365878938e-16
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02228234813551392
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02228234813551392
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02220564835125915
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.022280093147681205
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.022201640264511647
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0014965912109996446
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 5.83485824637197e-16
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0009452326004170117
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0009452326004170117
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.001173738471338645
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0009453144347519143
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0012961782338643637
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0008608266224817916
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 3.110335255881177e-16
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.005514471682545822
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.005514471682545822
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0029615059627043842
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0029893144250173875
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.005451176192431392
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.001162375235490145
+    },
+    {
+      "seed": 810005,
+      "query_control": 239,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 8.228013195499642e-17
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 1.1885926023450602e-15
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.020589857155601327
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.020589857155601327
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.021475381347856405
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.02059210684785327
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.021451473956758522
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0010920924138715336
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.7946739677864682e-15
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020037368705139037
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020037368705139037
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.019299802704977637
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020039947101003198
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.019300557314556235
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.001979513147306889
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 9.286051643677244e-16
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007396550318590656
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007396550318590656
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007421861170802928
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007393831270971011
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007421074939603162
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0023560137440320475
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.3375473769496775e-15
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.011141269148265931
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.011141269148265931
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.011802068223024792
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.011530798881702787
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.011746385410035833
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0009107017281838679
+    },
+    {
+      "seed": 810006,
+      "query_control": 254,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 1.162295484838222e-15
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 5.315832566890461e-16
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00743597251669237
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00743597251669237
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.004567422213205815
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007432046478858965
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007273422663998523
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.004265378083818879
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 2.2314538235348046e-16
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.010055232283799048
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.010055232283799048
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.010559690716456809
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.010058110699310558
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.01056225380898556
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0018956013719444182
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 5.354033443489312e-16
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007444377768700754
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007444377768700754
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007532169482053775
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007456443289929808
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007532545210296838
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0006438511345609409
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 5.842419281651643e-16
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.006734558190294062
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.006734558190294062
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.006795279718403696
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0068366010439516334
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.006795580640484553
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.002452865268597012
+    },
+    {
+      "seed": 810010,
+      "query_control": 234,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 2.827069472256747e-16
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 4.962430468962347e-16
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0258930329767414
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0258930329767414
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.025870643352454255
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.025966348123351392
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.025868746036622647
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.005378306122497261
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.2421377016345456e-15
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.028915368445257005
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.028915368445257005
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.028824411507514712
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.028944619241600796
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02894573958901294
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0013209478988472454
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 1.6407275320450472e-16
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.030999371906644643
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.030999371906644643
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.029849741261326553
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.030998860059808377
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.029957745170062108
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.002699850007184769
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.501987997826933e-14
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.027607967918686627
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.027607967918686627
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02741558002247591
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.027608216810516114
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.027415863811362462
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.005275781365487774
+    },
+    {
+      "seed": 810012,
+      "query_control": 220,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 1.509768295748885e-15
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 2.699390377870493e-16
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007503394209616458
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007503394209616458
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0075410513206488426
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007503767395725623
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00754273669906619
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.001099754756345086
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 5.739811042416413e-16
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.00939450039620178
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.00939450039620178
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.008190061801667191
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.00887087016401669
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.008189743403970681
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0007428800791191857
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 4.825487536625901e-16
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.021102379339212465
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.021102379339212465
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.02272267410325384
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.021105433450553115
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.022730121418057542
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011034056371064516
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.2746274089573532e-16
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.003420089442383984
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.003420089442383984
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0035674251537574564
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0034013523150357742
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0035951488119955683
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.00048700140606318826
+    },
+    {
+      "seed": 810018,
+      "query_control": 240,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 7.92662532301973e-17
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 1.249000902703301e-16
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.013292805125474842
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.013292805125474842
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.013130704399762255
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.013292329648742792
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.013130259382515367
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.010551880141768867
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.1522908664474197e-16
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02947350929456142
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02947350929456142
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.029400682579831465
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02947350837662021
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.029400681662840232
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 8.501796516631916e-05
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 1.3666315167099644e-16
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00875009084727579
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00875009084727579
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.008784863741999839
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.008751622827240263
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.008786396523862278
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.010195856023328622
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.734723475976807e-17
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020445043297401395
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020445043297401395
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02037197449247281
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020446802332694004
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02037373270432324
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009854950596181909
+    },
+    {
+      "seed": 810019,
+      "query_control": 272,
+      "target_pins": [
+        6
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 1.3444777407558637e-16
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 1.3085533604986738e-15
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.031025293511379764
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.031025293511379764
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0310054252531577
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.03102513290798237
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.031005264989369646
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0012849711026025475
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 9.667905430067834e-16
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0038054229655367427
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0038054229655367427
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0037926673112775927
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0038053668413929056
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0037926118339546206
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0039483336538245
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 1.532404216622688e-15
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.02569654951350891
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.02569654951350891
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.025758809974778734
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.025699392702249933
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.025761649530843124
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0016641442089810128
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 6.350598211061701e-16
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.023778861924642795
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.023778861924642795
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02367460335356224
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.02377860162510259
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.023674341647751642
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.003815322258608503
+    },
+    {
+      "seed": 810020,
+      "query_control": 225,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 7.480392911918262e-16
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 5.758130255961121e-14
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007754230792880862
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007754230792880862
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.008728122853077436
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.007828130604403639
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.008728580373432401
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0019173648644613512
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 1.1176652659816745e-14
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020808424060383787
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020808424060383787
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020827323306389443
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020809125872346065
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020828025224421124
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0001245984707029313
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 8.533191587236851e-15
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011665110584789732
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011665110584789732
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011611784345312001
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.01166544267701563
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.011612115529097414
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0004466094119298693
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 2.1898732297576075e-14
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020190113247366887
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020190113247366887
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020179365561448386
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.020196303143654365
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0201828002744494
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0012115078832299977
+    },
+    {
+      "seed": 810021,
+      "query_control": 260,
+      "target_pins": [
+        5
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 3.944998009656102e-14
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 7.240217530778222e-17
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.019859144788128107
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.019859144788128107
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.01894876670847785
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.019857674413152872
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.01894649809842438
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.005681161198442144
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009056652398891776
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009056652398891776
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009194674933417723
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009056421859318159
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009194893659296275
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0060736629464677875
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.018197490246689242
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.018197490246689242
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.01819753157700009
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.018198151383929814
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.018198185131527725
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0005517751084668614
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.008533377215710918
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.008533377215710918
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.008201150997195072
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.008532268253807485
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.008200063643451303
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0025168313752443375
+    },
+    {
+      "seed": 810022,
+      "query_control": 284,
+      "target_pins": [
+        0
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 1.2412670766236366e-16
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.01232209116809008
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.01232209116809008
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.012256180168271368
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.012319230827980542
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.012253309859341867
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.004307538914270345
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.01303745509600802
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.01303745509600802
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.013091268099358892
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.013038748687111117
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.013092552154522548
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0029679009860107265
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 7.028398838268529e-17
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0129382140370876
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0129382140370876
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.013020695723518848
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.01293842242078603
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.013020897593445583
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00010297723293650128
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 8.970743058303247e-17
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0074955898851808865
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0074955898851808865
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.007489715600381659
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.007495290443386571
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.007489414613901974
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0021220558611540104
+    },
+    {
+      "seed": 810027,
+      "query_control": 297,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 1.3778149774262156e-16
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "original_native",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "original_forward",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "original_zero_warmstart",
+      "axis": -1,
+      "sign": 0,
+      "initial_delta_m": 0.0,
+      "error_m": 1.4162481841957762e-15
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.009856903890638802
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.009856903890638802
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00994085747688697
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.00985857950363743
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.009942546723972333
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0003366402656241767
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009691068546777398
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009691068546777398
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.00980079600327104
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009690922963043972
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.009800651326015075
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.001885178724030169
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 0,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.01423854883432662
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.01423854883432662
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.010681168354361396
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.014239001567031274
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.010682360041853184
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.002077793013159825
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": -1,
+      "initial_delta_m": -0.0001,
+      "error_m": 0.0
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_native",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.00819274380109442
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_forward",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.00819274380109442
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_orientation_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.008931430011969296
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_spin_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.008198446555331036
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_axial_both_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.008937730277549794
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_full_object_state_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0012139368064266061
+    },
+    {
+      "seed": 810028,
+      "query_control": 251,
+      "target_pins": [
+        1
+      ],
+      "name": "neighbor_all_qpos_qvel_from_original",
+      "axis": 1,
+      "sign": 1,
+      "initial_delta_m": 0.0001,
+      "error_m": 0.0
+    }
+  ],
+  "summary_m": {
+    "original_native": 0.0,
+    "original_forward": 0.0,
+    "original_zero_warmstart": 6.082521931769038e-15,
+    "neighbor_native": 0.013538629831745367,
+    "neighbor_forward": 0.013538629831745367,
+    "neighbor_axial_orientation_from_original": 0.013466387129046423,
+    "neighbor_axial_spin_from_original": 0.013482041709389506,
+    "neighbor_axial_both_from_original": 0.013504475961119297,
+    "neighbor_full_object_state_from_original": 0.00226881976222367,
+    "neighbor_all_qpos_qvel_from_original": 2.3026010846349457e-15
+  },
+  "episode_means_m": {
+    "original_native": {
+      "51": 0.0,
+      "54": 0.0,
+      "55": 0.0,
+      "56": 0.0,
+      "57": 0.0,
+      "62": 0.0,
+      "63": 0.0,
+      "66": 0.0,
+      "810002": 0.0,
+      "810005": 0.0,
+      "810006": 0.0,
+      "810010": 0.0,
+      "810012": 0.0,
+      "810018": 0.0,
+      "810019": 0.0,
+      "810020": 0.0,
+      "810021": 0.0,
+      "810022": 0.0,
+      "810027": 0.0,
+      "810028": 0.0
+    },
+    "original_forward": {
+      "51": 0.0,
+      "54": 0.0,
+      "55": 0.0,
+      "56": 0.0,
+      "57": 0.0,
+      "62": 0.0,
+      "63": 0.0,
+      "66": 0.0,
+      "810002": 0.0,
+      "810005": 0.0,
+      "810006": 0.0,
+      "810010": 0.0,
+      "810012": 0.0,
+      "810018": 0.0,
+      "810019": 0.0,
+      "810020": 0.0,
+      "810021": 0.0,
+      "810022": 0.0,
+      "810027": 0.0,
+      "810028": 0.0
+    },
+    "original_zero_warmstart": {
+      "51": 1.8893535053633486e-16,
+      "54": 2.921355767929585e-15,
+      "55": 1.2604605824301006e-16,
+      "56": 5.551115123125783e-17,
+      "57": 1.1145430237265545e-16,
+      "62": 7.64069512195201e-16,
+      "63": 1.8401268908111366e-14,
+      "66": 5.551115123125783e-17,
+      "810002": 3.570577884791521e-14,
+      "810005": 2.0661656435136802e-16,
+      "810006": 1.1885926023450602e-15,
+      "810010": 5.315832566890461e-16,
+      "810012": 4.962430468962347e-16,
+      "810018": 2.699390377870493e-16,
+      "810019": 1.249000902703301e-16,
+      "810020": 1.3085533604986738e-15,
+      "810021": 5.758130255961121e-14,
+      "810022": 7.240217530778222e-17,
+      "810027": 1.2412670766236366e-16,
+      "810028": 1.4162481841957762e-15
+    },
+    "neighbor_native": {
+      "51": 0.012927930847523415,
+      "54": 0.0043145216847236875,
+      "55": 0.013729015223923176,
+      "56": 0.017302594097667115,
+      "57": 0.007607907213866347,
+      "62": 0.022756625643182732,
+      "63": 0.006083460117589498,
+      "66": 0.01401379806558406,
+      "810002": 0.013140408038666238,
+      "810005": 0.007452329253267462,
+      "810006": 0.014791261331899237,
+      "810010": 0.00791753518987156,
+      "810012": 0.028353935311832418,
+      "810018": 0.010355090846853673,
+      "810019": 0.01799036214117836,
+      "810020": 0.021076531978767053,
+      "810021": 0.015104469671355317,
+      "810022": 0.013911666162355011,
+      "810027": 0.011448337546591646,
+      "810028": 0.010494816268209311
+    },
+    "neighbor_forward": {
+      "51": 0.012927930847523415,
+      "54": 0.0043145216847236875,
+      "55": 0.013729015223923176,
+      "56": 0.017302594097667115,
+      "57": 0.007607907213866347,
+      "62": 0.022756625643182732,
+      "63": 0.006083460117589498,
+      "66": 0.01401379806558406,
+      "810002": 0.013140408038666238,
+      "810005": 0.007452329253267462,
+      "810006": 0.014791261331899237,
+      "810010": 0.00791753518987156,
+      "810012": 0.028353935311832418,
+      "810018": 0.010355090846853673,
+      "810019": 0.01799036214117836,
+      "810020": 0.021076531978767053,
+      "810021": 0.015104469671355317,
+      "810022": 0.013911666162355011,
+      "810027": 0.011448337546591646,
+      "810028": 0.010494816268209311
+    },
+    "neighbor_axial_orientation_from_original": {
+      "51": 0.012958502112855782,
+      "54": 0.004313905763215046,
+      "55": 0.013598537064179149,
+      "56": 0.01727135303931291,
+      "57": 0.007479361023691743,
+      "62": 0.0227614108589125,
+      "63": 0.006155816554296487,
+      "66": 0.014051298923520895,
+      "810002": 0.01377545252518036,
+      "810005": 0.006848147983998466,
+      "810006": 0.01499977836166544,
+      "810010": 0.007363640532530024,
+      "810012": 0.027990094035942856,
+      "810018": 0.010505303094831832,
+      "810019": 0.017922056303516593,
+      "810020": 0.021057876473194067,
+      "810021": 0.015336649016556817,
+      "810022": 0.013635531054022685,
+      "810027": 0.011464464897882692,
+      "810028": 0.009838562961622175
+    },
+    "neighbor_axial_spin_from_original": {
+      "51": 0.012929254922486599,
+      "54": 0.004314958273788973,
+      "55": 0.01372827137693904,
+      "56": 0.016748033294401415,
+      "57": 0.007626141918504974,
+      "62": 0.022745889028975678,
+      "63": 0.006086880919845167,
+      "66": 0.014016598095628639,
+      "810002": 0.013139989156407423,
+      "810005": 0.0068212492977746605,
+      "810006": 0.014889171025382567,
+      "810010": 0.00794580037801274,
+      "810012": 0.028379511058819168,
+      "810018": 0.0102203558313328,
+      "810019": 0.01799106579632432,
+      "810020": 0.02107712351918195,
+      "810021": 0.015124750574354924,
+      "810022": 0.013911128977552083,
+      "810027": 0.011447923094816065,
+      "810028": 0.010496737647260928
+    },
+    "neighbor_axial_both_from_original": {
+      "51": 0.01291982287789821,
+      "54": 0.0043143408425781625,
+      "55": 0.013597780237956995,
+      "56": 0.016716751523132376,
+      "57": 0.00746010146073333,
+      "62": 0.022760844336341755,
+      "63": 0.006142674417882985,
+      "66": 0.014060604233007196,
+      "810002": 0.013774889516319607,
+      "810005": 0.0075005343552773515,
+      "810006": 0.014979872905238438,
+      "810010": 0.00804095058094137,
+      "810012": 0.02804702365176504,
+      "810018": 0.010514437583272496,
+      "810019": 0.01792276756838528,
+      "810020": 0.02105846700047976,
+      "810021": 0.015337880350350086,
+      "810022": 0.013634910133174919,
+      "810027": 0.011464043555302991,
+      "810028": 0.009840822092347596
+    },
+    "neighbor_full_object_state_from_original": {
+      "51": 0.0011574119378936385,
+      "54": 0.0022509039886312717,
+      "55": 0.002238519978913948,
+      "56": 0.0010567384329714462,
+      "57": 0.0023194148990323864,
+      "62": 0.001673408663597299,
+      "63": 0.0010925682006850221,
+      "66": 0.0005072363561891972,
+      "810002": 0.0023494935135740403,
+      "810005": 0.0010875482949990194,
+      "810006": 0.0015845802583485844,
+      "810010": 0.0023144239647303125,
+      "810012": 0.003668721348504262,
+      "810018": 0.0033409231531479943,
+      "810019": 0.00767192618161143,
+      "810020": 0.0026781928060041404,
+      "810021": 0.0009250201575810373,
+      "810022": 0.0037058576571552828,
+      "810027": 0.002375118248592896,
+      "810028": 0.0013783872023101942
+    },
+    "neighbor_all_qpos_qvel_from_original": {
+      "51": 2.1447727981751526e-16,
+      "54": 1.5175372330734765e-15,
+      "55": 1.0965495696681552e-16,
+      "56": 4.369852251099191e-17,
+      "57": 1.6276910917222004e-16,
+      "62": 7.507820560088458e-16,
+      "63": 5.946950044062846e-15,
+      "66": 3.572704906331041e-17,
+      "810002": 8.969920798855758e-15,
+      "810005": 3.7799267969205125e-16,
+      "810006": 1.305780498485523e-15,
+      "810010": 4.063744005233127e-16,
+      "810012": 4.4839646822143155e-15,
+      "810018": 3.1581471300754106e-16,
+      "810019": 1.0092181178777321e-16,
+      "810020": 9.705734679818669e-16,
+      "810021": 2.0264639160297673e-14,
+      "810022": 0.0,
+      "810027": 7.444322917708483e-17,
+      "810028": 0.0
+    }
+  },
+  "comparisons": {
+    "neighbor_native": {
+      "left_m": 0.013538629831745367,
+      "right_m": 0.013538629831745367,
+      "delta_m": 0.0,
+      "relative_reduction": 0.0,
+      "paired95CI_m": [
+        0.0,
+        0.0
+      ],
+      "episodes": 20
+    },
+    "neighbor_axial_orientation_from_original": {
+      "left_m": 0.013466387129046423,
+      "right_m": 0.013538629831745367,
+      "delta_m": -7.22427026989398e-05,
+      "relative_reduction": 0.005336042391051232,
+      "paired95CI_m": [
+        -0.00020315370955631474,
+        5.900984088194952e-05
+      ],
+      "episodes": 20
+    },
+    "neighbor_axial_spin_from_original": {
+      "left_m": 0.013482041709389506,
+      "right_m": 0.013538629831745367,
+      "delta_m": -5.658812235586016e-05,
+      "relative_reduction": 0.004179752534719139,
+      "paired95CI_m": [
+        -0.0001474354063672993,
+        1.034109342010129e-05
+      ],
+      "episodes": 20
+    },
+    "neighbor_axial_both_from_original": {
+      "left_m": 0.013504475961119297,
+      "right_m": 0.013538629831745367,
+      "delta_m": -3.4153870626068766e-05,
+      "relative_reduction": 0.0025226977213000934,
+      "paired95CI_m": [
+        -0.00015402511536893648,
+        8.391501126703503e-05
+      ],
+      "episodes": 20
+    },
+    "neighbor_full_object_state_from_original": {
+      "left_m": 0.00226881976222367,
+      "right_m": 0.013538629831745367,
+      "delta_m": -0.011269810069521697,
+      "relative_reduction": 0.8324188052690721,
+      "paired95CI_m": [
+        -0.013788244404366727,
+        -0.008957866082985778
+      ],
+      "episodes": 20
+    },
+    "neighbor_all_qpos_qvel_from_original": {
+      "left_m": 2.3026010846349457e-15,
+      "right_m": 0.013538629831745367,
+      "delta_m": -0.013538629831743063,
+      "relative_reduction": 0.9999999999998299,
+      "paired95CI_m": [
+        -0.016181963812940448,
+        -0.011131385111446145
+      ],
+      "episodes": 20
+    },
+    "zero_warmstart_vs_original_forward": {
+      "left_m": 6.082521931769038e-15,
+      "right_m": 0.0,
+      "delta_m": 6.082521931769038e-15,
+      "relative_reduction": null,
+      "paired95CI_m": [
+        6.36790212653571e-16,
+        1.3408806939764678e-14
+      ],
+      "episodes": 20
+    }
+  },
+  "decisions": {
+    "axial_mediation": false,
+    "other_state_mediation": true,
+    "numerical_memory_material": false
+  },
+  "verification": {
+    "exact_native_continuations": 100,
+    "expected_native_continuations": 100,
+    "max_axial_point_position_change_m": 0.0,
+    "max_axial_point_velocity_change_m_s": 4.683753385137379e-17
+  },
+  "forks_sha256": "ffff2c8ab9fa403bc5d4da177efd481f3476781d91d44a8a5e9505359639a8f5",
+  "elapsed_s": 15.227938166004606,
+  "limitation": "Query-time interventions are causal mechanism controls, not full-history-consistent indistinguishable trajectory witnesses."
+}

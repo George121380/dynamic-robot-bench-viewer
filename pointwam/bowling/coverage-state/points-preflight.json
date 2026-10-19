@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "nonzero_head_five_input_forward": true,
+  "per_window_state_and_labels_ignored": true,
+  "train_state_mean_std_buffers_cannot_leak_information": true,
+  "plan_suffix_isolated": true,
+  "initial_parameters_equal": "0315dbaae1d54bf9c93c63706699af6bc5078b6d05a1b528b006d67cd98c7da6",
+  "inactive_state_input_weight_elements": 14400,
+  "parameters": 2488788,
+  "active_point_weight_gradient_max": 2.583791319921147e-05,
+  "unused_state_input_weight_gradient_max": 0.0,
+  "protocol_sha256": "38571e52d3da5894272de1f8e73c8658f6d49969888717b6b5160c485322367f",
+  "source_sha256": "ddee9d11ce93aa8522b4e5af83536657267d61f388e32e687feb170ff8333b53",
+  "model_sha256": "a6731de25ff4f2183d4aa77baae04eed35ad73d23fa500b4ba138fb9f335b331",
+  "test_arrays_opened": 0
+}
