@@ -335,13 +335,13 @@
       }
     },
     "source_commit": "ac703750a47c930ce87169132850d4c93deced03",
-    "completed_replays": 29,
+    "completed_replays": 30,
     "expected_replays": 250,
     "active_condition": null,
     "snapshot_utc": "2026-10-19T18:27:45.102796+00:00",
     "paused_by_user": true,
     "reason": "User requested settings review before starting training",
-    "collection_count_snapshot_utc": "2026-10-19T19:48:55.036837+00:00"
+    "collection_count_snapshot_utc": "2026-10-19T19:55:39.415820+00:00"
   },
   "architecture_review": {
     "schema": 1,
@@ -408,13 +408,9 @@
       "previous_full_proposal_policy_updates": 450000,
       "fraction_of_previous_policy_updates": 0.022222222222222223,
       "development_environment_seeds": [
-        5001,
-        5002,
-        5003,
-        5004,
-        5005
+        5001
       ],
-      "closed_loop_rollouts_per_execution_horizon": 25,
+      "closed_loop_rollouts_per_execution_horizon": 5,
       "execution_horizons": [
         100,
         10
@@ -428,7 +424,9 @@
       "scope": "Single garment, single seed, bounded 500-update screening; formal training remains on hold.",
       "baseline_gate": "Expert replay quality and tiny-episode fit establish a valid pipeline. Low ACT closed-loop success alone does not invalidate the task or forbid history/flow comparisons.",
       "current_optimizer_steps_per_run": 500,
-      "current_total_policy_update_budget": 2500
+      "current_total_policy_update_budget": 2500,
+      "current_total_closed_loop_rollouts": 10,
+      "evaluation_scope": "User selected one paired development pose for faster visual/control validation, not success-rate estimation."
     },
     "point_encoder": {
       "implemented_input_shape": [
@@ -732,7 +730,8 @@
     "synchronization": {
       "Mac_Baidu": "same_scientific_sources_via_GitHub_commits",
       "gpu17": "SSH reachable; code-only task checkout synchronized via authenticated-locally-pushed GitHub commit bundle; no GPU jobs, no remote credentials; session helper absent"
-    }
+    },
+    "evaluation_amendment": "User explicitly selected one paired pose before any closed-loop outcome; five500-update training budgets and all scientific model/data/optimizer settings unchanged."
   },
   "preflight": {
     "status": "complete",
@@ -850,7 +849,7 @@
     "offline_matches_checkpoint_receipt": true,
     "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b"
   },
-  "snapshot_utc": "2026-10-19T19:48:55.036837+00:00",
+  "snapshot_utc": "2026-10-19T19:55:39.415820+00:00",
   "capacity": {
     "total_instantiated": 74929807,
     "track_encoder": 3293952,
@@ -888,7 +887,7 @@
         "act_pilot_train.py": "22b06b6950273307399d27c12400abe70821dee85fe53ac2ba86eefa16511943",
         "act_pilot_rollout.py": "6153a26a02efec3a01a1bc1f8a7d928fb0a6b81dc4df5fcc4bd0f685c55c3c64",
         "act_pilot_run.sh": "32666199b0e500ee9f20532593ce252b83e5094c178db1b6f6efc2b46eb74501",
-        "run_act_pilot.py": "6a05cdbbebcbadd76b272f824b2d8e26995a25dcd6f9a10a09306e35da3e0a3f",
+        "run_act_pilot.py": "3327d462c6522f75b6e861a3119bff74ddea097f348031e3b34ba5314afd3c2c",
         "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
         "flow_data.py": "f4060cab4201fa91a4a42200f811ce00c9aa064f3e0627a4f77e48d5a9ce4679",
         "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
@@ -898,11 +897,7 @@
       "closed_loop": {
         "garment": "Top_Long_Seen_0",
         "pose_seeds": [
-          5001,
-          5002,
-          5003,
-          5004,
-          5005
+          5001
         ],
         "execution_horizons": [
           100,
@@ -913,21 +908,19 @@
       "formal_training": false,
       "new_node_allocated": false,
       "point_information": "privileged simulation GT upper bound; not RGB-estimated flow",
-      "fingerprint": "4f0f0da201ea49ff32cbd39ccd8956c493f954dbd5b5498324531178e7bad277"
+      "fingerprint": "f8fe7d29b6b8fbe7f630ce2a335d45d1d284c22c691ba2c9d61c2bfc10b49808"
     },
     "status": {
-      "status": "restarting_for_user_evaluation_budget",
+      "status": "running",
       "stage": "training",
-      "snapshot_utc": "2026-10-19T19:48:16.710385+00:00",
+      "snapshot_utc": "2026-10-19T19:55:33.019652+00:00",
       "formal_training": false,
-      "protocol_fingerprint": "4f0f0da201ea49ff32cbd39ccd8956c493f954dbd5b5498324531178e7bad277",
-      "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
-      "current_job": "train-geometry",
-      "mode": "geometry",
+      "protocol_fingerprint": "f8fe7d29b6b8fbe7f630ce2a335d45d1d284c22c691ba2c9d61c2bfc10b49808",
       "planned_rollouts": 10,
-      "evaluation_pose_seeds": [
-        5001
-      ]
+      "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+      "mode": "geometry",
+      "current_job": "train-geometry",
+      "adopted_existing_training_child": true
     },
     "parity": {
       "status": "complete",
@@ -1293,6 +1286,16 @@
       "scope": "One complete real-data window, no optimization; a numerical gate, not a policy score."
     },
     "audit": null,
+    "evaluation_amendment": {
+      "status": "complete",
+      "time": "2026-10-19T19:51:05.591414+00:00",
+      "reason": "User selected faster one-pose development validation before any closed-loop outcomes",
+      "previous_protocol_fingerprint": "4f0f0da201ea49ff32cbd39ccd8956c493f954dbd5b5498324531178e7bad277",
+      "new_protocol_fingerprint": "f8fe7d29b6b8fbe7f630ce2a335d45d1d284c22c691ba2c9d61c2bfc10b49808",
+      "previous_rollouts": 50,
+      "current_rollouts": 10,
+      "training_model_data_optimizer_budget_unchanged": true
+    },
     "references": {
       "status": "complete",
       "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
@@ -1884,19 +1887,19 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 1,
-          "elapsed_seconds": 4.875494866166264
+          "completed_optimizer_steps": 175,
+          "elapsed_seconds": 367.3849824019708
         },
         "latest": {
-          "step": 3,
-          "loss": 46.57673668861389,
-          "action_loss": 0.8341557271778584,
-          "kl_loss": 4.574258103966713,
+          "step": 198,
+          "loss": 2.8129453361034393,
+          "action_loss": 0.49764750781469047,
+          "kl_loss": 0.23152978159487247,
           "auxiliary_loss": 0.0,
-          "gradient_norm": 782.1508178710938,
-          "update_seconds": 2.0348114855587482,
-          "elapsed_seconds": 9.624128446914256,
-          "peak_reserved_bytes": 6782189568
+          "gradient_norm": 53.85422897338867,
+          "update_seconds": 1.9882549908943474,
+          "elapsed_seconds": 414.3709463821724,
+          "peak_reserved_bytes": 6784286720
         },
         "active_training_parameters": 51708556,
         "inference_parameters": 51708556,
@@ -1911,6 +1914,83 @@
             "update_seconds": 4.873182938899845,
             "elapsed_seconds": 4.875494866166264,
             "peak_reserved_bytes": 6339690496
+          },
+          {
+            "step": 25,
+            "loss": 7.1083419024944305,
+            "action_loss": 0.7093544923700392,
+            "kl_loss": 0.6398987248539925,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 136.87710571289062,
+            "update_seconds": 2.0664760069921613,
+            "elapsed_seconds": 55.490324151236564,
+            "peak_reserved_bytes": 6782189568
+          },
+          {
+            "step": 50,
+            "loss": 4.131950527429581,
+            "action_loss": 0.7305905683897436,
+            "kl_loss": 0.3401359971612692,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 77.71749114990234,
+            "update_seconds": 2.0942303109914064,
+            "elapsed_seconds": 106.6677412702702,
+            "peak_reserved_bytes": 6784286720
+          },
+          {
+            "step": 75,
+            "loss": 4.156852528452873,
+            "action_loss": 0.7015010794857517,
+            "kl_loss": 0.34553514793515205,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 93.03221893310547,
+            "update_seconds": 2.0151189477182925,
+            "elapsed_seconds": 158.07954110996798,
+            "peak_reserved_bytes": 6784286720
+          },
+          {
+            "step": 100,
+            "loss": 3.534594714641571,
+            "action_loss": 0.6534037459641695,
+            "kl_loss": 0.2881191037595272,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 66.19576263427734,
+            "update_seconds": 2.118627230171114,
+            "elapsed_seconds": 211.49841156229377,
+            "peak_reserved_bytes": 6784286720
+          },
+          {
+            "step": 125,
+            "loss": 3.4393428415060043,
+            "action_loss": 0.5695441737334477,
+            "kl_loss": 0.2869798634201288,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 69.069091796875,
+            "update_seconds": 2.095892472192645,
+            "elapsed_seconds": 263.77919726027176,
+            "peak_reserved_bytes": 6784286720
+          },
+          {
+            "step": 150,
+            "loss": 3.1995539367198944,
+            "action_loss": 0.5422191601246595,
+            "kl_loss": 0.26573347486555576,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 70.7329330444336,
+            "update_seconds": 1.924570478964597,
+            "elapsed_seconds": 315.3298590211198,
+            "peak_reserved_bytes": 6784286720
+          },
+          {
+            "step": 175,
+            "loss": 2.885806582868099,
+            "action_loss": 0.6399575911927968,
+            "kl_loss": 0.22458490170538425,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 59.63227081298828,
+            "update_seconds": 2.0366998659446836,
+            "elapsed_seconds": 367.3849824019708,
+            "peak_reserved_bytes": 6784286720
           }
         ],
         "validation": []

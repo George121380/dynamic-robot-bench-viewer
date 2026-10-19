@@ -63,13 +63,9 @@
     "previous_full_proposal_policy_updates": 450000,
     "fraction_of_previous_policy_updates": 0.022222222222222223,
     "development_environment_seeds": [
-      5001,
-      5002,
-      5003,
-      5004,
-      5005
+      5001
     ],
-    "closed_loop_rollouts_per_execution_horizon": 25,
+    "closed_loop_rollouts_per_execution_horizon": 5,
     "execution_horizons": [
       100,
       10
@@ -83,7 +79,9 @@
     "scope": "Single garment, single seed, bounded 500-update screening; formal training remains on hold.",
     "baseline_gate": "Expert replay quality and tiny-episode fit establish a valid pipeline. Low ACT closed-loop success alone does not invalidate the task or forbid history/flow comparisons.",
     "current_optimizer_steps_per_run": 500,
-    "current_total_policy_update_budget": 2500
+    "current_total_policy_update_budget": 2500,
+    "current_total_closed_loop_rollouts": 10,
+    "evaluation_scope": "User selected one paired development pose for faster visual/control validation, not success-rate estimation."
   },
   "point_encoder": {
     "implemented_input_shape": [
@@ -387,5 +385,6 @@
   "synchronization": {
     "Mac_Baidu": "same_scientific_sources_via_GitHub_commits",
     "gpu17": "SSH reachable; code-only task checkout synchronized via authenticated-locally-pushed GitHub commit bundle; no GPU jobs, no remote credentials; session helper absent"
-  }
+  },
+  "evaluation_amendment": "User explicitly selected one paired pose before any closed-loop outcome; five500-update training budgets and all scientific model/data/optimizer settings unchanged."
 }

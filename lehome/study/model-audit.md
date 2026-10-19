@@ -1,5 +1,7 @@
 # RGB-H / FlowACT design audit and matched study
 
+Latest amendment: the user selected one paired development pose(seed5001), two execution horizons and ten rollouts. All five500-update training budgets remain unchanged. This reduction occurs before any closed-loop outcome. Archive the original50-rollout protocol in pilot-protocol-before-single-pose.json and record the change in evaluation-amendment.json. Only the task-owned coordinator is restarted; the running training child completes uninterrupted. Models, data, optimizer and sample order do not change. Earlier five-pose/50-rollout wording below is historical.
+
 The user has authorized one bounded validation round on the developer machine. Only the separate pilot is starting; the formal study and eight-GPU allocation remain on hold. The minimal native-ACT extension is implemented. With extensions disabled, native prior actions and training loss match exactly; maximum core gradient difference is 4.69e-9. Hidden-query and future-action information boundaries pass.
 
 ## Current developer validation (in progress)
