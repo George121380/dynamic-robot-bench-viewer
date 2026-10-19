@@ -335,13 +335,13 @@
       }
     },
     "source_commit": "ac703750a47c930ce87169132850d4c93deced03",
-    "completed_replays": 59,
+    "completed_replays": 61,
     "expected_replays": 250,
     "active_condition": null,
     "snapshot_utc": "2026-10-19T18:27:45.102796+00:00",
     "paused_by_user": true,
     "reason": "User requested settings review before starting training",
-    "collection_count_snapshot_utc": "2026-10-19T21:40:08.089611+00:00"
+    "collection_count_snapshot_utc": "2026-10-19T21:48:17.354364+00:00"
   },
   "architecture_review": {
     "schema": 1,
@@ -849,7 +849,7 @@
     "offline_matches_checkpoint_receipt": true,
     "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b"
   },
-  "snapshot_utc": "2026-10-19T21:40:08.089611+00:00",
+  "snapshot_utc": "2026-10-19T21:48:17.354364+00:00",
   "capacity": {
     "total_instantiated": 74929807,
     "track_encoder": 3293952,
@@ -3605,7 +3605,7 @@
       "fingerprint": "c0bd927fd9cfaebac8f535c350b0c842e3b55352f54eaeb2c94527605de1c4dd"
     },
     "lease": {
-      "snapshot_utc": "2026-10-19T21:39:21.593964+00:00",
+      "snapshot_utc": "2026-10-19T21:47:39.511268+00:00",
       "hard_deadline_utc": "2026-10-19T22:56:28Z",
       "cleanup_target_utc": "2026-10-19T22:53:28+00:00",
       "jobs": [
@@ -3681,7 +3681,7 @@
           "submitted_utc": "2026-10-19T21:30:16.452514+00:00",
           "deadline_utc": "2026-10-19T22:56:28Z",
           "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
-          "status": "Running"
+          "status": "Succeeded"
         },
         {
           "job_id": "job-28u26yp6gjp5",
@@ -3693,7 +3693,7 @@
           "submitted_utc": "2026-10-19T21:31:59.118537+00:00",
           "deadline_utc": "2026-10-19T22:56:28Z",
           "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
-          "status": "Running"
+          "status": "Succeeded"
         },
         {
           "job_id": "job-4y3un904hybm",
@@ -3705,10 +3705,10 @@
           "submitted_utc": "2026-10-19T21:32:54.268265+00:00",
           "deadline_utc": "2026-10-19T22:56:28Z",
           "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
-          "status": "Running"
+          "status": "Succeeded"
         }
       ],
-      "active_owned_jobs": 4
+      "active_owned_jobs": 1
     },
     "jobs": [
       {
@@ -59323,6 +59323,12 @@
       },
       "scope": "Three two-step runtime probes; no comparative policy outcome"
     },
+    "native_pairing_hold": {
+      "status": "held",
+      "recorded_utc": "2026-10-19T21:43:51.264162+00:00",
+      "reason": "Warm-start cloth state clusters differ0.0134-0.0217m and0.54m/s, despite identical pose/rest/joints. No native comparison accepted. Offline action validation remains valid.",
+      "stopped_owned_CPU_handoff": 3864324
+    },
     "initialization_amendment": {
       "reason": "Runtime probes showed0.0113456m initial-cloth mismatch; pre-play authoring yields zero across three GPU/node runs",
       "previous_protocol_fingerprint": "7d0ed4a39a449026e15ac93c3fad141d2ed30f5926072ff39cd418bd321d7562",
@@ -60036,145 +60042,142 @@
         "active": {}
       },
       "native-main-seed-1000": {
-        "status": "running",
+        "status": "incomplete",
         "seed": 1000,
         "stage": "main",
         "protocol_fingerprint": "b8b4b524577f605768fbd405d8c809a3c6ae9123fd175df80e2fe046dae9c3ae",
-        "snapshot_utc": "2026-10-19T21:40:04.084561+00:00",
+        "snapshot_utc": "2026-10-19T21:44:05.142451+00:00",
         "completed": [
           "closed-loop/seed-1000/execute-100/pose-5001/act/attempt-001",
           "closed-loop/seed-1000/execute-10/pose-5001/act/attempt-001",
           "closed-loop/seed-1000/execute-10/pose-5001/rgb_history/attempt-001",
-          "closed-loop/seed-1000/execute-100/pose-5001/rgb_history/attempt-001"
+          "closed-loop/seed-1000/execute-100/pose-5001/rgb_history/attempt-001",
+          "closed-loop/seed-1000/execute-10/pose-5001/geometry/attempt-001",
+          "closed-loop/seed-1000/execute-10/pose-5001/tracks/attempt-001",
+          "closed-loop/seed-1000/execute-100/pose-5001/geometry/attempt-001",
+          "closed-loop/seed-1000/execute-100/pose-5001/tracks/attempt-001",
+          "closed-loop/seed-1000/execute-100/pose-5001/tracks_completion/attempt-001",
+          "closed-loop/seed-1000/execute-10/pose-5001/tracks_completion/attempt-001"
         ],
         "failures": [],
-        "pending": 4,
+        "pending": 0,
         "active": {
-          "4": {
-            "condition": "geometry",
-            "horizon": 100
-          },
-          "5": {
-            "condition": "geometry",
-            "horizon": 10
-          },
-          "6": {
-            "condition": "tracks",
-            "horizon": 100
-          },
-          "7": {
-            "condition": "tracks",
-            "horizon": 10
-          },
-          "0": {
-            "condition": "tracks_completion",
-            "horizon": 100
-          },
-          "1": {
-            "condition": "tracks_completion",
-            "horizon": 10
-          },
           "3": {
             "condition": "completion_gain100_w01",
             "horizon": 100
           },
           "2": {
             "condition": "completion_gain100_w01",
+            "horizon": 10
+          },
+          "5": {
+            "condition": "completion_gain100_w1",
+            "horizon": 100
+          },
+          "7": {
+            "condition": "completion_gain100_w1",
+            "horizon": 10
+          },
+          "4": {
+            "condition": "completion_gain100_w10",
+            "horizon": 100
+          },
+          "6": {
+            "condition": "completion_gain100_w10",
             "horizon": 10
           }
         }
       },
       "native-main-seed-1001": {
-        "status": "running",
+        "status": "incomplete",
         "seed": 1001,
         "stage": "main",
         "protocol_fingerprint": "b8b4b524577f605768fbd405d8c809a3c6ae9123fd175df80e2fe046dae9c3ae",
-        "snapshot_utc": "2026-10-19T21:40:00.014811+00:00",
+        "snapshot_utc": "2026-10-19T21:44:01.381852+00:00",
         "completed": [
           "closed-loop/seed-1001/execute-100/pose-5001/act/attempt-001",
-          "closed-loop/seed-1001/execute-10/pose-5001/act/attempt-001"
+          "closed-loop/seed-1001/execute-10/pose-5001/act/attempt-001",
+          "closed-loop/seed-1001/execute-100/pose-5001/rgb_history/attempt-001",
+          "closed-loop/seed-1001/execute-10/pose-5001/rgb_history/attempt-001",
+          "closed-loop/seed-1001/execute-100/pose-5001/geometry/attempt-001",
+          "closed-loop/seed-1001/execute-10/pose-5001/tracks/attempt-001",
+          "closed-loop/seed-1001/execute-100/pose-5001/tracks_completion/attempt-001",
+          "closed-loop/seed-1001/execute-10/pose-5001/geometry/attempt-001",
+          "closed-loop/seed-1001/execute-100/pose-5001/tracks/attempt-001",
+          "closed-loop/seed-1001/execute-10/pose-5001/tracks_completion/attempt-001"
         ],
         "failures": [],
-        "pending": 6,
+        "pending": 0,
         "active": {
           "2": {
-            "condition": "rgb_history",
+            "condition": "completion_gain100_w01",
             "horizon": 100
           },
           "3": {
-            "condition": "rgb_history",
+            "condition": "completion_gain100_w01",
             "horizon": 10
           },
           "4": {
-            "condition": "geometry",
-            "horizon": 100
-          },
-          "5": {
-            "condition": "geometry",
-            "horizon": 10
-          },
-          "6": {
-            "condition": "tracks",
+            "condition": "completion_gain100_w1",
             "horizon": 100
           },
           "7": {
-            "condition": "tracks",
+            "condition": "completion_gain100_w1",
             "horizon": 10
           },
           "0": {
-            "condition": "tracks_completion",
+            "condition": "completion_gain100_w10",
             "horizon": 100
           },
           "1": {
-            "condition": "tracks_completion",
+            "condition": "completion_gain100_w10",
             "horizon": 10
           }
         }
       },
       "native-main-seed-1002": {
-        "status": "running",
+        "status": "incomplete",
         "seed": 1002,
         "stage": "main",
         "protocol_fingerprint": "b8b4b524577f605768fbd405d8c809a3c6ae9123fd175df80e2fe046dae9c3ae",
-        "snapshot_utc": "2026-10-19T21:40:01.992286+00:00",
+        "snapshot_utc": "2026-10-19T21:44:03.219184+00:00",
         "completed": [
           "closed-loop/seed-1002/execute-100/pose-5001/act/attempt-001",
-          "closed-loop/seed-1002/execute-10/pose-5001/act/attempt-001"
+          "closed-loop/seed-1002/execute-10/pose-5001/act/attempt-001",
+          "closed-loop/seed-1002/execute-100/pose-5001/rgb_history/attempt-001",
+          "closed-loop/seed-1002/execute-10/pose-5001/rgb_history/attempt-001",
+          "closed-loop/seed-1002/execute-100/pose-5001/geometry/attempt-001",
+          "closed-loop/seed-1002/execute-100/pose-5001/tracks/attempt-001",
+          "closed-loop/seed-1002/execute-10/pose-5001/tracks/attempt-001",
+          "closed-loop/seed-1002/execute-100/pose-5001/tracks_completion/attempt-001",
+          "closed-loop/seed-1002/execute-10/pose-5001/tracks_completion/attempt-001"
         ],
         "failures": [],
-        "pending": 6,
+        "pending": 1,
         "active": {
-          "2": {
-            "condition": "rgb_history",
-            "horizon": 100
-          },
-          "3": {
-            "condition": "rgb_history",
-            "horizon": 10
-          },
-          "4": {
-            "condition": "geometry",
-            "horizon": 100
-          },
           "5": {
             "condition": "geometry",
             "horizon": 10
           },
-          "6": {
-            "condition": "tracks",
+          "2": {
+            "condition": "completion_gain100_w01",
             "horizon": 100
+          },
+          "3": {
+            "condition": "completion_gain100_w01",
+            "horizon": 10
+          },
+          "4": {
+            "condition": "completion_gain100_w1",
+            "horizon": 100
+          },
+          "6": {
+            "condition": "completion_gain100_w1",
+            "horizon": 10
           },
           "7": {
-            "condition": "tracks",
-            "horizon": 10
-          },
-          "0": {
-            "condition": "tracks_completion",
+            "condition": "completion_gain100_w10",
             "horizon": 100
-          },
-          "1": {
-            "condition": "tracks_completion",
-            "horizon": 10
           }
         }
       }
@@ -60245,6 +60248,68 @@
       {
         "training_seed": 1000,
         "execution_horizon": 10,
+        "condition": "geometry",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "geometry",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 25.88 <= 7.2",
+                "value": 25.877103785794016,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 36.10 <= 8.55",
+                "value": 36.10308126743113,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 25.89 <= 7.2",
+                "value": 25.888352466638572,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 15.82 >= 9.9",
+                "value": 15.815664909227142,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 0.85 >= 9.0",
+                "value": 0.8521496820028479,
+                "threshold": 9.0,
+                "passed": false
+              }
+            }
+          },
+          "elapsed_seconds": 612.00328540802,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1000,
+        "execution_horizon": 10,
         "condition": "rgb_history",
         "report": {
           "status": "complete",
@@ -60300,6 +60365,130 @@
             }
           },
           "elapsed_seconds": 496.18637585639954,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1000,
+        "execution_horizon": 10,
+        "condition": "tracks",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 26.10 <= 7.2",
+                "value": 26.102938693507312,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 44.13 <= 8.55",
+                "value": 44.13073004135781,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 23.60 <= 7.2",
+                "value": 23.604591526196185,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 17.18 >= 9.9",
+                "value": 17.184899184798375,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 13.86 >= 9.0",
+                "value": 13.860546981298462,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 617.6421313285828,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1000,
+        "execution_horizon": 10,
+        "condition": "tracks_completion",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks_completion",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 25.61 <= 7.2",
+                "value": 25.610008565819914,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 34.41 <= 8.55",
+                "value": 34.41312193697704,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 21.76 <= 7.2",
+                "value": 21.759071755959294,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 14.15 >= 9.9",
+                "value": 14.14596752685942,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 11.38 >= 9.0",
+                "value": 11.382741117216977,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 636.9166622161865,
           "auxiliary_head_removed": true,
           "claim": "single_seed_development_pilot_not_formal_generalization"
         }
@@ -60369,6 +60558,68 @@
       {
         "training_seed": 1000,
         "execution_horizon": 100,
+        "condition": "geometry",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "geometry",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 24.78 <= 7.2",
+                "value": 24.78470884930741,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 41.82 <= 8.55",
+                "value": 41.82253383387661,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 22.51 <= 7.2",
+                "value": 22.511657869280537,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 16.40 >= 9.9",
+                "value": 16.401037870140076,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 1.04 >= 9.0",
+                "value": 1.03997975446041,
+                "threshold": 9.0,
+                "passed": false
+              }
+            }
+          },
+          "elapsed_seconds": 621.6318790912628,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1000,
+        "execution_horizon": 100,
         "condition": "rgb_history",
         "report": {
           "status": "complete",
@@ -60424,6 +60675,130 @@
             }
           },
           "elapsed_seconds": 500.33227348327637,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1000,
+        "execution_horizon": 100,
+        "condition": "tracks",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 26.18 <= 7.2",
+                "value": 26.17557453384018,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 45.56 <= 8.55",
+                "value": 45.556234758047616,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 24.21 <= 7.2",
+                "value": 24.205655163806004,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 20.23 >= 9.9",
+                "value": 20.229467840630583,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 13.39 >= 9.0",
+                "value": 13.385137015497905,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 620.933566570282,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1000,
+        "execution_horizon": 100,
+        "condition": "tracks_completion",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks_completion",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 26.09 <= 7.2",
+                "value": 26.093731137711995,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 45.63 <= 8.55",
+                "value": 45.62725061251805,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 25.04 <= 7.2",
+                "value": 25.042152563363793,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 20.20 >= 9.9",
+                "value": 20.195932231840448,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 11.68 >= 9.0",
+                "value": 11.680591519299702,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 636.9371120929718,
           "auxiliary_head_removed": true,
           "claim": "single_seed_development_pilot_not_formal_generalization"
         }
@@ -60492,6 +60867,254 @@
       },
       {
         "training_seed": 1001,
+        "execution_horizon": 10,
+        "condition": "geometry",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "geometry",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 25.86 <= 7.2",
+                "value": 25.858658741726224,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 45.48 <= 8.55",
+                "value": 45.478205852858615,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 28.22 <= 7.2",
+                "value": 28.22490478082268,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 19.34 >= 9.9",
+                "value": 19.344371844286695,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 14.42 >= 9.0",
+                "value": 14.418659410174408,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 628.648663520813,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1001,
+        "execution_horizon": 10,
+        "condition": "rgb_history",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "rgb_history",
+          "steps": 600,
+          "policy_GT_track_reads": 0,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 25.94 <= 7.2",
+                "value": 25.944098663195582,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 22.92 <= 8.55",
+                "value": 22.91935872947039,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 28.17 <= 7.2",
+                "value": 28.16929826015792,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 19.70 >= 9.9",
+                "value": 19.6962620643355,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 14.60 >= 9.0",
+                "value": 14.603008330844576,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 504.12501978874207,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1001,
+        "execution_horizon": 10,
+        "condition": "tracks",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 25.92 <= 7.2",
+                "value": 25.924469484879854,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 45.83 <= 8.55",
+                "value": 45.82555104365506,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 28.39 <= 7.2",
+                "value": 28.385166127605633,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 20.02 >= 9.9",
+                "value": 20.023831831631966,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 14.29 >= 9.0",
+                "value": 14.289723594196404,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 598.9438471794128,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1001,
+        "execution_horizon": 10,
+        "condition": "tracks_completion",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks_completion",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 25.84 <= 7.2",
+                "value": 25.837583118767263,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 45.54 <= 8.55",
+                "value": 45.54366125833365,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 28.26 <= 7.2",
+                "value": 28.26365849556193,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 19.51 >= 9.9",
+                "value": 19.50506085378626,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 14.46 >= 9.0",
+                "value": 14.458531960983573,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 619.0925877094269,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1001,
         "execution_horizon": 100,
         "condition": "act",
         "report": {
@@ -60548,6 +61171,254 @@
             }
           },
           "elapsed_seconds": 494.0861430168152,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1001,
+        "execution_horizon": 100,
+        "condition": "geometry",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "geometry",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 24.46 <= 7.2",
+                "value": 24.46435043749629,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 37.80 <= 8.55",
+                "value": 37.79610325221991,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 20.22 <= 7.2",
+                "value": 20.215266959484136,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 13.33 >= 9.9",
+                "value": 13.33288562948547,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 9.51 >= 9.0",
+                "value": 9.51157301282469,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 592.3678758144379,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1001,
+        "execution_horizon": 100,
+        "condition": "rgb_history",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "rgb_history",
+          "steps": 600,
+          "policy_GT_track_reads": 0,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 24.78 <= 7.2",
+                "value": 24.78489618130622,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 27.74 <= 8.55",
+                "value": 27.73752828361048,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 19.27 <= 7.2",
+                "value": 19.265058066425407,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 14.24 >= 9.9",
+                "value": 14.24248423394628,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 8.65 >= 9.0",
+                "value": 8.653542082032933,
+                "threshold": 9.0,
+                "passed": false
+              }
+            }
+          },
+          "elapsed_seconds": 496.9284698963165,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1001,
+        "execution_horizon": 100,
+        "condition": "tracks",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 25.19 <= 7.2",
+                "value": 25.190550404754227,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 38.04 <= 8.55",
+                "value": 38.03545045678408,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 20.82 <= 7.2",
+                "value": 20.815150540823133,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 14.07 >= 9.9",
+                "value": 14.073155371412033,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 11.04 >= 9.0",
+                "value": 11.039953373266142,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 632.5030200481415,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1001,
+        "execution_horizon": 100,
+        "condition": "tracks_completion",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks_completion",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 26.04 <= 7.2",
+                "value": 26.041212607785067,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 43.83 <= 8.55",
+                "value": 43.82751570350064,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 22.22 <= 7.2",
+                "value": 22.215821615900815,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 18.61 >= 9.9",
+                "value": 18.60920453256476,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 14.02 >= 9.0",
+                "value": 14.016181060618974,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 604.4126851558685,
           "auxiliary_head_removed": true,
           "claim": "single_seed_development_pilot_not_formal_generalization"
         }
@@ -60616,6 +61487,254 @@
       },
       {
         "training_seed": 1002,
+        "execution_horizon": 10,
+        "condition": "geometry",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "geometry",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 26.00 <= 7.2",
+                "value": 25.996261959745187,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 45.49 <= 8.55",
+                "value": 45.491809822492726,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 28.40 <= 7.2",
+                "value": 28.398137078311972,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 20.13 >= 9.9",
+                "value": 20.130447007226017,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 14.26 >= 9.0",
+                "value": 14.26420214001474,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 629.352353811264,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1002,
+        "execution_horizon": 10,
+        "condition": "rgb_history",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "rgb_history",
+          "steps": 600,
+          "policy_GT_track_reads": 0,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 26.05 <= 7.2",
+                "value": 26.049746804907823,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 40.31 <= 8.55",
+                "value": 40.30797023775169,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 23.35 <= 7.2",
+                "value": 23.348330708694064,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 14.30 >= 9.9",
+                "value": 14.30318020327255,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 3.44 >= 9.0",
+                "value": 3.4399400016445307,
+                "threshold": 9.0,
+                "passed": false
+              }
+            }
+          },
+          "elapsed_seconds": 504.59202551841736,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1002,
+        "execution_horizon": 10,
+        "condition": "tracks",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 25.88 <= 7.2",
+                "value": 25.875666753640537,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 45.46 <= 8.55",
+                "value": 45.457229312598926,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 28.25 <= 7.2",
+                "value": 28.254765930353464,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 19.62 >= 9.9",
+                "value": 19.617453093845477,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 14.41 >= 9.0",
+                "value": 14.413123898290369,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 615.6363961696625,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1002,
+        "execution_horizon": 10,
+        "condition": "tracks_completion",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks_completion",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 25.87 <= 7.2",
+                "value": 25.865816825408185,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 45.38 <= 8.55",
+                "value": 45.38176981706551,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 25.31 <= 7.2",
+                "value": 25.31343192913275,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 19.75 >= 9.9",
+                "value": 19.75192471425522,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 11.03 >= 9.0",
+                "value": 11.025114825309808,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 608.2441539764404,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1002,
         "execution_horizon": 100,
         "condition": "act",
         "report": {
@@ -60672,6 +61791,254 @@
             }
           },
           "elapsed_seconds": 587.1188209056854,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1002,
+        "execution_horizon": 100,
+        "condition": "geometry",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "geometry",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 25.88 <= 7.2",
+                "value": 25.877295274422497,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 38.05 <= 8.55",
+                "value": 38.05170011946655,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 24.07 <= 7.2",
+                "value": 24.06778634403669,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 15.55 >= 9.9",
+                "value": 15.547679060389173,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 1.44 >= 9.0",
+                "value": 1.4437305220042995,
+                "threshold": 9.0,
+                "passed": false
+              }
+            }
+          },
+          "elapsed_seconds": 607.4507234096527,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1002,
+        "execution_horizon": 100,
+        "condition": "rgb_history",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "rgb_history",
+          "steps": 600,
+          "policy_GT_track_reads": 0,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 14.12 <= 7.2",
+                "value": 14.119788189928006,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 34.82 <= 8.55",
+                "value": 34.819090077364876,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 22.31 <= 7.2",
+                "value": 22.308716501703984,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 15.15 >= 9.9",
+                "value": 15.152710181076694,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 14.79 >= 9.0",
+                "value": 14.785331695417256,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 499.6065790653229,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1002,
+        "execution_horizon": 100,
+        "condition": "tracks",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 23.58 <= 7.2",
+                "value": 23.57992179250131,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 45.56 <= 8.55",
+                "value": 45.56269673741989,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 19.44 <= 7.2",
+                "value": 19.44312452591122,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 20.26 >= 9.9",
+                "value": 20.260147722558376,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 11.04 >= 9.0",
+                "value": 11.041558679827698,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 602.0856142044067,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        }
+      },
+      {
+        "training_seed": 1002,
+        "execution_horizon": 100,
+        "condition": "tracks_completion",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks_completion",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 26.16 <= 7.2",
+                "value": 26.162694973608918,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 37.05 <= 8.55",
+                "value": 37.05239353600218,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 22.44 <= 7.2",
+                "value": 22.436804109260734,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 16.42 >= 9.9",
+                "value": 16.4234545892263,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 4.48 >= 9.0",
+                "value": 4.478729667343144,
+                "threshold": 9.0,
+                "passed": false
+              }
+            }
+          },
+          "elapsed_seconds": 609.5670003890991,
           "auxiliary_head_removed": true,
           "claim": "single_seed_development_pilot_not_formal_generalization"
         }
@@ -60801,7 +62168,648 @@
         }
       }
     ],
-    "sensitivity": [],
+    "sensitivity": [
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1000,
+        "condition": "completion_gain100_w01",
+        "checkpoint_sha256": "3d75fd36eb1de19eab417d6e9f2b68409bc276738fb7d3b60a1e780d16539a87",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.3869672884117318,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.38702340699501153,
+            "mean_action_change_radians": 0.00020171375565031452,
+            "L1_difference_vs_correct": 5.611858327975172e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.38696215569954845,
+            "mean_action_change_radians": 0.00014410443593648156,
+            "L1_difference_vs_correct": -5.132712183331112e-06
+          }
+        },
+        "reference_prior_action_L1": 0.3869672882555706,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1000,
+        "condition": "completion_gain100_w1",
+        "checkpoint_sha256": "d15db996a090dd23b37fb241fe4e37fbef469ecd2cec97d969bb635550df9bb9",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.3816861066102623,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.38172388176637423,
+            "mean_action_change_radians": 0.00017923009064519727,
+            "L1_difference_vs_correct": 3.777515611191884e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.3816838654560436,
+            "mean_action_change_radians": 0.0001526560952281591,
+            "L1_difference_vs_correct": -2.2411542187072975e-06
+          }
+        },
+        "reference_prior_action_L1": 0.38168610651348633,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1000,
+        "condition": "completion_gain100_w10",
+        "checkpoint_sha256": "97060fd1e9247c6721c8a16bc078166cda31ed847fe4a3072b2f0b0af91185ce",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.3657213838374551,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.365727302181295,
+            "mean_action_change_radians": 0.00010493091766123605,
+            "L1_difference_vs_correct": 5.918343839894646e-06
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.36573206809278813,
+            "mean_action_change_radians": 0.00011464612299309391,
+            "L1_difference_vs_correct": 1.0684255333015535e-05
+          }
+        },
+        "reference_prior_action_L1": 0.3657213839089374,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1000,
+        "condition": "tracks",
+        "checkpoint_sha256": "141d3f7d097290337498634b147f7e5d55e93dca9d7a6b083610907b7ebc53c5",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.379552800574711,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.3796161329558523,
+            "mean_action_change_radians": 0.00020557908723495193,
+            "L1_difference_vs_correct": 6.333238114125672e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.37954843114333603,
+            "mean_action_change_radians": 0.00015142718218936078,
+            "L1_difference_vs_correct": -4.369431374995347e-06
+          }
+        },
+        "reference_prior_action_L1": 0.3795528008089528,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1000,
+        "condition": "tracks_completion",
+        "checkpoint_sha256": "b687c512927896b0b2b6610c6890a87c82dce1ff39f99156bd9f00c2288ff3bf",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.3770180153520562,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.3770863734892476,
+            "mean_action_change_radians": 0.00020470809637920107,
+            "L1_difference_vs_correct": 6.835813719141548e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.37701441811257613,
+            "mean_action_change_radians": 0.00014459290194134648,
+            "L1_difference_vs_correct": -3.597239480068737e-06
+          }
+        },
+        "reference_prior_action_L1": 0.37701801543343594,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1001,
+        "condition": "completion_gain100_w01",
+        "checkpoint_sha256": "d64203a73d4206faa499c8f6f20689e1aaa32ca5c2c9b544e2495c0458fa2e7f",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.3674663933534541,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.3674533134581252,
+            "mean_action_change_radians": 0.00021352139914910574,
+            "L1_difference_vs_correct": -1.3079895328893532e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.3674662233659274,
+            "mean_action_change_radians": 0.0001652596836991633,
+            "L1_difference_vs_correct": -1.699875267213713e-07
+          }
+        },
+        "reference_prior_action_L1": 0.3674663932720743,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1001,
+        "condition": "completion_gain100_w1",
+        "checkpoint_sha256": "4dff57b3452bd75361f9809caeb484e761cc3f2a8dd83ffd899d34b1820d347c",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.3681339032002321,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.3681008590442349,
+            "mean_action_change_radians": 0.00017218708227762975,
+            "L1_difference_vs_correct": -3.304415599719723e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.3681205219731511,
+            "mean_action_change_radians": 0.00014315573209326975,
+            "L1_difference_vs_correct": -1.3381227080999647e-05
+          }
+        },
+        "reference_prior_action_L1": 0.3681339031430463,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1001,
+        "condition": "completion_gain100_w10",
+        "checkpoint_sha256": "0282a8b11dd650aa53d30e7e5d4210406ca33a014cdd48c6478dedb0f178885a",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.3663675166314389,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.3663453306278303,
+            "mean_action_change_radians": 0.0002790114400514219,
+            "L1_difference_vs_correct": -2.218600360859302e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.36635669741048005,
+            "mean_action_change_radians": 0.00022500192759390282,
+            "L1_difference_vs_correct": -1.0819220958857567e-05
+          }
+        },
+        "reference_prior_action_L1": 0.36636751672106666,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1001,
+        "condition": "tracks",
+        "checkpoint_sha256": "a3dc89e1f1e5f16e9461bab3e85962e05bb37f0841aa3b5e7b352f551e3f8c3d",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.3659851247993186,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.3660008925210671,
+            "mean_action_change_radians": 0.00022031935288512253,
+            "L1_difference_vs_correct": 1.5767721748494168e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.36599300030061926,
+            "mean_action_change_radians": 0.00016966105299730743,
+            "L1_difference_vs_correct": 7.875501300658172e-06
+          }
+        },
+        "reference_prior_action_L1": 0.36598512469154537,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1001,
+        "condition": "tracks_completion",
+        "checkpoint_sha256": "61861019623cc35680d9b081ef82e4b9d7d7465674c0e7077146f451a2dd079b",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.36703354970563307,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.36700481871568663,
+            "mean_action_change_radians": 0.00021162031449163159,
+            "L1_difference_vs_correct": -2.873098994643497e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.3670247521235185,
+            "mean_action_change_radians": 0.0001611711310730011,
+            "L1_difference_vs_correct": -8.797582114583591e-06
+          }
+        },
+        "reference_prior_action_L1": 0.36703354959895956,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1002,
+        "condition": "completion_gain100_w01",
+        "checkpoint_sha256": "ffa86cbf398ffbe9fb262a4e791e967e9e87369534274113778654b028b9acbf",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.3744438014174169,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.3744954933417365,
+            "mean_action_change_radians": 0.00019127649669702521,
+            "L1_difference_vs_correct": 5.169192431958569e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.37447393062975826,
+            "mean_action_change_radians": 0.000151038108989241,
+            "L1_difference_vs_correct": 3.012921234135657e-05
+          }
+        },
+        "reference_prior_action_L1": 0.3744438015708288,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1002,
+        "condition": "completion_gain100_w1",
+        "checkpoint_sha256": "bdfb91c4b084d329c19c9a2401d7eeb6082e7a9cddcee0dcc408556a2cc219f5",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.3683826913142902,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.3683960228452652,
+            "mean_action_change_radians": 0.00015891658812681577,
+            "L1_difference_vs_correct": 1.3331530974991512e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.36838795023002574,
+            "mean_action_change_radians": 0.00013407728135077712,
+            "L1_difference_vs_correct": 5.258915735550929e-06
+          }
+        },
+        "reference_prior_action_L1": 0.3683826915287369,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1002,
+        "condition": "completion_gain100_w10",
+        "checkpoint_sha256": "85e10c2f5282cd915673063239fa3cd9e1fa3e328375f5c08aeb58d0facb347e",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.3745135871045186,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.37451753825479056,
+            "mean_action_change_radians": 0.0001227735395454294,
+            "L1_difference_vs_correct": 3.951150271963577e-06
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.3745180176510131,
+            "mean_action_change_radians": 0.00011746244666862293,
+            "L1_difference_vs_correct": 4.430546494516019e-06
+          }
+        },
+        "reference_prior_action_L1": 0.37451358717160194,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1002,
+        "condition": "tracks",
+        "checkpoint_sha256": "8faf7c7be1598b6006af968ba17a185fe8e60f58d65a4cdc84fff2de372d6085",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.37295008753728154,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.37298057231220455,
+            "mean_action_change_radians": 0.00018012077604494895,
+            "L1_difference_vs_correct": 3.0484774923011937e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.37296799644258044,
+            "mean_action_change_radians": 0.00014786108285797647,
+            "L1_difference_vs_correct": 1.7908905298902322e-05
+          }
+        },
+        "reference_prior_action_L1": 0.37295008752188535,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1002,
+        "condition": "tracks_completion",
+        "checkpoint_sha256": "3cb67a03b1ede5cb2153c00c372e9e6f84a762bfc2944a8084fa4b08dac3a28c",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.37443096608209164,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.3744772804070555,
+            "mean_action_change_radians": 0.00019222734410545217,
+            "L1_difference_vs_correct": 4.631432496388088e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.37445577391036394,
+            "mean_action_change_radians": 0.00015105017693620948,
+            "L1_difference_vs_correct": 2.480782827229966e-05
+          }
+        },
+        "reference_prior_action_L1": 0.3744309660342535,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1003,
+        "condition": "completion_gain100_w01",
+        "checkpoint_sha256": "df1fa26d5a6f1e087f24a9a96870c4f2962c681ef6e3a0e2c52bf6cc83c3c6ab",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.35401613230146556,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.35406744866522083,
+            "mean_action_change_radians": 0.0001970616332712163,
+            "L1_difference_vs_correct": 5.13163637552716e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.354030988056038,
+            "mean_action_change_radians": 0.00018727111353345646,
+            "L1_difference_vs_correct": 1.4855754572440372e-05
+          }
+        },
+        "reference_prior_action_L1": 0.35401613220304,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1003,
+        "condition": "completion_gain100_w1",
+        "checkpoint_sha256": "72207d11146bd06004f8f10529b5f5801b6ddf5103d9a8cae10be8a17439bcd2",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.35762271304549725,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.35766265511876766,
+            "mean_action_change_radians": 0.00015862319233868422,
+            "L1_difference_vs_correct": 3.9942073270404777e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.35762340149429317,
+            "mean_action_change_radians": 0.00016561180994374152,
+            "L1_difference_vs_correct": 6.884487959157859e-07
+          }
+        },
+        "reference_prior_action_L1": 0.35762271297071585,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1003,
+        "condition": "completion_gain100_w10",
+        "checkpoint_sha256": "2e54c56acdd0bdfc8bd95a627d5f35f476f866348ba6902eb71dad693c92013f",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.3588556698938394,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.35887108996169176,
+            "mean_action_change_radians": 0.0001433422077557458,
+            "L1_difference_vs_correct": 1.5420067852378594e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.35884567244760956,
+            "mean_action_change_radians": 0.00012347590687081128,
+            "L1_difference_vs_correct": -9.997446229814688e-06
+          }
+        },
+        "reference_prior_action_L1": 0.3588556700142595,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1003,
+        "condition": "tracks",
+        "checkpoint_sha256": "66d9661e11a736846a5882f29c1707c3afccf30aef84b539d003ca9a7bab4ea3",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.3514215526585737,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.3514842604839487,
+            "mean_action_change_radians": 0.00020666549559086522,
+            "L1_difference_vs_correct": 6.270782537498576e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.351437341537417,
+            "mean_action_change_radians": 0.00019212730593288525,
+            "L1_difference_vs_correct": 1.5788878843292498e-05
+          }
+        },
+        "reference_prior_action_L1": 0.3514215525057117,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      },
+      {
+        "status": "complete",
+        "optimizer_steps": 0,
+        "checkpoint_optimizer_step": 2000,
+        "training_seed": 1003,
+        "condition": "tracks_completion",
+        "checkpoint_sha256": "fad1f55c1ad9a77111d11ee7adf5b4bc65aa1814c78c4b4fc5b7685c08341ff0",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "windows": 427,
+        "moving_input_windows": 381,
+        "action_elements": 433596,
+        "variants": {
+          "correct": {
+            "prior_action_L1": 0.35476782601722434,
+            "mean_action_change_radians": 0.0,
+            "L1_difference_vs_correct": 0.0
+          },
+          "zero_motion": {
+            "prior_action_L1": 0.3548147084104855,
+            "mean_action_change_radians": 0.0002061786431172458,
+            "L1_difference_vs_correct": 4.688239326117172e-05
+          },
+          "reverse_valid_past": {
+            "prior_action_L1": 0.35477586813263967,
+            "mean_action_change_radians": 0.00018930974434296733,
+            "L1_difference_vs_correct": 8.042115415329842e-06
+          }
+        },
+        "reference_prior_action_L1": 0.35476782591714917,
+        "script_sha256": "1ded3c74f6894c8d4ebb8bd5f5c8434b4b7aff4ba71d3f2b552dac9641980828",
+        "scope": "Inference perturbations, not retrained baselines or task-success estimates. All RGB, current points, timestamps and masks stay fixed."
+      }
+    ],
     "videos": [
       {
         "training_seed": 1000,
@@ -60869,6 +62877,69 @@
       {
         "training_seed": 1000,
         "execution_horizon": 10,
+        "condition": "geometry",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "geometry",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 25.88 <= 7.2",
+                "value": 25.877103785794016,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 36.10 <= 8.55",
+                "value": 36.10308126743113,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 25.89 <= 7.2",
+                "value": 25.888352466638572,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 15.82 >= 9.9",
+                "value": 15.815664909227142,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 0.85 >= 9.0",
+                "value": 0.8521496820028479,
+                "threshold": 9.0,
+                "passed": false
+              }
+            }
+          },
+          "elapsed_seconds": 612.00328540802,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        },
+        "path": "cluster-videos/seed-1000/execute-10/geometry"
+      },
+      {
+        "training_seed": 1000,
+        "execution_horizon": 10,
         "condition": "rgb_history",
         "report": {
           "status": "complete",
@@ -60928,6 +62999,132 @@
           "claim": "single_seed_development_pilot_not_formal_generalization"
         },
         "path": "cluster-videos/seed-1000/execute-10/rgb_history"
+      },
+      {
+        "training_seed": 1000,
+        "execution_horizon": 10,
+        "condition": "tracks",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 26.10 <= 7.2",
+                "value": 26.102938693507312,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 44.13 <= 8.55",
+                "value": 44.13073004135781,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 23.60 <= 7.2",
+                "value": 23.604591526196185,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 17.18 >= 9.9",
+                "value": 17.184899184798375,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 13.86 >= 9.0",
+                "value": 13.860546981298462,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 617.6421313285828,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        },
+        "path": "cluster-videos/seed-1000/execute-10/tracks"
+      },
+      {
+        "training_seed": 1000,
+        "execution_horizon": 10,
+        "condition": "tracks_completion",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks_completion",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 25.61 <= 7.2",
+                "value": 25.610008565819914,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 34.41 <= 8.55",
+                "value": 34.41312193697704,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 21.76 <= 7.2",
+                "value": 21.759071755959294,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 14.15 >= 9.9",
+                "value": 14.14596752685942,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 11.38 >= 9.0",
+                "value": 11.382741117216977,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 636.9166622161865,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        },
+        "path": "cluster-videos/seed-1000/execute-10/tracks_completion"
       },
       {
         "training_seed": 1000,
@@ -60995,6 +63192,69 @@
       {
         "training_seed": 1000,
         "execution_horizon": 100,
+        "condition": "geometry",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "geometry",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 24.78 <= 7.2",
+                "value": 24.78470884930741,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 41.82 <= 8.55",
+                "value": 41.82253383387661,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 22.51 <= 7.2",
+                "value": 22.511657869280537,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 16.40 >= 9.9",
+                "value": 16.401037870140076,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 1.04 >= 9.0",
+                "value": 1.03997975446041,
+                "threshold": 9.0,
+                "passed": false
+              }
+            }
+          },
+          "elapsed_seconds": 621.6318790912628,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        },
+        "path": "cluster-videos/seed-1000/execute-100/geometry"
+      },
+      {
+        "training_seed": 1000,
+        "execution_horizon": 100,
         "condition": "rgb_history",
         "report": {
           "status": "complete",
@@ -61054,6 +63314,132 @@
           "claim": "single_seed_development_pilot_not_formal_generalization"
         },
         "path": "cluster-videos/seed-1000/execute-100/rgb_history"
+      },
+      {
+        "training_seed": 1000,
+        "execution_horizon": 100,
+        "condition": "tracks",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 26.18 <= 7.2",
+                "value": 26.17557453384018,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 45.56 <= 8.55",
+                "value": 45.556234758047616,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 24.21 <= 7.2",
+                "value": 24.205655163806004,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 20.23 >= 9.9",
+                "value": 20.229467840630583,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 13.39 >= 9.0",
+                "value": 13.385137015497905,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 620.933566570282,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        },
+        "path": "cluster-videos/seed-1000/execute-100/tracks"
+      },
+      {
+        "training_seed": 1000,
+        "execution_horizon": 100,
+        "condition": "tracks_completion",
+        "report": {
+          "status": "complete",
+          "mode": "learned_policy_closed_loop",
+          "pilot": true,
+          "condition": "tracks_completion",
+          "steps": 600,
+          "policy_GT_track_reads": 601,
+          "first_success_step": null,
+          "ever_success": false,
+          "final_success": false,
+          "geometry": {
+            "success": false,
+            "garment_type": "top-long-sleeve",
+            "thresholds": [
+              7.2,
+              8.55,
+              7.2,
+              9.9,
+              9.0
+            ],
+            "details": {
+              "condition_1": {
+                "description": "dist(p[0], p[4]) = 26.09 <= 7.2",
+                "value": 26.093731137711995,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_2": {
+                "description": "dist(p[2], p[3]) = 45.63 <= 8.55",
+                "value": 45.62725061251805,
+                "threshold": 8.55,
+                "passed": false
+              },
+              "condition_3": {
+                "description": "dist(p[1], p[5]) = 25.04 <= 7.2",
+                "value": 25.042152563363793,
+                "threshold": 7.2,
+                "passed": false
+              },
+              "condition_4": {
+                "description": "dist(p[0], p[1]) = 20.20 >= 9.9",
+                "value": 20.195932231840448,
+                "threshold": 9.9,
+                "passed": true
+              },
+              "condition_5": {
+                "description": "dist(p[4], p[5]) = 11.68 >= 9.0",
+                "value": 11.680591519299702,
+                "threshold": 9.0,
+                "passed": true
+              }
+            }
+          },
+          "elapsed_seconds": 636.9371120929718,
+          "auxiliary_head_removed": true,
+          "claim": "single_seed_development_pilot_not_formal_generalization"
+        },
+        "path": "cluster-videos/seed-1000/execute-100/tracks_completion"
       }
     ]
   },
@@ -61251,7 +63637,7 @@
       "job_name": "ei-liupeiqi-wam-training-actpilot-residual-1n8g-b20z-20261019-212607",
       "status": "running",
       "stage": "training",
-      "snapshot_utc": "2026-10-19T21:40:04.077618+00:00",
+      "snapshot_utc": "2026-10-19T21:48:04.402817+00:00",
       "exit_codes": {
         "seed-1000/connected": null,
         "seed-1000/detached": null,
@@ -61280,7 +63666,976 @@
       "deadline_utc": "2026-10-19T22:56:28Z",
       "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f"
     },
-    "audit": null,
+    "audit": {
+      "status": "partial",
+      "protocol_fingerprint": "a034301206251639a4aeb8f35f60dbf2862a45d08c9f6365d8774d67acc08112",
+      "checks_passed": 190,
+      "verified_runs": 8,
+      "runs": {
+        "1000/connected": {
+          "seed": 1000,
+          "variant": "connected",
+          "steps": 337,
+          "validation": [
+            {
+              "step": 250,
+              "windows": 427,
+              "prior_action_L1": 0.6453279678939828,
+              "action_MAE_radians": 0.33221569601762047,
+              "aggregation": "valid_element_weighted",
+              "completion_EPE_mm": 11.98096850098395,
+              "static_EPE_mm": 14.212699232212989,
+              "completion_static_gate_pass": true,
+              "moving_EPE_mm": 27.666270945208776,
+              "moving_static_EPE_mm": 46.05298086273921
+            }
+          ],
+          "gradient_diagnostics": [
+            {
+              "step": 1,
+              "loss": 84.53558492660522,
+              "action_loss": 0.9153493130579591,
+              "kl_loss": 7.776246279478073,
+              "auxiliary_loss": 0.021293249788868707,
+              "observation_action_grad_norm": 2.940954419013435,
+              "observation_aux_grad_norm": 0.00033759409416563577,
+              "weighted_aux_grad_ratio": 0.03157891013357529,
+              "action_aux_gradient_cosine": -0.04013257504524569,
+              "gradient_norm": 1120.1473388671875,
+              "auxiliary_head_gradient_norm": 1.942554235458374,
+              "update_seconds": 3.8483714968897402,
+              "elapsed_seconds": 3.85043759457767,
+              "peak_reserved_bytes": 6329204736
+            },
+            {
+              "step": 100,
+              "loss": 13.811970666050911,
+              "action_loss": 0.6572143316734582,
+              "kl_loss": 0.30715914256870747,
+              "auxiliary_loss": 0.03665272463877045,
+              "observation_action_grad_norm": 3.4012645830815122,
+              "observation_aux_grad_norm": 0.00029378867328012416,
+              "weighted_aux_grad_ratio": 0.02376212201231899,
+              "action_aux_gradient_cosine": 0.036564534579693456,
+              "gradient_norm": 70.09538269042969,
+              "auxiliary_head_gradient_norm": 1.858237862586975,
+              "update_seconds": 2.2269282690249383,
+              "elapsed_seconds": 224.8026166218333,
+              "peak_reserved_bytes": 6830424064
+            },
+            {
+              "step": 200,
+              "loss": 19.61513341963291,
+              "action_loss": 0.5674341581761837,
+              "kl_loss": 0.24322067201137543,
+              "auxiliary_loss": 0.06039800918006222,
+              "observation_action_grad_norm": 0.8859947918801033,
+              "observation_aux_grad_norm": 0.004474042362880984,
+              "weighted_aux_grad_ratio": 1.3891831704978208,
+              "action_aux_gradient_cosine": -0.026500640568091805,
+              "gradient_norm": 58.62074661254883,
+              "auxiliary_head_gradient_norm": 3.4615707397460938,
+              "update_seconds": 2.2735857469961047,
+              "elapsed_seconds": 445.8494759895839,
+              "peak_reserved_bytes": 6830424064
+            },
+            {
+              "step": 300,
+              "loss": 22.33553847670555,
+              "action_loss": 0.48232412501238286,
+              "kl_loss": 0.20550299994647503,
+              "auxiliary_loss": 0.07196722481694451,
+              "observation_action_grad_norm": 0.6787654803437787,
+              "observation_aux_grad_norm": 0.0018224390786272476,
+              "weighted_aux_grad_ratio": 0.7386247607589479,
+              "action_aux_gradient_cosine": -0.00492697211320815,
+              "gradient_norm": 56.770042419433594,
+              "auxiliary_head_gradient_norm": 1.9021492004394531,
+              "update_seconds": 2.172692621126771,
+              "elapsed_seconds": 700.8650958966464,
+              "peak_reserved_bytes": 6970933248
+            }
+          ]
+        },
+        "1000/detached": {
+          "seed": 1000,
+          "variant": "detached",
+          "steps": 339,
+          "validation": [
+            {
+              "step": 250,
+              "windows": 427,
+              "prior_action_L1": 0.643714837420289,
+              "action_MAE_radians": 0.33098565764965565,
+              "aggregation": "valid_element_weighted",
+              "completion_EPE_mm": 11.843358950555828,
+              "static_EPE_mm": 14.212699232212989,
+              "completion_static_gate_pass": true,
+              "moving_EPE_mm": 27.59339528848712,
+              "moving_static_EPE_mm": 46.05298086273921
+            }
+          ],
+          "gradient_diagnostics": [
+            {
+              "step": 1,
+              "loss": 84.53558492660522,
+              "action_loss": 0.9153493130579591,
+              "kl_loss": 7.776246279478073,
+              "auxiliary_loss": 0.021293249788868707,
+              "observation_action_grad_norm": 2.940954419013435,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 1120.1473388671875,
+              "auxiliary_head_gradient_norm": 1.942554235458374,
+              "update_seconds": 3.7400341681204736,
+              "elapsed_seconds": 3.742609611712396,
+              "peak_reserved_bytes": 6333399040
+            },
+            {
+              "step": 100,
+              "loss": 13.829023852944374,
+              "action_loss": 0.6573526477441192,
+              "kl_loss": 0.30685870721936226,
+              "auxiliary_loss": 0.036725132924402715,
+              "observation_action_grad_norm": 2.7507096705910814,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 70.40666198730469,
+              "auxiliary_head_gradient_norm": 2.23972487449646,
+              "update_seconds": 2.20184081280604,
+              "elapsed_seconds": 221.55613602185622,
+              "peak_reserved_bytes": 6748635136
+            },
+            {
+              "step": 200,
+              "loss": 19.625317871570587,
+              "action_loss": 0.5679763946682215,
+              "kl_loss": 0.2427845112979412,
+              "auxiliary_loss": 0.06044891388182805,
+              "observation_action_grad_norm": 0.8399246050716045,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 59.03763198852539,
+              "auxiliary_head_gradient_norm": 3.3001468181610107,
+              "update_seconds": 2.284835357218981,
+              "elapsed_seconds": 442.5808801567182,
+              "peak_reserved_bytes": 6748635136
+            },
+            {
+              "step": 300,
+              "loss": 22.383090317249298,
+              "action_loss": 0.4784731774125248,
+              "kl_loss": 0.20558225363492966,
+              "auxiliary_loss": 0.07215119618149402,
+              "observation_action_grad_norm": 0.4658243903399545,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 56.45478820800781,
+              "auxiliary_head_gradient_norm": 1.4049091339111328,
+              "update_seconds": 2.2036979300901294,
+              "elapsed_seconds": 697.5468812440522,
+              "peak_reserved_bytes": 6889144320
+            }
+          ]
+        },
+        "1001/connected": {
+          "seed": 1001,
+          "variant": "connected",
+          "steps": 349,
+          "validation": [
+            {
+              "step": 250,
+              "windows": 427,
+              "prior_action_L1": 0.655927549142114,
+              "action_MAE_radians": 0.34414370472650535,
+              "aggregation": "valid_element_weighted",
+              "completion_EPE_mm": 12.031023699840015,
+              "static_EPE_mm": 14.212699232212989,
+              "completion_static_gate_pass": true,
+              "moving_EPE_mm": 27.683748658959114,
+              "moving_static_EPE_mm": 46.05298086273921
+            }
+          ],
+          "gradient_diagnostics": [
+            {
+              "step": 1,
+              "loss": 100.61852788925171,
+              "action_loss": 0.6833485084353015,
+              "kl_loss": 8.800808727741241,
+              "auxiliary_loss": 0.043355472084840585,
+              "observation_action_grad_norm": 1.9243876616212459,
+              "observation_aux_grad_norm": 0.0016516929012575226,
+              "weighted_aux_grad_ratio": 0.23611703930440955,
+              "action_aux_gradient_cosine": 0.026145026003020964,
+              "gradient_norm": 1305.537841796875,
+              "auxiliary_head_gradient_norm": 1.6012654304504395,
+              "update_seconds": 3.6187856439501047,
+              "elapsed_seconds": 3.6235358621925116,
+              "peak_reserved_bytes": 6280970240
+            },
+            {
+              "step": 100,
+              "loss": 20.614193871617317,
+              "action_loss": 0.492029266548343,
+              "kl_loss": 0.3397737219929695,
+              "auxiliary_loss": 0.06079399125655982,
+              "observation_action_grad_norm": 0.88567496810341,
+              "observation_aux_grad_norm": 0.004294696249338938,
+              "weighted_aux_grad_ratio": 1.3339780176052074,
+              "action_aux_gradient_cosine": 0.011344392841886541,
+              "gradient_norm": 89.33810424804688,
+              "auxiliary_head_gradient_norm": 3.348745584487915,
+              "update_seconds": 2.185705413110554,
+              "elapsed_seconds": 217.58843473903835,
+              "peak_reserved_bytes": 6782189568
+            },
+            {
+              "step": 200,
+              "loss": 15.504774525761604,
+              "action_loss": 0.5000991348642856,
+              "kl_loss": 0.254466712474823,
+              "auxiliary_loss": 0.045292649910607,
+              "observation_action_grad_norm": 1.2423802463909728,
+              "observation_aux_grad_norm": 0.000274136577152179,
+              "weighted_aux_grad_ratio": 0.060702005359180196,
+              "action_aux_gradient_cosine": 0.03379397235228487,
+              "gradient_norm": 70.93453979492188,
+              "auxiliary_head_gradient_norm": 2.440107583999634,
+              "update_seconds": 2.049148915335536,
+              "elapsed_seconds": 432.17328758211806,
+              "peak_reserved_bytes": 6782189568
+            },
+            {
+              "step": 300,
+              "loss": 20.769432365894318,
+              "action_loss": 0.4907970232889056,
+              "kl_loss": 0.21306715346872807,
+              "auxiliary_loss": 0.06596860603895038,
+              "observation_action_grad_norm": 1.942162021609843,
+              "observation_aux_grad_norm": 0.002347522675634907,
+              "weighted_aux_grad_ratio": 0.33251782337493213,
+              "action_aux_gradient_cosine": 0.04893757675051879,
+              "gradient_norm": 63.567535400390625,
+              "auxiliary_head_gradient_norm": 1.8626213073730469,
+              "update_seconds": 2.379253185354173,
+              "elapsed_seconds": 679.4161820448935,
+              "peak_reserved_bytes": 6922698752
+            }
+          ]
+        },
+        "1001/detached": {
+          "seed": 1001,
+          "variant": "detached",
+          "steps": 352,
+          "validation": [
+            {
+              "step": 250,
+              "windows": 427,
+              "prior_action_L1": 0.6548053701354639,
+              "action_MAE_radians": 0.34021051930620655,
+              "aggregation": "valid_element_weighted",
+              "completion_EPE_mm": 11.869613478443574,
+              "static_EPE_mm": 14.212699232212989,
+              "completion_static_gate_pass": true,
+              "moving_EPE_mm": 27.591605112815518,
+              "moving_static_EPE_mm": 46.05298086273921
+            }
+          ],
+          "gradient_diagnostics": [
+            {
+              "step": 1,
+              "loss": 100.61852788925171,
+              "action_loss": 0.6833485084353015,
+              "kl_loss": 8.800808727741241,
+              "auxiliary_loss": 0.043355472084840585,
+              "observation_action_grad_norm": 1.9243876616212459,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 1305.537841796875,
+              "auxiliary_head_gradient_norm": 1.6012654304504395,
+              "update_seconds": 3.7002524212002754,
+              "elapsed_seconds": 3.702351571060717,
+              "peak_reserved_bytes": 6280970240
+            },
+            {
+              "step": 100,
+              "loss": 20.609244227409363,
+              "action_loss": 0.49468580761458725,
+              "kl_loss": 0.33900315687060356,
+              "auxiliary_loss": 0.06079435284664214,
+              "observation_action_grad_norm": 0.9737779711069217,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 89.20409393310547,
+              "auxiliary_head_gradient_norm": 3.3626086711883545,
+              "update_seconds": 2.174847044982016,
+              "elapsed_seconds": 214.55407575285062,
+              "peak_reserved_bytes": 6782189568
+            },
+            {
+              "step": 200,
+              "loss": 15.51661665737629,
+              "action_loss": 0.5028504203655757,
+              "kl_loss": 0.25535318441689014,
+              "auxiliary_loss": 0.04529347171819609,
+              "observation_action_grad_norm": 1.4866241686905637,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 70.90155792236328,
+              "auxiliary_head_gradient_norm": 2.4328978061676025,
+              "update_seconds": 2.0351689918898046,
+              "elapsed_seconds": 426.52587232599035,
+              "peak_reserved_bytes": 6782189568
+            },
+            {
+              "step": 300,
+              "loss": 20.734277740120888,
+              "action_loss": 0.4797988017089665,
+              "kl_loss": 0.21121974289417267,
+              "auxiliary_loss": 0.06594795126784447,
+              "observation_action_grad_norm": 1.7287377865878706,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 63.20906448364258,
+              "auxiliary_head_gradient_norm": 1.4620839357376099,
+              "update_seconds": 2.1702928617596626,
+              "elapsed_seconds": 673.3567266059108,
+              "peak_reserved_bytes": 6922698752
+            }
+          ]
+        },
+        "1002/connected": {
+          "seed": 1002,
+          "variant": "connected",
+          "steps": 358,
+          "validation": [
+            {
+              "step": 250,
+              "windows": 427,
+              "prior_action_L1": 0.6762023311229699,
+              "action_MAE_radians": 0.34852540118884406,
+              "aggregation": "valid_element_weighted",
+              "completion_EPE_mm": 11.892994365519968,
+              "static_EPE_mm": 14.212699232212989,
+              "completion_static_gate_pass": true,
+              "moving_EPE_mm": 27.62564135244703,
+              "moving_static_EPE_mm": 46.05298086273921
+            }
+          ],
+          "gradient_diagnostics": [
+            {
+              "step": 1,
+              "loss": 102.57441282272339,
+              "action_loss": 0.8224669040646404,
+              "kl_loss": 9.12286913394928,
+              "auxiliary_loss": 0.03825247234090057,
+              "observation_action_grad_norm": 2.772787333369005,
+              "observation_aux_grad_norm": 0.00019605826855184267,
+              "weighted_aux_grad_ratio": 0.019451772961281817,
+              "action_aux_gradient_cosine": -0.009265045013753949,
+              "gradient_norm": 1466.5882568359375,
+              "auxiliary_head_gradient_norm": 1.8429937362670898,
+              "update_seconds": 3.507734897080809,
+              "elapsed_seconds": 3.5098416255787015,
+              "peak_reserved_bytes": 6312427520
+            },
+            {
+              "step": 100,
+              "loss": 17.9737119525671,
+              "action_loss": 0.5109935365617275,
+              "kl_loss": 0.32314000837504864,
+              "auxiliary_loss": 0.051731436486079474,
+              "observation_action_grad_norm": 0.22373427986955866,
+              "observation_aux_grad_norm": 0.000118797058452055,
+              "weighted_aux_grad_ratio": 0.14607091411836406,
+              "action_aux_gradient_cosine": 0.02581749362999929,
+              "gradient_norm": 78.01261901855469,
+              "auxiliary_head_gradient_norm": 1.9529714584350586,
+              "update_seconds": 2.05423635058105,
+              "elapsed_seconds": 212.18569129984826,
+              "peak_reserved_bytes": 6868172800
+            },
+            {
+              "step": 200,
+              "loss": 20.281346514821053,
+              "action_loss": 0.5274911525193602,
+              "kl_loss": 0.24689891934394836,
+              "auxiliary_loss": 0.06283120898933703,
+              "observation_action_grad_norm": 0.6766634086353475,
+              "observation_aux_grad_norm": 0.00017163373640662562,
+              "weighted_aux_grad_ratio": 0.06977832742675695,
+              "action_aux_gradient_cosine": 0.005986575237177177,
+              "gradient_norm": 60.87776184082031,
+              "auxiliary_head_gradient_norm": 2.1827573776245117,
+              "update_seconds": 2.1409055860713124,
+              "elapsed_seconds": 420.35459723183885,
+              "peak_reserved_bytes": 6868172800
+            },
+            {
+              "step": 300,
+              "loss": 16.097909957170486,
+              "action_loss": 0.4027228686027229,
+              "kl_loss": 0.2162015065550804,
+              "auxiliary_loss": 0.049193645611921966,
+              "observation_action_grad_norm": 1.279572833793676,
+              "observation_aux_grad_norm": 0.001698628684879623,
+              "weighted_aux_grad_ratio": 0.3651943358510944,
+              "action_aux_gradient_cosine": -0.05923400307006134,
+              "gradient_norm": 62.28813552856445,
+              "auxiliary_head_gradient_norm": 2.3530778884887695,
+              "update_seconds": 2.108119348064065,
+              "elapsed_seconds": 660.4624078688212,
+              "peak_reserved_bytes": 7008681984
+            }
+          ]
+        },
+        "1002/detached": {
+          "seed": 1002,
+          "variant": "detached",
+          "steps": 332,
+          "validation": [
+            {
+              "step": 250,
+              "windows": 427,
+              "prior_action_L1": 0.6601247074577663,
+              "action_MAE_radians": 0.33846023275922166,
+              "aggregation": "valid_element_weighted",
+              "completion_EPE_mm": 11.881693106160386,
+              "static_EPE_mm": 14.212699232212989,
+              "completion_static_gate_pass": true,
+              "moving_EPE_mm": 27.612270225206334,
+              "moving_static_EPE_mm": 46.05298086273921
+            }
+          ],
+          "gradient_diagnostics": [
+            {
+              "step": 1,
+              "loss": 102.57441282272339,
+              "action_loss": 0.8224669040646404,
+              "kl_loss": 9.12286913394928,
+              "auxiliary_loss": 0.03825247234090057,
+              "observation_action_grad_norm": 2.772787333369005,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 1466.5882568359375,
+              "auxiliary_head_gradient_norm": 1.8429937362670898,
+              "update_seconds": 3.5799481039866805,
+              "elapsed_seconds": 3.5837063789367676,
+              "peak_reserved_bytes": 6312427520
+            },
+            {
+              "step": 100,
+              "loss": 17.955711498856544,
+              "action_loss": 0.5077808624482714,
+              "kl_loss": 0.32167099602520466,
+              "auxiliary_loss": 0.05173108105987012,
+              "observation_action_grad_norm": 0.20765808801900748,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 78.15235137939453,
+              "auxiliary_head_gradient_norm": 1.9520617723464966,
+              "update_seconds": 2.220541215967387,
+              "elapsed_seconds": 226.84195091715083,
+              "peak_reserved_bytes": 6782189568
+            },
+            {
+              "step": 200,
+              "loss": 20.260842993855476,
+              "action_loss": 0.5244440834503621,
+              "kl_loss": 0.24498861655592918,
+              "auxiliary_loss": 0.06283719574093993,
+              "observation_action_grad_norm": 1.2072246379908604,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 61.2173957824707,
+              "auxiliary_head_gradient_norm": 2.1904735565185547,
+              "update_seconds": 2.299670201726258,
+              "elapsed_seconds": 451.8396257502027,
+              "peak_reserved_bytes": 6782189568
+            },
+            {
+              "step": 300,
+              "loss": 16.089502409100533,
+              "action_loss": 0.39439218130428344,
+              "kl_loss": 0.21956207044422626,
+              "auxiliary_loss": 0.04907120759025929,
+              "observation_action_grad_norm": 2.0823143037428435,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 63.297794342041016,
+              "auxiliary_head_gradient_norm": 2.052919387817383,
+              "update_seconds": 2.259248884860426,
+              "elapsed_seconds": 710.8734571882524,
+              "peak_reserved_bytes": 6922698752
+            }
+          ]
+        },
+        "1003/connected": {
+          "seed": 1003,
+          "variant": "connected",
+          "steps": 332,
+          "validation": [
+            {
+              "step": 250,
+              "windows": 427,
+              "prior_action_L1": 0.6500430482288511,
+              "action_MAE_radians": 0.33303265951923766,
+              "aggregation": "valid_element_weighted",
+              "completion_EPE_mm": 11.857336729034026,
+              "static_EPE_mm": 14.212699232212989,
+              "completion_static_gate_pass": true,
+              "moving_EPE_mm": 27.590175854289825,
+              "moving_static_EPE_mm": 46.05298086273921
+            }
+          ],
+          "gradient_diagnostics": [
+            {
+              "step": 1,
+              "loss": 110.66651391983032,
+              "action_loss": 0.7266349266283214,
+              "kl_loss": 9.440189838409424,
+              "auxiliary_loss": 0.056481206514035875,
+              "observation_action_grad_norm": 3.077617430315736,
+              "observation_aux_grad_norm": 0.0004011450990872729,
+              "weighted_aux_grad_ratio": 0.03585728871687192,
+              "action_aux_gradient_cosine": 0.02078229532543954,
+              "gradient_norm": 1361.5831298828125,
+              "auxiliary_head_gradient_norm": 1.7249091863632202,
+              "update_seconds": 3.757436635904014,
+              "elapsed_seconds": 3.7603349438868463,
+              "peak_reserved_bytes": 6280970240
+            },
+            {
+              "step": 100,
+              "loss": 15.969113916158676,
+              "action_loss": 0.5729445599718019,
+              "kl_loss": 0.29853121004998684,
+              "auxiliary_loss": 0.04511398448221371,
+              "observation_action_grad_norm": 0.7838704369984917,
+              "observation_aux_grad_norm": 0.00032813555223593413,
+              "weighted_aux_grad_ratio": 0.11515945258218634,
+              "action_aux_gradient_cosine": -0.01856109634134616,
+              "gradient_norm": 83.73270416259766,
+              "auxiliary_head_gradient_norm": 4.072858810424805,
+              "update_seconds": 2.3172770431265235,
+              "elapsed_seconds": 225.8186469557695,
+              "peak_reserved_bytes": 6782189568
+            },
+            {
+              "step": 200,
+              "loss": 11.03142848610878,
+              "action_loss": 0.6051848703064024,
+              "kl_loss": 0.2292376309633255,
+              "auxiliary_loss": 0.02956694722706743,
+              "observation_action_grad_norm": 0.8573522246696595,
+              "observation_aux_grad_norm": 0.0010220050964793194,
+              "weighted_aux_grad_ratio": 0.327932434245202,
+              "action_aux_gradient_cosine": 0.02765458961020389,
+              "gradient_norm": 72.61438751220703,
+              "auxiliary_head_gradient_norm": 1.7605034112930298,
+              "update_seconds": 2.2154290741309524,
+              "elapsed_seconds": 452.2440681150183,
+              "peak_reserved_bytes": 6782189568
+            },
+            {
+              "step": 300,
+              "loss": 18.94525672495365,
+              "action_loss": 0.5479850913397968,
+              "kl_loss": 0.19143223948776722,
+              "auxiliary_loss": 0.059916207048900105,
+              "observation_action_grad_norm": 2.8254902198970937,
+              "observation_aux_grad_norm": 0.001328251101641261,
+              "weighted_aux_grad_ratio": 0.12932335616961335,
+              "action_aux_gradient_cosine": -0.0456098770887881,
+              "gradient_norm": 52.584320068359375,
+              "auxiliary_head_gradient_norm": 1.9774590730667114,
+              "update_seconds": 2.216609972063452,
+              "elapsed_seconds": 709.7391128670424,
+              "peak_reserved_bytes": 7008681984
+            }
+          ]
+        },
+        "1003/detached": {
+          "seed": 1003,
+          "variant": "detached",
+          "steps": 357,
+          "validation": [
+            {
+              "step": 250,
+              "windows": 427,
+              "prior_action_L1": 0.6482427180308812,
+              "action_MAE_radians": 0.33204332894210614,
+              "aggregation": "valid_element_weighted",
+              "completion_EPE_mm": 11.859036303549722,
+              "static_EPE_mm": 14.212699232212989,
+              "completion_static_gate_pass": true,
+              "moving_EPE_mm": 27.59011389758579,
+              "moving_static_EPE_mm": 46.05298086273921
+            }
+          ],
+          "gradient_diagnostics": [
+            {
+              "step": 1,
+              "loss": 110.66651391983032,
+              "action_loss": 0.7266349266283214,
+              "kl_loss": 9.440189838409424,
+              "auxiliary_loss": 0.056481206514035875,
+              "observation_action_grad_norm": 3.077617430315736,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 1361.5831298828125,
+              "auxiliary_head_gradient_norm": 1.7249091863632202,
+              "update_seconds": 3.686338222119957,
+              "elapsed_seconds": 3.6883836640045047,
+              "peak_reserved_bytes": 6280970240
+            },
+            {
+              "step": 100,
+              "loss": 15.96090054512024,
+              "action_loss": 0.5721603797283024,
+              "kl_loss": 0.297667907550931,
+              "auxiliary_loss": 0.04511835968833111,
+              "observation_action_grad_norm": 0.9532547274719673,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 83.58872985839844,
+              "auxiliary_head_gradient_norm": 4.1003570556640625,
+              "update_seconds": 2.1363863591104746,
+              "elapsed_seconds": 216.28778415871784,
+              "peak_reserved_bytes": 6782189568
+            },
+            {
+              "step": 200,
+              "loss": 11.041850537061691,
+              "action_loss": 0.603749560425058,
+              "kl_loss": 0.23045499064028263,
+              "auxiliary_loss": 0.02956579707824858,
+              "observation_action_grad_norm": 0.9875204717502162,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 72.64380645751953,
+              "auxiliary_head_gradient_norm": 1.7481228113174438,
+              "update_seconds": 2.0495741348713636,
+              "elapsed_seconds": 423.55281788110733,
+              "peak_reserved_bytes": 6782189568
+            },
+            {
+              "step": 300,
+              "loss": 18.927194818854332,
+              "action_loss": 0.5394467506557703,
+              "kl_loss": 0.19029936753213406,
+              "auxiliary_loss": 0.05992277057339379,
+              "observation_action_grad_norm": 2.8277438101927084,
+              "observation_aux_grad_norm": 0.0,
+              "weighted_aux_grad_ratio": 0.0,
+              "action_aux_gradient_cosine": 0.0,
+              "gradient_norm": 51.25910568237305,
+              "auxiliary_head_gradient_norm": 1.9883474111557007,
+              "update_seconds": 2.056394557002932,
+              "elapsed_seconds": 664.1123025328852,
+              "peak_reserved_bytes": 6922698752
+            }
+          ]
+        }
+      },
+      "fixed_budget_comparisons": [
+        {
+          "fixed_optimizer_step": 250,
+          "conditions": {
+            "act": {
+              "prior_action_L1": {
+                "mean": 0.6628469187677958,
+                "sample_std": 0.006818687227611954,
+                "values": [
+                  0.6560646114543445,
+                  0.6603615561075233,
+                  0.6721904200435731,
+                  0.6627710874657421
+                ],
+                "n": 4
+              }
+            },
+            "rgb_history": {
+              "prior_action_L1": {
+                "mean": 0.6525809970368015,
+                "sample_std": 0.0029853646718686878,
+                "values": [
+                  0.6501691298521797,
+                  0.6540938802334616,
+                  0.6560493631324821,
+                  0.6500116149290825
+                ],
+                "n": 4
+              }
+            },
+            "geometry": {
+              "prior_action_L1": {
+                "mean": 0.6540154564293108,
+                "sample_std": 0.007838857557536558,
+                "values": [
+                  0.6434997619047934,
+                  0.659471274075479,
+                  0.6604948320998395,
+                  0.6525959576371312
+                ],
+                "n": 4
+              }
+            },
+            "tracks": {
+              "prior_action_L1": {
+                "mean": 0.6548451537875846,
+                "sample_std": 0.007736676576500842,
+                "values": [
+                  0.6442831797034929,
+                  0.6610413062664746,
+                  0.660197503981405,
+                  0.6538586251989659
+                ],
+                "n": 4
+              }
+            },
+            "tracks_completion": {
+              "prior_action_L1": {
+                "mean": 0.6534112889821855,
+                "sample_std": 0.009154208325136814,
+                "values": [
+                  0.6426869544243102,
+                  0.6601415439534415,
+                  0.6618548228079338,
+                  0.6489618347430566
+                ],
+                "n": 4
+              },
+              "completion_EPE_mm": {
+                "mean": 16.146481477697385,
+                "sample_std": 0.09536101466362862,
+                "values": [
+                  16.19815503494649,
+                  16.06217764608782,
+                  16.07067845866566,
+                  16.254914771089574
+                ],
+                "n": 4
+              },
+              "moving_EPE_mm": {
+                "mean": 45.949676598501675,
+                "sample_std": 0.05225999685258116,
+                "values": [
+                  46.01060984687547,
+                  45.913438408609345,
+                  45.89949831660957,
+                  45.975159821912314
+                ],
+                "n": 4
+              }
+            },
+            "completion_gain100_w01": {
+              "prior_action_L1": {
+                "mean": 0.6530115388312558,
+                "sample_std": 0.008348812238844577,
+                "values": [
+                  0.6430653982777707,
+                  0.6609492416653424,
+                  0.6587675072724327,
+                  0.6492640081094778
+                ],
+                "n": 4
+              },
+              "completion_EPE_mm": {
+                "mean": 16.239065394491877,
+                "sample_std": 0.2525622177364527,
+                "values": [
+                  16.360051592264412,
+                  16.336459597355244,
+                  16.39763883153912,
+                  15.86211155680874
+                ],
+                "n": 4
+              },
+              "moving_EPE_mm": {
+                "mean": 45.87947381671024,
+                "sample_std": 0.08804266384174547,
+                "values": [
+                  46.01038755373528,
+                  45.827627134650236,
+                  45.852233527127815,
+                  45.82764705132762
+                ],
+                "n": 4
+              }
+            },
+            "completion_gain100_w1": {
+              "prior_action_L1": {
+                "mean": 0.6556313217507195,
+                "sample_std": 0.010072920668695378,
+                "values": [
+                  0.645694736388591,
+                  0.6592037376956611,
+                  0.6681043155070225,
+                  0.6495224974116034
+                ],
+                "n": 4
+              },
+              "completion_EPE_mm": {
+                "mean": 16.39493434893625,
+                "sample_std": 0.26753959583037723,
+                "values": [
+                  16.700964366281,
+                  16.398317728836073,
+                  16.43153651320125,
+                  16.048918787426672
+                ],
+                "n": 4
+              },
+              "moving_EPE_mm": {
+                "mean": 45.99557298060124,
+                "sample_std": 0.22588213848062286,
+                "values": [
+                  46.23407818002736,
+                  45.80133251632696,
+                  45.80392003912656,
+                  46.14296118692406
+                ],
+                "n": 4
+              }
+            },
+            "completion_gain100_w10": {
+              "prior_action_L1": {
+                "mean": 0.659633733706408,
+                "sample_std": 0.01058188294540664,
+                "values": [
+                  0.6634524064840037,
+                  0.6606530018783768,
+                  0.6696366136233021,
+                  0.6447929128399491
+                ],
+                "n": 4
+              },
+              "completion_EPE_mm": {
+                "mean": 16.295954395575468,
+                "sample_std": 0.5916436552924882,
+                "values": [
+                  16.109848136158263,
+                  16.434432275320827,
+                  17.02516944672907,
+                  15.614367724093707
+                ],
+                "n": 4
+              },
+              "moving_EPE_mm": {
+                "mean": 44.411120990718885,
+                "sample_std": 0.49165848976144244,
+                "values": [
+                  44.019973869010116,
+                  44.19642922209328,
+                  45.127909500208396,
+                  44.30017137156376
+                ],
+                "n": 4
+              }
+            },
+            "connected": {
+              "prior_action_L1": {
+                "mean": 0.6568752240969795,
+                "sample_std": 0.013594765006242272,
+                "values": [
+                  0.6453279678939828,
+                  0.655927549142114,
+                  0.6762023311229699,
+                  0.6500430482288511
+                ],
+                "n": 4
+              },
+              "completion_EPE_mm": {
+                "mean": 11.94058082384449,
+                "sample_std": 0.0795929825628451,
+                "values": [
+                  11.98096850098395,
+                  12.031023699840015,
+                  11.892994365519968,
+                  11.857336729034026
+                ],
+                "n": 4
+              },
+              "moving_EPE_mm": {
+                "mean": 27.641459202726185,
+                "sample_std": 0.041969063557967506,
+                "values": [
+                  27.666270945208776,
+                  27.683748658959114,
+                  27.62564135244703,
+                  27.590175854289825
+                ],
+                "n": 4
+              }
+            },
+            "detached": {
+              "prior_action_L1": {
+                "mean": 0.6517219082611001,
+                "sample_std": 0.007218788438927208,
+                "values": [
+                  0.643714837420289,
+                  0.6548053701354639,
+                  0.6601247074577663,
+                  0.6482427180308812
+                ],
+                "n": 4
+              },
+              "completion_EPE_mm": {
+                "mean": 11.863425459677376,
+                "sample_std": 0.016267841120004418,
+                "values": [
+                  11.843358950555828,
+                  11.869613478443574,
+                  11.881693106160386,
+                  11.859036303549722
+                ],
+                "n": 4
+              },
+              "moving_EPE_mm": {
+                "mean": 27.59684613102369,
+                "sample_std": 0.010369863941377299,
+                "values": [
+                  27.59339528848712,
+                  27.591605112815518,
+                  27.612270225206334,
+                  27.59011389758579
+                ],
+                "n": 4
+              }
+            }
+          },
+          "connected_minus_detached_action_L1": {
+            "mean": 0.005153315835879357,
+            "sample_std": 0.007288483856341756,
+            "values": [
+              0.0016131304736938246,
+              0.0011221790066501258,
+              0.0160776236652036,
+              0.0018003301979698794
+            ],
+            "n": 4
+          }
+        }
+      ],
+      "exploratory": true,
+      "scope": "Original and residual methods at identical update budgets; new connected/detached primary contrast. No final test or native1500 success claim."
+    },
     "training": {
       "seed-1000/connected": {
         "manifest": {
@@ -61361,30 +64716,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 275,
-          "elapsed_seconds": 645.4634973476641,
+          "completed_optimizer_steps": 500,
+          "elapsed_seconds": 1141.70222559385,
           "latest_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.6453279678939828,
-            "action_MAE_radians": 0.33221569601762047,
+            "prior_action_L1": 0.44790663551930787,
+            "action_MAE_radians": 0.1994605812838683,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.98096850098395,
+            "completion_EPE_mm": 12.081898345969586,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.666270945208776,
+            "moving_EPE_mm": 27.741114344273107,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.6453279678939828,
-            "action_MAE_radians": 0.33221569601762047,
+            "prior_action_L1": 0.44790663551930787,
+            "action_MAE_radians": 0.1994605812838683,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.98096850098395,
+            "completion_EPE_mm": 12.081898345969586,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.666270945208776,
+            "moving_EPE_mm": 27.741114344273107,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -61399,6 +64754,18 @@
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
             "moving_EPE_mm": 27.666270945208776,
+            "moving_static_EPE_mm": 46.05298086273921
+          },
+          {
+            "step": 500,
+            "windows": 427,
+            "prior_action_L1": 0.44790663551930787,
+            "action_MAE_radians": 0.1994605812838683,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.081898345969586,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.741114344273107,
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
@@ -61483,30 +64850,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 300,
-          "elapsed_seconds": 697.5468812440522,
+          "completed_optimizer_steps": 500,
+          "elapsed_seconds": 1136.1922494769096,
           "latest_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.643714837420289,
-            "action_MAE_radians": 0.33098565764965565,
+            "prior_action_L1": 0.4551692789888196,
+            "action_MAE_radians": 0.20504176269045046,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.843358950555828,
+            "completion_EPE_mm": 11.868224933418627,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.59339528848712,
+            "moving_EPE_mm": 27.60901418622191,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.643714837420289,
-            "action_MAE_radians": 0.33098565764965565,
+            "prior_action_L1": 0.4551692789888196,
+            "action_MAE_radians": 0.20504176269045046,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.843358950555828,
+            "completion_EPE_mm": 11.868224933418627,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.59339528848712,
+            "moving_EPE_mm": 27.60901418622191,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -61521,6 +64888,18 @@
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
             "moving_EPE_mm": 27.59339528848712,
+            "moving_static_EPE_mm": 46.05298086273921
+          },
+          {
+            "step": 500,
+            "windows": 427,
+            "prior_action_L1": 0.4551692789888196,
+            "action_MAE_radians": 0.20504176269045046,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 11.868224933418627,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.60901418622191,
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
@@ -61605,30 +64984,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 300,
-          "elapsed_seconds": 679.4161820448935,
+          "completed_optimizer_steps": 500,
+          "elapsed_seconds": 1105.8871376188472,
           "latest_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.655927549142114,
-            "action_MAE_radians": 0.34414370472650535,
+            "prior_action_L1": 0.4782135682629092,
+            "action_MAE_radians": 0.2176780311347301,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.031023699840015,
+            "completion_EPE_mm": 12.111512719943029,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.683748658959114,
+            "moving_EPE_mm": 27.766018128501692,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.655927549142114,
-            "action_MAE_radians": 0.34414370472650535,
+            "prior_action_L1": 0.4782135682629092,
+            "action_MAE_radians": 0.2176780311347301,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.031023699840015,
+            "completion_EPE_mm": 12.111512719943029,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.683748658959114,
+            "moving_EPE_mm": 27.766018128501692,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -61643,6 +65022,18 @@
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
             "moving_EPE_mm": 27.683748658959114,
+            "moving_static_EPE_mm": 46.05298086273921
+          },
+          {
+            "step": 500,
+            "windows": 427,
+            "prior_action_L1": 0.4782135682629092,
+            "action_MAE_radians": 0.2176780311347301,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.111512719943029,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.766018128501692,
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
@@ -61727,30 +65118,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 300,
-          "elapsed_seconds": 673.3567266059108,
+          "completed_optimizer_steps": 525,
+          "elapsed_seconds": 1183.2233967469074,
           "latest_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.6548053701354639,
-            "action_MAE_radians": 0.34021051930620655,
+            "prior_action_L1": 0.47308220566657977,
+            "action_MAE_radians": 0.2133493820155379,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.869613478443574,
+            "completion_EPE_mm": 11.914733403746128,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.591605112815518,
+            "moving_EPE_mm": 27.616895256415113,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.6548053701354639,
-            "action_MAE_radians": 0.34021051930620655,
+            "prior_action_L1": 0.47308220566657977,
+            "action_MAE_radians": 0.2133493820155379,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.869613478443574,
+            "completion_EPE_mm": 11.914733403746128,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.591605112815518,
+            "moving_EPE_mm": 27.616895256415113,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -61765,6 +65156,18 @@
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
             "moving_EPE_mm": 27.591605112815518,
+            "moving_static_EPE_mm": 46.05298086273921
+          },
+          {
+            "step": 500,
+            "windows": 427,
+            "prior_action_L1": 0.47308220566657977,
+            "action_MAE_radians": 0.2133493820155379,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 11.914733403746128,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.616895256415113,
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
@@ -61849,30 +65252,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 300,
-          "elapsed_seconds": 660.4624078688212,
+          "completed_optimizer_steps": 525,
+          "elapsed_seconds": 1161.7314194617793,
           "latest_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.6762023311229699,
-            "action_MAE_radians": 0.34852540118884406,
+            "prior_action_L1": 0.4838137050083162,
+            "action_MAE_radians": 0.21706063273489723,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.892994365519968,
+            "completion_EPE_mm": 12.105203109771097,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.62564135244703,
+            "moving_EPE_mm": 27.716195433935333,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.6762023311229699,
-            "action_MAE_radians": 0.34852540118884406,
+            "prior_action_L1": 0.4838137050083162,
+            "action_MAE_radians": 0.21706063273489723,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.892994365519968,
+            "completion_EPE_mm": 12.105203109771097,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.62564135244703,
+            "moving_EPE_mm": 27.716195433935333,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -61887,6 +65290,18 @@
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
             "moving_EPE_mm": 27.62564135244703,
+            "moving_static_EPE_mm": 46.05298086273921
+          },
+          {
+            "step": 500,
+            "windows": 427,
+            "prior_action_L1": 0.4838137050083162,
+            "action_MAE_radians": 0.21706063273489723,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.105203109771097,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.716195433935333,
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
@@ -61971,8 +65386,8 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 275,
-          "elapsed_seconds": 654.9528600382619,
+          "completed_optimizer_steps": 475,
+          "elapsed_seconds": 1100.7487339251675,
           "latest_validation": {
             "step": 250,
             "windows": 427,
@@ -62093,8 +65508,8 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 275,
-          "elapsed_seconds": 654.0305462870747,
+          "completed_optimizer_steps": 475,
+          "elapsed_seconds": 1102.0151242380962,
           "latest_validation": {
             "step": 250,
             "windows": 427,
@@ -62215,30 +65630,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 300,
-          "elapsed_seconds": 664.1123025328852,
+          "completed_optimizer_steps": 525,
+          "elapsed_seconds": 1159.6533356229775,
           "latest_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.6482427180308812,
-            "action_MAE_radians": 0.33204332894210614,
+            "prior_action_L1": 0.4917915102511724,
+            "action_MAE_radians": 0.22063995792814747,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.859036303549722,
+            "completion_EPE_mm": 11.882513594877828,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.59011389758579,
+            "moving_EPE_mm": 27.60917394285848,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.6482427180308812,
-            "action_MAE_radians": 0.33204332894210614,
+            "prior_action_L1": 0.4917915102511724,
+            "action_MAE_radians": 0.22063995792814747,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.859036303549722,
+            "completion_EPE_mm": 11.882513594877828,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.59011389758579,
+            "moving_EPE_mm": 27.60917394285848,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -62254,13 +65669,30 @@
             "completion_static_gate_pass": true,
             "moving_EPE_mm": 27.59011389758579,
             "moving_static_EPE_mm": 46.05298086273921
+          },
+          {
+            "step": 500,
+            "windows": 427,
+            "prior_action_L1": 0.4917915102511724,
+            "action_MAE_radians": 0.22063995792814747,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 11.882513594877828,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.60917394285848,
+            "moving_static_EPE_mm": 46.05298086273921
           }
         ],
         "raw_action_receipts": []
       }
     },
     "native": {
-      "protocol": null,
+      "protocol": {
+        "schema": "native-pairing-held-v2",
+        "status": "held",
+        "reason": "Full paired initialization audit failed. Do not start old matched1500 native simulation.",
+        "new_protocol_required": true
+      },
       "audit": null,
       "cases": [],
       "videos": []

@@ -1,0 +1,57 @@
+{
+  "status": "complete",
+  "mode": "learned_policy_closed_loop",
+  "pilot": true,
+  "condition": "tracks_completion",
+  "steps": 600,
+  "policy_GT_track_reads": 601,
+  "first_success_step": null,
+  "ever_success": false,
+  "final_success": false,
+  "geometry": {
+    "success": false,
+    "garment_type": "top-long-sleeve",
+    "thresholds": [
+      7.2,
+      8.55,
+      7.2,
+      9.9,
+      9.0
+    ],
+    "details": {
+      "condition_1": {
+        "description": "dist(p[0], p[4]) = 25.61 <= 7.2",
+        "value": 25.610008565819914,
+        "threshold": 7.2,
+        "passed": false
+      },
+      "condition_2": {
+        "description": "dist(p[2], p[3]) = 34.41 <= 8.55",
+        "value": 34.41312193697704,
+        "threshold": 8.55,
+        "passed": false
+      },
+      "condition_3": {
+        "description": "dist(p[1], p[5]) = 21.76 <= 7.2",
+        "value": 21.759071755959294,
+        "threshold": 7.2,
+        "passed": false
+      },
+      "condition_4": {
+        "description": "dist(p[0], p[1]) = 14.15 >= 9.9",
+        "value": 14.14596752685942,
+        "threshold": 9.9,
+        "passed": true
+      },
+      "condition_5": {
+        "description": "dist(p[4], p[5]) = 11.38 >= 9.0",
+        "value": 11.382741117216977,
+        "threshold": 9.0,
+        "passed": true
+      }
+    }
+  },
+  "elapsed_seconds": 636.9166622161865,
+  "auxiliary_head_removed": true,
+  "claim": "single_seed_development_pilot_not_formal_generalization"
+}
