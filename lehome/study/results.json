@@ -335,13 +335,13 @@
       }
     },
     "source_commit": "ac703750a47c930ce87169132850d4c93deced03",
-    "completed_replays": 75,
+    "completed_replays": 76,
     "expected_replays": 250,
     "active_condition": null,
     "snapshot_utc": "2026-10-19T18:27:45.102796+00:00",
     "paused_by_user": true,
     "reason": "User requested settings review before starting training",
-    "collection_count_snapshot_utc": "2026-10-19T22:38:30.272394+00:00"
+    "collection_count_snapshot_utc": "2026-10-19T22:42:42.176673+00:00"
   },
   "architecture_review": {
     "schema": 1,
@@ -849,7 +849,7 @@
     "offline_matches_checkpoint_receipt": true,
     "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b"
   },
-  "snapshot_utc": "2026-10-19T22:38:30.272394+00:00",
+  "snapshot_utc": "2026-10-19T22:42:42.176673+00:00",
   "capacity": {
     "total_instantiated": 74929807,
     "track_encoder": 3293952,
@@ -3807,6 +3807,216 @@
         }
       ],
       "active_owned_jobs": 0
+    },
+    "resource_closeout": {
+      "status": "complete",
+      "independently_verified_utc": "2026-10-19T22:38:03.891877+00:00",
+      "authorization_start_utc": "2026-10-19T19:56:28Z",
+      "hard_deadline_utc": "2026-10-19T22:56:28Z",
+      "confirmed_active_owned_jobs": 0,
+      "confirmed_active_owned_GPUs": 0,
+      "enforced_concurrent_GPU_cap": 32,
+      "minutes_before_deadline": 18.40180205,
+      "all_create_responses_registered": true,
+      "jobs": [
+        {
+          "job_id": "job-wfslzx5cs6i7",
+          "name": "ei-liupeiqi-wam-training-actpilot-s1000-1n8g-b20z-20261019-200055",
+          "seed": 1000,
+          "gpus": 8,
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T20:00:58.934829+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f",
+          "verified_platform_status": "Succeeded"
+        },
+        {
+          "job_id": "job-jx0os5wqemwi",
+          "name": "ei-liupeiqi-wam-training-actpilot-s1001-1n8g-b20z-20261019-200250",
+          "seed": 1001,
+          "gpus": 8,
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T20:02:53.090377+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f",
+          "verified_platform_status": "Succeeded"
+        },
+        {
+          "job_id": "job-wbux06gind9v",
+          "name": "ei-liupeiqi-wam-training-actpilot-s1002-1n8g-b20z-20261019-200253",
+          "seed": 1002,
+          "gpus": 8,
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T20:02:55.844849+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f",
+          "verified_platform_status": "Succeeded"
+        },
+        {
+          "job_id": "job-wucxuzwhboan",
+          "name": "ei-liupeiqi-wam-training-actpilot-s1003-1n8g-b20z-20261019-200255",
+          "seed": 1003,
+          "gpus": 8,
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T20:02:58.844978+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f",
+          "verified_platform_status": "Succeeded"
+        },
+        {
+          "job_id": "job-zuucjxptib25",
+          "name": "ei-liupeiqi-wam-training-actpilot-residual-1n8g-b20z-20261019-212607",
+          "seed": 1000,
+          "training_seeds": [
+            1000,
+            1001,
+            1002,
+            1003
+          ],
+          "gpus": 8,
+          "phase": "residual_iteration",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T21:26:09.766518+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
+          "verified_platform_status": "Succeeded"
+        },
+        {
+          "job_id": "job-8o8d6xr0ukwn",
+          "name": "ei-liupeiqi-wam-training-actpilot-eval-s1000-1n8g-b20z-20261019-213014",
+          "seed": 1000,
+          "gpus": 8,
+          "phase": "native_and_sensitivity",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T21:30:16.452514+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
+          "verified_platform_status": "Succeeded"
+        },
+        {
+          "job_id": "job-28u26yp6gjp5",
+          "name": "ei-liupeiqi-wam-training-actpilot-eval-s1001-1n8g-b20z-20261019-213156",
+          "seed": 1001,
+          "gpus": 8,
+          "phase": "native_and_sensitivity",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T21:31:59.118537+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
+          "verified_platform_status": "Succeeded"
+        },
+        {
+          "job_id": "job-4y3un904hybm",
+          "name": "ei-liupeiqi-wam-training-actpilot-eval-s1002-1n8g-b20z-20261019-213252",
+          "seed": 1002,
+          "gpus": 8,
+          "phase": "native_and_sensitivity",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T21:32:54.268265+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
+          "verified_platform_status": "Succeeded"
+        },
+        {
+          "job_id": "job-eyvjt5qbs824",
+          "name": "ei-liupeiqi-wam-training-actpilot-counted-s1000-1n8g-b20z-20261019-214907",
+          "seed": 1000,
+          "gpus": 8,
+          "phase": "counted_native_v3",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T21:49:10.109231+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "f3fb3e3a1feab56de9eed2b2328663e180d94377",
+          "verified_platform_status": "Failed"
+        },
+        {
+          "job_id": "job-g7jt2kgw1exq",
+          "name": "ei-liupeiqi-wam-training-actpilot-counted-s1000-1n8g-b20z-20261019-214942",
+          "seed": 1000,
+          "gpus": 8,
+          "phase": "counted_native_v3_retry2",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T21:49:45.132060+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "c3a05d59f413cd48970edb66a489a2f0937fbeaf",
+          "verified_platform_status": "Failed"
+        },
+        {
+          "job_id": "job-h0kaugy7wk4m",
+          "name": "ei-liupeiqi-wam-training-actpilot-preplay4-s1000-1n8g-b20z-20261019-215825",
+          "seed": 1000,
+          "gpus": 8,
+          "phase": "preplay_flush_native_v4",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T21:58:27.291325+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "bb2246da0033d3469356b141c3c51560f386bada",
+          "verified_platform_status": "Failed"
+        },
+        {
+          "job_id": "job-bfh920gvxaez",
+          "name": "ei-liupeiqi-wam-training-actpilot-canonical5-s1000-1n8g-b20z-20261019-220614",
+          "seed": 1000,
+          "gpus": 8,
+          "phase": "canonical_native_v5",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T22:06:17.238385+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "c8249e822c8861aa2fd406ed30883b6e2f4c7ef5",
+          "verified_platform_status": "Succeeded"
+        },
+        {
+          "job_id": "job-rdizwrznwplm",
+          "name": "ei-liupeiqi-wam-training-actpilot-canonical5-s1001-1n8g-b20z-20261019-220631",
+          "seed": 1001,
+          "gpus": 8,
+          "phase": "canonical_native_v5",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T22:06:33.918686+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "c8249e822c8861aa2fd406ed30883b6e2f4c7ef5",
+          "verified_platform_status": "Succeeded"
+        },
+        {
+          "job_id": "job-pgdgliulwvo7",
+          "name": "ei-liupeiqi-wam-training-actpilot-canonical5-s1002-1n8g-b20z-20261019-220722",
+          "seed": 1002,
+          "gpus": 8,
+          "phase": "canonical_native_v5",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T22:07:24.807487+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "c8249e822c8861aa2fd406ed30883b6e2f4c7ef5",
+          "verified_platform_status": "Succeeded"
+        },
+        {
+          "job_id": "job-hhuht9tgv2kn",
+          "name": "ei-liupeiqi-wam-training-actpilot-inputdiag1500-main-1n8g-b20z-20261019-222317",
+          "seed": 1000,
+          "gpus": 8,
+          "phase": "input_ablation1500",
+          "scope": "main",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T22:23:20.485656+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "b1ba10a41ff03f8761f76718db390506819af4fb",
+          "verified_platform_status": "Succeeded"
+        },
+        {
+          "job_id": "job-lzo04c93m9qk",
+          "name": "ei-liupeiqi-wam-training-actpilot-inputdiag1500-residual-1n8g-b20z-20261019-222849",
+          "seed": 1001,
+          "gpus": 8,
+          "phase": "input_ablation1500",
+          "scope": "residual",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T22:28:51.722160+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "b1ba10a41ff03f8761f76718db390506819af4fb",
+          "verified_platform_status": "Succeeded"
+        }
+      ],
+      "scope": "Compute resource closure only; platform success does not imply experimental or task success"
     },
     "jobs": [
       {
