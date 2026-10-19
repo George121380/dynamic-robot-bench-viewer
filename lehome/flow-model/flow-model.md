@@ -1,5 +1,7 @@
 # Cloth-flow-conditioned folding policy
 
+**Latest training entry:** [matched RGB-H/FlowACT support](training.md) adds frozen inventories, complete continuation and validation-only selection; all 23 LeHome tests pass. The 500-step numbers below remain earlier single-window engineering records, not comparable to the new garment-disjoint validation metrics. Formal training requires a frozen `--manifest`.
+
 **Implemented: FlowACT, causal online history, synchronized GT replay collection, and four matched training conditions. All ten flow contract tests pass. Formal training and closed-loop flow-policy success rates are not complete.** This supersedes the earlier design-only implementation status. The old 14/20 score still refers exclusively to the public single-frame RGB ACT checkpoint.
 
 `flow_policy.py` implements identical module trees for `rgb_history`, `geometry`, `tracks`, and `tracks_completion`. RGB history is uint8 `[B,16,3,3,480,640]`; a shared Frozen-BN ResNet18 with ImageNet normalization produces 4×4 tokens per camera/frame, with spatial, camera and negative-time embeddings. Backbone chunking/checkpointing limits activation memory. Joint state is measured 12D radians.

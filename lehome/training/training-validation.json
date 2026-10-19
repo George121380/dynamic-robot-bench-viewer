@@ -1,0 +1,331 @@
+{
+  "status": "engineering_training_support_verified",
+  "formal_training_performed": false,
+  "executed_source_commit": "8fca056422b0f5a471d85df16b930adfab78010d",
+  "public_report": "https://peiqil.com/dynamic-robot-bench-viewer/lehome/training/",
+  "unit_tests": {
+    "Baidu_LeHome": {
+      "run": 23,
+      "passed": 23,
+      "skipped": 0
+    },
+    "Mac_all_CPU": {
+      "run": 72,
+      "passed": 57,
+      "skipped": 15,
+      "limitations": "Mac tool environment has no torch/torchvision/ffmpeg; corresponding tests skipped. Torch-specific LeHome checks passed separately on Baidu."
+    }
+  },
+  "training_acceptance": {
+    "status": "complete",
+    "engineering_only": true,
+    "formal_training_performed": false,
+    "controls": {
+      "rgb_history": {
+        "steps": 6,
+        "initial_model_sha256": "92e5c58f18810e912f541b1bb5f1f32f3295437cd7ad8f3a9f9ba6aafdc0eb75",
+        "best_validation": {
+          "step": 1,
+          "split": "validation",
+          "windows": 2,
+          "prior_action_L1": 0.9900002464121599,
+          "action_MAE_radians": 0.4384668035414612,
+          "aggregation": "valid_element_weighted"
+        },
+        "RGB_H_uses_GT_fields": false
+      },
+      "geometry": {
+        "steps": 6,
+        "initial_model_sha256": "92e5c58f18810e912f541b1bb5f1f32f3295437cd7ad8f3a9f9ba6aafdc0eb75",
+        "best_validation": {
+          "step": 1,
+          "split": "validation",
+          "windows": 2,
+          "prior_action_L1": 1.012960291989027,
+          "action_MAE_radians": 0.4220493433930727,
+          "aggregation": "valid_element_weighted"
+        },
+        "RGB_H_uses_GT_fields": false
+      },
+      "tracks": {
+        "steps": 6,
+        "initial_model_sha256": "92e5c58f18810e912f541b1bb5f1f32f3295437cd7ad8f3a9f9ba6aafdc0eb75",
+        "best_validation": {
+          "step": 1,
+          "split": "validation",
+          "windows": 2,
+          "prior_action_L1": 1.012988649139898,
+          "action_MAE_radians": 0.4220780986798234,
+          "aggregation": "valid_element_weighted"
+        },
+        "RGB_H_uses_GT_fields": false
+      },
+      "tracks_completion": {
+        "steps": 6,
+        "initial_model_sha256": "92e5c58f18810e912f541b1bb5f1f32f3295437cd7ad8f3a9f9ba6aafdc0eb75",
+        "best_validation": {
+          "step": 1,
+          "split": "validation",
+          "windows": 2,
+          "prior_action_L1": 1.0132556347399468,
+          "action_MAE_radians": 0.422228995264541,
+          "aggregation": "valid_element_weighted",
+          "completion_EPE_mm": 210.58387756347656,
+          "static_EPE_mm": 2.3311346769332886,
+          "completion_static_gate_pass": false,
+          "moving_EPE_mm": 214.05892623098273,
+          "moving_static_EPE_mm": 3.6718276509067467
+        },
+        "RGB_H_uses_GT_fields": false
+      }
+    },
+    "observation_protocol": {
+      "history_frames": 16,
+      "history_stride": 3,
+      "physics_hz": 90,
+      "RGB_hw": [
+        480,
+        640
+      ],
+      "cameras": 3,
+      "joints": 12,
+      "chunk": 100
+    },
+    "exact_resume": {
+      "passed": true,
+      "interrupted_at_step": 3,
+      "final_step": 6,
+      "workers": 2,
+      "model_max_difference": 0,
+      "optimizer_scheduler_RNG_cursor_identical": true,
+      "changed_recipe_rejected": true
+    },
+    "full_architecture": {
+      "parameters": 74929807,
+      "steps": 2,
+      "status": "complete"
+    },
+    "offline_evaluation": {
+      "status": "complete",
+      "split": "validation",
+      "checkpoint_sha256": "a9ca29d072f263216a984ff27903d7fa4690edcd4a3f688c41241bce82d5bd8b",
+      "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b",
+      "mode": "tracks_completion",
+      "window_indices": [
+        0,
+        118
+      ],
+      "all_windows": false,
+      "pilot": true,
+      "closed_loop": false,
+      "windows": 2,
+      "prior_action_L1": 1.0132556347399468,
+      "action_MAE_radians": 0.422228995264541,
+      "aggregation": "valid_element_weighted",
+      "completion_EPE_mm": 210.58387756347656,
+      "static_EPE_mm": 2.3311346769332886,
+      "completion_static_gate_pass": false,
+      "moving_EPE_mm": 214.05892623098273,
+      "moving_static_EPE_mm": 3.6718276509067467
+    },
+    "offline_matches_checkpoint_receipt": true,
+    "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b"
+  },
+  "native_checks": {
+    "rgb_history": {
+      "frames_decoded": 4,
+      "width": 960,
+      "height": 480,
+      "video_sha256": "875df702058ec6f119d7dc29001760968404d30ac6ed1f39e6d2afce3f6bc842",
+      "report": {
+        "status": "complete",
+        "mode": "learned_policy_closed_loop",
+        "pilot": true,
+        "condition": "rgb_history",
+        "steps": 3,
+        "policy_GT_track_reads": 0,
+        "first_success_step": null,
+        "ever_success": false,
+        "final_success": false,
+        "geometry": {
+          "success": false,
+          "garment_type": "top-long-sleeve",
+          "thresholds": [
+            7.2,
+            8.55,
+            7.2,
+            9.9,
+            9.0
+          ],
+          "details": {
+            "condition_1": {
+              "description": "dist(p[0], p[4]) = 26.58 <= 7.2",
+              "value": 26.577693125550727,
+              "threshold": 7.2,
+              "passed": false
+            },
+            "condition_2": {
+              "description": "dist(p[2], p[3]) = 42.42 <= 8.55",
+              "value": 42.4212753338136,
+              "threshold": 8.55,
+              "passed": false
+            },
+            "condition_3": {
+              "description": "dist(p[1], p[5]) = 26.97 <= 7.2",
+              "value": 26.96961369732827,
+              "threshold": 7.2,
+              "passed": false
+            },
+            "condition_4": {
+              "description": "dist(p[0], p[1]) = 16.21 >= 9.9",
+              "value": 16.21193610040162,
+              "threshold": 9.9,
+              "passed": true
+            },
+            "condition_5": {
+              "description": "dist(p[4], p[5]) = 15.09 >= 9.0",
+              "value": 15.094493669527516,
+              "threshold": 9.0,
+              "passed": true
+            }
+          }
+        },
+        "elapsed_seconds": 57.77397537231445,
+        "auxiliary_head_removed": true,
+        "claim": "pipeline_only_no_policy_performance_claim"
+      }
+    },
+    "tracks_completion": {
+      "frames_decoded": 4,
+      "width": 960,
+      "height": 480,
+      "video_sha256": "a9b557cc59b75234762ca25b228c835f6ad6784a07fd02541d01f7f1608f5281",
+      "report": {
+        "status": "complete",
+        "mode": "learned_policy_closed_loop",
+        "pilot": true,
+        "condition": "tracks_completion",
+        "steps": 3,
+        "policy_GT_track_reads": 4,
+        "first_success_step": null,
+        "ever_success": false,
+        "final_success": false,
+        "geometry": {
+          "success": false,
+          "garment_type": "top-long-sleeve",
+          "thresholds": [
+            7.2,
+            8.55,
+            7.2,
+            9.9,
+            9.0
+          ],
+          "details": {
+            "condition_1": {
+              "description": "dist(p[0], p[4]) = 26.58 <= 7.2",
+              "value": 26.577693125550727,
+              "threshold": 7.2,
+              "passed": false
+            },
+            "condition_2": {
+              "description": "dist(p[2], p[3]) = 42.42 <= 8.55",
+              "value": 42.4212753338136,
+              "threshold": 8.55,
+              "passed": false
+            },
+            "condition_3": {
+              "description": "dist(p[1], p[5]) = 26.97 <= 7.2",
+              "value": 26.96961369732827,
+              "threshold": 7.2,
+              "passed": false
+            },
+            "condition_4": {
+              "description": "dist(p[0], p[1]) = 16.21 >= 9.9",
+              "value": 16.21193610040162,
+              "threshold": 9.9,
+              "passed": true
+            },
+            "condition_5": {
+              "description": "dist(p[4], p[5]) = 15.09 >= 9.0",
+              "value": 15.094493669527516,
+              "threshold": 9.0,
+              "passed": true
+            }
+          }
+        },
+        "elapsed_seconds": 58.31357669830322,
+        "auxiliary_head_removed": true,
+        "claim": "pipeline_only_no_policy_performance_claim"
+      }
+    }
+  },
+  "data": {
+    "prepared_official_actions": {
+      "revision": "2bfdd30795ae25bba189649bf71cbb33f5b2a03c",
+      "garments": 10,
+      "episodes": 250,
+      "frames": 83068,
+      "range_bytes_downloaded": 7195245,
+      "verification_scope": "Pinned revision, fetched ranges and derived-file SHA; not full upstream large Parquet hash."
+    },
+    "synchronized_inventory": {
+      "fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b",
+      "formal": false,
+      "episodes": [
+        {
+          "path": "Top_Long_Seen_0-episode-000",
+          "garment": "Top_Long_Seen_0",
+          "source_episode": 0,
+          "split": "train",
+          "actions": 315,
+          "windows": 105,
+          "truncated_pilot": false,
+          "expert_final_success": true
+        },
+        {
+          "path": "Top_Long_Seen_1-episode-000/attempt-002",
+          "garment": "Top_Long_Seen_1",
+          "source_episode": 0,
+          "split": "train",
+          "actions": 354,
+          "windows": 118,
+          "truncated_pilot": false,
+          "expert_final_success": true
+        },
+        {
+          "path": "Top_Long_Seen_8-episode-000/attempt-001",
+          "garment": "Top_Long_Seen_8",
+          "source_episode": 0,
+          "split": "validation",
+          "actions": 357,
+          "windows": 119,
+          "truncated_pilot": false,
+          "expert_final_success": true
+        }
+      ],
+      "files_hashed": 3096,
+      "all_remaining_formal_replays": "pending"
+    }
+  },
+  "limitations": [
+    "Six-step small-model runs and three-step native rollouts are engineering checks, not method comparisons or folding scores.",
+    "Formal 30k-step, multi-seed training and paired unseen-garment closed-loop evaluation remain pending.",
+    "Completion static-reference quality gate failed; no useful completion or policy improvement is claimed.",
+    "GT trajectories are privileged simulation inputs; no estimated RGB tracker has been implemented."
+  ],
+  "retained_failures": [
+    "training-package-acceptance-01: CUDA native adaptive-pooling backward rejected strict determinism; fixed by explicit equivalent averaging.",
+    "Top_Long_Seen_1 episode 0 attempt-001: hidden Mac transport Parquet metadata mistaken for data; collector now ignores hidden files."
+  ],
+  "resources": {
+    "node": "Baidu-H100-dev-1",
+    "GPU": 2,
+    "single_GPU_only": true,
+    "job_name": "ei-liupeiqi-wam-training",
+    "collection_job_name": "ei-liupeiqi-data-collection"
+  },
+  "synchronization": {
+    "source": "GitHub session-only authentication; Mac and shared Baidu checkout.",
+    "gpu17": "SSH banner timeout; unsynchronized."
+  }
+}
