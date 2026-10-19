@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "status": "developer_validation_running_formal_study_paused",
-  "snapshot_utc": "2026-10-19T19:20:11.341273+00:00",
+  "snapshot_utc": "2026-10-19T19:27:43.283515+00:00",
   "new_training_started": true,
   "node_allocated": false,
   "ACT_core_rebase_implemented": true,
@@ -99,14 +99,13 @@
       "valid flag (1)"
     ],
     "implemented_path": [
-      "shared Linear 8->256",
-      "two temporal Transformer layers per point",
-      "read current-time token",
-      "two inter-point Transformer layers",
-      "Linear 256->512",
-      "16 ACT observation tokens"
+      "flatten fixed 16x8 per-point history",
+      "shared Linear128->128 + ReLU",
+      "shared Linear128->128 + ReLU",
+      "shared Linear128->512",
+      "16 native ACT observation tokens"
     ],
-    "implemented_parameters": 3293952,
+    "implemented_parameters": 99072,
     "rationale": [
       "Within-window vertex identity links the same point through time.",
       "Explicit time values distinguish histories.",
@@ -135,32 +134,42 @@
       "point_interaction": "native ACT encoder",
       "scope": "fixed 16-frame history with explicit masks; no universal variable-length claim"
     },
-    "selection": "Use the simple 99,072-parameter MLP for this pilot; both candidates fit tiny data but fail the old held-out static reference."
+    "selection": "Use the simple 99,072-parameter MLP for this pilot; both candidates fit tiny data but fail the old held-out static reference.",
+    "legacy_factorized_path": [
+      "shared Linear 8->256",
+      "two temporal Transformer layers per point",
+      "read current-time token",
+      "two inter-point Transformer layers",
+      "Linear 256->512",
+      "16 ACT observation tokens"
+    ],
+    "legacy_factorized_parameters": 3293952,
+    "current_policy_encoder": "mlp"
   },
   "gates": [
     {
       "name": "ACT output/loss/gradient parity with extensions disabled",
-      "status": "pending_ACT_rebase"
+      "status": "passed_native_parity"
     },
     {
       "name": "Existing point-encoder CPU invariants and gradients",
-      "status": "executed_on_old_encoder"
+      "status": "executed_legacy_and_new_MLP_semantics"
     },
     {
       "name": "Static, nearest and 3NN development references",
-      "status": "executed_no_training"
+      "status": "executed_on_old_and_new_full_validation_windows"
     },
     {
       "name": "Synthetic static/rigid/affine and tiny real-data learning, 200-500 updates per point candidate",
-      "status": "not_run"
+      "status": "analytical_synthetic_semantics_and_300_update_real_tiny_fit_executed_no_synthetic_neural_fit"
     },
     {
       "name": "Completion validation on held-out episodes and >5mm moving points vs 3NN",
-      "status": "not_run"
+      "status": "point_only_heldout_static_gate_failed_RGB_conditioned_policy_pending"
     },
     {
       "name": "Original ACT baseline feasibility, then five matched short policy runs",
-      "status": "not_run"
+      "status": "ACT_running_500_update_equal_budget_pilot"
     },
     {
       "name": "Additional seeds before any robust policy claim",
@@ -360,5 +369,23 @@
     "hidden_queries_do_not_enter_actor": true,
     "future_actions_do_not_enter_completion": true
   },
-  "current_execution_root": "results/lehome_garment_folding/act-dev-validation-01"
+  "current_execution_root": "results/lehome_garment_folding/act-dev-validation-01",
+  "native_exact_resume": {
+    "status": "complete",
+    "optimizer_steps": 2,
+    "model_optimizer_RNG_step_and_receipts_exact": true,
+    "RGB_hw": [
+      480,
+      640
+    ]
+  },
+  "causal_history_parity": {
+    "status": "complete",
+    "windows": 40,
+    "RGB_point_file_reads": 0
+  },
+  "synchronization": {
+    "Mac_Baidu": "same_scientific_sources_via_GitHub_commits",
+    "gpu17": "SSH reachable; code-only task checkout synchronized via authenticated-locally-pushed GitHub commit bundle; no GPU jobs, no remote credentials; session helper absent"
+  }
 }

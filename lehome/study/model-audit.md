@@ -14,6 +14,10 @@ First run full-resolution640x480/two-worker/effective-batch16 exact resume (two 
 
 Implementation: act_history_policy.py, act_pilot_data.py, validate_act_history.py, point_encoder_pilot.py, act_pilot_train.py, act_pilot_rollout.py, act_pilot_run.sh and run_act_pilot.py. Only developer1 GPU2 spare capacity is used, with a12GiB policy-process memory cap. No new node or colleague process is touched. Exact status comes from pilot-status.json, per-run metrics.jsonl and manifest.json. The public page is a timestamped snapshot.
 
+Additional executed evidence: full640x480/two-worker/effective-batch16 continuous2 versus1→2 resume matches all states exactly. Static/translation/rotation/affine feature semantics and40 cached-versus-causal-history windows pass; RGB point-file reads0. ACT step250 validates at normalized prior L1=0.65747 over427 windows (train-mean reference0.83622), not closed-loop performance. gpu17 SSH is now reachable and a code-only task checkout is synchronized to the GitHub commit; no GPU jobs or remote credentials. Its session-auth helper remains absent.
+
+Auxiliary scope: the new native-ACT extension reads observation tokens before main-Transformer mixing. Auxiliary gradients reach the shared CNN, image projection and point MLP, not the native main Transformer directly. This preserves the actor core and excludes future-posterior leakage while limiting the auxiliary supervision pathway.
+
 The following proposal and legacy implementation notes are historical. Their unimplemented/not-trained wording describes the earlier snapshot; current execution receipts take precedence.
 
 Training is on hold for the user's settings review. The task-owned coordinator has been stopped before any formal updates; synchronized replay continues independently and cannot transition automatically into training. One eight-GPU node is permitted in principle, but no node allocation or new training has been launched. See the task's `training-hold.json`. No formal policy result exists yet.

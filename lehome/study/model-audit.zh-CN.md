@@ -14,6 +14,10 @@
 
 代码入口：`act_history_policy.py`、`act_pilot_data.py`、`validate_act_history.py`、`point_encoder_pilot.py`、`act_pilot_train.py`、`act_pilot_rollout.py`、`act_pilot_run.sh`、`run_act_pilot.py`。只使用开发机1 GPU2的可用资源，policy进程显存上限12GiB，不申请新节点，不操作同事任务。精确状态/更新数见 `pilot-status.json`、各run的 `metrics.jsonl` 与 `manifest.json`。在线页是发布快照，不是实时连接。
 
+补充实测：真实640×480、两worker、有效batch16的连续2步与1→2步恢复全状态逐值一致；静态/平移/旋转/仿射输入语义检查通过；40个实际窗口的离线缓存与在线因果history相同，RGB点文件读取0。原ACT第250更新的427窗口验证L1=0.65747（训练均值参考0.83622），尚非闭环成绩。gpu17本轮SSH已恢复，代码工作树已同步GitHub提交；只同步代码，未运行GPU任务，远端会话认证helper尚缺，不使用远端共享GitHub凭证。
+
+辅助作用范围：新原ACT扩展的补全头读取主Transformer混合前的观察token，aux梯度只经过共享CNN、图像投影和点MLP，不直接更新原ACT主Transformer。这样保留原actor骨架并排除未来posterior泄漏，但也限制了辅助监督的作用路径。
+
 以下为本轮之前的提案与旧实现历史记录；“尚未实现/未训练”描述仅适用于其记录时点，最新状态以上文与执行JSON为准。
 
 当前状态：按用户最新要求，训练调度进程已停止，正式训练尚未开始，等待用户检查下列设置。单个 8 卡节点的资源使用已获允许，但尚未申请或发起训练；数据回放继续，不会自动转入训练。暂停回执为任务目录中的 `training-hold.json`。最终结果尚未产生，不能据工程预检断言 Flow 有效。

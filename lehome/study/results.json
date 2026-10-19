@@ -335,18 +335,18 @@
       }
     },
     "source_commit": "ac703750a47c930ce87169132850d4c93deced03",
-    "completed_replays": 22,
+    "completed_replays": 25,
     "expected_replays": 250,
     "active_condition": null,
     "snapshot_utc": "2026-10-19T18:27:45.102796+00:00",
     "paused_by_user": true,
     "reason": "User requested settings review before starting training",
-    "collection_count_snapshot_utc": "2026-10-19T19:26:12.242414+00:00"
+    "collection_count_snapshot_utc": "2026-10-19T19:36:31.803925+00:00"
   },
   "architecture_review": {
     "schema": 1,
     "status": "developer_validation_running_formal_study_paused",
-    "snapshot_utc": "2026-10-19T19:20:11.341273+00:00",
+    "snapshot_utc": "2026-10-19T19:27:43.283515+00:00",
     "new_training_started": true,
     "node_allocated": false,
     "ACT_core_rebase_implemented": true,
@@ -444,14 +444,13 @@
         "valid flag (1)"
       ],
       "implemented_path": [
-        "shared Linear 8->256",
-        "two temporal Transformer layers per point",
-        "read current-time token",
-        "two inter-point Transformer layers",
-        "Linear 256->512",
-        "16 ACT observation tokens"
+        "flatten fixed 16x8 per-point history",
+        "shared Linear128->128 + ReLU",
+        "shared Linear128->128 + ReLU",
+        "shared Linear128->512",
+        "16 native ACT observation tokens"
       ],
-      "implemented_parameters": 3293952,
+      "implemented_parameters": 99072,
       "rationale": [
         "Within-window vertex identity links the same point through time.",
         "Explicit time values distinguish histories.",
@@ -480,32 +479,42 @@
         "point_interaction": "native ACT encoder",
         "scope": "fixed 16-frame history with explicit masks; no universal variable-length claim"
       },
-      "selection": "Use the simple 99,072-parameter MLP for this pilot; both candidates fit tiny data but fail the old held-out static reference."
+      "selection": "Use the simple 99,072-parameter MLP for this pilot; both candidates fit tiny data but fail the old held-out static reference.",
+      "legacy_factorized_path": [
+        "shared Linear 8->256",
+        "two temporal Transformer layers per point",
+        "read current-time token",
+        "two inter-point Transformer layers",
+        "Linear 256->512",
+        "16 ACT observation tokens"
+      ],
+      "legacy_factorized_parameters": 3293952,
+      "current_policy_encoder": "mlp"
     },
     "gates": [
       {
         "name": "ACT output/loss/gradient parity with extensions disabled",
-        "status": "pending_ACT_rebase"
+        "status": "passed_native_parity"
       },
       {
         "name": "Existing point-encoder CPU invariants and gradients",
-        "status": "executed_on_old_encoder"
+        "status": "executed_legacy_and_new_MLP_semantics"
       },
       {
         "name": "Static, nearest and 3NN development references",
-        "status": "executed_no_training"
+        "status": "executed_on_old_and_new_full_validation_windows"
       },
       {
         "name": "Synthetic static/rigid/affine and tiny real-data learning, 200-500 updates per point candidate",
-        "status": "not_run"
+        "status": "analytical_synthetic_semantics_and_300_update_real_tiny_fit_executed_no_synthetic_neural_fit"
       },
       {
         "name": "Completion validation on held-out episodes and >5mm moving points vs 3NN",
-        "status": "not_run"
+        "status": "point_only_heldout_static_gate_failed_RGB_conditioned_policy_pending"
       },
       {
         "name": "Original ACT baseline feasibility, then five matched short policy runs",
-        "status": "not_run"
+        "status": "ACT_running_500_update_equal_budget_pilot"
       },
       {
         "name": "Additional seeds before any robust policy claim",
@@ -705,7 +714,25 @@
       "hidden_queries_do_not_enter_actor": true,
       "future_actions_do_not_enter_completion": true
     },
-    "current_execution_root": "results/lehome_garment_folding/act-dev-validation-01"
+    "current_execution_root": "results/lehome_garment_folding/act-dev-validation-01",
+    "native_exact_resume": {
+      "status": "complete",
+      "optimizer_steps": 2,
+      "model_optimizer_RNG_step_and_receipts_exact": true,
+      "RGB_hw": [
+        480,
+        640
+      ]
+    },
+    "causal_history_parity": {
+      "status": "complete",
+      "windows": 40,
+      "RGB_point_file_reads": 0
+    },
+    "synchronization": {
+      "Mac_Baidu": "same_scientific_sources_via_GitHub_commits",
+      "gpu17": "SSH reachable; code-only task checkout synchronized via authenticated-locally-pushed GitHub commit bundle; no GPU jobs, no remote credentials; session helper absent"
+    }
   },
   "preflight": {
     "status": "complete",
@@ -823,7 +850,7 @@
     "offline_matches_checkpoint_receipt": true,
     "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b"
   },
-  "snapshot_utc": "2026-10-19T19:26:12.242414+00:00",
+  "snapshot_utc": "2026-10-19T19:36:31.803925+00:00",
   "capacity": {
     "total_instantiated": 74929807,
     "track_encoder": 3293952,
@@ -891,12 +918,12 @@
     "status": {
       "status": "running",
       "stage": "training",
-      "snapshot_utc": "2026-10-19T19:20:34.528565+00:00",
+      "snapshot_utc": "2026-10-19T19:29:40.473662+00:00",
       "formal_training": false,
       "protocol_fingerprint": "4f0f0da201ea49ff32cbd39ccd8956c493f954dbd5b5498324531178e7bad277",
       "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
-      "current_job": "train-act",
-      "mode": "act"
+      "current_job": "train-rgb_history",
+      "mode": "rgb_history"
     },
     "parity": {
       "status": "complete",
@@ -1401,7 +1428,7 @@
       "act": {
         "manifest": {
           "schema": "act-dev-pilot-1",
-          "status": "running",
+          "status": "complete",
           "mode": "act",
           "recipe": {
             "config": {
@@ -1459,34 +1486,36 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 300,
-          "elapsed_seconds": 307.38605767907575,
+          "completed_optimizer_steps": 500,
+          "elapsed_seconds": 508.442888058722,
           "latest_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.6574726502958413,
-            "action_MAE_radians": 0.3406843269025489,
+            "prior_action_L1": 0.47438503278696353,
+            "action_MAE_radians": 0.21738821438374367,
             "aggregation": "valid_element_weighted"
           },
           "best_validation": {
-            "step": 250,
+            "step": 500,
             "windows": 427,
-            "prior_action_L1": 0.6574726502958413,
-            "action_MAE_radians": 0.3406843269025489,
+            "prior_action_L1": 0.47438503278696353,
+            "action_MAE_radians": 0.21738821438374367,
             "aggregation": "valid_element_weighted"
           }
         },
         "latest": {
-          "step": 304,
-          "loss": 2.623052753508091,
-          "action_loss": 0.47246059868484735,
-          "kl_loss": 0.2150592189282179,
+          "step": 500,
+          "loss": 2.019560545682907,
+          "action_loss": 0.35618966608308256,
+          "kl_loss": 0.16633708775043488,
           "auxiliary_loss": 0.0,
-          "gradient_norm": 53.05228805541992,
-          "update_seconds": 0.9694028291851282,
-          "elapsed_seconds": 311.27465637773275,
+          "gradient_norm": 66.9591293334961,
+          "update_seconds": 1.0089172571897507,
+          "elapsed_seconds": 508.442888058722,
           "peak_reserved_bytes": 1742733312
         },
+        "active_training_parameters": 51609484,
+        "inference_parameters": 51609484,
         "curve": [
           {
             "step": 1,
@@ -1630,6 +1659,94 @@
             "update_seconds": 0.9673528680577874,
             "elapsed_seconds": 307.38605767907575,
             "peak_reserved_bytes": 1742733312
+          },
+          {
+            "step": 325,
+            "loss": 2.3783755376935005,
+            "action_loss": 0.5263392012566328,
+            "kl_loss": 0.18520363606512547,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 50.56306838989258,
+            "update_seconds": 1.0000062468461692,
+            "elapsed_seconds": 332.12307824008167,
+            "peak_reserved_bytes": 1742733312
+          },
+          {
+            "step": 350,
+            "loss": 2.32277400046587,
+            "action_loss": 0.5199884651228786,
+            "kl_loss": 0.18027855455875397,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 45.88334274291992,
+            "update_seconds": 1.0156955211423337,
+            "elapsed_seconds": 357.58810770791024,
+            "peak_reserved_bytes": 1742733312
+          },
+          {
+            "step": 375,
+            "loss": 2.409026011824608,
+            "action_loss": 0.525540784932673,
+            "kl_loss": 0.18834852240979671,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 65.74519348144531,
+            "update_seconds": 0.9996217912994325,
+            "elapsed_seconds": 382.9530148007907,
+            "peak_reserved_bytes": 1742733312
+          },
+          {
+            "step": 400,
+            "loss": 2.132956877350807,
+            "action_loss": 0.3443321523955092,
+            "kl_loss": 0.17886247299611568,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 51.8134651184082,
+            "update_seconds": 1.2190163689665496,
+            "elapsed_seconds": 408.2864804719575,
+            "peak_reserved_bytes": 1742733312
+          },
+          {
+            "step": 425,
+            "loss": 2.0877414494752884,
+            "action_loss": 0.44897902017692104,
+            "kl_loss": 0.16387624479830265,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 58.782814025878906,
+            "update_seconds": 1.013746865093708,
+            "elapsed_seconds": 433.33744927775115,
+            "peak_reserved_bytes": 1742733312
+          },
+          {
+            "step": 450,
+            "loss": 2.180900290608406,
+            "action_loss": 0.4439381330885226,
+            "kl_loss": 0.17369621619582176,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 62.28484344482422,
+            "update_seconds": 0.9708708799444139,
+            "elapsed_seconds": 458.2513576070778,
+            "peak_reserved_bytes": 1742733312
+          },
+          {
+            "step": 475,
+            "loss": 2.2643026411533356,
+            "action_loss": 0.38598459941567853,
+            "kl_loss": 0.1878318041563034,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 59.32340621948242,
+            "update_seconds": 1.0085284220986068,
+            "elapsed_seconds": 483.1541362530552,
+            "peak_reserved_bytes": 1742733312
+          },
+          {
+            "step": 500,
+            "loss": 2.019560545682907,
+            "action_loss": 0.35618966608308256,
+            "kl_loss": 0.16633708775043488,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 66.9591293334961,
+            "update_seconds": 1.0089172571897507,
+            "elapsed_seconds": 508.442888058722,
+            "peak_reserved_bytes": 1742733312
           }
         ],
         "validation": [
@@ -1639,8 +1756,184 @@
             "prior_action_L1": 0.6574726502958413,
             "action_MAE_radians": 0.3406843269025489,
             "aggregation": "valid_element_weighted"
+          },
+          {
+            "step": 500,
+            "windows": 427,
+            "prior_action_L1": 0.47438503278696353,
+            "action_MAE_radians": 0.21738821438374367,
+            "aggregation": "valid_element_weighted"
           }
         ]
+      },
+      "rgb_history": {
+        "manifest": {
+          "schema": "act-dev-pilot-1",
+          "status": "running",
+          "mode": "rgb_history",
+          "recipe": {
+            "config": {
+              "mode": "rgb_history",
+              "point_encoder": "mlp",
+              "history": 16,
+              "cameras": 3,
+              "input_points": 16,
+              "hidden_points": 48,
+              "action_dim": 12,
+              "chunk": 100,
+              "n_action_steps": 100,
+              "rgb_height": 480,
+              "rgb_width": 640,
+              "dropout": 0.1,
+              "backbone_batch": 6,
+              "spatial_scale_m": 0.5,
+              "motion_scale_m": 0.05,
+              "auxiliary_weight": 0.1,
+              "kl_weight": 10.0
+            },
+            "steps": 500,
+            "seed": 1000,
+            "batch_size": 1,
+            "accumulate": 16,
+            "lr": 1e-05,
+            "weight_decay": 0.0001,
+            "clip": 10,
+            "schedule": "constant",
+            "precision": "bfloat16",
+            "workers": 2,
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "imagenet_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+          },
+          "code_hashes": {
+            "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+            "act_pilot_data.py": "2b867602c8df684ef38512d561903ac4821da15609989ffa3828b81bcc2b2161",
+            "act_pilot_train.py": "22b06b6950273307399d27c12400abe70821dee85fe53ac2ba86eefa16511943",
+            "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
+            "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
+            "flow_training_state.py": "dcc394d2fab1e7ec582113f0d5ddee560c58335e1fb582fd9ffcdf4f7fa5c0d1",
+            "native_ACT": "69301fff11cbb8f4ba7bfe473a55ba488c3d2f89c25ecdfe512347a93b4ad04f"
+          },
+          "job_name": "ei-liupeiqi-wam-training",
+          "initial_model_sha256": "fe251ee4725665e4944a4bf346c41850a02efdd77f5c2562754d2e49df7bafaf",
+          "initial_ACT_core_sha256": "b5a97db5347f325014b8fe0bdc9afdccdf08d7e8452503920baaf7e2c98ed012",
+          "source_commit": "ab56b5d5c05a46244b3c431e4bcbd825d96bb3a8",
+          "parameters": 52056591,
+          "point_parameters": 99072,
+          "auxiliary_parameters": 348035,
+          "training_windows": 1688,
+          "validation_windows": 427,
+          "formal_training": false,
+          "CUDA_VISIBLE_DEVICES": "2",
+          "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
+          "test_used": false,
+          "RGB_only_GT_reads": 0,
+          "completed_optimizer_steps": 175,
+          "elapsed_seconds": 355.66423580702394
+        },
+        "latest": {
+          "step": 188,
+          "loss": 2.888643689453602,
+          "action_loss": 0.5537325129844248,
+          "kl_loss": 0.23349111899733543,
+          "auxiliary_loss": 0.0,
+          "gradient_norm": 56.66935729980469,
+          "update_seconds": 1.9928257940337062,
+          "elapsed_seconds": 381.983359741047,
+          "peak_reserved_bytes": 6738149376
+        },
+        "active_training_parameters": 51609484,
+        "inference_parameters": 51609484,
+        "curve": [
+          {
+            "step": 1,
+            "loss": 81.29540967941284,
+            "action_loss": 0.9157600048929453,
+            "kl_loss": 8.037964880466461,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 1142.171142578125,
+            "update_seconds": 4.524329636245966,
+            "elapsed_seconds": 4.530980309005827,
+            "peak_reserved_bytes": 6329204736
+          },
+          {
+            "step": 25,
+            "loss": 6.97970923781395,
+            "action_loss": 0.7120685793925077,
+            "kl_loss": 0.6267640646547079,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 128.28875732421875,
+            "update_seconds": 1.9866146836429834,
+            "elapsed_seconds": 52.71834168303758,
+            "peak_reserved_bytes": 6738149376
+          },
+          {
+            "step": 50,
+            "loss": 4.341800585389137,
+            "action_loss": 0.7353431954979897,
+            "kl_loss": 0.36064573749899864,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 84.13196563720703,
+            "update_seconds": 2.046553026419133,
+            "elapsed_seconds": 102.24724424770102,
+            "peak_reserved_bytes": 6738149376
+          },
+          {
+            "step": 75,
+            "loss": 3.980197489261627,
+            "action_loss": 0.704402125091292,
+            "kl_loss": 0.32757954113185406,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 69.81954956054688,
+            "update_seconds": 1.990574839990586,
+            "elapsed_seconds": 152.77670323196799,
+            "peak_reserved_bytes": 6738149376
+          },
+          {
+            "step": 100,
+            "loss": 3.658481702208519,
+            "action_loss": 0.657369771040976,
+            "kl_loss": 0.300111198797822,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 85.31875610351562,
+            "update_seconds": 2.015906800981611,
+            "elapsed_seconds": 203.42472689878196,
+            "peak_reserved_bytes": 6738149376
+          },
+          {
+            "step": 125,
+            "loss": 3.475912019610405,
+            "action_loss": 0.5694142422580626,
+            "kl_loss": 0.29064977541565895,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 83.01612091064453,
+            "update_seconds": 2.0228186091408134,
+            "elapsed_seconds": 254.22519028978422,
+            "peak_reserved_bytes": 6738149376
+          },
+          {
+            "step": 150,
+            "loss": 3.003244563937187,
+            "action_loss": 0.540815596934408,
+            "kl_loss": 0.24624289944767952,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 66.62737274169922,
+            "update_seconds": 1.875322172883898,
+            "elapsed_seconds": 304.47550740186125,
+            "peak_reserved_bytes": 6738149376
+          },
+          {
+            "step": 175,
+            "loss": 3.0653759241104126,
+            "action_loss": 0.6377264510374516,
+            "kl_loss": 0.24276494979858398,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 68.17098236083984,
+            "update_seconds": 2.026448519900441,
+            "elapsed_seconds": 355.66423580702394,
+            "peak_reserved_bytes": 6738149376
+          }
+        ],
+        "validation": []
       }
     },
     "videos": []
