@@ -1,10 +1,12 @@
+已完成32组×2000步训练及500项独立核验。96个冻结checkpoint的真实输出action MSE补算通过864项检查；ACT在2000步为0.065236±0.001918 rad²，新增方法尚无稳定优势。正式长训保持暂停。闭环起点的后续严格配对失败，当前不接受闭环排名。
+
 # B20z 三小时配对小实验
 
 用户本轮明确授权 B20z 的最多32张B200，窗口为2026-10-19 19:56:28–22:56:28 UTC，22:53:28起停止仍在排队或运行的本轮任务。正式30,000步训练继续暂停。任务名前缀为`ei-liupeiqi-wam-training-actpilot-s<seed>`，每节点8卡各跑一个独立实验，不扩大有效batch。
 
 本轮用四个种子1000–1003。每种子有五个主要条件：ACT、RGB-H、Geometry、Tracks、Tracks+Completion；再有三个探索条件，仅将Completion输出权重初始化从std1e-4乘100，并分别用辅助权重0.1/1/10。此前三个固定训练窗口的零更新探针显示：原设置共享梯度比约2.1e-6–6.8e-6；gain100、weight10约0.14–0.16。后三组检验梯度强度机制，不把验证集选出的胜者包装成独立确认结果。
 
-全部32次训练各最多2000更新，有效batch16，16train/4validation、相同冻结数据、逐种子ACT初始化与样本顺序、16帧历史、原生ACT骨架、AdamW lr1e-5、clip10和BF16。每250步全427窗口FP32 prior-zero验证。主要离线比较固定2000步，并保留500等相同步数检查点；验证最优权重另行标注。不同GPU的开发机500步结果只作为工程验收，不混入B200配对主结果。
+全部32次训练各最多2000更新，有效batch16，16train/4validation、相同冻结数据、逐种子ACT初始化与样本顺序、16帧历史、原生ACT骨架、AdamW lr1e-5、clip10和BF16。每250步全427窗口FP32 prior-zero验证。主要离线比较固定2000步，每250步的验证日志保留，原组不可变权重为1500/1750/2000步，缺失早期权重不伪造MSE曲线；验证最优权重另行标注。不同GPU的开发机500步结果只作为工程验收，不混入B200配对主结果。
 
 结果根目录`results/lehome_garment_folding/act-b20z-validation-01`。`jobs.json`记录确切job ID；`lease-status.json`记录平台状态；各seed的`node-status.json`、各条件manifest/metrics/validation/checkpoint保存真实进度。冻结执行源码在独立个人目录clone，主开发机pilot不改源码、不停止同事进程。每节点复制并哈希验证lossless缓存到自己的/tmp后训练，避免32卡反复读取共享RGB文件。每节点先做真实全分辨率BF16反向验收；独立watchdog只停止登记且名字匹配的本轮任务，worker也有绝对UTC截止保护。
 
@@ -18,6 +20,6 @@ GT轨迹是仿真特权信息。这是单衣服的小实验，四种子也不能
 
 开发机500步训练已全完成。H800原生相机初始化连续两次产生空depth，均在策略第一动作前失败。计划由第四个B20后续评估节点在完成2k主检查后并行执行原定10个500步单元，训练checkpoint、pose、执行节奏及初始化脚本不变，提前记录评估硬件修订；不足20分钟则不启动。所有10个单元统一在B20评估，不混合两种评估硬件。
 
-实测发现原环境在PhysX启动后保存初始cloth顶点，跨GPU初始状态可差0.0113456m。比较闭环产生结果前已暂停评估并留存旧协议；`paired_cloth_initialization.py`只在本进程里把asset rest mesh和随机pose在play之前写入。三次真实检查（同节点GPU0/GPU7、另一节点GPU7）布料、关节和20步预热后的差分速度差均为0。`paired-runtime-pairing-audit.json`绑定实际脚本哈希；`native-initialization-amendment.json`保留原因。64个2k闭环单元固定四训练种子、8条件、pose5001、执行100/10，最大600控制步；这仍不是环境成功率实验。
+初始化审计更新：原环境在PhysX启动后保存初始cloth顶点，跨GPU初始状态曾差0.0113456m，已留存旧协议；`paired_cloth_initialization.py`只在本进程里把asset rest mesh和随机pose在play之前写入。早期三次检查（同节点GPU0/GPU7、另一节点GPU7）差0，但后续实际闭环审计发现相同rest/pose/关节下布料仍差1.34–2.17cm，速度差约0.54m/s。因此旧闭环均不接受为配对比较，视频仅作工程诊断；旧1500步闭环自动启动也已阻止。正在用物理回调计数定位启动时额外推进，先做16次逐GPU冷/热启动检查，再决定是否重做，绝不放宽配对容差。`paired-runtime-pairing-audit.json`绑定实际脚本哈希；`native-initialization-amendment.json`保留原因。64个2k闭环单元固定四训练种子、8条件、pose5001、执行100/10，最大600控制步；这仍不是环境成功率实验。
 
 共同500步时补全仍差于静态14.21mm和3NN11.81mm，因而不盲目扩大训练。准备一组8卡机制迭代：3NN插值加小残差，同初始参数的connected/detached辅助观察梯度对照，各四种子。三个固定训练窗口零更新标定λ=275.1，目标共享梯度比0.1；没有用验证或测试调权重。各最多1500更新，与原组不可变的1500步快照比较。仅在原节点终结、总活动GPU≤32且至少剩80分钟时提交，否则跳过；继续使用原三小时截止及同一个确切ID清理台账。新增任务前缀`ei-liupeiqi-wam-training-actpilot-residual`，根目录`act-b20z-residual-iteration-01`。这是根据500步观察产生的探索，不能视为独立确认。
