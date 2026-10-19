@@ -1,6 +1,21 @@
 # RGB-H / FlowACT 设计审查与公平实验
 
-结论：四组可以用于受控的仿真上界实验。信息边界和时间对齐检查通过；正式实验修正了补全初始化、位移尺度和共同执行节奏，并冻结数据、选模与成对闭环协议。训练任务先生成全部同步数据，再自动启动四组训练。最终结果尚未产生，不能据工程预检断言 Flow 有效。
+当前状态：按用户最新要求，训练调度进程已停止，正式训练尚未开始，等待用户检查下列设置。单个 8 卡节点的资源使用已获允许，但尚未申请或发起训练；数据回放继续，不会自动转入训练。暂停回执为任务目录中的 `training-hold.json`。最终结果尚未产生，不能据工程预检断言 Flow 有效。
+
+## 待用户审核的实际设置
+
+以下是当前实现与 `configs/flow-study-01.json` 的有效设置，尚不表示用户已批准开始训练。
+
+- **四组输入：** RGB-H 为 16 帧三相机 RGB + 当前 12 维实测关节；Geometry 加 K=16 当前 XYZ；Tracks 加同 K 点过去轨迹；Tracks+Completion 的推理输入与 Tracks 相同，训练时另以 48 个隐藏点的当前 XYZ 和过去位移构造补全监督。关节只输入当前状态，不输入关节历史。
+- **共同观察与动作：** 原图 640×480，无裁剪、缩放或图像增强；历史间隔 3 个 90 Hz tick，覆盖 0.5 s。缺失历史用 mask；不复制首帧补齐。训练窗口起点也每 3 tick 取一个，按种子打乱、遍历完再打乱。预测未来 100×12 个关节控制目标，执行前 10 步后重规划（9 Hz），不做 temporal ensembling。
+- **RGB/ACT 结构：** ImageNet ResNet18，冻结 BN 统计量但训练 backbone 权重；每帧每相机输出 4×4 空间 token，加相机、空间、时间编码。主宽度 512、8 heads、FFN 3200、dropout 0.1；共享观察 encoder 2 层、actor encoder 4 层、action decoder 1 层。CVAE posterior encoder 4 层、latent 32；训练采样 posterior，验证/推理固定 z=0。
+- **点结构与补全：** 点编码宽度 256、4 heads、FFN 1024，先每点 2 层时间 encoder，再 2 层点间 encoder，映射到 512；补全 decoder 2 层，只从共享观察特征读取。先从当前可见表面 FPS 选 64 点，再按种子随机分 16 输入/48 隐藏；同一窗口每次访问固定，窗口内身份一致，不按位移大小抽样。XYZ 除 0.5 m，过去相对当前的位移除 0.05 m；补全输出以 std=1e-4 权重、零 bias 初始化。
+- **数据：** 官方固定 revision 的 10 件 Seen 长袖、250 集动作全部回放，同一次回放生成 RGB/关节/GT。Seen_0–7 的 200 集训练，Seen_8 的 25 集验证，Seen_9 的 25 集离线测试；按衣服划分后切窗口。完整回放保留成功标签，不只挑成功轨迹。状态/动作均值和标准差只从训练集拟合，std 下限 0.01。完整清单及 SHA 冻结前不允许正式训练。
+- **预算与优化：** 四组各种子 1000/1001/1002，共 12 次独立训练，每次 30,000 optimizer steps；单卡 micro-batch 1、累积 16，等效 batch 16，共消费 480,000 个窗口样本/次。AdamW：backbone/policy lr 均 1e-5，betas=(0.9,0.999)、eps=1e-8、weight decay=1e-4；500-step warmup，cosine 到起始 lr 的 0.1，梯度 clip=1。bfloat16、严格确定性、2 个 loader worker、4 CPU threads；ResNet 分批每次 6 张图，关闭 backbone checkpointing，单进程显存上限 16 GiB。
+- **损失与选模：** 所有组为归一化动作的有效步平均 L1 + 10×KL；只有 Completion 额外加 0.1×归一化隐藏过去位移 SmoothL1（beta=1），不预测未来轨迹。每 500 更新在同样的固定 128 个验证窗口上计算 prior-zero action L1 选 best；每 1000 步保存完整断点，每 100 步日志。最终 best 在完整 validation/test 窗口离线评估。测试成功率、补全误差均不选模型。
+- **闭环评估：** Seen_9、Unseen_0/1 各 10 个环境种子 2027..2036，四组×三训练种子共 360 次；点种子 2026，相同初始化、90 Hz、600 步上限、首次成功后再执行 50 步。主指标 final success，次指标 ever success，报告成对差值及 95% bootstrap 区间。8 卡将用于独立实验并行，不改为扩大 batch 的 DDP；具体并行调度仍待配置核准后实施。
+
+**需要在解释结果时保留的限制：** GT 过去轨迹（包括遮挡段）是仿真特权信息，不是从 RGB 估计的 optical flow；RGB-H 与 Flow 的输入信息及有效容量不同。主机制比较为 Tracks−Geometry、Completion−Tracks。旧单帧 ACT 的 14/20 不属于这次公平主比较。6 步工程预检不能证明收敛或补全有效；目前没有正式训练分数。
 
 ## 审查结论与修改
 
@@ -38,7 +53,7 @@
 
 ## 执行与续跑
 
-正式任务目录为 `results/lehome_garment_folding/flow-study-01/`。`run_flow_study.py` 在完整预检通过后接管已运行的采集队列：250 集回放 → 全 SHA 冻结 → 四组×三种子等预算训练 → 全窗口 validation/test → 冻结场景闭环 → 配对统计。出错保留记录并停止，不静默改协议。
+正式任务目录为 `results/lehome_garment_folding/flow-study-01/`。`run_flow_study.py` 实现 250 集回放 → 全 SHA 冻结 → 四组×三种子等预算训练 → 全窗口 validation/test → 冻结场景闭环 → 配对统计。当前该调度器已按用户要求停止，只有独立采集进程继续。以下为既有串行入口参考，未经用户确认设置不得重启；8 卡并行执行尚未发起。出错保留记录，不静默改协议。
 
 ```bash
 .runtime/venv/bin/python -u integrations/LeHome/run_flow_study.py \
@@ -50,8 +65,8 @@
   --collection-gpu 3 --training-gpu 2
 ```
 
-这是同一开发节点内的两张部分使用卡：一张串行回放，一张训练预检/训练，未占整节点或多个节点，不影响他人任务。状态查看 `study-status.json`，中间模型进度为 `training-progress.json`。页面是带时间戳的发布快照，不伪装实时结果。gpu17 仍因 SSH 连接失败未同步。
+已执行部分仅在开发节点上进行：一张卡串行回放，另一张用于已结束的工程预检；没有正式训练在运行。状态查看 `study-status.json` 与 `training-hold.json`。页面是带时间戳的发布快照，不伪装实时结果。gpu17 仍因 SSH 连接失败未同步。
 
 已执行：31 项 LeHome 检查全过；完整 74.9M 四组在 bfloat16、有效 batch 16、两 worker 预取下各运行 6 步，3→6 步续训与连续训练的参数/优化器/调度/RNG/cursor 完全一致（参数最大差 0），离线 best 回执一致。源码与预检见 `model-audit-validation.json`；这不是正式成绩。
 
-在线页由 Mac 本地独立发布器约每半小时更新状态快照；依赖 Mac 联网和个人 Keychain 可用，离线期间服务器训练仍独立运行。最终服务器报告自动生成 12 个预先固定的完整视频与统计；发布器在恢复可用后上传。临时 GitHub 认证只在子进程中生效，不在共享服务器保存凭证。
+在线页已发布，并将此次待审核设置与暂停状态同步为新快照。本地发布器支持后续约每半小时更新（需另行启动，依赖 Mac 联网及个人 Keychain）；发布器只发布文件，不启动训练。正式评估完成后可生成 12 个预先固定的完整视频与统计。临时 GitHub 认证只在子进程中生效，不在共享服务器保存凭证。

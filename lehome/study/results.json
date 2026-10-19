@@ -294,8 +294,8 @@
     "legacy_public_single_frame_ACT": "pipeline reference only; its 14/20 is not the matched baseline"
   },
   "status": {
-    "status": "running",
-    "stage": "collection",
+    "status": "paused",
+    "stage": "awaiting_settings_review",
     "protocol_fingerprint": "1f83b1bd7e5b420d0ee86be9c364c55a3642054cb0f62359f2d29e85bcb23398",
     "job_name": "ei-liupeiqi-wam-training",
     "formal_training_started": false,
@@ -335,10 +335,12 @@
       }
     },
     "source_commit": "ac703750a47c930ce87169132850d4c93deced03",
-    "completed_replays": 6,
+    "completed_replays": 7,
     "expected_replays": 250,
     "active_condition": null,
-    "snapshot_utc": "2026-10-19T18:24:45.604862+00:00"
+    "snapshot_utc": "2026-10-19T18:27:45.102796+00:00",
+    "paused_by_user": true,
+    "reason": "User requested settings review before starting training"
   },
   "preflight": {
     "status": "complete",
@@ -456,7 +458,7 @@
     "offline_matches_checkpoint_receipt": true,
     "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b"
   },
-  "snapshot_utc": "2026-10-19T18:24:45.929740+00:00",
+  "snapshot_utc": "2026-10-19T18:29:45.233601+00:00",
   "capacity": {
     "total_instantiated": 74929807,
     "track_encoder": 3293952,
