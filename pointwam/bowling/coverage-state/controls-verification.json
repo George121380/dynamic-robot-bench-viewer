@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "stages": {
+    "state-control": {
+      "rows": 620,
+      "episodes": 20,
+      "max_scalar_metric_error_m": 1.5265566588595902e-16
+    },
+    "state-components": {
+      "rows": 1120,
+      "episodes": 20,
+      "max_scalar_metric_error_m": 1.5222198501696482e-16
+    },
+    "sampling-control": {
+      "rows": 280,
+      "episodes": 20,
+      "max_scalar_metric_error_m": 1.5308934675495323e-16
+    }
+  },
+  "independent_endpoint_distances": 4040,
+  "actual_state_scalars_checked": 273681,
+  "max_scalar_error_m": 1.5308934675495323e-16,
+  "source_sha256": "e71a5cba75ddadb0079024f34cfcc17bc945ebce06932c944e4b4ade328eacbc",
+  "test_arrays_opened": 0,
+  "component_report_note": "Its max_axial_* fields are inapplicable because that stage has no axial-only arms; this independent check validates the actual orientation and velocity swaps."
+}

@@ -1,0 +1,6482 @@
+[
+  {
+    "base_index": 23,
+    "neighbor_index": 31,
+    "seed": 51,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.015672408199700442,
+    "two_example_lower_bound_m": 0.007836204099850221,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 23,
+    "neighbor_index": 72,
+    "seed": 51,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.015048119362083204,
+    "two_example_lower_bound_m": 0.007524059681041602,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 23,
+    "neighbor_index": 113,
+    "seed": 51,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.014936844763061497,
+    "two_example_lower_bound_m": 0.007468422381530749,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 23,
+    "neighbor_index": 154,
+    "seed": 51,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.005970835595295734,
+    "two_example_lower_bound_m": 0.002985417797647867,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 23,
+    "neighbor_index": 195,
+    "seed": 51,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0050439699004283965,
+    "two_example_lower_bound_m": 0.0025219849502141982,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 23,
+    "neighbor_index": 236,
+    "seed": 51,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007197714859551786,
+    "two_example_lower_bound_m": 0.003598857429775893,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 23,
+    "neighbor_index": 277,
+    "seed": 51,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.013995570706266405,
+    "two_example_lower_bound_m": 0.006997785353133203,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 23,
+    "neighbor_index": 318,
+    "seed": 51,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.004069410759354232,
+    "two_example_lower_bound_m": 0.002034705379677116,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 23,
+    "neighbor_index": 359,
+    "seed": 51,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.020972274419038404,
+    "two_example_lower_bound_m": 0.010486137209519202,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 23,
+    "neighbor_index": 400,
+    "seed": 51,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01253080413187608,
+    "two_example_lower_bound_m": 0.00626540206593804,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 23,
+    "neighbor_index": 441,
+    "seed": 51,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01006528516149886,
+    "two_example_lower_bound_m": 0.00503264258074943,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 23,
+    "neighbor_index": 482,
+    "seed": 51,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.011724726741676631,
+    "two_example_lower_bound_m": 0.0058623633708383156,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 124,
+    "neighbor_index": 516,
+    "seed": 54,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.003218611899594478,
+    "two_example_lower_bound_m": 0.001609305949797239,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 124,
+    "neighbor_index": 557,
+    "seed": 54,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.005699896762227855,
+    "two_example_lower_bound_m": 0.0028499483811139275,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 124,
+    "neighbor_index": 598,
+    "seed": 54,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0028525886948375257,
+    "two_example_lower_bound_m": 0.0014262943474187629,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 124,
+    "neighbor_index": 639,
+    "seed": 54,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0054331880004899365,
+    "two_example_lower_bound_m": 0.0027165940002449682,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 124,
+    "neighbor_index": 680,
+    "seed": 54,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.004687836931138367,
+    "two_example_lower_bound_m": 0.0023439184655691834,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 124,
+    "neighbor_index": 721,
+    "seed": 54,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01007684456492857,
+    "two_example_lower_bound_m": 0.005038422282464285,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 124,
+    "neighbor_index": 762,
+    "seed": 54,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0074198163071441834,
+    "two_example_lower_bound_m": 0.0037099081535720917,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 124,
+    "neighbor_index": 803,
+    "seed": 54,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0015163563360288863,
+    "two_example_lower_bound_m": 0.0007581781680144432,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 124,
+    "neighbor_index": 844,
+    "seed": 54,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.014627849353031002,
+    "two_example_lower_bound_m": 0.007313924676515501,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 124,
+    "neighbor_index": 885,
+    "seed": 54,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.009708152324875536,
+    "two_example_lower_bound_m": 0.004854076162437768,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 124,
+    "neighbor_index": 926,
+    "seed": 54,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.006374990637381358,
+    "two_example_lower_bound_m": 0.003187495318690679,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 124,
+    "neighbor_index": 967,
+    "seed": 54,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.004122585774223362,
+    "two_example_lower_bound_m": 0.002061292887111681,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 149,
+    "neighbor_index": 1002,
+    "seed": 55,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01022371607154091,
+    "two_example_lower_bound_m": 0.005111858035770455,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 149,
+    "neighbor_index": 1043,
+    "seed": 55,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.022417583064281224,
+    "two_example_lower_bound_m": 0.011208791532140612,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 149,
+    "neighbor_index": 1084,
+    "seed": 55,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.02079622323792288,
+    "two_example_lower_bound_m": 0.01039811161896144,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 149,
+    "neighbor_index": 1125,
+    "seed": 55,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0014508462838480718,
+    "two_example_lower_bound_m": 0.0007254231419240359,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 149,
+    "neighbor_index": 1166,
+    "seed": 55,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.00793334396256702,
+    "two_example_lower_bound_m": 0.00396667198128351,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 149,
+    "neighbor_index": 1207,
+    "seed": 55,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.041029969247567785,
+    "two_example_lower_bound_m": 0.020514984623783893,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 149,
+    "neighbor_index": 1248,
+    "seed": 55,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.026627877010184948,
+    "two_example_lower_bound_m": 0.013313938505092474,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 149,
+    "neighbor_index": 1289,
+    "seed": 55,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.004063730133399534,
+    "two_example_lower_bound_m": 0.002031865066699767,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 149,
+    "neighbor_index": 1330,
+    "seed": 55,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0070485378800086785,
+    "two_example_lower_bound_m": 0.0035242689400043392,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 149,
+    "neighbor_index": 1371,
+    "seed": 55,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0477208851213683,
+    "two_example_lower_bound_m": 0.02386044256068415,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 149,
+    "neighbor_index": 1412,
+    "seed": 55,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.008789769145813094,
+    "two_example_lower_bound_m": 0.004394884572906547,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 149,
+    "neighbor_index": 1453,
+    "seed": 55,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 3,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.024144350362744725,
+    "two_example_lower_bound_m": 0.012072175181372363,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 186,
+    "neighbor_index": 1507,
+    "seed": 56,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.011806411146112108,
+    "two_example_lower_bound_m": 0.005903205573056054,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 186,
+    "neighbor_index": 1548,
+    "seed": 56,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01684728104260489,
+    "two_example_lower_bound_m": 0.008423640521302445,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 186,
+    "neighbor_index": 1589,
+    "seed": 56,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.019579179729184742,
+    "two_example_lower_bound_m": 0.009789589864592371,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 186,
+    "neighbor_index": 1630,
+    "seed": 56,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.020868656380727914,
+    "two_example_lower_bound_m": 0.010434328190363957,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 186,
+    "neighbor_index": 1671,
+    "seed": 56,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.004772090136498156,
+    "two_example_lower_bound_m": 0.002386045068249078,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 186,
+    "neighbor_index": 1712,
+    "seed": 56,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0042107359572969094,
+    "two_example_lower_bound_m": 0.0021053679786484547,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 186,
+    "neighbor_index": 1753,
+    "seed": 56,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01165983958591903,
+    "two_example_lower_bound_m": 0.005829919792959515,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 186,
+    "neighbor_index": 1794,
+    "seed": 56,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.003134070289992532,
+    "two_example_lower_bound_m": 0.001567035144996266,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 186,
+    "neighbor_index": 1835,
+    "seed": 56,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.035499859120620036,
+    "two_example_lower_bound_m": 0.017749929560310018,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 186,
+    "neighbor_index": 1876,
+    "seed": 56,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.011077834876844649,
+    "two_example_lower_bound_m": 0.0055389174384223245,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 186,
+    "neighbor_index": 1917,
+    "seed": 56,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007193692638215932,
+    "two_example_lower_bound_m": 0.003596846319107966,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 186,
+    "neighbor_index": 1958,
+    "seed": 56,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.010319976514176429,
+    "two_example_lower_bound_m": 0.005159988257088214,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 228,
+    "neighbor_index": 1999,
+    "seed": 57,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.005048507963820682,
+    "two_example_lower_bound_m": 0.002524253981910341,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 228,
+    "neighbor_index": 2040,
+    "seed": 57,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.004853653517918447,
+    "two_example_lower_bound_m": 0.0024268267589592236,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 228,
+    "neighbor_index": 2081,
+    "seed": 57,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.011119615413229793,
+    "two_example_lower_bound_m": 0.005559807706614897,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 228,
+    "neighbor_index": 2122,
+    "seed": 57,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.009334981520926286,
+    "two_example_lower_bound_m": 0.004667490760463143,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 228,
+    "neighbor_index": 2163,
+    "seed": 57,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.005520248085546179,
+    "two_example_lower_bound_m": 0.0027601240427730894,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 228,
+    "neighbor_index": 2204,
+    "seed": 57,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.011769743382593264,
+    "two_example_lower_bound_m": 0.005884871691296632,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 228,
+    "neighbor_index": 2245,
+    "seed": 57,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.008228235562482034,
+    "two_example_lower_bound_m": 0.004114117781241017,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 228,
+    "neighbor_index": 2286,
+    "seed": 57,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.011310891444979449,
+    "two_example_lower_bound_m": 0.0056554457224897246,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 228,
+    "neighbor_index": 2327,
+    "seed": 57,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.020175635765230116,
+    "two_example_lower_bound_m": 0.010087817882615058,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 228,
+    "neighbor_index": 2368,
+    "seed": 57,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.022843499040965897,
+    "two_example_lower_bound_m": 0.011421749520482949,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 228,
+    "neighbor_index": 2409,
+    "seed": 57,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.005687564229656172,
+    "two_example_lower_bound_m": 0.002843782114828086,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 228,
+    "neighbor_index": 2450,
+    "seed": 57,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.013452786048935659,
+    "two_example_lower_bound_m": 0.0067263930244678295,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 378,
+    "neighbor_index": 2476,
+    "seed": 62,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.027828957324334443,
+    "two_example_lower_bound_m": 0.013914478662167221,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 378,
+    "neighbor_index": 2517,
+    "seed": 62,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0012272406861393145,
+    "two_example_lower_bound_m": 0.0006136203430696573,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 378,
+    "neighbor_index": 2558,
+    "seed": 62,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.028247280538496643,
+    "two_example_lower_bound_m": 0.014123640269248321,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 378,
+    "neighbor_index": 2599,
+    "seed": 62,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.03359538881461032,
+    "two_example_lower_bound_m": 0.01679769440730516,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 378,
+    "neighbor_index": 2640,
+    "seed": 62,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.017465491749179298,
+    "two_example_lower_bound_m": 0.008732745874589649,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 378,
+    "neighbor_index": 2681,
+    "seed": 62,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.026463382125856888,
+    "two_example_lower_bound_m": 0.013231691062928444,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 378,
+    "neighbor_index": 2722,
+    "seed": 62,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0296120913281753,
+    "two_example_lower_bound_m": 0.01480604566408765,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 378,
+    "neighbor_index": 2763,
+    "seed": 62,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.03015429501685401,
+    "two_example_lower_bound_m": 0.015077147508427004,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 378,
+    "neighbor_index": 2804,
+    "seed": 62,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.044240906701743105,
+    "two_example_lower_bound_m": 0.022120453350871552,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 378,
+    "neighbor_index": 2845,
+    "seed": 62,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.038176248984582925,
+    "two_example_lower_bound_m": 0.019088124492291463,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 378,
+    "neighbor_index": 2886,
+    "seed": 62,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.010530800475949715,
+    "two_example_lower_bound_m": 0.005265400237974858,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 378,
+    "neighbor_index": 2927,
+    "seed": 62,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.03586743968275167,
+    "two_example_lower_bound_m": 0.017933719841375834,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 417,
+    "neighbor_index": 2983,
+    "seed": 63,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.004322186158806812,
+    "two_example_lower_bound_m": 0.002161093079403406,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 417,
+    "neighbor_index": 3024,
+    "seed": 63,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0020147663519602082,
+    "two_example_lower_bound_m": 0.0010073831759801041,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 417,
+    "neighbor_index": 3065,
+    "seed": 63,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.006608240039530695,
+    "two_example_lower_bound_m": 0.0033041200197653476,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 417,
+    "neighbor_index": 3106,
+    "seed": 63,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01153822917563358,
+    "two_example_lower_bound_m": 0.00576911458781679,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 417,
+    "neighbor_index": 3147,
+    "seed": 63,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.009754400111015492,
+    "two_example_lower_bound_m": 0.004877200055507746,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 417,
+    "neighbor_index": 3188,
+    "seed": 63,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.00983574743193626,
+    "two_example_lower_bound_m": 0.00491787371596813,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 417,
+    "neighbor_index": 3229,
+    "seed": 63,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.004033137659118832,
+    "two_example_lower_bound_m": 0.002016568829559416,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 417,
+    "neighbor_index": 3270,
+    "seed": 63,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.014950696713455005,
+    "two_example_lower_bound_m": 0.007475348356727502,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 417,
+    "neighbor_index": 3311,
+    "seed": 63,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.005089392774090671,
+    "two_example_lower_bound_m": 0.0025446963870453354,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 417,
+    "neighbor_index": 3352,
+    "seed": 63,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.015095207457590588,
+    "two_example_lower_bound_m": 0.007547603728795294,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 417,
+    "neighbor_index": 3393,
+    "seed": 63,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.012587852905469352,
+    "two_example_lower_bound_m": 0.006293926452734676,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 417,
+    "neighbor_index": 3434,
+    "seed": 63,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0073479045162689015,
+    "two_example_lower_bound_m": 0.0036739522581344507,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 519,
+    "neighbor_index": 3475,
+    "seed": 66,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01140903118301847,
+    "two_example_lower_bound_m": 0.005704515591509235,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 519,
+    "neighbor_index": 3516,
+    "seed": 66,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.019324804055758246,
+    "two_example_lower_bound_m": 0.009662402027879123,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 519,
+    "neighbor_index": 3557,
+    "seed": 66,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.00870135618530662,
+    "two_example_lower_bound_m": 0.00435067809265331,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 519,
+    "neighbor_index": 3598,
+    "seed": 66,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.016567961897355578,
+    "two_example_lower_bound_m": 0.008283980948677789,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 519,
+    "neighbor_index": 3639,
+    "seed": 66,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.021408189867707334,
+    "two_example_lower_bound_m": 0.010704094933853667,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 519,
+    "neighbor_index": 3680,
+    "seed": 66,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.008419921433508048,
+    "two_example_lower_bound_m": 0.004209960716754024,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 519,
+    "neighbor_index": 3721,
+    "seed": 66,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.017176766862154993,
+    "two_example_lower_bound_m": 0.008588383431077496,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 519,
+    "neighbor_index": 3762,
+    "seed": 66,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.011523950301526495,
+    "two_example_lower_bound_m": 0.005761975150763247,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 519,
+    "neighbor_index": 3803,
+    "seed": 66,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.013525152991005764,
+    "two_example_lower_bound_m": 0.006762576495502882,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 519,
+    "neighbor_index": 3844,
+    "seed": 66,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01613320484570599,
+    "two_example_lower_bound_m": 0.008066602422852995,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 519,
+    "neighbor_index": 3885,
+    "seed": 66,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.005753897685622279,
+    "two_example_lower_bound_m": 0.0028769488428111393,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 519,
+    "neighbor_index": 3926,
+    "seed": 66,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 2,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01930230051285312,
+    "two_example_lower_bound_m": 0.00965115025642656,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 624,
+    "neighbor_index": 3967,
+    "seed": 810002,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 9,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01660125075156857,
+    "two_example_lower_bound_m": 0.008300625375784285,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 624,
+    "neighbor_index": 4008,
+    "seed": 810002,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 9,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0012351370441878705,
+    "two_example_lower_bound_m": 0.0006175685220939352,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 624,
+    "neighbor_index": 4049,
+    "seed": 810002,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 9,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.03273642177802861,
+    "two_example_lower_bound_m": 0.016368210889014304,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 624,
+    "neighbor_index": 4090,
+    "seed": 810002,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 9,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0020206575299520266,
+    "two_example_lower_bound_m": 0.0010103287649760133,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 624,
+    "neighbor_index": 4131,
+    "seed": 810002,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 9,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.037381655539848596,
+    "two_example_lower_bound_m": 0.018690827769924298,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 624,
+    "neighbor_index": 4172,
+    "seed": 810002,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 9,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.029948048222528667,
+    "two_example_lower_bound_m": 0.014974024111264334,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 624,
+    "neighbor_index": 4213,
+    "seed": 810002,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 9,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.027149193445815064,
+    "two_example_lower_bound_m": 0.013574596722907532,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 624,
+    "neighbor_index": 4254,
+    "seed": 810002,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 9,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.004583860824847598,
+    "two_example_lower_bound_m": 0.002291930412423799,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 624,
+    "neighbor_index": 4295,
+    "seed": 810002,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 9,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.04191645428920325,
+    "two_example_lower_bound_m": 0.020958227144601625,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 624,
+    "neighbor_index": 4336,
+    "seed": 810002,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 9,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.013634587178282385,
+    "two_example_lower_bound_m": 0.006817293589141193,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 624,
+    "neighbor_index": 4377,
+    "seed": 810002,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.0038253515053027856,
+    "pin": 9,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.03019562401454991,
+    "two_example_lower_bound_m": 0.015097812007274955,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 624,
+    "neighbor_index": 4418,
+    "seed": 810002,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.0038253515053027856,
+    "pin": 9,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.03900475399045367,
+    "two_example_lower_bound_m": 0.019502376995226833,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 707,
+    "neighbor_index": 4444,
+    "seed": 810005,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0011072301941893786,
+    "two_example_lower_bound_m": 0.0005536150970946893,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 707,
+    "neighbor_index": 4485,
+    "seed": 810005,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.022311817855717345,
+    "two_example_lower_bound_m": 0.011155908927858673,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 707,
+    "neighbor_index": 4526,
+    "seed": 810005,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0009533071184757481,
+    "two_example_lower_bound_m": 0.00047665355923787406,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 707,
+    "neighbor_index": 4567,
+    "seed": 810005,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.005445090008566382,
+    "two_example_lower_bound_m": 0.002722545004283191,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 707,
+    "neighbor_index": 4608,
+    "seed": 810005,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.014846503500351809,
+    "two_example_lower_bound_m": 0.0074232517501759045,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 707,
+    "neighbor_index": 4649,
+    "seed": 810005,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.002533237177225719,
+    "two_example_lower_bound_m": 0.0012666185886128596,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 707,
+    "neighbor_index": 4690,
+    "seed": 810005,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.017809521287662618,
+    "two_example_lower_bound_m": 0.008904760643831309,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 707,
+    "neighbor_index": 4731,
+    "seed": 810005,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.02696518428119785,
+    "two_example_lower_bound_m": 0.013482592140598925,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 707,
+    "neighbor_index": 4772,
+    "seed": 810005,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.03757109620288068,
+    "two_example_lower_bound_m": 0.01878554810144034,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 707,
+    "neighbor_index": 4813,
+    "seed": 810005,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.024762051477508533,
+    "two_example_lower_bound_m": 0.012381025738754266,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 707,
+    "neighbor_index": 4854,
+    "seed": 810005,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.023297836603399305,
+    "two_example_lower_bound_m": 0.011648918301699653,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 707,
+    "neighbor_index": 4895,
+    "seed": 810005,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.009676146906338912,
+    "two_example_lower_bound_m": 0.004838073453169456,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 746,
+    "neighbor_index": 4951,
+    "seed": 810006,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.020550913080284356,
+    "two_example_lower_bound_m": 0.010275456540142178,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 746,
+    "neighbor_index": 4992,
+    "seed": 810006,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.019974771173608043,
+    "two_example_lower_bound_m": 0.009987385586804022,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 746,
+    "neighbor_index": 5033,
+    "seed": 810006,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007353885064292164,
+    "two_example_lower_bound_m": 0.003676942532146082,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 746,
+    "neighbor_index": 5074,
+    "seed": 810006,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.011057155438171854,
+    "two_example_lower_bound_m": 0.005528577719085927,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 746,
+    "neighbor_index": 5115,
+    "seed": 810006,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01763845820824778,
+    "two_example_lower_bound_m": 0.00881922910412389,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 746,
+    "neighbor_index": 5156,
+    "seed": 810006,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.022561715363748097,
+    "two_example_lower_bound_m": 0.011280857681874049,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 746,
+    "neighbor_index": 5197,
+    "seed": 810006,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007441137415752763,
+    "two_example_lower_bound_m": 0.0037205687078763817,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 746,
+    "neighbor_index": 5238,
+    "seed": 810006,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.014650554597179361,
+    "two_example_lower_bound_m": 0.007325277298589681,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 746,
+    "neighbor_index": 5279,
+    "seed": 810006,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.02094950262320543,
+    "two_example_lower_bound_m": 0.010474751311602715,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 746,
+    "neighbor_index": 5320,
+    "seed": 810006,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01585305991965049,
+    "two_example_lower_bound_m": 0.007926529959825245,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 746,
+    "neighbor_index": 5361,
+    "seed": 810006,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.021289662816515745,
+    "two_example_lower_bound_m": 0.010644831408257872,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 746,
+    "neighbor_index": 5402,
+    "seed": 810006,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.014484741105992058,
+    "two_example_lower_bound_m": 0.007242370552996029,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 878,
+    "neighbor_index": 5443,
+    "seed": 810010,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007348349092078483,
+    "two_example_lower_bound_m": 0.0036741745460392417,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 878,
+    "neighbor_index": 5484,
+    "seed": 810010,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.010060622340741919,
+    "two_example_lower_bound_m": 0.0050303111703709595,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 878,
+    "neighbor_index": 5525,
+    "seed": 810010,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007427715913143776,
+    "two_example_lower_bound_m": 0.003713857956571888,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 878,
+    "neighbor_index": 5566,
+    "seed": 810010,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.006664541926641996,
+    "two_example_lower_bound_m": 0.003332270963320998,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 878,
+    "neighbor_index": 5607,
+    "seed": 810010,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.010226840029940064,
+    "two_example_lower_bound_m": 0.005113420014970032,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 878,
+    "neighbor_index": 5648,
+    "seed": 810010,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.008699907357518941,
+    "two_example_lower_bound_m": 0.004349953678759471,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 878,
+    "neighbor_index": 5689,
+    "seed": 810010,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.009895105382163247,
+    "two_example_lower_bound_m": 0.004947552691081623,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 878,
+    "neighbor_index": 5730,
+    "seed": 810010,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.005006427005087816,
+    "two_example_lower_bound_m": 0.002503213502543908,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 878,
+    "neighbor_index": 5771,
+    "seed": 810010,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007819359460501583,
+    "two_example_lower_bound_m": 0.003909679730250791,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 878,
+    "neighbor_index": 5812,
+    "seed": 810010,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.008369527725990453,
+    "two_example_lower_bound_m": 0.004184763862995227,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 878,
+    "neighbor_index": 5853,
+    "seed": 810010,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.011046749922123907,
+    "two_example_lower_bound_m": 0.005523374961061953,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 878,
+    "neighbor_index": 5894,
+    "seed": 810010,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.006426468298811787,
+    "two_example_lower_bound_m": 0.0032132341494058936,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 938,
+    "neighbor_index": 5935,
+    "seed": 810012,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.025881660406833536,
+    "two_example_lower_bound_m": 0.012940830203416768,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 938,
+    "neighbor_index": 5976,
+    "seed": 810012,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.02890635896154171,
+    "two_example_lower_bound_m": 0.014453179480770855,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 938,
+    "neighbor_index": 6017,
+    "seed": 810012,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.030971883378245427,
+    "two_example_lower_bound_m": 0.015485941689122713,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 938,
+    "neighbor_index": 6058,
+    "seed": 810012,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.027604010674746923,
+    "two_example_lower_bound_m": 0.013802005337373462,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 938,
+    "neighbor_index": 6099,
+    "seed": 810012,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.013090225423674544,
+    "two_example_lower_bound_m": 0.006545112711837272,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 938,
+    "neighbor_index": 6140,
+    "seed": 810012,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.008036663351816558,
+    "two_example_lower_bound_m": 0.004018331675908279,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 938,
+    "neighbor_index": 6181,
+    "seed": 810012,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007401599679801123,
+    "two_example_lower_bound_m": 0.0037007998399005617,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 938,
+    "neighbor_index": 6222,
+    "seed": 810012,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.00831378906800796,
+    "two_example_lower_bound_m": 0.00415689453400398,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 938,
+    "neighbor_index": 6263,
+    "seed": 810012,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.02775849834353571,
+    "two_example_lower_bound_m": 0.013879249171767855,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 938,
+    "neighbor_index": 6304,
+    "seed": 810012,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.009664731037121722,
+    "two_example_lower_bound_m": 0.004832365518560861,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 938,
+    "neighbor_index": 6345,
+    "seed": 810012,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.006199041628531743,
+    "two_example_lower_bound_m": 0.0030995208142658714,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 938,
+    "neighbor_index": 6386,
+    "seed": 810012,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.03300068618853901,
+    "two_example_lower_bound_m": 0.016500343094269506,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1099,
+    "neighbor_index": 6427,
+    "seed": 810018,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007446487035651296,
+    "two_example_lower_bound_m": 0.003723243517825648,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1099,
+    "neighbor_index": 6468,
+    "seed": 810018,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.009338314059392828,
+    "two_example_lower_bound_m": 0.004669157029696414,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1099,
+    "neighbor_index": 6509,
+    "seed": 810018,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.02110777984266022,
+    "two_example_lower_bound_m": 0.01055388992133011,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1099,
+    "neighbor_index": 6550,
+    "seed": 810018,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0034177837629169377,
+    "two_example_lower_bound_m": 0.0017088918814584689,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1099,
+    "neighbor_index": 6591,
+    "seed": 810018,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.002928415380200877,
+    "two_example_lower_bound_m": 0.0014642076901004385,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1099,
+    "neighbor_index": 6632,
+    "seed": 810018,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.02184495855355921,
+    "two_example_lower_bound_m": 0.010922479276779605,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1099,
+    "neighbor_index": 6673,
+    "seed": 810018,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.018121175158046537,
+    "two_example_lower_bound_m": 0.009060587579023269,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1099,
+    "neighbor_index": 6714,
+    "seed": 810018,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.02056018790077211,
+    "two_example_lower_bound_m": 0.010280093950386055,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1099,
+    "neighbor_index": 6755,
+    "seed": 810018,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.012071151464706,
+    "two_example_lower_bound_m": 0.006035575732353,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1099,
+    "neighbor_index": 6796,
+    "seed": 810018,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.018424768578991446,
+    "two_example_lower_bound_m": 0.009212384289495723,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1099,
+    "neighbor_index": 6837,
+    "seed": 810018,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01790191935025403,
+    "two_example_lower_bound_m": 0.008950959675127015,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1099,
+    "neighbor_index": 6878,
+    "seed": 810018,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.011895258530694166,
+    "two_example_lower_bound_m": 0.005947629265347083,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1145,
+    "neighbor_index": 6919,
+    "seed": 810019,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 6,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01325413897425007,
+    "two_example_lower_bound_m": 0.006627069487125035,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1145,
+    "neighbor_index": 6960,
+    "seed": 810019,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 6,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.029533339610775325,
+    "two_example_lower_bound_m": 0.014766669805387662,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1145,
+    "neighbor_index": 7001,
+    "seed": 810019,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 6,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.008753658381149897,
+    "two_example_lower_bound_m": 0.004376829190574949,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1145,
+    "neighbor_index": 7042,
+    "seed": 810019,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 6,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.020510304404591995,
+    "two_example_lower_bound_m": 0.010255152202295998,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1145,
+    "neighbor_index": 7083,
+    "seed": 810019,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 6,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.024161764009696426,
+    "two_example_lower_bound_m": 0.012080882004848213,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1145,
+    "neighbor_index": 7124,
+    "seed": 810019,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 6,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.022435942116720863,
+    "two_example_lower_bound_m": 0.011217971058360431,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1145,
+    "neighbor_index": 7165,
+    "seed": 810019,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 6,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.018307645123083735,
+    "two_example_lower_bound_m": 0.009153822561541868,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1145,
+    "neighbor_index": 7206,
+    "seed": 810019,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 6,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007267017914910009,
+    "two_example_lower_bound_m": 0.0036335089574550043,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1145,
+    "neighbor_index": 7247,
+    "seed": 810019,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 6,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.018969578087083886,
+    "two_example_lower_bound_m": 0.009484789043541943,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1145,
+    "neighbor_index": 7288,
+    "seed": 810019,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 6,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.021361709476800446,
+    "two_example_lower_bound_m": 0.010680854738400223,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1145,
+    "neighbor_index": 7329,
+    "seed": 810019,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 6,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.030428947650832112,
+    "two_example_lower_bound_m": 0.015214473825416056,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1145,
+    "neighbor_index": 7370,
+    "seed": 810019,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 6,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.008897329089315485,
+    "two_example_lower_bound_m": 0.004448664544657742,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1167,
+    "neighbor_index": 7397,
+    "seed": 810020,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.031122342413816517,
+    "two_example_lower_bound_m": 0.015561171206908258,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1167,
+    "neighbor_index": 7438,
+    "seed": 810020,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.003823432198248744,
+    "two_example_lower_bound_m": 0.001911716099124372,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1167,
+    "neighbor_index": 7479,
+    "seed": 810020,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.025754471224261232,
+    "two_example_lower_bound_m": 0.012877235612130616,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1167,
+    "neighbor_index": 7520,
+    "seed": 810020,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.023880814147201987,
+    "two_example_lower_bound_m": 0.011940407073600993,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1167,
+    "neighbor_index": 7561,
+    "seed": 810020,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.0007500909605106401,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0037353435337588235,
+    "two_example_lower_bound_m": 0.0018676717668794118,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1167,
+    "neighbor_index": 7602,
+    "seed": 810020,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.0007500909605106401,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.02270631991467298,
+    "two_example_lower_bound_m": 0.01135315995733649,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1167,
+    "neighbor_index": 7643,
+    "seed": 810020,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.02474708002350004,
+    "two_example_lower_bound_m": 0.01237354001175002,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1167,
+    "neighbor_index": 7684,
+    "seed": 810020,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.006545899403835896,
+    "two_example_lower_bound_m": 0.003272949701917948,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1167,
+    "neighbor_index": 7725,
+    "seed": 810020,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.0007500909605106401,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0037353435337588235,
+    "two_example_lower_bound_m": 0.0018676717668794118,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1167,
+    "neighbor_index": 7766,
+    "seed": 810020,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.0007500909605106401,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.02270631991467298,
+    "two_example_lower_bound_m": 0.01135315995733649,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1167,
+    "neighbor_index": 7807,
+    "seed": 810020,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01761477002131668,
+    "two_example_lower_bound_m": 0.00880738501065834,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1167,
+    "neighbor_index": 7848,
+    "seed": 810020,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.029114327759606366,
+    "two_example_lower_bound_m": 0.014557163879803183,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1212,
+    "neighbor_index": 7903,
+    "seed": 810021,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007706913347893222,
+    "two_example_lower_bound_m": 0.003853456673946611,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1212,
+    "neighbor_index": 7944,
+    "seed": 810021,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.02085675739623416,
+    "two_example_lower_bound_m": 0.01042837869811708,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1212,
+    "neighbor_index": 7985,
+    "seed": 810021,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.011694961091258553,
+    "two_example_lower_bound_m": 0.0058474805456292765,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1212,
+    "neighbor_index": 8026,
+    "seed": 810021,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.02022886552187319,
+    "two_example_lower_bound_m": 0.010114432760936595,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1212,
+    "neighbor_index": 8067,
+    "seed": 810021,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.011862127760684585,
+    "two_example_lower_bound_m": 0.005931063880342292,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1212,
+    "neighbor_index": 8108,
+    "seed": 810021,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007548601240402923,
+    "two_example_lower_bound_m": 0.0037743006202014613,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1212,
+    "neighbor_index": 8149,
+    "seed": 810021,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0010272767402320958,
+    "two_example_lower_bound_m": 0.0005136383701160479,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1212,
+    "neighbor_index": 8190,
+    "seed": 810021,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.008143051820752204,
+    "two_example_lower_bound_m": 0.004071525910376102,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1212,
+    "neighbor_index": 8231,
+    "seed": 810021,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.010340062546055922,
+    "two_example_lower_bound_m": 0.005170031273027961,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1212,
+    "neighbor_index": 8272,
+    "seed": 810021,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.022356085265269807,
+    "two_example_lower_bound_m": 0.011178042632634904,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1212,
+    "neighbor_index": 8313,
+    "seed": 810021,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.009090998774998228,
+    "two_example_lower_bound_m": 0.004545499387499114,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1212,
+    "neighbor_index": 8354,
+    "seed": 810021,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 5,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0028042216974581836,
+    "two_example_lower_bound_m": 0.0014021108487290918,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1244,
+    "neighbor_index": 8387,
+    "seed": 810022,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.019789298248030225,
+    "two_example_lower_bound_m": 0.009894649124015113,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1244,
+    "neighbor_index": 8428,
+    "seed": 810022,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.009163946613154735,
+    "two_example_lower_bound_m": 0.004581973306577367,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1244,
+    "neighbor_index": 8469,
+    "seed": 810022,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.018125281194799694,
+    "two_example_lower_bound_m": 0.009062640597399847,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1244,
+    "neighbor_index": 8510,
+    "seed": 810022,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.008462135905407224,
+    "two_example_lower_bound_m": 0.004231067952703612,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1244,
+    "neighbor_index": 8551,
+    "seed": 810022,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.010042092326234289,
+    "two_example_lower_bound_m": 0.005021046163117144,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1244,
+    "neighbor_index": 8592,
+    "seed": 810022,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.014505341080964084,
+    "two_example_lower_bound_m": 0.007252670540482042,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1244,
+    "neighbor_index": 8633,
+    "seed": 810022,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0061922334219764695,
+    "two_example_lower_bound_m": 0.0030961167109882348,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1244,
+    "neighbor_index": 8674,
+    "seed": 810022,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007452745991445636,
+    "two_example_lower_bound_m": 0.003726372995722818,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1244,
+    "neighbor_index": 8715,
+    "seed": 810022,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.023405929403913596,
+    "two_example_lower_bound_m": 0.011702964701956798,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1244,
+    "neighbor_index": 8756,
+    "seed": 810022,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.014498743724282826,
+    "two_example_lower_bound_m": 0.007249371862141413,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1244,
+    "neighbor_index": 8797,
+    "seed": 810022,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.018768940739998276,
+    "two_example_lower_bound_m": 0.009384470369999138,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1244,
+    "neighbor_index": 8838,
+    "seed": 810022,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 0,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.015827537777515284,
+    "two_example_lower_bound_m": 0.007913768888757642,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1406,
+    "neighbor_index": 8887,
+    "seed": 810027,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0122580403419831,
+    "two_example_lower_bound_m": 0.00612902017099155,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1406,
+    "neighbor_index": 8928,
+    "seed": 810027,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.012993523713349274,
+    "two_example_lower_bound_m": 0.006496761856674637,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1406,
+    "neighbor_index": 8969,
+    "seed": 810027,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01290080705798793,
+    "two_example_lower_bound_m": 0.006450403528993965,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1406,
+    "neighbor_index": 9010,
+    "seed": 810027,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.007520442942924037,
+    "two_example_lower_bound_m": 0.0037602214714620185,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1406,
+    "neighbor_index": 9051,
+    "seed": 810027,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.008147615035205804,
+    "two_example_lower_bound_m": 0.004073807517602902,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1406,
+    "neighbor_index": 9092,
+    "seed": 810027,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0065367709780370055,
+    "two_example_lower_bound_m": 0.0032683854890185027,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1406,
+    "neighbor_index": 9133,
+    "seed": 810027,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.0017773773215090437,
+    "two_example_lower_bound_m": 0.0008886886607545218,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1406,
+    "neighbor_index": 9174,
+    "seed": 810027,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.017009504382324743,
+    "two_example_lower_bound_m": 0.008504752191162371,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1406,
+    "neighbor_index": 9215,
+    "seed": 810027,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.015222038984836856,
+    "two_example_lower_bound_m": 0.007611019492418428,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1406,
+    "neighbor_index": 9256,
+    "seed": 810027,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.014746197885428731,
+    "two_example_lower_bound_m": 0.007373098942714366,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1406,
+    "neighbor_index": 9297,
+    "seed": 810027,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.005895555042001941,
+    "two_example_lower_bound_m": 0.0029477775210009706,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1406,
+    "neighbor_index": 9338,
+    "seed": 810027,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.006122938972587201,
+    "two_example_lower_bound_m": 0.0030614694862936007,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1436,
+    "neighbor_index": 9366,
+    "seed": 810028,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.009851212195885016,
+    "two_example_lower_bound_m": 0.004925606097942508,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1436,
+    "neighbor_index": 9407,
+    "seed": 810028,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.009660680809248126,
+    "two_example_lower_bound_m": 0.004830340404624063,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1436,
+    "neighbor_index": 9448,
+    "seed": 810028,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.0001,
+    "actual_m": -0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.014245889853581406,
+    "two_example_lower_bound_m": 0.007122944926790703,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1436,
+    "neighbor_index": 9489,
+    "seed": 810028,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.0001,
+    "actual_m": 0.0001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.008224981388404775,
+    "two_example_lower_bound_m": 0.004112490694202387,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1436,
+    "neighbor_index": 9530,
+    "seed": 810028,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.013540467409716865,
+    "two_example_lower_bound_m": 0.0067702337048584325,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1436,
+    "neighbor_index": 9571,
+    "seed": 810028,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.005029684876064199,
+    "two_example_lower_bound_m": 0.0025148424380320995,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1436,
+    "neighbor_index": 9612,
+    "seed": 810028,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.001,
+    "actual_m": -0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.013340426438077068,
+    "two_example_lower_bound_m": 0.006670213219038534,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1436,
+    "neighbor_index": 9653,
+    "seed": 810028,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.001,
+    "actual_m": 0.001,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.012715710821055232,
+    "two_example_lower_bound_m": 0.006357855410527616,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1436,
+    "neighbor_index": 9694,
+    "seed": 810028,
+    "axis": 0,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.012844641302870372,
+    "two_example_lower_bound_m": 0.006422320651435186,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1436,
+    "neighbor_index": 9735,
+    "seed": 810028,
+    "axis": 0,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.01848162475967796,
+    "two_example_lower_bound_m": 0.00924081237983898,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1436,
+    "neighbor_index": 9776,
+    "seed": 810028,
+    "axis": 1,
+    "sign": -1,
+    "nominal_m": 0.005,
+    "actual_m": -0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.011602657836375284,
+    "two_example_lower_bound_m": 0.005801328918187642,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  },
+  {
+    "base_index": 1436,
+    "neighbor_index": 9817,
+    "seed": 810028,
+    "axis": 1,
+    "sign": 1,
+    "nominal_m": 0.005,
+    "actual_m": 0.005,
+    "pin": 1,
+    "robot_exact_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true
+    },
+    "unquantized_full_five_equal": false,
+    "future_endpoint_distance_m": 0.012319942909138666,
+    "two_example_lower_bound_m": 0.006159971454569333,
+    "equal_by_key": {
+      "robot_history": true,
+      "robot_current": true,
+      "robot_plan": true,
+      "scene_history": false,
+      "scene_current": false
+    },
+    "full_five_equal": false,
+    "precision_m": 1e-05
+  }
+]

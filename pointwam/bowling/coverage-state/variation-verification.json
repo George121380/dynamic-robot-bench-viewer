@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "independent_event_metrics": 762,
+  "scalar_fields_per_event": 6,
+  "max_event_metric_discrepancy": 1.734723475976807e-18,
+  "max_interval_discrepancy": 3.0531133177191805e-16,
+  "results": {
+    "validation_center": {
+      "all": {
+        "held_center": {
+          "R2": 0.37850631626079423,
+          "paired95CI": [
+            0.13980333784248258,
+            0.6005698463683479
+          ]
+        },
+        "trained_neighbor": {
+          "R2": 0.799593741976936,
+          "paired95CI": [
+            0.7390625808882993,
+            0.8585658217658724
+          ]
+        }
+      },
+      "first": {
+        "held_center": {
+          "R2": 0.23618228421191512,
+          "paired95CI": [
+            -0.03560622726570156,
+            0.44958508795263535
+          ]
+        },
+        "trained_neighbor": {
+          "R2": 0.3528856801520267,
+          "paired95CI": [
+            0.23596380110293327,
+            0.46689300295020786
+          ]
+        }
+      }
+    },
+    "points_only": {
+      "all": {
+        "held_center": {
+          "R2": 0.21151502193371874,
+          "paired95CI": [
+            -0.1523360486043598,
+            0.5041199435444793
+          ]
+        },
+        "trained_neighbor": {
+          "R2": 0.6749375348709725,
+          "paired95CI": [
+            0.5408749506496813,
+            0.7948007354835824
+          ]
+        }
+      },
+      "first": {
+        "held_center": {
+          "R2": -0.02052380594624781,
+          "paired95CI": [
+            -0.07187747409950325,
+            0.051961383585424736
+          ]
+        },
+        "trained_neighbor": {
+          "R2": 0.09791719677784605,
+          "paired95CI": [
+            0.050163772173982116,
+            0.1562384481992716
+          ]
+        }
+      }
+    }
+  },
+  "source_sha256": "444d0da8687be587f005384b26780ad40bc3ca84abd1f51ba5aed71f8f168b00",
+  "test_arrays_opened": 0,
+  "optimizer_updates": 0
+}

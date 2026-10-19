@@ -1,0 +1,101 @@
+{
+  "status": "passed",
+  "counts": [
+    {
+      "precision_m": 1e-06,
+      "matched_pairs": 0,
+      "source_centers": 0
+    },
+    {
+      "precision_m": 1e-05,
+      "matched_pairs": 0,
+      "source_centers": 0
+    },
+    {
+      "precision_m": 0.0001,
+      "matched_pairs": 0,
+      "source_centers": 0
+    },
+    {
+      "precision_m": 0.0005,
+      "matched_pairs": 17,
+      "source_centers": 6
+    },
+    {
+      "precision_m": 0.001,
+      "matched_pairs": 26,
+      "source_centers": 8
+    },
+    {
+      "precision_m": 0.002,
+      "matched_pairs": 87,
+      "source_centers": 16
+    },
+    {
+      "precision_m": 0.005,
+      "matched_pairs": 126,
+      "source_centers": 18
+    }
+  ],
+  "all_pair_input_scalars_checked": 4289040,
+  "witnesses": [
+    {
+      "precision_m": 0.0005,
+      "seed": 810020,
+      "axis": 0,
+      "sign": -1,
+      "nominal_m": 0.0001,
+      "query_control": 225,
+      "pin": 1,
+      "identical_full_five_input_sha256": "6ff97e158c52d385938c041b9269c21d39a4585a83c33c2826707e35526e716b",
+      "future_endpoint_distance_m": 0.031122342413816517,
+      "two_example_mean_error_lower_bound_m": 0.015561171206908258,
+      "file": "witness-0.0005m.npz"
+    },
+    {
+      "precision_m": 0.001,
+      "seed": 62,
+      "axis": 1,
+      "sign": 1,
+      "nominal_m": 0.0001,
+      "query_control": 254,
+      "pin": 0,
+      "identical_full_five_input_sha256": "7088e6e4fe926e34e321a741b0de6a6f2722f87a5d07fb84efc4ce9e821bcc8d",
+      "future_endpoint_distance_m": 0.03359538881461032,
+      "two_example_mean_error_lower_bound_m": 0.01679769440730516,
+      "file": "witness-0.001m.npz"
+    },
+    {
+      "precision_m": 0.002,
+      "seed": 55,
+      "axis": 0,
+      "sign": 1,
+      "nominal_m": 0.001,
+      "query_control": 254,
+      "pin": 3,
+      "identical_full_five_input_sha256": "23f72cfa1c5cb8e3288ef7daf7f5518d0b059d925d5ec78ac6959cc53a22cc5e",
+      "future_endpoint_distance_m": 0.041029969247567785,
+      "two_example_mean_error_lower_bound_m": 0.020514984623783893,
+      "file": "witness-0.002m.npz"
+    },
+    {
+      "precision_m": 0.005,
+      "seed": 55,
+      "axis": 0,
+      "sign": 1,
+      "nominal_m": 0.001,
+      "query_control": 254,
+      "pin": 3,
+      "identical_full_five_input_sha256": "c6544c0effb91b9d2d55b442fb38cb00e589a6b91fd91a2025b0c88701c4c17e",
+      "future_endpoint_distance_m": 0.041029969247567785,
+      "two_example_mean_error_lower_bound_m": 0.020514984623783893,
+      "file": "witness-0.005m.npz"
+    }
+  ],
+  "independent_FK_coordinates": 6048,
+  "max_FK_error_m": 2.9800084622166878e-08,
+  "source_sha256": "08f03fad4107ac2bf25adf29e37872537e609a9a71878c70cad01be5a4f5aea7",
+  "precision_audit_sha256": "bbbc5cc1e5439ddffcdbebd8a61f1aacec5ef7220751b11e09e8da6c4ea92323",
+  "test_arrays_opened": 0,
+  "scope": "Exact equality applies only after the specified scene quantization; original float32 interface has0matching pairs. Bounds apply to an equally weighted two-example problem,not a global test error."
+}

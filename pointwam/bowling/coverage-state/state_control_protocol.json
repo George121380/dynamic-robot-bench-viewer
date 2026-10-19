@@ -1,0 +1,25 @@
+{
+  "experiment":"first_impact_state_control_v1",
+  "status":"frozen_before_query_fork_simulation",
+  "motivation":"Lawful0.1mm initial rack translations give first-impact current21point coordinate RMS0.072mm but mean100ms response-displacement disagreement13.539mm across20known centers. This is an observed motivation, not a new result of the forks.",
+  "question":"Are the first-impact differences mediated by pin axial orientation/spin, other current rigid state differences, or simulator numerical memory?",
+  "sources":"all20 validation centers and their four0.1mm x/y signed neighbors already generated under neighborhood_v1; same frozen actions; first eligible event query and target pin(s); no test access",
+  "arms":{
+    "original_native":"unaltered original query MjData; verify exact original100ms continuation",
+    "original_forward":"same original query MjData plus mj_forward only; recomputation control",
+    "original_zero_warmstart":"original query MjData, qacc_warmstart set0, mj_forward; qpos/qvel unchanged; algorithmic-memory intervention, not a new physical law",
+    "neighbor_native":"unaltered lawful-neighbor query MjData; verify exact saved neighbor100ms continuation",
+    "neighbor_forward":"same neighbor plus mj_forward only; paired recomputation control",
+    "neighbor_axial_orientation_from_original":"right-multiply each pin quaternion by a local-z rotation aligning its transverse x axis as closely as possible to original. Preserve pin axis, position and world angular velocity. No object translation or visible point-velocity change.",
+    "neighbor_axial_spin_from_original":"replace each pin world-angular-velocity component along its own long axis with original pin axial spin; preserve world perpendicular angular velocity, position and orientation",
+    "neighbor_axial_both_from_original":"combine the two axial interventions; same visible point positions and instantaneous velocities as neighbor",
+    "neighbor_full_object_state_from_original":"replace all11 object quaternions and6velocities with original values, keep neighbor object positions and robot; this includes visible and invisible state changes",
+    "neighbor_all_qpos_qvel_from_original":"replace whole qpos/qvel with original values but retain neighbor MjData numerical memory; mj_forward; isolates non-qpos/qvel state"
+  },
+  "runtime":"unchanged model, integrator, solver, timestep, actions; restore copied native query data for each fork, run5controls=100ms. No model training. Capture native query states and all arm futures.",
+  "verification":"original and neighbor native continuations must match saved trajectories bitwise; axial arms preserve21point current positions and instantaneous point velocities within1e-10. Reset query data independently each arm.",
+  "analysis":"for original eligible first-impact pins, compare each arm's raw100ms endpoint displacement with original; endpoints then targets then20episode macro, average4 signed neighbors within center. Report every center/neighbor/arm and full native qpos/qvel hashes.",
+  "uncertainty":"10000 paired episode bootstrap,seed20261022; reused selected centers, mechanism diagnostic only",
+  "decision":{"axial_mediation":"both-axial arm reduces disagreement vs neighbor_forward by>=50percent, paired95CI delta upper<0; report orientation/spin separately. Require baseline disagreement>5mm and disclose any nontrivial numerical-memory effects.","other_state_mediation":"if axial condition fails but full-object-state arm reduces disagreement>=50percent with pairedCI upper<0, observed difference is mainly mediated by other rigid state changes in this intervention; no unique architectural conclusion.","numerical_memory":"report original_zero_warmstart vs original_forward and restored-all-state vs original_forward; >1mm episode-macro disagreement is a material simulation-memory dependence requiring follow-up before attributing all error to object representation.","none":"if no separation, inspect contact timing/geometry and solver convergence under a separately frozen diagnostic; no claim of irreducible noise or point-history insufficiency."},
+  "limits":["Axial forks are query-time interventions. They do not construct two reachable trajectories with identical entire observation histories.","Tiny initial shifts plus near point inputs do not prove exact information-theoretic ambiguity.","The privileged state network is not trained or compared in this control.","Physics parameters and learned outputs are not adjusted to improve metrics."]
+}

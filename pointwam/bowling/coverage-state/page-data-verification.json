@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "index_sha256": "7e1bb2b5e76bfe17b9114a7fd6cade434ad6edce7910a7a7e9ecf0008cfee742",
+  "exact_displayed_coordinate_scalars": 148632,
+  "source_arrays": 17,
+  "physical_derived_coordinate_scalars": 2400,
+  "physical_max_independent_quaternion_error_m": 1.1102230246251565e-16,
+  "model_views": 120,
+  "physical_views": 80,
+  "trace_cases": 20,
+  "precision_witnesses": 4,
+  "ui_cases": [
+    {
+      "case_index": 0,
+      "source_seed": 51,
+      "training_seed": 42,
+      "displayed_pin": 2,
+      "option_label": "\u6295\u740351 \u00b7 \u8d77\u70b9\u540e 2.22s",
+      "training_center_mm": 44.65459850773638,
+      "evaluation_center_mm": 3.4170777927468907,
+      "points_only_mm": 7.8783066063488425
+    },
+    {
+      "case_index": 54,
+      "source_seed": 810002,
+      "training_seed": 43,
+      "displayed_pin": 10,
+      "option_label": "\u6295\u7403810002 \u00b7 \u8d77\u70b9\u540e 2.62s",
+      "training_center_mm": 72.25852076078809,
+      "evaluation_center_mm": 12.881693452791408,
+      "points_only_mm": 21.506383493589045
+    },
+    {
+      "case_index": 119,
+      "source_seed": 810028,
+      "training_seed": 44,
+      "displayed_pin": 3,
+      "option_label": "\u6295\u7403810028 \u00b7 \u8d77\u70b9\u540e 2.40s",
+      "training_center_mm": 0.7863311130097751,
+      "evaluation_center_mm": 0.6076521566009768,
+      "points_only_mm": 0.8602264738841406
+    }
+  ],
+  "source_sha256": "bac57d8f8d0572bb201c288e2f0b2f1e6e0b12732c0a936b1b2795593271e708",
+  "test_arrays_opened": 0
+}

@@ -1,0 +1,203 @@
+{
+  "status": "complete",
+  "protocol_sha256": "b7fdf7f70fe5cc790c0474338370b829eb9ec274b8855f0b1601987d77fb3116",
+  "source_sha256": "b4ac0b7cde52ec6004813cba9508fc7cf183b546684551acd7c8b3af5cc37cc4",
+  "pairs": 240,
+  "centers": 20,
+  "original_float32_equal_pairs": 0,
+  "summaries": [
+    {
+      "precision_m": 1e-06,
+      "matched_pairs": 0,
+      "source_centers": 0,
+      "pairs_file": "pairs-1e-06m.json",
+      "pairs_sha256": "b5f4d301146d009bc40fee5fab02ab9be180dd62e23428160b788b0dae461093",
+      "max_future_endpoint_distance_m": null,
+      "max_two_example_lower_bound_m": null,
+      "existence_gate": false
+    },
+    {
+      "precision_m": 1e-05,
+      "matched_pairs": 0,
+      "source_centers": 0,
+      "pairs_file": "pairs-1e-05m.json",
+      "pairs_sha256": "5e8ff7f2142ac6c113f0b4d796b299a8f34dee9fd857474046c1e540cc206e28",
+      "max_future_endpoint_distance_m": null,
+      "max_two_example_lower_bound_m": null,
+      "existence_gate": false
+    },
+    {
+      "precision_m": 0.0001,
+      "matched_pairs": 0,
+      "source_centers": 0,
+      "pairs_file": "pairs-0.0001m.json",
+      "pairs_sha256": "244722eccd9feab8c488b92f64e4da475711eaa7c7e60c0edf412f015d4c4da8",
+      "max_future_endpoint_distance_m": null,
+      "max_two_example_lower_bound_m": null,
+      "existence_gate": false
+    },
+    {
+      "precision_m": 0.0005,
+      "matched_pairs": 17,
+      "source_centers": 6,
+      "pairs_file": "pairs-0.0005m.json",
+      "pairs_sha256": "8d0bd1d350193c275f3a783900213d2393ae8a4a2bdd45585b7e737415fd1a13",
+      "max_future_endpoint_distance_m": 0.031122342413816517,
+      "max_two_example_lower_bound_m": 0.015561171206908258,
+      "existence_gate": true
+    },
+    {
+      "precision_m": 0.001,
+      "matched_pairs": 26,
+      "source_centers": 8,
+      "pairs_file": "pairs-0.001m.json",
+      "pairs_sha256": "d1d90f963cc48f3426a5b064e29198d73651e31dee2aedd35b8fe196dcab4b85",
+      "max_future_endpoint_distance_m": 0.03359538881461032,
+      "max_two_example_lower_bound_m": 0.01679769440730516,
+      "existence_gate": true
+    },
+    {
+      "precision_m": 0.002,
+      "matched_pairs": 87,
+      "source_centers": 16,
+      "pairs_file": "pairs-0.002m.json",
+      "pairs_sha256": "7f653099987a8f92430b939f3a6748c206aef033464be59c35c49e1d666188a1",
+      "max_future_endpoint_distance_m": 0.041029969247567785,
+      "max_two_example_lower_bound_m": 0.020514984623783893,
+      "existence_gate": true
+    },
+    {
+      "precision_m": 0.005,
+      "matched_pairs": 126,
+      "source_centers": 18,
+      "pairs_file": "pairs-0.005m.json",
+      "pairs_sha256": "51dd541378abc216458dd5f4b8a474bbee57b58491f63b5006256eee2f4debc7",
+      "max_future_endpoint_distance_m": 0.041029969247567785,
+      "max_two_example_lower_bound_m": 0.020514984623783893,
+      "existence_gate": true
+    }
+  ],
+  "witnesses": [
+    {
+      "base_index": 1167,
+      "neighbor_index": 7397,
+      "seed": 810020,
+      "axis": 0,
+      "sign": -1,
+      "nominal_m": 0.0001,
+      "actual_m": -0.0001,
+      "pin": 1,
+      "robot_exact_by_key": {
+        "robot_history": true,
+        "robot_current": true,
+        "robot_plan": true
+      },
+      "unquantized_full_five_equal": false,
+      "future_endpoint_distance_m": 0.031122342413816517,
+      "two_example_lower_bound_m": 0.015561171206908258,
+      "equal_by_key": {
+        "robot_history": true,
+        "robot_current": true,
+        "robot_plan": true,
+        "scene_history": true,
+        "scene_current": true
+      },
+      "full_five_equal": true,
+      "precision_m": 0.0005,
+      "file": "witness-0.0005m.npz",
+      "sha256": "24d004370b084344ae5c4879e668039beaae33555a0b8906911d17f95ccf8ba2"
+    },
+    {
+      "base_index": 378,
+      "neighbor_index": 2599,
+      "seed": 62,
+      "axis": 1,
+      "sign": 1,
+      "nominal_m": 0.0001,
+      "actual_m": 0.0001,
+      "pin": 0,
+      "robot_exact_by_key": {
+        "robot_history": true,
+        "robot_current": true,
+        "robot_plan": true
+      },
+      "unquantized_full_five_equal": false,
+      "future_endpoint_distance_m": 0.03359538881461032,
+      "two_example_lower_bound_m": 0.01679769440730516,
+      "equal_by_key": {
+        "robot_history": true,
+        "robot_current": true,
+        "robot_plan": true,
+        "scene_history": true,
+        "scene_current": true
+      },
+      "full_five_equal": true,
+      "precision_m": 0.001,
+      "file": "witness-0.001m.npz",
+      "sha256": "4600dd50461223453a390a57620a7e7b03bd72e03308732fb6351ef97885da68"
+    },
+    {
+      "base_index": 149,
+      "neighbor_index": 1207,
+      "seed": 55,
+      "axis": 0,
+      "sign": 1,
+      "nominal_m": 0.001,
+      "actual_m": 0.001,
+      "pin": 3,
+      "robot_exact_by_key": {
+        "robot_history": true,
+        "robot_current": true,
+        "robot_plan": true
+      },
+      "unquantized_full_five_equal": false,
+      "future_endpoint_distance_m": 0.041029969247567785,
+      "two_example_lower_bound_m": 0.020514984623783893,
+      "equal_by_key": {
+        "robot_history": true,
+        "robot_current": true,
+        "robot_plan": true,
+        "scene_history": true,
+        "scene_current": true
+      },
+      "full_five_equal": true,
+      "precision_m": 0.002,
+      "file": "witness-0.002m.npz",
+      "sha256": "029c111701029770b4efe0eab9e8e680c37551ebbd9ded197169d41b59e46144"
+    },
+    {
+      "base_index": 149,
+      "neighbor_index": 1207,
+      "seed": 55,
+      "axis": 0,
+      "sign": 1,
+      "nominal_m": 0.001,
+      "actual_m": 0.001,
+      "pin": 3,
+      "robot_exact_by_key": {
+        "robot_history": true,
+        "robot_current": true,
+        "robot_plan": true
+      },
+      "unquantized_full_five_equal": false,
+      "future_endpoint_distance_m": 0.041029969247567785,
+      "two_example_lower_bound_m": 0.020514984623783893,
+      "equal_by_key": {
+        "robot_history": true,
+        "robot_current": true,
+        "robot_plan": true,
+        "scene_history": true,
+        "scene_current": true
+      },
+      "full_five_equal": true,
+      "precision_m": 0.005,
+      "file": "witness-0.005m.npz",
+      "sha256": "1821b21decd99632ded008ecb9720d606b9fbb3bb47836677f489d79622379e4"
+    }
+  ],
+  "base_manifest_sha256": "6e7b84de31106d5c1e284402358153414ea469bbf33a734e54a31abe6407bf37",
+  "neighbor_manifest_sha256": "8ffac9c77aa26c37db2d9886d3ddd26252a952fc688a856b9c3626ac382f9c95",
+  "test_arrays_opened": 0,
+  "optimizer_updates": 0,
+  "scope": "Changed scene-coordinate precision only. No claim of ambiguity of original unquantized float32 inputs. Two-example bounds are not global evaluation error bounds."
+}

@@ -1,0 +1,12 @@
+{
+  "train": {
+    "active_model_input_overlap": 0,
+    "slots": 9840,
+    "unique_inputs": 8616
+  },
+  "validation": {
+    "active_model_input_overlap": 0,
+    "slots": 9840,
+    "unique_inputs": 8446
+  }
+}

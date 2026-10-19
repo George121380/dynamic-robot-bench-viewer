@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "formal_runs": 9,
+  "optimizer_updates": 135000,
+  "owned_processes": [
+    {
+      "pid": 2510468,
+      "ps": "",
+      "gpu_active": false
+    },
+    {
+      "pid": 2528305,
+      "ps": "",
+      "gpu_active": false
+    }
+  ],
+  "training_source_unchanged": true,
+  "test_arrays_opened": 0
+}
