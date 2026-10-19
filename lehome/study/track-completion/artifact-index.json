@@ -292,8 +292,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 18298,
-      "sha256": "f2a1ce6f06ef3939e251428a802232fe148d226b866d3d182d17c1a1604e11f2"
+      "bytes": 18282,
+      "sha256": "683ad19b43fbb3b8cba20935b98a69a5ff3861ff45b42d78f85ded7d38212cf1"
     },
     {
       "path": "manifest.json",
@@ -316,5 +316,5 @@
       "sha256": "28fea08724454e47a3ef554bb0aafe2a0533bc793e3961602bcd491960f50dc3"
     }
   ],
-  "bytes": 47671248
+  "bytes": 47671232
 }
