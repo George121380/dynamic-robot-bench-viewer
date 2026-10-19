@@ -335,13 +335,13 @@
       }
     },
     "source_commit": "ac703750a47c930ce87169132850d4c93deced03",
-    "completed_replays": 66,
+    "completed_replays": 69,
     "expected_replays": 250,
     "active_condition": null,
     "snapshot_utc": "2026-10-19T18:27:45.102796+00:00",
     "paused_by_user": true,
     "reason": "User requested settings review before starting training",
-    "collection_count_snapshot_utc": "2026-10-19T22:04:40.248011+00:00"
+    "collection_count_snapshot_utc": "2026-10-19T22:14:11.802365+00:00"
   },
   "architecture_review": {
     "schema": 1,
@@ -849,7 +849,7 @@
     "offline_matches_checkpoint_receipt": true,
     "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b"
   },
-  "snapshot_utc": "2026-10-19T22:04:40.248011+00:00",
+  "snapshot_utc": "2026-10-19T22:14:11.802365+00:00",
   "capacity": {
     "total_instantiated": 74929807,
     "track_encoder": 3293952,
@@ -3605,7 +3605,7 @@
       "fingerprint": "c0bd927fd9cfaebac8f535c350b0c842e3b55352f54eaeb2c94527605de1c4dd"
     },
     "lease": {
-      "snapshot_utc": "2026-10-19T22:03:51.663623+00:00",
+      "snapshot_utc": "2026-10-19T22:13:28.338712+00:00",
       "hard_deadline_utc": "2026-10-19T22:56:28Z",
       "cleanup_target_utc": "2026-10-19T22:53:28+00:00",
       "jobs": [
@@ -3741,10 +3741,46 @@
           "submitted_utc": "2026-10-19T21:58:27.291325+00:00",
           "deadline_utc": "2026-10-19T22:56:28Z",
           "code_commit": "bb2246da0033d3469356b141c3c51560f386bada",
+          "status": "Failed"
+        },
+        {
+          "job_id": "job-bfh920gvxaez",
+          "name": "ei-liupeiqi-wam-training-actpilot-canonical5-s1000-1n8g-b20z-20261019-220614",
+          "seed": 1000,
+          "gpus": 8,
+          "phase": "canonical_native_v5",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T22:06:17.238385+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "c8249e822c8861aa2fd406ed30883b6e2f4c7ef5",
+          "status": "Running"
+        },
+        {
+          "job_id": "job-rdizwrznwplm",
+          "name": "ei-liupeiqi-wam-training-actpilot-canonical5-s1001-1n8g-b20z-20261019-220631",
+          "seed": 1001,
+          "gpus": 8,
+          "phase": "canonical_native_v5",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T22:06:33.918686+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "c8249e822c8861aa2fd406ed30883b6e2f4c7ef5",
+          "status": "Running"
+        },
+        {
+          "job_id": "job-pgdgliulwvo7",
+          "name": "ei-liupeiqi-wam-training-actpilot-canonical5-s1002-1n8g-b20z-20261019-220722",
+          "seed": 1002,
+          "gpus": 8,
+          "phase": "canonical_native_v5",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T22:07:24.807487+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "c8249e822c8861aa2fd406ed30883b6e2f4c7ef5",
           "status": "Running"
         }
       ],
-      "active_owned_jobs": 2
+      "active_owned_jobs": 4
     },
     "jobs": [
       {
@@ -3869,6 +3905,39 @@
         "submitted_utc": "2026-10-19T21:58:27.291325+00:00",
         "deadline_utc": "2026-10-19T22:56:28Z",
         "code_commit": "bb2246da0033d3469356b141c3c51560f386bada"
+      },
+      {
+        "job_id": "job-bfh920gvxaez",
+        "name": "ei-liupeiqi-wam-training-actpilot-canonical5-s1000-1n8g-b20z-20261019-220614",
+        "seed": 1000,
+        "gpus": 8,
+        "phase": "canonical_native_v5",
+        "queue": "aihcq-91xvvs6bot18",
+        "submitted_utc": "2026-10-19T22:06:17.238385+00:00",
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "code_commit": "c8249e822c8861aa2fd406ed30883b6e2f4c7ef5"
+      },
+      {
+        "job_id": "job-rdizwrznwplm",
+        "name": "ei-liupeiqi-wam-training-actpilot-canonical5-s1001-1n8g-b20z-20261019-220631",
+        "seed": 1001,
+        "gpus": 8,
+        "phase": "canonical_native_v5",
+        "queue": "aihcq-91xvvs6bot18",
+        "submitted_utc": "2026-10-19T22:06:33.918686+00:00",
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "code_commit": "c8249e822c8861aa2fd406ed30883b6e2f4c7ef5"
+      },
+      {
+        "job_id": "job-pgdgliulwvo7",
+        "name": "ei-liupeiqi-wam-training-actpilot-canonical5-s1002-1n8g-b20z-20261019-220722",
+        "seed": 1002,
+        "gpus": 8,
+        "phase": "canonical_native_v5",
+        "queue": "aihcq-91xvvs6bot18",
+        "submitted_utc": "2026-10-19T22:07:24.807487+00:00",
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "code_commit": "c8249e822c8861aa2fd406ed30883b6e2f4c7ef5"
       }
     ],
     "nodes": {
@@ -61136,6 +61205,88 @@
       "scope": "Actual denormalized output joint-target errors on the full427-window development validation set; not a velocity/track error or task success estimate",
       "script_sha256": "39730c5a598d44163dcbadbf51fa398118e59bfb2f4b3abcbfb599b0880ebd43"
     },
+    "action_reference_baselines": {
+      "status": "complete",
+      "optimizer_updates": 0,
+      "hardware": "CPU only",
+      "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+      "windows": 427,
+      "valid_action_elements": 433596,
+      "valid_action_timesteps": 36133,
+      "statistics_source": "episodes 0..15 only",
+      "references": {
+        "repeat_current_measured_joints": {
+          "raw_action_chunk_MSE": 0.6848075730438438,
+          "raw_action_chunk_RMSE": 0.8275310103215733,
+          "raw_action_chunk_MAE": 0.5153666821020259,
+          "prior_action_L1": 0.9603221136138611,
+          "raw_action_chunk_MSE_per_joint": [
+            0.22889395929787648,
+            1.3915647648019833,
+            1.7733973989762306,
+            0.10541967256490736,
+            0.030893016921002398,
+            0.130134676716636,
+            0.4815556871536711,
+            1.8205790594970508,
+            1.9627912683528583,
+            0.08238577167885654,
+            0.027972741476213033,
+            0.18210285908883253
+          ],
+          "raw_action_chunk_MSE_prefix": {
+            "1": 0.04502420795142973,
+            "10": 0.12302647956971376,
+            "100": 0.6848075730438438
+          }
+        },
+        "training_action_mean": {
+          "raw_action_chunk_MSE": 0.4040988889401902,
+          "raw_action_chunk_RMSE": 0.6356877291093405,
+          "raw_action_chunk_MAE": 0.44865553079160486,
+          "prior_action_L1": 0.8362220178704852,
+          "raw_action_chunk_MSE_per_joint": [
+            0.13955739588543392,
+            1.064110346235384,
+            1.2638277652392722,
+            0.06257018601428452,
+            0.024383735715202474,
+            0.08309873228628782,
+            0.20673001690251755,
+            0.860912159713184,
+            0.9949116728717773,
+            0.04989897729535107,
+            0.009663282220338623,
+            0.08952239690324075
+          ],
+          "raw_action_chunk_MSE_prefix": {
+            "1": 0.3857715415187119,
+            "10": 0.38665201316143477,
+            "100": 0.4040988889401902
+          }
+        }
+      },
+      "episodes": [
+        {
+          "episode": 16,
+          "core_sha256": "f156d430283c0d456931f17fccd767c83db98ac6bce11dc414de7182c4ff9da6"
+        },
+        {
+          "episode": 17,
+          "core_sha256": "dcf3011779bba39d00c9846df483a200a31834dd3dc4c698bfa142a2478cee06"
+        },
+        {
+          "episode": 18,
+          "core_sha256": "0c01da595d63fdba6ea2d292d8eb222d9a558cc21bf89b56c5e75fc385e52535"
+        },
+        {
+          "episode": 19,
+          "core_sha256": "ab2d38abbb803848b616abf58168cc9c2f59c8b7c6b47a491a3cf337b3c3d6dc"
+        }
+      ],
+      "scope": "Offline physical-action diagnostics, not trained methods or closed-loop policy success. Repeating current joints can score well on steady windows while making no task progress.",
+      "source_sha256": "f0eff53477bf7cb4fcbbca570bb9d74bcd698e892ac8e78c87e358dafdc67462"
+    },
     "native_status": {
       "native-early-seed-1000": {
         "status": "complete",
@@ -64712,6 +64863,153 @@
         "path": "cluster-videos/seed-1000/execute-100/tracks_completion"
       }
     ],
+    "canonical_native": {
+      "protocol": {
+        "schema": "canonical-native-v5",
+        "training_seeds": [
+          1000,
+          1001,
+          1002,
+          1003
+        ],
+        "conditions": [
+          {
+            "name": "act",
+            "mode": "act",
+            "auxiliary_weight": 0.1,
+            "auxiliary_output_gain": 1
+          },
+          {
+            "name": "rgb_history",
+            "mode": "rgb_history",
+            "auxiliary_weight": 0.1,
+            "auxiliary_output_gain": 1
+          },
+          {
+            "name": "geometry",
+            "mode": "geometry",
+            "auxiliary_weight": 0.1,
+            "auxiliary_output_gain": 1
+          },
+          {
+            "name": "tracks",
+            "mode": "tracks",
+            "auxiliary_weight": 0.1,
+            "auxiliary_output_gain": 1
+          },
+          {
+            "name": "tracks_completion",
+            "mode": "tracks_completion",
+            "auxiliary_weight": 0.1,
+            "auxiliary_output_gain": 1
+          },
+          {
+            "name": "completion_gain100_w01",
+            "mode": "tracks_completion",
+            "auxiliary_weight": 0.1,
+            "auxiliary_output_gain": 100
+          },
+          {
+            "name": "completion_gain100_w1",
+            "mode": "tracks_completion",
+            "auxiliary_weight": 1,
+            "auxiliary_output_gain": 100
+          },
+          {
+            "name": "completion_gain100_w10",
+            "mode": "tracks_completion",
+            "auxiliary_weight": 10,
+            "auxiliary_output_gain": 100
+          }
+        ],
+        "execution_horizons": [
+          100,
+          10
+        ],
+        "optimizer_steps": 2000,
+        "pose_seed": 5001,
+        "point_seed": 2026,
+        "maximum_steps": 600,
+        "planned_cells": 64,
+        "source_hashes": {
+          "act_predicate_worker.py": "9999cb149fe51ef3b0c925e600b7fd0dc32411180133efc0dcb55c7a6d238894",
+          "act_predicate_rollout.py": "94993673333c978b976e24e5e8d8f1b648cc6eec90cb876b7210960e0e7288f1",
+          "act_predicate_run.sh": "7d2d9dc93e4417ab55e9e6782499a84089be61a039805086e7a26be95f052a51",
+          "paired_cloth_initialization.py": "d4aebb258de9c7932465a2a7415f4dd2c110b3825d80e472c2e45221cc3a1eb0",
+          "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+          "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480"
+        },
+        "canonical_case": {
+          "training_seed": 1000,
+          "condition": "act",
+          "execution_horizon": 100
+        },
+        "canonical_selection": "First predeclared launch state, saved before actor construction/actions, independent of outcomes",
+        "initialization": "Same preplay rest authoring and total60 actual physics steps; exactly one physics step per control step",
+        "tolerances": {
+          "world_points": 1e-05,
+          "finite_difference_velocity": 0.001,
+          "joint_position": 1e-05,
+          "joint_velocity": 1e-05
+        },
+        "maximum_initialization_attempts_per_cell": 5,
+        "retry_rule": "Only an explicit pre-actor initial_state_rejected_before_actor record may retry; completed outcomes and other errors never retry",
+        "scope": "One fixed development pose, four trained seeds, accepted starts conditioned on one canonical full state. No environment-generalization success-rate claim."
+      },
+      "audit": null,
+      "workers": {
+        "worker-1000": {
+          "status": "running",
+          "completed": [],
+          "rejected_initializations": [
+            "cases/seed-1000/execute-100/rgb_history/attempt-001",
+            "cases/seed-1000/execute-100/completion_gain100_w01/attempt-001",
+            "cases/seed-1000/execute-10/act/attempt-001",
+            "cases/seed-1000/execute-10/rgb_history/attempt-001"
+          ],
+          "failures": [],
+          "pending": 24,
+          "active": 8,
+          "snapshot_utc": "2026-10-19T22:14:11.693142+00:00"
+        },
+        "worker-1001": {
+          "status": "running",
+          "completed": [],
+          "rejected_initializations": [
+            "cases/seed-1001/execute-100/act/attempt-001",
+            "cases/seed-1001/execute-100/rgb_history/attempt-001",
+            "cases/seed-1001/execute-100/completion_gain100_w1/attempt-001",
+            "cases/seed-1001/execute-100/geometry/attempt-001",
+            "cases/seed-1001/execute-100/completion_gain100_w01/attempt-001",
+            "cases/seed-1001/execute-100/tracks/attempt-001",
+            "cases/seed-1001/execute-100/completion_gain100_w10/attempt-001",
+            "cases/seed-1001/execute-10/act/attempt-001",
+            "cases/seed-1001/execute-10/rgb_history/attempt-001",
+            "cases/seed-1001/execute-10/geometry/attempt-001"
+          ],
+          "failures": [],
+          "pending": 9,
+          "active": 7,
+          "snapshot_utc": "2026-10-19T22:14:09.306634+00:00"
+        },
+        "worker-1002": {
+          "status": "running",
+          "completed": [],
+          "rejected_initializations": [
+            "cases/seed-1002/execute-100/tracks/attempt-001",
+            "cases/seed-1002/execute-100/geometry/attempt-001",
+            "cases/seed-1002/execute-100/completion_gain100_w1/attempt-001",
+            "cases/seed-1002/execute-100/completion_gain100_w01/attempt-001"
+          ],
+          "failures": [],
+          "pending": 8,
+          "active": 8,
+          "snapshot_utc": "2026-10-19T22:14:10.119095+00:00"
+        }
+      },
+      "cases": [],
+      "videos": []
+    },
     "counted_native": {
       "gate": {
         "status": "complete",
@@ -68962,7 +69260,7 @@
       "job_name": "ei-liupeiqi-wam-training-actpilot-residual-1n8g-b20z-20261019-212607",
       "status": "running",
       "stage": "training",
-      "snapshot_utc": "2026-10-19T22:04:35.052605+00:00",
+      "snapshot_utc": "2026-10-19T22:14:05.265495+00:00",
       "exit_codes": {
         "seed-1000/connected": null,
         "seed-1000/detached": null,
@@ -71675,30 +71973,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 900,
-          "elapsed_seconds": 2117.658409873955,
+          "completed_optimizer_steps": 1150,
+          "elapsed_seconds": 2705.546641725581,
           "latest_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.4172777655826312,
-            "action_MAE_radians": 0.1827722285449599,
+            "prior_action_L1": 0.3967336666058455,
+            "action_MAE_radians": 0.17064821106805633,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.12767238101271,
+            "completion_EPE_mm": 12.283753282829343,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.839625719344056,
+            "moving_EPE_mm": 27.913078934311894,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.4172777655826312,
-            "action_MAE_radians": 0.1827722285449599,
+            "prior_action_L1": 0.3967336666058455,
+            "action_MAE_radians": 0.17064821106805633,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.12767238101271,
+            "completion_EPE_mm": 12.283753282829343,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.839625719344056,
+            "moving_EPE_mm": 27.913078934311894,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -71817,6 +72115,47 @@
               "1": 0.09501426322158839,
               "10": 0.06518674694722784,
               "100": 0.07962435708454745
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1000,
+            "windows": 427,
+            "prior_action_L1": 0.3967336666058455,
+            "action_MAE_radians": 0.17064821106805633,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.283753282829343,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.913078934311894,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.07126766115393132,
+            "raw_action_chunk_RMSE": 0.26696003662333306,
+            "raw_action_chunk_MAE": 0.17064821090593046,
+            "raw_action_chunk_MSE_per_joint": [
+              0.023251825005842695,
+              0.1314931432487584,
+              0.18998507478145044,
+              0.022786970059753813,
+              0.026239484559579612,
+              0.0366233463764511,
+              0.06221412997627712,
+              0.11045220931379787,
+              0.17264228948899799,
+              0.02239080035953872,
+              0.005265056090869822,
+              0.05186760458585829
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.06908828943819821,
+              "10": 0.05224970864455431,
+              "100": 0.07126766115393132
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -71992,6 +72331,61 @@
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T21:58:57.362862+00:00",
             "example_download": "raw-action-examples/act-b20z-residual-iteration-01/connected/step-0750-actual-action-example.npz"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1000,
+            "condition": "connected",
+            "optimizer_step": 1000,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "ef051bd90a11383ddd1e9af8d965f8a9f07077683d6197524afd0c5e4e419b90",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.3967336666058455,
+              "action_MAE_radians": 0.17064821106805633,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.07126766115393132,
+              "raw_action_chunk_RMSE": 0.26696003662333306,
+              "raw_action_chunk_MAE": 0.17064821090593046,
+              "raw_action_chunk_MSE_per_joint": [
+                0.023251825005842695,
+                0.1314931432487584,
+                0.18998507478145044,
+                0.022786970059753813,
+                0.026239484559579612,
+                0.0366233463764511,
+                0.06221412997627712,
+                0.11045220931379787,
+                0.17264228948899799,
+                0.02239080035953872,
+                0.005265056090869822,
+                0.05186760458585829
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.06908828943819821,
+                "10": 0.05224970864455431,
+                "100": 0.07126766115393132
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.3967336666058455,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1000-actual-action-example.npz",
+            "example_sha256": "877d3d91441a5d4389e2a0d74fa2725f8ffb23482015e07cc70c4d955f24cb29",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.04620985888296543,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:08:38.962377+00:00",
+            "example_download": "raw-action-examples/act-b20z-residual-iteration-01/connected/step-1000-actual-action-example.npz"
           }
         ]
       },
@@ -72074,30 +72468,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 925,
-          "elapsed_seconds": 2154.864092697855,
+          "completed_optimizer_steps": 1150,
+          "elapsed_seconds": 2688.6262004738674,
           "latest_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.4378092531493707,
-            "action_MAE_radians": 0.19221777050590538,
+            "prior_action_L1": 0.41059779338943825,
+            "action_MAE_radians": 0.17952018549655,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.993029471368917,
+            "completion_EPE_mm": 12.109590660565848,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.67768524342152,
+            "moving_EPE_mm": 27.724928401849578,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.4378092531493707,
-            "action_MAE_radians": 0.19221777050590538,
+            "prior_action_L1": 0.41059779338943825,
+            "action_MAE_radians": 0.17952018549655,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.993029471368917,
+            "completion_EPE_mm": 12.109590660565848,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.67768524342152,
+            "moving_EPE_mm": 27.724928401849578,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -72216,6 +72610,47 @@
               "1": 0.09650991942135585,
               "10": 0.07295098671349688,
               "100": 0.08955771345368226
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1000,
+            "windows": 427,
+            "prior_action_L1": 0.41059779338943825,
+            "action_MAE_radians": 0.17952018549655,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.109590660565848,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.724928401849578,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.08160933236040314,
+            "raw_action_chunk_RMSE": 0.2856734715727086,
+            "raw_action_chunk_MAE": 0.17952018543774637,
+            "raw_action_chunk_MSE_per_joint": [
+              0.026039971053985547,
+              0.12077690529727739,
+              0.23015642365160432,
+              0.02373420933581084,
+              0.026691216677135685,
+              0.03813734755004135,
+              0.0751090224369463,
+              0.1503939603060919,
+              0.20464178251778706,
+              0.023367370573178593,
+              0.005654732183012689,
+              0.05460904674196573
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.06879706969609342,
+              "10": 0.056487247641807244,
+              "100": 0.08160933236040314
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -72391,6 +72826,61 @@
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T21:58:41.374179+00:00",
             "example_download": "raw-action-examples/act-b20z-residual-iteration-01/detached/step-0750-actual-action-example.npz"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1000,
+            "condition": "detached",
+            "optimizer_step": 1000,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "b184b9c7c0d559991ff38d0ed231496cd4d815eaca2faad45352ab822ec93738",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.41059779338943825,
+              "action_MAE_radians": 0.17952018549655,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.08160933236040314,
+              "raw_action_chunk_RMSE": 0.2856734715727086,
+              "raw_action_chunk_MAE": 0.17952018543774637,
+              "raw_action_chunk_MSE_per_joint": [
+                0.026039971053985547,
+                0.12077690529727739,
+                0.23015642365160432,
+                0.02373420933581084,
+                0.026691216677135685,
+                0.03813734755004135,
+                0.0751090224369463,
+                0.1503939603060919,
+                0.20464178251778706,
+                0.023367370573178593,
+                0.005654732183012689,
+                0.05460904674196573
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.06879706969609342,
+                "10": 0.056487247641807244,
+                "100": 0.08160933236040314
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.41059779338943825,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1000-actual-action-example.npz",
+            "example_sha256": "f3f08f0f5af8c95a1abb5b6a4535bc964c6b85977ff199ed27e150ffce9802a1",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.03897634232946711,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:08:33.543519+00:00",
+            "example_download": "raw-action-examples/act-b20z-residual-iteration-01/detached/step-1000-actual-action-example.npz"
           }
         ]
       },
@@ -72473,30 +72963,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 950,
-          "elapsed_seconds": 2145.296670800075,
+          "completed_optimizer_steps": 1200,
+          "elapsed_seconds": 2716.4281767481007,
           "latest_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.43357864672220997,
-            "action_MAE_radians": 0.18909652968302168,
+            "prior_action_L1": 0.40577652423605864,
+            "action_MAE_radians": 0.1767688360243618,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.213557368778373,
+            "completion_EPE_mm": 12.503332989015282,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.762242730811987,
+            "moving_EPE_mm": 27.831984430991763,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.43357864672220997,
-            "action_MAE_radians": 0.18909652968302168,
+            "prior_action_L1": 0.40577652423605864,
+            "action_MAE_radians": 0.1767688360243618,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.213557368778373,
+            "completion_EPE_mm": 12.503332989015282,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.762242730811987,
+            "moving_EPE_mm": 27.831984430991763,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -72615,6 +73105,47 @@
               "1": 0.08809448479128154,
               "10": 0.06742647573295357,
               "100": 0.08738482128927756
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1000,
+            "windows": 427,
+            "prior_action_L1": 0.40577652423605864,
+            "action_MAE_radians": 0.1767688360243618,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.503332989015282,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.831984430991763,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.07891645551397647,
+            "raw_action_chunk_RMSE": 0.2809207281671761,
+            "raw_action_chunk_MAE": 0.17676883524458828,
+            "raw_action_chunk_MSE_per_joint": [
+              0.028489129667355735,
+              0.12198506030063104,
+              0.1929936060467164,
+              0.02450265480865693,
+              0.023274185936269034,
+              0.03880885254823276,
+              0.06469818540929599,
+              0.15781041654534095,
+              0.2154196495774738,
+              0.021458079930829932,
+              0.006601530143616712,
+              0.050956115253299024
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.06857097804866909,
+              "10": 0.05460734000399797,
+              "100": 0.07891645551397647
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -72787,6 +73318,60 @@
             "example_raw_action_chunk_MSE": 0.06295152340408615,
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T21:57:51.257342+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1001,
+            "condition": "connected",
+            "optimizer_step": 1000,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "87a394eb9a926c4ff02fcff9fc4135cb23f0a937643e89185bd50019688fca3d",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.40577652423605864,
+              "action_MAE_radians": 0.1767688360243618,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.07891645551397647,
+              "raw_action_chunk_RMSE": 0.2809207281671761,
+              "raw_action_chunk_MAE": 0.17676883524458828,
+              "raw_action_chunk_MSE_per_joint": [
+                0.028489129667355735,
+                0.12198506030063104,
+                0.1929936060467164,
+                0.02450265480865693,
+                0.023274185936269034,
+                0.03880885254823276,
+                0.06469818540929599,
+                0.15781041654534095,
+                0.2154196495774738,
+                0.021458079930829932,
+                0.006601530143616712,
+                0.050956115253299024
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.06857097804866909,
+                "10": 0.05460734000399797,
+                "100": 0.07891645551397647
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.40577652423605864,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1000-actual-action-example.npz",
+            "example_sha256": "b4126ee26e4d152a9cecbc335096ab25667d038c0aafd968360842cf103b30d7",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.05242455698829265,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:07:20.449057+00:00"
           }
         ]
       },
@@ -72869,30 +73454,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 950,
-          "elapsed_seconds": 2138.630855102092,
+          "completed_optimizer_steps": 1200,
+          "elapsed_seconds": 2710.319249072112,
           "latest_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.42168593775305685,
-            "action_MAE_radians": 0.18714055776296942,
+            "prior_action_L1": 0.4009350757869234,
+            "action_MAE_radians": 0.17599179584677213,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.024193391919074,
+            "completion_EPE_mm": 12.090173739712009,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.68991544884606,
+            "moving_EPE_mm": 27.721942836497927,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.42168593775305685,
-            "action_MAE_radians": 0.18714055776296942,
+            "prior_action_L1": 0.4009350757869234,
+            "action_MAE_radians": 0.17599179584677213,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.024193391919074,
+            "completion_EPE_mm": 12.090173739712009,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.68991544884606,
+            "moving_EPE_mm": 27.721942836497927,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -73011,6 +73596,47 @@
               "1": 0.09784504264395186,
               "10": 0.07461420514498095,
               "100": 0.08660690117644537
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1000,
+            "windows": 427,
+            "prior_action_L1": 0.4009350757869234,
+            "action_MAE_radians": 0.17599179584677213,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.090173739712009,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.721942836497927,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.08030768567251216,
+            "raw_action_chunk_RMSE": 0.2833861070562778,
+            "raw_action_chunk_MAE": 0.1759917953797223,
+            "raw_action_chunk_MSE_per_joint": [
+              0.02363232684415751,
+              0.11895794782874612,
+              0.19503210276831873,
+              0.023696619627495436,
+              0.020670386428551825,
+              0.036551204715794955,
+              0.07229365110712697,
+              0.1639555795330267,
+              0.2295135268314755,
+              0.02085972635469187,
+              0.006226199459593477,
+              0.05230295657116737
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.06492021348734507,
+              "10": 0.05417597499817629,
+              "100": 0.08030768567251216
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -73183,6 +73809,60 @@
             "example_raw_action_chunk_MSE": 0.060382862609617644,
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T21:57:38.245389+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1001,
+            "condition": "detached",
+            "optimizer_step": 1000,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "943cc6a79c06ce9268ba3c0f4aa4cdf032448d4c1a8739fe8dd2f38a8c9105ca",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.4009350757869234,
+              "action_MAE_radians": 0.17599179584677213,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.08030768567251216,
+              "raw_action_chunk_RMSE": 0.2833861070562778,
+              "raw_action_chunk_MAE": 0.1759917953797223,
+              "raw_action_chunk_MSE_per_joint": [
+                0.02363232684415751,
+                0.11895794782874612,
+                0.19503210276831873,
+                0.023696619627495436,
+                0.020670386428551825,
+                0.036551204715794955,
+                0.07229365110712697,
+                0.1639555795330267,
+                0.2295135268314755,
+                0.02085972635469187,
+                0.006226199459593477,
+                0.05230295657116737
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.06492021348734507,
+                "10": 0.05417597499817629,
+                "100": 0.08030768567251216
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.4009350757869234,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1000-actual-action-example.npz",
+            "example_sha256": "7a49e113955f5c1db626e0e3f75037cd24fb7c7b729e704d7006382134ead28a",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.05338791626239128,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:07:10.039377+00:00"
           }
         ]
       },
@@ -73265,30 +73945,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 975,
-          "elapsed_seconds": 2155.2406499497592,
+          "completed_optimizer_steps": 1225,
+          "elapsed_seconds": 2715.8813811908476,
           "latest_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.4328966607339173,
-            "action_MAE_radians": 0.1918040770168178,
+            "prior_action_L1": 0.4241236519539266,
+            "action_MAE_radians": 0.18681991605168377,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.08978827856743,
+            "completion_EPE_mm": 12.46315429013343,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.711367503232466,
+            "moving_EPE_mm": 27.809551082079714,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.4328966607339173,
-            "action_MAE_radians": 0.1918040770168178,
+            "prior_action_L1": 0.4241236519539266,
+            "action_MAE_radians": 0.18681991605168377,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.08978827856743,
+            "completion_EPE_mm": 12.46315429013343,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.711367503232466,
+            "moving_EPE_mm": 27.809551082079714,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -73407,6 +74087,47 @@
               "1": 0.08672370479719625,
               "10": 0.07230191402447114,
               "100": 0.0881991188554426
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1000,
+            "windows": 427,
+            "prior_action_L1": 0.4241236519539266,
+            "action_MAE_radians": 0.18681991605168377,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.46315429013343,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.809551082079714,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.0886463094018609,
+            "raw_action_chunk_RMSE": 0.29773530089974365,
+            "raw_action_chunk_MAE": 0.1868199155242495,
+            "raw_action_chunk_MSE_per_joint": [
+              0.025152251658838352,
+              0.1466455826713905,
+              0.23996985127471673,
+              0.024879124590864842,
+              0.025843268828877428,
+              0.039130605800699325,
+              0.0700193354697335,
+              0.153565472324277,
+              0.2508872596330746,
+              0.02384913331362683,
+              0.007146016339549204,
+              0.05666781091668298
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.0776944094521382,
+              "10": 0.06591304783591517,
+              "100": 0.0886463094018609
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -73579,6 +74300,60 @@
             "example_raw_action_chunk_MSE": 0.050496421335380653,
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T21:57:30.847743+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1002,
+            "condition": "connected",
+            "optimizer_step": 1000,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "e8a0b8ab0e733febbf1b786cd2ed28b971934a5da1a98e72a04bcc5b17ff1e63",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.4241236519539266,
+              "action_MAE_radians": 0.18681991605168377,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.0886463094018609,
+              "raw_action_chunk_RMSE": 0.29773530089974365,
+              "raw_action_chunk_MAE": 0.1868199155242495,
+              "raw_action_chunk_MSE_per_joint": [
+                0.025152251658838352,
+                0.1466455826713905,
+                0.23996985127471673,
+                0.024879124590864842,
+                0.025843268828877428,
+                0.039130605800699325,
+                0.0700193354697335,
+                0.153565472324277,
+                0.2508872596330746,
+                0.02384913331362683,
+                0.007146016339549204,
+                0.05666781091668298
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.0776944094521382,
+                "10": 0.06591304783591517,
+                "100": 0.0886463094018609
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.4241236519539266,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1000-actual-action-example.npz",
+            "example_sha256": "d2401c0b2c6e3da8c6d171e52674081df48ba24d300b593af152de87e481171f",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.05483740972655898,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:06:33.797541+00:00"
           }
         ]
       },
@@ -73661,30 +74436,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 900,
-          "elapsed_seconds": 2138.7276114830747,
+          "completed_optimizer_steps": 1150,
+          "elapsed_seconds": 2739.3142280490138,
           "latest_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.4214398560969904,
-            "action_MAE_radians": 0.1850287157826268,
+            "prior_action_L1": 0.4024643124517382,
+            "action_MAE_radians": 0.1736563354207411,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.040949634730858,
+            "completion_EPE_mm": 12.08787769008475,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.710672701164054,
+            "moving_EPE_mm": 27.733349674127723,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.4214398560969904,
-            "action_MAE_radians": 0.1850287157826268,
+            "prior_action_L1": 0.4024643124517382,
+            "action_MAE_radians": 0.1736563354207411,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.040949634730858,
+            "completion_EPE_mm": 12.08787769008475,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.710672701164054,
+            "moving_EPE_mm": 27.733349674127723,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -73803,6 +74578,47 @@
               "1": 0.07357101353648389,
               "10": 0.06115098199644176,
               "100": 0.08128000424863546
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1000,
+            "windows": 427,
+            "prior_action_L1": 0.4024643124517382,
+            "action_MAE_radians": 0.1736563354207411,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.08787769008475,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.733349674127723,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.07465571308276688,
+            "raw_action_chunk_RMSE": 0.27323197668422133,
+            "raw_action_chunk_MAE": 0.1736563361421107,
+            "raw_action_chunk_MSE_per_joint": [
+              0.024767263275629805,
+              0.1271352423671399,
+              0.1870544445696712,
+              0.023886490425871158,
+              0.024168753849601207,
+              0.036769304893088495,
+              0.05865932122303503,
+              0.12876141872786429,
+              0.20141259812524878,
+              0.02137302507321301,
+              0.0069243467143758515,
+              0.05495634774846464
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.05976770542177269,
+              "10": 0.053096734277031564,
+              "100": 0.07465571308276688
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -73975,6 +74791,60 @@
             "example_raw_action_chunk_MSE": 0.0718271465239659,
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T21:59:11.287750+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1002,
+            "condition": "detached",
+            "optimizer_step": 1000,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "2033cfac466ca25f1d4ef6e61a320fb525e18fa2da1f235f5d2f38d805d00e17",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.4024643124517382,
+              "action_MAE_radians": 0.1736563354207411,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.07465571308276688,
+              "raw_action_chunk_RMSE": 0.27323197668422133,
+              "raw_action_chunk_MAE": 0.1736563361421107,
+              "raw_action_chunk_MSE_per_joint": [
+                0.024767263275629805,
+                0.1271352423671399,
+                0.1870544445696712,
+                0.023886490425871158,
+                0.024168753849601207,
+                0.036769304893088495,
+                0.05865932122303503,
+                0.12876141872786429,
+                0.20141259812524878,
+                0.02137302507321301,
+                0.0069243467143758515,
+                0.05495634774846464
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.05976770542177269,
+                "10": 0.053096734277031564,
+                "100": 0.07465571308276688
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.4024643124517382,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1000-actual-action-example.npz",
+            "example_sha256": "450a4a5fa7bb9c0148536ed06dd0cf39df3b048343345e7a938e77c991d7b2ec",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.05143060377302408,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:09:12.469789+00:00"
           }
         ]
       },
@@ -74057,30 +74927,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 900,
-          "elapsed_seconds": 2136.253549802117,
+          "completed_optimizer_steps": 1150,
+          "elapsed_seconds": 2735.377581051085,
           "latest_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.42531654075583886,
-            "action_MAE_radians": 0.1861493267374411,
+            "prior_action_L1": 0.39604988670684316,
+            "action_MAE_radians": 0.17162122719369186,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.12877127482083,
+            "completion_EPE_mm": 12.321976743056931,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.777698456731404,
+            "moving_EPE_mm": 27.885442743595302,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.42531654075583886,
-            "action_MAE_radians": 0.1861493267374411,
+            "prior_action_L1": 0.39604988670684316,
+            "action_MAE_radians": 0.17162122719369186,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.12877127482083,
+            "completion_EPE_mm": 12.321976743056931,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.777698456731404,
+            "moving_EPE_mm": 27.885442743595302,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -74199,6 +75069,47 @@
               "1": 0.07975717555857441,
               "10": 0.06913466699795508,
               "100": 0.081000049882305
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1000,
+            "windows": 427,
+            "prior_action_L1": 0.39604988670684316,
+            "action_MAE_radians": 0.17162122719369186,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.321976743056931,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.885442743595302,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.07046462181262363,
+            "raw_action_chunk_RMSE": 0.26545173160599955,
+            "raw_action_chunk_MAE": 0.17162122730394036,
+            "raw_action_chunk_MSE_per_joint": [
+              0.021388418738162898,
+              0.11399600203962001,
+              0.1885674078407129,
+              0.023915123285567233,
+              0.02074604360641912,
+              0.03666500583554195,
+              0.05901387069174024,
+              0.13638282844876032,
+              0.16709804899164318,
+              0.020394463246361277,
+              0.006035605832671881,
+              0.051372643194282634
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.053729929543874934,
+              "10": 0.054977469116327934,
+              "100": 0.07046462181262363
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -74371,6 +75282,60 @@
             "example_raw_action_chunk_MSE": 0.0588423161000162,
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T21:59:07.081250+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1003,
+            "condition": "connected",
+            "optimizer_step": 1000,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "3db58124afc0c415de7657c3f40fa1d2ca66516eba1c8bc6a03f72d88d508fc8",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.39604988670684316,
+              "action_MAE_radians": 0.17162122719369186,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.07046462181262363,
+              "raw_action_chunk_RMSE": 0.26545173160599955,
+              "raw_action_chunk_MAE": 0.17162122730394036,
+              "raw_action_chunk_MSE_per_joint": [
+                0.021388418738162898,
+                0.11399600203962001,
+                0.1885674078407129,
+                0.023915123285567233,
+                0.02074604360641912,
+                0.03666500583554195,
+                0.05901387069174024,
+                0.13638282844876032,
+                0.16709804899164318,
+                0.020394463246361277,
+                0.006035605832671881,
+                0.051372643194282634
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.053729929543874934,
+                "10": 0.054977469116327934,
+                "100": 0.07046462181262363
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.39604988670684316,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1000-actual-action-example.npz",
+            "example_sha256": "62d103755f395cd2079541db646fa5db1af4617d5b098c1dbf8a4bacfc129636",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.05803269142178793,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:09:08.368154+00:00"
           }
         ]
       },
@@ -74453,30 +75418,30 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 975,
-          "elapsed_seconds": 2143.065168424044,
+          "completed_optimizer_steps": 1225,
+          "elapsed_seconds": 2699.524760134984,
           "latest_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.43642545365105245,
-            "action_MAE_radians": 0.1922056790148163,
+            "prior_action_L1": 0.3999760905223059,
+            "action_MAE_radians": 0.1728504304549392,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.917059766515074,
+            "completion_EPE_mm": 12.024631876519418,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.635909166543335,
+            "moving_EPE_mm": 27.708122548960652,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 750,
+            "step": 1000,
             "windows": 427,
-            "prior_action_L1": 0.43642545365105245,
-            "action_MAE_radians": 0.1922056790148163,
+            "prior_action_L1": 0.3999760905223059,
+            "action_MAE_radians": 0.1728504304549392,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.917059766515074,
+            "completion_EPE_mm": 12.024631876519418,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 27.635909166543335,
+            "moving_EPE_mm": 27.708122548960652,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
@@ -74595,6 +75560,47 @@
               "1": 0.07690051291676851,
               "10": 0.07238726671495109,
               "100": 0.09025445703674613
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          },
+          {
+            "step": 1000,
+            "windows": 427,
+            "prior_action_L1": 0.3999760905223059,
+            "action_MAE_radians": 0.1728504304549392,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.024631876519418,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 27.708122548960652,
+            "moving_static_EPE_mm": 46.05298086273921,
+            "raw_action_chunk_MSE": 0.0735044415474958,
+            "raw_action_chunk_RMSE": 0.27111702555814493,
+            "raw_action_chunk_MAE": 0.1728504302921762,
+            "raw_action_chunk_MSE_per_joint": [
+              0.023102388532421192,
+              0.11928735350631756,
+              0.1941692263855812,
+              0.02434697290325108,
+              0.025511996446546534,
+              0.03692748568748413,
+              0.05919480523038161,
+              0.14428950716662967,
+              0.17638786805733223,
+              0.019906771292031333,
+              0.005994537875239829,
+              0.05293438548673392
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.05056452509040358,
+              "10": 0.05706662546415573,
+              "100": 0.0735044415474958
             },
             "raw_action_valid_elements": 433596,
             "raw_action_valid_timesteps": 36133,
@@ -74767,6 +75773,60 @@
             "example_raw_action_chunk_MSE": 0.07081823669085055,
             "evaluation_hardware": "NVIDIA B20Z",
             "evaluated_utc": "2026-10-19T21:57:29.207410+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1003,
+            "condition": "detached",
+            "optimizer_step": 1000,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "adf3ddf162219c74fa559d7bbcf7e148711320568a791f7fc7eaa970e87534d5",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.3999760905223059,
+              "action_MAE_radians": 0.1728504304549392,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.0735044415474958,
+              "raw_action_chunk_RMSE": 0.27111702555814493,
+              "raw_action_chunk_MAE": 0.1728504302921762,
+              "raw_action_chunk_MSE_per_joint": [
+                0.023102388532421192,
+                0.11928735350631756,
+                0.1941692263855812,
+                0.02434697290325108,
+                0.025511996446546534,
+                0.03692748568748413,
+                0.05919480523038161,
+                0.14428950716662967,
+                0.17638786805733223,
+                0.019906771292031333,
+                0.005994537875239829,
+                0.05293438548673392
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.05056452509040358,
+                "10": 0.05706662546415573,
+                "100": 0.0735044415474958
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.3999760905223059,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "51d6340ce3552b95cb6c84a79ba456e1928d38eadc9393b69c5eec38d5100513",
+            "example_file": "step-1000-actual-action-example.npz",
+            "example_sha256": "a3c1bde1227cfa7724d6844f4e8ae4fe696b62ee2cdbc01f728176a57f034910",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.05526470585557784,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T22:06:22.100693+00:00"
           }
         ]
       }
