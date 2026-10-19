@@ -1,14 +1,14 @@
 {
-  "status": "in_progress",
+  "status": "complete",
   "checkpoint_repository": "Papercold/lehome-act-top-long",
   "checkpoint_revision": "6ee6f94974b20ffb785b063706d3a7b4af156041",
   "role": "development_pipeline_reference_not_fair_retrained_model_comparison",
   "groups": {
     "all": {
       "n": 20,
-      "completed": 15,
-      "ever_success": 13,
-      "final_success": 12
+      "completed": 20,
+      "ever_success": 15,
+      "final_success": 14
     },
     "seen": {
       "n": 10,
@@ -18,9 +18,9 @@
     },
     "unseen": {
       "n": 10,
-      "completed": 5,
-      "ever_success": 5,
-      "final_success": 4
+      "completed": 10,
+      "ever_success": 7,
+      "final_success": 6
     }
   },
   "cases": [
@@ -1540,49 +1540,509 @@
       "attempts_retained": 1
     },
     {
+      "status": "complete",
       "case": {
         "id": "top_long_unseen_1-s101",
         "garment": "Top_Long_Unseen_1",
         "seed": 101,
         "group": "unseen"
       },
-      "status": "pending"
+      "checkpoint_revision": "6ee6f94974b20ffb785b063706d3a7b4af156041",
+      "mode": "closed-loop-learned-policy",
+      "learned_policy": true,
+      "steps": 600,
+      "frames": 601,
+      "first_success_step": null,
+      "ever_success": false,
+      "final_success": false,
+      "final_geometric_check": {
+        "success": false,
+        "garment_type": "top-long-sleeve",
+        "thresholds": [
+          9.0,
+          9.9,
+          8.55,
+          13.05,
+          15.3
+        ],
+        "details": {
+          "condition_1": {
+            "description": "dist(p[0], p[4]) = 5.21 <= 9.0",
+            "value": 5.21323673850903,
+            "threshold": 9.0,
+            "passed": true
+          },
+          "condition_2": {
+            "description": "dist(p[2], p[3]) = 30.82 <= 9.9",
+            "value": 30.822864301806263,
+            "threshold": 9.9,
+            "passed": false
+          },
+          "condition_3": {
+            "description": "dist(p[1], p[5]) = 2.60 <= 8.55",
+            "value": 2.6032576744563305,
+            "threshold": 8.55,
+            "passed": true
+          },
+          "condition_4": {
+            "description": "dist(p[0], p[1]) = 20.89 >= 13.05",
+            "value": 20.89484640192396,
+            "threshold": 13.05,
+            "passed": true
+          },
+          "condition_5": {
+            "description": "dist(p[4], p[5]) = 18.30 >= 15.3",
+            "value": 18.2989839769063,
+            "threshold": 15.3,
+            "passed": true
+          }
+        }
+      },
+      "original_checker_parity": true,
+      "initialization_fingerprint": "72afe6c8f819148ebc069fc06f02d03141cd857e1a33e8cebeaf07d35d8f7cc9",
+      "physics_dt_seconds": 0.011111111111111112,
+      "action_rate_hz": 90.0,
+      "inference_ms": {
+        "mean": 4.64848914843363,
+        "p50": 3.3538310090079904,
+        "p95": 4.0350584662519395,
+        "chunk_calls_mean": 126.24285230413079
+      },
+      "action_min": [
+        -0.5440887212753296,
+        -1.7332332134246826,
+        -1.6075048446655273,
+        0.5481666922569275,
+        -1.0533655881881714,
+        -0.18127094209194183,
+        -1.1206711530685425,
+        -1.7900097370147705,
+        -1.4295203685760498,
+        0.7279287576675415,
+        0.18983253836631775,
+        -0.19310683012008667
+      ],
+      "action_max": [
+        0.9906598329544067,
+        1.2630565166473389,
+        1.6155729293823242,
+        1.6740374565124512,
+        -0.24411016702651978,
+        0.5548678636550903,
+        0.13613227009773254,
+        0.9441239237785339,
+        1.5969657897949219,
+        1.679236650466919,
+        0.5756562352180481,
+        0.7079228758811951
+      ],
+      "elapsed_seconds": 272.3744909763336,
+      "path": "cases/top_long_unseen_1-s101",
+      "attempts_retained": 1
     },
     {
+      "status": "complete",
       "case": {
         "id": "top_long_unseen_1-s102",
         "garment": "Top_Long_Unseen_1",
         "seed": 102,
         "group": "unseen"
       },
-      "status": "pending"
+      "checkpoint_revision": "6ee6f94974b20ffb785b063706d3a7b4af156041",
+      "mode": "closed-loop-learned-policy",
+      "learned_policy": true,
+      "steps": 322,
+      "frames": 323,
+      "first_success_step": 272,
+      "ever_success": true,
+      "final_success": true,
+      "final_geometric_check": {
+        "success": true,
+        "garment_type": "top-long-sleeve",
+        "thresholds": [
+          9.0,
+          9.9,
+          8.55,
+          13.05,
+          15.3
+        ],
+        "details": {
+          "condition_1": {
+            "description": "dist(p[0], p[4]) = 3.09 <= 9.0",
+            "value": 3.091484715369287,
+            "threshold": 9.0,
+            "passed": true
+          },
+          "condition_2": {
+            "description": "dist(p[2], p[3]) = 5.04 <= 9.9",
+            "value": 5.035050545821044,
+            "threshold": 9.9,
+            "passed": true
+          },
+          "condition_3": {
+            "description": "dist(p[1], p[5]) = 5.67 <= 8.55",
+            "value": 5.666422498948797,
+            "threshold": 8.55,
+            "passed": true
+          },
+          "condition_4": {
+            "description": "dist(p[0], p[1]) = 19.16 >= 13.05",
+            "value": 19.159401423765352,
+            "threshold": 13.05,
+            "passed": true
+          },
+          "condition_5": {
+            "description": "dist(p[4], p[5]) = 20.93 >= 15.3",
+            "value": 20.92585301601844,
+            "threshold": 15.3,
+            "passed": true
+          }
+        }
+      },
+      "original_checker_parity": true,
+      "initialization_fingerprint": "e35379a235eaad4b6247d506d97ee8749414f5b8ca54b0c9007630eb592e4488",
+      "physics_dt_seconds": 0.011111111111111112,
+      "action_rate_hz": 90.0,
+      "inference_ms": {
+        "mean": 5.995511919728578,
+        "p50": 3.3586424542590976,
+        "p95": 3.959517751354724,
+        "chunk_calls_mean": 210.51367040490732
+      },
+      "action_min": [
+        -0.49231836199760437,
+        -1.7524546384811401,
+        -1.5854637622833252,
+        0.6359835863113403,
+        -1.0326879024505615,
+        -0.18679621815681458,
+        -1.2098826169967651,
+        -1.7991771697998047,
+        -1.7112741470336914,
+        0.7435517311096191,
+        0.20175057649612427,
+        -0.21087518334388733
+      ],
+      "action_max": [
+        1.0089460611343384,
+        1.2486419677734375,
+        1.6136192083358765,
+        1.7092887163162231,
+        -0.20488840341567993,
+        0.5539537668228149,
+        0.16136053204536438,
+        1.2021379470825195,
+        1.5709168910980225,
+        1.7369513511657715,
+        0.5968893766403198,
+        0.6207627654075623
+      ],
+      "elapsed_seconds": 170.41917419433594,
+      "path": "cases/top_long_unseen_1-s102",
+      "attempts_retained": 1
     },
     {
+      "status": "complete",
       "case": {
         "id": "top_long_unseen_1-s103",
         "garment": "Top_Long_Unseen_1",
         "seed": 103,
         "group": "unseen"
       },
-      "status": "pending"
+      "checkpoint_revision": "6ee6f94974b20ffb785b063706d3a7b4af156041",
+      "mode": "closed-loop-learned-policy",
+      "learned_policy": true,
+      "steps": 600,
+      "frames": 601,
+      "first_success_step": null,
+      "ever_success": false,
+      "final_success": false,
+      "final_geometric_check": {
+        "success": false,
+        "garment_type": "top-long-sleeve",
+        "thresholds": [
+          9.0,
+          9.9,
+          8.55,
+          13.05,
+          15.3
+        ],
+        "details": {
+          "condition_1": {
+            "description": "dist(p[0], p[4]) = 2.94 <= 9.0",
+            "value": 2.9374056430176685,
+            "threshold": 9.0,
+            "passed": true
+          },
+          "condition_2": {
+            "description": "dist(p[2], p[3]) = 25.00 <= 9.9",
+            "value": 24.999052024691405,
+            "threshold": 9.9,
+            "passed": false
+          },
+          "condition_3": {
+            "description": "dist(p[1], p[5]) = 3.83 <= 8.55",
+            "value": 3.8344006986378885,
+            "threshold": 8.55,
+            "passed": true
+          },
+          "condition_4": {
+            "description": "dist(p[0], p[1]) = 20.72 >= 13.05",
+            "value": 20.723073937147518,
+            "threshold": 13.05,
+            "passed": true
+          },
+          "condition_5": {
+            "description": "dist(p[4], p[5]) = 18.25 >= 15.3",
+            "value": 18.2538183993434,
+            "threshold": 15.3,
+            "passed": true
+          }
+        }
+      },
+      "original_checker_parity": true,
+      "initialization_fingerprint": "f2b5545b9403c8314b637196964c00c939e23df4983099f385eade9f68519a08",
+      "physics_dt_seconds": 0.011111111111111112,
+      "action_rate_hz": 90.0,
+      "inference_ms": {
+        "mean": 4.569544137145082,
+        "p50": 3.368426929228008,
+        "p95": 3.953198378439992,
+        "chunk_calls_mean": 116.96006221851955
+      },
+      "action_min": [
+        -0.06180253624916077,
+        -1.7599217891693115,
+        -1.66359281539917,
+        0.608780026435852,
+        -0.6499657034873962,
+        -0.17019176483154297,
+        -0.9591730833053589,
+        -1.7999532222747803,
+        -0.8707334399223328,
+        0.7657661437988281,
+        0.2009333223104477,
+        -0.18696877360343933
+      ],
+      "action_max": [
+        1.0633056163787842,
+        1.2841310501098633,
+        1.6296093463897705,
+        1.7365045547485352,
+        -0.26748836040496826,
+        0.5294332504272461,
+        0.4420384466648102,
+        0.6214414238929749,
+        1.5876996517181396,
+        1.6835033893585205,
+        0.9170536994934082,
+        0.7298969626426697
+      ],
+      "elapsed_seconds": 258.6537342071533,
+      "path": "cases/top_long_unseen_1-s103",
+      "attempts_retained": 1
     },
     {
+      "status": "complete",
       "case": {
         "id": "top_long_unseen_1-s104",
         "garment": "Top_Long_Unseen_1",
         "seed": 104,
         "group": "unseen"
       },
-      "status": "pending"
+      "checkpoint_revision": "6ee6f94974b20ffb785b063706d3a7b4af156041",
+      "mode": "closed-loop-learned-policy",
+      "learned_policy": true,
+      "steps": 600,
+      "frames": 601,
+      "first_success_step": null,
+      "ever_success": false,
+      "final_success": false,
+      "final_geometric_check": {
+        "success": false,
+        "garment_type": "top-long-sleeve",
+        "thresholds": [
+          9.0,
+          9.9,
+          8.55,
+          13.05,
+          15.3
+        ],
+        "details": {
+          "condition_1": {
+            "description": "dist(p[0], p[4]) = 2.18 <= 9.0",
+            "value": 2.175126815148716,
+            "threshold": 9.0,
+            "passed": true
+          },
+          "condition_2": {
+            "description": "dist(p[2], p[3]) = 27.62 <= 9.9",
+            "value": 27.61651436493586,
+            "threshold": 9.9,
+            "passed": false
+          },
+          "condition_3": {
+            "description": "dist(p[1], p[5]) = 4.99 <= 8.55",
+            "value": 4.9943867612941935,
+            "threshold": 8.55,
+            "passed": true
+          },
+          "condition_4": {
+            "description": "dist(p[0], p[1]) = 18.32 >= 13.05",
+            "value": 18.323179955633982,
+            "threshold": 13.05,
+            "passed": true
+          },
+          "condition_5": {
+            "description": "dist(p[4], p[5]) = 19.82 >= 15.3",
+            "value": 19.82484056877261,
+            "threshold": 15.3,
+            "passed": true
+          }
+        }
+      },
+      "original_checker_parity": true,
+      "initialization_fingerprint": "c9e267ef82a866da7f5a07b9feb68b39842c85f91117ae1aa21d7fa8ef104030",
+      "physics_dt_seconds": 0.011111111111111112,
+      "action_rate_hz": 90.0,
+      "inference_ms": {
+        "mean": 5.3449575214957195,
+        "p50": 3.8013714365661144,
+        "p95": 4.380648373626172,
+        "chunk_calls_mean": 149.79097611891726
+      },
+      "action_min": [
+        -0.3176659643650055,
+        -1.7221405506134033,
+        -1.6511776447296143,
+        0.5954799652099609,
+        -0.8898490071296692,
+        -0.18693159520626068,
+        -0.9864885807037354,
+        -1.73997163772583,
+        -1.2456042766571045,
+        0.7066314816474915,
+        0.20527219772338867,
+        -0.1790839433670044
+      ],
+      "action_max": [
+        0.9877897500991821,
+        1.3098413944244385,
+        1.6102571487426758,
+        1.6793768405914307,
+        -0.29061055183410645,
+        0.5468473434448242,
+        0.19951730966567993,
+        0.8518592715263367,
+        1.5749433040618896,
+        1.6745033264160156,
+        0.6618353724479675,
+        0.6928401589393616
+      ],
+      "elapsed_seconds": 270.45636439323425,
+      "path": "cases/top_long_unseen_1-s104",
+      "attempts_retained": 1
     },
     {
+      "status": "complete",
       "case": {
         "id": "top_long_unseen_1-s105",
         "garment": "Top_Long_Unseen_1",
         "seed": 105,
         "group": "unseen"
       },
-      "status": "pending"
+      "checkpoint_revision": "6ee6f94974b20ffb785b063706d3a7b4af156041",
+      "mode": "closed-loop-learned-policy",
+      "learned_policy": true,
+      "steps": 347,
+      "frames": 348,
+      "first_success_step": 297,
+      "ever_success": true,
+      "final_success": true,
+      "final_geometric_check": {
+        "success": true,
+        "garment_type": "top-long-sleeve",
+        "thresholds": [
+          9.0,
+          9.9,
+          8.55,
+          13.05,
+          15.3
+        ],
+        "details": {
+          "condition_1": {
+            "description": "dist(p[0], p[4]) = 7.61 <= 9.0",
+            "value": 7.607379776471958,
+            "threshold": 9.0,
+            "passed": true
+          },
+          "condition_2": {
+            "description": "dist(p[2], p[3]) = 3.22 <= 9.9",
+            "value": 3.2168659791683223,
+            "threshold": 9.9,
+            "passed": true
+          },
+          "condition_3": {
+            "description": "dist(p[1], p[5]) = 7.37 <= 8.55",
+            "value": 7.37214142008513,
+            "threshold": 8.55,
+            "passed": true
+          },
+          "condition_4": {
+            "description": "dist(p[0], p[1]) = 18.09 >= 13.05",
+            "value": 18.0932127338292,
+            "threshold": 13.05,
+            "passed": true
+          },
+          "condition_5": {
+            "description": "dist(p[4], p[5]) = 21.58 >= 15.3",
+            "value": 21.577478641687506,
+            "threshold": 15.3,
+            "passed": true
+          }
+        }
+      },
+      "original_checker_parity": true,
+      "initialization_fingerprint": "b68537fbfd172cfc9fdd38cdc24a4da66e368fa554bdaf31debface31aecc28a",
+      "physics_dt_seconds": 0.011111111111111112,
+      "action_rate_hz": 90.0,
+      "inference_ms": {
+        "mean": 5.391902416429191,
+        "p50": 3.38136893697083,
+        "p95": 3.8664808264002195,
+        "chunk_calls_mean": 171.90183483762667
+      },
+      "action_min": [
+        -0.46910741925239563,
+        -1.7334668636322021,
+        -1.633941888809204,
+        0.5696065425872803,
+        -1.006577968597412,
+        -0.21038982272148132,
+        -1.177287220954895,
+        -1.7516233921051025,
+        -1.3999879360198975,
+        0.7490805387496948,
+        0.19076967239379883,
+        -0.1987520456314087
+      ],
+      "action_max": [
+        1.014623999595642,
+        1.2906010150909424,
+        1.601675271987915,
+        1.7071199417114258,
+        -0.21338044106960297,
+        0.5685932636260986,
+        0.18511167168617249,
+        0.9843643307685852,
+        1.5885264873504639,
+        1.7092742919921875,
+        0.6570963263511658,
+        0.6898940205574036
+      ],
+      "elapsed_seconds": 178.49101376533508,
+      "path": "cases/top_long_unseen_1-s105",
+      "attempts_retained": 1
     }
   ],
   "protocol": {
@@ -1719,7 +2179,7 @@
     "selection": "all frozen cases; no success filtering"
   },
   "all_cases_included": true,
-  "all_cases_executed": false,
+  "all_cases_executed": true,
   "score_denominator": "completed_cases_only_until_all_twenty_finish",
-  "snapshot_utc": "2026-10-19T08:24:06.686058+00:00"
+  "snapshot_utc": "2026-10-19T08:43:21.735201+00:00"
 }
