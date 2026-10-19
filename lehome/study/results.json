@@ -335,13 +335,13 @@
       }
     },
     "source_commit": "ac703750a47c930ce87169132850d4c93deced03",
-    "completed_replays": 56,
+    "completed_replays": 57,
     "expected_replays": 250,
     "active_condition": null,
     "snapshot_utc": "2026-10-19T18:27:45.102796+00:00",
     "paused_by_user": true,
     "reason": "User requested settings review before starting training",
-    "collection_count_snapshot_utc": "2026-10-19T21:27:56.803933+00:00"
+    "collection_count_snapshot_utc": "2026-10-19T21:32:05.960360+00:00"
   },
   "architecture_review": {
     "schema": 1,
@@ -849,7 +849,7 @@
     "offline_matches_checkpoint_receipt": true,
     "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b"
   },
-  "snapshot_utc": "2026-10-19T21:27:56.803933+00:00",
+  "snapshot_utc": "2026-10-19T21:32:05.960360+00:00",
   "capacity": {
     "total_instantiated": 74929807,
     "track_encoder": 3293952,
@@ -3605,7 +3605,7 @@
       "fingerprint": "c0bd927fd9cfaebac8f535c350b0c842e3b55352f54eaeb2c94527605de1c4dd"
     },
     "lease": {
-      "snapshot_utc": "2026-10-19T21:27:52.256572+00:00",
+      "snapshot_utc": "2026-10-19T21:31:53.947290+00:00",
       "hard_deadline_utc": "2026-10-19T22:56:28Z",
       "cleanup_target_utc": "2026-10-19T22:53:28+00:00",
       "jobs": [
@@ -3629,7 +3629,7 @@
           "submitted_utc": "2026-10-19T20:02:53.090377+00:00",
           "deadline_utc": "2026-10-19T22:56:28Z",
           "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f",
-          "status": "Running"
+          "status": "Succeeded"
         },
         {
           "job_id": "job-wbux06gind9v",
@@ -3651,7 +3651,7 @@
           "submitted_utc": "2026-10-19T20:02:58.844978+00:00",
           "deadline_utc": "2026-10-19T22:56:28Z",
           "code_commit": "2df3b6333b726b5fce419b34e4651a252146331f",
-          "status": "Running"
+          "status": "Succeeded"
         },
         {
           "job_id": "job-zuucjxptib25",
@@ -3670,9 +3670,21 @@
           "deadline_utc": "2026-10-19T22:56:28Z",
           "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
           "status": "Running"
+        },
+        {
+          "job_id": "job-8o8d6xr0ukwn",
+          "name": "ei-liupeiqi-wam-training-actpilot-eval-s1000-1n8g-b20z-20261019-213014",
+          "seed": 1000,
+          "gpus": 8,
+          "phase": "native_and_sensitivity",
+          "queue": "aihcq-91xvvs6bot18",
+          "submitted_utc": "2026-10-19T21:30:16.452514+00:00",
+          "deadline_utc": "2026-10-19T22:56:28Z",
+          "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
+          "status": "Running"
         }
       ],
-      "active_owned_jobs": 4
+      "active_owned_jobs": 3
     },
     "jobs": [
       {
@@ -3729,6 +3741,28 @@
         "phase": "residual_iteration",
         "queue": "aihcq-91xvvs6bot18",
         "submitted_utc": "2026-10-19T21:26:09.766518+00:00",
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f"
+      },
+      {
+        "job_id": "job-8o8d6xr0ukwn",
+        "name": "ei-liupeiqi-wam-training-actpilot-eval-s1000-1n8g-b20z-20261019-213014",
+        "seed": 1000,
+        "gpus": 8,
+        "phase": "native_and_sensitivity",
+        "queue": "aihcq-91xvvs6bot18",
+        "submitted_utc": "2026-10-19T21:30:16.452514+00:00",
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f"
+      },
+      {
+        "job_id": "job-28u26yp6gjp5",
+        "name": "ei-liupeiqi-wam-training-actpilot-eval-s1001-1n8g-b20z-20261019-213156",
+        "seed": 1001,
+        "gpus": 8,
+        "phase": "native_and_sensitivity",
+        "queue": "aihcq-91xvvs6bot18",
+        "submitted_utc": "2026-10-19T21:31:59.118537+00:00",
         "deadline_utc": "2026-10-19T22:56:28Z",
         "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f"
       }
@@ -3842,12 +3876,12 @@
         }
       },
       "seed-1001": {
-        "status": "running",
+        "status": "complete",
         "seed": 1001,
         "deadline_utc": "2026-10-19T22:56:28Z",
         "job_name": "ei-liupeiqi-wam-training-actpilot-s1001-1n8g-b20z-20261019-200250",
         "formal_training": false,
-        "snapshot_utc": "2026-10-19T21:27:46.516832+00:00",
+        "snapshot_utc": "2026-10-19T21:31:16.579722+00:00",
         "devices": [
           {
             "index": 0,
@@ -3942,7 +3976,7 @@
           "rgb_history": 0,
           "geometry": 0,
           "tracks": 0,
-          "tracks_completion": null,
+          "tracks_completion": 0,
           "completion_gain100_w01": 0,
           "completion_gain100_w1": 0,
           "completion_gain100_w10": 0
@@ -3954,114 +3988,7 @@
         "deadline_utc": "2026-10-19T22:56:28Z",
         "job_name": "ei-liupeiqi-wam-training-actpilot-s1002-1n8g-b20z-20261019-200253",
         "formal_training": false,
-        "snapshot_utc": "2026-10-19T21:27:46.689582+00:00",
-        "devices": [
-          {
-            "index": 0,
-            "name": "NVIDIA B20Z",
-            "capability": [
-              10,
-              0
-            ],
-            "memory_bytes": 191503007744
-          },
-          {
-            "index": 1,
-            "name": "NVIDIA B20Z",
-            "capability": [
-              10,
-              0
-            ],
-            "memory_bytes": 191503007744
-          },
-          {
-            "index": 2,
-            "name": "NVIDIA B20Z",
-            "capability": [
-              10,
-              0
-            ],
-            "memory_bytes": 191503007744
-          },
-          {
-            "index": 3,
-            "name": "NVIDIA B20Z",
-            "capability": [
-              10,
-              0
-            ],
-            "memory_bytes": 191503007744
-          },
-          {
-            "index": 4,
-            "name": "NVIDIA B20Z",
-            "capability": [
-              10,
-              0
-            ],
-            "memory_bytes": 191503007744
-          },
-          {
-            "index": 5,
-            "name": "NVIDIA B20Z",
-            "capability": [
-              10,
-              0
-            ],
-            "memory_bytes": 191503007744
-          },
-          {
-            "index": 6,
-            "name": "NVIDIA B20Z",
-            "capability": [
-              10,
-              0
-            ],
-            "memory_bytes": 191503007744
-          },
-          {
-            "index": 7,
-            "name": "NVIDIA B20Z",
-            "capability": [
-              10,
-              0
-            ],
-            "memory_bytes": 191503007744
-          }
-        ],
-        "torch": "2.7.0+cu128",
-        "cuda": "12.8",
-        "stage": "training",
-        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
-        "preflight": "passed",
-        "conditions": [
-          "act",
-          "rgb_history",
-          "geometry",
-          "tracks",
-          "tracks_completion",
-          "completion_gain100_w01",
-          "completion_gain100_w1",
-          "completion_gain100_w10"
-        ],
-        "exit_codes": {
-          "act": 0,
-          "rgb_history": 0,
-          "geometry": 0,
-          "tracks": 0,
-          "tracks_completion": 0,
-          "completion_gain100_w01": null,
-          "completion_gain100_w1": 0,
-          "completion_gain100_w10": null
-        }
-      },
-      "seed-1003": {
-        "status": "running",
-        "seed": 1003,
-        "deadline_utc": "2026-10-19T22:56:28Z",
-        "job_name": "ei-liupeiqi-wam-training-actpilot-s1003-1n8g-b20z-20261019-200255",
-        "formal_training": false,
-        "snapshot_utc": "2026-10-19T21:27:46.679320+00:00",
+        "snapshot_utc": "2026-10-19T21:32:01.777576+00:00",
         "devices": [
           {
             "index": 0,
@@ -4158,8 +4085,115 @@
           "tracks": 0,
           "tracks_completion": 0,
           "completion_gain100_w01": 0,
-          "completion_gain100_w1": null,
+          "completion_gain100_w1": 0,
           "completion_gain100_w10": null
+        }
+      },
+      "seed-1003": {
+        "status": "complete",
+        "seed": 1003,
+        "deadline_utc": "2026-10-19T22:56:28Z",
+        "job_name": "ei-liupeiqi-wam-training-actpilot-s1003-1n8g-b20z-20261019-200255",
+        "formal_training": false,
+        "snapshot_utc": "2026-10-19T21:30:01.728745+00:00",
+        "devices": [
+          {
+            "index": 0,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 1,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 2,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 3,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 4,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 5,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 6,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          },
+          {
+            "index": 7,
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "memory_bytes": 191503007744
+          }
+        ],
+        "torch": "2.7.0+cu128",
+        "cuda": "12.8",
+        "stage": "training",
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "preflight": "passed",
+        "conditions": [
+          "act",
+          "rgb_history",
+          "geometry",
+          "tracks",
+          "tracks_completion",
+          "completion_gain100_w01",
+          "completion_gain100_w1",
+          "completion_gain100_w10"
+        ],
+        "exit_codes": {
+          "act": 0,
+          "rgb_history": 0,
+          "geometry": 0,
+          "tracks": 0,
+          "tracks_completion": 0,
+          "completion_gain100_w01": 0,
+          "completion_gain100_w1": 0,
+          "completion_gain100_w10": 0
         }
       }
     },
@@ -4305,7 +4339,36 @@
             "windows": 427,
             "prior_action_L1": 0.3566262112805203,
             "action_MAE_radians": 0.1540251711596895,
-            "aggregation": "valid_element_weighted"
+            "aggregation": "valid_element_weighted",
+            "raw_action_chunk_MSE": 0.06393128506742396,
+            "raw_action_chunk_RMSE": 0.2528463665300017,
+            "raw_action_chunk_MAE": 0.15402517068496893,
+            "raw_action_chunk_MSE_per_joint": [
+              0.022394385855788013,
+              0.10279352109784749,
+              0.16490219148475627,
+              0.021194175130370363,
+              0.020299879795836532,
+              0.02542702482956834,
+              0.05750860260768818,
+              0.12030719158544845,
+              0.17079457664224584,
+              0.019593373763012022,
+              0.005228808488859617,
+              0.03673168952766696
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.060915518158048625,
+              "10": 0.04212106918275033,
+              "100": 0.06393128506742396
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
           },
           {
             "step": 1750,
@@ -4319,7 +4382,148 @@
             "windows": 427,
             "prior_action_L1": 0.35713305890311065,
             "action_MAE_radians": 0.15452978460679018,
-            "aggregation": "valid_element_weighted"
+            "aggregation": "valid_element_weighted",
+            "raw_action_chunk_MSE": 0.0630594081745338,
+            "raw_action_chunk_RMSE": 0.2511163239905638,
+            "raw_action_chunk_MAE": 0.1545297848700971,
+            "raw_action_chunk_MSE_per_joint": [
+              0.021777700825649327,
+              0.10183818466609477,
+              0.17120043659471468,
+              0.02058003482377321,
+              0.022523711804163602,
+              0.025409420537864436,
+              0.05984787172920724,
+              0.11201430450900998,
+              0.1613204758623294,
+              0.018902217285594203,
+              0.004967736244653,
+              0.036330803211351806
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.042964216851248474,
+              "10": 0.036718561999085006,
+              "100": 0.0630594081745338
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          }
+        ],
+        "raw_action_receipts": [
+          {
+            "status": "complete",
+            "training_seed": 1000,
+            "condition": "act",
+            "optimizer_step": 1500,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "0b066b723faa2a8f0eeffccaef5c55c18ec4beb69b310ef33a2472317ae07f0a",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.3566262112805203,
+              "action_MAE_radians": 0.1540251711596895,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.06393128506742396,
+              "raw_action_chunk_RMSE": 0.2528463665300017,
+              "raw_action_chunk_MAE": 0.15402517068496893,
+              "raw_action_chunk_MSE_per_joint": [
+                0.022394385855788013,
+                0.10279352109784749,
+                0.16490219148475627,
+                0.021194175130370363,
+                0.020299879795836532,
+                0.02542702482956834,
+                0.05750860260768818,
+                0.12030719158544845,
+                0.17079457664224584,
+                0.019593373763012022,
+                0.005228808488859617,
+                0.03673168952766696
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.060915518158048625,
+                "10": 0.04212106918275033,
+                "100": 0.06393128506742396
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.3566262112805203,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "9ffc3de1ec51b1f7af132e7edb8a03f4dee2de069624388e6084c391e5d33430",
+            "example_file": "step-1500-actual-action-example.npz",
+            "example_sha256": "8de6f98cced8233594136999d8218721f1acd5486c6356448d222f83ec257d5c",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.05362737051444428,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T21:26:44.463983+00:00",
+            "example_download": "raw-action-examples/act-b20z-validation-01/act/step-1500-actual-action-example.npz"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1000,
+            "condition": "act",
+            "optimizer_step": 2000,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "baf7dcf8d586a2796db5a02425ca1d7d3203bf68531b0a60b4b97dab89153e54",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.35713305890311065,
+              "action_MAE_radians": 0.15452978460679018,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.0630594081745338,
+              "raw_action_chunk_RMSE": 0.2511163239905638,
+              "raw_action_chunk_MAE": 0.1545297848700971,
+              "raw_action_chunk_MSE_per_joint": [
+                0.021777700825649327,
+                0.10183818466609477,
+                0.17120043659471468,
+                0.02058003482377321,
+                0.022523711804163602,
+                0.025409420537864436,
+                0.05984787172920724,
+                0.11201430450900998,
+                0.1613204758623294,
+                0.018902217285594203,
+                0.004967736244653,
+                0.036330803211351806
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.042964216851248474,
+                "10": 0.036718561999085006,
+                "100": 0.0630594081745338
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.35713305890311065,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "9ffc3de1ec51b1f7af132e7edb8a03f4dee2de069624388e6084c391e5d33430",
+            "example_file": "step-2000-actual-action-example.npz",
+            "example_sha256": "d0d31b5484ad8ad9e1cf141074e140e48607cfdb413e7522733907b806e054d6",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.03790556478168712,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T21:26:52.912822+00:00",
+            "example_download": "raw-action-examples/act-b20z-validation-01/act/step-2000-actual-action-example.npz"
           }
         ],
         "curve": [
@@ -5428,6 +5632,7 @@
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -6618,6 +6823,7 @@
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -7808,6 +8014,7 @@
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -8944,6 +9151,7 @@
             "aggregation": "valid_element_weighted"
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -9996,6 +10204,7 @@
             "aggregation": "valid_element_weighted"
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -11048,6 +11257,7 @@
             "aggregation": "valid_element_weighted"
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -12154,6 +12364,7 @@
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -13273,7 +13484,36 @@
             "windows": 427,
             "prior_action_L1": 0.36993752325193363,
             "action_MAE_radians": 0.15976465598856318,
-            "aggregation": "valid_element_weighted"
+            "aggregation": "valid_element_weighted",
+            "raw_action_chunk_MSE": 0.0675346165483877,
+            "raw_action_chunk_RMSE": 0.2598742321746958,
+            "raw_action_chunk_MAE": 0.159764655824258,
+            "raw_action_chunk_MSE_per_joint": [
+              0.02528326990120339,
+              0.10093297808694293,
+              0.1754758322972248,
+              0.0213029258435747,
+              0.02562102597361222,
+              0.028062403808090337,
+              0.05754391703028541,
+              0.12848219571774253,
+              0.1860968698970536,
+              0.01900104068203843,
+              0.005593769106630643,
+              0.03701917023625324
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.05165934980149452,
+              "10": 0.04113721534736182,
+              "100": 0.0675346165483877
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
           },
           {
             "step": 1750,
@@ -13287,7 +13527,146 @@
             "windows": 427,
             "prior_action_L1": 0.3626143559254701,
             "action_MAE_radians": 0.1569492117102878,
-            "aggregation": "valid_element_weighted"
+            "aggregation": "valid_element_weighted",
+            "raw_action_chunk_MSE": 0.0673166575195788,
+            "raw_action_chunk_RMSE": 0.259454538444751,
+            "raw_action_chunk_MAE": 0.15694921158676567,
+            "raw_action_chunk_MSE_per_joint": [
+              0.02448299371960481,
+              0.09958612478180745,
+              0.17185907302305492,
+              0.020697990035642988,
+              0.023799366753741277,
+              0.030927234354828245,
+              0.06006745238714549,
+              0.13455920784506678,
+              0.18147400721718523,
+              0.01755713875067573,
+              0.005493176753485168,
+              0.0372961246127076
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.03613535104331696,
+              "10": 0.034808473153161414,
+              "100": 0.0673166575195788
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          }
+        ],
+        "raw_action_receipts": [
+          {
+            "status": "complete",
+            "training_seed": 1001,
+            "condition": "act",
+            "optimizer_step": 1500,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "bb5072cdcaee18071b4faa2b101c3cd6a4ac2ddcd1f8a08c0b9420b616f1c86b",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.36993752325193363,
+              "action_MAE_radians": 0.15976465598856318,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.0675346165483877,
+              "raw_action_chunk_RMSE": 0.2598742321746958,
+              "raw_action_chunk_MAE": 0.159764655824258,
+              "raw_action_chunk_MSE_per_joint": [
+                0.02528326990120339,
+                0.10093297808694293,
+                0.1754758322972248,
+                0.0213029258435747,
+                0.02562102597361222,
+                0.028062403808090337,
+                0.05754391703028541,
+                0.12848219571774253,
+                0.1860968698970536,
+                0.01900104068203843,
+                0.005593769106630643,
+                0.03701917023625324
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.05165934980149452,
+                "10": 0.04113721534736182,
+                "100": 0.0675346165483877
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.36993752325193363,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "9ffc3de1ec51b1f7af132e7edb8a03f4dee2de069624388e6084c391e5d33430",
+            "example_file": "step-1500-actual-action-example.npz",
+            "example_sha256": "ecdfd5cda0b4e364aa81f309b54c7734c559e5fa2e399598ec1afbad854ddb0f",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.06404742729703791,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T21:27:08.157801+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1001,
+            "condition": "act",
+            "optimizer_step": 2000,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "f486d1cceadb0c00e31c224f7ed69c5c9627fab0c94bfcd21d0661bb29aa064a",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.3626143559254701,
+              "action_MAE_radians": 0.1569492117102878,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.0673166575195788,
+              "raw_action_chunk_RMSE": 0.259454538444751,
+              "raw_action_chunk_MAE": 0.15694921158676567,
+              "raw_action_chunk_MSE_per_joint": [
+                0.02448299371960481,
+                0.09958612478180745,
+                0.17185907302305492,
+                0.020697990035642988,
+                0.023799366753741277,
+                0.030927234354828245,
+                0.06006745238714549,
+                0.13455920784506678,
+                0.18147400721718523,
+                0.01755713875067573,
+                0.005493176753485168,
+                0.0372961246127076
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.03613535104331696,
+                "10": 0.034808473153161414,
+                "100": 0.0673166575195788
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.3626143559254701,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "9ffc3de1ec51b1f7af132e7edb8a03f4dee2de069624388e6084c391e5d33430",
+            "example_file": "step-2000-actual-action-example.npz",
+            "example_sha256": "c7f3b0d8de5c71b710353d414b26408e689e011f0ac88cbc2031e14fad02ea19",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.06286132208327444,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T21:27:15.987166+00:00"
           }
         ],
         "curve": [
@@ -14396,6 +14775,7 @@
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -15586,6 +15966,7 @@
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -16776,6 +17157,7 @@
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -17912,6 +18294,7 @@
             "aggregation": "valid_element_weighted"
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -18964,6 +19347,7 @@
             "aggregation": "valid_element_weighted"
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -20016,6 +20400,7 @@
             "aggregation": "valid_element_weighted"
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -20923,7 +21308,7 @@
             "cuda": "12.8"
           },
           "auxiliary_initial_std": 0.0001,
-          "status": "running",
+          "status": "complete",
           "mode": "tracks_completion",
           "recipe": {
             "config": {
@@ -20982,18 +21367,18 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 1900,
-          "elapsed_seconds": 4407.984346231911,
+          "completed_optimizer_steps": 2000,
+          "elapsed_seconds": 4616.828870423138,
           "latest_validation": {
-            "step": 1750,
+            "step": 2000,
             "windows": 427,
-            "prior_action_L1": 0.37830065792823797,
-            "action_MAE_radians": 0.16731752800672475,
+            "prior_action_L1": 0.36703354959895956,
+            "action_MAE_radians": 0.15793654282539163,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 13.758993265160088,
+            "completion_EPE_mm": 13.363429363109644,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 38.00366489306464,
+            "moving_EPE_mm": 37.00985453629017,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
@@ -21010,14 +21395,18 @@
           }
         },
         "latest": {
-          "step": 1921,
-          "loss": 0.7880817651748657,
-          "action_loss": 0.18926978658419102,
-          "kl_loss": 0.059328190982341766,
-          "auxiliary_loss": 0.0553006600093795,
-          "gradient_norm": 33.919559478759766,
-          "update_seconds": 2.042591877281666,
-          "elapsed_seconds": 4452.081514327787,
+          "step": 2000,
+          "loss": 0.6766188442707062,
+          "action_loss": 0.2023210676270537,
+          "kl_loss": 0.04686960391700268,
+          "auxiliary_loss": 0.056017507711658254,
+          "observation_action_grad_norm": 2.6992265951040495,
+          "observation_aux_grad_norm": 0.0017349297044544367,
+          "weighted_aux_grad_ratio": 6.427506707296498e-05,
+          "action_aux_gradient_cosine": -0.020869690986332404,
+          "gradient_norm": 29.816606521606445,
+          "update_seconds": 2.0363588398322463,
+          "elapsed_seconds": 4616.828870423138,
           "peak_reserved_bytes": 6922698752
         },
         "validation": [
@@ -21104,8 +21493,21 @@
             "completion_static_gate_pass": true,
             "moving_EPE_mm": 38.00366489306464,
             "moving_static_EPE_mm": 46.05298086273921
+          },
+          {
+            "step": 2000,
+            "windows": 427,
+            "prior_action_L1": 0.36703354959895956,
+            "action_MAE_radians": 0.15793654282539163,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 13.363429363109644,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 37.00985453629017,
+            "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -22033,6 +22435,54 @@
             "update_seconds": 2.0644853790290654,
             "elapsed_seconds": 4407.984346231911,
             "peak_reserved_bytes": 6922698752
+          },
+          {
+            "step": 1925,
+            "loss": 0.7616918794810772,
+            "action_loss": 0.2335889940150082,
+            "kl_loss": 0.052331333979964256,
+            "auxiliary_loss": 0.047895443789457204,
+            "gradient_norm": 33.113365173339844,
+            "update_seconds": 2.148723519872874,
+            "elapsed_seconds": 4460.541852692142,
+            "peak_reserved_bytes": 6922698752
+          },
+          {
+            "step": 1950,
+            "loss": 0.7601401098072529,
+            "action_loss": 0.19967257091775537,
+            "kl_loss": 0.05549548380076885,
+            "auxiliary_loss": 0.055126959798144526,
+            "gradient_norm": 32.30801010131836,
+            "update_seconds": 1.9923147354274988,
+            "elapsed_seconds": 4512.7975244810805,
+            "peak_reserved_bytes": 6922698752
+          },
+          {
+            "step": 1975,
+            "loss": 0.7265807744115591,
+            "action_loss": 0.18652285222196952,
+            "kl_loss": 0.053594525903463364,
+            "auxiliary_loss": 0.04112667586741736,
+            "gradient_norm": 35.58595275878906,
+            "update_seconds": 2.059513833373785,
+            "elapsed_seconds": 4564.9332195790485,
+            "peak_reserved_bytes": 6922698752
+          },
+          {
+            "step": 2000,
+            "loss": 0.6766188442707062,
+            "action_loss": 0.2023210676270537,
+            "kl_loss": 0.04686960391700268,
+            "auxiliary_loss": 0.056017507711658254,
+            "observation_action_grad_norm": 2.6992265951040495,
+            "observation_aux_grad_norm": 0.0017349297044544367,
+            "weighted_aux_grad_ratio": 6.427506707296498e-05,
+            "action_aux_gradient_cosine": -0.020869690986332404,
+            "gradient_norm": 29.816606521606445,
+            "update_seconds": 2.0363588398322463,
+            "elapsed_seconds": 4616.828870423138,
+            "peak_reserved_bytes": 6922698752
           }
         ]
       },
@@ -22177,7 +22627,36 @@
             "windows": 427,
             "prior_action_L1": 0.37055380904437757,
             "action_MAE_radians": 0.15797887249635556,
-            "aggregation": "valid_element_weighted"
+            "aggregation": "valid_element_weighted",
+            "raw_action_chunk_MSE": 0.06558863324309504,
+            "raw_action_chunk_RMSE": 0.2561027786711715,
+            "raw_action_chunk_MAE": 0.15797887227751684,
+            "raw_action_chunk_MSE_per_joint": [
+              0.025309402089752395,
+              0.10652134515040036,
+              0.16243576512509578,
+              0.0210622835290937,
+              0.028554386311018042,
+              0.026779700688773108,
+              0.05342215304628118,
+              0.12446116286295464,
+              0.17392285154310666,
+              0.018708350451226267,
+              0.006533308755673703,
+              0.03935288936376505
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.04626124778392944,
+              "10": 0.038472827567528955,
+              "100": 0.06558863324309504
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
           },
           {
             "step": 1750,
@@ -22191,7 +22670,146 @@
             "windows": 427,
             "prior_action_L1": 0.36681977216583267,
             "action_MAE_radians": 0.15586867284972292,
-            "aggregation": "valid_element_weighted"
+            "aggregation": "valid_element_weighted",
+            "raw_action_chunk_MSE": 0.0662745784188583,
+            "raw_action_chunk_RMSE": 0.2574384944386878,
+            "raw_action_chunk_MAE": 0.15586867258201936,
+            "raw_action_chunk_MSE_per_joint": [
+              0.025564800367180698,
+              0.10336820870073968,
+              0.17704983962253795,
+              0.021488368344235082,
+              0.03168520160903703,
+              0.029759646433410405,
+              0.05060752791914569,
+              0.11684606413537735,
+              0.17784030319502414,
+              0.019193429916047347,
+              0.0056551394699981316,
+              0.036236411313565996
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.03112254648157438,
+              "10": 0.03221482262002233,
+              "100": 0.0662745784188583
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          }
+        ],
+        "raw_action_receipts": [
+          {
+            "status": "complete",
+            "training_seed": 1002,
+            "condition": "act",
+            "optimizer_step": 1500,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "fd6a29368d8428dba0c467f64d1dd4f91feaddfb87255a90a2d4eca0039b65bd",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.37055380904437757,
+              "action_MAE_radians": 0.15797887249635556,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.06558863324309504,
+              "raw_action_chunk_RMSE": 0.2561027786711715,
+              "raw_action_chunk_MAE": 0.15797887227751684,
+              "raw_action_chunk_MSE_per_joint": [
+                0.025309402089752395,
+                0.10652134515040036,
+                0.16243576512509578,
+                0.0210622835290937,
+                0.028554386311018042,
+                0.026779700688773108,
+                0.05342215304628118,
+                0.12446116286295464,
+                0.17392285154310666,
+                0.018708350451226267,
+                0.006533308755673703,
+                0.03935288936376505
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.04626124778392944,
+                "10": 0.038472827567528955,
+                "100": 0.06558863324309504
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.37055380904437757,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "9ffc3de1ec51b1f7af132e7edb8a03f4dee2de069624388e6084c391e5d33430",
+            "example_file": "step-1500-actual-action-example.npz",
+            "example_sha256": "3dff2792cb828d09a231ce321f28f9f9881f380a5709a285c5f7a3c42f65df9e",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.044588149775622886,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T21:27:31.273340+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1002,
+            "condition": "act",
+            "optimizer_step": 2000,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "c353e042b09aab2ef0f802cfdad0a26f29f810e4af9b3546f8386fc29af3ac4f",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.36681977216583267,
+              "action_MAE_radians": 0.15586867284972292,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.0662745784188583,
+              "raw_action_chunk_RMSE": 0.2574384944386878,
+              "raw_action_chunk_MAE": 0.15586867258201936,
+              "raw_action_chunk_MSE_per_joint": [
+                0.025564800367180698,
+                0.10336820870073968,
+                0.17704983962253795,
+                0.021488368344235082,
+                0.03168520160903703,
+                0.029759646433410405,
+                0.05060752791914569,
+                0.11684606413537735,
+                0.17784030319502414,
+                0.019193429916047347,
+                0.0056551394699981316,
+                0.036236411313565996
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.03112254648157438,
+                "10": 0.03221482262002233,
+                "100": 0.0662745784188583
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.36681977216583267,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "9ffc3de1ec51b1f7af132e7edb8a03f4dee2de069624388e6084c391e5d33430",
+            "example_file": "step-2000-actual-action-example.npz",
+            "example_sha256": "5cf556770b5430a0338594b285a4049d863e23de4e0540d780a987102a70c214",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.026823469155730622,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T21:27:39.618856+00:00"
           }
         ],
         "curve": [
@@ -23101,7 +23719,7 @@
             "cuda": "12.8"
           },
           "auxiliary_initial_std": 0.01,
-          "status": "running",
+          "status": "complete",
           "mode": "tracks_completion",
           "recipe": {
             "config": {
@@ -23160,42 +23778,46 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 1925,
-          "elapsed_seconds": 4429.166066310834,
+          "completed_optimizer_steps": 2000,
+          "elapsed_seconds": 4574.993024548981,
           "latest_validation": {
-            "step": 1750,
+            "step": 2000,
             "windows": 427,
-            "prior_action_L1": 0.3754804038401234,
-            "action_MAE_radians": 0.15888523954471048,
+            "prior_action_L1": 0.3744438015708288,
+            "action_MAE_radians": 0.1599524129565252,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 14.983338341405078,
+            "completion_EPE_mm": 14.401809498117569,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": false,
-            "moving_EPE_mm": 38.15921063310315,
+            "moving_EPE_mm": 36.8526589832062,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 1750,
+            "step": 2000,
             "windows": 427,
-            "prior_action_L1": 0.3754804038401234,
-            "action_MAE_radians": 0.15888523954471048,
+            "prior_action_L1": 0.3744438015708288,
+            "action_MAE_radians": 0.1599524129565252,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 14.983338341405078,
+            "completion_EPE_mm": 14.401809498117569,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": false,
-            "moving_EPE_mm": 38.15921063310315,
+            "moving_EPE_mm": 36.8526589832062,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
         "latest": {
-          "step": 1938,
-          "loss": 0.7968938909471035,
-          "action_loss": 0.20056836791627575,
-          "kl_loss": 0.05895969830453396,
-          "auxiliary_loss": 0.06728531701810425,
-          "gradient_norm": 34.314109802246094,
-          "update_seconds": 1.9591375030577183,
-          "elapsed_seconds": 4454.577468192205,
+          "step": 2000,
+          "loss": 0.6653213817626238,
+          "action_loss": 0.18852103466633707,
+          "kl_loss": 0.04713556915521622,
+          "auxiliary_loss": 0.05444656592590036,
+          "observation_action_grad_norm": 2.4859743010193918,
+          "observation_aux_grad_norm": 0.007662226233067816,
+          "weighted_aux_grad_ratio": 0.0003082182398235519,
+          "action_aux_gradient_cosine": 0.05913784066270801,
+          "gradient_norm": 38.323638916015625,
+          "update_seconds": 2.0080416589044034,
+          "elapsed_seconds": 4574.993024548981,
           "peak_reserved_bytes": 7008681984
         },
         "validation": [
@@ -23282,8 +23904,21 @@
             "completion_static_gate_pass": false,
             "moving_EPE_mm": 38.15921063310315,
             "moving_static_EPE_mm": 46.05298086273921
+          },
+          {
+            "step": 2000,
+            "windows": 427,
+            "prior_action_L1": 0.3744438015708288,
+            "action_MAE_radians": 0.1599524129565252,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 14.401809498117569,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": false,
+            "moving_EPE_mm": 36.8526589832062,
+            "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -24222,6 +24857,43 @@
             "update_seconds": 2.0370277506299317,
             "elapsed_seconds": 4429.166066310834,
             "peak_reserved_bytes": 7008681984
+          },
+          {
+            "step": 1950,
+            "loss": 0.7300810646265745,
+            "action_loss": 0.20313639577943832,
+            "kl_loss": 0.05226707272231579,
+            "auxiliary_loss": 0.04273936408571899,
+            "gradient_norm": 32.032474517822266,
+            "update_seconds": 1.8712545610032976,
+            "elapsed_seconds": 4478.07991717197,
+            "peak_reserved_bytes": 7008681984
+          },
+          {
+            "step": 1975,
+            "loss": 0.7396775428205729,
+            "action_loss": 0.20548379654064775,
+            "kl_loss": 0.05288277380168438,
+            "auxiliary_loss": 0.05366003591188928,
+            "gradient_norm": 33.13386154174805,
+            "update_seconds": 1.9004872972145677,
+            "elapsed_seconds": 4525.9596323519945,
+            "peak_reserved_bytes": 7008681984
+          },
+          {
+            "step": 2000,
+            "loss": 0.6653213817626238,
+            "action_loss": 0.18852103466633707,
+            "kl_loss": 0.04713556915521622,
+            "auxiliary_loss": 0.05444656592590036,
+            "observation_action_grad_norm": 2.4859743010193918,
+            "observation_aux_grad_norm": 0.007662226233067816,
+            "weighted_aux_grad_ratio": 0.0003082182398235519,
+            "action_aux_gradient_cosine": 0.05913784066270801,
+            "gradient_norm": 38.323638916015625,
+            "update_seconds": 2.0080416589044034,
+            "elapsed_seconds": 4574.993024548981,
+            "peak_reserved_bytes": 7008681984
           }
         ]
       },
@@ -24437,6 +25109,7 @@
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -25428,7 +26101,7 @@
             "cuda": "12.8"
           },
           "auxiliary_initial_std": 0.01,
-          "status": "running",
+          "status": "complete",
           "mode": "tracks_completion",
           "recipe": {
             "config": {
@@ -25487,18 +26160,18 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 1875,
-          "elapsed_seconds": 4405.76530949818,
+          "completed_optimizer_steps": 2000,
+          "elapsed_seconds": 4673.415923572145,
           "latest_validation": {
-            "step": 1750,
+            "step": 2000,
             "windows": 427,
-            "prior_action_L1": 0.378725224389633,
-            "action_MAE_radians": 0.1624929530024369,
+            "prior_action_L1": 0.37451358717160194,
+            "action_MAE_radians": 0.16031082192348517,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 11.055569066790506,
+            "completion_EPE_mm": 10.531808926963604,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 30.3842323815731,
+            "moving_EPE_mm": 28.483971630865916,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
@@ -25515,14 +26188,18 @@
           }
         },
         "latest": {
-          "step": 1897,
-          "loss": 1.2378894612193108,
-          "action_loss": 0.14610505499877036,
-          "kl_loss": 0.05803006701171398,
-          "auxiliary_loss": 0.051148375736374874,
-          "gradient_norm": 32.207603454589844,
-          "update_seconds": 2.2092613419517875,
-          "elapsed_seconds": 4453.483948779292,
+          "step": 2000,
+          "loss": 1.0510542839765549,
+          "action_loss": 0.18132648628670722,
+          "kl_loss": 0.04789783991873264,
+          "auxiliary_loss": 0.03907494013401447,
+          "observation_action_grad_norm": 1.671744070080395,
+          "observation_aux_grad_norm": 0.041931670973104525,
+          "weighted_aux_grad_ratio": 0.25082589927229715,
+          "action_aux_gradient_cosine": -0.006408046563228316,
+          "gradient_norm": 28.99906349182129,
+          "update_seconds": 2.2082930533215404,
+          "elapsed_seconds": 4673.415923572145,
           "peak_reserved_bytes": 7008681984
         },
         "validation": [
@@ -25609,8 +26286,21 @@
             "completion_static_gate_pass": true,
             "moving_EPE_mm": 30.3842323815731,
             "moving_static_EPE_mm": 46.05298086273921
+          },
+          {
+            "step": 2000,
+            "windows": 427,
+            "prior_action_L1": 0.37451358717160194,
+            "action_MAE_radians": 0.16031082192348517,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 10.531808926963604,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 28.483971630865916,
+            "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -26523,6 +27213,69 @@
             "update_seconds": 2.2014212356880307,
             "elapsed_seconds": 4405.76530949818,
             "peak_reserved_bytes": 7008681984
+          },
+          {
+            "step": 1900,
+            "loss": 1.178866546601057,
+            "action_loss": 0.1378445443988312,
+            "kl_loss": 0.058084916323423386,
+            "auxiliary_loss": 0.046017283504625084,
+            "observation_action_grad_norm": 1.2201118978528416,
+            "observation_aux_grad_norm": 1.6739498445817587,
+            "weighted_aux_grad_ratio": 13.71964200601259,
+            "action_aux_gradient_cosine": -0.03511895986175345,
+            "gradient_norm": 31.383071899414062,
+            "update_seconds": 2.1576489810831845,
+            "elapsed_seconds": 4459.880208561197,
+            "peak_reserved_bytes": 7008681984
+          },
+          {
+            "step": 1925,
+            "loss": 1.2322467267513275,
+            "action_loss": 0.15241548570338637,
+            "kl_loss": 0.056768860667943954,
+            "auxiliary_loss": 0.05121426549885655,
+            "gradient_norm": 33.00124740600586,
+            "update_seconds": 2.0333700589835644,
+            "elapsed_seconds": 4513.351949846372,
+            "peak_reserved_bytes": 7008681984
+          },
+          {
+            "step": 1950,
+            "loss": 1.0268843695521355,
+            "action_loss": 0.19299103174125776,
+            "kl_loss": 0.05217723548412323,
+            "auxiliary_loss": 0.031212098692776635,
+            "gradient_norm": 30.53400421142578,
+            "update_seconds": 2.0703822118230164,
+            "elapsed_seconds": 4567.225166965276,
+            "peak_reserved_bytes": 7008681984
+          },
+          {
+            "step": 1975,
+            "loss": 1.110374305397272,
+            "action_loss": 0.19661741494201124,
+            "kl_loss": 0.05230800807476044,
+            "auxiliary_loss": 0.039067681220330996,
+            "gradient_norm": 32.953487396240234,
+            "update_seconds": 2.089992250315845,
+            "elapsed_seconds": 4619.842454157304,
+            "peak_reserved_bytes": 7008681984
+          },
+          {
+            "step": 2000,
+            "loss": 1.0510542839765549,
+            "action_loss": 0.18132648628670722,
+            "kl_loss": 0.04789783991873264,
+            "auxiliary_loss": 0.03907494013401447,
+            "observation_action_grad_norm": 1.671744070080395,
+            "observation_aux_grad_norm": 0.041931670973104525,
+            "weighted_aux_grad_ratio": 0.25082589927229715,
+            "action_aux_gradient_cosine": -0.006408046563228316,
+            "gradient_norm": 28.99906349182129,
+            "update_seconds": 2.2082930533215404,
+            "elapsed_seconds": 4673.415923572145,
+            "peak_reserved_bytes": 7008681984
           }
         ]
       },
@@ -26684,6 +27437,7 @@
             "aggregation": "valid_element_weighted"
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -27736,6 +28490,7 @@
             "aggregation": "valid_element_weighted"
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -28788,6 +29543,7 @@
             "aggregation": "valid_element_weighted"
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -29894,6 +30650,7 @@
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -31013,7 +31770,36 @@
             "windows": 427,
             "prior_action_L1": 0.37140458145423483,
             "action_MAE_radians": 0.15892453739607443,
-            "aggregation": "valid_element_weighted"
+            "aggregation": "valid_element_weighted",
+            "raw_action_chunk_MSE": 0.06575177008467542,
+            "raw_action_chunk_RMSE": 0.2564210796418177,
+            "raw_action_chunk_MAE": 0.1589245375526308,
+            "raw_action_chunk_MSE_per_joint": [
+              0.028770454581179553,
+              0.09902317080126305,
+              0.17691150843434367,
+              0.024864315847798774,
+              0.023225315094367257,
+              0.026909826986666587,
+              0.050392659490203426,
+              0.114833442481453,
+              0.18136652827933306,
+              0.020454287912417914,
+              0.005876924236161247,
+              0.03639280687091738
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.05306316135460682,
+              "10": 0.04183090882716163,
+              "100": 0.06575177008467542
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
           },
           {
             "step": 1750,
@@ -31027,7 +31813,146 @@
             "windows": 427,
             "prior_action_L1": 0.3726869388201101,
             "action_MAE_radians": 0.1578653120595587,
-            "aggregation": "valid_element_weighted"
+            "aggregation": "valid_element_weighted",
+            "raw_action_chunk_MSE": 0.0642924531994129,
+            "raw_action_chunk_RMSE": 0.25355956538733243,
+            "raw_action_chunk_MAE": 0.15786531230049722,
+            "raw_action_chunk_MSE_per_joint": [
+              0.029703801059203196,
+              0.10187964966884669,
+              0.17443063949082274,
+              0.02312511305635078,
+              0.030921320227807247,
+              0.027915814062584494,
+              0.05580429413675679,
+              0.1100716030971546,
+              0.15654005783819114,
+              0.018458511077524727,
+              0.005527446745151056,
+              0.037131187932560844
+            ],
+            "raw_action_chunk_MSE_prefix": {
+              "1": 0.048869755860950694,
+              "10": 0.04073503790592545,
+              "100": 0.0642924531994129
+            },
+            "raw_action_valid_elements": 433596,
+            "raw_action_valid_timesteps": 36133,
+            "raw_action_windows": 427,
+            "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+            "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+            "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+            "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+          }
+        ],
+        "raw_action_receipts": [
+          {
+            "status": "complete",
+            "training_seed": 1003,
+            "condition": "act",
+            "optimizer_step": 1500,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "183781d59a10704fac1658db0c97d4d3ab97fffba8896b7340cb73ed56c80d2d",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.37140458145423483,
+              "action_MAE_radians": 0.15892453739607443,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.06575177008467542,
+              "raw_action_chunk_RMSE": 0.2564210796418177,
+              "raw_action_chunk_MAE": 0.1589245375526308,
+              "raw_action_chunk_MSE_per_joint": [
+                0.028770454581179553,
+                0.09902317080126305,
+                0.17691150843434367,
+                0.024864315847798774,
+                0.023225315094367257,
+                0.026909826986666587,
+                0.050392659490203426,
+                0.114833442481453,
+                0.18136652827933306,
+                0.020454287912417914,
+                0.005876924236161247,
+                0.03639280687091738
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.05306316135460682,
+                "10": 0.04183090882716163,
+                "100": 0.06575177008467542
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.37140458145423483,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "9ffc3de1ec51b1f7af132e7edb8a03f4dee2de069624388e6084c391e5d33430",
+            "example_file": "step-1500-actual-action-example.npz",
+            "example_sha256": "3364522942e738ba8c17a4abec7a65d6990a1ab0d99558250cd4a2345adb4c77",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.03198762893030087,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T21:27:54.662362+00:00"
+          },
+          {
+            "status": "complete",
+            "training_seed": 1003,
+            "condition": "act",
+            "optimizer_step": 2000,
+            "optimizer_updates_during_evaluation": 0,
+            "checkpoint_sha256": "f626c2c0f04af6b6b43922c533d6ae82bc217c6b20785222abfdae1ae1e25d11",
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "metrics": {
+              "windows": 427,
+              "prior_action_L1": 0.3726869388201101,
+              "action_MAE_radians": 0.1578653120595587,
+              "aggregation": "valid_element_weighted",
+              "raw_action_chunk_MSE": 0.0642924531994129,
+              "raw_action_chunk_RMSE": 0.25355956538733243,
+              "raw_action_chunk_MAE": 0.15786531230049722,
+              "raw_action_chunk_MSE_per_joint": [
+                0.029703801059203196,
+                0.10187964966884669,
+                0.17443063949082274,
+                0.02312511305635078,
+                0.030921320227807247,
+                0.027915814062584494,
+                0.05580429413675679,
+                0.1100716030971546,
+                0.15654005783819114,
+                0.018458511077524727,
+                0.005527446745151056,
+                0.037131187932560844
+              ],
+              "raw_action_chunk_MSE_prefix": {
+                "1": 0.048869755860950694,
+                "10": 0.04073503790592545,
+                "100": 0.0642924531994129
+              },
+              "raw_action_valid_elements": 433596,
+              "raw_action_valid_timesteps": 36133,
+              "raw_action_windows": 427,
+              "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+              "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+              "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+              "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+            },
+            "frozen_prior_action_L1": 0.3726869388201101,
+            "actor_receives_future_actions": false,
+            "metrics_source_sha256": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+            "worker_sha256": "9ffc3de1ec51b1f7af132e7edb8a03f4dee2de069624388e6084c391e5d33430",
+            "example_file": "step-2000-actual-action-example.npz",
+            "example_sha256": "52d379809a9ca27c4ec66f7add6a0d55e36841ab771b7666cf651ceadbf00ba3",
+            "example_scope": "First validation window only; main metric uses all427 windows",
+            "example_raw_action_chunk_MSE": 0.03819117075706062,
+            "evaluation_hardware": "NVIDIA B20Z",
+            "evaluated_utc": "2026-10-19T21:28:02.934529+00:00"
           }
         ],
         "curve": [
@@ -32136,6 +33061,7 @@
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -33127,7 +34053,7 @@
             "cuda": "12.8"
           },
           "auxiliary_initial_std": 0.01,
-          "status": "running",
+          "status": "complete",
           "mode": "tracks_completion",
           "recipe": {
             "config": {
@@ -33186,42 +34112,46 @@
           "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
           "test_used": false,
           "RGB_only_GT_reads": 0,
-          "completed_optimizer_steps": 1950,
-          "elapsed_seconds": 4430.6642946200445,
+          "completed_optimizer_steps": 2000,
+          "elapsed_seconds": 4533.498164003715,
           "latest_validation": {
-            "step": 1750,
+            "step": 2000,
             "windows": 427,
-            "prior_action_L1": 0.3744554686234443,
-            "action_MAE_radians": 0.15990645610024445,
+            "prior_action_L1": 0.35762271297071585,
+            "action_MAE_radians": 0.1530906988211453,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 12.853246088389898,
+            "completion_EPE_mm": 12.194102229039629,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 34.402451241007284,
+            "moving_EPE_mm": 33.16685165761265,
             "moving_static_EPE_mm": 46.05298086273921
           },
           "best_validation": {
-            "step": 1500,
+            "step": 2000,
             "windows": 427,
-            "prior_action_L1": 0.3720516727580339,
-            "action_MAE_radians": 0.16133180873041153,
+            "prior_action_L1": 0.35762271297071585,
+            "action_MAE_radians": 0.1530906988211453,
             "aggregation": "valid_element_weighted",
-            "completion_EPE_mm": 13.134119385583576,
+            "completion_EPE_mm": 12.194102229039629,
             "static_EPE_mm": 14.212699232212989,
             "completion_static_gate_pass": true,
-            "moving_EPE_mm": 35.86191166095118,
+            "moving_EPE_mm": 33.16685165761265,
             "moving_static_EPE_mm": 46.05298086273921
           }
         },
         "latest": {
-          "step": 1961,
-          "loss": 0.8382083065807819,
-          "action_loss": 0.22559227945748717,
-          "kl_loss": 0.05744494870305061,
-          "auxiliary_loss": 0.03816655754781095,
-          "gradient_norm": 35.98117446899414,
-          "update_seconds": 2.063909748569131,
-          "elapsed_seconds": 4453.432212754153,
+          "step": 2000,
+          "loss": 0.8700642734766006,
+          "action_loss": 0.1693255107747973,
+          "kl_loss": 0.06625528819859028,
+          "auxiliary_loss": 0.038185887609870406,
+          "observation_action_grad_norm": 1.3574731749057933,
+          "observation_aux_grad_norm": 0.017766747002047428,
+          "weighted_aux_grad_ratio": 0.01308810172494231,
+          "action_aux_gradient_cosine": 0.025663372789798942,
+          "gradient_norm": 39.70930862426758,
+          "update_seconds": 2.0225125616416335,
+          "elapsed_seconds": 4533.498164003715,
           "peak_reserved_bytes": 7008681984
         },
         "validation": [
@@ -33308,8 +34238,21 @@
             "completion_static_gate_pass": true,
             "moving_EPE_mm": 34.402451241007284,
             "moving_static_EPE_mm": 46.05298086273921
+          },
+          {
+            "step": 2000,
+            "windows": 427,
+            "prior_action_L1": 0.35762271297071585,
+            "action_MAE_radians": 0.1530906988211453,
+            "aggregation": "valid_element_weighted",
+            "completion_EPE_mm": 12.194102229039629,
+            "static_EPE_mm": 14.212699232212989,
+            "completion_static_gate_pass": true,
+            "moving_EPE_mm": 33.16685165761265,
+            "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -34259,6 +35202,32 @@
             "update_seconds": 2.12430137488991,
             "elapsed_seconds": 4430.6642946200445,
             "peak_reserved_bytes": 7008681984
+          },
+          {
+            "step": 1975,
+            "loss": 0.7612320110201836,
+            "action_loss": 0.16229986888356507,
+            "kl_loss": 0.052171412855386734,
+            "auxiliary_loss": 0.07721802521700738,
+            "gradient_norm": 40.27193069458008,
+            "update_seconds": 2.0858072796836495,
+            "elapsed_seconds": 4482.001324962825,
+            "peak_reserved_bytes": 7008681984
+          },
+          {
+            "step": 2000,
+            "loss": 0.8700642734766006,
+            "action_loss": 0.1693255107747973,
+            "kl_loss": 0.06625528819859028,
+            "auxiliary_loss": 0.038185887609870406,
+            "observation_action_grad_norm": 1.3574731749057933,
+            "observation_aux_grad_norm": 0.017766747002047428,
+            "weighted_aux_grad_ratio": 0.01308810172494231,
+            "action_aux_gradient_cosine": 0.025663372789798942,
+            "gradient_norm": 39.70930862426758,
+            "update_seconds": 2.0225125616416335,
+            "elapsed_seconds": 4533.498164003715,
+            "peak_reserved_bytes": 7008681984
           }
         ]
       },
@@ -34474,6 +35443,7 @@
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -35610,6 +36580,7 @@
             "aggregation": "valid_element_weighted"
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -36662,6 +37633,7 @@
             "aggregation": "valid_element_weighted"
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -37714,6 +38686,7 @@
             "aggregation": "valid_element_weighted"
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -38820,6 +39793,7 @@
             "moving_static_EPE_mm": 46.05298086273921
           }
         ],
+        "raw_action_receipts": [],
         "curve": [
           {
             "step": 1,
@@ -47923,6 +48897,155 @@
       },
       "elapsed_seconds": 423.7405617237091
     },
+    "raw_action_metric_training_smoke": {
+      "schema": "act-native-training-raw-action-metrics-1",
+      "hardware": {
+        "name": "NVIDIA B20Z",
+        "capability": [
+          10,
+          0
+        ],
+        "torch": "2.7.0+cu128",
+        "cuda": "12.8"
+      },
+      "auxiliary_initial_std": 0.0001,
+      "status": "complete",
+      "mode": "act",
+      "recipe": {
+        "config": {
+          "mode": "act",
+          "point_encoder": "mlp",
+          "history": 16,
+          "cameras": 3,
+          "input_points": 16,
+          "hidden_points": 48,
+          "action_dim": 12,
+          "chunk": 100,
+          "n_action_steps": 100,
+          "rgb_height": 480,
+          "rgb_width": 640,
+          "dropout": 0.1,
+          "backbone_batch": 6,
+          "spatial_scale_m": 0.5,
+          "motion_scale_m": 0.05,
+          "auxiliary_weight": 0.1,
+          "kl_weight": 10.0
+        },
+        "steps": 2,
+        "seed": 20261019,
+        "batch_size": 1,
+        "accumulate": 16,
+        "lr": 1e-05,
+        "weight_decay": 0.0001,
+        "clip": 10,
+        "schedule": "constant",
+        "precision": "bfloat16",
+        "validation_every": 1,
+        "validation_metrics": "prior_zero_actual_denormalized_action_chunk_MSE_v1",
+        "auxiliary_output_gain": 1.0,
+        "workers": 0,
+        "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+        "imagenet_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+      },
+      "code_hashes": {
+        "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+        "act_pilot_data.py": "2b867602c8df684ef38512d561903ac4821da15609989ffa3828b81bcc2b2161",
+        "act_train.py": "7c03c83f2a19c30f55adedcfcc393ae550b01904d30385a04613b77024ada05a",
+        "action_chunk_metrics.py": "2796aa644cf0320324a0abf7c1cd5ec8a68c3c91862302bc7f78163fcc2ff226",
+        "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
+        "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
+        "flow_training_state.py": "dcc394d2fab1e7ec582113f0d5ddee560c58335e1fb582fd9ffcdf4f7fa5c0d1",
+        "native_ACT": "69301fff11cbb8f4ba7bfe473a55ba488c3d2f89c25ecdfe512347a93b4ad04f"
+      },
+      "job_name": "ei-liupeiqi-wam-training-raw-action-metric-smoke",
+      "initial_model_sha256": "39ca6b04319a969390ffe885c9d9d21b76025cad94da1b30e26f54d9f081c3ca",
+      "initial_ACT_core_sha256": "33ebc948636b2b9a9f615088be88daa2831f2c96718a89ad566e767b148ae40f",
+      "source_commit": "87d5bfb8eefc05b2bbbc4a1eca1506fe0456f55f",
+      "parameters": 52056591,
+      "point_parameters": 99072,
+      "auxiliary_parameters": 348035,
+      "training_windows": 1688,
+      "validation_windows": 427,
+      "formal_training": false,
+      "CUDA_VISIBLE_DEVICES": "0",
+      "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
+      "test_used": false,
+      "RGB_only_GT_reads": 0,
+      "latest_validation": {
+        "step": 2,
+        "windows": 427,
+        "prior_action_L1": 0.8324611874068535,
+        "action_MAE_radians": 0.4427408891297844,
+        "aggregation": "valid_element_weighted",
+        "raw_action_chunk_MSE": 0.421167625791479,
+        "raw_action_chunk_RMSE": 0.6489742874655967,
+        "raw_action_chunk_MAE": 0.4427408884573106,
+        "raw_action_chunk_MSE_per_joint": [
+          0.13373558395092758,
+          1.011010094408897,
+          1.2896998525115981,
+          0.06534322252484667,
+          0.020886941385223283,
+          0.1315217809710037,
+          0.21166693285200755,
+          0.9256131773887714,
+          1.0446823031671515,
+          0.04950994048943011,
+          0.016647267588071883,
+          0.1536944122598208
+        ],
+        "raw_action_chunk_MSE_prefix": {
+          "1": 0.39849333529483005,
+          "10": 0.4015743856544027,
+          "100": 0.421167625791479
+        },
+        "raw_action_valid_elements": 433596,
+        "raw_action_valid_timesteps": 36133,
+        "raw_action_windows": 427,
+        "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+        "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+        "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+        "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+      },
+      "best_validation": {
+        "step": 1,
+        "windows": 427,
+        "prior_action_L1": 0.8245589155921151,
+        "action_MAE_radians": 0.4589980343661439,
+        "aggregation": "valid_element_weighted",
+        "raw_action_chunk_MSE": 0.4683645173658192,
+        "raw_action_chunk_RMSE": 0.6843716222680621,
+        "raw_action_chunk_MAE": 0.458998035685171,
+        "raw_action_chunk_MSE_per_joint": [
+          0.16759311170173188,
+          1.0563541857648036,
+          1.4331290814380964,
+          0.06795616179368308,
+          0.018159800390455595,
+          0.11024975647723867,
+          0.2122709828764792,
+          0.9770733076553246,
+          1.4133465256173767,
+          0.049620653115082174,
+          0.00933871048236937,
+          0.1052819310771889
+        ],
+        "raw_action_chunk_MSE_prefix": {
+          "1": 0.44296674384213863,
+          "10": 0.4467236771949457,
+          "100": 0.4683645173658192
+        },
+        "raw_action_valid_elements": 433596,
+        "raw_action_valid_timesteps": 36133,
+        "raw_action_windows": 427,
+        "raw_action_metric_definition": "sum((predicted_actual_joint_target - ground_truth_joint_target)^2 over valid chunk entries) / valid_scalar_action_count",
+        "raw_action_units": "radians; MSE rad^2, RMSE/MAE rad",
+        "raw_action_space": "model output action after inverse normalization; no velocity, flow field, latent, or track displacement",
+        "raw_action_padding": "excluded; valid-element-weighted across the complete validation set"
+      },
+      "completed_optimizer_steps": 2,
+      "elapsed_seconds": 11.463795230723917
+    },
     "native_status": {
       "native-early-seed-1000": {
         "status": "complete",
@@ -47979,6 +49102,53 @@
         "failures": [],
         "pending": 0,
         "active": {}
+      },
+      "native-main-seed-1000": {
+        "status": "running",
+        "seed": 1000,
+        "stage": "main",
+        "protocol_fingerprint": "b8b4b524577f605768fbd405d8c809a3c6ae9123fd175df80e2fe046dae9c3ae",
+        "snapshot_utc": "2026-10-19T21:32:02.983209+00:00",
+        "completed": [
+          "closed-loop/seed-1000/execute-100/pose-5001/act/attempt-001",
+          "closed-loop/seed-1000/execute-10/pose-5001/act/attempt-001"
+        ],
+        "failures": [],
+        "pending": 6,
+        "active": {
+          "2": {
+            "condition": "rgb_history",
+            "horizon": 100
+          },
+          "3": {
+            "condition": "rgb_history",
+            "horizon": 10
+          },
+          "4": {
+            "condition": "geometry",
+            "horizon": 100
+          },
+          "5": {
+            "condition": "geometry",
+            "horizon": 10
+          },
+          "6": {
+            "condition": "tracks",
+            "horizon": 100
+          },
+          "7": {
+            "condition": "tracks",
+            "horizon": 10
+          },
+          "0": {
+            "condition": "tracks_completion",
+            "horizon": 100
+          },
+          "1": {
+            "condition": "tracks_completion",
+            "horizon": 10
+          }
+        }
       }
     },
     "native_cases": [
@@ -48801,9 +49971,19 @@
       "formal_training": false,
       "deadline_utc": "2026-10-19T22:56:28Z",
       "job_name": "ei-liupeiqi-wam-training-actpilot-residual-1n8g-b20z-20261019-212607",
-      "status": "preflight",
-      "stage": "copy_lossless_cache_parallel",
-      "snapshot_utc": "2026-10-19T21:26:32.811927+00:00"
+      "status": "running",
+      "stage": "training",
+      "snapshot_utc": "2026-10-19T21:32:03.919878+00:00",
+      "exit_codes": {
+        "seed-1000/connected": null,
+        "seed-1000/detached": null,
+        "seed-1001/connected": null,
+        "seed-1001/detached": null,
+        "seed-1002/connected": null,
+        "seed-1002/detached": null,
+        "seed-1003/connected": null,
+        "seed-1003/detached": null
+      }
     },
     "job": {
       "job_id": "job-zuucjxptib25",
@@ -48823,7 +50003,688 @@
       "code_commit": "466d8ea87a38a1a533304ba392867c427f8a690f"
     },
     "audit": null,
-    "training": {},
+    "training": {
+      "seed-1000/connected": {
+        "manifest": {
+          "schema": "act-residual-iteration-1",
+          "variant": "connected",
+          "hardware": {
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "torch": "2.7.0+cu128",
+            "cuda": "12.8"
+          },
+          "auxiliary_initial_std": 0.01,
+          "status": "running",
+          "mode": "tracks_completion",
+          "recipe": {
+            "config": {
+              "mode": "tracks_completion",
+              "point_encoder": "mlp",
+              "history": 16,
+              "cameras": 3,
+              "input_points": 16,
+              "hidden_points": 48,
+              "action_dim": 12,
+              "chunk": 100,
+              "n_action_steps": 100,
+              "rgb_height": 480,
+              "rgb_width": 640,
+              "dropout": 0.1,
+              "backbone_batch": 6,
+              "spatial_scale_m": 0.5,
+              "motion_scale_m": 0.05,
+              "auxiliary_weight": 275.1,
+              "kl_weight": 10.0
+            },
+            "steps": 1500,
+            "seed": 1000,
+            "batch_size": 1,
+            "accumulate": 16,
+            "lr": 1e-05,
+            "weight_decay": 0.0001,
+            "clip": 10,
+            "schedule": "constant",
+            "precision": "bfloat16",
+            "auxiliary_family": "knn3_residual",
+            "residual_output_scale": 0.1,
+            "detached_auxiliary_memory": false,
+            "gradient_clipping": "policy_parameters_norm10_auxiliary_head_separately_norm10",
+            "calibration_sha256": "6df052deccf4ce5393b175041a0c296ce676e9a1f9b73ecbce92496d07ed1ba8",
+            "auxiliary_output_gain": 100.0,
+            "workers": 2,
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "imagenet_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+          },
+          "code_hashes": {
+            "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+            "act_pilot_data.py": "2b867602c8df684ef38512d561903ac4821da15609989ffa3828b81bcc2b2161",
+            "act_residual_train.py": "6b51734b61a187694b361025b74aab577df459a94352df82edafee07b862a40b",
+            "act_residual_policy.py": "9d9b23bc9ab3aa4571ff7dec9f54ded483d4ff9ec5a51ef2c0677a040e9d62c0",
+            "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
+            "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
+            "flow_training_state.py": "dcc394d2fab1e7ec582113f0d5ddee560c58335e1fb582fd9ffcdf4f7fa5c0d1",
+            "native_ACT": "69301fff11cbb8f4ba7bfe473a55ba488c3d2f89c25ecdfe512347a93b4ad04f"
+          },
+          "job_name": "ei-liupeiqi-wam-training-actpilot-residual-1n8g-b20z-20261019-212607-s1000-connected",
+          "initial_model_sha256": "3bc5bac6e2075c68e50e66bb0c462fe6d98d49e325851f42a1c9c0ad37a8dd45",
+          "initial_ACT_core_sha256": "b5a97db5347f325014b8fe0bdc9afdccdf08d7e8452503920baaf7e2c98ed012",
+          "source_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
+          "parameters": 52056591,
+          "point_parameters": 99072,
+          "auxiliary_parameters": 348035,
+          "training_windows": 1688,
+          "validation_windows": 427,
+          "formal_training": false,
+          "CUDA_VISIBLE_DEVICES": "0",
+          "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
+          "test_used": false,
+          "RGB_only_GT_reads": 0,
+          "completed_optimizer_steps": 75,
+          "elapsed_seconds": 169.82247491180897
+        },
+        "validation": [],
+        "raw_action_receipts": []
+      },
+      "seed-1000/detached": {
+        "manifest": {
+          "schema": "act-residual-iteration-1",
+          "variant": "detached",
+          "hardware": {
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "torch": "2.7.0+cu128",
+            "cuda": "12.8"
+          },
+          "auxiliary_initial_std": 0.01,
+          "status": "running",
+          "mode": "tracks_completion",
+          "recipe": {
+            "config": {
+              "mode": "tracks_completion",
+              "point_encoder": "mlp",
+              "history": 16,
+              "cameras": 3,
+              "input_points": 16,
+              "hidden_points": 48,
+              "action_dim": 12,
+              "chunk": 100,
+              "n_action_steps": 100,
+              "rgb_height": 480,
+              "rgb_width": 640,
+              "dropout": 0.1,
+              "backbone_batch": 6,
+              "spatial_scale_m": 0.5,
+              "motion_scale_m": 0.05,
+              "auxiliary_weight": 275.1,
+              "kl_weight": 10.0
+            },
+            "steps": 1500,
+            "seed": 1000,
+            "batch_size": 1,
+            "accumulate": 16,
+            "lr": 1e-05,
+            "weight_decay": 0.0001,
+            "clip": 10,
+            "schedule": "constant",
+            "precision": "bfloat16",
+            "auxiliary_family": "knn3_residual",
+            "residual_output_scale": 0.1,
+            "detached_auxiliary_memory": true,
+            "gradient_clipping": "policy_parameters_norm10_auxiliary_head_separately_norm10",
+            "calibration_sha256": "6df052deccf4ce5393b175041a0c296ce676e9a1f9b73ecbce92496d07ed1ba8",
+            "auxiliary_output_gain": 100.0,
+            "workers": 2,
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "imagenet_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+          },
+          "code_hashes": {
+            "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+            "act_pilot_data.py": "2b867602c8df684ef38512d561903ac4821da15609989ffa3828b81bcc2b2161",
+            "act_residual_train.py": "6b51734b61a187694b361025b74aab577df459a94352df82edafee07b862a40b",
+            "act_residual_policy.py": "9d9b23bc9ab3aa4571ff7dec9f54ded483d4ff9ec5a51ef2c0677a040e9d62c0",
+            "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
+            "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
+            "flow_training_state.py": "dcc394d2fab1e7ec582113f0d5ddee560c58335e1fb582fd9ffcdf4f7fa5c0d1",
+            "native_ACT": "69301fff11cbb8f4ba7bfe473a55ba488c3d2f89c25ecdfe512347a93b4ad04f"
+          },
+          "job_name": "ei-liupeiqi-wam-training-actpilot-residual-1n8g-b20z-20261019-212607-s1000-detached",
+          "initial_model_sha256": "3bc5bac6e2075c68e50e66bb0c462fe6d98d49e325851f42a1c9c0ad37a8dd45",
+          "initial_ACT_core_sha256": "b5a97db5347f325014b8fe0bdc9afdccdf08d7e8452503920baaf7e2c98ed012",
+          "source_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
+          "parameters": 52056591,
+          "point_parameters": 99072,
+          "auxiliary_parameters": 348035,
+          "training_windows": 1688,
+          "validation_windows": 427,
+          "formal_training": false,
+          "CUDA_VISIBLE_DEVICES": "1",
+          "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
+          "test_used": false,
+          "RGB_only_GT_reads": 0,
+          "completed_optimizer_steps": 75,
+          "elapsed_seconds": 166.61913035064936
+        },
+        "validation": [],
+        "raw_action_receipts": []
+      },
+      "seed-1001/connected": {
+        "manifest": {
+          "schema": "act-residual-iteration-1",
+          "variant": "connected",
+          "hardware": {
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "torch": "2.7.0+cu128",
+            "cuda": "12.8"
+          },
+          "auxiliary_initial_std": 0.01,
+          "status": "running",
+          "mode": "tracks_completion",
+          "recipe": {
+            "config": {
+              "mode": "tracks_completion",
+              "point_encoder": "mlp",
+              "history": 16,
+              "cameras": 3,
+              "input_points": 16,
+              "hidden_points": 48,
+              "action_dim": 12,
+              "chunk": 100,
+              "n_action_steps": 100,
+              "rgb_height": 480,
+              "rgb_width": 640,
+              "dropout": 0.1,
+              "backbone_batch": 6,
+              "spatial_scale_m": 0.5,
+              "motion_scale_m": 0.05,
+              "auxiliary_weight": 275.1,
+              "kl_weight": 10.0
+            },
+            "steps": 1500,
+            "seed": 1001,
+            "batch_size": 1,
+            "accumulate": 16,
+            "lr": 1e-05,
+            "weight_decay": 0.0001,
+            "clip": 10,
+            "schedule": "constant",
+            "precision": "bfloat16",
+            "auxiliary_family": "knn3_residual",
+            "residual_output_scale": 0.1,
+            "detached_auxiliary_memory": false,
+            "gradient_clipping": "policy_parameters_norm10_auxiliary_head_separately_norm10",
+            "calibration_sha256": "6df052deccf4ce5393b175041a0c296ce676e9a1f9b73ecbce92496d07ed1ba8",
+            "auxiliary_output_gain": 100.0,
+            "workers": 2,
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "imagenet_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+          },
+          "code_hashes": {
+            "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+            "act_pilot_data.py": "2b867602c8df684ef38512d561903ac4821da15609989ffa3828b81bcc2b2161",
+            "act_residual_train.py": "6b51734b61a187694b361025b74aab577df459a94352df82edafee07b862a40b",
+            "act_residual_policy.py": "9d9b23bc9ab3aa4571ff7dec9f54ded483d4ff9ec5a51ef2c0677a040e9d62c0",
+            "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
+            "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
+            "flow_training_state.py": "dcc394d2fab1e7ec582113f0d5ddee560c58335e1fb582fd9ffcdf4f7fa5c0d1",
+            "native_ACT": "69301fff11cbb8f4ba7bfe473a55ba488c3d2f89c25ecdfe512347a93b4ad04f"
+          },
+          "job_name": "ei-liupeiqi-wam-training-actpilot-residual-1n8g-b20z-20261019-212607-s1001-connected",
+          "initial_model_sha256": "2b663fa797cb00181786f35e9f38f5e33b55b4cf9ec2d7190df2f22936aba799",
+          "initial_ACT_core_sha256": "7f965109ca7026e49bc50d834a41cda1d6ef48e5cd2ad53f6b624002725c8f00",
+          "source_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
+          "parameters": 52056591,
+          "point_parameters": 99072,
+          "auxiliary_parameters": 348035,
+          "training_windows": 1688,
+          "validation_windows": 427,
+          "formal_training": false,
+          "CUDA_VISIBLE_DEVICES": "2",
+          "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
+          "test_used": false,
+          "RGB_only_GT_reads": 0,
+          "completed_optimizer_steps": 75,
+          "elapsed_seconds": 163.9279607590288
+        },
+        "validation": [],
+        "raw_action_receipts": []
+      },
+      "seed-1001/detached": {
+        "manifest": {
+          "schema": "act-residual-iteration-1",
+          "variant": "detached",
+          "hardware": {
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "torch": "2.7.0+cu128",
+            "cuda": "12.8"
+          },
+          "auxiliary_initial_std": 0.01,
+          "status": "running",
+          "mode": "tracks_completion",
+          "recipe": {
+            "config": {
+              "mode": "tracks_completion",
+              "point_encoder": "mlp",
+              "history": 16,
+              "cameras": 3,
+              "input_points": 16,
+              "hidden_points": 48,
+              "action_dim": 12,
+              "chunk": 100,
+              "n_action_steps": 100,
+              "rgb_height": 480,
+              "rgb_width": 640,
+              "dropout": 0.1,
+              "backbone_batch": 6,
+              "spatial_scale_m": 0.5,
+              "motion_scale_m": 0.05,
+              "auxiliary_weight": 275.1,
+              "kl_weight": 10.0
+            },
+            "steps": 1500,
+            "seed": 1001,
+            "batch_size": 1,
+            "accumulate": 16,
+            "lr": 1e-05,
+            "weight_decay": 0.0001,
+            "clip": 10,
+            "schedule": "constant",
+            "precision": "bfloat16",
+            "auxiliary_family": "knn3_residual",
+            "residual_output_scale": 0.1,
+            "detached_auxiliary_memory": true,
+            "gradient_clipping": "policy_parameters_norm10_auxiliary_head_separately_norm10",
+            "calibration_sha256": "6df052deccf4ce5393b175041a0c296ce676e9a1f9b73ecbce92496d07ed1ba8",
+            "auxiliary_output_gain": 100.0,
+            "workers": 2,
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "imagenet_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+          },
+          "code_hashes": {
+            "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+            "act_pilot_data.py": "2b867602c8df684ef38512d561903ac4821da15609989ffa3828b81bcc2b2161",
+            "act_residual_train.py": "6b51734b61a187694b361025b74aab577df459a94352df82edafee07b862a40b",
+            "act_residual_policy.py": "9d9b23bc9ab3aa4571ff7dec9f54ded483d4ff9ec5a51ef2c0677a040e9d62c0",
+            "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
+            "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
+            "flow_training_state.py": "dcc394d2fab1e7ec582113f0d5ddee560c58335e1fb582fd9ffcdf4f7fa5c0d1",
+            "native_ACT": "69301fff11cbb8f4ba7bfe473a55ba488c3d2f89c25ecdfe512347a93b4ad04f"
+          },
+          "job_name": "ei-liupeiqi-wam-training-actpilot-residual-1n8g-b20z-20261019-212607-s1001-detached",
+          "initial_model_sha256": "2b663fa797cb00181786f35e9f38f5e33b55b4cf9ec2d7190df2f22936aba799",
+          "initial_ACT_core_sha256": "7f965109ca7026e49bc50d834a41cda1d6ef48e5cd2ad53f6b624002725c8f00",
+          "source_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
+          "parameters": 52056591,
+          "point_parameters": 99072,
+          "auxiliary_parameters": 348035,
+          "training_windows": 1688,
+          "validation_windows": 427,
+          "formal_training": false,
+          "CUDA_VISIBLE_DEVICES": "3",
+          "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
+          "test_used": false,
+          "RGB_only_GT_reads": 0,
+          "completed_optimizer_steps": 100,
+          "elapsed_seconds": 214.55407575285062
+        },
+        "validation": [],
+        "raw_action_receipts": []
+      },
+      "seed-1002/connected": {
+        "manifest": {
+          "schema": "act-residual-iteration-1",
+          "variant": "connected",
+          "hardware": {
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "torch": "2.7.0+cu128",
+            "cuda": "12.8"
+          },
+          "auxiliary_initial_std": 0.01,
+          "status": "running",
+          "mode": "tracks_completion",
+          "recipe": {
+            "config": {
+              "mode": "tracks_completion",
+              "point_encoder": "mlp",
+              "history": 16,
+              "cameras": 3,
+              "input_points": 16,
+              "hidden_points": 48,
+              "action_dim": 12,
+              "chunk": 100,
+              "n_action_steps": 100,
+              "rgb_height": 480,
+              "rgb_width": 640,
+              "dropout": 0.1,
+              "backbone_batch": 6,
+              "spatial_scale_m": 0.5,
+              "motion_scale_m": 0.05,
+              "auxiliary_weight": 275.1,
+              "kl_weight": 10.0
+            },
+            "steps": 1500,
+            "seed": 1002,
+            "batch_size": 1,
+            "accumulate": 16,
+            "lr": 1e-05,
+            "weight_decay": 0.0001,
+            "clip": 10,
+            "schedule": "constant",
+            "precision": "bfloat16",
+            "auxiliary_family": "knn3_residual",
+            "residual_output_scale": 0.1,
+            "detached_auxiliary_memory": false,
+            "gradient_clipping": "policy_parameters_norm10_auxiliary_head_separately_norm10",
+            "calibration_sha256": "6df052deccf4ce5393b175041a0c296ce676e9a1f9b73ecbce92496d07ed1ba8",
+            "auxiliary_output_gain": 100.0,
+            "workers": 2,
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "imagenet_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+          },
+          "code_hashes": {
+            "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+            "act_pilot_data.py": "2b867602c8df684ef38512d561903ac4821da15609989ffa3828b81bcc2b2161",
+            "act_residual_train.py": "6b51734b61a187694b361025b74aab577df459a94352df82edafee07b862a40b",
+            "act_residual_policy.py": "9d9b23bc9ab3aa4571ff7dec9f54ded483d4ff9ec5a51ef2c0677a040e9d62c0",
+            "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
+            "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
+            "flow_training_state.py": "dcc394d2fab1e7ec582113f0d5ddee560c58335e1fb582fd9ffcdf4f7fa5c0d1",
+            "native_ACT": "69301fff11cbb8f4ba7bfe473a55ba488c3d2f89c25ecdfe512347a93b4ad04f"
+          },
+          "job_name": "ei-liupeiqi-wam-training-actpilot-residual-1n8g-b20z-20261019-212607-s1002-connected",
+          "initial_model_sha256": "55895b93823e20486d8ce358a1472b6bbf0aa1aae0767dc1bec722c3f863d1bf",
+          "initial_ACT_core_sha256": "552c6f640c0548cae26b009e6395a1255dc379661011e9a3fa7d9531e45651d9",
+          "source_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
+          "parameters": 52056591,
+          "point_parameters": 99072,
+          "auxiliary_parameters": 348035,
+          "training_windows": 1688,
+          "validation_windows": 427,
+          "formal_training": false,
+          "CUDA_VISIBLE_DEVICES": "4",
+          "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
+          "test_used": false,
+          "RGB_only_GT_reads": 0,
+          "completed_optimizer_steps": 100,
+          "elapsed_seconds": 212.18569129984826
+        },
+        "validation": [],
+        "raw_action_receipts": []
+      },
+      "seed-1002/detached": {
+        "manifest": {
+          "schema": "act-residual-iteration-1",
+          "variant": "detached",
+          "hardware": {
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "torch": "2.7.0+cu128",
+            "cuda": "12.8"
+          },
+          "auxiliary_initial_std": 0.01,
+          "status": "running",
+          "mode": "tracks_completion",
+          "recipe": {
+            "config": {
+              "mode": "tracks_completion",
+              "point_encoder": "mlp",
+              "history": 16,
+              "cameras": 3,
+              "input_points": 16,
+              "hidden_points": 48,
+              "action_dim": 12,
+              "chunk": 100,
+              "n_action_steps": 100,
+              "rgb_height": 480,
+              "rgb_width": 640,
+              "dropout": 0.1,
+              "backbone_batch": 6,
+              "spatial_scale_m": 0.5,
+              "motion_scale_m": 0.05,
+              "auxiliary_weight": 275.1,
+              "kl_weight": 10.0
+            },
+            "steps": 1500,
+            "seed": 1002,
+            "batch_size": 1,
+            "accumulate": 16,
+            "lr": 1e-05,
+            "weight_decay": 0.0001,
+            "clip": 10,
+            "schedule": "constant",
+            "precision": "bfloat16",
+            "auxiliary_family": "knn3_residual",
+            "residual_output_scale": 0.1,
+            "detached_auxiliary_memory": true,
+            "gradient_clipping": "policy_parameters_norm10_auxiliary_head_separately_norm10",
+            "calibration_sha256": "6df052deccf4ce5393b175041a0c296ce676e9a1f9b73ecbce92496d07ed1ba8",
+            "auxiliary_output_gain": 100.0,
+            "workers": 2,
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "imagenet_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+          },
+          "code_hashes": {
+            "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+            "act_pilot_data.py": "2b867602c8df684ef38512d561903ac4821da15609989ffa3828b81bcc2b2161",
+            "act_residual_train.py": "6b51734b61a187694b361025b74aab577df459a94352df82edafee07b862a40b",
+            "act_residual_policy.py": "9d9b23bc9ab3aa4571ff7dec9f54ded483d4ff9ec5a51ef2c0677a040e9d62c0",
+            "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
+            "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
+            "flow_training_state.py": "dcc394d2fab1e7ec582113f0d5ddee560c58335e1fb582fd9ffcdf4f7fa5c0d1",
+            "native_ACT": "69301fff11cbb8f4ba7bfe473a55ba488c3d2f89c25ecdfe512347a93b4ad04f"
+          },
+          "job_name": "ei-liupeiqi-wam-training-actpilot-residual-1n8g-b20z-20261019-212607-s1002-detached",
+          "initial_model_sha256": "55895b93823e20486d8ce358a1472b6bbf0aa1aae0767dc1bec722c3f863d1bf",
+          "initial_ACT_core_sha256": "552c6f640c0548cae26b009e6395a1255dc379661011e9a3fa7d9531e45651d9",
+          "source_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
+          "parameters": 52056591,
+          "point_parameters": 99072,
+          "auxiliary_parameters": 348035,
+          "training_windows": 1688,
+          "validation_windows": 427,
+          "formal_training": false,
+          "CUDA_VISIBLE_DEVICES": "5",
+          "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
+          "test_used": false,
+          "RGB_only_GT_reads": 0,
+          "completed_optimizer_steps": 75,
+          "elapsed_seconds": 170.94211338926107
+        },
+        "validation": [],
+        "raw_action_receipts": []
+      },
+      "seed-1003/connected": {
+        "manifest": {
+          "schema": "act-residual-iteration-1",
+          "variant": "connected",
+          "hardware": {
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "torch": "2.7.0+cu128",
+            "cuda": "12.8"
+          },
+          "auxiliary_initial_std": 0.01,
+          "status": "running",
+          "mode": "tracks_completion",
+          "recipe": {
+            "config": {
+              "mode": "tracks_completion",
+              "point_encoder": "mlp",
+              "history": 16,
+              "cameras": 3,
+              "input_points": 16,
+              "hidden_points": 48,
+              "action_dim": 12,
+              "chunk": 100,
+              "n_action_steps": 100,
+              "rgb_height": 480,
+              "rgb_width": 640,
+              "dropout": 0.1,
+              "backbone_batch": 6,
+              "spatial_scale_m": 0.5,
+              "motion_scale_m": 0.05,
+              "auxiliary_weight": 275.1,
+              "kl_weight": 10.0
+            },
+            "steps": 1500,
+            "seed": 1003,
+            "batch_size": 1,
+            "accumulate": 16,
+            "lr": 1e-05,
+            "weight_decay": 0.0001,
+            "clip": 10,
+            "schedule": "constant",
+            "precision": "bfloat16",
+            "auxiliary_family": "knn3_residual",
+            "residual_output_scale": 0.1,
+            "detached_auxiliary_memory": false,
+            "gradient_clipping": "policy_parameters_norm10_auxiliary_head_separately_norm10",
+            "calibration_sha256": "6df052deccf4ce5393b175041a0c296ce676e9a1f9b73ecbce92496d07ed1ba8",
+            "auxiliary_output_gain": 100.0,
+            "workers": 2,
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "imagenet_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+          },
+          "code_hashes": {
+            "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+            "act_pilot_data.py": "2b867602c8df684ef38512d561903ac4821da15609989ffa3828b81bcc2b2161",
+            "act_residual_train.py": "6b51734b61a187694b361025b74aab577df459a94352df82edafee07b862a40b",
+            "act_residual_policy.py": "9d9b23bc9ab3aa4571ff7dec9f54ded483d4ff9ec5a51ef2c0677a040e9d62c0",
+            "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
+            "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
+            "flow_training_state.py": "dcc394d2fab1e7ec582113f0d5ddee560c58335e1fb582fd9ffcdf4f7fa5c0d1",
+            "native_ACT": "69301fff11cbb8f4ba7bfe473a55ba488c3d2f89c25ecdfe512347a93b4ad04f"
+          },
+          "job_name": "ei-liupeiqi-wam-training-actpilot-residual-1n8g-b20z-20261019-212607-s1003-connected",
+          "initial_model_sha256": "9101b856a9480c9b382e33aae36ff0396ec0ece010e7b909646d03ef942be6e0",
+          "initial_ACT_core_sha256": "540ec2a452b2a46fae100c7c1ec1bd78336cea4e030834db5db39e031d9e6232",
+          "source_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
+          "parameters": 52056591,
+          "point_parameters": 99072,
+          "auxiliary_parameters": 348035,
+          "training_windows": 1688,
+          "validation_windows": 427,
+          "formal_training": false,
+          "CUDA_VISIBLE_DEVICES": "6",
+          "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
+          "test_used": false,
+          "RGB_only_GT_reads": 0,
+          "completed_optimizer_steps": 75,
+          "elapsed_seconds": 169.92038897098973
+        },
+        "validation": [],
+        "raw_action_receipts": []
+      },
+      "seed-1003/detached": {
+        "manifest": {
+          "schema": "act-residual-iteration-1",
+          "variant": "detached",
+          "hardware": {
+            "name": "NVIDIA B20Z",
+            "capability": [
+              10,
+              0
+            ],
+            "torch": "2.7.0+cu128",
+            "cuda": "12.8"
+          },
+          "auxiliary_initial_std": 0.01,
+          "status": "running",
+          "mode": "tracks_completion",
+          "recipe": {
+            "config": {
+              "mode": "tracks_completion",
+              "point_encoder": "mlp",
+              "history": 16,
+              "cameras": 3,
+              "input_points": 16,
+              "hidden_points": 48,
+              "action_dim": 12,
+              "chunk": 100,
+              "n_action_steps": 100,
+              "rgb_height": 480,
+              "rgb_width": 640,
+              "dropout": 0.1,
+              "backbone_batch": 6,
+              "spatial_scale_m": 0.5,
+              "motion_scale_m": 0.05,
+              "auxiliary_weight": 275.1,
+              "kl_weight": 10.0
+            },
+            "steps": 1500,
+            "seed": 1003,
+            "batch_size": 1,
+            "accumulate": 16,
+            "lr": 1e-05,
+            "weight_decay": 0.0001,
+            "clip": 10,
+            "schedule": "constant",
+            "precision": "bfloat16",
+            "auxiliary_family": "knn3_residual",
+            "residual_output_scale": 0.1,
+            "detached_auxiliary_memory": true,
+            "gradient_clipping": "policy_parameters_norm10_auxiliary_head_separately_norm10",
+            "calibration_sha256": "6df052deccf4ce5393b175041a0c296ce676e9a1f9b73ecbce92496d07ed1ba8",
+            "auxiliary_output_gain": 100.0,
+            "workers": 2,
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "imagenet_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+          },
+          "code_hashes": {
+            "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+            "act_pilot_data.py": "2b867602c8df684ef38512d561903ac4821da15609989ffa3828b81bcc2b2161",
+            "act_residual_train.py": "6b51734b61a187694b361025b74aab577df459a94352df82edafee07b862a40b",
+            "act_residual_policy.py": "9d9b23bc9ab3aa4571ff7dec9f54ded483d4ff9ec5a51ef2c0677a040e9d62c0",
+            "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
+            "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
+            "flow_training_state.py": "dcc394d2fab1e7ec582113f0d5ddee560c58335e1fb582fd9ffcdf4f7fa5c0d1",
+            "native_ACT": "69301fff11cbb8f4ba7bfe473a55ba488c3d2f89c25ecdfe512347a93b4ad04f"
+          },
+          "job_name": "ei-liupeiqi-wam-training-actpilot-residual-1n8g-b20z-20261019-212607-s1003-detached",
+          "initial_model_sha256": "9101b856a9480c9b382e33aae36ff0396ec0ece010e7b909646d03ef942be6e0",
+          "initial_ACT_core_sha256": "540ec2a452b2a46fae100c7c1ec1bd78336cea4e030834db5db39e031d9e6232",
+          "source_commit": "466d8ea87a38a1a533304ba392867c427f8a690f",
+          "parameters": 52056591,
+          "point_parameters": 99072,
+          "auxiliary_parameters": 348035,
+          "training_windows": 1688,
+          "validation_windows": 427,
+          "formal_training": false,
+          "CUDA_VISIBLE_DEVICES": "7",
+          "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
+          "test_used": false,
+          "RGB_only_GT_reads": 0,
+          "completed_optimizer_steps": 75,
+          "elapsed_seconds": 163.5956700257957
+        },
+        "validation": [],
+        "raw_action_receipts": []
+      }
+    },
     "native": {
       "protocol": null,
       "audit": null,

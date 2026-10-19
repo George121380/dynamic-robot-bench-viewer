@@ -1,0 +1,9 @@
+# Actual output-action chunk validation MSE
+
+`act_train.py` records `raw_action_chunk_MSE` on actual denormalized100×12 joint-target predictions. Sum squared prediction/ground-truth differences over valid entries, divided by the valid scalar action count. SO101 targets are in radians: MSE is rad², RMSE/MAE are rad. Padding is excluded from both numerator and denominator; aggregate the whole validation set by valid elements. Velocity fields, flow, latents and track displacements do not enter this metric.
+
+The configurable validation interval defaults to `--validation-every 250`. Each complete validation writes MSE, RMSE, per-joint MSE, first1/10/100-step MSE, valid counts and the original prior-zero action L1 to `validation.jsonl` and the manifest. The adapter observes returned physical actions in the original single forward pass; it does not change training losses, optimizer or gradients. ACT eval uses prior zero; independent supplementary validation additionally wraps the actor to prevent future labels from being passed into it. Existing L1 checkpoint selection remains unchanged.
+
+Formal30k training remains blocked by the existing `training-hold.json` until its explicit release. Adding this entry point submits no training jobs and does not extend the three-hour lease.
+
+Current frozen runs retain their source/logs. Original1500/1750/2000-step checkpoint supplements and residual250..1500-step supplements at250-step intervals live in `raw-action-metrics/seed-*/<condition>/step-*.json`, reproduce original full427-window L1 within1e-6, and bind checkpoint/data/metric-source hashes. An NPZ stores one actual predicted chunk, ground truth and valid mask for independent recomputation. Missing early checkpoints do not produce invented history. Evaluation reuses registered B20 allocations, takes zero optimizer steps and caps each metric process at12GiB under the original deadline.
