@@ -1,0 +1,200 @@
+{
+  "status": "passed",
+  "rounds": 14,
+  "metric_values_checked_against_sources": 31,
+  "sources_checked": 26,
+  "old_python_files_unchanged": 135,
+  "technical_appendix_byte_identical": true,
+  "offline_main_content": true,
+  "new_training_updates": 0,
+  "new_model_forwards": 0,
+  "new_physics_steps": 0,
+  "metrics": [
+    {
+      "round": "r01",
+      "label": "原配方",
+      "value": 16.114,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r01",
+      "label": "低学习率",
+      "value": 17.255,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r02",
+      "label": "原时间编码",
+      "value": 20.094,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r02",
+      "label": "更换时间编码",
+      "value": 11.323,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r03",
+      "label": "验证球误差：近邻",
+      "value": 85.076,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r03",
+      "label": "验证球误差：直接预测",
+      "value": 42.727,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r04",
+      "label": "原续推",
+      "value": 50.844,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r04",
+      "label": "真实场景边界",
+      "value": 27.657,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r04",
+      "label": "场景和机器人真边界",
+      "value": 23.095,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r05",
+      "label": "无约束2秒综合误差",
+      "value": 22.31,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r05",
+      "label": "有约束2秒综合误差",
+      "value": 23.33,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r06",
+      "label": "原续段全瓶误差",
+      "value": 63.663,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r06",
+      "label": "真实边界续段全瓶误差",
+      "value": 35.655,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r07",
+      "label": "全连接网络",
+      "value": 52.8826,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r07",
+      "label": "物体关系网络",
+      "value": 57.5717,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r08",
+      "label": "仅数值微扰",
+      "value": 0.0219,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r08",
+      "label": "删除瓶子轴向自转",
+      "value": 31.263,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r09",
+      "label": "只给原输入",
+      "value": 44.125,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r09",
+      "label": "补真实状态",
+      "value": 46.81,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r10",
+      "label": "长时监督：静止端点误差",
+      "value": 2.233,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r10",
+      "label": "短时监督：静止端点误差",
+      "value": 0.522,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r11",
+      "label": "原训练投球附近数据",
+      "value": 21.456,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r11",
+      "label": "评价投球附近数据",
+      "value": 7.333,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r11",
+      "label": "同邻域仅21点历史",
+      "value": 8.296,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r12",
+      "label": "当前点",
+      "value": 12.652,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r12",
+      "label": "目标瓶历史",
+      "value": 12.638,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r12",
+      "label": "全部点历史",
+      "value": 4.968,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r12",
+      "label": "真实状态",
+      "value": 5.234,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r13",
+      "label": "A 完整历史训练",
+      "value": 4.82,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r13",
+      "label": "B 两帧训练",
+      "value": 18.842,
+      "present_in_cited_sources": true
+    },
+    {
+      "round": "r13",
+      "label": "C 两帧训练加补全",
+      "value": 22.603,
+      "present_in_cited_sources": true
+    }
+  ]
+}
