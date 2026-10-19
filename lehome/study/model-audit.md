@@ -1,5 +1,21 @@
 # RGB-H / FlowACT design audit and matched study
 
+The user has authorized one bounded validation round on the developer machine. Only the separate pilot is starting; the formal study and eight-GPU allocation remain on hold. The minimal native-ACT extension is implemented. With extensions disabled, native prior actions and training loss match exactly; maximum core gradient difference is 4.69e-9. Hidden-query and future-action information boundaries pass.
+
+## Current developer validation (in progress)
+
+The separate root is `results/lehome_garment_folding/act-dev-validation-01/`; the old full-study hold remains effective. Seen_0 episodes0–15 train,16–19 validate,20–24 unused. All twenty lossless RGB caches are byte-equivalent. Data fingerprint: `f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa`. Complete expert failures are retained.
+
+Five conditions ACT/ACT-H/Geometry/Tracks/Completion each receive500 updates, seed1000 and effective batch16. Full four-episode prior-zero validation at250/500 selects best. AdamW policy/backbone lr1e-5, weight decay1e-4, constant schedule, clip10, BF16 and strict determinism are shared, as are core initialization and sample order. Native encoder/decoder/CVAE, ReLU/postnorm and original padded-action loss are retained. ACT uses current RGB; history conditions share sixteen frames/0.5s. Current spatial features remain native and complete; fifteen historical frames use the shared ResNet and4x4 pooling. Native decoder has no padding API, so only valid history tokens are packed, with micro-batch one.
+
+The99,072-parameter shared point MLP flattens16x8 into128→128→128→512. Native ACT handles inter-point interactions. A348,035-parameter one-layer128D auxiliary decoder reads observation tokens before posterior mixing; hidden queries/labels never enter the actor and the head is removed at inference. Both point candidates received300 tiny-data updates on the same eight windows: MLP training EPE6.596→2.863mm, factorized encoder6.593→5.108mm. On all119 old development validation windows,16.168/17.002mm both fail the13.816mm static reference. This establishes learning, not generalization. No RGB context is used in this module-only test; policy modules restart from paired initialization.
+
+First run full-resolution640x480/two-worker/effective-batch16 exact resume (two continuous updates versus1→2), then the five500-update runs serially. Five fixed development poses5001–5005 with execution100(primary)/10(secondary), both predicting100, give50 full native rollouts. Check paired pose/scale and initial cloth maximum difference≤1e-5m; retain failures. One garment, one training seed and500 updates establish neither convergence nor a reliable ranking. GT tracks remain privileged simulation information, not RGB-estimated flow.
+
+Implementation: act_history_policy.py, act_pilot_data.py, validate_act_history.py, point_encoder_pilot.py, act_pilot_train.py, act_pilot_rollout.py, act_pilot_run.sh and run_act_pilot.py. Only developer1 GPU2 spare capacity is used, with a12GiB policy-process memory cap. No new node or colleague process is touched. Exact status comes from pilot-status.json, per-run metrics.jsonl and manifest.json. The public page is a timestamped snapshot.
+
+The following proposal and legacy implementation notes are historical. Their unimplemented/not-trained wording describes the earlier snapshot; current execution receipts take precedence.
+
 Training is on hold for the user's settings review. The task-owned coordinator has been stopped before any formal updates; synchronized replay continues independently and cannot transition automatically into training. One eight-GPU node is permitted in principle, but no node allocation or new training has been launched. See the task's `training-hold.json`. No formal policy result exists yet.
 
 ## Latest proposal: small-task screening and architecture gates (no training started)

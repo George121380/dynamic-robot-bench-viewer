@@ -1,5 +1,21 @@
 # RGB-H / FlowACT 设计审查与公平实验
 
+当前状态：用户已要求在开发机做一轮验证，现仅启动独立的小预算 pilot；完整正式训练与8卡节点申请仍暂停。原 ACT 最小扩展已实现，关闭扩展后原生推理输出和训练损失差均为0，核心梯度最大差4.69e-9；未来动作与隐藏点的信息边界检查通过。
+
+## 开发机本轮验证（进行中）
+
+执行目录 `results/lehome_garment_folding/act-dev-validation-01/`，独立于旧 `flow-study-01`，不解除后者的 `training-hold.json`。Seen_0完整回放0–15训练、16–19验证，20–24未用；20条无损RGB缓存逐值相同，数据指纹 `f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa`。保留完整专家失败，不按成功筛选。
+
+本轮五组 ACT / ACT-H / Geometry / Tracks / Completion，各固定500更新、训练种子1000、有效batch16，250/500更新用完整4集验证的prior-zero action L1选best。AdamW lr及backbone lr1e-5、weight decay1e-4、恒定lr、clip10、BF16、严格确定性；相同初始化和样本顺序。保留原ACT encoder/decoder/CVAE、ReLU/postnorm及原padding损失。原ACT仅当前RGB；其他模型相同16帧/0.5s。当前三相机保持原完整空间特征；额外15帧用共享ResNet与4×4池化。原生decoder无padding接口，故只拼真实历史token，micro-batch1；不把冷启动假帧送入attention。
+
+点编码器采用共享MLP，16×8展开，128→128→128→512，共99,072参数，点间交互交给原ACT。辅助头一层128维decoder（348,035参数），从posterior混合前观察token读取；隐藏query/标签不进actor，推理删除辅助头。两种点编码器已在相同8个窗口各学习300更新：MLP训练EPE6.596→2.863mm，大编码器6.593→5.108mm；独立旧开发验证119窗口为16.168/17.002mm，均未超过静态13.816mm。此处只证明可学习，尚无泛化收益；它们没有RGB上下文，不能据此否定RGB条件补全。策略点模块重新初始化，不继承这次小样本拟合权重。
+
+本轮先进行真实640×480、两worker、有效batch16的连续2更新与1→2更新精确恢复检查，再串行五组500更新。随后五个固定开发pose5001–5005，主执行100/次执行10，两者均预测100，计划50次原生完整闭环。逐组核对相同pose/scale与初始cloth顶点差≤1e-5m；失败原样保留。单衣服/单训练种子/500更新只用于筛查，不能作收敛或稳定排名。GT轨迹仍是特权上界，不是RGB估计flow。
+
+代码入口：`act_history_policy.py`、`act_pilot_data.py`、`validate_act_history.py`、`point_encoder_pilot.py`、`act_pilot_train.py`、`act_pilot_rollout.py`、`act_pilot_run.sh`、`run_act_pilot.py`。只使用开发机1 GPU2的可用资源，policy进程显存上限12GiB，不申请新节点，不操作同事任务。精确状态/更新数见 `pilot-status.json`、各run的 `metrics.jsonl` 与 `manifest.json`。在线页是发布快照，不是实时连接。
+
+以下为本轮之前的提案与旧实现历史记录；“尚未实现/未训练”描述仅适用于其记录时点，最新状态以上文与执行JSON为准。
+
 当前状态：按用户最新要求，训练调度进程已停止，正式训练尚未开始，等待用户检查下列设置。单个 8 卡节点的资源使用已获允许，但尚未申请或发起训练；数据回放继续，不会自动转入训练。暂停回执为任务目录中的 `training-hold.json`。最终结果尚未产生，不能据工程预检断言 Flow 有效。
 
 ## 最新提案：先做小实验与架构验收（未启动训练）

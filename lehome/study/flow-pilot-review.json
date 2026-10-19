@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "status": "draft_pending_user_review",
-  "snapshot_utc": "2026-10-19T18:54:33.795692+00:00",
-  "new_training_started": false,
+  "status": "developer_validation_running_formal_study_paused",
+  "snapshot_utc": "2026-10-19T19:20:11.341273+00:00",
+  "new_training_started": true,
   "node_allocated": false,
-  "ACT_core_rebase_implemented": false,
-  "existing_implementation": "Custom four-condition FlowACT; its old engineering checks do not validate the proposed ACT rebase.",
+  "ACT_core_rebase_implemented": true,
+  "existing_implementation": "Native LeRobot ACT classes with minimal history/point observation extensions; old custom FlowACT archived.",
   "policy_pilot": {
-    "status": "not_run",
+    "status": "developer_validation_running",
     "garment": "Top_Long_Seen_0",
     "train_episode_ids": [
       0,
@@ -55,9 +55,8 @@
     "maximum_optimizer_steps_per_run": 2000,
     "effective_batch": 16,
     "matched_checkpoints": [
-      500,
-      1000,
-      2000
+      250,
+      500
     ],
     "baseline_feasibility_first": true,
     "maximum_policy_updates": 10000,
@@ -81,8 +80,10 @@
     "validation_and_selection": "same full four validation episodes, prior-zero action L1; new development poses never select best",
     "speedups": "smaller task distribution, fewer updates, lossless decoded-RGB caching; retain native 640x480 and end-to-end training",
     "wall_time": "requires new throughput measurement after ACT rebase; no current wall-time promise",
-    "scope": "single-garment, single-seed screening; cannot establish broad generalization or a reliable ranking",
-    "baseline_gate": "Expert replay quality and tiny-episode fit establish a valid pipeline. Low ACT closed-loop success alone does not invalidate the task or forbid history/flow comparisons."
+    "scope": "Single garment, single seed, bounded 500-update screening; formal training remains on hold.",
+    "baseline_gate": "Expert replay quality and tiny-episode fit establish a valid pipeline. Low ACT closed-loop success alone does not invalidate the task or forbid history/flow comparisons.",
+    "current_optimizer_steps_per_run": 500,
+    "current_total_policy_update_budget": 2500
   },
   "point_encoder": {
     "implemented_input_shape": [
@@ -120,7 +121,7 @@
       "point identities are reselected per observation window"
     ],
     "simple_candidate": {
-      "status": "not_implemented_or_trained",
+      "status": "implemented_and_300_step_tiny_learning_executed",
       "path": "shared per-point 16x8 flatten -> MLP 128->128->128->512 -> ACT tokens",
       "linear_sizes": [
         128,
@@ -134,7 +135,7 @@
       "point_interaction": "native ACT encoder",
       "scope": "fixed 16-frame history with explicit masks; no universal variable-length claim"
     },
-    "selection": "Compare the simple candidate and existing factorized encoder on the same diagnostic split before keeping extra complexity."
+    "selection": "Use the simple 99,072-parameter MLP for this pilot; both candidates fit tiny data but fail the old held-out static reference."
   },
   "gates": [
     {
@@ -350,5 +351,14 @@
       }
     ],
     "note": "Expert replay endpoints, not learned-policy results or a policy success ceiling. Retain all complete episodes; no silent success filtering."
-  }
+  },
+  "native_parity": {
+    "status": "complete",
+    "prior_action_max_difference": 0.0,
+    "training_loss_difference": 0.0,
+    "gradient_max_difference": 4.685716703534126e-09,
+    "hidden_queries_do_not_enter_actor": true,
+    "future_actions_do_not_enter_completion": true
+  },
+  "current_execution_root": "results/lehome_garment_folding/act-dev-validation-01"
 }

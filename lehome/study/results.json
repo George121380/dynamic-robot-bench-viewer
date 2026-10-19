@@ -344,14 +344,14 @@
   },
   "architecture_review": {
     "schema": 1,
-    "status": "draft_pending_user_review",
-    "snapshot_utc": "2026-10-19T18:54:33.795692+00:00",
-    "new_training_started": false,
+    "status": "developer_validation_running_formal_study_paused",
+    "snapshot_utc": "2026-10-19T19:20:11.341273+00:00",
+    "new_training_started": true,
     "node_allocated": false,
-    "ACT_core_rebase_implemented": false,
-    "existing_implementation": "Custom four-condition FlowACT; its old engineering checks do not validate the proposed ACT rebase.",
+    "ACT_core_rebase_implemented": true,
+    "existing_implementation": "Native LeRobot ACT classes with minimal history/point observation extensions; old custom FlowACT archived.",
     "policy_pilot": {
-      "status": "not_run",
+      "status": "developer_validation_running",
       "garment": "Top_Long_Seen_0",
       "train_episode_ids": [
         0,
@@ -399,9 +399,8 @@
       "maximum_optimizer_steps_per_run": 2000,
       "effective_batch": 16,
       "matched_checkpoints": [
-        500,
-        1000,
-        2000
+        250,
+        500
       ],
       "baseline_feasibility_first": true,
       "maximum_policy_updates": 10000,
@@ -425,8 +424,10 @@
       "validation_and_selection": "same full four validation episodes, prior-zero action L1; new development poses never select best",
       "speedups": "smaller task distribution, fewer updates, lossless decoded-RGB caching; retain native 640x480 and end-to-end training",
       "wall_time": "requires new throughput measurement after ACT rebase; no current wall-time promise",
-      "scope": "single-garment, single-seed screening; cannot establish broad generalization or a reliable ranking",
-      "baseline_gate": "Expert replay quality and tiny-episode fit establish a valid pipeline. Low ACT closed-loop success alone does not invalidate the task or forbid history/flow comparisons."
+      "scope": "Single garment, single seed, bounded 500-update screening; formal training remains on hold.",
+      "baseline_gate": "Expert replay quality and tiny-episode fit establish a valid pipeline. Low ACT closed-loop success alone does not invalidate the task or forbid history/flow comparisons.",
+      "current_optimizer_steps_per_run": 500,
+      "current_total_policy_update_budget": 2500
     },
     "point_encoder": {
       "implemented_input_shape": [
@@ -464,7 +465,7 @@
         "point identities are reselected per observation window"
       ],
       "simple_candidate": {
-        "status": "not_implemented_or_trained",
+        "status": "implemented_and_300_step_tiny_learning_executed",
         "path": "shared per-point 16x8 flatten -> MLP 128->128->128->512 -> ACT tokens",
         "linear_sizes": [
           128,
@@ -478,7 +479,7 @@
         "point_interaction": "native ACT encoder",
         "scope": "fixed 16-frame history with explicit masks; no universal variable-length claim"
       },
-      "selection": "Compare the simple candidate and existing factorized encoder on the same diagnostic split before keeping extra complexity."
+      "selection": "Use the simple 99,072-parameter MLP for this pilot; both candidates fit tiny data but fail the old held-out static reference."
     },
     "gates": [
       {
@@ -694,7 +695,16 @@
         }
       ],
       "note": "Expert replay endpoints, not learned-policy results or a policy success ceiling. Retain all complete episodes; no silent success filtering."
-    }
+    },
+    "native_parity": {
+      "status": "complete",
+      "prior_action_max_difference": 0.0,
+      "training_loss_difference": 0.0,
+      "gradient_max_difference": 4.685716703534126e-09,
+      "hidden_queries_do_not_enter_actor": true,
+      "future_actions_do_not_enter_completion": true
+    },
+    "current_execution_root": "results/lehome_garment_folding/act-dev-validation-01"
   },
   "preflight": {
     "status": "complete",
@@ -812,7 +822,7 @@
     "offline_matches_checkpoint_receipt": true,
     "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b"
   },
-  "snapshot_utc": "2026-10-19T18:58:04.721564+00:00",
+  "snapshot_utc": "2026-10-19T19:21:03.689501+00:00",
   "capacity": {
     "total_instantiated": 74929807,
     "track_encoder": 3293952,
@@ -827,5 +837,515 @@
   },
   "training_progress": null,
   "formal_comparison": null,
+  "pilot_execution": {
+    "protocol": {
+      "schema": "act-developer-validation-1",
+      "authorization": "User requested one validation round on the developer machine; formal study remains on hold.",
+      "job_name": "ei-liupeiqi-wam-training",
+      "modes": [
+        "act",
+        "rgb_history",
+        "geometry",
+        "tracks",
+        "tracks_completion"
+      ],
+      "seed": 1000,
+      "optimizer_steps_per_mode": 500,
+      "effective_batch": 16,
+      "point_encoder": "mlp",
+      "point_learning_updates_per_candidate": 300,
+      "source_hashes": {
+        "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+        "act_pilot_data.py": "2b867602c8df684ef38512d561903ac4821da15609989ffa3828b81bcc2b2161",
+        "act_pilot_train.py": "22b06b6950273307399d27c12400abe70821dee85fe53ac2ba86eefa16511943",
+        "act_pilot_rollout.py": "6153a26a02efec3a01a1bc1f8a7d928fb0a6b81dc4df5fcc4bd0f685c55c3c64",
+        "act_pilot_run.sh": "32666199b0e500ee9f20532593ce252b83e5094c178db1b6f6efc2b46eb74501",
+        "run_act_pilot.py": "6a05cdbbebcbadd76b272f824b2d8e26995a25dcd6f9a10a09306e35da3e0a3f",
+        "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
+        "flow_data.py": "f4060cab4201fa91a4a42200f811ce00c9aa064f3e0627a4f77e48d5a9ce4679",
+        "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
+        "flow_training_state.py": "dcc394d2fab1e7ec582113f0d5ddee560c58335e1fb582fd9ffcdf4f7fa5c0d1",
+        "baseline_protocol.py": "cba137b158802399db6f38b6bfca648c9597a0cae891333e989cdfae368c628c"
+      },
+      "closed_loop": {
+        "garment": "Top_Long_Seen_0",
+        "pose_seeds": [
+          5001,
+          5002,
+          5003,
+          5004,
+          5005
+        ],
+        "execution_horizons": [
+          100,
+          10
+        ],
+        "maximum_steps": 600
+      },
+      "formal_training": false,
+      "new_node_allocated": false,
+      "point_information": "privileged simulation GT upper bound; not RGB-estimated flow",
+      "fingerprint": "4f0f0da201ea49ff32cbd39ccd8956c493f954dbd5b5498324531178e7bad277"
+    },
+    "status": {
+      "status": "running",
+      "stage": "training",
+      "snapshot_utc": "2026-10-19T19:20:34.528565+00:00",
+      "formal_training": false,
+      "protocol_fingerprint": "4f0f0da201ea49ff32cbd39ccd8956c493f954dbd5b5498324531178e7bad277",
+      "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+      "current_job": "train-act",
+      "mode": "act"
+    },
+    "parity": {
+      "status": "complete",
+      "optimizer_steps": 0,
+      "device": "cpu",
+      "native_classes_reused": true,
+      "prior_action_max_difference": 0.0,
+      "training_loss_difference": 0.0,
+      "gradient_max_difference": 4.685716703534126e-09,
+      "native_modeling_sha256": "69301fff11cbb8f4ba7bfe473a55ba488c3d2f89c25ecdfe512347a93b4ad04f",
+      "wrapper_sha256": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+      "hidden_queries_do_not_enter_actor": true,
+      "future_actions_do_not_enter_completion": true,
+      "auxiliary_posterior_gradients_zero": true,
+      "auxiliary_shared_gradients_connected": true,
+      "point_order_invariant": true,
+      "invalid_RGB_ignored": true,
+      "mlp_parameters": 99072,
+      "auxiliary_parameters": 348035
+    },
+    "point_learning": {
+      "status": "complete",
+      "policy_training": false,
+      "job_name": "ei-liupeiqi-wam-training",
+      "scope": "eight-window point-only memorization and one development garment validation; no RGB context",
+      "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b",
+      "training_indices": [
+        15,
+        44,
+        74,
+        103,
+        133,
+        162,
+        192,
+        222
+      ],
+      "results": {
+        "mlp": {
+          "steps": 300,
+          "encoder_parameters": 99072,
+          "initial_tiny": {
+            "EPE_mm": 6.595757603645325,
+            "static_EPE_mm": 6.60003125667572,
+            "moving_EPE_mm": 24.39355106218487,
+            "moving_static_EPE_mm": 24.397369817639074,
+            "windows": 8
+          },
+          "trained_tiny": {
+            "EPE_mm": 2.863372779554791,
+            "static_EPE_mm": 6.60003125667572,
+            "moving_EPE_mm": 6.954636134154407,
+            "moving_static_EPE_mm": 24.397369817639074,
+            "windows": 8
+          },
+          "validation": {
+            "EPE_mm": 16.16835827912177,
+            "static_EPE_mm": 13.815953069971549,
+            "moving_EPE_mm": 44.86053784671105,
+            "moving_static_EPE_mm": 41.220951756258025,
+            "windows": 119
+          },
+          "losses": [
+            {
+              "step": 1,
+              "loss": 0.029324930161237717
+            },
+            {
+              "step": 51,
+              "loss": 0.027972092851996422
+            },
+            {
+              "step": 101,
+              "loss": 0.021525021642446518
+            },
+            {
+              "step": 151,
+              "loss": 0.011738814413547516
+            },
+            {
+              "step": 201,
+              "loss": 0.006802974734455347
+            },
+            {
+              "step": 251,
+              "loss": 0.004335033241659403
+            },
+            {
+              "step": 300,
+              "loss": 0.0029877987690269947
+            }
+          ],
+          "elapsed_seconds": 3.1374321370385587
+        },
+        "factorized": {
+          "steps": 300,
+          "encoder_parameters": 3293952,
+          "initial_tiny": {
+            "EPE_mm": 6.593210332923466,
+            "static_EPE_mm": 6.60003125667572,
+            "moving_EPE_mm": 24.4034395150259,
+            "moving_static_EPE_mm": 24.397369817639074,
+            "windows": 8
+          },
+          "trained_tiny": {
+            "EPE_mm": 5.108309951093462,
+            "static_EPE_mm": 6.60003125667572,
+            "moving_EPE_mm": 10.165985594404505,
+            "moving_static_EPE_mm": 24.397369817639074,
+            "windows": 8
+          },
+          "validation": {
+            "EPE_mm": 17.001842271100294,
+            "static_EPE_mm": 13.815953069971549,
+            "moving_EPE_mm": 42.54099801607232,
+            "moving_static_EPE_mm": 41.220951756258025,
+            "windows": 119
+          },
+          "losses": [
+            {
+              "step": 1,
+              "loss": 0.029321227222681046
+            },
+            {
+              "step": 51,
+              "loss": 0.028446445241570473
+            },
+            {
+              "step": 101,
+              "loss": 0.02399004064500332
+            },
+            {
+              "step": 151,
+              "loss": 0.017074527218937874
+            },
+            {
+              "step": 201,
+              "loss": 0.01298857107758522
+            },
+            {
+              "step": 251,
+              "loss": 0.008048471063375473
+            },
+            {
+              "step": 300,
+              "loss": 0.006345000118017197
+            }
+          ],
+          "elapsed_seconds": 5.804218557197601
+        }
+      },
+      "warning": "Point-only validation cannot establish the usefulness of the RGB-conditioned policy auxiliary task."
+    },
+    "resume": {
+      "status": "complete",
+      "optimizer_steps": 2,
+      "checks": {
+        "model": true,
+        "optimizer": true,
+        "rng": true,
+        "step": true,
+        "best_validation": true,
+        "recipe_fingerprint": true,
+        "code_hashes": true
+      },
+      "actual_RGB_hw": [
+        480,
+        640
+      ]
+    },
+    "references": {
+      "status": "complete",
+      "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+      "windows": 427,
+      "action_prior_normalized_L1": {
+        "train_mean": 0.8362220178704852,
+        "current_joints": 0.960322113969149
+      },
+      "completion": {
+        "valid_vectors": 284400,
+        "moving_vectors": 84358,
+        "static_EPE_mm": 14.212699153450684,
+        "static_moving_EPE_mm": 46.05298085870197,
+        "nearest_EPE_mm": 12.217009425562452,
+        "nearest_moving_EPE_mm": 30.126456567825123,
+        "knn3_EPE_mm": 11.811367902022662,
+        "knn3_moving_EPE_mm": 27.578126557713784
+      },
+      "scope": "All four development validation episodes; identical point windows as policy validation."
+    },
+    "comparison": null,
+    "closed_loop": null,
+    "dataset": {
+      "fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+      "statistics_source": "episodes 0..15 only",
+      "episodes": [
+        {
+          "episode": 0,
+          "split": "train",
+          "actions": 315,
+          "windows": 105,
+          "expert_final_success": false,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 1,
+          "split": "train",
+          "actions": 308,
+          "windows": 103,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 2,
+          "split": "train",
+          "actions": 297,
+          "windows": 99,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 3,
+          "split": "train",
+          "actions": 312,
+          "windows": 104,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 4,
+          "split": "train",
+          "actions": 350,
+          "windows": 117,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 5,
+          "split": "train",
+          "actions": 299,
+          "windows": 100,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 6,
+          "split": "train",
+          "actions": 298,
+          "windows": 100,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 7,
+          "split": "train",
+          "actions": 309,
+          "windows": 103,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 8,
+          "split": "train",
+          "actions": 307,
+          "windows": 103,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 9,
+          "split": "train",
+          "actions": 336,
+          "windows": 112,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 10,
+          "split": "train",
+          "actions": 325,
+          "windows": 109,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 11,
+          "split": "train",
+          "actions": 318,
+          "windows": 106,
+          "expert_final_success": false,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 12,
+          "split": "train",
+          "actions": 322,
+          "windows": 108,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 13,
+          "split": "train",
+          "actions": 323,
+          "windows": 108,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 14,
+          "split": "train",
+          "actions": 307,
+          "windows": 103,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 15,
+          "split": "train",
+          "actions": 322,
+          "windows": 108,
+          "expert_final_success": false,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 16,
+          "split": "validation",
+          "actions": 323,
+          "windows": 108,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 17,
+          "split": "validation",
+          "actions": 329,
+          "windows": 110,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 18,
+          "split": "validation",
+          "actions": 329,
+          "windows": 110,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        },
+        {
+          "episode": 19,
+          "split": "validation",
+          "actions": 297,
+          "windows": 99,
+          "expert_final_success": true,
+          "rgb_cache_byte_equal": true
+        }
+      ]
+    },
+    "training": {
+      "act": {
+        "manifest": {
+          "schema": "act-dev-pilot-1",
+          "status": "running",
+          "mode": "act",
+          "recipe": {
+            "config": {
+              "mode": "act",
+              "point_encoder": "mlp",
+              "history": 16,
+              "cameras": 3,
+              "input_points": 16,
+              "hidden_points": 48,
+              "action_dim": 12,
+              "chunk": 100,
+              "n_action_steps": 100,
+              "rgb_height": 480,
+              "rgb_width": 640,
+              "dropout": 0.1,
+              "backbone_batch": 6,
+              "spatial_scale_m": 0.5,
+              "motion_scale_m": 0.05,
+              "auxiliary_weight": 0.1,
+              "kl_weight": 10.0
+            },
+            "steps": 500,
+            "seed": 1000,
+            "batch_size": 1,
+            "accumulate": 16,
+            "lr": 1e-05,
+            "weight_decay": 0.0001,
+            "clip": 10,
+            "schedule": "constant",
+            "precision": "bfloat16",
+            "workers": 2,
+            "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+            "imagenet_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec"
+          },
+          "code_hashes": {
+            "act_history_policy.py": "b47b5a89d056ce8d6740bef089b7fb731f81fd0bf1f2c9c41f7dd3a1683df9cf",
+            "act_pilot_data.py": "2b867602c8df684ef38512d561903ac4821da15609989ffa3828b81bcc2b2161",
+            "act_pilot_train.py": "22b06b6950273307399d27c12400abe70821dee85fe53ac2ba86eefa16511943",
+            "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
+            "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
+            "flow_training_state.py": "dcc394d2fab1e7ec582113f0d5ddee560c58335e1fb582fd9ffcdf4f7fa5c0d1",
+            "native_ACT": "69301fff11cbb8f4ba7bfe473a55ba488c3d2f89c25ecdfe512347a93b4ad04f"
+          },
+          "job_name": "ei-liupeiqi-wam-training",
+          "initial_model_sha256": "fe251ee4725665e4944a4bf346c41850a02efdd77f5c2562754d2e49df7bafaf",
+          "initial_ACT_core_sha256": "b5a97db5347f325014b8fe0bdc9afdccdf08d7e8452503920baaf7e2c98ed012",
+          "source_commit": "acfa92275f27b1f92a98d392ec02c8aae350465e",
+          "parameters": 52056591,
+          "point_parameters": 99072,
+          "auxiliary_parameters": 348035,
+          "training_windows": 1688,
+          "validation_windows": 427,
+          "formal_training": false,
+          "CUDA_VISIBLE_DEVICES": "2",
+          "best_checkpoint_criterion": "full_validation_prior_zero_action_L1",
+          "test_used": false,
+          "RGB_only_GT_reads": 0,
+          "completed_optimizer_steps": 1,
+          "elapsed_seconds": 2.0355216450989246
+        },
+        "latest": {
+          "step": 1,
+          "loss": 82.91404438018799,
+          "action_loss": 0.9154033353552222,
+          "kl_loss": 8.199864208698273,
+          "auxiliary_loss": 0.0,
+          "gradient_norm": 1153.3619384765625,
+          "update_seconds": 2.0333627150394022,
+          "elapsed_seconds": 2.0355216450989246,
+          "peak_reserved_bytes": 1310720000
+        },
+        "curve": [
+          {
+            "step": 1,
+            "loss": 82.91404438018799,
+            "action_loss": 0.9154033353552222,
+            "kl_loss": 8.199864208698273,
+            "auxiliary_loss": 0.0,
+            "gradient_norm": 1153.3619384765625,
+            "update_seconds": 2.0333627150394022,
+            "elapsed_seconds": 2.0355216450989246,
+            "peak_reserved_bytes": 1310720000
+          }
+        ],
+        "validation": []
+      }
+    },
+    "videos": []
+  },
   "videos": []
 }
