@@ -1,0 +1,165 @@
+{
+  "case_count": 8,
+  "method_case_metrics_recomputed": 80,
+  "RGB_source_parity_checks": 384,
+  "checkpoint_receipts": 8,
+  "maximum_display_xyz_rounding_error_m": 1.1878571079462602e-07,
+  "3NN_numpy_torch_parity": true,
+  "known_current_endpoint_excluded": true,
+  "all_past_slots_valid": true,
+  "renderer_sha256": "2d6029fddc78b0f4d5bca9d07bc193efeb01a25ad4ad161fdfc357b6e429b398",
+  "rendered": [
+    {
+      "path": "episode-016-middle/comparison-1500.png",
+      "sha256": "1dfc0ddf054b88412fc43f715f7729b4dfeb09c8a939a87eb95fd2134c03a57f",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-016-middle/comparison-2000.png",
+      "sha256": "ba13e178204b913cb906a7a5f21b59a76ef941898622a2f6339618833b1855d5",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-016-observed-motion/comparison-1500.png",
+      "sha256": "3d57a9297120522a46112ccf78640d95c625311710edb21b26b55b3828189f53",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-016-observed-motion/comparison-2000.png",
+      "sha256": "4e34bdc5e8353c6684abe535cedf76b3f56a03abe00bbd1b69db71b6bb0ac635",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-016-observed-motion/comparison-2000.mp4",
+      "sha256": "5619440da179e18e6bbfa0e10f4602cc0b33f9276654f2c50efe66e1a97703e7",
+      "frames": 192,
+      "fps": 30,
+      "seconds": 6.4
+    },
+    {
+      "path": "episode-017-middle/comparison-1500.png",
+      "sha256": "18a030ebba0a2aa39db9cd8271787460d2280273b7bb942674324228c33c393a",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-017-middle/comparison-2000.png",
+      "sha256": "c53d211ef6f3510f48284882c50d0a407eb9db5221fbcd2bd7af373976300bcb",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-017-observed-motion/comparison-1500.png",
+      "sha256": "110a625a16780b117075b32653210b8c981a0db1fedd8c1920c97c3851a1ee5d",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-017-observed-motion/comparison-2000.png",
+      "sha256": "f9984232acd1d4f59722570a39d522646647a263ee91c88be747122536f26922",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-018-middle/comparison-1500.png",
+      "sha256": "f3cafef5711a6c504b977ca72b7e64f77f5e061c59de713efa59385f7bb92db0",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-018-middle/comparison-2000.png",
+      "sha256": "c16a99c818d5bdf0aadc74fd036ee4b85652969220b2a5b9b01422c954e114f8",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-018-observed-motion/comparison-1500.png",
+      "sha256": "418445b9eb521a6cba8bdb4f4bccf9a6d328c00b75af5091ed89614b9cb07706",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-018-observed-motion/comparison-2000.png",
+      "sha256": "4efbfdbd89da4a5d2b343c82590bbbdb290764d3c328e0828a5d91b9e8a19eb9",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-018-observed-motion/comparison-2000.mp4",
+      "sha256": "06118462720af08723e0d1a16d7be733796e28ab733a080651c1533d6013694a",
+      "frames": 192,
+      "fps": 30,
+      "seconds": 6.4
+    },
+    {
+      "path": "episode-019-middle/comparison-1500.png",
+      "sha256": "1455c4acc0675011d8207abdd9183103aba8994991379d2fe8387586f8a12b93",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-019-middle/comparison-2000.png",
+      "sha256": "64ca760adb16afb17a8b7164508dbbfa333e3417963f6d43f290dfdf67bad9a8",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-019-observed-motion/comparison-1500.png",
+      "sha256": "15e38debfc86dea83a99af17918e8aa18a85db71d9b88187a4f5442df8f5acc0",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "path": "episode-019-observed-motion/comparison-2000.png",
+      "sha256": "236132b470e75bb5f7e11300296182723d7295d116a96420105aacc51f025952",
+      "size": [
+        1920,
+        1080
+      ]
+    }
+  ],
+  "video_cases_predeclared": [
+    "episode-016-observed-motion",
+    "episode-018-observed-motion"
+  ],
+  "projection_pixel_parity_with_frozen_flow_data": {
+    "front_camera_points": 13404,
+    "behind_camera_points_masked": 5028,
+    "cameras": 3,
+    "cases": 8
+  }
+}

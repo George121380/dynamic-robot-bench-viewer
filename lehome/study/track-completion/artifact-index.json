@@ -1,0 +1,320 @@
+{
+  "files": [
+    {
+      "path": "episode-016-middle/comparison-1500.png",
+      "bytes": 382583,
+      "sha256": "1dfc0ddf054b88412fc43f715f7729b4dfeb09c8a939a87eb95fd2134c03a57f"
+    },
+    {
+      "path": "episode-016-middle/comparison-2000.png",
+      "bytes": 384891,
+      "sha256": "ba13e178204b913cb906a7a5f21b59a76ef941898622a2f6339618833b1855d5"
+    },
+    {
+      "path": "episode-016-middle/data.json",
+      "bytes": 573914,
+      "sha256": "cc3e5119eedab0f4857d6cd1a6f11b5525b0485806cdd48c9e1c1167b9cd8d2b"
+    },
+    {
+      "path": "episode-016-middle/left-sprite.jpg",
+      "bytes": 786791,
+      "sha256": "8c22105201a1506c98ea1c58aa0286280ec09d176434dfa11dfba581a9c149b2"
+    },
+    {
+      "path": "episode-016-middle/right-sprite.jpg",
+      "bytes": 716541,
+      "sha256": "b1365d091106b38fd37599ddac47affed9f16e4a14c6262463510090201239b5"
+    },
+    {
+      "path": "episode-016-middle/top-sprite.jpg",
+      "bytes": 1015419,
+      "sha256": "dbf5fbbc15eb7628d613fe3e2046e3c080c2211528439d0c07e463f6428dbf48"
+    },
+    {
+      "path": "episode-016-middle/trajectories.npz",
+      "bytes": 86957,
+      "sha256": "a7a5dec6d8bbc7b9b55a75d25d79374f51c9de9dc52d449b4a97327bcc54b8f2"
+    },
+    {
+      "path": "episode-016-observed-motion/comparison-1500.png",
+      "bytes": 406830,
+      "sha256": "3d57a9297120522a46112ccf78640d95c625311710edb21b26b55b3828189f53"
+    },
+    {
+      "path": "episode-016-observed-motion/comparison-2000.mp4",
+      "bytes": 6490248,
+      "sha256": "5619440da179e18e6bbfa0e10f4602cc0b33f9276654f2c50efe66e1a97703e7"
+    },
+    {
+      "path": "episode-016-observed-motion/comparison-2000.png",
+      "bytes": 407773,
+      "sha256": "4e34bdc5e8353c6684abe535cedf76b3f56a03abe00bbd1b69db71b6bb0ac635"
+    },
+    {
+      "path": "episode-016-observed-motion/data.json",
+      "bytes": 571806,
+      "sha256": "e385b6357d830911de60052cd0900f0ca1cac7c1bbb8589b2ff8e30634b07224"
+    },
+    {
+      "path": "episode-016-observed-motion/left-sprite.jpg",
+      "bytes": 1097911,
+      "sha256": "2e1efbe25636cfb250d3c7751bb6d48347bae3a68af967e60acbc2308618e6d3"
+    },
+    {
+      "path": "episode-016-observed-motion/right-sprite.jpg",
+      "bytes": 1114988,
+      "sha256": "cf731c69319c8c66e937e21906a2c68c79b22fe38ddd18bafc0d1a7076154109"
+    },
+    {
+      "path": "episode-016-observed-motion/top-sprite.jpg",
+      "bytes": 957648,
+      "sha256": "aa6195f9e6359c8417137262f46e86235084ebb3ac77907cc70c9319915d7451"
+    },
+    {
+      "path": "episode-016-observed-motion/trajectories.npz",
+      "bytes": 88635,
+      "sha256": "eb3b3882f33b9ff4ea76296ad33f9c122fd95fb426018f457bea415b41537eb2"
+    },
+    {
+      "path": "episode-017-middle/comparison-1500.png",
+      "bytes": 383669,
+      "sha256": "18a030ebba0a2aa39db9cd8271787460d2280273b7bb942674324228c33c393a"
+    },
+    {
+      "path": "episode-017-middle/comparison-2000.png",
+      "bytes": 384712,
+      "sha256": "c53d211ef6f3510f48284882c50d0a407eb9db5221fbcd2bd7af373976300bcb"
+    },
+    {
+      "path": "episode-017-middle/data.json",
+      "bytes": 572991,
+      "sha256": "0e0eb82214d20aadd08f3f7f7d746e4c752f40a8c2b21e016a646a180032529c"
+    },
+    {
+      "path": "episode-017-middle/left-sprite.jpg",
+      "bytes": 897494,
+      "sha256": "bfda99838ec24681e10e795af21f67ed3691ac757c3fad4a7e7c269742ff223a"
+    },
+    {
+      "path": "episode-017-middle/right-sprite.jpg",
+      "bytes": 760908,
+      "sha256": "b24f2004cb6b6fc01175935ae5cd0b52a7f9bff152943543f0689ff617dc1090"
+    },
+    {
+      "path": "episode-017-middle/top-sprite.jpg",
+      "bytes": 1003695,
+      "sha256": "5f96b9a9f5b3282b9d2a6ec9cea5b108133e041e13ecf5166d47f6ff07bcaa24"
+    },
+    {
+      "path": "episode-017-middle/trajectories.npz",
+      "bytes": 86917,
+      "sha256": "86419a8f017da276e01a2fa19bbfdd11cbe628886a0849df33dc44c0c9f41c06"
+    },
+    {
+      "path": "episode-017-observed-motion/comparison-1500.png",
+      "bytes": 407850,
+      "sha256": "110a625a16780b117075b32653210b8c981a0db1fedd8c1920c97c3851a1ee5d"
+    },
+    {
+      "path": "episode-017-observed-motion/comparison-2000.png",
+      "bytes": 407301,
+      "sha256": "f9984232acd1d4f59722570a39d522646647a263ee91c88be747122536f26922"
+    },
+    {
+      "path": "episode-017-observed-motion/data.json",
+      "bytes": 571109,
+      "sha256": "eab707c88ed22264fa78e8f03fa3452fc7dd1e04036ebf5258f55d539d39a8c0"
+    },
+    {
+      "path": "episode-017-observed-motion/left-sprite.jpg",
+      "bytes": 1169072,
+      "sha256": "2a5190bebab8983a6704baa127fcb30b7ab1645f38da6f595a5c2c6db7884a8d"
+    },
+    {
+      "path": "episode-017-observed-motion/right-sprite.jpg",
+      "bytes": 1187320,
+      "sha256": "7a2c853a5c3a8b27912c1386d84ac0f69783e2e0d45fb7c4f87e66c98c4e2b5f"
+    },
+    {
+      "path": "episode-017-observed-motion/top-sprite.jpg",
+      "bytes": 937184,
+      "sha256": "61c4b05f30b0c671aa255ee1a0fa4338c8ce2c0a759314c9c62dd84062911cb0"
+    },
+    {
+      "path": "episode-017-observed-motion/trajectories.npz",
+      "bytes": 88817,
+      "sha256": "dcf93f5ae43dfbd5f1951fd68cf79fda9d5057640502c87e1d673833b427363f"
+    },
+    {
+      "path": "episode-018-middle/comparison-1500.png",
+      "bytes": 381178,
+      "sha256": "f3cafef5711a6c504b977ca72b7e64f77f5e061c59de713efa59385f7bb92db0"
+    },
+    {
+      "path": "episode-018-middle/comparison-2000.png",
+      "bytes": 380983,
+      "sha256": "c16a99c818d5bdf0aadc74fd036ee4b85652969220b2a5b9b01422c954e114f8"
+    },
+    {
+      "path": "episode-018-middle/data.json",
+      "bytes": 575699,
+      "sha256": "d13a18bd80f3588193987b4b350c195c654c88ce561116c3f012090c1a967b80"
+    },
+    {
+      "path": "episode-018-middle/left-sprite.jpg",
+      "bytes": 890135,
+      "sha256": "f32a758361058515a36eb8241601762c620914e14fce6d096549261ce44b85e8"
+    },
+    {
+      "path": "episode-018-middle/right-sprite.jpg",
+      "bytes": 705849,
+      "sha256": "f1640a6b4662f6356b040acaf9f5593d959a694de6b0b1b19e866a720c64134f"
+    },
+    {
+      "path": "episode-018-middle/top-sprite.jpg",
+      "bytes": 981164,
+      "sha256": "8eb6273838245016aaeac1e759823f4a2bb37c6965ebc10b08f027e363dbca51"
+    },
+    {
+      "path": "episode-018-middle/trajectories.npz",
+      "bytes": 86835,
+      "sha256": "def77b45e0c596e0da423905a2f437552a7338597dea2c9395b85e228007e69b"
+    },
+    {
+      "path": "episode-018-observed-motion/comparison-1500.png",
+      "bytes": 390751,
+      "sha256": "418445b9eb521a6cba8bdb4f4bccf9a6d328c00b75af5091ed89614b9cb07706"
+    },
+    {
+      "path": "episode-018-observed-motion/comparison-2000.mp4",
+      "bytes": 6244098,
+      "sha256": "06118462720af08723e0d1a16d7be733796e28ab733a080651c1533d6013694a"
+    },
+    {
+      "path": "episode-018-observed-motion/comparison-2000.png",
+      "bytes": 390100,
+      "sha256": "4efbfdbd89da4a5d2b343c82590bbbdb290764d3c328e0828a5d91b9e8a19eb9"
+    },
+    {
+      "path": "episode-018-observed-motion/data.json",
+      "bytes": 576387,
+      "sha256": "ab8e0953ecf13b83bb826f7ecb6b86f24f32ad5658eca423662a24700547f477"
+    },
+    {
+      "path": "episode-018-observed-motion/left-sprite.jpg",
+      "bytes": 1147820,
+      "sha256": "bc096b04dde6dd4d262140efeb6f99a38eaf0b49db3781cedb7f73e8f89de7f5"
+    },
+    {
+      "path": "episode-018-observed-motion/right-sprite.jpg",
+      "bytes": 1110391,
+      "sha256": "b0f1fc938165d87462a027faa18be36b1dddd6609a6882906b223295729a1edc"
+    },
+    {
+      "path": "episode-018-observed-motion/top-sprite.jpg",
+      "bytes": 942605,
+      "sha256": "16aa5eb1845032951fb09a6496aa2aad809187dfff9fd089db3c9845d7a5bda5"
+    },
+    {
+      "path": "episode-018-observed-motion/trajectories.npz",
+      "bytes": 88673,
+      "sha256": "a76decd0fc8a3301ee802536a5ff51860af95aadb5e19a7772e5ce96ff9c7533"
+    },
+    {
+      "path": "episode-019-middle/comparison-1500.png",
+      "bytes": 371478,
+      "sha256": "1455c4acc0675011d8207abdd9183103aba8994991379d2fe8387586f8a12b93"
+    },
+    {
+      "path": "episode-019-middle/comparison-2000.png",
+      "bytes": 371637,
+      "sha256": "64ca760adb16afb17a8b7164508dbbfa333e3417963f6d43f290dfdf67bad9a8"
+    },
+    {
+      "path": "episode-019-middle/data.json",
+      "bytes": 573601,
+      "sha256": "3f5dfc47a84d5d724a071dc0109123e21388d8bf5b405b1e4aab35d035b414fa"
+    },
+    {
+      "path": "episode-019-middle/left-sprite.jpg",
+      "bytes": 852632,
+      "sha256": "904690350b9363127d93a0d6958915d72eb5f0dccb9b9d8b099fcd42c37384dc"
+    },
+    {
+      "path": "episode-019-middle/right-sprite.jpg",
+      "bytes": 829234,
+      "sha256": "b2019d516113c7ede798656b3849a3b30508926741e86bc1bb7ba6e0e27c75da"
+    },
+    {
+      "path": "episode-019-middle/top-sprite.jpg",
+      "bytes": 985793,
+      "sha256": "a6510608785c2e9c7e0766ed93d5e0df3fd3d6c23986eb9078ba68a9107508f0"
+    },
+    {
+      "path": "episode-019-middle/trajectories.npz",
+      "bytes": 86633,
+      "sha256": "305699f2a0a77eeabff386933e6214aa2e419e98fb9905ef8d4bc7375726158b"
+    },
+    {
+      "path": "episode-019-observed-motion/comparison-1500.png",
+      "bytes": 412960,
+      "sha256": "15e38debfc86dea83a99af17918e8aa18a85db71d9b88187a4f5442df8f5acc0"
+    },
+    {
+      "path": "episode-019-observed-motion/comparison-2000.png",
+      "bytes": 412939,
+      "sha256": "236132b470e75bb5f7e11300296182723d7295d116a96420105aacc51f025952"
+    },
+    {
+      "path": "episode-019-observed-motion/data.json",
+      "bytes": 571781,
+      "sha256": "a7e84879166013e657d807ec718eb801e5b587ba3e5cafe0708ed6014ff2afc8"
+    },
+    {
+      "path": "episode-019-observed-motion/left-sprite.jpg",
+      "bytes": 1133961,
+      "sha256": "4145fb70ad4a4b8fec8548aad839310d6b24f9212c1a1ce70f075dddb8bd29a1"
+    },
+    {
+      "path": "episode-019-observed-motion/right-sprite.jpg",
+      "bytes": 1170359,
+      "sha256": "98a3f439a512145ac6e9fdd5f38a5033efe3010a3dc0967e7361f6e83b84c1fa"
+    },
+    {
+      "path": "episode-019-observed-motion/top-sprite.jpg",
+      "bytes": 935381,
+      "sha256": "3224295ca0753f7111966afb6f6bc6b7ca50e37c03fcbbcb4e90973dc51fd25c"
+    },
+    {
+      "path": "episode-019-observed-motion/trajectories.npz",
+      "bytes": 88690,
+      "sha256": "a9038f612b271c2904bf47b27018e39479c3005b67b51a7e5ac2a4cce66b6a5e"
+    },
+    {
+      "path": "index.html",
+      "bytes": 18298,
+      "sha256": "f2a1ce6f06ef3939e251428a802232fe148d226b866d3d182d17c1a1604e11f2"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 14900,
+      "sha256": "cd58b0059a5f2d9ae7ade3db2c2eb57b2994170ba803ecfd465e0a35e34ceadd"
+    },
+    {
+      "path": "selection.json",
+      "bytes": 1639,
+      "sha256": "57199eef2ec63df0f1c016f2a3235cdae0188e623bfe7e04a5967eac972bbf30"
+    },
+    {
+      "path": "status.json",
+      "bytes": 232,
+      "sha256": "f258ccc53f2b1336aecb5af1dd19bca62ce5d6f994ac629ca4ce1c4e35467e74"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 4458,
+      "sha256": "28fea08724454e47a3ef554bb0aafe2a0533bc793e3961602bcd491960f50dc3"
+    }
+  ],
+  "bytes": 47671248
+}
