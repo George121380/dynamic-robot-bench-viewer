@@ -1,0 +1,621 @@
+{
+  "status": "design_review_passed_after_corrections_study_running",
+  "formal_results_available": false,
+  "scientific_execution_source_commit": "ac703750a47c930ce87169132850d4c93deced03",
+  "protocol_fingerprint": "1f83b1bd7e5b420d0ee86be9c364c55a3642054cb0f62359f2d29e85bcb23398",
+  "unit_tests": {
+    "Baidu_LeHome": {
+      "run": 31,
+      "passed": 31,
+      "skipped": 0
+    },
+    "Mac_all_CPU": {
+      "run": 80,
+      "passed": 61,
+      "skipped": 19
+    }
+  },
+  "full_model_preflight": {
+    "status": "complete",
+    "engineering_only": true,
+    "formal_training_performed": false,
+    "full_controls": true,
+    "controls": {
+      "rgb_history": {
+        "steps": 6,
+        "initial_model_sha256": "c41e0b5ab74b6a4f475c950a4e152d43eaddbbdabaca99da757005ea8ed7469c",
+        "best_validation": {
+          "step": 6,
+          "split": "validation",
+          "windows": 2,
+          "prior_action_L1": 0.98509275566027,
+          "action_MAE_radians": 0.4391924609644128,
+          "aggregation": "valid_element_weighted"
+        },
+        "RGB_H_uses_GT_fields": false
+      },
+      "geometry": {
+        "steps": 6,
+        "initial_model_sha256": "c41e0b5ab74b6a4f475c950a4e152d43eaddbbdabaca99da757005ea8ed7469c",
+        "best_validation": {
+          "step": 6,
+          "split": "validation",
+          "windows": 2,
+          "prior_action_L1": 0.9721817198694717,
+          "action_MAE_radians": 0.4347116769710405,
+          "aggregation": "valid_element_weighted"
+        },
+        "RGB_H_uses_GT_fields": false
+      },
+      "tracks": {
+        "steps": 6,
+        "initial_model_sha256": "c41e0b5ab74b6a4f475c950a4e152d43eaddbbdabaca99da757005ea8ed7469c",
+        "best_validation": {
+          "step": 6,
+          "split": "validation",
+          "windows": 2,
+          "prior_action_L1": 0.9721088903235772,
+          "action_MAE_radians": 0.43466671693672254,
+          "aggregation": "valid_element_weighted"
+        },
+        "RGB_H_uses_GT_fields": false
+      },
+      "tracks_completion": {
+        "steps": 6,
+        "initial_model_sha256": "c41e0b5ab74b6a4f475c950a4e152d43eaddbbdabaca99da757005ea8ed7469c",
+        "best_validation": {
+          "step": 6,
+          "split": "validation",
+          "windows": 2,
+          "prior_action_L1": 0.9734674750022518,
+          "action_MAE_radians": 0.435323620305478,
+          "aggregation": "valid_element_weighted",
+          "completion_EPE_mm": 3.241988354259067,
+          "static_EPE_mm": 2.3311346769332886,
+          "completion_static_gate_pass": false,
+          "moving_EPE_mm": 4.678686041581003,
+          "moving_static_EPE_mm": 3.6718276509067467
+        },
+        "RGB_H_uses_GT_fields": false
+      }
+    },
+    "observation_protocol": {
+      "history_frames": 16,
+      "history_stride": 3,
+      "physics_hz": 90,
+      "RGB_hw": [
+        480,
+        640
+      ],
+      "cameras": 3,
+      "joints": 12,
+      "chunk": 100
+    },
+    "exact_resume": {
+      "passed": true,
+      "interrupted_at_step": 3,
+      "final_step": 6,
+      "workers": 2,
+      "model_max_difference": 0,
+      "optimizer_scheduler_RNG_cursor_identical": true,
+      "changed_recipe_rejected": true
+    },
+    "full_architecture": {
+      "parameters": 74929807,
+      "steps": 2,
+      "status": "complete"
+    },
+    "offline_evaluation": {
+      "status": "complete",
+      "split": "validation",
+      "checkpoint_sha256": "631b4362726ff79088dee32d4b72c2b52a5411434dbcfad1c9b881030b041d2a",
+      "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b",
+      "mode": "tracks_completion",
+      "window_indices": [
+        0,
+        118
+      ],
+      "all_windows": false,
+      "pilot": true,
+      "closed_loop": false,
+      "windows": 2,
+      "prior_action_L1": 0.9734674750022518,
+      "action_MAE_radians": 0.435323620305478,
+      "aggregation": "valid_element_weighted",
+      "completion_EPE_mm": 3.241988354259067,
+      "static_EPE_mm": 2.3311346769332886,
+      "completion_static_gate_pass": false,
+      "moving_EPE_mm": 4.678686041581003,
+      "moving_static_EPE_mm": 3.6718276509067467
+    },
+    "offline_matches_checkpoint_receipt": true,
+    "dataset_fingerprint": "89a2086e7a02e1a8687c348f6b718d98189de520de00ca11427e6266211a564b"
+  },
+  "parameter_groups": {
+    "total_instantiated": 74929807,
+    "track_encoder": 3293952,
+    "auxiliary_head": 11037443,
+    "training_active_parameter_upper_bounds": {
+      "rgb_history": 60598412,
+      "geometry": 63892364,
+      "tracks": 63892364,
+      "tracks_completion": 74929807
+    },
+    "caveat": "Shared parameter skeleton does not imply equal active capacity. Tracks versus Geometry shares the active architecture; Tracks+Completion versus Tracks shares inference capacity. RGB-H versus Flow also changes the extra input encoder."
+  },
+  "registered_protocol": {
+    "schema": 1,
+    "id": "flow-study-01",
+    "modes": [
+      "rgb_history",
+      "geometry",
+      "tracks",
+      "tracks_completion"
+    ],
+    "training_seeds": [
+      1000,
+      1001,
+      1002
+    ],
+    "source_hashes": {
+      "flow_policy.py": "68870299e1ca4bde6f4ab97d95959e96afc9ef8b7b5861ba2b1db90ee9d38480",
+      "flow_data.py": "f4060cab4201fa91a4a42200f811ce00c9aa064f3e0627a4f77e48d5a9ce4679",
+      "flow_track_cache.py": "41609925f6dabc4df279b868b4408853d458225fa04d898b920010120b661aa2",
+      "flow_training.py": "5d9091a3c571e6d34acd07120f3bb11b8cdb5633796c302ae8ef33a8ff0f9ead",
+      "flow_training_state.py": "dcc394d2fab1e7ec582113f0d5ddee560c58335e1fb582fd9ffcdf4f7fa5c0d1",
+      "flow_dataset.py": "1fc20d2056d55acb2a6a374acae76af43cb06faabc9e75c2f644686f67fec6e9",
+      "flow_metrics.py": "6aa6fa3c8e12bfda9c06abbb9ff9796a102bdee9ee8b0c9026759aad2a02b0c3",
+      "flow_rollout.py": "113235275f1b235e24e13e912fdaf025850685a56cae5a31776f5d33588963a3",
+      "baseline_protocol.py": "cba137b158802399db6f38b6bfca648c9597a0cae891333e989cdfae368c628c",
+      "run_flow_study.py": "65d9d89b3621395787fc2f4e91ac9cf2c0531f96ec469a2e6997824ec0ef4949",
+      "flow_study_protocol.py": "8b3ce66e60712aee1fc9da75fc4591f273fddcc56fadef005b07f83c4781a8f5",
+      "collect_flow.py": "934aad5463bc2b7e328a87153a944a468e530dd386171981a1eca24da7e8c6b7",
+      "collect_flow_dataset.py": "b3de1386f9e8708fa0a3387867c05e5108ff5c966fb21cc0759e3768de2aad59",
+      "run.sh": "61a53694093624fc1bfe727f07d5ec483ec518f66986fdf99fcd9d735e0f52e9",
+      "prepare_runtime.py": "ec6fa30466c90af00cfd0ee078eb6b9ac86a8258b73efc514683e271c77f0735",
+      "lock.json": "fda4b4fe00b5612699b851276f455ed7fcd0ef25566738a5a09c074c089fce1b"
+    },
+    "config": {
+      "schema": 1,
+      "model": {
+        "motion_scale_m": 0.05,
+        "residual_completion_init": true,
+        "n_action_steps": 10,
+        "backbone_batch": 6,
+        "checkpoint_backbone": false
+      },
+      "training": {
+        "steps": 30000,
+        "accumulate": 16,
+        "batch_size": 1,
+        "workers": 2,
+        "lr": 1e-05,
+        "backbone_lr": 1e-05,
+        "weight_decay": 0.0001,
+        "schedule": "cosine",
+        "warmup_steps": 500,
+        "minimum_lr_ratio": 0.1,
+        "gradient_clip": 1.0,
+        "precision": "bfloat16",
+        "deterministic": true,
+        "cpu_threads": 4,
+        "image_cache_mb": 128,
+        "point_sampling": "fixed",
+        "validation_seed": 2026,
+        "eval_every": 500,
+        "eval_windows": 128,
+        "save_every": 1000,
+        "log_every": 100,
+        "cuda_memory_limit_gib": 16,
+        "trajectory_cache": true
+      }
+    },
+    "source_dataset_revision": "2bfdd30795ae25bba189649bf71cbb33f5b2a03c",
+    "data": {
+      "episodes": 250,
+      "train": "Seen_0..7, 25 episodes each",
+      "validation": "Seen_8, 25 episodes",
+      "offline_test": "Seen_9, 25 episodes",
+      "success_filter": "none",
+      "RGB": "same newly rendered synchronized replay in every condition",
+      "statistics": "training garments only; no normalization fitted on validation/test"
+    },
+    "observation": {
+      "history_frames": 16,
+      "stride": 3,
+      "physics_hz": 90,
+      "span_seconds": 0.5,
+      "cameras": 3,
+      "rgb_hw": [
+        480,
+        640
+      ],
+      "current_joints": 12,
+      "input_points": 16,
+      "hidden_training_queries": 48,
+      "RGB_H_GT": false,
+      "GT_tracks": "privileged simulation upper bound"
+    },
+    "selection": "best validation prior-zero action L1 at the common fixed evaluation steps; never test success",
+    "closed_loop": {
+      "cases": [
+        {
+          "id": "top_long_seen_9-s2027",
+          "garment": "Top_Long_Seen_9",
+          "seed": 2027
+        },
+        {
+          "id": "top_long_seen_9-s2028",
+          "garment": "Top_Long_Seen_9",
+          "seed": 2028
+        },
+        {
+          "id": "top_long_seen_9-s2029",
+          "garment": "Top_Long_Seen_9",
+          "seed": 2029
+        },
+        {
+          "id": "top_long_seen_9-s2030",
+          "garment": "Top_Long_Seen_9",
+          "seed": 2030
+        },
+        {
+          "id": "top_long_seen_9-s2031",
+          "garment": "Top_Long_Seen_9",
+          "seed": 2031
+        },
+        {
+          "id": "top_long_seen_9-s2032",
+          "garment": "Top_Long_Seen_9",
+          "seed": 2032
+        },
+        {
+          "id": "top_long_seen_9-s2033",
+          "garment": "Top_Long_Seen_9",
+          "seed": 2033
+        },
+        {
+          "id": "top_long_seen_9-s2034",
+          "garment": "Top_Long_Seen_9",
+          "seed": 2034
+        },
+        {
+          "id": "top_long_seen_9-s2035",
+          "garment": "Top_Long_Seen_9",
+          "seed": 2035
+        },
+        {
+          "id": "top_long_seen_9-s2036",
+          "garment": "Top_Long_Seen_9",
+          "seed": 2036
+        },
+        {
+          "id": "top_long_unseen_0-s2027",
+          "garment": "Top_Long_Unseen_0",
+          "seed": 2027
+        },
+        {
+          "id": "top_long_unseen_0-s2028",
+          "garment": "Top_Long_Unseen_0",
+          "seed": 2028
+        },
+        {
+          "id": "top_long_unseen_0-s2029",
+          "garment": "Top_Long_Unseen_0",
+          "seed": 2029
+        },
+        {
+          "id": "top_long_unseen_0-s2030",
+          "garment": "Top_Long_Unseen_0",
+          "seed": 2030
+        },
+        {
+          "id": "top_long_unseen_0-s2031",
+          "garment": "Top_Long_Unseen_0",
+          "seed": 2031
+        },
+        {
+          "id": "top_long_unseen_0-s2032",
+          "garment": "Top_Long_Unseen_0",
+          "seed": 2032
+        },
+        {
+          "id": "top_long_unseen_0-s2033",
+          "garment": "Top_Long_Unseen_0",
+          "seed": 2033
+        },
+        {
+          "id": "top_long_unseen_0-s2034",
+          "garment": "Top_Long_Unseen_0",
+          "seed": 2034
+        },
+        {
+          "id": "top_long_unseen_0-s2035",
+          "garment": "Top_Long_Unseen_0",
+          "seed": 2035
+        },
+        {
+          "id": "top_long_unseen_0-s2036",
+          "garment": "Top_Long_Unseen_0",
+          "seed": 2036
+        },
+        {
+          "id": "top_long_unseen_1-s2027",
+          "garment": "Top_Long_Unseen_1",
+          "seed": 2027
+        },
+        {
+          "id": "top_long_unseen_1-s2028",
+          "garment": "Top_Long_Unseen_1",
+          "seed": 2028
+        },
+        {
+          "id": "top_long_unseen_1-s2029",
+          "garment": "Top_Long_Unseen_1",
+          "seed": 2029
+        },
+        {
+          "id": "top_long_unseen_1-s2030",
+          "garment": "Top_Long_Unseen_1",
+          "seed": 2030
+        },
+        {
+          "id": "top_long_unseen_1-s2031",
+          "garment": "Top_Long_Unseen_1",
+          "seed": 2031
+        },
+        {
+          "id": "top_long_unseen_1-s2032",
+          "garment": "Top_Long_Unseen_1",
+          "seed": 2032
+        },
+        {
+          "id": "top_long_unseen_1-s2033",
+          "garment": "Top_Long_Unseen_1",
+          "seed": 2033
+        },
+        {
+          "id": "top_long_unseen_1-s2034",
+          "garment": "Top_Long_Unseen_1",
+          "seed": 2034
+        },
+        {
+          "id": "top_long_unseen_1-s2035",
+          "garment": "Top_Long_Unseen_1",
+          "seed": 2035
+        },
+        {
+          "id": "top_long_unseen_1-s2036",
+          "garment": "Top_Long_Unseen_1",
+          "seed": 2036
+        }
+      ],
+      "point_seed": 2026,
+      "physics_hz": 90,
+      "max_steps": 600,
+      "followup_after_success": 50,
+      "chunk": 100,
+      "n_action_steps": 10,
+      "primary": "final_success",
+      "secondary": "ever_success",
+      "initial_cloth_pair_tolerance_m": 1e-05,
+      "note": "New pose seeds; two unseen assets appeared in earlier development evaluation. Not a new benchmark."
+    },
+    "primary_contrast": [
+      "tracks_completion",
+      "rgb_history"
+    ],
+    "contrasts": [
+      [
+        "geometry",
+        "rgb_history"
+      ],
+      [
+        "tracks",
+        "rgb_history"
+      ],
+      [
+        "tracks",
+        "geometry"
+      ],
+      [
+        "tracks_completion",
+        "tracks"
+      ],
+      [
+        "tracks_completion",
+        "rgb_history"
+      ]
+    ],
+    "uncertainty": {
+      "bootstrap": "paired crossed training-seed/garment resampling, paired pose resampling",
+      "replicates": 10000,
+      "seed": 20261019,
+      "interval": 0.95,
+      "multiplicity": "Pointwise intervals; primary contrast fixed in advance, no selecting a winner among multiple contrasts",
+      "scope": "three held-out garments only; three training seeds; no broad object-population claim"
+    },
+    "legacy_public_single_frame_ACT": "pipeline reference only; its 14/20 is not the matched baseline"
+  },
+  "initial_queue_snapshot": {
+    "status": "running",
+    "stage": "collection",
+    "completed_replays": 5,
+    "expected_replays": 250,
+    "formal_training_started": false,
+    "snapshot_utc": "2026-10-19T18:20:15.568387+00:00"
+  },
+  "fixes": [
+    "Separate 0.05 m motion scale from 0.5 m position scale; near-static completion initialization with shared gradients.",
+    "Every formal condition predicts 100 actions and executes 10 before observing again.",
+    "Content-addressed GT memmaps match raw windows exactly; RGB-H never uses the GT cache.",
+    "Frozen paired success evaluation, active-capacity disclosure, three training seeds and paired clustered confidence intervals."
+  ],
+  "limitations": [
+    "GT trajectories are privileged inputs; this does not establish same-RGB deployed-tracker superiority.",
+    "RGB-H bypasses the 3.29M point encoder: equal instantiated parameters are not equal active capacity.",
+    "Three test assets, including two previously seen in development, support a limited new-pose comparison.",
+    "Short preflight completion still fails the static-reference gate.",
+    "Formal weights start only after all 250 synchronized replay episodes freeze."
+  ],
+  "sync": {
+    "Mac_Baidu": "GitHub-scoped authentication, same scientific code",
+    "gpu17": "SSH banner timeout; pending"
+  },
+  "native_preflight": {
+    "rgb_history": {
+      "report": {
+        "status": "complete",
+        "mode": "learned_policy_closed_loop",
+        "pilot": true,
+        "condition": "rgb_history",
+        "steps": 12,
+        "policy_GT_track_reads": 0,
+        "first_success_step": null,
+        "ever_success": false,
+        "final_success": false,
+        "geometry": {
+          "success": false,
+          "garment_type": "top-long-sleeve",
+          "thresholds": [
+            7.2,
+            8.55,
+            7.2,
+            9.9,
+            9.0
+          ],
+          "details": {
+            "condition_1": {
+              "description": "dist(p[0], p[4]) = 26.60 <= 7.2",
+              "value": 26.60467388311883,
+              "threshold": 7.2,
+              "passed": false
+            },
+            "condition_2": {
+              "description": "dist(p[2], p[3]) = 42.45 <= 8.55",
+              "value": 42.45278229014484,
+              "threshold": 8.55,
+              "passed": false
+            },
+            "condition_3": {
+              "description": "dist(p[1], p[5]) = 26.94 <= 7.2",
+              "value": 26.94014702373256,
+              "threshold": 7.2,
+              "passed": false
+            },
+            "condition_4": {
+              "description": "dist(p[0], p[1]) = 16.21 >= 9.9",
+              "value": 16.21412522052424,
+              "threshold": 9.9,
+              "passed": true
+            },
+            "condition_5": {
+              "description": "dist(p[4], p[5]) = 15.23 >= 9.0",
+              "value": 15.233397859240366,
+              "threshold": 9.0,
+              "passed": true
+            }
+          }
+        },
+        "elapsed_seconds": 334.164279460907,
+        "auxiliary_head_removed": true,
+        "claim": "pipeline_only_no_policy_performance_claim"
+      },
+      "n_action_steps": 10,
+      "frames_decoded": 13,
+      "video_size": [
+        960,
+        480
+      ],
+      "point_seed": 2026
+    },
+    "tracks_completion": {
+      "report": {
+        "status": "complete",
+        "mode": "learned_policy_closed_loop",
+        "pilot": true,
+        "condition": "tracks_completion",
+        "steps": 12,
+        "policy_GT_track_reads": 13,
+        "first_success_step": null,
+        "ever_success": false,
+        "final_success": false,
+        "geometry": {
+          "success": false,
+          "garment_type": "top-long-sleeve",
+          "thresholds": [
+            7.2,
+            8.55,
+            7.2,
+            9.9,
+            9.0
+          ],
+          "details": {
+            "condition_1": {
+              "description": "dist(p[0], p[4]) = 26.60 <= 7.2",
+              "value": 26.60467388311883,
+              "threshold": 7.2,
+              "passed": false
+            },
+            "condition_2": {
+              "description": "dist(p[2], p[3]) = 42.45 <= 8.55",
+              "value": 42.45278229014484,
+              "threshold": 8.55,
+              "passed": false
+            },
+            "condition_3": {
+              "description": "dist(p[1], p[5]) = 26.94 <= 7.2",
+              "value": 26.94014702373256,
+              "threshold": 7.2,
+              "passed": false
+            },
+            "condition_4": {
+              "description": "dist(p[0], p[1]) = 16.21 >= 9.9",
+              "value": 16.21412522052424,
+              "threshold": 9.9,
+              "passed": true
+            },
+            "condition_5": {
+              "description": "dist(p[4], p[5]) = 15.23 >= 9.0",
+              "value": 15.233397859240366,
+              "threshold": 9.0,
+              "passed": true
+            }
+          }
+        },
+        "elapsed_seconds": 64.07415509223938,
+        "auxiliary_head_removed": true,
+        "claim": "pipeline_only_no_policy_performance_claim"
+      },
+      "n_action_steps": 10,
+      "frames_decoded": 13,
+      "video_size": [
+        960,
+        480
+      ],
+      "point_seed": 2026
+    }
+  },
+  "throughput": {
+    "measurements": {
+      "rgb_history": {
+        "seconds_per_update_small_sample": 3.562668628524989,
+        "peak_cuda_reserved_GiB": 5.75
+      },
+      "geometry": {
+        "seconds_per_update_small_sample": 3.738357408903539,
+        "peak_cuda_reserved_GiB": 5.798828125
+      },
+      "tracks": {
+        "seconds_per_update_small_sample": 3.6588616834487766,
+        "peak_cuda_reserved_GiB": 5.798828125
+      },
+      "tracks_completion": {
+        "seconds_per_update_small_sample": 3.644784283824265,
+        "peak_cuda_reserved_GiB": 6.001953125
+      }
+    },
+    "estimated_serial_training_hours_excluding_data_and_evaluation": 365.11680011753924,
+    "caveat": "Six-step preflight estimate only; full-data random IO, hashing, validation, checkpoints, shared-node load, and closed-loop evaluation add cost."
+  }
+}
