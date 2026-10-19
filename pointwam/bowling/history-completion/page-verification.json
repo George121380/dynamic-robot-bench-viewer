@@ -4,6 +4,10 @@
   "coordinate_scalars": 113400,
   "cases": 360,
   "all3seeds": true,
-  "index_sha256": "b24dbe182397f043af383ce82f6f981452a478aa3279d4ebc07f87b49ea41efb",
-  "no_prediction_correction": true
+  "index_sha256": "972311c1361e4e66017148ad2ea4e0b30488862c74f50d89400c80158d104410",
+  "no_prediction_correction": true,
+  "original_index_sha256": "b24dbe182397f043af383ce82f6f981452a478aa3279d4ebc07f87b49ea41efb",
+  "closure_notice_added": true,
+  "scripts_and_prediction_payload_unchanged": true,
+  "review_scope": "posthoc train/validation only,no new model evaluation"
 }

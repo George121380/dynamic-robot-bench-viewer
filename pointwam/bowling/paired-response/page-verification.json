@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "index_sha256": "cb13b4aa63b2327b6c78cbadd1ffe23214ec91b76984a7b7e6791095d53c0612",
+  "index_sha256": "68320b545ff2134eaf66af138c3f63aac01a701b64f3b3e17c2aac0a055b7b6d",
   "exact_payload_coordinate_scalars": 56160,
   "paired_cases": 120,
   "query_predictions": 360,
@@ -48,5 +48,9 @@
         0.7496136426925659
       ]
     }
-  ]
+  ],
+  "original_index_sha256": "cb13b4aa63b2327b6c78cbadd1ffe23214ec91b76984a7b7e6791095d53c0612",
+  "closure_notice_added": true,
+  "scripts_and_prediction_payload_unchanged": true,
+  "review_scope": "posthoc train/validation only,no new model evaluation"
 }
