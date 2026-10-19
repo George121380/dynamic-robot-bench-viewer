@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "independent_endpoint_distances": 8640,
+  "max_primary_error_discrepancy_m": 8.673617379884035e-19,
+  "bootstrap_intervals_verified": 15,
+  "information_bounds_verified": 2,
+  "test_families": 24,
+  "formal_checkpoints": 12,
+  "optimizer_updates": 0
+}

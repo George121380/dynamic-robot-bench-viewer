@@ -1,0 +1,16 @@
+{
+  "experiment":"paired_response_pilot_v1",
+  "status":"frozen_before_pilot_simulation",
+  "question":"Can lawful full-history rolling-ball shots match current21points across meaningfully different incoming speeds while retaining different100ms pin responses?",
+  "scope":"New rolling-ball initial-condition diagnostic,not original zero-velocity reset/robot-release reproduction. Original10pins,21scene points,MuJoCo3.3.7,physical parameters and robot model unchanged. Initial ball linear and no-slip angular velocity are deliberately set at history start only. All later motion is native physics.",
+  "families":[920000,920001,920002,920003],
+  "initial_ball_speeds_mps":[0.35,0.55,0.75],
+  "impact_x_offsets_m":[-0.09,-0.03,0.0,0.03,0.09],
+  "query_time_s":1.0,
+  "future_s":0.1,
+  "query_ball_y_gap_range_m":[0.075,0.115],
+  "matching":"At most3position shooting corrections from query ball xy only. Never use future response to choose initial conditions. Same family/offset current target ball xy for every speed. Full1s histories always replay from new initial states,never concatenate past with modified query state.",
+  "control":"Same fixed initial actuator targets in every speed/offset,precommitted before rollout. No actual future robot positions used as action condition. Future nominal robot plan is independently simulated with contact-disabled copy.",
+  "acceptance":{"all_finite_and_in_workspace":true,"no_ball_pin_robot_contact_before_query":true,"current_speed_pair_max_coordinate_difference_m":0.00001,"speed_pair_difference_at_query_mps_at_least":0.2,"at_least_half_central_offset_families_response_difference_over_m":0.005,"native_repeat_max_error_m":0.0},
+  "preserve":"Save all60attempts,all failed acceptance checks and all adjustments. Pilot data are development only; do not reuse its families for final test. No optimizer updates,no old test-array access. Failure leads to explicit input/physics diagnosis,not neural tuning."
+}

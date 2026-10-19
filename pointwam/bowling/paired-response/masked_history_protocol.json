@@ -1,0 +1,9 @@
+{
+ "analysis":"masked_ball_history_identifiability_v1",
+ "status":"frozen_during_formal_training_before_any_new_test_score",
+ "question":"If the complete ball history is masked,do all remaining point histories/current points/robot conditions distinguish the lawful incoming speeds?",
+ "inputs":"Allcurrent21points;all past pin points;robot history/current/full nominal plan. Exclude ball past positions and every supplied true state channel. No derived per-query velocity or phase.",
+ "target":"The ball center at the10past10Hz times only;Euclidean ADE across10times,in meters. Not all21point reconstruction loss.",
+ "calculation":"After all12checkpoints lock,verify the remaining five-array input components byte-identically across every3speed testgroup. Mean fast-slow true ball-history distance divided by3 gives a triangle-inequality lower bound for equally weighted3example mean ball-history ADE. Average5offsetgroups then24families,matching this test distribution.",
+ "interpretation":"Conditional exact ambiguity of this whole-ball-history mask. It does not establish full-history insufficiency,impossibility of partial-time recovery,or that ambiguous reconstruction can never help representation learning. It rules out interpreting accurate unique velocity recovery from these remaining observations as an available supervision signal. No extra training or test-guided changes."
+}

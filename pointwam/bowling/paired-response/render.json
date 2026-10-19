@@ -1,0 +1,8 @@
+{
+  "status": "generated",
+  "index_sha256": "cb13b4aa63b2327b6c78cbadd1ffe23214ec91b76984a7b7e6791095d53c0612",
+  "query_predictions": 360,
+  "paired_cases": 120,
+  "prediction_arrays": 12,
+  "renderer_sha256": "a45478e040274d0b7323e3f3a63314f2376e46d48e057f066c8e30d975a3ccbd"
+}

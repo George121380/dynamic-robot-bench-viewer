@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "index_sha256": "cb13b4aa63b2327b6c78cbadd1ffe23214ec91b76984a7b7e6791095d53c0612",
+  "exact_payload_coordinate_scalars": 56160,
+  "paired_cases": 120,
+  "query_predictions": 360,
+  "source_array_count": 23,
+  "ui_cases": [
+    {
+      "case": 0,
+      "arm": "current",
+      "seed": 42,
+      "error_mm": [
+        1.9615055227191835,
+        1.9615055227191835,
+        0.0
+      ],
+      "ball_speeds_mps": [
+        0.34981968998908997,
+        0.7496136426925659
+      ]
+    },
+    {
+      "case": 2,
+      "arm": "all_history",
+      "seed": 43,
+      "error_mm": [
+        0.8427035044319688,
+        2.1881203371557865,
+        2.655720898230813
+      ],
+      "ball_speeds_mps": [
+        0.34981968998908997,
+        0.7496136426925659
+      ]
+    },
+    {
+      "case": 119,
+      "arm": "true_state",
+      "seed": 44,
+      "error_mm": [
+        0.8975541119370317,
+        0.6765258888470982,
+        0.621483271136118
+      ],
+      "ball_speeds_mps": [
+        0.34981968998908997,
+        0.7496136426925659
+      ]
+    }
+  ]
+}

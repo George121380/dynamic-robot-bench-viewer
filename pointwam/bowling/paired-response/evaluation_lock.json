@@ -1,0 +1,20 @@
+{
+  "status": "locked",
+  "checkpoints": {
+    "all_history-seed42/final.pt": "18d9455fbd4dcd137e58e05d0f2c8d49dcff3f4401b3174c0626d99988119215",
+    "all_history-seed43/final.pt": "fe378cdf163d44b58754f141939c85b16c52d201dc25b21cbcebf6b9c7905a7a",
+    "all_history-seed44/final.pt": "d2f0135fbb10598d5926475ae6fe4e966c1c6ec400c97e10aea279bf801b8721",
+    "current-seed42/final.pt": "0fb833696651e731c50232e1c03948981a85ff67dcf0aec5c4814e50eca8d43c",
+    "current-seed43/final.pt": "93d72a38fc801cdc673ae04a331f903103ed2d05e542efce6badc33950e2fbfd",
+    "current-seed44/final.pt": "56e8cc9c6bd6f6b63449db150ca156c79cc466bbfceb593c880003d77d6ea930",
+    "self_history-seed42/final.pt": "10801bf274a8a514ac1b47525da7af4331e9358d6f0247cb843a5f55c4886ac8",
+    "self_history-seed43/final.pt": "3c17da3cd72b1b86338f599dc3875c1ac1f87abe49f82441ef4b8395f019640d",
+    "self_history-seed44/final.pt": "cdf7faa276f0bfc0a3893380ce863e36bb3d98cafe4835f3024f9471e37d4c10",
+    "true_state-seed42/final.pt": "66fa56debd42f6d7ad4f8c631a08ccc41930da5a022ae785b96a06571c5bb968",
+    "true_state-seed43/final.pt": "d8bdee15c85063cc863b2ef15858cad555dc1c5f2a93a7eb7e24d3079e158909",
+    "true_state-seed44/final.pt": "78d238482525a8ae84d7e60fb711fea845e868c81c6ef0464fa8516a074cf88f"
+  },
+  "data_manifest_sha256": "9246c471d42850f52ac4db377a69ba3a6914ea2f396dd67568ee715b8f3609a2",
+  "selection": "fixed5000",
+  "test_scores_read_before_lock": false
+}

@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "arm": "current",
+      "forbidden_inputs_ignored_exactly": true,
+      "nonzero_head": true,
+      "active_gradient_tensors": 49,
+      "statistics_sha256": "79a9f7fd6e0158aab3064d91575bc5327d88532f3a878467ffd952407a9a6fec"
+    },
+    {
+      "arm": "self_history",
+      "forbidden_inputs_ignored_exactly": true,
+      "nonzero_head": true,
+      "active_gradient_tensors": 49,
+      "statistics_sha256": "79a9f7fd6e0158aab3064d91575bc5327d88532f3a878467ffd952407a9a6fec"
+    },
+    {
+      "arm": "all_history",
+      "forbidden_inputs_ignored_exactly": true,
+      "nonzero_head": true,
+      "active_gradient_tensors": 49,
+      "statistics_sha256": "79a9f7fd6e0158aab3064d91575bc5327d88532f3a878467ffd952407a9a6fec"
+    },
+    {
+      "arm": "true_state",
+      "forbidden_inputs_ignored_exactly": true,
+      "nonzero_head": true,
+      "active_gradient_tensors": 49,
+      "statistics_sha256": "79a9f7fd6e0158aab3064d91575bc5327d88532f3a878467ffd952407a9a6fec"
+    }
+  ],
+  "shared_initial_parameters_sha256": "0315dbaae1d54bf9c93c63706699af6bc5078b6d05a1b528b006d67cd98c7da6",
+  "train_windows": 832,
+  "test_arrays_opened": 0,
+  "source_sha256": "217d8bd0a695bb896746e2439ca13ca620193a3b4d8e27b022085eb5c1da9178"
+}

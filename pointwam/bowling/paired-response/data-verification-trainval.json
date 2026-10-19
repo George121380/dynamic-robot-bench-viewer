@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "splits": [
+    "train",
+    "validation"
+  ],
+  "native_files_verified": 1072,
+  "independent_coordinate_scalars": 4531344,
+  "max_native_fk_error_m": 1.1102230246251565e-16,
+  "max_float32_pack_error_m": 2.980121049933615e-08,
+  "complete_current_self_input_equal_comparisons": 672,
+  "old_test_arrays_opened": 0,
+  "new_test_after_lock": false,
+  "source_sha256": "8700d636718dd4462d45068a7532021e7344cecba1aa2c8063731032c84b6c33"
+}

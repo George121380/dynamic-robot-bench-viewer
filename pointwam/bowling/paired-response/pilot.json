@@ -1,0 +1,2642 @@
+{
+  "status": "passed",
+  "acceptance": {
+    "finite_workspace": true,
+    "no_prequery_contact": true,
+    "current_match": true,
+    "speed_difference": true,
+    "central_effect": true,
+    "native_repeat": true
+  },
+  "rows": [
+    {
+      "family": 920000,
+      "speed_index": 0,
+      "offset_index": 0,
+      "initial_speed_mps": 0.35,
+      "offset_m": -0.09,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed0-offset0.npz",
+      "sha256": "3ec1fa27b1830ab9c4bafba8a423babe9492e4e9d01a37debc403435ea9b6f98",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.39056412264740326,
+      "target_response_m": 3.4557617517405735e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0001784491181358594
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.0001784491181358594
+          ],
+          "query_xy_error_m": [
+            0.0,
+            2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 1,
+      "offset_index": 0,
+      "initial_speed_mps": 0.55,
+      "offset_m": -0.09,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed1-offset0.npz",
+      "sha256": "8f54457b035e900d1d37722287ea3088af3276eb0e395c463276fc3a10a3cbb6",
+      "query_ball_xy_error_m": 1.3877787807814457e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.39056412264740326,
+      "target_response_m": 3.4557617517405735e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278622246
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278622246
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.3877787807814457e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 2,
+      "offset_index": 0,
+      "initial_speed_mps": 0.75,
+      "offset_m": -0.09,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed2-offset0.npz",
+      "sha256": "18b8cf8a0d0ed0a7aa2249a51e1df2dcbb2add21829e7ba51d3f6d767e9ffc7b",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5291841613168443,
+      "target_response_m": 3.4557617517405735e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743750145
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743750145
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 0,
+      "offset_index": 1,
+      "initial_speed_mps": 0.35,
+      "offset_m": -0.03,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed0-offset1.npz",
+      "sha256": "541d2b431ad3b19982850f32149ba0e59e3af0d3045b5ee5b5015f8807e640d1",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.4505641226474032,
+      "target_response_m": 3.4557617517405735e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0001784491181358594
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.0001784491181358594
+          ],
+          "query_xy_error_m": [
+            0.0,
+            2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 1,
+      "offset_index": 1,
+      "initial_speed_mps": 0.55,
+      "offset_m": -0.03,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed1-offset1.npz",
+      "sha256": "e0d1ad4e1c838ad79450c97802f7b9d7d0b71d8371044f967303a8b3557658f7",
+      "query_ball_xy_error_m": 1.3877787807814457e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.4505641226474032,
+      "target_response_m": 0.02787206131085386,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278622246
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278622246
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.3877787807814457e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 2,
+      "offset_index": 1,
+      "initial_speed_mps": 0.75,
+      "offset_m": -0.03,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed2-offset1.npz",
+      "sha256": "3b2f7df526e6d3ac754517580e67e6cf72805ba5cd793e0e5e578ca673fcf92d",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5291841613168443,
+      "target_response_m": 0.04468897139731808,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743750145
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743750145
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 0,
+      "offset_index": 2,
+      "initial_speed_mps": 0.35,
+      "offset_m": 0.0,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed0-offset2.npz",
+      "sha256": "ec3f4c9d135381f904111d21d689ff5b93617df167a0c60300a2087215676a74",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.4805641226474032,
+      "target_response_m": 0.004572567511025112,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0001784491181358594
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.0001784491181358594
+          ],
+          "query_xy_error_m": [
+            0.0,
+            2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 1,
+      "offset_index": 2,
+      "initial_speed_mps": 0.55,
+      "offset_m": 0.0,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed1-offset2.npz",
+      "sha256": "ced228d3c89a8002e57df0c9de0e8a41878872984ee5862b22f9ed5d13099246",
+      "query_ball_xy_error_m": 1.3877787807814457e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.48151260313947,
+      "target_response_m": 0.04340557762625064,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278622246
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278622246
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.3877787807814457e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 2,
+      "offset_index": 2,
+      "initial_speed_mps": 0.75,
+      "offset_m": 0.0,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed2-offset2.npz",
+      "sha256": "9e4f2691d7c98d0e5f958450701d6d0c3ae7f6f569e2952211d91557c2c60639",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5291841613168443,
+      "target_response_m": 0.055552821814430935,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743750145
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743750145
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 0,
+      "offset_index": 3,
+      "initial_speed_mps": 0.35,
+      "offset_m": 0.03,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed0-offset3.npz",
+      "sha256": "47388810ff12b34660bf5e92d0cf0817cf1628d20305343c87f365fef7793e72",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5105641226474033,
+      "target_response_m": 3.4557617517405735e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0001784491181358594
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.0001784491181358594
+          ],
+          "query_xy_error_m": [
+            0.0,
+            2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 1,
+      "offset_index": 3,
+      "initial_speed_mps": 0.55,
+      "offset_m": 0.03,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed1-offset3.npz",
+      "sha256": "db78e5361115e0582bdfb7b9290b4ee56166c4da11d9f2fe3c216c377cfd10d8",
+      "query_ball_xy_error_m": 1.3877787807814457e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5132802463360058,
+      "target_response_m": 0.024970345982964322,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278622246
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278622246
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.3877787807814457e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 2,
+      "offset_index": 3,
+      "initial_speed_mps": 0.75,
+      "offset_m": 0.03,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed2-offset3.npz",
+      "sha256": "87771b59009ac68b1235ce4847856a7ecd4268b95a5d58cce6e83af3731efbee",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5291841613168443,
+      "target_response_m": 0.04535878734417809,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743750145
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743750145
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 0,
+      "offset_index": 4,
+      "initial_speed_mps": 0.35,
+      "offset_m": 0.09,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed0-offset4.npz",
+      "sha256": "6cecbce258c3b3db2137410711db8ae05f882909fa623002b91333786554e2c4",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5705641226474032,
+      "target_response_m": 3.4557617517405735e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0001784491181358594
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.0001784491181358594
+          ],
+          "query_xy_error_m": [
+            0.0,
+            2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 1,
+      "offset_index": 4,
+      "initial_speed_mps": 0.55,
+      "offset_m": 0.09,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed1-offset4.npz",
+      "sha256": "e831ce735e34e24ce40e574a784a0d1c8fcd680fdc8232f316c7bd91bcc9977f",
+      "query_ball_xy_error_m": 1.3877787807814457e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5705641226474032,
+      "target_response_m": 3.4557617517405735e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278622246
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278622246
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.3877787807814457e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920000,
+      "speed_index": 2,
+      "offset_index": 4,
+      "initial_speed_mps": 0.75,
+      "offset_m": 0.09,
+      "gap_m": 0.09673093587167418,
+      "file": "family920000-speed2-offset4.npz",
+      "sha256": "206d01d43028f009db6cc5e5cb34720d16197489c9f63b9399019812ef801a9b",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5705641226474032,
+      "target_response_m": 3.4557617517405735e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743750145
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743750145
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 0,
+      "offset_index": 0,
+      "initial_speed_mps": 0.35,
+      "offset_m": -0.09,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed0-offset0.npz",
+      "sha256": "80543c824611484888f74917a083cf61fb94298bbb5458a1529082444eaaae61",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.3498196953179525,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.36806263489242963,
+      "target_response_m": 3.4557617552166938e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813605369
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813605369
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 1,
+      "offset_index": 0,
+      "initial_speed_mps": 0.55,
+      "offset_m": -0.09,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed1-offset0.npz",
+      "sha256": "dcddb1243a69ee02314e416b9b1c5365687676870875f9db85fc0a65515d16bb",
+      "query_ball_xy_error_m": 1.1102230246251565e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.36806263489242963,
+      "target_response_m": 3.4557617552166938e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278616695
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278616695
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.1102230246251565e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 2,
+      "offset_index": 0,
+      "initial_speed_mps": 0.75,
+      "offset_m": -0.09,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed2-offset0.npz",
+      "sha256": "ede4262c591d4d610625963a24ce2519a7ae273b6b4aa207f7596b734ae5f987",
+      "query_ball_xy_error_m": 5.551115123125783e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5633667631465868,
+      "target_response_m": 3.4557617552166938e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743736267
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743736267
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -5.551115123125783e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 0,
+      "offset_index": 1,
+      "initial_speed_mps": 0.35,
+      "offset_m": -0.03,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed0-offset1.npz",
+      "sha256": "b6150b89b14a95de7273d677cb957cac69e9d00c9a73d36ed4d530d9f838efb6",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.3498196953179525,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.4280626348924297,
+      "target_response_m": 0.015043504969771587,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813605369
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813605369
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 1,
+      "offset_index": 1,
+      "initial_speed_mps": 0.55,
+      "offset_m": -0.03,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed1-offset1.npz",
+      "sha256": "e0d2cdd13f9a04a57d15bdfead24164a2af640f1d7cf97ce60a7133babd33f26",
+      "query_ball_xy_error_m": 1.1102230246251565e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.4280626348924297,
+      "target_response_m": 0.0443532397789154,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278616695
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278616695
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.1102230246251565e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 2,
+      "offset_index": 1,
+      "initial_speed_mps": 0.75,
+      "offset_m": -0.03,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed2-offset1.npz",
+      "sha256": "70b596863a2989be8614fdbfc075c74052924dbbe80438395242b00518584078",
+      "query_ball_xy_error_m": 5.551115123125783e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5633667631465868,
+      "target_response_m": 0.05379981797704354,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743736267
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743736267
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -5.551115123125783e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 0,
+      "offset_index": 2,
+      "initial_speed_mps": 0.35,
+      "offset_m": 0.0,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed0-offset2.npz",
+      "sha256": "55c5cfc518c69e91c659331bcbd1c68d2be12f485fc615bfb531709175fb0d48",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.3498196953179525,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.45806263489242965,
+      "target_response_m": 0.03320444786568323,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813605369
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813605369
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 1,
+      "offset_index": 2,
+      "initial_speed_mps": 0.55,
+      "offset_m": 0.0,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed1-offset2.npz",
+      "sha256": "725127ce63760b8fcee35d1a567f05fd6b0ad435513a7d787483e399fc0212da",
+      "query_ball_xy_error_m": 1.1102230246251565e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.45806263489242965,
+      "target_response_m": 0.06359158647032379,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278616695
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278616695
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.1102230246251565e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 2,
+      "offset_index": 2,
+      "initial_speed_mps": 0.75,
+      "offset_m": 0.0,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed2-offset2.npz",
+      "sha256": "4df7482fac46ded9768cdeee8e746e8d9e9d18616d4c12f83916cef3759ada66",
+      "query_ball_xy_error_m": 5.551115123125783e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5633667631465868,
+      "target_response_m": 0.076813944678172,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743736267
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743736267
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -5.551115123125783e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 0,
+      "offset_index": 3,
+      "initial_speed_mps": 0.35,
+      "offset_m": 0.03,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed0-offset3.npz",
+      "sha256": "aa0ce6fc7dd8f6a7c754b7ebedeb8804cd686d995d45c002aad474a46e6a6dde",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.3498196953179525,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.48917349780241753,
+      "target_response_m": 0.01596369799220835,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813605369
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813605369
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 1,
+      "offset_index": 3,
+      "initial_speed_mps": 0.55,
+      "offset_m": 0.03,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed1-offset3.npz",
+      "sha256": "c15bbfda0c1c0a3d224f3004fae93457d8c0b734e2b514118be18c52f024f558",
+      "query_ball_xy_error_m": 1.1102230246251565e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.4913764742695635,
+      "target_response_m": 0.04914052082968183,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278616695
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278616695
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.1102230246251565e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 2,
+      "offset_index": 3,
+      "initial_speed_mps": 0.75,
+      "offset_m": 0.03,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed2-offset3.npz",
+      "sha256": "38bc693c31e0850648e2048b0ab58fbbb23ba6fc6250d596cb973141f0ea63e7",
+      "query_ball_xy_error_m": 5.551115123125783e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5633667631465868,
+      "target_response_m": 0.05874255091842936,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743736267
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743736267
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -5.551115123125783e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 0,
+      "offset_index": 4,
+      "initial_speed_mps": 0.35,
+      "offset_m": 0.09,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed0-offset4.npz",
+      "sha256": "ae2da980c3e431e8daa84bc4a30de1c133a6a9059d072b2c16fb61c943be9e57",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.3498196953179525,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5480626348924297,
+      "target_response_m": 3.4557617552166938e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813605369
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813605369
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 1,
+      "offset_index": 4,
+      "initial_speed_mps": 0.55,
+      "offset_m": 0.09,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed1-offset4.npz",
+      "sha256": "99aacbb188e4613e4a238f50d3c262221104ee7c18d062e495bf796199a6e086",
+      "query_ball_xy_error_m": 1.1102230246251565e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5480626348924297,
+      "target_response_m": 3.4557617552166938e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278616695
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278616695
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.1102230246251565e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920001,
+      "speed_index": 2,
+      "offset_index": 4,
+      "initial_speed_mps": 0.75,
+      "offset_m": 0.09,
+      "gap_m": 0.0802854527243594,
+      "file": "family920001-speed2-offset4.npz",
+      "sha256": "a48f5eea7316edfe5e69a538342f5a208881db39e27a8ca1b4857222b1d998ec",
+      "query_ball_xy_error_m": 5.551115123125783e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5633667631465868,
+      "target_response_m": 3.4557617552166938e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743736267
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743736267
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -5.551115123125783e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 0,
+      "offset_index": 0,
+      "initial_speed_mps": 0.35,
+      "offset_m": -0.09,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed0-offset0.npz",
+      "sha256": "5b43a68d1d38a789671bc4ac891d6b9a8c1fbbf6bc0fe2051f58e3946818398b",
+      "query_ball_xy_error_m": 1.3877787807814457e-17,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.4111583559237191,
+      "target_response_m": 3.4557617524101386e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813706676
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813706676
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -1.3877787807814457e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 1,
+      "offset_index": 0,
+      "initial_speed_mps": 0.55,
+      "offset_m": -0.09,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed1-offset0.npz",
+      "sha256": "0cf996c14d378d598e5445f1aaf4175bf86b73ad83698c3e305ef305c6bd7f07",
+      "query_ball_xy_error_m": 1.8041124150158794e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.4488556819327433,
+      "target_response_m": 3.4557617524101386e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0002804200427861947
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.0002804200427861947
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.8041124150158794e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 2,
+      "offset_index": 0,
+      "initial_speed_mps": 0.75,
+      "offset_m": -0.09,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed2-offset0.npz",
+      "sha256": "3afa2901bb28df42e7116f0e6f5ed25a0b1159e66df9a630876eadce4940fcca",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.6487537110080935,
+      "target_response_m": 3.4557617524101386e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743586387
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743586387
+          ],
+          "query_xy_error_m": [
+            0.0,
+            2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 0,
+      "offset_index": 1,
+      "initial_speed_mps": 0.35,
+      "offset_m": -0.03,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed0-offset1.npz",
+      "sha256": "b2a967d7dce851fd313db1bf9bbc68a3e49105ae3e7f469775cb1a06ddfd779e",
+      "query_ball_xy_error_m": 1.3877787807814457e-17,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.471158355923719,
+      "target_response_m": 3.4557617524101386e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813706676
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813706676
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -1.3877787807814457e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 1,
+      "offset_index": 1,
+      "initial_speed_mps": 0.55,
+      "offset_m": -0.03,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed1-offset1.npz",
+      "sha256": "f4fda17ae3ac332ebe42872fd94208204dcff44cd2d477d95115f4b4bc11efee",
+      "query_ball_xy_error_m": 1.8041124150158794e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.471158355923719,
+      "target_response_m": 3.4557617524101386e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0002804200427861947
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.0002804200427861947
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.8041124150158794e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 2,
+      "offset_index": 1,
+      "initial_speed_mps": 0.75,
+      "offset_m": -0.03,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed2-offset1.npz",
+      "sha256": "da82b5d78309fa9cb6efd9621268c64417f244038e3cc62d17fb8bce8c04fc91",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.6487537110080935,
+      "target_response_m": 0.03146375144744921,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743586387
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743586387
+          ],
+          "query_xy_error_m": [
+            0.0,
+            2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 0,
+      "offset_index": 2,
+      "initial_speed_mps": 0.35,
+      "offset_m": 0.0,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed0-offset2.npz",
+      "sha256": "9b984c789c439fd2be92594bcf5a73eed5478cb2a91def04af9ac26de60d7e36",
+      "query_ball_xy_error_m": 1.3877787807814457e-17,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.501158355923719,
+      "target_response_m": 3.4557617524101386e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813706676
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813706676
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -1.3877787807814457e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 1,
+      "offset_index": 2,
+      "initial_speed_mps": 0.55,
+      "offset_m": 0.0,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed1-offset2.npz",
+      "sha256": "d6c0ad038fb44befde0b629e6cff8e7e0b2c95f17e345ee7c3faffccd8b96d8a",
+      "query_ball_xy_error_m": 1.8041124150158794e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.501158355923719,
+      "target_response_m": 0.007471798885508449,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0002804200427861947
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.0002804200427861947
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.8041124150158794e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 2,
+      "offset_index": 2,
+      "initial_speed_mps": 0.75,
+      "offset_m": 0.0,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed2-offset2.npz",
+      "sha256": "2666f0dac0a2dfbccfd773acf383a447e7e77b31180f3956f3d60a20948daef1",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.6487537110080935,
+      "target_response_m": 0.03836432118147196,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743586387
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743586387
+          ],
+          "query_xy_error_m": [
+            0.0,
+            2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 0,
+      "offset_index": 3,
+      "initial_speed_mps": 0.35,
+      "offset_m": 0.03,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed0-offset3.npz",
+      "sha256": "7dae267a2e3a1b01a92c54dd0ae1ce7fb17a9bf8c9e6b06880a9bba188ea9701",
+      "query_ball_xy_error_m": 1.3877787807814457e-17,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5311583559237191,
+      "target_response_m": 3.4557617524101386e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813706676
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813706676
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -1.3877787807814457e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 1,
+      "offset_index": 3,
+      "initial_speed_mps": 0.55,
+      "offset_m": 0.03,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed1-offset3.npz",
+      "sha256": "6fb2f24cc2b10bbfe15b782968d6e6af180540b2138d66052bf06c9d9bc655f2",
+      "query_ball_xy_error_m": 1.8041124150158794e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5311583559237191,
+      "target_response_m": 3.4557617524101386e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0002804200427861947
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.0002804200427861947
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.8041124150158794e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 2,
+      "offset_index": 3,
+      "initial_speed_mps": 0.75,
+      "offset_m": 0.03,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed2-offset3.npz",
+      "sha256": "c2ba7b303f1dd79e6c1c7a482ebd70c5481c917fd2d668c76e40e1e60f73c7df",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.6487537110080935,
+      "target_response_m": 0.025504194807037733,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743586387
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743586387
+          ],
+          "query_xy_error_m": [
+            0.0,
+            2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 0,
+      "offset_index": 4,
+      "initial_speed_mps": 0.35,
+      "offset_m": 0.09,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed0-offset4.npz",
+      "sha256": "af7612367b9dd772c677027322827ee8c26f8503fc402e14bc6cc3e2cd99522a",
+      "query_ball_xy_error_m": 1.3877787807814457e-17,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.591158355923719,
+      "target_response_m": 3.4557617524101386e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813706676
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813706676
+          ],
+          "query_xy_error_m": [
+            0.0,
+            -1.3877787807814457e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 1,
+      "offset_index": 4,
+      "initial_speed_mps": 0.55,
+      "offset_m": 0.09,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed1-offset4.npz",
+      "sha256": "4158956a968283318fc56981ffb7054aa7a211039163c832e00638663f44cc3c",
+      "query_ball_xy_error_m": 1.8041124150158794e-16,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.591158355923719,
+      "target_response_m": 3.4557617524101386e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0002804200427861947
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.0002804200427861947
+          ],
+          "query_xy_error_m": [
+            0.0,
+            1.8041124150158794e-16
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920002,
+      "speed_index": 2,
+      "offset_index": 4,
+      "initial_speed_mps": 0.75,
+      "offset_m": 0.09,
+      "gap_m": 0.11436762107540525,
+      "file": "family920002-speed2-offset4.npz",
+      "sha256": "f4117cf4a15459af8d69b4f9e978cbe557240ce52674d74d464ceb8b4cf3809c",
+      "query_ball_xy_error_m": 2.7755575615628914e-17,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.6487537110080935,
+      "target_response_m": 3.4557617524101386e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743586387
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743586387
+          ],
+          "query_xy_error_m": [
+            0.0,
+            2.7755575615628914e-17
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 0,
+      "offset_index": 0,
+      "initial_speed_mps": 0.35,
+      "offset_m": -0.09,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed0-offset0.npz",
+      "sha256": "7cdc997974210337fb020ac8388d1aaae492c6d3a79dfd3193713030f9ba6cbb",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.4218078370550957,
+      "target_response_m": 3.4557617525617783e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813558184
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813558184
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 1,
+      "offset_index": 0,
+      "initial_speed_mps": 0.55,
+      "offset_m": -0.09,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed1-offset0.npz",
+      "sha256": "322410d4680612e36a728ae367d2aa4eb375e68598f4e23285f790660fc2e5de",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.4218078370550957,
+      "target_response_m": 3.4557617525617783e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278627797
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278627797
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 2,
+      "offset_index": 0,
+      "initial_speed_mps": 0.75,
+      "offset_m": -0.09,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed2-offset0.npz",
+      "sha256": "063a759ce35c64f4b8beb53bd88128d628442dfb6a65184b9bdbb1713d0c0ef8",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.49289891758926335,
+      "target_response_m": 3.4557617525617783e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743725165
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743725165
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 0,
+      "offset_index": 1,
+      "initial_speed_mps": 0.35,
+      "offset_m": -0.03,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed0-offset1.npz",
+      "sha256": "e488c096a21891e572163992dfab7b478142c1594eecad7070d91a6ba22f2365",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.48180783705509567,
+      "target_response_m": 0.013488949957214585,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813558184
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813558184
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 1,
+      "offset_index": 1,
+      "initial_speed_mps": 0.55,
+      "offset_m": -0.03,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed1-offset1.npz",
+      "sha256": "b8ddd632b1f191c6c9e5fcd7940b5391c9808fef2e491a53eb5e0d4ebbe1f92d",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.48180783705509567,
+      "target_response_m": 0.03813727431969201,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278627797
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278627797
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 2,
+      "offset_index": 1,
+      "initial_speed_mps": 0.75,
+      "offset_m": -0.03,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed2-offset1.npz",
+      "sha256": "566a41895262610e8a6c0167e1adb054ff4c0fad2abf0b721213db7945e5a278",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.49289891758926335,
+      "target_response_m": 0.055824529874907616,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743725165
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743725165
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 0,
+      "offset_index": 2,
+      "initial_speed_mps": 0.35,
+      "offset_m": 0.0,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed0-offset2.npz",
+      "sha256": "da0ac5bb3b905513ddef3231c6642b43cede7139b9f317e50908600564ca539d",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5118078370550957,
+      "target_response_m": 0.023827219762259676,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813558184
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813558184
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 1,
+      "offset_index": 2,
+      "initial_speed_mps": 0.55,
+      "offset_m": 0.0,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed1-offset2.npz",
+      "sha256": "39483675e56602bc0190085d6d6f71f983cfe90a9e439e07374dd9e026d1446c",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5118078370550957,
+      "target_response_m": 0.061563197551255604,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278627797
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278627797
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 2,
+      "offset_index": 2,
+      "initial_speed_mps": 0.75,
+      "offset_m": 0.0,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed2-offset2.npz",
+      "sha256": "3f2a305ef414f73f0e6b38c1d208b336c325f96e5f7a213102432f623dd009b9",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5150456739911067,
+      "target_response_m": 0.07906776370590347,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743725165
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743725165
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 0,
+      "offset_index": 3,
+      "initial_speed_mps": 0.35,
+      "offset_m": 0.03,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed0-offset3.npz",
+      "sha256": "11881d7ba53dc729aa1724fafd9ab14c0bf2b22ad7119d4994275f58d8ceb0b8",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5429712377391821,
+      "target_response_m": 0.016354586507556623,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813558184
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813558184
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 1,
+      "offset_index": 3,
+      "initial_speed_mps": 0.55,
+      "offset_m": 0.03,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed1-offset3.npz",
+      "sha256": "b3e56c822346bb27e0bb886ecd416e2a0425646f3d74cc1027f51c7279dc4b52",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5442440283336474,
+      "target_response_m": 0.04098524383992768,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278627797
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278627797
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 2,
+      "offset_index": 3,
+      "initial_speed_mps": 0.75,
+      "offset_m": 0.03,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed2-offset3.npz",
+      "sha256": "6e3a1c97cfa463a971a59172011e74409e10303929c6a89202f1247b86cb292a",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.5505365389186919,
+      "target_response_m": 0.05072839901169287,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743725165
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743725165
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 0,
+      "offset_index": 4,
+      "initial_speed_mps": 0.35,
+      "offset_m": 0.09,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed0-offset4.npz",
+      "sha256": "37a3eb6112905424db48df53253bc06f4adb516f9914c7d99b7107bd11b7325d",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.3498196953179524,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.6018078370550957,
+      "target_response_m": 3.4557617525617783e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00017844911813558184
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00017844911813558184
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 1,
+      "offset_index": 4,
+      "initial_speed_mps": 0.55,
+      "offset_m": 0.09,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed1-offset4.npz",
+      "sha256": "b8f56140e82fe9c273b431872e7e7b4a5954e870675353f30989c7f4267b1d29",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.5497166640710688,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.6018078370550957,
+      "target_response_m": 3.4557617525617783e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00028042004278627797
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00028042004278627797
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    {
+      "family": 920003,
+      "speed_index": 2,
+      "offset_index": 4,
+      "initial_speed_mps": 0.75,
+      "offset_m": 0.09,
+      "gap_m": 0.08211394306296961,
+      "file": "family920003-speed2-offset4.npz",
+      "sha256": "72ece2a3b8fc27eeb040371d03be004676bf1c2732cacf3d5db87a7ed9270ea0",
+      "query_ball_xy_error_m": 0.0,
+      "query_ball_speed_mps": 0.7496136328241826,
+      "prequery_dynamic_contacts": 0,
+      "finite": true,
+      "max_xy": 0.6018078370550957,
+      "target_response_m": 3.4557617525617783e-06,
+      "shooting": [
+        {
+          "attempt": 0,
+          "correction_m": [
+            0.0,
+            0.0
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.00038239096743725165
+          ]
+        },
+        {
+          "attempt": 1,
+          "correction_m": [
+            0.0,
+            0.00038239096743725165
+          ],
+          "query_xy_error_m": [
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "family": 920000,
+      "offset_index": 0,
+      "current_max_coordinate_gap_m": 5.551115123125783e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.0,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920000,
+      "offset_index": 1,
+      "current_max_coordinate_gap_m": 5.551115123125783e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.04468949330801266,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920000,
+      "offset_index": 2,
+      "current_max_coordinate_gap_m": 5.551115123125783e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.051149510948210394,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920000,
+      "offset_index": 3,
+      "current_max_coordinate_gap_m": 5.551115123125783e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.0453609353604402,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920000,
+      "offset_index": 4,
+      "current_max_coordinate_gap_m": 5.551115123125783e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.0,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920001,
+      "offset_index": 0,
+      "current_max_coordinate_gap_m": 5.551115123125783e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062301,
+      "response_delta_m": 0.0,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920001,
+      "offset_index": 1,
+      "current_max_coordinate_gap_m": 5.551115123125783e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062301,
+      "response_delta_m": 0.03944598341091538,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920001,
+      "offset_index": 2,
+      "current_max_coordinate_gap_m": 5.551115123125783e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062301,
+      "response_delta_m": 0.046763568690541074,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920001,
+      "offset_index": 3,
+      "current_max_coordinate_gap_m": 5.551115123125783e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062301,
+      "response_delta_m": 0.0436184335991278,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920001,
+      "offset_index": 4,
+      "current_max_coordinate_gap_m": 5.551115123125783e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062301,
+      "response_delta_m": 0.0,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920002,
+      "offset_index": 0,
+      "current_max_coordinate_gap_m": 4.163336342344337e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.0,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920002,
+      "offset_index": 1,
+      "current_max_coordinate_gap_m": 4.163336342344337e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.03146376516565928,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920002,
+      "offset_index": 2,
+      "current_max_coordinate_gap_m": 4.163336342344337e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.03836495420794462,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920002,
+      "offset_index": 3,
+      "current_max_coordinate_gap_m": 4.163336342344337e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.025506179874609344,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920002,
+      "offset_index": 4,
+      "current_max_coordinate_gap_m": 4.163336342344337e-17,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.0,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920003,
+      "offset_index": 0,
+      "current_max_coordinate_gap_m": 0.0,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.0,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920003,
+      "offset_index": 1,
+      "current_max_coordinate_gap_m": 0.0,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.04341836316779316,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920003,
+      "offset_index": 2,
+      "current_max_coordinate_gap_m": 0.0,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.05693358814577146,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920003,
+      "offset_index": 3,
+      "current_max_coordinate_gap_m": 0.0,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.03543817940296547,
+      "float32_current_exact": true
+    },
+    {
+      "family": 920003,
+      "offset_index": 4,
+      "current_max_coordinate_gap_m": 0.0,
+      "pin_history_max_gap_m": 0.0,
+      "robot_history_max_gap_m": 0.0,
+      "speed_gap_mps": 0.3997939375062302,
+      "response_delta_m": 0.0,
+      "float32_current_exact": true
+    }
+  ],
+  "repeats": [
+    {
+      "family": 920000,
+      "native_repeat_error_m": 0.0
+    },
+    {
+      "family": 920001,
+      "native_repeat_error_m": 0.0
+    },
+    {
+      "family": 920002,
+      "native_repeat_error_m": 0.0
+    },
+    {
+      "family": 920003,
+      "native_repeat_error_m": 0.0
+    }
+  ],
+  "elapsed_s": 4.951973291987088,
+  "protocol_sha256": "3911297f6e2c1eb4cd4d279a19311ffbb79832d5e27462c7507ef22064580bea",
+  "physics_source_sha256": "6ad06fb110d7c4f0215eeff1a39fdd7fd98ac7dbcdbdc24995d9cc24a3acef5f",
+  "optimizer_updates": 0,
+  "old_test_arrays_opened": 0,
+  "environment": {
+    "mujoco": "3.3.7",
+    "numpy": "2.5.4"
+  }
+}
