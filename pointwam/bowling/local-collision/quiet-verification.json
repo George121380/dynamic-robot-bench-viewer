@@ -1,0 +1,5025 @@
+{
+  "status": "passed",
+  "thresholds_mm": [
+    1,
+    2,
+    5
+  ],
+  "model_checkpoint_sets": 12,
+  "independent_endpoint_norms": 320352,
+  "max_fraction_error": 0.0,
+  "true_quiet_motion": {
+    "bowling-seed0051": {
+      "eligible_pin_queries": 251,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0052": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0053": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0054": {
+      "eligible_pin_queries": 297,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0055": {
+      "eligible_pin_queries": 241,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0056": {
+      "eligible_pin_queries": 248,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0057": {
+      "eligible_pin_queries": 285,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0058": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0059": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0060": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0061": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0062": {
+      "eligible_pin_queries": 198,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0063": {
+      "eligible_pin_queries": 207,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0064": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0065": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed0066": {
+      "eligible_pin_queries": 240,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810000": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810001": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810002": {
+      "eligible_pin_queries": 305,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810003": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810004": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810005": {
+      "eligible_pin_queries": 188,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810006": {
+      "eligible_pin_queries": 246,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810007": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810008": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810009": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810010": {
+      "eligible_pin_queries": 270,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810011": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810012": {
+      "eligible_pin_queries": 193,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810014": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810015": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810016": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810017": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810018": {
+      "eligible_pin_queries": 231,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810019": {
+      "eligible_pin_queries": 305,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810020": {
+      "eligible_pin_queries": 212,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810021": {
+      "eligible_pin_queries": 291,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810022": {
+      "eligible_pin_queries": 269,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810023": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810024": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810025": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810026": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810027": {
+      "eligible_pin_queries": 280,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810028": {
+      "eligible_pin_queries": 221,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810029": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810030": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "bowling-seed810031": {
+      "eligible_pin_queries": 310,
+      "fractions": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "source_sha256": "5cb37b556b80a86332ea14711a9f56300b3febab0ba25f31c4058d9047489ca3",
+  "results": {
+    "long-seed42-best": {
+      "prediction_sha256": "3b4381189201f3236853ecfe25fa8cf43c8169fe000edbe6c8506c80f61f40e5",
+      "episodes": {
+        "bowling-seed0051": {
+          "eligible_pin_queries": 251,
+          "fractions": [
+            0.9601593625498008,
+            0.6613545816733067,
+            0.055776892430278883
+          ]
+        },
+        "bowling-seed0052": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.7677419354838709,
+            0.21935483870967742
+          ]
+        },
+        "bowling-seed0053": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9516129032258065,
+            0.5612903225806452,
+            0.00967741935483871
+          ]
+        },
+        "bowling-seed0054": {
+          "eligible_pin_queries": 297,
+          "fractions": [
+            0.98989898989899,
+            0.8148148148148148,
+            0.08417508417508418
+          ]
+        },
+        "bowling-seed0055": {
+          "eligible_pin_queries": 241,
+          "fractions": [
+            0.970954356846473,
+            0.7095435684647303,
+            0.17012448132780084
+          ]
+        },
+        "bowling-seed0056": {
+          "eligible_pin_queries": 248,
+          "fractions": [
+            0.9838709677419355,
+            0.7056451612903226,
+            0.08870967741935484
+          ]
+        },
+        "bowling-seed0057": {
+          "eligible_pin_queries": 285,
+          "fractions": [
+            0.9719298245614035,
+            0.7719298245614035,
+            0.19298245614035087
+          ]
+        },
+        "bowling-seed0058": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.7516129032258064,
+            0.00967741935483871
+          ]
+        },
+        "bowling-seed0059": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9967741935483871,
+            0.7774193548387097,
+            0.04838709677419355
+          ]
+        },
+        "bowling-seed0060": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9709677419354839,
+            0.6580645161290323,
+            0.05161290322580645
+          ]
+        },
+        "bowling-seed0061": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.967741935483871,
+            0.6483870967741936,
+            0.0032258064516129032
+          ]
+        },
+        "bowling-seed0062": {
+          "eligible_pin_queries": 198,
+          "fractions": [
+            0.9747474747474747,
+            0.6515151515151515,
+            0.13131313131313133
+          ]
+        },
+        "bowling-seed0063": {
+          "eligible_pin_queries": 207,
+          "fractions": [
+            0.9903381642512077,
+            0.8695652173913043,
+            0.178743961352657
+          ]
+        },
+        "bowling-seed0064": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9741935483870968,
+            0.6967741935483871,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed0065": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.9096774193548387,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed0066": {
+          "eligible_pin_queries": 240,
+          "fractions": [
+            0.9958333333333333,
+            0.8708333333333333,
+            0.3125
+          ]
+        },
+        "bowling-seed810000": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.832258064516129,
+            0.025806451612903226
+          ]
+        },
+        "bowling-seed810001": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.8483870967741935,
+            0.19032258064516128
+          ]
+        },
+        "bowling-seed810002": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.9737704918032787,
+            0.8032786885245902,
+            0.18360655737704917
+          ]
+        },
+        "bowling-seed810003": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9548387096774194,
+            0.6709677419354839,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed810004": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9806451612903225,
+            0.7354838709677419,
+            0.054838709677419356
+          ]
+        },
+        "bowling-seed810005": {
+          "eligible_pin_queries": 188,
+          "fractions": [
+            0.9893617021276596,
+            0.723404255319149,
+            0.2127659574468085
+          ]
+        },
+        "bowling-seed810006": {
+          "eligible_pin_queries": 246,
+          "fractions": [
+            0.975609756097561,
+            0.8292682926829268,
+            0.2032520325203252
+          ]
+        },
+        "bowling-seed810007": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.8903225806451613,
+            0.12580645161290321
+          ]
+        },
+        "bowling-seed810008": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.8354838709677419,
+            0.3419354838709677,
+            0.0
+          ]
+        },
+        "bowling-seed810009": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9967741935483871,
+            0.8548387096774194,
+            0.05161290322580645
+          ]
+        },
+        "bowling-seed810010": {
+          "eligible_pin_queries": 270,
+          "fractions": [
+            0.937037037037037,
+            0.6962962962962963,
+            0.06666666666666667
+          ]
+        },
+        "bowling-seed810011": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9419354838709677,
+            0.6483870967741936,
+            0.012903225806451613
+          ]
+        },
+        "bowling-seed810012": {
+          "eligible_pin_queries": 193,
+          "fractions": [
+            0.9585492227979274,
+            0.7046632124352331,
+            0.14507772020725387
+          ]
+        },
+        "bowling-seed810014": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9580645161290322,
+            0.867741935483871,
+            0.1064516129032258
+          ]
+        },
+        "bowling-seed810015": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.7870967741935484,
+            0.0
+          ]
+        },
+        "bowling-seed810016": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9483870967741935,
+            0.6903225806451613,
+            0.07419354838709677
+          ]
+        },
+        "bowling-seed810017": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.7838709677419354,
+            0.08709677419354839
+          ]
+        },
+        "bowling-seed810018": {
+          "eligible_pin_queries": 231,
+          "fractions": [
+            0.974025974025974,
+            0.7359307359307359,
+            0.1645021645021645
+          ]
+        },
+        "bowling-seed810019": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.9672131147540983,
+            0.8229508196721311,
+            0.11147540983606558
+          ]
+        },
+        "bowling-seed810020": {
+          "eligible_pin_queries": 212,
+          "fractions": [
+            1.0,
+            0.8679245283018868,
+            0.13679245283018868
+          ]
+        },
+        "bowling-seed810021": {
+          "eligible_pin_queries": 291,
+          "fractions": [
+            0.9484536082474226,
+            0.6769759450171822,
+            0.07903780068728522
+          ]
+        },
+        "bowling-seed810022": {
+          "eligible_pin_queries": 269,
+          "fractions": [
+            0.9814126394052045,
+            0.758364312267658,
+            0.12267657992565056
+          ]
+        },
+        "bowling-seed810023": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.603225806451613,
+            0.01935483870967742
+          ]
+        },
+        "bowling-seed810024": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9774193548387097,
+            0.7354838709677419,
+            0.04838709677419355
+          ]
+        },
+        "bowling-seed810025": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9838709677419355,
+            0.6935483870967742,
+            0.07096774193548387
+          ]
+        },
+        "bowling-seed810026": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.967741935483871,
+            0.632258064516129,
+            0.0032258064516129032
+          ]
+        },
+        "bowling-seed810027": {
+          "eligible_pin_queries": 280,
+          "fractions": [
+            0.9857142857142858,
+            0.8357142857142857,
+            0.1
+          ]
+        },
+        "bowling-seed810028": {
+          "eligible_pin_queries": 221,
+          "fractions": [
+            0.9864253393665159,
+            0.7782805429864253,
+            0.23529411764705882
+          ]
+        },
+        "bowling-seed810029": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9806451612903225,
+            0.6064516129032258,
+            0.03225806451612903
+          ]
+        },
+        "bowling-seed810030": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9709677419354839,
+            0.6741935483870968,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed810031": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.7064516129032258,
+            0.06451612903225806
+          ]
+        }
+      },
+      "macro_fractions": [
+        0.9737642244368806,
+        0.7374988748208504,
+        0.0917224896760195
+      ]
+    },
+    "long-seed42-latest": {
+      "prediction_sha256": "3b4381189201f3236853ecfe25fa8cf43c8169fe000edbe6c8506c80f61f40e5",
+      "episodes": {
+        "bowling-seed0051": {
+          "eligible_pin_queries": 251,
+          "fractions": [
+            0.9601593625498008,
+            0.6613545816733067,
+            0.055776892430278883
+          ]
+        },
+        "bowling-seed0052": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.7677419354838709,
+            0.21935483870967742
+          ]
+        },
+        "bowling-seed0053": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9516129032258065,
+            0.5612903225806452,
+            0.00967741935483871
+          ]
+        },
+        "bowling-seed0054": {
+          "eligible_pin_queries": 297,
+          "fractions": [
+            0.98989898989899,
+            0.8148148148148148,
+            0.08417508417508418
+          ]
+        },
+        "bowling-seed0055": {
+          "eligible_pin_queries": 241,
+          "fractions": [
+            0.970954356846473,
+            0.7095435684647303,
+            0.17012448132780084
+          ]
+        },
+        "bowling-seed0056": {
+          "eligible_pin_queries": 248,
+          "fractions": [
+            0.9838709677419355,
+            0.7056451612903226,
+            0.08870967741935484
+          ]
+        },
+        "bowling-seed0057": {
+          "eligible_pin_queries": 285,
+          "fractions": [
+            0.9719298245614035,
+            0.7719298245614035,
+            0.19298245614035087
+          ]
+        },
+        "bowling-seed0058": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.7516129032258064,
+            0.00967741935483871
+          ]
+        },
+        "bowling-seed0059": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9967741935483871,
+            0.7774193548387097,
+            0.04838709677419355
+          ]
+        },
+        "bowling-seed0060": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9709677419354839,
+            0.6580645161290323,
+            0.05161290322580645
+          ]
+        },
+        "bowling-seed0061": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.967741935483871,
+            0.6483870967741936,
+            0.0032258064516129032
+          ]
+        },
+        "bowling-seed0062": {
+          "eligible_pin_queries": 198,
+          "fractions": [
+            0.9747474747474747,
+            0.6515151515151515,
+            0.13131313131313133
+          ]
+        },
+        "bowling-seed0063": {
+          "eligible_pin_queries": 207,
+          "fractions": [
+            0.9903381642512077,
+            0.8695652173913043,
+            0.178743961352657
+          ]
+        },
+        "bowling-seed0064": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9741935483870968,
+            0.6967741935483871,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed0065": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.9096774193548387,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed0066": {
+          "eligible_pin_queries": 240,
+          "fractions": [
+            0.9958333333333333,
+            0.8708333333333333,
+            0.3125
+          ]
+        },
+        "bowling-seed810000": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.832258064516129,
+            0.025806451612903226
+          ]
+        },
+        "bowling-seed810001": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.8483870967741935,
+            0.19032258064516128
+          ]
+        },
+        "bowling-seed810002": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.9737704918032787,
+            0.8032786885245902,
+            0.18360655737704917
+          ]
+        },
+        "bowling-seed810003": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9548387096774194,
+            0.6709677419354839,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed810004": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9806451612903225,
+            0.7354838709677419,
+            0.054838709677419356
+          ]
+        },
+        "bowling-seed810005": {
+          "eligible_pin_queries": 188,
+          "fractions": [
+            0.9893617021276596,
+            0.723404255319149,
+            0.2127659574468085
+          ]
+        },
+        "bowling-seed810006": {
+          "eligible_pin_queries": 246,
+          "fractions": [
+            0.975609756097561,
+            0.8292682926829268,
+            0.2032520325203252
+          ]
+        },
+        "bowling-seed810007": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.8903225806451613,
+            0.12580645161290321
+          ]
+        },
+        "bowling-seed810008": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.8354838709677419,
+            0.3419354838709677,
+            0.0
+          ]
+        },
+        "bowling-seed810009": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9967741935483871,
+            0.8548387096774194,
+            0.05161290322580645
+          ]
+        },
+        "bowling-seed810010": {
+          "eligible_pin_queries": 270,
+          "fractions": [
+            0.937037037037037,
+            0.6962962962962963,
+            0.06666666666666667
+          ]
+        },
+        "bowling-seed810011": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9419354838709677,
+            0.6483870967741936,
+            0.012903225806451613
+          ]
+        },
+        "bowling-seed810012": {
+          "eligible_pin_queries": 193,
+          "fractions": [
+            0.9585492227979274,
+            0.7046632124352331,
+            0.14507772020725387
+          ]
+        },
+        "bowling-seed810014": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9580645161290322,
+            0.867741935483871,
+            0.1064516129032258
+          ]
+        },
+        "bowling-seed810015": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.7870967741935484,
+            0.0
+          ]
+        },
+        "bowling-seed810016": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9483870967741935,
+            0.6903225806451613,
+            0.07419354838709677
+          ]
+        },
+        "bowling-seed810017": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.7838709677419354,
+            0.08709677419354839
+          ]
+        },
+        "bowling-seed810018": {
+          "eligible_pin_queries": 231,
+          "fractions": [
+            0.974025974025974,
+            0.7359307359307359,
+            0.1645021645021645
+          ]
+        },
+        "bowling-seed810019": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.9672131147540983,
+            0.8229508196721311,
+            0.11147540983606558
+          ]
+        },
+        "bowling-seed810020": {
+          "eligible_pin_queries": 212,
+          "fractions": [
+            1.0,
+            0.8679245283018868,
+            0.13679245283018868
+          ]
+        },
+        "bowling-seed810021": {
+          "eligible_pin_queries": 291,
+          "fractions": [
+            0.9484536082474226,
+            0.6769759450171822,
+            0.07903780068728522
+          ]
+        },
+        "bowling-seed810022": {
+          "eligible_pin_queries": 269,
+          "fractions": [
+            0.9814126394052045,
+            0.758364312267658,
+            0.12267657992565056
+          ]
+        },
+        "bowling-seed810023": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.603225806451613,
+            0.01935483870967742
+          ]
+        },
+        "bowling-seed810024": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9774193548387097,
+            0.7354838709677419,
+            0.04838709677419355
+          ]
+        },
+        "bowling-seed810025": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9838709677419355,
+            0.6935483870967742,
+            0.07096774193548387
+          ]
+        },
+        "bowling-seed810026": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.967741935483871,
+            0.632258064516129,
+            0.0032258064516129032
+          ]
+        },
+        "bowling-seed810027": {
+          "eligible_pin_queries": 280,
+          "fractions": [
+            0.9857142857142858,
+            0.8357142857142857,
+            0.1
+          ]
+        },
+        "bowling-seed810028": {
+          "eligible_pin_queries": 221,
+          "fractions": [
+            0.9864253393665159,
+            0.7782805429864253,
+            0.23529411764705882
+          ]
+        },
+        "bowling-seed810029": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9806451612903225,
+            0.6064516129032258,
+            0.03225806451612903
+          ]
+        },
+        "bowling-seed810030": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9709677419354839,
+            0.6741935483870968,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed810031": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.7064516129032258,
+            0.06451612903225806
+          ]
+        }
+      },
+      "macro_fractions": [
+        0.9737642244368806,
+        0.7374988748208504,
+        0.0917224896760195
+      ]
+    },
+    "long-seed43-best": {
+      "prediction_sha256": "f50b1e5fb033d13a36a5269940c9ef20187163a17212f2ec35c96258ce32bca7",
+      "episodes": {
+        "bowling-seed0051": {
+          "eligible_pin_queries": 251,
+          "fractions": [
+            0.9322709163346613,
+            0.7131474103585658,
+            0.17928286852589642
+          ]
+        },
+        "bowling-seed0052": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9580645161290322,
+            0.7806451612903226,
+            0.2
+          ]
+        },
+        "bowling-seed0053": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9580645161290322,
+            0.5193548387096775,
+            0.01935483870967742
+          ]
+        },
+        "bowling-seed0054": {
+          "eligible_pin_queries": 297,
+          "fractions": [
+            0.9191919191919192,
+            0.5993265993265994,
+            0.06734006734006734
+          ]
+        },
+        "bowling-seed0055": {
+          "eligible_pin_queries": 241,
+          "fractions": [
+            0.975103734439834,
+            0.7717842323651453,
+            0.03734439834024896
+          ]
+        },
+        "bowling-seed0056": {
+          "eligible_pin_queries": 248,
+          "fractions": [
+            0.9798387096774194,
+            0.7862903225806451,
+            0.16129032258064516
+          ]
+        },
+        "bowling-seed0057": {
+          "eligible_pin_queries": 285,
+          "fractions": [
+            0.9929824561403509,
+            0.7859649122807018,
+            0.2771929824561403
+          ]
+        },
+        "bowling-seed0058": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.7838709677419354,
+            0.06451612903225806
+          ]
+        },
+        "bowling-seed0059": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.8709677419354839,
+            0.27741935483870966
+          ]
+        },
+        "bowling-seed0060": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9709677419354839,
+            0.7645161290322581,
+            0.07419354838709677
+          ]
+        },
+        "bowling-seed0061": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9290322580645162,
+            0.5741935483870968,
+            0.035483870967741936
+          ]
+        },
+        "bowling-seed0062": {
+          "eligible_pin_queries": 198,
+          "fractions": [
+            0.9646464646464646,
+            0.6515151515151515,
+            0.18181818181818182
+          ]
+        },
+        "bowling-seed0063": {
+          "eligible_pin_queries": 207,
+          "fractions": [
+            0.9951690821256038,
+            0.6859903381642513,
+            0.14492753623188406
+          ]
+        },
+        "bowling-seed0064": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9387096774193548,
+            0.7677419354838709,
+            0.02258064516129032
+          ]
+        },
+        "bowling-seed0065": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.7741935483870968,
+            0.00967741935483871
+          ]
+        },
+        "bowling-seed0066": {
+          "eligible_pin_queries": 240,
+          "fractions": [
+            1.0,
+            0.9208333333333333,
+            0.35
+          ]
+        },
+        "bowling-seed810000": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9193548387096774,
+            0.6709677419354839,
+            0.12580645161290321
+          ]
+        },
+        "bowling-seed810001": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9709677419354839,
+            0.7548387096774194,
+            0.035483870967741936
+          ]
+        },
+        "bowling-seed810002": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.9934426229508196,
+            0.9245901639344263,
+            0.29508196721311475
+          ]
+        },
+        "bowling-seed810003": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.6935483870967742,
+            0.07741935483870968
+          ]
+        },
+        "bowling-seed810004": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.7193548387096774,
+            0.016129032258064516
+          ]
+        },
+        "bowling-seed810005": {
+          "eligible_pin_queries": 188,
+          "fractions": [
+            0.9893617021276596,
+            0.8617021276595744,
+            0.1702127659574468
+          ]
+        },
+        "bowling-seed810006": {
+          "eligible_pin_queries": 246,
+          "fractions": [
+            0.9878048780487805,
+            0.8577235772357723,
+            0.17073170731707318
+          ]
+        },
+        "bowling-seed810007": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9741935483870968,
+            0.6967741935483871,
+            0.012903225806451613
+          ]
+        },
+        "bowling-seed810008": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9548387096774194,
+            0.5645161290322581,
+            0.00967741935483871
+          ]
+        },
+        "bowling-seed810009": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9516129032258065,
+            0.667741935483871,
+            0.04838709677419355
+          ]
+        },
+        "bowling-seed810010": {
+          "eligible_pin_queries": 270,
+          "fractions": [
+            0.9777777777777777,
+            0.6666666666666666,
+            0.07037037037037037
+          ]
+        },
+        "bowling-seed810011": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9741935483870968,
+            0.6419354838709678,
+            0.07419354838709677
+          ]
+        },
+        "bowling-seed810012": {
+          "eligible_pin_queries": 193,
+          "fractions": [
+            0.9740932642487047,
+            0.9067357512953368,
+            0.25906735751295334
+          ]
+        },
+        "bowling-seed810014": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.8612903225806452,
+            0.03870967741935484
+          ]
+        },
+        "bowling-seed810015": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            1.0,
+            0.9387096774193548,
+            0.05161290322580645
+          ]
+        },
+        "bowling-seed810016": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9354838709677419,
+            0.6935483870967742,
+            0.06129032258064516
+          ]
+        },
+        "bowling-seed810017": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.8903225806451613,
+            0.07096774193548387
+          ]
+        },
+        "bowling-seed810018": {
+          "eligible_pin_queries": 231,
+          "fractions": [
+            0.9393939393939394,
+            0.6753246753246753,
+            0.09956709956709957
+          ]
+        },
+        "bowling-seed810019": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.9770491803278688,
+            0.8098360655737705,
+            0.23934426229508196
+          ]
+        },
+        "bowling-seed810020": {
+          "eligible_pin_queries": 212,
+          "fractions": [
+            0.9339622641509434,
+            0.6556603773584906,
+            0.08962264150943396
+          ]
+        },
+        "bowling-seed810021": {
+          "eligible_pin_queries": 291,
+          "fractions": [
+            0.9759450171821306,
+            0.7457044673539519,
+            0.1134020618556701
+          ]
+        },
+        "bowling-seed810022": {
+          "eligible_pin_queries": 269,
+          "fractions": [
+            0.9888475836431226,
+            0.7546468401486989,
+            0.3159851301115242
+          ]
+        },
+        "bowling-seed810023": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9612903225806452,
+            0.5290322580645161,
+            0.02903225806451613
+          ]
+        },
+        "bowling-seed810024": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9387096774193548,
+            0.7580645161290323,
+            0.08064516129032258
+          ]
+        },
+        "bowling-seed810025": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9451612903225807,
+            0.4935483870967742,
+            0.00967741935483871
+          ]
+        },
+        "bowling-seed810026": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9838709677419355,
+            0.5903225806451613,
+            0.0
+          ]
+        },
+        "bowling-seed810027": {
+          "eligible_pin_queries": 280,
+          "fractions": [
+            0.9535714285714286,
+            0.7464285714285714,
+            0.15357142857142858
+          ]
+        },
+        "bowling-seed810028": {
+          "eligible_pin_queries": 221,
+          "fractions": [
+            0.9457013574660633,
+            0.5972850678733032,
+            0.09049773755656108
+          ]
+        },
+        "bowling-seed810029": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9967741935483871,
+            0.8129032258064516,
+            0.07741935483870968
+          ]
+        },
+        "bowling-seed810030": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9967741935483871,
+            0.8290322580645161,
+            0.016129032258064516
+          ]
+        },
+        "bowling-seed810031": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.7096774193548387,
+            0.03870967741935484
+          ]
+        }
+      },
+      "macro_fractions": [
+        0.9695818690815443,
+        0.7333780756383709,
+        0.10732064344616027
+      ]
+    },
+    "long-seed43-latest": {
+      "prediction_sha256": "f50b1e5fb033d13a36a5269940c9ef20187163a17212f2ec35c96258ce32bca7",
+      "episodes": {
+        "bowling-seed0051": {
+          "eligible_pin_queries": 251,
+          "fractions": [
+            0.9322709163346613,
+            0.7131474103585658,
+            0.17928286852589642
+          ]
+        },
+        "bowling-seed0052": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9580645161290322,
+            0.7806451612903226,
+            0.2
+          ]
+        },
+        "bowling-seed0053": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9580645161290322,
+            0.5193548387096775,
+            0.01935483870967742
+          ]
+        },
+        "bowling-seed0054": {
+          "eligible_pin_queries": 297,
+          "fractions": [
+            0.9191919191919192,
+            0.5993265993265994,
+            0.06734006734006734
+          ]
+        },
+        "bowling-seed0055": {
+          "eligible_pin_queries": 241,
+          "fractions": [
+            0.975103734439834,
+            0.7717842323651453,
+            0.03734439834024896
+          ]
+        },
+        "bowling-seed0056": {
+          "eligible_pin_queries": 248,
+          "fractions": [
+            0.9798387096774194,
+            0.7862903225806451,
+            0.16129032258064516
+          ]
+        },
+        "bowling-seed0057": {
+          "eligible_pin_queries": 285,
+          "fractions": [
+            0.9929824561403509,
+            0.7859649122807018,
+            0.2771929824561403
+          ]
+        },
+        "bowling-seed0058": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.7838709677419354,
+            0.06451612903225806
+          ]
+        },
+        "bowling-seed0059": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.8709677419354839,
+            0.27741935483870966
+          ]
+        },
+        "bowling-seed0060": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9709677419354839,
+            0.7645161290322581,
+            0.07419354838709677
+          ]
+        },
+        "bowling-seed0061": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9290322580645162,
+            0.5741935483870968,
+            0.035483870967741936
+          ]
+        },
+        "bowling-seed0062": {
+          "eligible_pin_queries": 198,
+          "fractions": [
+            0.9646464646464646,
+            0.6515151515151515,
+            0.18181818181818182
+          ]
+        },
+        "bowling-seed0063": {
+          "eligible_pin_queries": 207,
+          "fractions": [
+            0.9951690821256038,
+            0.6859903381642513,
+            0.14492753623188406
+          ]
+        },
+        "bowling-seed0064": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9387096774193548,
+            0.7677419354838709,
+            0.02258064516129032
+          ]
+        },
+        "bowling-seed0065": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.7741935483870968,
+            0.00967741935483871
+          ]
+        },
+        "bowling-seed0066": {
+          "eligible_pin_queries": 240,
+          "fractions": [
+            1.0,
+            0.9208333333333333,
+            0.35
+          ]
+        },
+        "bowling-seed810000": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9193548387096774,
+            0.6709677419354839,
+            0.12580645161290321
+          ]
+        },
+        "bowling-seed810001": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9709677419354839,
+            0.7548387096774194,
+            0.035483870967741936
+          ]
+        },
+        "bowling-seed810002": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.9934426229508196,
+            0.9245901639344263,
+            0.29508196721311475
+          ]
+        },
+        "bowling-seed810003": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.6935483870967742,
+            0.07741935483870968
+          ]
+        },
+        "bowling-seed810004": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.7193548387096774,
+            0.016129032258064516
+          ]
+        },
+        "bowling-seed810005": {
+          "eligible_pin_queries": 188,
+          "fractions": [
+            0.9893617021276596,
+            0.8617021276595744,
+            0.1702127659574468
+          ]
+        },
+        "bowling-seed810006": {
+          "eligible_pin_queries": 246,
+          "fractions": [
+            0.9878048780487805,
+            0.8577235772357723,
+            0.17073170731707318
+          ]
+        },
+        "bowling-seed810007": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9741935483870968,
+            0.6967741935483871,
+            0.012903225806451613
+          ]
+        },
+        "bowling-seed810008": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9548387096774194,
+            0.5645161290322581,
+            0.00967741935483871
+          ]
+        },
+        "bowling-seed810009": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9516129032258065,
+            0.667741935483871,
+            0.04838709677419355
+          ]
+        },
+        "bowling-seed810010": {
+          "eligible_pin_queries": 270,
+          "fractions": [
+            0.9777777777777777,
+            0.6666666666666666,
+            0.07037037037037037
+          ]
+        },
+        "bowling-seed810011": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9741935483870968,
+            0.6419354838709678,
+            0.07419354838709677
+          ]
+        },
+        "bowling-seed810012": {
+          "eligible_pin_queries": 193,
+          "fractions": [
+            0.9740932642487047,
+            0.9067357512953368,
+            0.25906735751295334
+          ]
+        },
+        "bowling-seed810014": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.8612903225806452,
+            0.03870967741935484
+          ]
+        },
+        "bowling-seed810015": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            1.0,
+            0.9387096774193548,
+            0.05161290322580645
+          ]
+        },
+        "bowling-seed810016": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9354838709677419,
+            0.6935483870967742,
+            0.06129032258064516
+          ]
+        },
+        "bowling-seed810017": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.8903225806451613,
+            0.07096774193548387
+          ]
+        },
+        "bowling-seed810018": {
+          "eligible_pin_queries": 231,
+          "fractions": [
+            0.9393939393939394,
+            0.6753246753246753,
+            0.09956709956709957
+          ]
+        },
+        "bowling-seed810019": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.9770491803278688,
+            0.8098360655737705,
+            0.23934426229508196
+          ]
+        },
+        "bowling-seed810020": {
+          "eligible_pin_queries": 212,
+          "fractions": [
+            0.9339622641509434,
+            0.6556603773584906,
+            0.08962264150943396
+          ]
+        },
+        "bowling-seed810021": {
+          "eligible_pin_queries": 291,
+          "fractions": [
+            0.9759450171821306,
+            0.7457044673539519,
+            0.1134020618556701
+          ]
+        },
+        "bowling-seed810022": {
+          "eligible_pin_queries": 269,
+          "fractions": [
+            0.9888475836431226,
+            0.7546468401486989,
+            0.3159851301115242
+          ]
+        },
+        "bowling-seed810023": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9612903225806452,
+            0.5290322580645161,
+            0.02903225806451613
+          ]
+        },
+        "bowling-seed810024": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9387096774193548,
+            0.7580645161290323,
+            0.08064516129032258
+          ]
+        },
+        "bowling-seed810025": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9451612903225807,
+            0.4935483870967742,
+            0.00967741935483871
+          ]
+        },
+        "bowling-seed810026": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9838709677419355,
+            0.5903225806451613,
+            0.0
+          ]
+        },
+        "bowling-seed810027": {
+          "eligible_pin_queries": 280,
+          "fractions": [
+            0.9535714285714286,
+            0.7464285714285714,
+            0.15357142857142858
+          ]
+        },
+        "bowling-seed810028": {
+          "eligible_pin_queries": 221,
+          "fractions": [
+            0.9457013574660633,
+            0.5972850678733032,
+            0.09049773755656108
+          ]
+        },
+        "bowling-seed810029": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9967741935483871,
+            0.8129032258064516,
+            0.07741935483870968
+          ]
+        },
+        "bowling-seed810030": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9967741935483871,
+            0.8290322580645161,
+            0.016129032258064516
+          ]
+        },
+        "bowling-seed810031": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.7096774193548387,
+            0.03870967741935484
+          ]
+        }
+      },
+      "macro_fractions": [
+        0.9695818690815443,
+        0.7333780756383709,
+        0.10732064344616027
+      ]
+    },
+    "long-seed44-best": {
+      "prediction_sha256": "6ef11b7a185c7b91b638dcecd5bc07aa355c6efd66d5e5ee1337b51d4c9f5093",
+      "episodes": {
+        "bowling-seed0051": {
+          "eligible_pin_queries": 251,
+          "fractions": [
+            0.9960159362549801,
+            0.8286852589641435,
+            0.12749003984063745
+          ]
+        },
+        "bowling-seed0052": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9806451612903225,
+            0.7677419354838709,
+            0.12258064516129032
+          ]
+        },
+        "bowling-seed0053": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9774193548387097,
+            0.7193548387096774,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed0054": {
+          "eligible_pin_queries": 297,
+          "fractions": [
+            1.0,
+            0.9090909090909091,
+            0.10437710437710437
+          ]
+        },
+        "bowling-seed0055": {
+          "eligible_pin_queries": 241,
+          "fractions": [
+            0.970954356846473,
+            0.7344398340248963,
+            0.18672199170124482
+          ]
+        },
+        "bowling-seed0056": {
+          "eligible_pin_queries": 248,
+          "fractions": [
+            0.9637096774193549,
+            0.7379032258064516,
+            0.21774193548387097
+          ]
+        },
+        "bowling-seed0057": {
+          "eligible_pin_queries": 285,
+          "fractions": [
+            1.0,
+            0.8210526315789474,
+            0.3473684210526316
+          ]
+        },
+        "bowling-seed0058": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9806451612903225,
+            0.8032258064516129,
+            0.12258064516129032
+          ]
+        },
+        "bowling-seed0059": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.8161290322580645,
+            0.11612903225806452
+          ]
+        },
+        "bowling-seed0060": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            1.0,
+            0.832258064516129,
+            0.016129032258064516
+          ]
+        },
+        "bowling-seed0061": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.8612903225806452,
+            0.025806451612903226
+          ]
+        },
+        "bowling-seed0062": {
+          "eligible_pin_queries": 198,
+          "fractions": [
+            0.98989898989899,
+            0.8636363636363636,
+            0.2777777777777778
+          ]
+        },
+        "bowling-seed0063": {
+          "eligible_pin_queries": 207,
+          "fractions": [
+            0.9951690821256038,
+            0.821256038647343,
+            0.2028985507246377
+          ]
+        },
+        "bowling-seed0064": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.7741935483870968,
+            0.0032258064516129032
+          ]
+        },
+        "bowling-seed0065": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.8548387096774194,
+            0.025806451612903226
+          ]
+        },
+        "bowling-seed0066": {
+          "eligible_pin_queries": 240,
+          "fractions": [
+            1.0,
+            0.9,
+            0.23333333333333334
+          ]
+        },
+        "bowling-seed810000": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9774193548387097,
+            0.5774193548387097,
+            0.03870967741935484
+          ]
+        },
+        "bowling-seed810001": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9967741935483871,
+            0.8096774193548387,
+            0.03225806451612903
+          ]
+        },
+        "bowling-seed810002": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            1.0,
+            0.8622950819672132,
+            0.26557377049180325
+          ]
+        },
+        "bowling-seed810003": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.7870967741935484,
+            0.1774193548387097
+          ]
+        },
+        "bowling-seed810004": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9806451612903225,
+            0.7032258064516129,
+            0.08064516129032258
+          ]
+        },
+        "bowling-seed810005": {
+          "eligible_pin_queries": 188,
+          "fractions": [
+            0.9946808510638298,
+            0.8457446808510638,
+            0.15425531914893617
+          ]
+        },
+        "bowling-seed810006": {
+          "eligible_pin_queries": 246,
+          "fractions": [
+            0.9512195121951219,
+            0.8048780487804879,
+            0.25203252032520324
+          ]
+        },
+        "bowling-seed810007": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9741935483870968,
+            0.667741935483871,
+            0.04516129032258064
+          ]
+        },
+        "bowling-seed810008": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            1.0,
+            0.9258064516129032,
+            0.08709677419354839
+          ]
+        },
+        "bowling-seed810009": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9967741935483871,
+            0.7161290322580646,
+            0.17096774193548386
+          ]
+        },
+        "bowling-seed810010": {
+          "eligible_pin_queries": 270,
+          "fractions": [
+            0.9740740740740741,
+            0.774074074074074,
+            0.2222222222222222
+          ]
+        },
+        "bowling-seed810011": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.964516129032258,
+            0.7709677419354839,
+            0.0935483870967742
+          ]
+        },
+        "bowling-seed810012": {
+          "eligible_pin_queries": 193,
+          "fractions": [
+            0.9948186528497409,
+            0.7979274611398963,
+            0.13471502590673576
+          ]
+        },
+        "bowling-seed810014": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9774193548387097,
+            0.7451612903225806,
+            0.035483870967741936
+          ]
+        },
+        "bowling-seed810015": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9838709677419355,
+            0.5580645161290323,
+            0.00967741935483871
+          ]
+        },
+        "bowling-seed810016": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.6612903225806451,
+            0.016129032258064516
+          ]
+        },
+        "bowling-seed810017": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            1.0,
+            0.8774193548387097,
+            0.04516129032258064
+          ]
+        },
+        "bowling-seed810018": {
+          "eligible_pin_queries": 231,
+          "fractions": [
+            0.9956709956709957,
+            0.8441558441558441,
+            0.15584415584415584
+          ]
+        },
+        "bowling-seed810019": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.9836065573770492,
+            0.7049180327868853,
+            0.1180327868852459
+          ]
+        },
+        "bowling-seed810020": {
+          "eligible_pin_queries": 212,
+          "fractions": [
+            0.9952830188679245,
+            0.8113207547169812,
+            0.19811320754716982
+          ]
+        },
+        "bowling-seed810021": {
+          "eligible_pin_queries": 291,
+          "fractions": [
+            0.9828178694158075,
+            0.7594501718213058,
+            0.13402061855670103
+          ]
+        },
+        "bowling-seed810022": {
+          "eligible_pin_queries": 269,
+          "fractions": [
+            0.9814126394052045,
+            0.8513011152416357,
+            0.23048327137546468
+          ]
+        },
+        "bowling-seed810023": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9967741935483871,
+            0.9451612903225807,
+            0.1064516129032258
+          ]
+        },
+        "bowling-seed810024": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            1.0,
+            0.8129032258064516,
+            0.016129032258064516
+          ]
+        },
+        "bowling-seed810025": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.964516129032258,
+            0.6838709677419355,
+            0.0967741935483871
+          ]
+        },
+        "bowling-seed810026": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9548387096774194,
+            0.632258064516129,
+            0.0032258064516129032
+          ]
+        },
+        "bowling-seed810027": {
+          "eligible_pin_queries": 280,
+          "fractions": [
+            0.9892857142857143,
+            0.85,
+            0.32857142857142857
+          ]
+        },
+        "bowling-seed810028": {
+          "eligible_pin_queries": 221,
+          "fractions": [
+            0.995475113122172,
+            0.9276018099547512,
+            0.28054298642533937
+          ]
+        },
+        "bowling-seed810029": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9967741935483871,
+            0.8483870967741935,
+            0.041935483870967745
+          ]
+        },
+        "bowling-seed810030": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.8258064516129032,
+            0.08064516129032258
+          ]
+        },
+        "bowling-seed810031": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.8741935483870967,
+            0.054838709677419356
+          ]
+        }
+      },
+      "macro_fractions": [
+        0.9868750063603735,
+        0.7936456221375533,
+        0.12432094062823676
+      ]
+    },
+    "long-seed44-latest": {
+      "prediction_sha256": "09c3fd2d139d15e63e3053fefadac9dc9de8ed80f75ddd78624ff700dc1c181a",
+      "episodes": {
+        "bowling-seed0051": {
+          "eligible_pin_queries": 251,
+          "fractions": [
+            0.9482071713147411,
+            0.7529880478087649,
+            0.1394422310756972
+          ]
+        },
+        "bowling-seed0052": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.8516129032258064,
+            0.05806451612903226
+          ]
+        },
+        "bowling-seed0053": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9870967741935484,
+            0.6903225806451613,
+            0.0935483870967742
+          ]
+        },
+        "bowling-seed0054": {
+          "eligible_pin_queries": 297,
+          "fractions": [
+            0.9730639730639731,
+            0.8080808080808081,
+            0.22895622895622897
+          ]
+        },
+        "bowling-seed0055": {
+          "eligible_pin_queries": 241,
+          "fractions": [
+            0.9585062240663901,
+            0.7344398340248963,
+            0.15352697095435686
+          ]
+        },
+        "bowling-seed0056": {
+          "eligible_pin_queries": 248,
+          "fractions": [
+            0.9596774193548387,
+            0.6411290322580645,
+            0.16129032258064516
+          ]
+        },
+        "bowling-seed0057": {
+          "eligible_pin_queries": 285,
+          "fractions": [
+            0.9859649122807017,
+            0.7298245614035088,
+            0.16842105263157894
+          ]
+        },
+        "bowling-seed0058": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9774193548387097,
+            0.7032258064516129,
+            0.01935483870967742
+          ]
+        },
+        "bowling-seed0059": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            1.0,
+            0.8290322580645161,
+            0.10967741935483871
+          ]
+        },
+        "bowling-seed0060": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.964516129032258,
+            0.6516129032258065,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed0061": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9516129032258065,
+            0.6709677419354839,
+            0.035483870967741936
+          ]
+        },
+        "bowling-seed0062": {
+          "eligible_pin_queries": 198,
+          "fractions": [
+            0.9949494949494949,
+            0.7424242424242424,
+            0.24242424242424243
+          ]
+        },
+        "bowling-seed0063": {
+          "eligible_pin_queries": 207,
+          "fractions": [
+            0.9806763285024155,
+            0.782608695652174,
+            0.16908212560386474
+          ]
+        },
+        "bowling-seed0064": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9774193548387097,
+            0.6612903225806451,
+            0.1064516129032258
+          ]
+        },
+        "bowling-seed0065": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9806451612903225,
+            0.5225806451612903,
+            0.0032258064516129032
+          ]
+        },
+        "bowling-seed0066": {
+          "eligible_pin_queries": 240,
+          "fractions": [
+            0.9958333333333333,
+            0.8208333333333333,
+            0.17916666666666667
+          ]
+        },
+        "bowling-seed810000": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9774193548387097,
+            0.7612903225806451,
+            0.016129032258064516
+          ]
+        },
+        "bowling-seed810001": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.964516129032258,
+            0.6612903225806451,
+            0.04516129032258064
+          ]
+        },
+        "bowling-seed810002": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.9836065573770492,
+            0.819672131147541,
+            0.2983606557377049
+          ]
+        },
+        "bowling-seed810003": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.7451612903225806,
+            0.06774193548387097
+          ]
+        },
+        "bowling-seed810004": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9516129032258065,
+            0.6258064516129033,
+            0.02258064516129032
+          ]
+        },
+        "bowling-seed810005": {
+          "eligible_pin_queries": 188,
+          "fractions": [
+            1.0,
+            0.8404255319148937,
+            0.1595744680851064
+          ]
+        },
+        "bowling-seed810006": {
+          "eligible_pin_queries": 246,
+          "fractions": [
+            0.9959349593495935,
+            0.8861788617886179,
+            0.23983739837398374
+          ]
+        },
+        "bowling-seed810007": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9709677419354839,
+            0.5741935483870968,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed810008": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9838709677419355,
+            0.6483870967741936,
+            0.05806451612903226
+          ]
+        },
+        "bowling-seed810009": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.8096774193548387,
+            0.10967741935483871
+          ]
+        },
+        "bowling-seed810010": {
+          "eligible_pin_queries": 270,
+          "fractions": [
+            0.9888888888888889,
+            0.7481481481481481,
+            0.12962962962962962
+          ]
+        },
+        "bowling-seed810011": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.967741935483871,
+            0.6258064516129033,
+            0.025806451612903226
+          ]
+        },
+        "bowling-seed810012": {
+          "eligible_pin_queries": 193,
+          "fractions": [
+            1.0,
+            0.8911917098445595,
+            0.17616580310880828
+          ]
+        },
+        "bowling-seed810014": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9774193548387097,
+            0.7193548387096774,
+            0.041935483870967745
+          ]
+        },
+        "bowling-seed810015": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9741935483870968,
+            0.6129032258064516,
+            0.06129032258064516
+          ]
+        },
+        "bowling-seed810016": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            1.0,
+            0.6709677419354839,
+            0.016129032258064516
+          ]
+        },
+        "bowling-seed810017": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.8838709677419355,
+            0.05161290322580645
+          ]
+        },
+        "bowling-seed810018": {
+          "eligible_pin_queries": 231,
+          "fractions": [
+            0.987012987012987,
+            0.8831168831168831,
+            0.19913419913419914
+          ]
+        },
+        "bowling-seed810019": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.9508196721311475,
+            0.780327868852459,
+            0.15081967213114755
+          ]
+        },
+        "bowling-seed810020": {
+          "eligible_pin_queries": 212,
+          "fractions": [
+            0.9764150943396226,
+            0.8018867924528302,
+            0.28773584905660377
+          ]
+        },
+        "bowling-seed810021": {
+          "eligible_pin_queries": 291,
+          "fractions": [
+            0.9690721649484536,
+            0.6872852233676976,
+            0.12714776632302405
+          ]
+        },
+        "bowling-seed810022": {
+          "eligible_pin_queries": 269,
+          "fractions": [
+            0.9851301115241635,
+            0.8550185873605948,
+            0.2342007434944238
+          ]
+        },
+        "bowling-seed810023": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9838709677419355,
+            0.7709677419354839,
+            0.0935483870967742
+          ]
+        },
+        "bowling-seed810024": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9967741935483871,
+            0.6129032258064516,
+            0.0032258064516129032
+          ]
+        },
+        "bowling-seed810025": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9709677419354839,
+            0.7225806451612903,
+            0.03225806451612903
+          ]
+        },
+        "bowling-seed810026": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9935483870967742,
+            0.7419354838709677,
+            0.01935483870967742
+          ]
+        },
+        "bowling-seed810027": {
+          "eligible_pin_queries": 280,
+          "fractions": [
+            0.9678571428571429,
+            0.6214285714285714,
+            0.32142857142857145
+          ]
+        },
+        "bowling-seed810028": {
+          "eligible_pin_queries": 221,
+          "fractions": [
+            1.0,
+            0.9095022624434389,
+            0.2986425339366516
+          ]
+        },
+        "bowling-seed810029": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9806451612903225,
+            0.6967741935483871,
+            0.04838709677419355
+          ]
+        },
+        "bowling-seed810030": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.967741935483871,
+            0.6612903225806451,
+            0.0032258064516129032
+          ]
+        },
+        "bowling-seed810031": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.9903225806451613,
+            0.832258064516129,
+            0.2161290322580645
+          ]
+        }
+      },
+      "macro_fractions": [
+        0.980130480092068,
+        0.7381824604889586,
+        0.11565861432486423
+      ]
+    },
+    "short-seed42-best": {
+      "prediction_sha256": "220b5d9f5c35b71238769720e04fc5ade2c890ba9ed87fdd8f465b86bd631b84",
+      "episodes": {
+        "bowling-seed0051": {
+          "eligible_pin_queries": 251,
+          "fractions": [
+            0.18725099601593626,
+            0.055776892430278883,
+            0.01195219123505976
+          ]
+        },
+        "bowling-seed0052": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.05161290322580645,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0053": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.12580645161290321,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed0054": {
+          "eligible_pin_queries": 297,
+          "fractions": [
+            0.3063973063973064,
+            0.08080808080808081,
+            0.020202020202020204
+          ]
+        },
+        "bowling-seed0055": {
+          "eligible_pin_queries": 241,
+          "fractions": [
+            0.2987551867219917,
+            0.08713692946058091,
+            0.029045643153526972
+          ]
+        },
+        "bowling-seed0056": {
+          "eligible_pin_queries": 248,
+          "fractions": [
+            0.20967741935483872,
+            0.0846774193548387,
+            0.012096774193548387
+          ]
+        },
+        "bowling-seed0057": {
+          "eligible_pin_queries": 285,
+          "fractions": [
+            0.17192982456140352,
+            0.06666666666666667,
+            0.010526315789473684
+          ]
+        },
+        "bowling-seed0058": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.14193548387096774,
+            0.0064516129032258064,
+            0.0
+          ]
+        },
+        "bowling-seed0059": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.3870967741935484,
+            0.012903225806451613,
+            0.0
+          ]
+        },
+        "bowling-seed0060": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.10967741935483871,
+            0.00967741935483871,
+            0.0032258064516129032
+          ]
+        },
+        "bowling-seed0061": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.03225806451612903,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0062": {
+          "eligible_pin_queries": 198,
+          "fractions": [
+            0.25757575757575757,
+            0.13131313131313133,
+            0.030303030303030304
+          ]
+        },
+        "bowling-seed0063": {
+          "eligible_pin_queries": 207,
+          "fractions": [
+            0.1497584541062802,
+            0.03864734299516908,
+            0.014492753623188406
+          ]
+        },
+        "bowling-seed0064": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.13548387096774195,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0065": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.03225806451612903,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0066": {
+          "eligible_pin_queries": 240,
+          "fractions": [
+            0.31666666666666665,
+            0.125,
+            0.025
+          ]
+        },
+        "bowling-seed810000": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.07741935483870968,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810001": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.2,
+            0.00967741935483871,
+            0.0
+          ]
+        },
+        "bowling-seed810002": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.3180327868852459,
+            0.07540983606557378,
+            0.022950819672131147
+          ]
+        },
+        "bowling-seed810003": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.15806451612903225,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed810004": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.22258064516129034,
+            0.0064516129032258064,
+            0.0
+          ]
+        },
+        "bowling-seed810005": {
+          "eligible_pin_queries": 188,
+          "fractions": [
+            0.2553191489361702,
+            0.047872340425531915,
+            0.010638297872340425
+          ]
+        },
+        "bowling-seed810006": {
+          "eligible_pin_queries": 246,
+          "fractions": [
+            0.3902439024390244,
+            0.10569105691056911,
+            0.036585365853658534
+          ]
+        },
+        "bowling-seed810007": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.08064516129032258,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed810008": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.13870967741935483,
+            0.0064516129032258064,
+            0.0
+          ]
+        },
+        "bowling-seed810009": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.14838709677419354,
+            0.0064516129032258064,
+            0.0
+          ]
+        },
+        "bowling-seed810010": {
+          "eligible_pin_queries": 270,
+          "fractions": [
+            0.25925925925925924,
+            0.06296296296296296,
+            0.003703703703703704
+          ]
+        },
+        "bowling-seed810011": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810012": {
+          "eligible_pin_queries": 193,
+          "fractions": [
+            0.3160621761658031,
+            0.13471502590673576,
+            0.02072538860103627
+          ]
+        },
+        "bowling-seed810014": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.14516129032258066,
+            0.00967741935483871,
+            0.0
+          ]
+        },
+        "bowling-seed810015": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.012903225806451613,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed810016": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.13870967741935483,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed810017": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.08709677419354839,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810018": {
+          "eligible_pin_queries": 231,
+          "fractions": [
+            0.26406926406926406,
+            0.08658008658008658,
+            0.004329004329004329
+          ]
+        },
+        "bowling-seed810019": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.26229508196721313,
+            0.05245901639344262,
+            0.022950819672131147
+          ]
+        },
+        "bowling-seed810020": {
+          "eligible_pin_queries": 212,
+          "fractions": [
+            0.2783018867924528,
+            0.09905660377358491,
+            0.02830188679245283
+          ]
+        },
+        "bowling-seed810021": {
+          "eligible_pin_queries": 291,
+          "fractions": [
+            0.21993127147766323,
+            0.10309278350515463,
+            0.024054982817869417
+          ]
+        },
+        "bowling-seed810022": {
+          "eligible_pin_queries": 269,
+          "fractions": [
+            0.1449814126394052,
+            0.08921933085501858,
+            0.03345724907063197
+          ]
+        },
+        "bowling-seed810023": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.13225806451612904,
+            0.041935483870967745,
+            0.012903225806451613
+          ]
+        },
+        "bowling-seed810024": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0967741935483871,
+            0.00967741935483871,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed810025": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.07741935483870968,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810026": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.07741935483870968,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810027": {
+          "eligible_pin_queries": 280,
+          "fractions": [
+            0.19285714285714287,
+            0.08928571428571429,
+            0.02142857142857143
+          ]
+        },
+        "bowling-seed810028": {
+          "eligible_pin_queries": 221,
+          "fractions": [
+            0.19909502262443438,
+            0.09049773755656108,
+            0.013574660633484163
+          ]
+        },
+        "bowling-seed810029": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.09032258064516129,
+            0.0064516129032258064,
+            0.0
+          ]
+        },
+        "bowling-seed810030": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.2064516129032258,
+            0.02258064516129032,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed810031": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.09032258064516129,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "macro_fractions": [
+        0.17436668427790739,
+        0.03981670398472214,
+        0.00905003695768892
+      ]
+    },
+    "short-seed42-latest": {
+      "prediction_sha256": "087e29ff0e31dfdcf1d3c62e8c4a923ea2b3bd267925bd25730e5252a223c427",
+      "episodes": {
+        "bowling-seed0051": {
+          "eligible_pin_queries": 251,
+          "fractions": [
+            0.13147410358565736,
+            0.055776892430278883,
+            0.01195219123505976
+          ]
+        },
+        "bowling-seed0052": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.02258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0053": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.012903225806451613,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0054": {
+          "eligible_pin_queries": 297,
+          "fractions": [
+            0.20875420875420875,
+            0.02356902356902357,
+            0.016835016835016835
+          ]
+        },
+        "bowling-seed0055": {
+          "eligible_pin_queries": 241,
+          "fractions": [
+            0.16597510373443983,
+            0.03319502074688797,
+            0.016597510373443983
+          ]
+        },
+        "bowling-seed0056": {
+          "eligible_pin_queries": 248,
+          "fractions": [
+            0.17338709677419356,
+            0.06854838709677419,
+            0.004032258064516129
+          ]
+        },
+        "bowling-seed0057": {
+          "eligible_pin_queries": 285,
+          "fractions": [
+            0.10175438596491228,
+            0.05263157894736842,
+            0.014035087719298246
+          ]
+        },
+        "bowling-seed0058": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.025806451612903226,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0059": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.02903225806451613,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0060": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.01935483870967742,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed0061": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0032258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0062": {
+          "eligible_pin_queries": 198,
+          "fractions": [
+            0.17676767676767677,
+            0.09595959595959595,
+            0.03535353535353535
+          ]
+        },
+        "bowling-seed0063": {
+          "eligible_pin_queries": 207,
+          "fractions": [
+            0.07246376811594203,
+            0.024154589371980676,
+            0.004830917874396135
+          ]
+        },
+        "bowling-seed0064": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0032258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0065": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.00967741935483871,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0066": {
+          "eligible_pin_queries": 240,
+          "fractions": [
+            0.15833333333333333,
+            0.09166666666666666,
+            0.025
+          ]
+        },
+        "bowling-seed810000": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0032258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810001": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.012903225806451613,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810002": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.2098360655737705,
+            0.07213114754098361,
+            0.029508196721311476
+          ]
+        },
+        "bowling-seed810003": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.01935483870967742,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810004": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.01935483870967742,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810005": {
+          "eligible_pin_queries": 188,
+          "fractions": [
+            0.11702127659574468,
+            0.05851063829787234,
+            0.026595744680851064
+          ]
+        },
+        "bowling-seed810006": {
+          "eligible_pin_queries": 246,
+          "fractions": [
+            0.26422764227642276,
+            0.10569105691056911,
+            0.056910569105691054
+          ]
+        },
+        "bowling-seed810007": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.016129032258064516,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810008": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.016129032258064516,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810009": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.05161290322580645,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed810010": {
+          "eligible_pin_queries": 270,
+          "fractions": [
+            0.17777777777777778,
+            0.05555555555555555,
+            0.003703703703703704
+          ]
+        },
+        "bowling-seed810011": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810012": {
+          "eligible_pin_queries": 193,
+          "fractions": [
+            0.16580310880829016,
+            0.08290155440414508,
+            0.031088082901554404
+          ]
+        },
+        "bowling-seed810014": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.02258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810015": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810016": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810017": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0032258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810018": {
+          "eligible_pin_queries": 231,
+          "fractions": [
+            0.1341991341991342,
+            0.025974025974025976,
+            0.004329004329004329
+          ]
+        },
+        "bowling-seed810019": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.10819672131147541,
+            0.01639344262295082,
+            0.006557377049180328
+          ]
+        },
+        "bowling-seed810020": {
+          "eligible_pin_queries": 212,
+          "fractions": [
+            0.16037735849056603,
+            0.06132075471698113,
+            0.02358490566037736
+          ]
+        },
+        "bowling-seed810021": {
+          "eligible_pin_queries": 291,
+          "fractions": [
+            0.2027491408934708,
+            0.08934707903780069,
+            0.027491408934707903
+          ]
+        },
+        "bowling-seed810022": {
+          "eligible_pin_queries": 269,
+          "fractions": [
+            0.11895910780669144,
+            0.05204460966542751,
+            0.040892193308550186
+          ]
+        },
+        "bowling-seed810023": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.05161290322580645,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed810024": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.02258064516129032,
+            0.0064516129032258064,
+            0.0032258064516129032
+          ]
+        },
+        "bowling-seed810025": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.02258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810026": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.012903225806451613,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810027": {
+          "eligible_pin_queries": 280,
+          "fractions": [
+            0.19285714285714287,
+            0.060714285714285714,
+            0.017857142857142856
+          ]
+        },
+        "bowling-seed810028": {
+          "eligible_pin_queries": 221,
+          "fractions": [
+            0.167420814479638,
+            0.07239819004524888,
+            0.01809954751131222
+          ]
+        },
+        "bowling-seed810029": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0032258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810030": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.07096774193548387,
+            0.016129032258064516,
+            0.0
+          ]
+        },
+        "bowling-seed810031": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.01935483870967742,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "macro_fractions": [
+        0.07876347564249496,
+        0.02618600339979897,
+        0.008903834056814176
+      ]
+    },
+    "short-seed43-best": {
+      "prediction_sha256": "ea637a4a543ea0c7cecc6fc0004627ca39bcedf3d322d16e5a605bbbaf943fbd",
+      "episodes": {
+        "bowling-seed0051": {
+          "eligible_pin_queries": 251,
+          "fractions": [
+            0.38645418326693226,
+            0.12350597609561753,
+            0.04780876494023904
+          ]
+        },
+        "bowling-seed0052": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.24838709677419354,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0053": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.14838709677419354,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0054": {
+          "eligible_pin_queries": 297,
+          "fractions": [
+            0.5454545454545454,
+            0.16835016835016836,
+            0.020202020202020204
+          ]
+        },
+        "bowling-seed0055": {
+          "eligible_pin_queries": 241,
+          "fractions": [
+            0.5809128630705395,
+            0.1950207468879668,
+            0.06224066390041494
+          ]
+        },
+        "bowling-seed0056": {
+          "eligible_pin_queries": 248,
+          "fractions": [
+            0.40725806451612906,
+            0.16532258064516128,
+            0.04032258064516129
+          ]
+        },
+        "bowling-seed0057": {
+          "eligible_pin_queries": 285,
+          "fractions": [
+            0.36140350877192984,
+            0.12631578947368421,
+            0.03859649122807018
+          ]
+        },
+        "bowling-seed0058": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.25161290322580643,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed0059": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.33548387096774196,
+            0.03225806451612903,
+            0.0
+          ]
+        },
+        "bowling-seed0060": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.6709677419354839,
+            0.05806451612903226,
+            0.0
+          ]
+        },
+        "bowling-seed0061": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.3419354838709677,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0062": {
+          "eligible_pin_queries": 198,
+          "fractions": [
+            0.43434343434343436,
+            0.21717171717171718,
+            0.06565656565656566
+          ]
+        },
+        "bowling-seed0063": {
+          "eligible_pin_queries": 207,
+          "fractions": [
+            0.4396135265700483,
+            0.03864734299516908,
+            0.0
+          ]
+        },
+        "bowling-seed0064": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.2645161290322581,
+            0.00967741935483871,
+            0.0
+          ]
+        },
+        "bowling-seed0065": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.08064516129032258,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed0066": {
+          "eligible_pin_queries": 240,
+          "fractions": [
+            0.44583333333333336,
+            0.20416666666666666,
+            0.0375
+          ]
+        },
+        "bowling-seed810000": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.3225806451612903,
+            0.02903225806451613,
+            0.0
+          ]
+        },
+        "bowling-seed810001": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.432258064516129,
+            0.035483870967741936,
+            0.0
+          ]
+        },
+        "bowling-seed810002": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.5245901639344263,
+            0.2,
+            0.07868852459016394
+          ]
+        },
+        "bowling-seed810003": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.4,
+            0.00967741935483871,
+            0.0
+          ]
+        },
+        "bowling-seed810004": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.35161290322580646,
+            0.04838709677419355,
+            0.0
+          ]
+        },
+        "bowling-seed810005": {
+          "eligible_pin_queries": 188,
+          "fractions": [
+            0.3670212765957447,
+            0.07446808510638298,
+            0.015957446808510637
+          ]
+        },
+        "bowling-seed810006": {
+          "eligible_pin_queries": 246,
+          "fractions": [
+            0.6056910569105691,
+            0.23170731707317074,
+            0.036585365853658534
+          ]
+        },
+        "bowling-seed810007": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.5064516129032258,
+            0.03225806451612903,
+            0.0
+          ]
+        },
+        "bowling-seed810008": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.1967741935483871,
+            0.04838709677419355,
+            0.0
+          ]
+        },
+        "bowling-seed810009": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.2645161290322581,
+            0.0935483870967742,
+            0.025806451612903226
+          ]
+        },
+        "bowling-seed810010": {
+          "eligible_pin_queries": 270,
+          "fractions": [
+            0.3888888888888889,
+            0.15925925925925927,
+            0.037037037037037035
+          ]
+        },
+        "bowling-seed810011": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.17096774193548386,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810012": {
+          "eligible_pin_queries": 193,
+          "fractions": [
+            0.40414507772020725,
+            0.26424870466321243,
+            0.06217616580310881
+          ]
+        },
+        "bowling-seed810014": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.3387096774193548,
+            0.01935483870967742,
+            0.0
+          ]
+        },
+        "bowling-seed810015": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.38387096774193546,
+            0.02258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed810016": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.06451612903225806,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810017": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.4645161290322581,
+            0.08064516129032258,
+            0.0
+          ]
+        },
+        "bowling-seed810018": {
+          "eligible_pin_queries": 231,
+          "fractions": [
+            0.7359307359307359,
+            0.1774891774891775,
+            0.004329004329004329
+          ]
+        },
+        "bowling-seed810019": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.6262295081967213,
+            0.1180327868852459,
+            0.03278688524590164
+          ]
+        },
+        "bowling-seed810020": {
+          "eligible_pin_queries": 212,
+          "fractions": [
+            0.5613207547169812,
+            0.14150943396226415,
+            0.05660377358490566
+          ]
+        },
+        "bowling-seed810021": {
+          "eligible_pin_queries": 291,
+          "fractions": [
+            0.3470790378006873,
+            0.16838487972508592,
+            0.05154639175257732
+          ]
+        },
+        "bowling-seed810022": {
+          "eligible_pin_queries": 269,
+          "fractions": [
+            0.3680297397769517,
+            0.13011152416356878,
+            0.040892193308550186
+          ]
+        },
+        "bowling-seed810023": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.24193548387096775,
+            0.01935483870967742,
+            0.0
+          ]
+        },
+        "bowling-seed810024": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.2032258064516129,
+            0.00967741935483871,
+            0.0
+          ]
+        },
+        "bowling-seed810025": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.38064516129032255,
+            0.04516129032258064,
+            0.0
+          ]
+        },
+        "bowling-seed810026": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.5096774193548387,
+            0.041935483870967745,
+            0.0
+          ]
+        },
+        "bowling-seed810027": {
+          "eligible_pin_queries": 280,
+          "fractions": [
+            0.33214285714285713,
+            0.12857142857142856,
+            0.017857142857142856
+          ]
+        },
+        "bowling-seed810028": {
+          "eligible_pin_queries": 221,
+          "fractions": [
+            0.37104072398190047,
+            0.13122171945701358,
+            0.03619909502262444
+          ]
+        },
+        "bowling-seed810029": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.3,
+            0.0064516129032258064,
+            0.0
+          ]
+        },
+        "bowling-seed810030": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.24838709677419354,
+            0.06129032258064516,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed810031": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.27741935483870966,
+            0.041935483870967745,
+            0.0
+          ]
+        }
+      },
+      "macro_fractions": [
+        0.37517836767922474,
+        0.08330038740144187,
+        0.017345620793229488
+      ]
+    },
+    "short-seed43-latest": {
+      "prediction_sha256": "5ea9580a18a017c6ac15eebb659cd9f85bf003f458493cc93afe5af0397b022e",
+      "episodes": {
+        "bowling-seed0051": {
+          "eligible_pin_queries": 251,
+          "fractions": [
+            0.1553784860557769,
+            0.05976095617529881,
+            0.00796812749003984
+          ]
+        },
+        "bowling-seed0052": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.12258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0053": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.04838709677419355,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0054": {
+          "eligible_pin_queries": 297,
+          "fractions": [
+            0.24915824915824916,
+            0.04377104377104377,
+            0.010101010101010102
+          ]
+        },
+        "bowling-seed0055": {
+          "eligible_pin_queries": 241,
+          "fractions": [
+            0.3029045643153527,
+            0.08713692946058091,
+            0.004149377593360996
+          ]
+        },
+        "bowling-seed0056": {
+          "eligible_pin_queries": 248,
+          "fractions": [
+            0.22580645161290322,
+            0.0846774193548387,
+            0.008064516129032258
+          ]
+        },
+        "bowling-seed0057": {
+          "eligible_pin_queries": 285,
+          "fractions": [
+            0.1543859649122807,
+            0.05263157894736842,
+            0.010526315789473684
+          ]
+        },
+        "bowling-seed0058": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.06774193548387097,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0059": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.06451612903225806,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0060": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.012903225806451613,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0061": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.00967741935483871,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0062": {
+          "eligible_pin_queries": 198,
+          "fractions": [
+            0.21212121212121213,
+            0.13131313131313133,
+            0.045454545454545456
+          ]
+        },
+        "bowling-seed0063": {
+          "eligible_pin_queries": 207,
+          "fractions": [
+            0.06280193236714976,
+            0.033816425120772944,
+            0.0
+          ]
+        },
+        "bowling-seed0064": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.025806451612903226,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0065": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.07096774193548387,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0066": {
+          "eligible_pin_queries": 240,
+          "fractions": [
+            0.3375,
+            0.1125,
+            0.029166666666666667
+          ]
+        },
+        "bowling-seed810000": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.02903225806451613,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810001": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.07419354838709677,
+            0.0064516129032258064,
+            0.0
+          ]
+        },
+        "bowling-seed810002": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.25573770491803277,
+            0.08524590163934426,
+            0.019672131147540985
+          ]
+        },
+        "bowling-seed810003": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.04516129032258064,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810004": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.09032258064516129,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810005": {
+          "eligible_pin_queries": 188,
+          "fractions": [
+            0.24468085106382978,
+            0.03723404255319149,
+            0.010638297872340425
+          ]
+        },
+        "bowling-seed810006": {
+          "eligible_pin_queries": 246,
+          "fractions": [
+            0.32926829268292684,
+            0.0975609756097561,
+            0.016260162601626018
+          ]
+        },
+        "bowling-seed810007": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.08709677419354839,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810008": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.07741935483870968,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810009": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.09032258064516129,
+            0.01935483870967742,
+            0.0
+          ]
+        },
+        "bowling-seed810010": {
+          "eligible_pin_queries": 270,
+          "fractions": [
+            0.29259259259259257,
+            0.08518518518518518,
+            0.007407407407407408
+          ]
+        },
+        "bowling-seed810011": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.016129032258064516,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810012": {
+          "eligible_pin_queries": 193,
+          "fractions": [
+            0.24352331606217617,
+            0.12435233160621761,
+            0.04145077720207254
+          ]
+        },
+        "bowling-seed810014": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.1064516129032258,
+            0.0064516129032258064,
+            0.0
+          ]
+        },
+        "bowling-seed810015": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.07096774193548387,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810016": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.02258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810017": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.035483870967741936,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810018": {
+          "eligible_pin_queries": 231,
+          "fractions": [
+            0.22943722943722944,
+            0.017316017316017316,
+            0.0
+          ]
+        },
+        "bowling-seed810019": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.10491803278688525,
+            0.013114754098360656,
+            0.006557377049180328
+          ]
+        },
+        "bowling-seed810020": {
+          "eligible_pin_queries": 212,
+          "fractions": [
+            0.20754716981132076,
+            0.07075471698113207,
+            0.018867924528301886
+          ]
+        },
+        "bowling-seed810021": {
+          "eligible_pin_queries": 291,
+          "fractions": [
+            0.2027491408934708,
+            0.0859106529209622,
+            0.010309278350515464
+          ]
+        },
+        "bowling-seed810022": {
+          "eligible_pin_queries": 269,
+          "fractions": [
+            0.1524163568773234,
+            0.07434944237918216,
+            0.022304832713754646
+          ]
+        },
+        "bowling-seed810023": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0935483870967742,
+            0.016129032258064516,
+            0.0
+          ]
+        },
+        "bowling-seed810024": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.12903225806451613,
+            0.0064516129032258064,
+            0.0
+          ]
+        },
+        "bowling-seed810025": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.016129032258064516,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810026": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.02258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810027": {
+          "eligible_pin_queries": 280,
+          "fractions": [
+            0.15357142857142858,
+            0.08214285714285714,
+            0.010714285714285714
+          ]
+        },
+        "bowling-seed810028": {
+          "eligible_pin_queries": 221,
+          "fractions": [
+            0.19909502262443438,
+            0.06334841628959276,
+            0.004524886877828055
+          ]
+        },
+        "bowling-seed810029": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.02903225806451613,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810030": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.1870967741935484,
+            0.041935483870967745,
+            0.0032258064516129032
+          ]
+        },
+        "bowling-seed810031": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.11612903225806452,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "macro_fractions": [
+        0.12929541109457918,
+        0.032742488753472784,
+        0.006114121854055221
+      ]
+    },
+    "short-seed44-best": {
+      "prediction_sha256": "05b63fb7418b960aae5b63cf92526aa0bb705862cd294742cd2a221c974a26c6",
+      "episodes": {
+        "bowling-seed0051": {
+          "eligible_pin_queries": 251,
+          "fractions": [
+            0.13545816733067728,
+            0.07171314741035857,
+            0.02390438247011952
+          ]
+        },
+        "bowling-seed0052": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.29354838709677417,
+            0.02258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed0053": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.041935483870967745,
+            0.00967741935483871,
+            0.0
+          ]
+        },
+        "bowling-seed0054": {
+          "eligible_pin_queries": 297,
+          "fractions": [
+            0.40404040404040403,
+            0.08080808080808081,
+            0.020202020202020204
+          ]
+        },
+        "bowling-seed0055": {
+          "eligible_pin_queries": 241,
+          "fractions": [
+            0.31950207468879666,
+            0.13278008298755187,
+            0.02074688796680498
+          ]
+        },
+        "bowling-seed0056": {
+          "eligible_pin_queries": 248,
+          "fractions": [
+            0.23387096774193547,
+            0.0846774193548387,
+            0.008064516129032258
+          ]
+        },
+        "bowling-seed0057": {
+          "eligible_pin_queries": 285,
+          "fractions": [
+            0.17192982456140352,
+            0.08421052631578947,
+            0.014035087719298246
+          ]
+        },
+        "bowling-seed0058": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.22258064516129034,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed0059": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.15161290322580645,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0060": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.07419354838709677,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0061": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.025806451612903226,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0062": {
+          "eligible_pin_queries": 198,
+          "fractions": [
+            0.25757575757575757,
+            0.15151515151515152,
+            0.045454545454545456
+          ]
+        },
+        "bowling-seed0063": {
+          "eligible_pin_queries": 207,
+          "fractions": [
+            0.1642512077294686,
+            0.04830917874396135,
+            0.014492753623188406
+          ]
+        },
+        "bowling-seed0064": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.041935483870967745,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0065": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.15483870967741936,
+            0.012903225806451613,
+            0.0
+          ]
+        },
+        "bowling-seed0066": {
+          "eligible_pin_queries": 240,
+          "fractions": [
+            0.22083333333333333,
+            0.09166666666666666,
+            0.020833333333333332
+          ]
+        },
+        "bowling-seed810000": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.15806451612903225,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810001": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.1935483870967742,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810002": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.21639344262295082,
+            0.08196721311475409,
+            0.029508196721311476
+          ]
+        },
+        "bowling-seed810003": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.1064516129032258,
+            0.0064516129032258064,
+            0.0064516129032258064
+          ]
+        },
+        "bowling-seed810004": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.11612903225806452,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810005": {
+          "eligible_pin_queries": 188,
+          "fractions": [
+            0.26595744680851063,
+            0.05319148936170213,
+            0.010638297872340425
+          ]
+        },
+        "bowling-seed810006": {
+          "eligible_pin_queries": 246,
+          "fractions": [
+            0.45528455284552843,
+            0.14227642276422764,
+            0.044715447154471545
+          ]
+        },
+        "bowling-seed810007": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.12580645161290321,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed810008": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.16774193548387098,
+            0.03225806451612903,
+            0.0
+          ]
+        },
+        "bowling-seed810009": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.15806451612903225,
+            0.012903225806451613,
+            0.0
+          ]
+        },
+        "bowling-seed810010": {
+          "eligible_pin_queries": 270,
+          "fractions": [
+            0.3074074074074074,
+            0.1111111111111111,
+            0.018518518518518517
+          ]
+        },
+        "bowling-seed810011": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.1032258064516129,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810012": {
+          "eligible_pin_queries": 193,
+          "fractions": [
+            0.2849740932642487,
+            0.12435233160621761,
+            0.04145077720207254
+          ]
+        },
+        "bowling-seed810014": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.17096774193548386,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed810015": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.07096774193548387,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810016": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.04516129032258064,
+            0.00967741935483871,
+            0.0
+          ]
+        },
+        "bowling-seed810017": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.02258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810018": {
+          "eligible_pin_queries": 231,
+          "fractions": [
+            0.22510822510822512,
+            0.030303030303030304,
+            0.004329004329004329
+          ]
+        },
+        "bowling-seed810019": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.26557377049180325,
+            0.05245901639344262,
+            0.019672131147540985
+          ]
+        },
+        "bowling-seed810020": {
+          "eligible_pin_queries": 212,
+          "fractions": [
+            0.16981132075471697,
+            0.07075471698113207,
+            0.02358490566037736
+          ]
+        },
+        "bowling-seed810021": {
+          "eligible_pin_queries": 291,
+          "fractions": [
+            0.2646048109965636,
+            0.1134020618556701,
+            0.041237113402061855
+          ]
+        },
+        "bowling-seed810022": {
+          "eligible_pin_queries": 269,
+          "fractions": [
+            0.1895910780669145,
+            0.07434944237918216,
+            0.03345724907063197
+          ]
+        },
+        "bowling-seed810023": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.14838709677419354,
+            0.0064516129032258064,
+            0.0
+          ]
+        },
+        "bowling-seed810024": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.03870967741935484,
+            0.0064516129032258064,
+            0.0
+          ]
+        },
+        "bowling-seed810025": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.08709677419354839,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810026": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.054838709677419356,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810027": {
+          "eligible_pin_queries": 280,
+          "fractions": [
+            0.2714285714285714,
+            0.075,
+            0.02142857142857143
+          ]
+        },
+        "bowling-seed810028": {
+          "eligible_pin_queries": 221,
+          "fractions": [
+            0.3167420814479638,
+            0.10407239819004525,
+            0.01809954751131222
+          ]
+        },
+        "bowling-seed810029": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.06129032258064516,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810030": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.15806451612903225,
+            0.054838709677419356,
+            0.02258064516129032
+          ]
+        },
+        "bowling-seed810031": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0967741935483871,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "macro_fractions": [
+        0.17512044933809243,
+        0.04176149905542233,
+        0.010710756276193046
+      ]
+    },
+    "short-seed44-latest": {
+      "prediction_sha256": "c4c0206606f92029f549ab450017a3477ab3169671d4aa97c2479c80ce741f78",
+      "episodes": {
+        "bowling-seed0051": {
+          "eligible_pin_queries": 251,
+          "fractions": [
+            0.099601593625498,
+            0.027888446215139442,
+            0.00796812749003984
+          ]
+        },
+        "bowling-seed0052": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.041935483870967745,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0053": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0054": {
+          "eligible_pin_queries": 297,
+          "fractions": [
+            0.15488215488215487,
+            0.02356902356902357,
+            0.013468013468013467
+          ]
+        },
+        "bowling-seed0055": {
+          "eligible_pin_queries": 241,
+          "fractions": [
+            0.2697095435684647,
+            0.11203319502074689,
+            0.024896265560165973
+          ]
+        },
+        "bowling-seed0056": {
+          "eligible_pin_queries": 248,
+          "fractions": [
+            0.17338709677419356,
+            0.024193548387096774,
+            0.004032258064516129
+          ]
+        },
+        "bowling-seed0057": {
+          "eligible_pin_queries": 285,
+          "fractions": [
+            0.11929824561403508,
+            0.06315789473684211,
+            0.021052631578947368
+          ]
+        },
+        "bowling-seed0058": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.10967741935483871,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0059": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.05161290322580645,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0060": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0061": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0062": {
+          "eligible_pin_queries": 198,
+          "fractions": [
+            0.20202020202020202,
+            0.1111111111111111,
+            0.04040404040404041
+          ]
+        },
+        "bowling-seed0063": {
+          "eligible_pin_queries": 207,
+          "fractions": [
+            0.0966183574879227,
+            0.03864734299516908,
+            0.00966183574879227
+          ]
+        },
+        "bowling-seed0064": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0064516129032258064,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed0065": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.04838709677419355,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed0066": {
+          "eligible_pin_queries": 240,
+          "fractions": [
+            0.15416666666666667,
+            0.0625,
+            0.016666666666666666
+          ]
+        },
+        "bowling-seed810000": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0064516129032258064,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810001": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.06451612903225806,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810002": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.14426229508196722,
+            0.036065573770491806,
+            0.019672131147540985
+          ]
+        },
+        "bowling-seed810003": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.012903225806451613,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810004": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.03870967741935484,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810005": {
+          "eligible_pin_queries": 188,
+          "fractions": [
+            0.2074468085106383,
+            0.03723404255319149,
+            0.005319148936170213
+          ]
+        },
+        "bowling-seed810006": {
+          "eligible_pin_queries": 246,
+          "fractions": [
+            0.25609756097560976,
+            0.06504065040650407,
+            0.028455284552845527
+          ]
+        },
+        "bowling-seed810007": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.02903225806451613,
+            0.0032258064516129032,
+            0.0
+          ]
+        },
+        "bowling-seed810008": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0935483870967742,
+            0.016129032258064516,
+            0.0
+          ]
+        },
+        "bowling-seed810009": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.11290322580645161,
+            0.012903225806451613,
+            0.0
+          ]
+        },
+        "bowling-seed810010": {
+          "eligible_pin_queries": 270,
+          "fractions": [
+            0.3,
+            0.05925925925925926,
+            0.007407407407407408
+          ]
+        },
+        "bowling-seed810011": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0032258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810012": {
+          "eligible_pin_queries": 193,
+          "fractions": [
+            0.20725388601036268,
+            0.10362694300518134,
+            0.031088082901554404
+          ]
+        },
+        "bowling-seed810014": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.05161290322580645,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810015": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.041935483870967745,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810016": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.02258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810017": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0032258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810018": {
+          "eligible_pin_queries": 231,
+          "fractions": [
+            0.08658008658008658,
+            0.017316017316017316,
+            0.004329004329004329
+          ]
+        },
+        "bowling-seed810019": {
+          "eligible_pin_queries": 305,
+          "fractions": [
+            0.1180327868852459,
+            0.013114754098360656,
+            0.006557377049180328
+          ]
+        },
+        "bowling-seed810020": {
+          "eligible_pin_queries": 212,
+          "fractions": [
+            0.1509433962264151,
+            0.04716981132075472,
+            0.018867924528301886
+          ]
+        },
+        "bowling-seed810021": {
+          "eligible_pin_queries": 291,
+          "fractions": [
+            0.16151202749140894,
+            0.061855670103092786,
+            0.013745704467353952
+          ]
+        },
+        "bowling-seed810022": {
+          "eligible_pin_queries": 269,
+          "fractions": [
+            0.12267657992565056,
+            0.05204460966542751,
+            0.026022304832713755
+          ]
+        },
+        "bowling-seed810023": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.08064516129032258,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810024": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.054838709677419356,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810025": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.016129032258064516,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810026": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.00967741935483871,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810027": {
+          "eligible_pin_queries": 280,
+          "fractions": [
+            0.15,
+            0.039285714285714285,
+            0.02142857142857143
+          ]
+        },
+        "bowling-seed810028": {
+          "eligible_pin_queries": 221,
+          "fractions": [
+            0.22171945701357465,
+            0.08597285067873303,
+            0.027149321266968326
+          ]
+        },
+        "bowling-seed810029": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.0032258064516129032,
+            0.0,
+            0.0
+          ]
+        },
+        "bowling-seed810030": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.17096774193548386,
+            0.025806451612903226,
+            0.0032258064516129032
+          ]
+        },
+        "bowling-seed810031": {
+          "eligible_pin_queries": 310,
+          "fractions": [
+            0.11935483870967742,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "macro_fractions": [
+        0.09765440707312491,
+        0.02430588895911707,
+        0.0074769767719235665
+      ]
+    }
+  },
+  "test_arrays_opened": 0
+}

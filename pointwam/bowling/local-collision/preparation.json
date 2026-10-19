@@ -1,0 +1,39 @@
+{
+  "schema": "local-collision-v1",
+  "status": "complete",
+  "counts": {
+    "train": {
+      "windows": 6808,
+      "episodes": 206,
+      "event_windows": 519,
+      "event_pins": 568,
+      "collision_episodes": 84
+    },
+    "validation": {
+      "windows": 1547,
+      "episodes": 47,
+      "event_windows": 120,
+      "event_pins": 127,
+      "collision_episodes": 20
+    }
+  },
+  "files": {
+    "train.npz": "3438ee5811a06cbd29b72c1e288170a43d7e13becc0bafac1939848b32f31899",
+    "validation.npz": "8d6ab88ec2d8f2c1197be92c7a17edc3a6bce914e89871504ecbd25e6b725132"
+  },
+  "protocol_sha256": "789ddb3161806bcebb800a0d33a66fb78d9b4588b86048bed421c0609b7dae5c",
+  "original_train_manifest_sha256": "092b92f0e7b89c483fb73d9c78f88a1bc86c09ed44f75ccce6366534a72ec104",
+  "reused_validation_manifest_sha256": "6de75265484f3ac6361aba16221abfa93fc00b86969b8e32b6ca8ed32a1214fe",
+  "preparation_sha256": "e2d9571ec187fbc6ffc70e8c0cb049a29bc760b88ea7568cb07ef73fbd9a1668",
+  "base_preparation_sha256": "7ce6a08c549aec11de7243287538162dd400f6ec001dcafe77e1bc0525bbddbc",
+  "max_native_qpos_replay_error": 0.0,
+  "max_linear_velocity_jacobian_error": 0.0,
+  "max_angular_velocity_jacobian_error": 3.197442310920451e-14,
+  "max_rotation_orthogonality_error": 5.329070518200751e-15,
+  "environment": {
+    "mujoco": "3.3.7",
+    "numpy": "2.5.4"
+  },
+  "test_arrays_opened": 0,
+  "elapsed_s": 169.75025245797588
+}

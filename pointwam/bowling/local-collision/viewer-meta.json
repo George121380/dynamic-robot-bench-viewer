@@ -1,0 +1,2261 @@
+{
+  "rows": [
+    {
+      "episode_id": "bowling-seed0051",
+      "seed": 51,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 162,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "d67cbaa69aa9e46dea83c73b442c2c33138ec3796110b75a154defc66b518330",
+      "contact_sha256": "ea91784dd326046a774ac8dcbdec512adcbcac044fb1f20d67b72d68389b1825"
+    },
+    {
+      "episode_id": "bowling-seed0051",
+      "seed": 51,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 273,
+      "offset_control": 111,
+      "regular": false,
+      "event_pins": [
+        1
+      ],
+      "source_sha256": "d67cbaa69aa9e46dea83c73b442c2c33138ec3796110b75a154defc66b518330",
+      "contact_sha256": "ea91784dd326046a774ac8dcbdec512adcbcac044fb1f20d67b72d68389b1825"
+    },
+    {
+      "episode_id": "bowling-seed0051",
+      "seed": 51,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 279,
+      "offset_control": 117,
+      "regular": false,
+      "event_pins": [
+        4
+      ],
+      "source_sha256": "d67cbaa69aa9e46dea83c73b442c2c33138ec3796110b75a154defc66b518330",
+      "contact_sha256": "ea91784dd326046a774ac8dcbdec512adcbcac044fb1f20d67b72d68389b1825"
+    },
+    {
+      "episode_id": "bowling-seed0051",
+      "seed": 51,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 282,
+      "offset_control": 120,
+      "regular": true,
+      "event_pins": [
+        5
+      ],
+      "source_sha256": "d67cbaa69aa9e46dea83c73b442c2c33138ec3796110b75a154defc66b518330",
+      "contact_sha256": "ea91784dd326046a774ac8dcbdec512adcbcac044fb1f20d67b72d68389b1825"
+    },
+    {
+      "episode_id": "bowling-seed0051",
+      "seed": 51,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 283,
+      "offset_control": 121,
+      "regular": false,
+      "event_pins": [
+        3
+      ],
+      "source_sha256": "d67cbaa69aa9e46dea83c73b442c2c33138ec3796110b75a154defc66b518330",
+      "contact_sha256": "ea91784dd326046a774ac8dcbdec512adcbcac044fb1f20d67b72d68389b1825"
+    },
+    {
+      "episode_id": "bowling-seed0051",
+      "seed": 51,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 284,
+      "offset_control": 122,
+      "regular": false,
+      "event_pins": [
+        2
+      ],
+      "source_sha256": "d67cbaa69aa9e46dea83c73b442c2c33138ec3796110b75a154defc66b518330",
+      "contact_sha256": "ea91784dd326046a774ac8dcbdec512adcbcac044fb1f20d67b72d68389b1825"
+    },
+    {
+      "episode_id": "bowling-seed0051",
+      "seed": 51,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 287,
+      "offset_control": 125,
+      "regular": true,
+      "event_pins": [
+        7
+      ],
+      "source_sha256": "d67cbaa69aa9e46dea83c73b442c2c33138ec3796110b75a154defc66b518330",
+      "contact_sha256": "ea91784dd326046a774ac8dcbdec512adcbcac044fb1f20d67b72d68389b1825"
+    },
+    {
+      "episode_id": "bowling-seed0051",
+      "seed": 51,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 293,
+      "offset_control": 131,
+      "regular": false,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "d67cbaa69aa9e46dea83c73b442c2c33138ec3796110b75a154defc66b518330",
+      "contact_sha256": "ea91784dd326046a774ac8dcbdec512adcbcac044fb1f20d67b72d68389b1825"
+    },
+    {
+      "episode_id": "bowling-seed0051",
+      "seed": 51,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 294,
+      "offset_control": 132,
+      "regular": false,
+      "event_pins": [
+        9
+      ],
+      "source_sha256": "d67cbaa69aa9e46dea83c73b442c2c33138ec3796110b75a154defc66b518330",
+      "contact_sha256": "ea91784dd326046a774ac8dcbdec512adcbcac044fb1f20d67b72d68389b1825"
+    },
+    {
+      "episode_id": "bowling-seed0051",
+      "seed": 51,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 295,
+      "offset_control": 133,
+      "regular": false,
+      "event_pins": [
+        8
+      ],
+      "source_sha256": "d67cbaa69aa9e46dea83c73b442c2c33138ec3796110b75a154defc66b518330",
+      "contact_sha256": "ea91784dd326046a774ac8dcbdec512adcbcac044fb1f20d67b72d68389b1825"
+    },
+    {
+      "episode_id": "bowling-seed0052",
+      "seed": 52,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 110,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "ec9159fa4d29750d22b11c7ea2b99f7331bd63a55a478f970ebe274fc5819b4e",
+      "contact_sha256": "f601889e1cd6d8cdce1a7ded2bcb1d5ba5e44080f4abe76fa298d624886c11b5"
+    },
+    {
+      "episode_id": "bowling-seed0053",
+      "seed": 53,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 97,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "f201e12461afbaa7f09dce48fdc1fdbd3a8d9b5f58409711274422eae5fab4e8",
+      "contact_sha256": "4c16a228b0e9b1af9524973a70decdf50fc5b8b8f92e519be8a09ad5385e79a4"
+    },
+    {
+      "episode_id": "bowling-seed0054",
+      "seed": 54,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 109,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "719f0848a8296fda3f969fedc88a2631fb15960a466a6044dd2d2543cfb5aae8",
+      "contact_sha256": "994310d3a810e30e441593c4353b301f7bf17104715a23491b15e3d92013a705"
+    },
+    {
+      "episode_id": "bowling-seed0054",
+      "seed": 54,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 229,
+      "offset_control": 120,
+      "regular": true,
+      "event_pins": [
+        3
+      ],
+      "source_sha256": "719f0848a8296fda3f969fedc88a2631fb15960a466a6044dd2d2543cfb5aae8",
+      "contact_sha256": "994310d3a810e30e441593c4353b301f7bf17104715a23491b15e3d92013a705"
+    },
+    {
+      "episode_id": "bowling-seed0054",
+      "seed": 54,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 234,
+      "offset_control": 125,
+      "regular": true,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "719f0848a8296fda3f969fedc88a2631fb15960a466a6044dd2d2543cfb5aae8",
+      "contact_sha256": "994310d3a810e30e441593c4353b301f7bf17104715a23491b15e3d92013a705"
+    },
+    {
+      "episode_id": "bowling-seed0055",
+      "seed": 55,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 164,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "1b48f431b5da336eefb92100995f581fd1391ecc08ed2c6b6f56a24a962a83e9",
+      "contact_sha256": "b7ddaa073089db4f93247a7238d2ba0f8e57b37812f219d1b4717070ac0e45e0"
+    },
+    {
+      "episode_id": "bowling-seed0055",
+      "seed": 55,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 254,
+      "offset_control": 90,
+      "regular": true,
+      "event_pins": [
+        3
+      ],
+      "source_sha256": "1b48f431b5da336eefb92100995f581fd1391ecc08ed2c6b6f56a24a962a83e9",
+      "contact_sha256": "b7ddaa073089db4f93247a7238d2ba0f8e57b37812f219d1b4717070ac0e45e0"
+    },
+    {
+      "episode_id": "bowling-seed0055",
+      "seed": 55,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 259,
+      "offset_control": 95,
+      "regular": true,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "1b48f431b5da336eefb92100995f581fd1391ecc08ed2c6b6f56a24a962a83e9",
+      "contact_sha256": "b7ddaa073089db4f93247a7238d2ba0f8e57b37812f219d1b4717070ac0e45e0"
+    },
+    {
+      "episode_id": "bowling-seed0055",
+      "seed": 55,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 260,
+      "offset_control": 96,
+      "regular": false,
+      "event_pins": [
+        7
+      ],
+      "source_sha256": "1b48f431b5da336eefb92100995f581fd1391ecc08ed2c6b6f56a24a962a83e9",
+      "contact_sha256": "b7ddaa073089db4f93247a7238d2ba0f8e57b37812f219d1b4717070ac0e45e0"
+    },
+    {
+      "episode_id": "bowling-seed0055",
+      "seed": 55,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 262,
+      "offset_control": 98,
+      "regular": false,
+      "event_pins": [
+        8
+      ],
+      "source_sha256": "1b48f431b5da336eefb92100995f581fd1391ecc08ed2c6b6f56a24a962a83e9",
+      "contact_sha256": "b7ddaa073089db4f93247a7238d2ba0f8e57b37812f219d1b4717070ac0e45e0"
+    },
+    {
+      "episode_id": "bowling-seed0055",
+      "seed": 55,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 265,
+      "offset_control": 101,
+      "regular": false,
+      "event_pins": [
+        4
+      ],
+      "source_sha256": "1b48f431b5da336eefb92100995f581fd1391ecc08ed2c6b6f56a24a962a83e9",
+      "contact_sha256": "b7ddaa073089db4f93247a7238d2ba0f8e57b37812f219d1b4717070ac0e45e0"
+    },
+    {
+      "episode_id": "bowling-seed0055",
+      "seed": 55,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 274,
+      "offset_control": 110,
+      "regular": true,
+      "event_pins": [
+        9
+      ],
+      "source_sha256": "1b48f431b5da336eefb92100995f581fd1391ecc08ed2c6b6f56a24a962a83e9",
+      "contact_sha256": "b7ddaa073089db4f93247a7238d2ba0f8e57b37812f219d1b4717070ac0e45e0"
+    },
+    {
+      "episode_id": "bowling-seed0056",
+      "seed": 56,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 108,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "53f7e0e07296a31c344b67cbde70635d0a2986ff067b789aa95d25cd0c6f20c8",
+      "contact_sha256": "f334699c91fc6f1a071019cf21ac9cb7c5b4719b98bfaabb916ce29295b28361"
+    },
+    {
+      "episode_id": "bowling-seed0056",
+      "seed": 56,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 211,
+      "offset_control": 103,
+      "regular": false,
+      "event_pins": [
+        2
+      ],
+      "source_sha256": "53f7e0e07296a31c344b67cbde70635d0a2986ff067b789aa95d25cd0c6f20c8",
+      "contact_sha256": "f334699c91fc6f1a071019cf21ac9cb7c5b4719b98bfaabb916ce29295b28361"
+    },
+    {
+      "episode_id": "bowling-seed0056",
+      "seed": 56,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 215,
+      "offset_control": 107,
+      "regular": false,
+      "event_pins": [
+        4
+      ],
+      "source_sha256": "53f7e0e07296a31c344b67cbde70635d0a2986ff067b789aa95d25cd0c6f20c8",
+      "contact_sha256": "f334699c91fc6f1a071019cf21ac9cb7c5b4719b98bfaabb916ce29295b28361"
+    },
+    {
+      "episode_id": "bowling-seed0056",
+      "seed": 56,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 221,
+      "offset_control": 113,
+      "regular": false,
+      "event_pins": [
+        3
+      ],
+      "source_sha256": "53f7e0e07296a31c344b67cbde70635d0a2986ff067b789aa95d25cd0c6f20c8",
+      "contact_sha256": "f334699c91fc6f1a071019cf21ac9cb7c5b4719b98bfaabb916ce29295b28361"
+    },
+    {
+      "episode_id": "bowling-seed0056",
+      "seed": 56,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 222,
+      "offset_control": 114,
+      "regular": false,
+      "event_pins": [
+        5
+      ],
+      "source_sha256": "53f7e0e07296a31c344b67cbde70635d0a2986ff067b789aa95d25cd0c6f20c8",
+      "contact_sha256": "f334699c91fc6f1a071019cf21ac9cb7c5b4719b98bfaabb916ce29295b28361"
+    },
+    {
+      "episode_id": "bowling-seed0056",
+      "seed": 56,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 223,
+      "offset_control": 115,
+      "regular": true,
+      "event_pins": [
+        7
+      ],
+      "source_sha256": "53f7e0e07296a31c344b67cbde70635d0a2986ff067b789aa95d25cd0c6f20c8",
+      "contact_sha256": "f334699c91fc6f1a071019cf21ac9cb7c5b4719b98bfaabb916ce29295b28361"
+    },
+    {
+      "episode_id": "bowling-seed0056",
+      "seed": 56,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 228,
+      "offset_control": 120,
+      "regular": true,
+      "event_pins": [
+        8
+      ],
+      "source_sha256": "53f7e0e07296a31c344b67cbde70635d0a2986ff067b789aa95d25cd0c6f20c8",
+      "contact_sha256": "f334699c91fc6f1a071019cf21ac9cb7c5b4719b98bfaabb916ce29295b28361"
+    },
+    {
+      "episode_id": "bowling-seed0056",
+      "seed": 56,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 241,
+      "offset_control": 133,
+      "regular": false,
+      "event_pins": [
+        1
+      ],
+      "source_sha256": "53f7e0e07296a31c344b67cbde70635d0a2986ff067b789aa95d25cd0c6f20c8",
+      "contact_sha256": "f334699c91fc6f1a071019cf21ac9cb7c5b4719b98bfaabb916ce29295b28361"
+    },
+    {
+      "episode_id": "bowling-seed0056",
+      "seed": 56,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 251,
+      "offset_control": 143,
+      "regular": false,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "53f7e0e07296a31c344b67cbde70635d0a2986ff067b789aa95d25cd0c6f20c8",
+      "contact_sha256": "f334699c91fc6f1a071019cf21ac9cb7c5b4719b98bfaabb916ce29295b28361"
+    },
+    {
+      "episode_id": "bowling-seed0057",
+      "seed": 57,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 159,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "4a27c09fc3ef80f59f92fc9893b2c00ce293d42c9757aa0bb730d50badf3dc78",
+      "contact_sha256": "bedc990c2d8f4fa27fd19bbb4dab8ec2d37b0c1220ccca92f25e60acadedb29e"
+    },
+    {
+      "episode_id": "bowling-seed0057",
+      "seed": 57,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 286,
+      "offset_control": 127,
+      "regular": false,
+      "event_pins": [
+        2
+      ],
+      "source_sha256": "4a27c09fc3ef80f59f92fc9893b2c00ce293d42c9757aa0bb730d50badf3dc78",
+      "contact_sha256": "bedc990c2d8f4fa27fd19bbb4dab8ec2d37b0c1220ccca92f25e60acadedb29e"
+    },
+    {
+      "episode_id": "bowling-seed0057",
+      "seed": 57,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 290,
+      "offset_control": 131,
+      "regular": false,
+      "event_pins": [
+        4
+      ],
+      "source_sha256": "4a27c09fc3ef80f59f92fc9893b2c00ce293d42c9757aa0bb730d50badf3dc78",
+      "contact_sha256": "bedc990c2d8f4fa27fd19bbb4dab8ec2d37b0c1220ccca92f25e60acadedb29e"
+    },
+    {
+      "episode_id": "bowling-seed0057",
+      "seed": 57,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 297,
+      "offset_control": 138,
+      "regular": false,
+      "event_pins": [
+        7,
+        8
+      ],
+      "source_sha256": "4a27c09fc3ef80f59f92fc9893b2c00ce293d42c9757aa0bb730d50badf3dc78",
+      "contact_sha256": "bedc990c2d8f4fa27fd19bbb4dab8ec2d37b0c1220ccca92f25e60acadedb29e"
+    },
+    {
+      "episode_id": "bowling-seed0057",
+      "seed": 57,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 302,
+      "offset_control": 143,
+      "regular": false,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "4a27c09fc3ef80f59f92fc9893b2c00ce293d42c9757aa0bb730d50badf3dc78",
+      "contact_sha256": "bedc990c2d8f4fa27fd19bbb4dab8ec2d37b0c1220ccca92f25e60acadedb29e"
+    },
+    {
+      "episode_id": "bowling-seed0057",
+      "seed": 57,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 303,
+      "offset_control": 144,
+      "regular": false,
+      "event_pins": [
+        5
+      ],
+      "source_sha256": "4a27c09fc3ef80f59f92fc9893b2c00ce293d42c9757aa0bb730d50badf3dc78",
+      "contact_sha256": "bedc990c2d8f4fa27fd19bbb4dab8ec2d37b0c1220ccca92f25e60acadedb29e"
+    },
+    {
+      "episode_id": "bowling-seed0058",
+      "seed": 58,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 178,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "7371c93ef2033cd58a9958b3ed46e0d2b44b70e476987caccb8f8ffcbac9c35f",
+      "contact_sha256": "329df8ea9d0e453535aa2746e7559e227316cd9a1bba876e5c8eff081a9bb785"
+    },
+    {
+      "episode_id": "bowling-seed0059",
+      "seed": 59,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 167,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "47d2ebefe255e86ef6d609a626a3970f7776ac44668c746676afd87dd69ffb5b",
+      "contact_sha256": "03ee50e88ea95e32df2c6a023de23ea00ba61a39361a6227dd2a501ffbc152c1"
+    },
+    {
+      "episode_id": "bowling-seed0060",
+      "seed": 60,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 131,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "de5e780ac0162eb4843287d783ff1d39c06555dfeefdc4a19e2e9c38b1e857da",
+      "contact_sha256": "fa3629cbfb82b6b216eb1a9c695db9f5745f2d1a8fa2e1784d9f5cb3c90d3ead"
+    },
+    {
+      "episode_id": "bowling-seed0061",
+      "seed": 61,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 89,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "1bd22c871e9f8dac8431a3c93ed819d98db29618443c11a08dd9355d01a7128e",
+      "contact_sha256": "b1c9fec3a5a8cf1d3e13b8f0b092c32e41ceac6a2010c0ad1a28028f1d3e7e3d"
+    },
+    {
+      "episode_id": "bowling-seed0062",
+      "seed": 62,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 174,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "fdd78c2f74cdac9050c38a0721da9b00fa2d66a8179048d174c51d8609d88afb",
+      "contact_sha256": "6f3ffd0b20eeedde5d2ed52c15bf765b190aa9986a691f91cf971fe980d1bc7f"
+    },
+    {
+      "episode_id": "bowling-seed0062",
+      "seed": 62,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 254,
+      "offset_control": 80,
+      "regular": true,
+      "event_pins": [
+        0
+      ],
+      "source_sha256": "fdd78c2f74cdac9050c38a0721da9b00fa2d66a8179048d174c51d8609d88afb",
+      "contact_sha256": "6f3ffd0b20eeedde5d2ed52c15bf765b190aa9986a691f91cf971fe980d1bc7f"
+    },
+    {
+      "episode_id": "bowling-seed0062",
+      "seed": 62,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 256,
+      "offset_control": 82,
+      "regular": false,
+      "event_pins": [
+        1
+      ],
+      "source_sha256": "fdd78c2f74cdac9050c38a0721da9b00fa2d66a8179048d174c51d8609d88afb",
+      "contact_sha256": "6f3ffd0b20eeedde5d2ed52c15bf765b190aa9986a691f91cf971fe980d1bc7f"
+    },
+    {
+      "episode_id": "bowling-seed0062",
+      "seed": 62,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 260,
+      "offset_control": 86,
+      "regular": false,
+      "event_pins": [
+        2,
+        4
+      ],
+      "source_sha256": "fdd78c2f74cdac9050c38a0721da9b00fa2d66a8179048d174c51d8609d88afb",
+      "contact_sha256": "6f3ffd0b20eeedde5d2ed52c15bf765b190aa9986a691f91cf971fe980d1bc7f"
+    },
+    {
+      "episode_id": "bowling-seed0062",
+      "seed": 62,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 264,
+      "offset_control": 90,
+      "regular": true,
+      "event_pins": [
+        3
+      ],
+      "source_sha256": "fdd78c2f74cdac9050c38a0721da9b00fa2d66a8179048d174c51d8609d88afb",
+      "contact_sha256": "6f3ffd0b20eeedde5d2ed52c15bf765b190aa9986a691f91cf971fe980d1bc7f"
+    },
+    {
+      "episode_id": "bowling-seed0062",
+      "seed": 62,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 271,
+      "offset_control": 97,
+      "regular": false,
+      "event_pins": [
+        7
+      ],
+      "source_sha256": "fdd78c2f74cdac9050c38a0721da9b00fa2d66a8179048d174c51d8609d88afb",
+      "contact_sha256": "6f3ffd0b20eeedde5d2ed52c15bf765b190aa9986a691f91cf971fe980d1bc7f"
+    },
+    {
+      "episode_id": "bowling-seed0062",
+      "seed": 62,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 274,
+      "offset_control": 100,
+      "regular": true,
+      "event_pins": [
+        8
+      ],
+      "source_sha256": "fdd78c2f74cdac9050c38a0721da9b00fa2d66a8179048d174c51d8609d88afb",
+      "contact_sha256": "6f3ffd0b20eeedde5d2ed52c15bf765b190aa9986a691f91cf971fe980d1bc7f"
+    },
+    {
+      "episode_id": "bowling-seed0062",
+      "seed": 62,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 276,
+      "offset_control": 102,
+      "regular": false,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "fdd78c2f74cdac9050c38a0721da9b00fa2d66a8179048d174c51d8609d88afb",
+      "contact_sha256": "6f3ffd0b20eeedde5d2ed52c15bf765b190aa9986a691f91cf971fe980d1bc7f"
+    },
+    {
+      "episode_id": "bowling-seed0062",
+      "seed": 62,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 295,
+      "offset_control": 121,
+      "regular": false,
+      "event_pins": [
+        5
+      ],
+      "source_sha256": "fdd78c2f74cdac9050c38a0721da9b00fa2d66a8179048d174c51d8609d88afb",
+      "contact_sha256": "6f3ffd0b20eeedde5d2ed52c15bf765b190aa9986a691f91cf971fe980d1bc7f"
+    },
+    {
+      "episode_id": "bowling-seed0063",
+      "seed": 63,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 186,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "fa703fe4ded2f69e9b7b99161e06e2e5d57b65e2f897a7515c65b4b9e6657177",
+      "contact_sha256": "5aa51e0a20ab1d67e29671a49e923c8395468d83bd6a543145616553a0a02ecf"
+    },
+    {
+      "episode_id": "bowling-seed0063",
+      "seed": 63,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 279,
+      "offset_control": 93,
+      "regular": false,
+      "event_pins": [
+        0
+      ],
+      "source_sha256": "fa703fe4ded2f69e9b7b99161e06e2e5d57b65e2f897a7515c65b4b9e6657177",
+      "contact_sha256": "5aa51e0a20ab1d67e29671a49e923c8395468d83bd6a543145616553a0a02ecf"
+    },
+    {
+      "episode_id": "bowling-seed0063",
+      "seed": 63,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 281,
+      "offset_control": 95,
+      "regular": true,
+      "event_pins": [
+        2
+      ],
+      "source_sha256": "fa703fe4ded2f69e9b7b99161e06e2e5d57b65e2f897a7515c65b4b9e6657177",
+      "contact_sha256": "5aa51e0a20ab1d67e29671a49e923c8395468d83bd6a543145616553a0a02ecf"
+    },
+    {
+      "episode_id": "bowling-seed0063",
+      "seed": 63,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 285,
+      "offset_control": 99,
+      "regular": false,
+      "event_pins": [
+        1
+      ],
+      "source_sha256": "fa703fe4ded2f69e9b7b99161e06e2e5d57b65e2f897a7515c65b4b9e6657177",
+      "contact_sha256": "5aa51e0a20ab1d67e29671a49e923c8395468d83bd6a543145616553a0a02ecf"
+    },
+    {
+      "episode_id": "bowling-seed0063",
+      "seed": 63,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 287,
+      "offset_control": 101,
+      "regular": false,
+      "event_pins": [
+        5
+      ],
+      "source_sha256": "fa703fe4ded2f69e9b7b99161e06e2e5d57b65e2f897a7515c65b4b9e6657177",
+      "contact_sha256": "5aa51e0a20ab1d67e29671a49e923c8395468d83bd6a543145616553a0a02ecf"
+    },
+    {
+      "episode_id": "bowling-seed0063",
+      "seed": 63,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 288,
+      "offset_control": 102,
+      "regular": false,
+      "event_pins": [
+        4
+      ],
+      "source_sha256": "fa703fe4ded2f69e9b7b99161e06e2e5d57b65e2f897a7515c65b4b9e6657177",
+      "contact_sha256": "5aa51e0a20ab1d67e29671a49e923c8395468d83bd6a543145616553a0a02ecf"
+    },
+    {
+      "episode_id": "bowling-seed0063",
+      "seed": 63,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 293,
+      "offset_control": 107,
+      "regular": false,
+      "event_pins": [
+        3
+      ],
+      "source_sha256": "fa703fe4ded2f69e9b7b99161e06e2e5d57b65e2f897a7515c65b4b9e6657177",
+      "contact_sha256": "5aa51e0a20ab1d67e29671a49e923c8395468d83bd6a543145616553a0a02ecf"
+    },
+    {
+      "episode_id": "bowling-seed0063",
+      "seed": 63,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 295,
+      "offset_control": 109,
+      "regular": false,
+      "event_pins": [
+        7,
+        8
+      ],
+      "source_sha256": "fa703fe4ded2f69e9b7b99161e06e2e5d57b65e2f897a7515c65b4b9e6657177",
+      "contact_sha256": "5aa51e0a20ab1d67e29671a49e923c8395468d83bd6a543145616553a0a02ecf"
+    },
+    {
+      "episode_id": "bowling-seed0063",
+      "seed": 63,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 297,
+      "offset_control": 111,
+      "regular": false,
+      "event_pins": [
+        9
+      ],
+      "source_sha256": "fa703fe4ded2f69e9b7b99161e06e2e5d57b65e2f897a7515c65b4b9e6657177",
+      "contact_sha256": "5aa51e0a20ab1d67e29671a49e923c8395468d83bd6a543145616553a0a02ecf"
+    },
+    {
+      "episode_id": "bowling-seed0063",
+      "seed": 63,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 319,
+      "offset_control": 133,
+      "regular": false,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "fa703fe4ded2f69e9b7b99161e06e2e5d57b65e2f897a7515c65b4b9e6657177",
+      "contact_sha256": "5aa51e0a20ab1d67e29671a49e923c8395468d83bd6a543145616553a0a02ecf"
+    },
+    {
+      "episode_id": "bowling-seed0064",
+      "seed": 64,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 171,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "dd2d3001748260e1a5c2a73d2901a9270358a40cd26083dc3c3f72a82dcda837",
+      "contact_sha256": "146ea308cfbffefb91d4f91fcf686832d7df596d7492b863bfbff70c0dcf0ce9"
+    },
+    {
+      "episode_id": "bowling-seed0065",
+      "seed": 65,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 171,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "27ab5dd21dc2d3665a7e641ebb4ebc63f828705a25cf22a0fe9b00b950288eb6",
+      "contact_sha256": "65636c4514b0104223e8d7c418b0466a7a8a50ed4fb361767eb1619189c418a2"
+    },
+    {
+      "episode_id": "bowling-seed0066",
+      "seed": 66,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 106,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "f730a910aaeafe89c4eeccdf9cb88ccc9a2fe437c1080f9cc34ee5fb9f9250f6",
+      "contact_sha256": "e8934c37aa84588b6d5830aafa5c9e3e13b84ee78c1b9249a1cb43525082e078"
+    },
+    {
+      "episode_id": "bowling-seed0066",
+      "seed": 66,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 205,
+      "offset_control": 99,
+      "regular": false,
+      "event_pins": [
+        2
+      ],
+      "source_sha256": "f730a910aaeafe89c4eeccdf9cb88ccc9a2fe437c1080f9cc34ee5fb9f9250f6",
+      "contact_sha256": "e8934c37aa84588b6d5830aafa5c9e3e13b84ee78c1b9249a1cb43525082e078"
+    },
+    {
+      "episode_id": "bowling-seed0066",
+      "seed": 66,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 212,
+      "offset_control": 106,
+      "regular": false,
+      "event_pins": [
+        4,
+        5
+      ],
+      "source_sha256": "f730a910aaeafe89c4eeccdf9cb88ccc9a2fe437c1080f9cc34ee5fb9f9250f6",
+      "contact_sha256": "e8934c37aa84588b6d5830aafa5c9e3e13b84ee78c1b9249a1cb43525082e078"
+    },
+    {
+      "episode_id": "bowling-seed0066",
+      "seed": 66,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 214,
+      "offset_control": 108,
+      "regular": false,
+      "event_pins": [
+        3
+      ],
+      "source_sha256": "f730a910aaeafe89c4eeccdf9cb88ccc9a2fe437c1080f9cc34ee5fb9f9250f6",
+      "contact_sha256": "e8934c37aa84588b6d5830aafa5c9e3e13b84ee78c1b9249a1cb43525082e078"
+    },
+    {
+      "episode_id": "bowling-seed0066",
+      "seed": 66,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 215,
+      "offset_control": 109,
+      "regular": false,
+      "event_pins": [
+        1
+      ],
+      "source_sha256": "f730a910aaeafe89c4eeccdf9cb88ccc9a2fe437c1080f9cc34ee5fb9f9250f6",
+      "contact_sha256": "e8934c37aa84588b6d5830aafa5c9e3e13b84ee78c1b9249a1cb43525082e078"
+    },
+    {
+      "episode_id": "bowling-seed0066",
+      "seed": 66,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 216,
+      "offset_control": 110,
+      "regular": true,
+      "event_pins": [
+        8
+      ],
+      "source_sha256": "f730a910aaeafe89c4eeccdf9cb88ccc9a2fe437c1080f9cc34ee5fb9f9250f6",
+      "contact_sha256": "e8934c37aa84588b6d5830aafa5c9e3e13b84ee78c1b9249a1cb43525082e078"
+    },
+    {
+      "episode_id": "bowling-seed0066",
+      "seed": 66,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 226,
+      "offset_control": 120,
+      "regular": true,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "f730a910aaeafe89c4eeccdf9cb88ccc9a2fe437c1080f9cc34ee5fb9f9250f6",
+      "contact_sha256": "e8934c37aa84588b6d5830aafa5c9e3e13b84ee78c1b9249a1cb43525082e078"
+    },
+    {
+      "episode_id": "bowling-seed0066",
+      "seed": 66,
+      "split": "validation",
+      "cohort": "legacy",
+      "anchor_control": 252,
+      "offset_control": 146,
+      "regular": false,
+      "event_pins": [
+        7
+      ],
+      "source_sha256": "f730a910aaeafe89c4eeccdf9cb88ccc9a2fe437c1080f9cc34ee5fb9f9250f6",
+      "contact_sha256": "e8934c37aa84588b6d5830aafa5c9e3e13b84ee78c1b9249a1cb43525082e078"
+    },
+    {
+      "episode_id": "bowling-seed810000",
+      "seed": 810000,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 183,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "e29b08851884bf6d3234eb36a8cfdbbb483ca75b0f5245f216777afae598787e",
+      "contact_sha256": "6c0a00f55a615a13fb33128d32f3f764473fc63c7c28aa0bf20eac0016b197f4"
+    },
+    {
+      "episode_id": "bowling-seed810001",
+      "seed": 810001,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 144,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "80e22d23094acb78a08597b66da611a5584132c7a3f606fb28ed7adc66c78fb2",
+      "contact_sha256": "755386ebb9c99086f9f8dcab016116071d5dee505a3de88c2e0e0003f34235da"
+    },
+    {
+      "episode_id": "bowling-seed810002",
+      "seed": 810002,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 128,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "d5423ebc07d4bd37a0d035d81ce3b3d4b7b382e89a76dc22963afd2469afc40b",
+      "contact_sha256": "34c2c2aa220461bc3f21a0a3d2f10bcf0547ca2b5ac7d557486e209b06009af1"
+    },
+    {
+      "episode_id": "bowling-seed810002",
+      "seed": 810002,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 259,
+      "offset_control": 131,
+      "regular": false,
+      "event_pins": [
+        9
+      ],
+      "source_sha256": "d5423ebc07d4bd37a0d035d81ce3b3d4b7b382e89a76dc22963afd2469afc40b",
+      "contact_sha256": "34c2c2aa220461bc3f21a0a3d2f10bcf0547ca2b5ac7d557486e209b06009af1"
+    },
+    {
+      "episode_id": "bowling-seed810003",
+      "seed": 810003,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 161,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "932e1a01a68a1ded82f7af0e0b41a7ec5532e220da3d066e11dc6fd90614ce04",
+      "contact_sha256": "ece2c6645721b6015fac863d2a2d590c25734a4c3f22908ef94c77635b132e92"
+    },
+    {
+      "episode_id": "bowling-seed810004",
+      "seed": 810004,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 116,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "238a9120e5365cd34d99935b7470c863583c23e052c8d3462be3c1a1905b677c",
+      "contact_sha256": "4b5ac964183ddeab20c5625a60a5b19471e7db4691496a63f4554b70d65db99b"
+    },
+    {
+      "episode_id": "bowling-seed810005",
+      "seed": 810005,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 159,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "b88fa9551b8d63c4080aff656d34ed5ca379b1d17d007e0498c52d8c6dca1a35",
+      "contact_sha256": "43f8225b998bc285edbd02bce5e48ea98893c2c1e1f04e46a344029ff0464fb1"
+    },
+    {
+      "episode_id": "bowling-seed810005",
+      "seed": 810005,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 239,
+      "offset_control": 80,
+      "regular": true,
+      "event_pins": [
+        0
+      ],
+      "source_sha256": "b88fa9551b8d63c4080aff656d34ed5ca379b1d17d007e0498c52d8c6dca1a35",
+      "contact_sha256": "43f8225b998bc285edbd02bce5e48ea98893c2c1e1f04e46a344029ff0464fb1"
+    },
+    {
+      "episode_id": "bowling-seed810005",
+      "seed": 810005,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 243,
+      "offset_control": 84,
+      "regular": false,
+      "event_pins": [
+        1
+      ],
+      "source_sha256": "b88fa9551b8d63c4080aff656d34ed5ca379b1d17d007e0498c52d8c6dca1a35",
+      "contact_sha256": "43f8225b998bc285edbd02bce5e48ea98893c2c1e1f04e46a344029ff0464fb1"
+    },
+    {
+      "episode_id": "bowling-seed810005",
+      "seed": 810005,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 245,
+      "offset_control": 86,
+      "regular": false,
+      "event_pins": [
+        2
+      ],
+      "source_sha256": "b88fa9551b8d63c4080aff656d34ed5ca379b1d17d007e0498c52d8c6dca1a35",
+      "contact_sha256": "43f8225b998bc285edbd02bce5e48ea98893c2c1e1f04e46a344029ff0464fb1"
+    },
+    {
+      "episode_id": "bowling-seed810005",
+      "seed": 810005,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 250,
+      "offset_control": 91,
+      "regular": false,
+      "event_pins": [
+        4
+      ],
+      "source_sha256": "b88fa9551b8d63c4080aff656d34ed5ca379b1d17d007e0498c52d8c6dca1a35",
+      "contact_sha256": "43f8225b998bc285edbd02bce5e48ea98893c2c1e1f04e46a344029ff0464fb1"
+    },
+    {
+      "episode_id": "bowling-seed810005",
+      "seed": 810005,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 254,
+      "offset_control": 95,
+      "regular": true,
+      "event_pins": [
+        8
+      ],
+      "source_sha256": "b88fa9551b8d63c4080aff656d34ed5ca379b1d17d007e0498c52d8c6dca1a35",
+      "contact_sha256": "43f8225b998bc285edbd02bce5e48ea98893c2c1e1f04e46a344029ff0464fb1"
+    },
+    {
+      "episode_id": "bowling-seed810005",
+      "seed": 810005,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 255,
+      "offset_control": 96,
+      "regular": false,
+      "event_pins": [
+        3,
+        5
+      ],
+      "source_sha256": "b88fa9551b8d63c4080aff656d34ed5ca379b1d17d007e0498c52d8c6dca1a35",
+      "contact_sha256": "43f8225b998bc285edbd02bce5e48ea98893c2c1e1f04e46a344029ff0464fb1"
+    },
+    {
+      "episode_id": "bowling-seed810005",
+      "seed": 810005,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 258,
+      "offset_control": 99,
+      "regular": false,
+      "event_pins": [
+        7
+      ],
+      "source_sha256": "b88fa9551b8d63c4080aff656d34ed5ca379b1d17d007e0498c52d8c6dca1a35",
+      "contact_sha256": "43f8225b998bc285edbd02bce5e48ea98893c2c1e1f04e46a344029ff0464fb1"
+    },
+    {
+      "episode_id": "bowling-seed810005",
+      "seed": 810005,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 268,
+      "offset_control": 109,
+      "regular": false,
+      "event_pins": [
+        9
+      ],
+      "source_sha256": "b88fa9551b8d63c4080aff656d34ed5ca379b1d17d007e0498c52d8c6dca1a35",
+      "contact_sha256": "43f8225b998bc285edbd02bce5e48ea98893c2c1e1f04e46a344029ff0464fb1"
+    },
+    {
+      "episode_id": "bowling-seed810005",
+      "seed": 810005,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 276,
+      "offset_control": 117,
+      "regular": false,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "b88fa9551b8d63c4080aff656d34ed5ca379b1d17d007e0498c52d8c6dca1a35",
+      "contact_sha256": "43f8225b998bc285edbd02bce5e48ea98893c2c1e1f04e46a344029ff0464fb1"
+    },
+    {
+      "episode_id": "bowling-seed810006",
+      "seed": 810006,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 172,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "a7f1733591bd1185cb4d7e92d8956a07eb26e75e8ee08dc01037d5b52595829f",
+      "contact_sha256": "18c4ec9609d390360519e11eec0348e81b7dbfe6a4276a84b5e4aa0a3c3ba9ec"
+    },
+    {
+      "episode_id": "bowling-seed810006",
+      "seed": 810006,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 254,
+      "offset_control": 82,
+      "regular": false,
+      "event_pins": [
+        5
+      ],
+      "source_sha256": "a7f1733591bd1185cb4d7e92d8956a07eb26e75e8ee08dc01037d5b52595829f",
+      "contact_sha256": "18c4ec9609d390360519e11eec0348e81b7dbfe6a4276a84b5e4aa0a3c3ba9ec"
+    },
+    {
+      "episode_id": "bowling-seed810006",
+      "seed": 810006,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 257,
+      "offset_control": 85,
+      "regular": true,
+      "event_pins": [
+        8
+      ],
+      "source_sha256": "a7f1733591bd1185cb4d7e92d8956a07eb26e75e8ee08dc01037d5b52595829f",
+      "contact_sha256": "18c4ec9609d390360519e11eec0348e81b7dbfe6a4276a84b5e4aa0a3c3ba9ec"
+    },
+    {
+      "episode_id": "bowling-seed810006",
+      "seed": 810006,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 260,
+      "offset_control": 88,
+      "regular": false,
+      "event_pins": [
+        9
+      ],
+      "source_sha256": "a7f1733591bd1185cb4d7e92d8956a07eb26e75e8ee08dc01037d5b52595829f",
+      "contact_sha256": "18c4ec9609d390360519e11eec0348e81b7dbfe6a4276a84b5e4aa0a3c3ba9ec"
+    },
+    {
+      "episode_id": "bowling-seed810006",
+      "seed": 810006,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 266,
+      "offset_control": 94,
+      "regular": false,
+      "event_pins": [
+        7
+      ],
+      "source_sha256": "a7f1733591bd1185cb4d7e92d8956a07eb26e75e8ee08dc01037d5b52595829f",
+      "contact_sha256": "18c4ec9609d390360519e11eec0348e81b7dbfe6a4276a84b5e4aa0a3c3ba9ec"
+    },
+    {
+      "episode_id": "bowling-seed810006",
+      "seed": 810006,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 288,
+      "offset_control": 116,
+      "regular": false,
+      "event_pins": [
+        4
+      ],
+      "source_sha256": "a7f1733591bd1185cb4d7e92d8956a07eb26e75e8ee08dc01037d5b52595829f",
+      "contact_sha256": "18c4ec9609d390360519e11eec0348e81b7dbfe6a4276a84b5e4aa0a3c3ba9ec"
+    },
+    {
+      "episode_id": "bowling-seed810007",
+      "seed": 810007,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 133,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "c910e7de4d94a6c4ff16d98d5fcfac9d176bfe1cef5c6eae84b5944471b7bb22",
+      "contact_sha256": "68e05cfdafc808cb5f79af497a5a236d306f124c7e004fac85beae11d0526267"
+    },
+    {
+      "episode_id": "bowling-seed810008",
+      "seed": 810008,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 134,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "8cc5e42b72e497056c60bda87555f481e9f30c78258924f7cd42f576ea584b84",
+      "contact_sha256": "b13cee0cd1ba77c877409af18764d5e0bb7791246550b4dacb42581131ff044f"
+    },
+    {
+      "episode_id": "bowling-seed810009",
+      "seed": 810009,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 163,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "fb61a3a6f0ebd680cd09c38c457b4907d65aa09d4891f7f5bf926b36cec81733",
+      "contact_sha256": "270b91702bd76cfa1792ee37a11845d786b8d87863b02bb7556df5208d4427cb"
+    },
+    {
+      "episode_id": "bowling-seed810010",
+      "seed": 810010,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 133,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "5a543b01a7e140d2aba62cbb448129e1cefac1edc92bb7798e3ccef0566aaa92",
+      "contact_sha256": "cb510737e347748ee86f16e8f60bbc9c3268a05935ef715cf86ca77f976fbbe2"
+    },
+    {
+      "episode_id": "bowling-seed810010",
+      "seed": 810010,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 234,
+      "offset_control": 101,
+      "regular": false,
+      "event_pins": [
+        5
+      ],
+      "source_sha256": "5a543b01a7e140d2aba62cbb448129e1cefac1edc92bb7798e3ccef0566aaa92",
+      "contact_sha256": "cb510737e347748ee86f16e8f60bbc9c3268a05935ef715cf86ca77f976fbbe2"
+    },
+    {
+      "episode_id": "bowling-seed810010",
+      "seed": 810010,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 237,
+      "offset_control": 104,
+      "regular": false,
+      "event_pins": [
+        8
+      ],
+      "source_sha256": "5a543b01a7e140d2aba62cbb448129e1cefac1edc92bb7798e3ccef0566aaa92",
+      "contact_sha256": "cb510737e347748ee86f16e8f60bbc9c3268a05935ef715cf86ca77f976fbbe2"
+    },
+    {
+      "episode_id": "bowling-seed810010",
+      "seed": 810010,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 246,
+      "offset_control": 113,
+      "regular": false,
+      "event_pins": [
+        9
+      ],
+      "source_sha256": "5a543b01a7e140d2aba62cbb448129e1cefac1edc92bb7798e3ccef0566aaa92",
+      "contact_sha256": "cb510737e347748ee86f16e8f60bbc9c3268a05935ef715cf86ca77f976fbbe2"
+    },
+    {
+      "episode_id": "bowling-seed810010",
+      "seed": 810010,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 255,
+      "offset_control": 122,
+      "regular": false,
+      "event_pins": [
+        7
+      ],
+      "source_sha256": "5a543b01a7e140d2aba62cbb448129e1cefac1edc92bb7798e3ccef0566aaa92",
+      "contact_sha256": "cb510737e347748ee86f16e8f60bbc9c3268a05935ef715cf86ca77f976fbbe2"
+    },
+    {
+      "episode_id": "bowling-seed810010",
+      "seed": 810010,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 278,
+      "offset_control": 145,
+      "regular": true,
+      "event_pins": [
+        4
+      ],
+      "source_sha256": "5a543b01a7e140d2aba62cbb448129e1cefac1edc92bb7798e3ccef0566aaa92",
+      "contact_sha256": "cb510737e347748ee86f16e8f60bbc9c3268a05935ef715cf86ca77f976fbbe2"
+    },
+    {
+      "episode_id": "bowling-seed810011",
+      "seed": 810011,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 141,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "fe9144538dd5729f62543717a7eb8a56ea1424b121fcc86a4f88b6e68a10cac2",
+      "contact_sha256": "b7a48ebd59af37a2a7bbb64354b0abf2064d240ce9ea7685aeca2b5f60d649d2"
+    },
+    {
+      "episode_id": "bowling-seed810012",
+      "seed": 810012,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 147,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "3ddf190df423f45261dcfa8a3d8afb5bc3f204679e176796da7d6684317681b7",
+      "contact_sha256": "fb864453f1f81291da4bd14e5db640c82e4def90bb0c9334593906e60da11fdc"
+    },
+    {
+      "episode_id": "bowling-seed810012",
+      "seed": 810012,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 220,
+      "offset_control": 73,
+      "regular": false,
+      "event_pins": [
+        0
+      ],
+      "source_sha256": "3ddf190df423f45261dcfa8a3d8afb5bc3f204679e176796da7d6684317681b7",
+      "contact_sha256": "fb864453f1f81291da4bd14e5db640c82e4def90bb0c9334593906e60da11fdc"
+    },
+    {
+      "episode_id": "bowling-seed810012",
+      "seed": 810012,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 222,
+      "offset_control": 75,
+      "regular": true,
+      "event_pins": [
+        2
+      ],
+      "source_sha256": "3ddf190df423f45261dcfa8a3d8afb5bc3f204679e176796da7d6684317681b7",
+      "contact_sha256": "fb864453f1f81291da4bd14e5db640c82e4def90bb0c9334593906e60da11fdc"
+    },
+    {
+      "episode_id": "bowling-seed810012",
+      "seed": 810012,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 227,
+      "offset_control": 80,
+      "regular": true,
+      "event_pins": [
+        1
+      ],
+      "source_sha256": "3ddf190df423f45261dcfa8a3d8afb5bc3f204679e176796da7d6684317681b7",
+      "contact_sha256": "fb864453f1f81291da4bd14e5db640c82e4def90bb0c9334593906e60da11fdc"
+    },
+    {
+      "episode_id": "bowling-seed810012",
+      "seed": 810012,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 228,
+      "offset_control": 81,
+      "regular": false,
+      "event_pins": [
+        4,
+        5
+      ],
+      "source_sha256": "3ddf190df423f45261dcfa8a3d8afb5bc3f204679e176796da7d6684317681b7",
+      "contact_sha256": "fb864453f1f81291da4bd14e5db640c82e4def90bb0c9334593906e60da11fdc"
+    },
+    {
+      "episode_id": "bowling-seed810012",
+      "seed": 810012,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 235,
+      "offset_control": 88,
+      "regular": false,
+      "event_pins": [
+        9
+      ],
+      "source_sha256": "3ddf190df423f45261dcfa8a3d8afb5bc3f204679e176796da7d6684317681b7",
+      "contact_sha256": "fb864453f1f81291da4bd14e5db640c82e4def90bb0c9334593906e60da11fdc"
+    },
+    {
+      "episode_id": "bowling-seed810012",
+      "seed": 810012,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 237,
+      "offset_control": 90,
+      "regular": true,
+      "event_pins": [
+        7
+      ],
+      "source_sha256": "3ddf190df423f45261dcfa8a3d8afb5bc3f204679e176796da7d6684317681b7",
+      "contact_sha256": "fb864453f1f81291da4bd14e5db640c82e4def90bb0c9334593906e60da11fdc"
+    },
+    {
+      "episode_id": "bowling-seed810012",
+      "seed": 810012,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 244,
+      "offset_control": 97,
+      "regular": false,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "3ddf190df423f45261dcfa8a3d8afb5bc3f204679e176796da7d6684317681b7",
+      "contact_sha256": "fb864453f1f81291da4bd14e5db640c82e4def90bb0c9334593906e60da11fdc"
+    },
+    {
+      "episode_id": "bowling-seed810014",
+      "seed": 810014,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 188,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "056e32981a1247c48a8a1bf9e0aa4975c99eca64e337c65a370480d3ec850fde",
+      "contact_sha256": "6f131d7c47730001bcd41fb768b7d85d39bb5645a633b4cbeb4f3452215160da"
+    },
+    {
+      "episode_id": "bowling-seed810015",
+      "seed": 810015,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 157,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "079b7b4d10056f02965fc95eff1649b355140749be170d1362fd3ecf7f915907",
+      "contact_sha256": "957216bbe22cf085a7efc7d5c62bde909d6c500d415ebd70dee7b0144ab0afd7"
+    },
+    {
+      "episode_id": "bowling-seed810016",
+      "seed": 810016,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 130,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "438d9d4aa9ab768e638279a505f27eb6f4bca640fe7db23e63a0316e01414997",
+      "contact_sha256": "78d36532a6cde3c3d91747fd69dd25701aa2fc2a96f32739ed90008521296b8e"
+    },
+    {
+      "episode_id": "bowling-seed810017",
+      "seed": 810017,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 164,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "89d2a82aa032a6d60f00e241dc86df5844be77adba82cd920d9f7dbab3113553",
+      "contact_sha256": "6206cfe6ff5d21ec4c1bbc0ebb0f6e7d99f9bb0a3e55caf77d59cf17533b5af1"
+    },
+    {
+      "episode_id": "bowling-seed810018",
+      "seed": 810018,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 156,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "2cc6212f061b6f17f0a0fc6420d42264080407653b58d53a59c1c86c0a86b289",
+      "contact_sha256": "52679972b26a7a7bd79a4a68c7b1303c21ee96868ce3aa3fa1e97aa8923a096e"
+    },
+    {
+      "episode_id": "bowling-seed810018",
+      "seed": 810018,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 240,
+      "offset_control": 84,
+      "regular": false,
+      "event_pins": [
+        0
+      ],
+      "source_sha256": "2cc6212f061b6f17f0a0fc6420d42264080407653b58d53a59c1c86c0a86b289",
+      "contact_sha256": "52679972b26a7a7bd79a4a68c7b1303c21ee96868ce3aa3fa1e97aa8923a096e"
+    },
+    {
+      "episode_id": "bowling-seed810018",
+      "seed": 810018,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 244,
+      "offset_control": 88,
+      "regular": false,
+      "event_pins": [
+        1,
+        2
+      ],
+      "source_sha256": "2cc6212f061b6f17f0a0fc6420d42264080407653b58d53a59c1c86c0a86b289",
+      "contact_sha256": "52679972b26a7a7bd79a4a68c7b1303c21ee96868ce3aa3fa1e97aa8923a096e"
+    },
+    {
+      "episode_id": "bowling-seed810018",
+      "seed": 810018,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 248,
+      "offset_control": 92,
+      "regular": false,
+      "event_pins": [
+        4
+      ],
+      "source_sha256": "2cc6212f061b6f17f0a0fc6420d42264080407653b58d53a59c1c86c0a86b289",
+      "contact_sha256": "52679972b26a7a7bd79a4a68c7b1303c21ee96868ce3aa3fa1e97aa8923a096e"
+    },
+    {
+      "episode_id": "bowling-seed810018",
+      "seed": 810018,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 255,
+      "offset_control": 99,
+      "regular": false,
+      "event_pins": [
+        3
+      ],
+      "source_sha256": "2cc6212f061b6f17f0a0fc6420d42264080407653b58d53a59c1c86c0a86b289",
+      "contact_sha256": "52679972b26a7a7bd79a4a68c7b1303c21ee96868ce3aa3fa1e97aa8923a096e"
+    },
+    {
+      "episode_id": "bowling-seed810018",
+      "seed": 810018,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 258,
+      "offset_control": 102,
+      "regular": false,
+      "event_pins": [
+        5
+      ],
+      "source_sha256": "2cc6212f061b6f17f0a0fc6420d42264080407653b58d53a59c1c86c0a86b289",
+      "contact_sha256": "52679972b26a7a7bd79a4a68c7b1303c21ee96868ce3aa3fa1e97aa8923a096e"
+    },
+    {
+      "episode_id": "bowling-seed810019",
+      "seed": 810019,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 140,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "d89d728372e9519d17930cc92847d87f969420f51ff451387a54f77a4f0b9cd1",
+      "contact_sha256": "a0fbb42d84b3fa200d254020cad5cad2ccbc6724dd87a20ba137fce0ed18e0e8"
+    },
+    {
+      "episode_id": "bowling-seed810019",
+      "seed": 810019,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 272,
+      "offset_control": 132,
+      "regular": false,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "d89d728372e9519d17930cc92847d87f969420f51ff451387a54f77a4f0b9cd1",
+      "contact_sha256": "a0fbb42d84b3fa200d254020cad5cad2ccbc6724dd87a20ba137fce0ed18e0e8"
+    },
+    {
+      "episode_id": "bowling-seed810020",
+      "seed": 810020,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 140,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "bce393b1be3860fe38b25a6a629261ca979a51152d450939811caba664446ad4",
+      "contact_sha256": "6cd48f2893c8728824366edb9195d19fc1d1fe271293b56e189c0f033d40c14f"
+    },
+    {
+      "episode_id": "bowling-seed810020",
+      "seed": 810020,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 225,
+      "offset_control": 85,
+      "regular": true,
+      "event_pins": [
+        1
+      ],
+      "source_sha256": "bce393b1be3860fe38b25a6a629261ca979a51152d450939811caba664446ad4",
+      "contact_sha256": "6cd48f2893c8728824366edb9195d19fc1d1fe271293b56e189c0f033d40c14f"
+    },
+    {
+      "episode_id": "bowling-seed810020",
+      "seed": 810020,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 228,
+      "offset_control": 88,
+      "regular": false,
+      "event_pins": [
+        4
+      ],
+      "source_sha256": "bce393b1be3860fe38b25a6a629261ca979a51152d450939811caba664446ad4",
+      "contact_sha256": "6cd48f2893c8728824366edb9195d19fc1d1fe271293b56e189c0f033d40c14f"
+    },
+    {
+      "episode_id": "bowling-seed810020",
+      "seed": 810020,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 231,
+      "offset_control": 91,
+      "regular": false,
+      "event_pins": [
+        5
+      ],
+      "source_sha256": "bce393b1be3860fe38b25a6a629261ca979a51152d450939811caba664446ad4",
+      "contact_sha256": "6cd48f2893c8728824366edb9195d19fc1d1fe271293b56e189c0f033d40c14f"
+    },
+    {
+      "episode_id": "bowling-seed810020",
+      "seed": 810020,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 232,
+      "offset_control": 92,
+      "regular": false,
+      "event_pins": [
+        3
+      ],
+      "source_sha256": "bce393b1be3860fe38b25a6a629261ca979a51152d450939811caba664446ad4",
+      "contact_sha256": "6cd48f2893c8728824366edb9195d19fc1d1fe271293b56e189c0f033d40c14f"
+    },
+    {
+      "episode_id": "bowling-seed810020",
+      "seed": 810020,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 234,
+      "offset_control": 94,
+      "regular": false,
+      "event_pins": [
+        8
+      ],
+      "source_sha256": "bce393b1be3860fe38b25a6a629261ca979a51152d450939811caba664446ad4",
+      "contact_sha256": "6cd48f2893c8728824366edb9195d19fc1d1fe271293b56e189c0f033d40c14f"
+    },
+    {
+      "episode_id": "bowling-seed810020",
+      "seed": 810020,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 236,
+      "offset_control": 96,
+      "regular": false,
+      "event_pins": [
+        7
+      ],
+      "source_sha256": "bce393b1be3860fe38b25a6a629261ca979a51152d450939811caba664446ad4",
+      "contact_sha256": "6cd48f2893c8728824366edb9195d19fc1d1fe271293b56e189c0f033d40c14f"
+    },
+    {
+      "episode_id": "bowling-seed810020",
+      "seed": 810020,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 243,
+      "offset_control": 103,
+      "regular": false,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "bce393b1be3860fe38b25a6a629261ca979a51152d450939811caba664446ad4",
+      "contact_sha256": "6cd48f2893c8728824366edb9195d19fc1d1fe271293b56e189c0f033d40c14f"
+    },
+    {
+      "episode_id": "bowling-seed810020",
+      "seed": 810020,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 255,
+      "offset_control": 115,
+      "regular": true,
+      "event_pins": [
+        2
+      ],
+      "source_sha256": "bce393b1be3860fe38b25a6a629261ca979a51152d450939811caba664446ad4",
+      "contact_sha256": "6cd48f2893c8728824366edb9195d19fc1d1fe271293b56e189c0f033d40c14f"
+    },
+    {
+      "episode_id": "bowling-seed810021",
+      "seed": 810021,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 138,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "23e6233f70ee4f4f09c178aeda84e13d95cd5cb91f83836bf6cdf37351e16d14",
+      "contact_sha256": "2be15b604b4a6fd2505ca2ac1836623ac7bb9eef20ebeb1ab1c1d61770f465d6"
+    },
+    {
+      "episode_id": "bowling-seed810021",
+      "seed": 810021,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 260,
+      "offset_control": 122,
+      "regular": false,
+      "event_pins": [
+        5
+      ],
+      "source_sha256": "23e6233f70ee4f4f09c178aeda84e13d95cd5cb91f83836bf6cdf37351e16d14",
+      "contact_sha256": "2be15b604b4a6fd2505ca2ac1836623ac7bb9eef20ebeb1ab1c1d61770f465d6"
+    },
+    {
+      "episode_id": "bowling-seed810021",
+      "seed": 810021,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 262,
+      "offset_control": 124,
+      "regular": false,
+      "event_pins": [
+        8
+      ],
+      "source_sha256": "23e6233f70ee4f4f09c178aeda84e13d95cd5cb91f83836bf6cdf37351e16d14",
+      "contact_sha256": "2be15b604b4a6fd2505ca2ac1836623ac7bb9eef20ebeb1ab1c1d61770f465d6"
+    },
+    {
+      "episode_id": "bowling-seed810021",
+      "seed": 810021,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 271,
+      "offset_control": 133,
+      "regular": false,
+      "event_pins": [
+        9
+      ],
+      "source_sha256": "23e6233f70ee4f4f09c178aeda84e13d95cd5cb91f83836bf6cdf37351e16d14",
+      "contact_sha256": "2be15b604b4a6fd2505ca2ac1836623ac7bb9eef20ebeb1ab1c1d61770f465d6"
+    },
+    {
+      "episode_id": "bowling-seed810022",
+      "seed": 810022,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 169,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "7efd637b20dfe9aa3578197ef7d28c5cb5723974f92a8f63a158bcba838a1771",
+      "contact_sha256": "16024d228d5cfd6a2be285030202c267125ad56ed3fbb21ccd23851bfb141017"
+    },
+    {
+      "episode_id": "bowling-seed810022",
+      "seed": 810022,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 284,
+      "offset_control": 115,
+      "regular": true,
+      "event_pins": [
+        0
+      ],
+      "source_sha256": "7efd637b20dfe9aa3578197ef7d28c5cb5723974f92a8f63a158bcba838a1771",
+      "contact_sha256": "16024d228d5cfd6a2be285030202c267125ad56ed3fbb21ccd23851bfb141017"
+    },
+    {
+      "episode_id": "bowling-seed810022",
+      "seed": 810022,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 289,
+      "offset_control": 120,
+      "regular": true,
+      "event_pins": [
+        1
+      ],
+      "source_sha256": "7efd637b20dfe9aa3578197ef7d28c5cb5723974f92a8f63a158bcba838a1771",
+      "contact_sha256": "16024d228d5cfd6a2be285030202c267125ad56ed3fbb21ccd23851bfb141017"
+    },
+    {
+      "episode_id": "bowling-seed810022",
+      "seed": 810022,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 290,
+      "offset_control": 121,
+      "regular": false,
+      "event_pins": [
+        2
+      ],
+      "source_sha256": "7efd637b20dfe9aa3578197ef7d28c5cb5723974f92a8f63a158bcba838a1771",
+      "contact_sha256": "16024d228d5cfd6a2be285030202c267125ad56ed3fbb21ccd23851bfb141017"
+    },
+    {
+      "episode_id": "bowling-seed810022",
+      "seed": 810022,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 292,
+      "offset_control": 123,
+      "regular": false,
+      "event_pins": [
+        4
+      ],
+      "source_sha256": "7efd637b20dfe9aa3578197ef7d28c5cb5723974f92a8f63a158bcba838a1771",
+      "contact_sha256": "16024d228d5cfd6a2be285030202c267125ad56ed3fbb21ccd23851bfb141017"
+    },
+    {
+      "episode_id": "bowling-seed810022",
+      "seed": 810022,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 306,
+      "offset_control": 137,
+      "regular": false,
+      "event_pins": [
+        7
+      ],
+      "source_sha256": "7efd637b20dfe9aa3578197ef7d28c5cb5723974f92a8f63a158bcba838a1771",
+      "contact_sha256": "16024d228d5cfd6a2be285030202c267125ad56ed3fbb21ccd23851bfb141017"
+    },
+    {
+      "episode_id": "bowling-seed810022",
+      "seed": 810022,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 307,
+      "offset_control": 138,
+      "regular": false,
+      "event_pins": [
+        8
+      ],
+      "source_sha256": "7efd637b20dfe9aa3578197ef7d28c5cb5723974f92a8f63a158bcba838a1771",
+      "contact_sha256": "16024d228d5cfd6a2be285030202c267125ad56ed3fbb21ccd23851bfb141017"
+    },
+    {
+      "episode_id": "bowling-seed810022",
+      "seed": 810022,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 308,
+      "offset_control": 139,
+      "regular": false,
+      "event_pins": [
+        3
+      ],
+      "source_sha256": "7efd637b20dfe9aa3578197ef7d28c5cb5723974f92a8f63a158bcba838a1771",
+      "contact_sha256": "16024d228d5cfd6a2be285030202c267125ad56ed3fbb21ccd23851bfb141017"
+    },
+    {
+      "episode_id": "bowling-seed810023",
+      "seed": 810023,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 157,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "4cc40306ad625ce57eb439cb168ead6f820b8d0a3ba1f0fbcb846962cdb75af6",
+      "contact_sha256": "cb0c5d2ef61a923c16faf04a31b722e5b16b9be05fbe3fcfb7a90ba29b77a06f"
+    },
+    {
+      "episode_id": "bowling-seed810024",
+      "seed": 810024,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 150,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "78b957e19ffde94f55204af29173a4c3e334895a68054ae359ab85a9ace6b8c5",
+      "contact_sha256": "c62f9630f28953edfe87d24520cc02055ffbdf4d5ef7e9f8793c108412443e33"
+    },
+    {
+      "episode_id": "bowling-seed810025",
+      "seed": 810025,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 167,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "39e1a68e6dddab8c13f88302a6442dbc7a88c32a1cc2833f338322b9557c1a33",
+      "contact_sha256": "ec4a4c340f48722a9b1538089ec2fc8c95919aa9efc90f0c46dc96ae2854873f"
+    },
+    {
+      "episode_id": "bowling-seed810026",
+      "seed": 810026,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 95,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "eff806bff5400832dde2ec138c6f55a1ecaf09f3566559c51a28a51005aa7eb7",
+      "contact_sha256": "422b584ad504f528ddf8c6506e6acb1b6fa83f13db45144b057b8b8d39ed0b53"
+    },
+    {
+      "episode_id": "bowling-seed810027",
+      "seed": 810027,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 173,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "5c7aad2d031c01ad65988f878967d7cf1118f7665d65b868020471b9d301f3fb",
+      "contact_sha256": "1efb298cf2a98c0611fe9c9040386f5dc5a9c64bb76c29b85366c32d191719a4"
+    },
+    {
+      "episode_id": "bowling-seed810027",
+      "seed": 810027,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 297,
+      "offset_control": 124,
+      "regular": false,
+      "event_pins": [
+        1
+      ],
+      "source_sha256": "5c7aad2d031c01ad65988f878967d7cf1118f7665d65b868020471b9d301f3fb",
+      "contact_sha256": "1efb298cf2a98c0611fe9c9040386f5dc5a9c64bb76c29b85366c32d191719a4"
+    },
+    {
+      "episode_id": "bowling-seed810027",
+      "seed": 810027,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 301,
+      "offset_control": 128,
+      "regular": false,
+      "event_pins": [
+        3
+      ],
+      "source_sha256": "5c7aad2d031c01ad65988f878967d7cf1118f7665d65b868020471b9d301f3fb",
+      "contact_sha256": "1efb298cf2a98c0611fe9c9040386f5dc5a9c64bb76c29b85366c32d191719a4"
+    },
+    {
+      "episode_id": "bowling-seed810027",
+      "seed": 810027,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 305,
+      "offset_control": 132,
+      "regular": false,
+      "event_pins": [
+        7
+      ],
+      "source_sha256": "5c7aad2d031c01ad65988f878967d7cf1118f7665d65b868020471b9d301f3fb",
+      "contact_sha256": "1efb298cf2a98c0611fe9c9040386f5dc5a9c64bb76c29b85366c32d191719a4"
+    },
+    {
+      "episode_id": "bowling-seed810027",
+      "seed": 810027,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 309,
+      "offset_control": 136,
+      "regular": false,
+      "event_pins": [
+        2
+      ],
+      "source_sha256": "5c7aad2d031c01ad65988f878967d7cf1118f7665d65b868020471b9d301f3fb",
+      "contact_sha256": "1efb298cf2a98c0611fe9c9040386f5dc5a9c64bb76c29b85366c32d191719a4"
+    },
+    {
+      "episode_id": "bowling-seed810027",
+      "seed": 810027,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 313,
+      "offset_control": 140,
+      "regular": true,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "5c7aad2d031c01ad65988f878967d7cf1118f7665d65b868020471b9d301f3fb",
+      "contact_sha256": "1efb298cf2a98c0611fe9c9040386f5dc5a9c64bb76c29b85366c32d191719a4"
+    },
+    {
+      "episode_id": "bowling-seed810027",
+      "seed": 810027,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 314,
+      "offset_control": 141,
+      "regular": false,
+      "event_pins": [
+        4
+      ],
+      "source_sha256": "5c7aad2d031c01ad65988f878967d7cf1118f7665d65b868020471b9d301f3fb",
+      "contact_sha256": "1efb298cf2a98c0611fe9c9040386f5dc5a9c64bb76c29b85366c32d191719a4"
+    },
+    {
+      "episode_id": "bowling-seed810027",
+      "seed": 810027,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 319,
+      "offset_control": 146,
+      "regular": false,
+      "event_pins": [
+        5
+      ],
+      "source_sha256": "5c7aad2d031c01ad65988f878967d7cf1118f7665d65b868020471b9d301f3fb",
+      "contact_sha256": "1efb298cf2a98c0611fe9c9040386f5dc5a9c64bb76c29b85366c32d191719a4"
+    },
+    {
+      "episode_id": "bowling-seed810028",
+      "seed": 810028,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 161,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "e69d1dc7dcae4ea4f4b140a92539910ab43910d191c8b605c6ea9cee759f50d9",
+      "contact_sha256": "edb68a920a6d55293f72d875417f8215bd44ef23b0aff753b8b62bb5319f7209"
+    },
+    {
+      "episode_id": "bowling-seed810028",
+      "seed": 810028,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 251,
+      "offset_control": 90,
+      "regular": true,
+      "event_pins": [
+        1
+      ],
+      "source_sha256": "e69d1dc7dcae4ea4f4b140a92539910ab43910d191c8b605c6ea9cee759f50d9",
+      "contact_sha256": "edb68a920a6d55293f72d875417f8215bd44ef23b0aff753b8b62bb5319f7209"
+    },
+    {
+      "episode_id": "bowling-seed810028",
+      "seed": 810028,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 253,
+      "offset_control": 92,
+      "regular": false,
+      "event_pins": [
+        4
+      ],
+      "source_sha256": "e69d1dc7dcae4ea4f4b140a92539910ab43910d191c8b605c6ea9cee759f50d9",
+      "contact_sha256": "edb68a920a6d55293f72d875417f8215bd44ef23b0aff753b8b62bb5319f7209"
+    },
+    {
+      "episode_id": "bowling-seed810028",
+      "seed": 810028,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 259,
+      "offset_control": 98,
+      "regular": false,
+      "event_pins": [
+        8
+      ],
+      "source_sha256": "e69d1dc7dcae4ea4f4b140a92539910ab43910d191c8b605c6ea9cee759f50d9",
+      "contact_sha256": "edb68a920a6d55293f72d875417f8215bd44ef23b0aff753b8b62bb5319f7209"
+    },
+    {
+      "episode_id": "bowling-seed810028",
+      "seed": 810028,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 260,
+      "offset_control": 99,
+      "regular": false,
+      "event_pins": [
+        3
+      ],
+      "source_sha256": "e69d1dc7dcae4ea4f4b140a92539910ab43910d191c8b605c6ea9cee759f50d9",
+      "contact_sha256": "edb68a920a6d55293f72d875417f8215bd44ef23b0aff753b8b62bb5319f7209"
+    },
+    {
+      "episode_id": "bowling-seed810028",
+      "seed": 810028,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 263,
+      "offset_control": 102,
+      "regular": false,
+      "event_pins": [
+        5
+      ],
+      "source_sha256": "e69d1dc7dcae4ea4f4b140a92539910ab43910d191c8b605c6ea9cee759f50d9",
+      "contact_sha256": "edb68a920a6d55293f72d875417f8215bd44ef23b0aff753b8b62bb5319f7209"
+    },
+    {
+      "episode_id": "bowling-seed810028",
+      "seed": 810028,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 264,
+      "offset_control": 103,
+      "regular": false,
+      "event_pins": [
+        7
+      ],
+      "source_sha256": "e69d1dc7dcae4ea4f4b140a92539910ab43910d191c8b605c6ea9cee759f50d9",
+      "contact_sha256": "edb68a920a6d55293f72d875417f8215bd44ef23b0aff753b8b62bb5319f7209"
+    },
+    {
+      "episode_id": "bowling-seed810028",
+      "seed": 810028,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 266,
+      "offset_control": 105,
+      "regular": true,
+      "event_pins": [
+        6
+      ],
+      "source_sha256": "e69d1dc7dcae4ea4f4b140a92539910ab43910d191c8b605c6ea9cee759f50d9",
+      "contact_sha256": "edb68a920a6d55293f72d875417f8215bd44ef23b0aff753b8b62bb5319f7209"
+    },
+    {
+      "episode_id": "bowling-seed810028",
+      "seed": 810028,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 281,
+      "offset_control": 120,
+      "regular": true,
+      "event_pins": [
+        2
+      ],
+      "source_sha256": "e69d1dc7dcae4ea4f4b140a92539910ab43910d191c8b605c6ea9cee759f50d9",
+      "contact_sha256": "edb68a920a6d55293f72d875417f8215bd44ef23b0aff753b8b62bb5319f7209"
+    },
+    {
+      "episode_id": "bowling-seed810029",
+      "seed": 810029,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 55,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "bf2e89a339024e03e97ab736859dd650b8e1a1325765099081069d7760f43fae",
+      "contact_sha256": "50a5188a21ba56eb2fea717e338adaadb04ada5cf4bf13453b9320a543c3e5cd"
+    },
+    {
+      "episode_id": "bowling-seed810030",
+      "seed": 810030,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 139,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "11bad7c06e6ecbb4525da0fd9c5d016727765eda97b975f55a95a1cfa2bfbc7f",
+      "contact_sha256": "629391117a49c156a8b247d009a15d1f4a195bcf09036581b45f64685dc9e9f7"
+    },
+    {
+      "episode_id": "bowling-seed810031",
+      "seed": 810031,
+      "split": "validation",
+      "cohort": "previous_validation",
+      "anchor_control": 96,
+      "offset_control": 0,
+      "regular": true,
+      "event_pins": [],
+      "source_sha256": "4438e289d57fb0076fae835cd9a5e668778f8ee68872217672b9243d42f8bca2",
+      "contact_sha256": "57ea95c661864b7bc9efedd5c6fcbb01495495339fdd0ff3a284f76fa8f1a685"
+    }
+  ],
+  "full_validation_windows": 1547,
+  "event_query_views": 120,
+  "original_query_views": 47,
+  "displayed_independent_episodes": 47,
+  "viewer_npz_sha256": "06868022f756794f19508994ccf056b7735be522009076155f14fa61af9ba66b",
+  "test_arrays_opened": 0
+}

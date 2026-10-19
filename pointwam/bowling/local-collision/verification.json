@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "raw_array_hashes": {
+    "scene_current": "ee5801ae1b9073c88c2932068c11c9998d0a5477ed6c28803eca43c7bae777ea",
+    "future_scene": "af4380f11a27d7df143d0a8d8ae22d37876682adc77b24fd43625a965a41ff05",
+    "short_42_best": "1dfd34d5d1816492b7c944db0a709bb0a1c9e7b68a0a64cc6cd6ea08796dc7b3",
+    "short_42_latest": "d82611a539ca011f8c3ef38077df7efbd59fa1ea4e4f7e8855c14b477a29e5cd",
+    "long_42_best": "a4800090902431f30ffe42143378e4c9461eca420fa2d9f404b8b3dc37d1dd78",
+    "long_42_latest": "a4800090902431f30ffe42143378e4c9461eca420fa2d9f404b8b3dc37d1dd78",
+    "short_43_best": "684c42aaa0aafce9f0cae401a6faf2839b4839a322e44ddbd53c0c8a16a147d3",
+    "short_43_latest": "84b480d9a4288644a10ce49d30a749adfc9612806f84f656dc8c7e564296a388",
+    "long_43_best": "0560ce485fa07aa0aa474767be20855296bedf9587707f2fc90fb4e12ae55e2e",
+    "long_43_latest": "0560ce485fa07aa0aa474767be20855296bedf9587707f2fc90fb4e12ae55e2e",
+    "short_44_best": "57dfaeb58e6d5baebc47fb415cf75b090dd464d341272fbc9e27596e29dc4e31",
+    "short_44_latest": "2475c3f38f8b96cf06d7e8b51e7b537e7ba0bd9af54e5c68bcb61915aff65eb2",
+    "long_44_best": "a46dbb1c7d5398e0c1b7b00f094c462a593a4b7187c27115d35c125e598b9579",
+    "long_44_latest": "a6c66a7373f67555f7dc40cbcd363d945b4f53b6b54e692989192bc0798c4b6c",
+    "stationary": "3be2a97c9d73d35fa343f7484249597ac149f07f8fbefa733980a7267159bebc",
+    "constant_endpoint_velocity": "cfb9ce193f19c5af3480df07876849e1e5173fb4f5e6f81a6ebe2f6e3b30f5dc",
+    "constant_world_twist": "af196fe5af87f010ae61e3aed5e6104bb061db12e48e27c3238103449c092960"
+  },
+  "displayed_scalars": 1578150,
+  "source_npz_sha256": "06868022f756794f19508994ccf056b7735be522009076155f14fa61af9ba66b",
+  "quiet_verification_sha256": "cc0baaed4ab2397206070a24212c2b725312a0ec1afd85364ecc02e8771f5556",
+  "transforms": "common translation and metres-to-mm for plots only; no interpolation/correction; original float32 model outputs and float64 baselines",
+  "renderer_sha256": "b7956dba683c1deaba40c8b316be697506af3863e8a7ae5e73ed37260e225784",
+  "files": {
+    "preparation.json": "7c6d1deb9b62ddabf1c6db6afae40fe7998ed335cc2bb599f8e0173b8c8967f1",
+    "audit.json": "deada99a2108885017867c3abd993e84d8dcbe82cd8841fc55adc42257ea1796",
+    "index.html": "924f4d34e5b749099072c0d06753c75848d434de4b3d79e90b50ca2b6669358e",
+    "curves.svg": "2a20dbac967b19dcfc817f339eee6356356c5c55db6b4038d3cf550a8d0c9fa2",
+    "viewer-meta.json": "380b508563b40bdcb3d23e01f38d0e372147df07635fab4d037badd727a21a6b",
+    "quiet.svg": "1f8c45f58f307649bca0d8e3fe83107234589ae890a3d76045b258f427a438da",
+    "quiet-verification.json": "cc0baaed4ab2397206070a24212c2b725312a0ec1afd85364ecc02e8771f5556",
+    "paired.svg": "c08a72cfa4ac4af1197ecedfb7b9b94999d5881827b217482511e4ef059505c9",
+    "protocol.json": "789ddb3161806bcebb800a0d33a66fb78d9b4588b86048bed421c0609b7dae5c"
+  }
+}

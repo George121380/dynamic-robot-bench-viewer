@@ -1,0 +1,57 @@
+{
+  "experiment": "local_collision_v1",
+  "status": "frozen_before_preparation_and_training",
+  "question": "Can the existing state-conditioned object network learn a held-out 100ms collision response, and does supervising all20 future frames impair that same first-frame task?",
+  "variants": ["short", "long"],
+  "seeds": [42, 43, 44],
+  "updates_per_run": 15000,
+  "evaluation_interval": 500,
+  "data": {
+    "source": "existing206train and47reused validation episodes only; no test files",
+    "regular_offsets_control": [0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,120,125,130,135,140,145,150],
+    "event_query_control": "floor((pin_first_dynamic_contact_tick-1)/10); last50Hz state strictly before contact",
+    "event_scope": "each pin first contact with ball,another pin,or robot; exclude floor/wall partners; query offset0..150 controls from original prepush anchor; query50..400",
+    "deduplication": "one input window per episode/query; regular and event roles may overlap; each eligible event pin appears once",
+    "sampling": "same rules for training and validation; all windows sampled uniformly with replacement; episode-disjoint splits",
+    "annotation_boundary": "event ticks,pin masks and role flags are selection/scoring metadata only, never model inputs",
+    "history": "10samples at10Hz plus current; all from times<=query",
+    "future": "20targets at10Hz; short uses only first target in residual loss; long uses all20"
+  },
+  "architecture": {
+    "base": "StateProbe(state), ball48/pin81/robot660 encoders480, width256, two8head object attention blocks, independent output times",
+    "parameters_each": 2488788,
+    "control": "identical tensors/initialization per seed; short computes exactly the first time slot of the long architecture; no new modules",
+    "inactive_parameters_caveat": "short has unused future-only plan projections and output rows; nominal matching is not effective-capacity matching",
+    "state": "query rotation matrix9,world linear velocity3,world angular velocity3 per ball/pin; original21points and robot observations/nominal plan retained",
+    "input_statistics": "train-only, shared pin statistics, identical between arms"
+  },
+  "training": {
+    "batch_size": 64,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "betas": [0.9,0.999],
+    "eps": 1e-8,
+    "warmup_steps": 500,
+    "loss": "equal-present ball/moving-pin/static-pin coordinate MSE; SAME moving mask in both arms, max full2s endpoint displacement>1cm; only supervised time range differs",
+    "sampler": "CPU torch.Generator(seed+1), uniform windows, paired identical index trace",
+    "precision": "FP32,noTF32",
+    "early_stopping": "none; fixed15000 updates; evaluate every500 including0"
+  },
+  "evaluation": {
+    "primary": "100ms endpoint Euclidean error on event pins; average endpoints, then all eligible pin-events within episode, then episodes",
+    "same_target": "short and long BOTH scored on exactly the same first100ms target",
+    "baselines": ["stationary", "constant_endpoint_velocity", "constant_world_linear_and_angular_velocity_rigid_extrapolation"],
+    "baselines_scope": "comparators only, never added to learned predictions",
+    "nontrivial_guard": "also report event errors where true endpoint displacement>=1mm, plus their count and true response amplitude; no success claim based on near-zero responses",
+    "secondary": ["regular-window never-before-contact pin error and predicted movement>1/2/5mm", "regular-window already-contacted pin error", "ball error", "long event-pin error at100,200,500,1000,2000ms", "same-metric full-training fit"],
+    "selection": "lowest validation primary over steps0,500,...15000, ties earlier; also compare fixed15000 checkpoints",
+    "uncertainty": "average3seed paired errors within episode before10000paired episode bootstrap draws; seed20261020; reused validation, not a new test"
+  },
+  "decision": {
+    "local_learnability": "short beats EACH baseline in all3seeds; mean error at least20percent below strongest baseline; paired95CI short-minus-strongest upper<0; same direction at fixed15000 and >=1mm subgroup",
+    "horizon_supervision_effect": "compare short-long at SAME100ms; evidence requires all3negative deltas, mean>=10percent reduction and paired95CI upper<0; report selected and fixed-step results",
+    "interpretation": "local success supports studying longer evolution; local failure is recipe/data/representation evidence, not universal impossibility; short-long difference isolates supervision horizon under this recipe, not all architecture choices"
+  },
+  "scope": {"compute":"one admitted development GPU; sequential runs;6GiB allocator cap","physics_changes":false,"postprocessing":false,"contact_gates":false,"extra_losses":false,"test_access":false},
+  "limitations": ["Privileged current object state is diagnostic, not deployed perception.","Robot interface is unchanged, so this is not complete simulator state.","Both arms change query sampling relative to previous experiments; old and new scores are not an architecture-only comparison.","Supervising one frame changes multi-task gradients and effective active capacity; the comparison does not prove recurrence is necessary.","Reused validation and small numbers of independent collision episodes limit conclusions; bootstrap does not account for all model-selection uncertainty."]
+}
