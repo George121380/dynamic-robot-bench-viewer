@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "original_full_path_exact_forward_and8updates": true,
+  "max_forward_gap_m": 0.0,
+  "common_parameter_tensors": 51,
+  "masked_truth_and_state_and_future_labels_ignored_exactly": true,
+  "nonzero_output_heads_in_leak_test": true,
+  "history_output_plan_invariant_exactly": true,
+  "auxiliary_shared_gradients_nonzero": true,
+  "single_batch_discarded_updates": 128,
+  "overfit_initial_m2": {
+    "future": 5.658985173795372e-07,
+    "history": 0.044428516179323196
+  },
+  "overfit_final_m2": {
+    "future": 5.146983639292557e-08,
+    "history": 2.1461268318034854e-07
+  },
+  "parameters": 2499058,
+  "test_arrays_opened": 0,
+  "source_sha256": "a222336bd62b748688cdddc1bbb807652a29238fe5aa04f054cae87a97f68086"
+}

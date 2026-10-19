@@ -1,0 +1,18 @@
+{
+  "status": "locked",
+  "checkpoints": {
+    "A-seed42/final.pt": "47624a573917be6726477a100ea5480b186e79e177c25e6098c9675d2e3e399b",
+    "A-seed43/final.pt": "67ffcba6a589fdbaff754d32569f879f461337064e6f552237f954be236db6d3",
+    "A-seed44/final.pt": "cd5c4bda43858f54290b5f1e5c554cfeb02f3b26d91fb69ddeca0ffa3e27feea",
+    "B-seed42/final.pt": "be455f4851e013d81e610fb8417fae988d8ab20cc22983062132f5caab2e114e",
+    "B-seed43/final.pt": "6068d07612db54417e8f414e8121ee64c333c5baff16b4f101f62ca04e08964a",
+    "B-seed44/final.pt": "2be0f30965770d6a9dc83827a218dc31019b15571f568ff61356a5a0d45f3265",
+    "C-seed42/final.pt": "9d1213103f9623a8d9813497ac4de8f645ccc5226c4885023d56694ba26c32d9",
+    "C-seed43/final.pt": "7478e26af7a7338332e870e994547421c5da91ff9c36d2d5d41000c0fb980a98",
+    "C-seed44/final.pt": "258e0914632b8d68596d18b24ba18463d5859f0e7417716d928dd05006ec5347"
+  },
+  "trainval_manifest_sha256": "360c7899d7150297e026f9bd9cabca24cbce7cab1af766e31537f2210056ff54",
+  "protocol_sha256": "6b3ac597c519d253d0c297d11e9db5bd33f7082d403daf1748fcb285693047a6",
+  "fresh_test_not_yet_generated": true,
+  "selection": "fixed5000"
+}

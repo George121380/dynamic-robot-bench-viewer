@@ -1,0 +1,744 @@
+{
+  "status": "passed",
+  "splits": {
+    "train": {
+      "mean_line_ADE_m": 2.752284732147394e-05,
+      "mean_repeat_ADE_m": 0.3023444594609648,
+      "worst_mask_mean_ADE_m": 8.329957802549442e-05,
+      "masks": [
+        {
+          "retained": [
+            0,
+            1
+          ],
+          "line_ADE_m": 3.800776477710488e-05,
+          "repeat_current_ADE_m": 0.24737249945797812
+        },
+        {
+          "retained": [
+            0,
+            2
+          ],
+          "line_ADE_m": 4.3143867510831796e-05,
+          "repeat_current_ADE_m": 0.2542439573875935
+        },
+        {
+          "retained": [
+            0,
+            3
+          ],
+          "line_ADE_m": 4.8769312187963835e-05,
+          "repeat_current_ADE_m": 0.2611154157047225
+        },
+        {
+          "retained": [
+            0,
+            4
+          ],
+          "line_ADE_m": 5.483589613199948e-05,
+          "repeat_current_ADE_m": 0.2679868739376236
+        },
+        {
+          "retained": [
+            0,
+            5
+          ],
+          "line_ADE_m": 6.119004835377292e-05,
+          "repeat_current_ADE_m": 0.2748583322472464
+        },
+        {
+          "retained": [
+            0,
+            6
+          ],
+          "line_ADE_m": 6.758491897804589e-05,
+          "repeat_current_ADE_m": 0.2817297905529871
+        },
+        {
+          "retained": [
+            0,
+            7
+          ],
+          "line_ADE_m": 7.36785845302305e-05,
+          "repeat_current_ADE_m": 0.28860124887361427
+        },
+        {
+          "retained": [
+            0,
+            8
+          ],
+          "line_ADE_m": 7.905866639661789e-05,
+          "repeat_current_ADE_m": 0.29547270716936147
+        },
+        {
+          "retained": [
+            0,
+            9
+          ],
+          "line_ADE_m": 8.329957802549442e-05,
+          "repeat_current_ADE_m": 0.30234416548492515
+        },
+        {
+          "retained": [
+            1,
+            2
+          ],
+          "line_ADE_m": 1.9143630009897535e-05,
+          "repeat_current_ADE_m": 0.2611157834677646
+        },
+        {
+          "retained": [
+            1,
+            3
+          ],
+          "line_ADE_m": 1.914704245186671e-05,
+          "repeat_current_ADE_m": 0.2679872417848937
+        },
+        {
+          "retained": [
+            1,
+            4
+          ],
+          "line_ADE_m": 1.9150846562855157e-05,
+          "repeat_current_ADE_m": 0.2748587000177948
+        },
+        {
+          "retained": [
+            1,
+            5
+          ],
+          "line_ADE_m": 1.9154975615849565e-05,
+          "repeat_current_ADE_m": 0.2817301583274175
+        },
+        {
+          "retained": [
+            1,
+            6
+          ],
+          "line_ADE_m": 1.915923618911117e-05,
+          "repeat_current_ADE_m": 0.28860161663315825
+        },
+        {
+          "retained": [
+            1,
+            7
+          ],
+          "line_ADE_m": 1.91633553862758e-05,
+          "repeat_current_ADE_m": 0.2954730749537854
+        },
+        {
+          "retained": [
+            1,
+            8
+          ],
+          "line_ADE_m": 1.916700416940359e-05,
+          "repeat_current_ADE_m": 0.3023445332495326
+        },
+        {
+          "retained": [
+            1,
+            9
+          ],
+          "line_ADE_m": 1.9169800725046973e-05,
+          "repeat_current_ADE_m": 0.3092159915650963
+        },
+        {
+          "retained": [
+            2,
+            3
+          ],
+          "line_ADE_m": 1.9131765070643672e-05,
+          "repeat_current_ADE_m": 0.274858699714509
+        },
+        {
+          "retained": [
+            2,
+            4
+          ],
+          "line_ADE_m": 1.9131472656061493e-05,
+          "repeat_current_ADE_m": 0.2817301579474101
+        },
+        {
+          "retained": [
+            2,
+            5
+          ],
+          "line_ADE_m": 1.9131635484414196e-05,
+          "repeat_current_ADE_m": 0.2886016162570328
+        },
+        {
+          "retained": [
+            2,
+            6
+          ],
+          "line_ADE_m": 1.9131777889821348e-05,
+          "repeat_current_ADE_m": 0.29547307456277355
+        },
+        {
+          "retained": [
+            2,
+            7
+          ],
+          "line_ADE_m": 1.9131787033783113e-05,
+          "repeat_current_ADE_m": 0.3023445328834007
+        },
+        {
+          "retained": [
+            2,
+            8
+          ],
+          "line_ADE_m": 1.9131831433828734e-05,
+          "repeat_current_ADE_m": 0.30921599117914794
+        },
+        {
+          "retained": [
+            2,
+            9
+          ],
+          "line_ADE_m": 1.913188744362726e-05,
+          "repeat_current_ADE_m": 0.3160874494947116
+        },
+        {
+          "retained": [
+            3,
+            4
+          ],
+          "line_ADE_m": 1.9131689531300005e-05,
+          "repeat_current_ADE_m": 0.2886016162645392
+        },
+        {
+          "retained": [
+            3,
+            5
+          ],
+          "line_ADE_m": 1.9131598919555413e-05,
+          "repeat_current_ADE_m": 0.2954730745741619
+        },
+        {
+          "retained": [
+            3,
+            6
+          ],
+          "line_ADE_m": 1.9131664098040804e-05,
+          "repeat_current_ADE_m": 0.30234453287990265
+        },
+        {
+          "retained": [
+            3,
+            7
+          ],
+          "line_ADE_m": 1.9131780858045982e-05,
+          "repeat_current_ADE_m": 0.3092159912005298
+        },
+        {
+          "retained": [
+            3,
+            8
+          ],
+          "line_ADE_m": 1.9131744363081116e-05,
+          "repeat_current_ADE_m": 0.31608744949627704
+        },
+        {
+          "retained": [
+            3,
+            9
+          ],
+          "line_ADE_m": 1.9131806673941556e-05,
+          "repeat_current_ADE_m": 0.3229589078118407
+        },
+        {
+          "retained": [
+            4,
+            5
+          ],
+          "line_ADE_m": 1.9131774710751727e-05,
+          "repeat_current_ADE_m": 0.30234453280706297
+        },
+        {
+          "retained": [
+            4,
+            6
+          ],
+          "line_ADE_m": 1.913180164137043e-05,
+          "repeat_current_ADE_m": 0.30921599111280373
+        },
+        {
+          "retained": [
+            4,
+            7
+          ],
+          "line_ADE_m": 1.9131920382940682e-05,
+          "repeat_current_ADE_m": 0.31608744943343087
+        },
+        {
+          "retained": [
+            4,
+            8
+          ],
+          "line_ADE_m": 1.9131946177198976e-05,
+          "repeat_current_ADE_m": 0.3229589077291781
+        },
+        {
+          "retained": [
+            4,
+            9
+          ],
+          "line_ADE_m": 1.9131869487427143e-05,
+          "repeat_current_ADE_m": 0.3298303660447418
+        },
+        {
+          "retained": [
+            5,
+            6
+          ],
+          "line_ADE_m": 1.913207185760673e-05,
+          "repeat_current_ADE_m": 0.3160874494224265
+        },
+        {
+          "retained": [
+            5,
+            7
+          ],
+          "line_ADE_m": 1.9132227299891453e-05,
+          "repeat_current_ADE_m": 0.32295890774305364
+        },
+        {
+          "retained": [
+            5,
+            8
+          ],
+          "line_ADE_m": 1.913228278522165e-05,
+          "repeat_current_ADE_m": 0.32983036603880084
+        },
+        {
+          "retained": [
+            5,
+            9
+          ],
+          "line_ADE_m": 1.913223927567454e-05,
+          "repeat_current_ADE_m": 0.3367018243543646
+        },
+        {
+          "retained": [
+            6,
+            7
+          ],
+          "line_ADE_m": 1.9132624707196975e-05,
+          "repeat_current_ADE_m": 0.32983036604879434
+        },
+        {
+          "retained": [
+            6,
+            8
+          ],
+          "line_ADE_m": 1.913286409706447e-05,
+          "repeat_current_ADE_m": 0.3367018243445416
+        },
+        {
+          "retained": [
+            6,
+            9
+          ],
+          "line_ADE_m": 1.913274393746078e-05,
+          "repeat_current_ADE_m": 0.3435732826601053
+        },
+        {
+          "retained": [
+            7,
+            8
+          ],
+          "line_ADE_m": 1.9133741397320613e-05,
+          "repeat_current_ADE_m": 0.34357328266516873
+        },
+        {
+          "retained": [
+            7,
+            9
+          ],
+          "line_ADE_m": 1.9133758920656907e-05,
+          "repeat_current_ADE_m": 0.3504447409807324
+        },
+        {
+          "retained": [
+            8,
+            9
+          ],
+          "line_ADE_m": 1.913729333003133e-05,
+          "repeat_current_ADE_m": 0.3573161992764797
+        }
+      ],
+      "pass_gate": true
+    },
+    "validation": {
+      "mean_line_ADE_m": 2.7522777213087798e-05,
+      "mean_repeat_ADE_m": 0.3023444591415938,
+      "worst_mask_mean_ADE_m": 8.329964842024396e-05,
+      "masks": [
+        {
+          "retained": [
+            0,
+            1
+          ],
+          "line_ADE_m": 3.800780395648804e-05,
+          "repeat_current_ADE_m": 0.24737249925290902
+        },
+        {
+          "retained": [
+            0,
+            2
+          ],
+          "line_ADE_m": 4.314391630841624e-05,
+          "repeat_current_ADE_m": 0.2542439571054738
+        },
+        {
+          "retained": [
+            0,
+            3
+          ],
+          "line_ADE_m": 4.876936026786301e-05,
+          "repeat_current_ADE_m": 0.26111541552139383
+        },
+        {
+          "retained": [
+            0,
+            4
+          ],
+          "line_ADE_m": 5.483593785082024e-05,
+          "repeat_current_ADE_m": 0.26798687393928444
+        },
+        {
+          "retained": [
+            0,
+            5
+          ],
+          "line_ADE_m": 6.119009020519076e-05,
+          "repeat_current_ADE_m": 0.27485833232814705
+        },
+        {
+          "retained": [
+            0,
+            6
+          ],
+          "line_ADE_m": 6.758498145032982e-05,
+          "repeat_current_ADE_m": 0.2817297903862567
+        },
+        {
+          "retained": [
+            0,
+            7
+          ],
+          "line_ADE_m": 7.36786501828267e-05,
+          "repeat_current_ADE_m": 0.28860124871418313
+        },
+        {
+          "retained": [
+            0,
+            8
+          ],
+          "line_ADE_m": 7.905873559726416e-05,
+          "repeat_current_ADE_m": 0.295472707046657
+        },
+        {
+          "retained": [
+            0,
+            9
+          ],
+          "line_ADE_m": 8.329964842024396e-05,
+          "repeat_current_ADE_m": 0.3023441654155107
+        },
+        {
+          "retained": [
+            1,
+            2
+          ],
+          "line_ADE_m": 1.914365477731091e-05,
+          "repeat_current_ADE_m": 0.26111578285792114
+        },
+        {
+          "retained": [
+            1,
+            3
+          ],
+          "line_ADE_m": 1.914709493051797e-05,
+          "repeat_current_ADE_m": 0.2679872412738412
+        },
+        {
+          "retained": [
+            1,
+            4
+          ],
+          "line_ADE_m": 1.9150918740378122e-05,
+          "repeat_current_ADE_m": 0.2748586996917318
+        },
+        {
+          "retained": [
+            1,
+            5
+          ],
+          "line_ADE_m": 1.915505315028157e-05,
+          "repeat_current_ADE_m": 0.2817301580805944
+        },
+        {
+          "retained": [
+            1,
+            6
+          ],
+          "line_ADE_m": 1.91593346972526e-05,
+          "repeat_current_ADE_m": 0.28860161613870405
+        },
+        {
+          "retained": [
+            1,
+            7
+          ],
+          "line_ADE_m": 1.9163455260537655e-05,
+          "repeat_current_ADE_m": 0.29547307446663046
+        },
+        {
+          "retained": [
+            1,
+            8
+          ],
+          "line_ADE_m": 1.9167137481674524e-05,
+          "repeat_current_ADE_m": 0.30234453279910434
+        },
+        {
+          "retained": [
+            1,
+            9
+          ],
+          "line_ADE_m": 1.9169920489245457e-05,
+          "repeat_current_ADE_m": 0.30921599116795806
+        },
+        {
+          "retained": [
+            2,
+            3
+          ],
+          "line_ADE_m": 1.9131699357189443e-05,
+          "repeat_current_ADE_m": 0.274858699126406
+        },
+        {
+          "retained": [
+            2,
+            4
+          ],
+          "line_ADE_m": 1.9131453363990457e-05,
+          "repeat_current_ADE_m": 0.2817301575442966
+        },
+        {
+          "retained": [
+            2,
+            5
+          ],
+          "line_ADE_m": 1.9131434869170364e-05,
+          "repeat_current_ADE_m": 0.2886016159331592
+        },
+        {
+          "retained": [
+            2,
+            6
+          ],
+          "line_ADE_m": 1.9131615784763184e-05,
+          "repeat_current_ADE_m": 0.2954730739912688
+        },
+        {
+          "retained": [
+            2,
+            7
+          ],
+          "line_ADE_m": 1.9131583609008637e-05,
+          "repeat_current_ADE_m": 0.3023445323191953
+        },
+        {
+          "retained": [
+            2,
+            8
+          ],
+          "line_ADE_m": 1.9131690300641224e-05,
+          "repeat_current_ADE_m": 0.30921599065166916
+        },
+        {
+          "retained": [
+            2,
+            9
+          ],
+          "line_ADE_m": 1.9131605978623492e-05,
+          "repeat_current_ADE_m": 0.3160874490205228
+        },
+        {
+          "retained": [
+            3,
+            4
+          ],
+          "line_ADE_m": 1.9131605328885917e-05,
+          "repeat_current_ADE_m": 0.28860161596021666
+        },
+        {
+          "retained": [
+            3,
+            5
+          ],
+          "line_ADE_m": 1.913145481953942e-05,
+          "repeat_current_ADE_m": 0.2954730743490792
+        },
+        {
+          "retained": [
+            3,
+            6
+          ],
+          "line_ADE_m": 1.9131466081205928e-05,
+          "repeat_current_ADE_m": 0.3023445324071889
+        },
+        {
+          "retained": [
+            3,
+            7
+          ],
+          "line_ADE_m": 1.9131514149725447e-05,
+          "repeat_current_ADE_m": 0.3092159907351153
+        },
+        {
+          "retained": [
+            3,
+            8
+          ],
+          "line_ADE_m": 1.913153913084837e-05,
+          "repeat_current_ADE_m": 0.3160874490675892
+        },
+        {
+          "retained": [
+            3,
+            9
+          ],
+          "line_ADE_m": 1.913144096921128e-05,
+          "repeat_current_ADE_m": 0.3229589074364429
+        },
+        {
+          "retained": [
+            4,
+            5
+          ],
+          "line_ADE_m": 1.9131629184962574e-05,
+          "repeat_current_ADE_m": 0.3023445327669698
+        },
+        {
+          "retained": [
+            4,
+            6
+          ],
+          "line_ADE_m": 1.9131544509668278e-05,
+          "repeat_current_ADE_m": 0.3092159908250795
+        },
+        {
+          "retained": [
+            4,
+            7
+          ],
+          "line_ADE_m": 1.913157007141249e-05,
+          "repeat_current_ADE_m": 0.3160874491530059
+        },
+        {
+          "retained": [
+            4,
+            8
+          ],
+          "line_ADE_m": 1.9131579924503378e-05,
+          "repeat_current_ADE_m": 0.3229589074854798
+        },
+        {
+          "retained": [
+            4,
+            9
+          ],
+          "line_ADE_m": 1.9131476146257856e-05,
+          "repeat_current_ADE_m": 0.3298303658543335
+        },
+        {
+          "retained": [
+            5,
+            6
+          ],
+          "line_ADE_m": 1.9132047395579637e-05,
+          "repeat_current_ADE_m": 0.31608744921394205
+        },
+        {
+          "retained": [
+            5,
+            7
+          ],
+          "line_ADE_m": 1.9132356779109717e-05,
+          "repeat_current_ADE_m": 0.32295890754186846
+        },
+        {
+          "retained": [
+            5,
+            8
+          ],
+          "line_ADE_m": 1.9132427059611137e-05,
+          "repeat_current_ADE_m": 0.3298303658743424
+        },
+        {
+          "retained": [
+            5,
+            9
+          ],
+          "line_ADE_m": 1.9132300825314402e-05,
+          "repeat_current_ADE_m": 0.33670182424319606
+        },
+        {
+          "retained": [
+            6,
+            7
+          ],
+          "line_ADE_m": 1.9132543601824798e-05,
+          "repeat_current_ADE_m": 0.32983036559997814
+        },
+        {
+          "retained": [
+            6,
+            8
+          ],
+          "line_ADE_m": 1.913257812637635e-05,
+          "repeat_current_ADE_m": 0.336701823932452
+        },
+        {
+          "retained": [
+            6,
+            9
+          ],
+          "line_ADE_m": 1.913247842402917e-05,
+          "repeat_current_ADE_m": 0.34357328230130574
+        },
+        {
+          "retained": [
+            7,
+            8
+          ],
+          "line_ADE_m": 1.9133861741848626e-05,
+          "repeat_current_ADE_m": 0.3435732822603785
+        },
+        {
+          "retained": [
+            7,
+            9
+          ],
+          "line_ADE_m": 1.913413753332472e-05,
+          "repeat_current_ADE_m": 0.35044474062923214
+        },
+        {
+          "retained": [
+            8,
+            9
+          ],
+          "line_ADE_m": 1.9136645755682974e-05,
+          "repeat_current_ADE_m": 0.357316198961706
+        }
+      ],
+      "pass_gate": true
+    }
+  },
+  "protocol_sha256": "6b3ac597c519d253d0c297d11e9db5bd33f7082d403daf1748fcb285693047a6",
+  "scope": "Empirical reconstruction on train/validation rolling data only;not global unique physical identifiability.",
+  "test_arrays_opened": 0
+}

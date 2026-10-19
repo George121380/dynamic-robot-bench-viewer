@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "inline_arrays": 29,
+  "coordinate_scalars": 113400,
+  "cases": 360,
+  "all3seeds": true,
+  "index_sha256": "b24dbe182397f043af383ce82f6f981452a478aa3279d4ebc07f87b49ea41efb",
+  "no_prediction_correction": true
+}

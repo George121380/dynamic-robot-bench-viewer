@@ -1,0 +1,73 @@
+{
+  "pid": 3590602,
+  "args": [
+    "bash",
+    "experiments/pointwam_bowling/history_completion/run.sh",
+    "--data",
+    "/mnt/pfs/pfs-yc2F4O/liupeiqi/wam_dev/dev/benchmarks/.agent-worktrees/dynamic-robot-bench/pointwam-bowling/.runtime/pointwam-bowling/history-completion-v1/data",
+    "--parent-formal",
+    "/mnt/pfs/pfs-yc2F4O/liupeiqi/wam_dev/dev/benchmarks/.agent-worktrees/dynamic-robot-bench/pointwam-bowling/.runtime/pointwam-bowling/paired-response-v1/formal",
+    "--output",
+    "/mnt/pfs/pfs-yc2F4O/liupeiqi/wam_dev/dev/benchmarks/.agent-worktrees/dynamic-robot-bench/pointwam-bowling/.runtime/pointwam-bowling/history-completion-v1/formal",
+    "--device",
+    "cuda:0",
+    "--mode",
+    "formal"
+  ],
+  "source_commit": "85dc6f28211b1519e70d90bf6def82a17700f0fd",
+  "gpu_uuid": "GPU-515b71d0-e0d5-c797-ce22-380318324e4b",
+  "development_gpu_index": 2,
+  "resource_snapshots": [
+    [
+      "2",
+      "GPU-515b71d0-e0d5-c797-ce22-380318324e4b",
+      "24629",
+      "0"
+    ],
+    [
+      "2",
+      "GPU-515b71d0-e0d5-c797-ce22-380318324e4b",
+      "24629",
+      "0"
+    ],
+    [
+      "2",
+      "GPU-515b71d0-e0d5-c797-ce22-380318324e4b",
+      "24629",
+      "0"
+    ]
+  ],
+  "post_profile_snapshots": [
+    [
+      "2",
+      "GPU-515b71d0-e0d5-c797-ce22-380318324e4b",
+      "24629",
+      "3"
+    ],
+    [
+      "2",
+      "GPU-515b71d0-e0d5-c797-ce22-380318324e4b",
+      "24629",
+      "0"
+    ],
+    [
+      "2",
+      "GPU-515b71d0-e0d5-c797-ce22-380318324e4b",
+      "24629",
+      "0"
+    ]
+  ],
+  "profile_resources": {
+    "new_updates": 100,
+    "elapsed_s": 3.0040578129701316,
+    "peak_allocated_bytes": 213724160,
+    "peak_reserved_bytes": 312475648
+  },
+  "new_runs": 6,
+  "new_updates": 30000,
+  "reused_A": 3,
+  "task_name": "ei-liupeiqi-wam-training",
+  "start_unix": 1792433153.5242734,
+  "protocol_sha256": "6b3ac597c519d253d0c297d11e9db5bd33f7082d403daf1748fcb285693047a6",
+  "trainval_manifest_sha256": "360c7899d7150297e026f9bd9cabca24cbce7cab1af766e31537f2210056ff54"
+}
