@@ -1,6 +1,6 @@
 {
   "schema": "act-vs-tracks-aux-plan-v1",
-  "status": "preparation_only_pending_training_review",
+  "status": "one A800 pilot submitted; timestamped runtime state separate; confirmation not submitted",
   "base_model_schema": "unified-act-v2",
   "reviewed_core_commit": "149ac640e9e690d07477964f3421d4e2402bf9fd",
   "primary_question": "Does the complete history/track/auxiliary package improve over native single-frame ACT? This pair does not isolate auxiliary or motion contributions.",
@@ -142,15 +142,14 @@
     "pair_warm_velocity_tolerance_m_s": 0.001,
     "pilot_rollouts": 30,
     "confirm_rollouts": 30,
-    "status": "planned; no simulation launched",
+    "status": "planned; runtime acceptance pending",
     "pair_joint_velocity_tolerance_rad_s": 1e-05,
     "initialization": "pre-play garment authoring; fixed total60 physics ticks; canonical per-stage/pose, authored by ACT seed1000 before actor; <=5 initial-state-only retries; no runtime/outcome retries"
   },
   "interpretation": "Auxiliary predictions regularize shared observations during training; policy inference uses only the unchanged ACT action path. Compute cost differs and must be reported. A Tracks-only ablation is required before claiming auxiliary causation.",
   "resources": {
-    "maximum_nodes": 2,
+    "maximum_nodes": 1,
     "preferred_nodes": 1,
-    "submission_status": "not_submitted; user must review concrete plan before training",
     "strategy": "six independent single-GPU runs, expensive Tracks runs first; reuse all freed cards plus two reserved slots for registered paired evaluations; matched batch/steps, no DDP",
     "training_node": {
       "nodes": 1,

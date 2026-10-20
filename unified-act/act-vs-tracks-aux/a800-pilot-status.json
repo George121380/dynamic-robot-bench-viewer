@@ -1,0 +1,15 @@
+{
+  "schema": "policy-aux-runtime-snapshot-v1",
+  "snapshot_utc": "2026-10-20T02:39:58.225665+00:00",
+  "status": "Created",
+  "meaning": "Submitted one8-GPU single-node A800 pilot; scheduler has not returned a pod at this snapshot.",
+  "nodes_requested": 1,
+  "gpus_requested": 8,
+  "worker_source_commit": "8cfb550f7e05939b6b93518360fb5e78f22981e2",
+  "registered_runs": 6,
+  "updates_per_run": 500,
+  "registered_rollouts": 30,
+  "confirmation_3000_updates": "not_submitted_requires_pilot_review",
+  "hardware_gate": "pending",
+  "job_name": "ei-liupeiqi-wam-training-act-aux-pilot-1n8g-a800-20261020-023821"
+}

@@ -24,5 +24,6 @@
     "driver/container compatibility",
     "actual Isaac launch and initial-state acceptance"
   ],
-  "comparison_scope": "whole package; does not isolate auxiliary or motion causation; oracle vertices; reused development validation"
+  "comparison_scope": "whole package; does not isolate auxiliary or motion causation; oracle vertices; reused development validation",
+  "scope": "historical preparation snapshot before the first A800 job submission; runtime status in a800-pilot-status.json"
 }
