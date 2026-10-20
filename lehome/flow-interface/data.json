@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-20T00:22:58.383253+00:00",
+  "updated_utc": "2026-10-20T00:41:42.452754+00:00",
   "checks": {
     "passed": true,
     "check_count": 40,
@@ -20,7 +20,7 @@
       "mode": "static",
       "fusion": "late",
       "status": "running",
-      "step": 25,
+      "step": 525,
       "initial_core": "b5a97db5347f325014b8fe0bdc9afdccdf08d7e8452503920baaf7e2c98ed012",
       "hardware": {
         "name": "NVIDIA H800",
@@ -33,13 +33,25 @@
       },
       "parameters": 53109263,
       "source_commit": "6b64854e53952e0f274ff35f6e7c74afa1e47ccd",
+      "curve": [
+        {
+          "step": 250,
+          "MSE_rad2": 0.2866955203452719,
+          "prior_action_L1": 0.6442090913428342
+        },
+        {
+          "step": 500,
+          "MSE_rad2": 0.11374157503979598,
+          "prior_action_L1": 0.4713019631109314
+        }
+      ],
       "latest_training": {
-        "step": 46,
-        "action_loss": 0.659140523057431,
-        "kl_loss": 0.44132041558623314,
-        "gradient_norm": 90.81320190429688,
-        "elapsed_seconds": 103.18677055370063,
-        "peak_reserved_bytes": 6754926592
+        "step": 530,
+        "action_loss": 0.39271107967942953,
+        "kl_loss": 0.17050479725003242,
+        "gradient_norm": 62.10318374633789,
+        "elapsed_seconds": 1226.6354808430187,
+        "peak_reserved_bytes": 6895435776
       }
     },
     {
@@ -64,7 +76,7 @@
       "mode": "tracks",
       "fusion": "late",
       "status": "running",
-      "step": 800,
+      "step": 1300,
       "initial_core": "7f965109ca7026e49bc50d834a41cda1d6ef48e5cd2ad53f6b624002725c8f00",
       "hardware": {
         "name": "NVIDIA H800",
@@ -92,14 +104,24 @@
           "step": 750,
           "MSE_rad2": 0.09438293322300008,
           "prior_action_L1": 0.4360783958838878
+        },
+        {
+          "step": 1000,
+          "MSE_rad2": 0.08008410688470022,
+          "prior_action_L1": 0.4040635320820027
+        },
+        {
+          "step": 1250,
+          "MSE_rad2": 0.07913577200313938,
+          "prior_action_L1": 0.39585746228593194
         }
       ],
       "latest_training": {
-        "step": 812,
-        "action_loss": 0.2921969420276582,
-        "kl_loss": 0.1227409653365612,
-        "gradient_norm": 47.82224655151367,
-        "elapsed_seconds": 1855.164475474041,
+        "step": 1308,
+        "action_loss": 0.2613103165058419,
+        "kl_loss": 0.08434590697288513,
+        "gradient_norm": 36.22511291503906,
+        "elapsed_seconds": 2980.828025138937,
         "peak_reserved_bytes": 6937378816
       }
     },
@@ -109,7 +131,7 @@
       "mode": "static",
       "fusion": "late",
       "status": "running",
-      "step": 25,
+      "step": 525,
       "initial_core": "552c6f640c0548cae26b009e6395a1255dc379661011e9a3fa7d9531e45651d9",
       "hardware": {
         "name": "NVIDIA H800",
@@ -122,13 +144,25 @@
       },
       "parameters": 53109263,
       "source_commit": "6b64854e53952e0f274ff35f6e7c74afa1e47ccd",
+      "curve": [
+        {
+          "step": 250,
+          "MSE_rad2": 0.3003084027244854,
+          "prior_action_L1": 0.6633777525767214
+        },
+        {
+          "step": 500,
+          "MSE_rad2": 0.10500086156825637,
+          "prior_action_L1": 0.47443942295046626
+        }
+      ],
       "latest_training": {
-        "step": 48,
-        "action_loss": 0.6679430278018117,
-        "kl_loss": 0.4349520318210125,
-        "gradient_norm": 104.83141326904297,
-        "elapsed_seconds": 105.5903101679869,
-        "peak_reserved_bytes": 6750732288
+        "step": 544,
+        "action_loss": 0.36704543605446815,
+        "kl_loss": 0.16452318243682384,
+        "gradient_norm": 49.06793212890625,
+        "elapsed_seconds": 1230.1059943833388,
+        "peak_reserved_bytes": 6893338624
       }
     },
     {
@@ -5502,5 +5536,28 @@
         "p90_observed_motion_m": 0.0312877964185023
       }
     }
-  }
+  },
+  "related_methods": [
+    {
+      "title": "FabricFlowNet",
+      "url": "https://proceedings.mlr.press/v164/weng22a/weng22a.pdf",
+      "section": "3.2–3.5",
+      "zh": "当前→目标深度流；PickNet选抓点，q=p+f(p)给放点。推理需要目标观测。",
+      "en": "Current-to-goal depth correspondence informs picking and analytically supplies placement, q=p+f(p). A goal observation is provided at inference."
+    },
+    {
+      "title": "FlowBot3D",
+      "url": "https://arxiv.org/abs/2205.04382",
+      "section": "III.B–D",
+      "zh": "预测潜在关节运动方向；几何控制器依flow选接触点，并闭环执行移动方向。",
+      "en": "Predicts potential articulation directions. A geometric controller uses the field to select contact and move in a closed loop."
+    },
+    {
+      "title": "FlowBotHD",
+      "url": "https://arxiv.org/html/2410.07078v2",
+      "section": "4.2–4.3",
+      "zh": "过去点云＋先前预测flow经乘法条件注入；配合进展筛选与方向一致性检查。",
+      "en": "Earlier point clouds and predicted articulation flow supply multiplicative conditioning, coupled with progress filtering and direction-consistency checks."
+    }
+  ]
 }
