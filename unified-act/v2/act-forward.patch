@@ -1,0 +1,53 @@
+--- lerobot-0.4.3/ACT.forward
++++ ConditionedACT.forward
+@@ -1,4 +1,4 @@
+-def forward(self, batch: dict[str, Tensor]) -> tuple[Tensor, tuple[Tensor, Tensor] | tuple[None, None]]:
++def forward(self, batch: dict[str, Tensor], *, extra_tokens=None, extra_pos=None, memory_transform=None, prior=False, return_memory=False) -> tuple[Tensor, tuple[Tensor, Tensor] | tuple[None, None]]:
+     """A forward pass through the Action Chunking Transformer (with optional VAE encoder).
+ 
+     `batch` should have the following structure:
+@@ -17,7 +17,10 @@
+         Tuple containing the latent PDF's parameters (mean, log(σ²)) both as (B, L) tensors where L is the
+         latent dimension.
+     """
+-    if self.config.use_vae and self.training:
++    if extra_tokens is None and memory_transform is None and not prior and not return_memory:
++        return super().forward(batch)
++
++    if self.config.use_vae and self.training and not prior:
+         assert ACTION in batch, (
+             "actions must be provided when using the variational objective in training mode."
+         )
+@@ -25,7 +28,7 @@
+     batch_size = batch[OBS_IMAGES][0].shape[0] if OBS_IMAGES in batch else batch[OBS_ENV_STATE].shape[0]
+ 
+     # Prepare the latent for input to the transformer encoder.
+-    if self.config.use_vae and ACTION in batch and self.training:
++    if self.config.use_vae and ACTION in batch and self.training and not prior:
+         # Prepare the input to the VAE encoder: [cls, *joint_space_configuration, *action_sequence].
+         cls_embed = einops.repeat(
+             self.vae_encoder_cls_embed.weight, "1 d -> b 1 d", b=batch_size
+@@ -106,12 +109,23 @@
+             encoder_in_tokens.extend(list(cam_features))
+             encoder_in_pos_embed.extend(list(cam_pos_embed))
+ 
++    # Extension 1: causal history tokens, computed outside ACT.
++    if extra_tokens is not None:
++        encoder_in_tokens.extend(list(extra_tokens))
++        encoder_in_pos_embed.extend(list(extra_pos))
++
+     # Stack all tokens along the sequence dimension.
+     encoder_in_tokens = torch.stack(encoder_in_tokens, axis=0)
+     encoder_in_pos_embed = torch.stack(encoder_in_pos_embed, axis=0)
+ 
+     # Forward pass through the transformer modules.
+     encoder_out = self.encoder(encoder_in_tokens, pos_embed=encoder_in_pos_embed)
++    # Extension 2: optional point conditioning; native decoder/head stay intact.
++    if memory_transform is not None:
++        encoder_out = memory_transform(encoder_out)
++    if return_memory:
++        return encoder_out.transpose(0, 1)
++
+     # TODO(rcadene, alexander-soare): remove call to `device` ; precompute and use buffer
+     decoder_in = torch.zeros(
+         (self.config.chunk_size, batch_size, self.config.dim_model),

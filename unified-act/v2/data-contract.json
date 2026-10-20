@@ -1,0 +1,13 @@
+{
+  "schema": "unified-act-data-v2",
+  "sample_format": "NPZ without batch axis; uint8 RGB, float32 values, boolean masks; no calibration fields",
+  "observation_required": {"obs__rgb":"[H,C,3,Y,X]", "obs__rgb_valid":"[H]", "obs__time":"[H] physical seconds, strictly chronological, <=0, final=0", "obs__state":"[S]", "obs__track_xyz":"[K,H,3] meters, point conditions only", "obs__track_valid":"[K,H], point conditions only"},
+  "policy_targets": {"target__action":"[chunk,A] physical native actions", "target__action_valid":"[chunk]"},
+  "dynamics_conditions": {"condition__commands":"[U,A], precommitted piecewise-constant no-preview controls", "condition__command_time":"[U] relative seconds; valid starts0, strictly increasing", "condition__command_valid":"[U]"},
+  "point_targets": {"target__query_xyz":"[Q,3], current anchors only", "target__future_time":"[T] seconds >0", "target__future_displacement":"[Q,T,3] meters, labels only", "target__future_valid":"[Q,T]", "target__past_time":"[Tpast] seconds <0, excludes t0", "target__past_displacement":"[Q,Tpast,3] labels only", "target__past_valid":"[Q,Tpast]"},
+  "manifest_required": ["task", "model_dimensions", "statistics_source=train", "statistics", "action_schema[{name,unit}]", "expert_policy_actions=true for policy", "provenance", "samples[{path,sha256,split,family_id}]"],
+  "provenance_required": {"observation_alignment":"pre_action", "exporter_sha256":"64 lowercase hexadecimal characters", "raw_sources":"nonempty [{id,sha256}]", "point_history":"for point conditions: {kind:oracle_persistent_vertices|causal_tracker,uses_future_frames:false,sampling:current_geometry_only,occlusion:oracle|estimated|invalid}", "control_semantics":"piecewise_constant_no_preview for dynamics"},
+  "dynamics_sample_metadata": {"commitment":"{batch_id,committed_at_s,observation_time_s}; commit<=observation", "control_end_s":"relative control coverage >= maximum target future time"},
+  "verified": ["required arrays, shapes, float32/bool/uint8 types, finite valid values", "actual sample SHA256", "family split disjointness", "provenance record consistency", "control timing/coverage"],
+  "not_proved_by_loader": ["truth of provenance declarations", "actual physical commitment behavior", "tracker deployment quality", "absence of all possible dataset biases"]
+}

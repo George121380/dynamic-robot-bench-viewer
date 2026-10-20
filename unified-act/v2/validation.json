@@ -1,0 +1,85 @@
+{
+  "schema": "unified-act-v2-validation",
+  "date": "2026-10-19",
+  "status": "passed",
+  "torch": "2.7.0+cu128",
+  "lerobot": "0.4.3",
+  "device": "cpu",
+  "tests_passed": 24,
+  "tests": [
+    "test_actual_accumulated_gradient_cap",
+    "test_completion_reaches_ACT_encoder_and_is_posterior_free",
+    "test_detached_actor_gradients_and_rng_match_no_auxiliary",
+    "test_final_action_denormalization_and_invalid_times",
+    "test_full_native_width_and_depth_parity",
+    "test_future_command_isolation_and_response",
+    "test_geometry_stationary_control",
+    "test_native_ACT_output_loss_and_gradient_parity",
+    "test_pooling_query_chunks_and_checkpoint",
+    "test_track_permutation_and_masked_nan",
+    "test_zero_proprio_and_other_action_schemas",
+    "test_actor_observations_identical_with_completion_for_all_conditions",
+    "test_bytes_and_concurrent_edits_rejected_rgb_ignores_points",
+    "test_raw_final_action_mse_and_dimension_report",
+    "test_strict_contract_missing_fields_provenance_commitment_and_hash",
+    "test_command_suffix_cannot_affect_earlier_predictions",
+    "test_completion_evaluation_reports_references_and_preserves_state_rng",
+    "test_detached_training_preserves_actor_updates",
+    "test_execution_history_queue_and_reset",
+    "test_extended_identity_memory_path_matches_unmodified_ACT",
+    "test_history_policy_rollout_bridge_replans_lazily",
+    "test_pointworld_requires_structured_commitment",
+    "test_reviewed_patch_matches_installed_ACT_and_default_calls_upstream",
+    "test_training_resume_matches_weights_optimizer_rng_and_unique_log_steps"
+  ],
+  "native_default": "direct call to upstream ACT.forward",
+  "native_extension": "only the reviewed act-forward.patch; no constructor changes or runtime hooks",
+  "real_native_parity": {
+    "resolution": [
+      480,
+      640
+    ],
+    "cameras": 3,
+    "width": 512,
+    "encoder_layers": 4,
+    "decoder_layers": 1,
+    "training_output_bitwise_equal": true,
+    "primary_loss_bitwise_equal": true,
+    "encoder_gradients_bitwise_equal": true
+  },
+  "real_task_optimizer_updates": 0,
+  "synthetic_optimizer_updates": "small CPU regression updates, including interruption/resume and OFF/detached equivalence; not robot-task training",
+  "resume": [
+    "model state bitwise equal",
+    "Adam state bitwise equal",
+    "RNG bitwise equal",
+    "unique valid step logs",
+    "replayed suffix archived",
+    "elapsed time accumulated"
+  ],
+  "review_response": "review-response.zh-CN.md",
+  "source_sha256": {
+    "metrics.py": "45ca627afe3260ecd8c6583171fc8f65d992ec98746de27a56114a6f23d648ab",
+    "runner.py": "85bcc5a22adfb90c1daed8382add15eb671a401ae6d4e9b1ad1995c3f136e668",
+    "execution.py": "77ceed437664c75ce715da1664df58ad3479b0c04cdb28ebd0c5175d848a390c",
+    "config.py": "13554382c31d2df23274c39933490da6a26a0d5774c78cf874ca3e16e82fa2c4",
+    "optimization.py": "015b00717467f413daed1d1cc3effdf77ff1a77b78cfc8dae904a6afd69418e9",
+    "__init__.py": "c84e5a603f8fe384fe00977b16fe5ccc8f6530cfa4ece12799c95774504ff71a",
+    "model.py": "fcc98cdf57afadd0cc0dc9474df7f8f9b26106565f2d9fe5cc43f9f790e04640",
+    "pointworld.py": "6ca6a1df6b29d19a08aa6539fc214ea33d4ab5a3ccdeb441b692fdb2d76755fa",
+    "act_extension.py": "e02af807be9522d5da2b12832eac2996cc3deae8d926e95b9c9b53014930fbcb",
+    "data.py": "df52133d4f81a936a89ed91b80228d36acd905bb8006af67488d8f41292dd7bc",
+    "validation.py": "021ad2548cf3a7e3dd8084b30f84b83f43861f27eb21a65685ba2946525ef65c"
+  },
+  "execution_sources": {
+    "act_pilot_rollout.py": "ed049cc0ef1d2cdf69956f449059bf2c11ab16b8ec0d3e9ef95e98e7afe8be66",
+    "act_pilot_run.sh": "7b427cdf5118c403e8f16333eae4df4d5d81f2eccf9d4cb0b7e69224ae32e20e"
+  },
+  "limitations": [
+    "CUDA/BF16 unvalidated",
+    "actual Isaac closed-loop run unvalidated",
+    "real causal tracker not implemented",
+    "full cross-task data exports pending",
+    "no trained v2 policy quality claim"
+  ]
+}

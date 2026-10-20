@@ -1,0 +1,29 @@
+test_actual_accumulated_gradient_cap (test_unified_act.UnifiedTests.test_actual_accumulated_gradient_cap) ... ok
+test_completion_reaches_ACT_encoder_and_is_posterior_free (test_unified_act.UnifiedTests.test_completion_reaches_ACT_encoder_and_is_posterior_free) ... ok
+test_detached_actor_gradients_and_rng_match_no_auxiliary (test_unified_act.UnifiedTests.test_detached_actor_gradients_and_rng_match_no_auxiliary) ... ok
+test_final_action_denormalization_and_invalid_times (test_unified_act.UnifiedTests.test_final_action_denormalization_and_invalid_times) ... ok
+test_full_native_width_and_depth_parity (test_unified_act.UnifiedTests.test_full_native_width_and_depth_parity) ... ok
+test_future_command_isolation_and_response (test_unified_act.UnifiedTests.test_future_command_isolation_and_response) ... ok
+test_geometry_stationary_control (test_unified_act.UnifiedTests.test_geometry_stationary_control) ... ok
+test_native_ACT_output_loss_and_gradient_parity (test_unified_act.UnifiedTests.test_native_ACT_output_loss_and_gradient_parity) ... ok
+test_pooling_query_chunks_and_checkpoint (test_unified_act.UnifiedTests.test_pooling_query_chunks_and_checkpoint) ... ok
+test_track_permutation_and_masked_nan (test_unified_act.UnifiedTests.test_track_permutation_and_masked_nan) ... ok
+test_zero_proprio_and_other_action_schemas (test_unified_act.UnifiedTests.test_zero_proprio_and_other_action_schemas) ... ok
+test_actor_observations_identical_with_completion_for_all_conditions (test_unified_act_data.DataTests.test_actor_observations_identical_with_completion_for_all_conditions) ... ok
+test_bytes_and_concurrent_edits_rejected_rgb_ignores_points (test_unified_act_data.DataTests.test_bytes_and_concurrent_edits_rejected_rgb_ignores_points) ... ok
+test_raw_final_action_mse_and_dimension_report (test_unified_act_data.DataTests.test_raw_final_action_mse_and_dimension_report) ... ok
+test_strict_contract_missing_fields_provenance_commitment_and_hash (test_unified_act_data.DataTests.test_strict_contract_missing_fields_provenance_commitment_and_hash) ... ok
+test_command_suffix_cannot_affect_earlier_predictions (test_unified_act_regressions.RegressionTests.test_command_suffix_cannot_affect_earlier_predictions) ... ok
+test_completion_evaluation_reports_references_and_preserves_state_rng (test_unified_act_regressions.RegressionTests.test_completion_evaluation_reports_references_and_preserves_state_rng) ... ok
+test_detached_training_preserves_actor_updates (test_unified_act_regressions.RegressionTests.test_detached_training_preserves_actor_updates) ... ok
+test_execution_history_queue_and_reset (test_unified_act_regressions.RegressionTests.test_execution_history_queue_and_reset) ... ok
+test_extended_identity_memory_path_matches_unmodified_ACT (test_unified_act_regressions.RegressionTests.test_extended_identity_memory_path_matches_unmodified_ACT) ... ok
+test_history_policy_rollout_bridge_replans_lazily (test_unified_act_regressions.RegressionTests.test_history_policy_rollout_bridge_replans_lazily) ... ok
+test_pointworld_requires_structured_commitment (test_unified_act_regressions.RegressionTests.test_pointworld_requires_structured_commitment) ... ok
+test_reviewed_patch_matches_installed_ACT_and_default_calls_upstream (test_unified_act_regressions.RegressionTests.test_reviewed_patch_matches_installed_ACT_and_default_calls_upstream) ... ok
+test_training_resume_matches_weights_optimizer_rng_and_unique_log_steps (test_unified_act_regressions.RegressionTests.test_training_resume_matches_weights_optimizer_rng_and_unique_log_steps) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 7.342s
+
+OK

@@ -1,0 +1,67 @@
+{
+  "schema": "unified-act-task-registry-v2",
+  "model_class": "dynamic_robot_bench.models.unified_act.UnifiedACT",
+  "rule": "New tasks change only observation/control adapters, dimensions, timing, calibration and training-only statistics. Model changes require a cross-task schema revision. Dynamics controls must be piecewise_constant_no_preview. See the explicit upstream patch.",
+  "tasks": {
+    "lehome_garment_folding": {
+      "interface": "policy",
+      "adapter": "lehome_pilot",
+      "state_dim": 12,
+      "action_dim": 12,
+      "cameras": 3,
+      "chunk": 100,
+      "control_hz": 90,
+      "history": 16,
+      "history_span_s": 0.5,
+      "history_status": "frozen cache with actual-byte verification; oracle persistent vertices including occluded past; no raw calibration consumption"
+    },
+    "hook_pull": {
+      "interface": "dynamics",
+      "adapter": "contract",
+      "state_dim": 0,
+      "action_dim": 7,
+      "cameras": 1,
+      "control_hz": 20,
+      "chunk": 40,
+      "future_point_horizon_s": 2,
+      "legacy_bridge": "pointworld.current_dynamics + explicit raw committed commands",
+      "history_status": "legacy PointWorld cache is current-only; causal RGB/track export required for history comparisons",
+      "control_semantics": "piecewise_constant_no_preview; explicit export provenance required"
+    },
+    "bowling_ocbench": {
+      "interface": "dynamics",
+      "adapter": "contract",
+      "state_dim": 0,
+      "action_dim": 7,
+      "cameras": 2,
+      "control_hz": 50,
+      "chunk": 200,
+      "future_point_horizon_s": 4,
+      "legacy_bridge": "pointworld.current_dynamics + explicit raw committed commands",
+      "history_status": "legacy PointWorld cache is current-only; causal RGB/track export required for history comparisons",
+      "control_semantics": "piecewise_constant_no_preview; explicit export provenance required"
+    },
+    "bowling_maniskill": {
+      "interface": "dynamics",
+      "adapter": "contract",
+      "dimensions": "must come from its own declared observed/control schema, never reuse OCBench robot dimensions",
+      "history_status": "existing custom PointWAM format requires contract export",
+      "control_semantics": "piecewise_constant_no_preview; explicit export provenance required"
+    },
+    "oracle_history_pilot": {
+      "interface": "dynamics",
+      "adapter": "contract",
+      "dimensions": "declared per native task schema",
+      "history_status": "native simulator RGB/state/committed controls and causal history need contract export",
+      "control_semantics": "piecewise_constant_no_preview; explicit export provenance required"
+    },
+    "hook_pull_stress": {
+      "interface": "dynamics",
+      "adapter": "contract",
+      "dimensions": "declared per native stress schema",
+      "history_status": "separate dataset version and protocol; do not alias to original HookPull",
+      "control_semantics": "piecewise_constant_no_preview; explicit export provenance required"
+    }
+  },
+  "core_extension": "Pinned native ACT.forward; two explicit conditioning sites; no image gathering or calibration dependency"
+}
