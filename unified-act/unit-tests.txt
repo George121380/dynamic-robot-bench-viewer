@@ -1,0 +1,20 @@
+test_actual_accumulated_gradient_cap (test_unified_act.UnifiedTests.test_actual_accumulated_gradient_cap) ... ok
+test_completion_reaches_ACT_encoder_and_is_posterior_free (test_unified_act.UnifiedTests.test_completion_reaches_ACT_encoder_and_is_posterior_free) ... ok
+test_detached_actor_gradients_and_rng_match_no_auxiliary (test_unified_act.UnifiedTests.test_detached_actor_gradients_and_rng_match_no_auxiliary) ... ok
+test_final_action_denormalization_and_invalid_times (test_unified_act.UnifiedTests.test_final_action_denormalization_and_invalid_times) ... ok
+test_full_native_width_and_depth_parity (test_unified_act.UnifiedTests.test_full_native_width_and_depth_parity) ... ok
+test_future_command_isolation_and_response (test_unified_act.UnifiedTests.test_future_command_isolation_and_response) ... ok
+test_geometry_stationary_control_including_visual_sampling (test_unified_act.UnifiedTests.test_geometry_stationary_control_including_visual_sampling) ... ok
+test_native_ACT_output_loss_and_gradient_parity (test_unified_act.UnifiedTests.test_native_ACT_output_loss_and_gradient_parity) ... ok
+test_sampling_pooling_query_chunks_and_checkpoint (test_unified_act.UnifiedTests.test_sampling_pooling_query_chunks_and_checkpoint) ... ok
+test_track_permutation_and_masked_nan (test_unified_act.UnifiedTests.test_track_permutation_and_masked_nan) ... ok
+test_zero_proprio_and_other_action_schemas (test_unified_act.UnifiedTests.test_zero_proprio_and_other_action_schemas) ... ok
+test_camera_wxyz_translation_and_rotation (test_unified_act_data.DataTests.test_camera_wxyz_translation_and_rotation) ... ok
+test_contract_expert_boundary_family_split_hash_and_allowlist (test_unified_act_data.DataTests.test_contract_expert_boundary_family_split_hash_and_allowlist) ... ok
+test_pointworld_cannot_invent_history_proprio_or_controls (test_unified_act_data.DataTests.test_pointworld_cannot_invent_history_proprio_or_controls) ... ok
+test_raw_final_action_mse_excludes_padding (test_unified_act_data.DataTests.test_raw_final_action_mse_excludes_padding) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 4.607s
+
+OK

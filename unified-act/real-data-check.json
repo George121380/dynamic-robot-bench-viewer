@@ -1,0 +1,141 @@
+{
+  "status": "passed",
+  "device": "cpu",
+  "optimizer_updates": 0,
+  "test_split_used": false,
+  "rows": [
+    {
+      "task": "lehome",
+      "condition": "act",
+      "native_ACT_core_sha256": "4189c28ca621b3403502263a2944783f723138929b383234b1740b0566436173",
+      "parameters": 53856147,
+      "track_mlp_parameters": 99072,
+      "valid_RGB_frames": 1,
+      "shape": [
+        1,
+        100,
+        12
+      ],
+      "finite": true,
+      "point_archive_reads": 0,
+      "metric_check_untrained": {
+        "first_squared_error_sum": 5.252115887029504,
+        "squared_error_sum": 817.177244618364,
+        "first_valid_scalars": 12,
+        "valid_scalars": 1200,
+        "raw_action_chunk_mse": 0.68098103718197,
+        "raw_first_action_mse": 0.4376763239191253
+      }
+    },
+    {
+      "task": "lehome",
+      "condition": "rgb_history",
+      "native_ACT_core_sha256": "4189c28ca621b3403502263a2944783f723138929b383234b1740b0566436173",
+      "parameters": 53856147,
+      "track_mlp_parameters": 99072,
+      "valid_RGB_frames": 16,
+      "shape": [
+        1,
+        100,
+        12
+      ],
+      "finite": true,
+      "point_archive_reads": 0,
+      "metric_check_untrained": {
+        "first_squared_error_sum": 5.294154371804325,
+        "squared_error_sum": 819.6215846318919,
+        "first_valid_scalars": 12,
+        "valid_scalars": 1200,
+        "raw_action_chunk_mse": 0.6830179871932432,
+        "raw_first_action_mse": 0.4411795309836937
+      }
+    },
+    {
+      "task": "lehome",
+      "condition": "geometry",
+      "native_ACT_core_sha256": "4189c28ca621b3403502263a2944783f723138929b383234b1740b0566436173",
+      "parameters": 53856147,
+      "track_mlp_parameters": 99072,
+      "valid_RGB_frames": 16,
+      "shape": [
+        1,
+        100,
+        12
+      ],
+      "finite": true,
+      "point_archive_reads": 1,
+      "metric_check_untrained": {
+        "first_squared_error_sum": 5.3375352486618795,
+        "squared_error_sum": 823.7216961222771,
+        "first_valid_scalars": 12,
+        "valid_scalars": 1200,
+        "raw_action_chunk_mse": 0.6864347467685642,
+        "raw_first_action_mse": 0.44479460405515664
+      }
+    },
+    {
+      "task": "lehome",
+      "condition": "tracks",
+      "native_ACT_core_sha256": "4189c28ca621b3403502263a2944783f723138929b383234b1740b0566436173",
+      "parameters": 53856147,
+      "track_mlp_parameters": 99072,
+      "valid_RGB_frames": 16,
+      "shape": [
+        1,
+        100,
+        12
+      ],
+      "finite": true,
+      "point_archive_reads": 1,
+      "metric_check_untrained": {
+        "first_squared_error_sum": 5.337630192836514,
+        "squared_error_sum": 823.7250191935561,
+        "first_valid_scalars": 12,
+        "valid_scalars": 1200,
+        "raw_action_chunk_mse": 0.6864375159946301,
+        "raw_first_action_mse": 0.4448025160697095
+      },
+      "completion_shape": [
+        1,
+        48,
+        15,
+        3
+      ],
+      "completion_valid_targets": 720,
+      "completion_reaches_ACT_encoder": true,
+      "completion_loss_untrained": 0.008733533322811127,
+      "geometry_equals_stationary_tracks_max_error": 0.0
+    },
+    {
+      "task": "hook_pull",
+      "condition": "ACT-Dynamics",
+      "shape": [
+        1,
+        566,
+        10,
+        3
+      ],
+      "finite": true,
+      "raw_control_receipt": {
+        "task": "hook_pull",
+        "episode": "ID_hook_pull_family000000_seed0_detachment.h5",
+        "anchor": 20,
+        "split": "train",
+        "key": "action/command",
+        "raw_sha256": "0a2aea93220aa28dc14b323f5eec2029307774da17f814072f003f3834b635e0"
+      },
+      "state_dim": 0,
+      "action_dim": 7,
+      "camera_count": 1,
+      "valid_RGB_frames": 1,
+      "note": "Current-only legacy bridge; no claim of RGB/point history readiness"
+    }
+  ],
+  "elapsed_seconds": 49.2573519339785,
+  "limitations": [
+    "No trained UnifiedACT weights",
+    "No rollout or policy-quality evaluation",
+    "CUDA numerical equivalence not tested",
+    "Full history exports for legacy dynamics tasks remain required"
+  ]
+}

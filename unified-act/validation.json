@@ -1,0 +1,75 @@
+{
+  "schema": "unified-act-validation-v1",
+  "status": "passed",
+  "date": "2026-10-19",
+  "device": "CPU",
+  "optimizer_updates": 0,
+  "torch": "2.7.0+cu128",
+  "lerobot": "0.4.3",
+  "tests_passed": 15,
+  "tests": [
+    "test_actual_accumulated_gradient_cap",
+    "test_completion_reaches_ACT_encoder_and_is_posterior_free",
+    "test_detached_actor_gradients_and_rng_match_no_auxiliary",
+    "test_final_action_denormalization_and_invalid_times",
+    "test_full_native_width_and_depth_parity",
+    "test_future_command_isolation_and_response",
+    "test_geometry_stationary_control_including_visual_sampling",
+    "test_native_ACT_output_loss_and_gradient_parity",
+    "test_sampling_pooling_query_chunks_and_checkpoint",
+    "test_track_permutation_and_masked_nan",
+    "test_zero_proprio_and_other_action_schemas",
+    "test_camera_wxyz_translation_and_rotation",
+    "test_contract_expert_boundary_family_split_hash_and_allowlist",
+    "test_pointworld_cannot_invent_history_proprio_or_controls",
+    "test_raw_final_action_mse_excludes_padding"
+  ],
+  "native_parity": {
+    "image_shape": [
+      1,
+      3,
+      32,
+      32
+    ],
+    "complete_native_width": 512,
+    "encoder_layers": 4,
+    "decoder_layers": 1,
+    "posterior_layers": 4,
+    "checks": [
+      "initial tensor identity",
+      "train/eval output",
+      "primary loss",
+      "encoder gradients"
+    ],
+    "rtol": 0,
+    "atol": 0
+  },
+  "detached_gradient_parity": {
+    "note": "autograd.grad versus backward has float32 reduction roundoff",
+    "rtol": 1e-05,
+    "atol": 2e-08
+  },
+  "shared_auxiliary_cap": {
+    "ratio_cap": 0.1,
+    "microbatches_in_unit_test": 2,
+    "accumulation_in_recipe": 16,
+    "full_update_measured": true
+  },
+  "real_data_evidence": "real-data-check.json",
+  "training_runner_status": "implemented; no optimizer update or long-run resume acceptance performed",
+  "source_sha256": {
+    "metrics.py": "569d6e22eef4c16c31438866b77805c73fd89e2bb8e05ea07cc160bdbf9adff1",
+    "runner.py": "ccc0a54af0327a32e0c941b8c10eb2474d43dd5b298082a22ae7593d0004d971",
+    "config.py": "7c37be1fa8d204d90e3edc2f0c489efd9519983d49137ee1c9b7eda002af886e",
+    "optimization.py": "95b1e2f6ecd192d28e5bcff05fe3e5c4b9c0c9562007a872edb1feb26f51e30a",
+    "__init__.py": "4e21d9351b3616cebcbc9dc6cf5f2b5502d3de6c6471b6e50c0594249fbb936d",
+    "model.py": "2edb44fcc2949be3d5e815d33a167b9a4424e8dbc83364ef7bb53a55ba2717a1",
+    "pointworld.py": "2abc9db084814ba09cac2815f160f1c76b3d8fb36fabd9a46345578692afee93",
+    "data.py": "edf76dcbbe3c04fa4e64557477b92f4af1ef54208e8c8e677bf602a1fcffc0ca"
+  },
+  "limitations": [
+    "CPU tests do not establish CUDA/BF16 equivalence",
+    "no trained UnifiedACT weights or closed-loop score",
+    "legacy history dataset conversions remain pending"
+  ]
+}

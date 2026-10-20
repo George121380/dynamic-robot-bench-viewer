@@ -1,0 +1,19 @@
+{
+  "schema": "unified-act-data-v1",
+  "sample_format": "NPZ; no batch axis in files; allow_pickle=False",
+  "observation": {
+    "obs__rgb": "uint8 [H,C,3,Y,X]; native current spatial resolution",
+    "obs__rgb_valid": "bool [H]; true only for actual recorded images",
+    "obs__time": "float32 [H], chronological seconds <=0, final=0",
+    "obs__state": "float32 [S]; S=0 only when no observed proprioception exists",
+    "obs__track_xyz": "float32 [K,H,3], meters, stable causal point correspondences; point conditions only",
+    "obs__track_valid": "bool [K,H]; no future visibility selection",
+    "obs__intrinsics": "float32 [H,C,3,3] at declared image resolution",
+    "obs__world_to_camera": "float32 [H,C,4,4], same coordinates as tracks"
+  },
+  "condition_dynamics_only": {"condition__commands": "float32 [U,A], verified precommitted controls", "condition__command_time": "float32 [U] seconds >=0", "condition__command_valid": "bool [U]"},
+  "target_policy_only": {"target__action": "float32 [chunk,A], physical native control output", "target__action_valid": "bool [chunk]"},
+  "target_points": {"target__query_xyz": "float32 [Q,3], currently observed anchors; only point head reads query", "target__future_time": "float32 [Tfuture] seconds >0", "target__future_displacement": "float32 [Q,Tfuture,3], meters; labels only", "target__future_valid": "bool [Q,Tfuture]", "target__past_time": "float32 [Tpast] seconds <0; excludes known t0", "target__past_displacement": "float32 [Q,Tpast,3], labels only", "target__past_valid": "bool [Q,Tpast]"},
+  "manifest_required": ["schema", "task", "model_dimensions", "statistics_source=train", "statistics", "expert_policy_actions (true required for policy)", "samples[{path,sha256,split,family_id}]"],
+  "provenance_required_before_formal_training": ["raw source hashes", "camera/frame/command timing", "point selection independent of future labels", "causal observation protocol", "train-only normalization derivation", "committed control source and commitment time", "split grouping and all conversion code hashes"]
+}
