@@ -1,6 +1,6 @@
 {
   "schema": "unified-act-results-v1",
-  "updated_utc": "2026-10-20T07:19:00.402705+00:00",
+  "updated_utc": "2026-10-20T07:21:00.814742+00:00",
   "training_seed": 1000,
   "validation_windows": 427,
   "scope": "Reused development validation, one seed; not a test-set or closed-loop success result",
@@ -199,10 +199,10 @@
     },
     {
       "arm": "tracks-v3-aux",
-      "status": "running",
-      "completed_updates": 9978,
+      "status": "complete",
+      "completed_updates": 10000,
       "target_steps": 10000,
-      "last_metric_step": 9978,
+      "last_metric_step": 10000,
       "microbatch": 8,
       "global_batch": 64,
       "resume_start": 5000,
@@ -485,9 +485,40 @@
               "static_point_epe_mm": 0.8373755589746371
             }
           }
+        },
+        {
+          "step": 10000,
+          "raw_action_chunk_mse": 0.06640548350185771,
+          "raw_first_action_mse": 0.02491342743890888,
+          "validation_windows": 427,
+          "full_validation": true,
+          "completion": {
+            "model": {
+              "point_epe_mm": 11.082144623367808,
+              "moving_point_epe_mm": 25.303909384459548,
+              "static_point_epe_mm": 5.084805905917589
+            },
+            "repeat_current": {
+              "point_epe_mm": 14.212699154739093,
+              "moving_point_epe_mm": 46.05298086416095,
+              "static_point_epe_mm": 0.7856064219959298
+            }
+          },
+          "future_prediction": {
+            "model": {
+              "point_epe_mm": 8.95515164413991,
+              "moving_point_epe_mm": 20.040962867000697,
+              "static_point_epe_mm": 4.216300079438653
+            },
+            "repeat_current": {
+              "point_epe_mm": 13.83340327456184,
+              "moving_point_epe_mm": 44.23560261231401,
+              "static_point_epe_mm": 0.8373755589746371
+            }
+          }
         }
       ],
-      "validation_log_sha256": "a14b68a0fbfb8d022ea31cb3f5db274b97acf79dc04ebadacffbfdaa8114e26e",
+      "validation_log_sha256": "793e6fc05f5076c5647678d9db11acda422061ddff279c9a223fe6238c7ce9fb",
       "milestones": [
         "step-001000.pt",
         "step-002000.pt",
@@ -497,15 +528,16 @@
         "step-006000.pt",
         "step-007000.pt",
         "step-008000.pt",
-        "step-009000.pt"
+        "step-009000.pt",
+        "step-010000.pt"
       ]
     },
     {
       "arm": "tracks-v4-aux",
-      "status": "running",
-      "completed_updates": 9765,
+      "status": "complete",
+      "completed_updates": 10000,
       "target_steps": 10000,
-      "last_metric_step": 9765,
+      "last_metric_step": 10000,
       "microbatch": 8,
       "global_batch": 64,
       "resume_start": 5000,
@@ -788,9 +820,40 @@
               "static_point_epe_mm": 0.8373755589746371
             }
           }
+        },
+        {
+          "step": 10000,
+          "raw_action_chunk_mse": 0.06952257319518645,
+          "raw_first_action_mse": 0.026305165397281196,
+          "validation_windows": 427,
+          "full_validation": true,
+          "completion": {
+            "model": {
+              "point_epe_mm": 12.057751854539676,
+              "moving_point_epe_mm": 27.460855520333965,
+              "static_point_epe_mm": 5.562240816662255
+            },
+            "repeat_current": {
+              "point_epe_mm": 14.212699154739093,
+              "moving_point_epe_mm": 46.05298086416095,
+              "static_point_epe_mm": 0.7856064219959298
+            }
+          },
+          "future_prediction": {
+            "model": {
+              "point_epe_mm": 9.585484377520677,
+              "moving_point_epe_mm": 21.549562953422296,
+              "static_point_epe_mm": 4.471199879990753
+            },
+            "repeat_current": {
+              "point_epe_mm": 13.83340327456184,
+              "moving_point_epe_mm": 44.23560261231401,
+              "static_point_epe_mm": 0.8373755589746371
+            }
+          }
         }
       ],
-      "validation_log_sha256": "cfba6957ff9a9ffc969e1134b4fe948cd6e046198a14bf67d410b6c42173ab2e",
+      "validation_log_sha256": "01ba51fe8e7f4e4ec009ddd4d871b1dd02563b9d0ff4a6e44082d829a3787b82",
       "milestones": [
         "step-001000.pt",
         "step-002000.pt",
@@ -800,7 +863,8 @@
         "step-006000.pt",
         "step-007000.pt",
         "step-008000.pt",
-        "step-009000.pt"
+        "step-009000.pt",
+        "step-010000.pt"
       ]
     }
   ]
