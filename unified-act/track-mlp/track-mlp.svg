@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<title>Inside the Track MLP</title><desc>For each point, concatenate eight features per valid history slot, zero invalid slots, flatten the ordered sixteen by eight matrix, and apply three shared linear layers with two ReLUs to produce one 512-dimensional token. Point identities do not mix inside the MLP.</desc><defs>
+<marker id="3A6387" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8Z" fill="#3A6387"/></marker>
+<marker id="2D7C76" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8Z" fill="#2D7C76"/></marker>
+<marker id="A66E29" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8Z" fill="#A66E29"/></marker>
+<marker id="66747D" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8Z" fill="#66747D"/></marker>
+</defs><rect width="1920" height="1080" fill="white"/><g font-family="Arial,Helvetica,sans-serif">
+<text id="text-000" x="55" y="61" font-size="36" fill="#20313E" font-weight="600" text-anchor="start">Inside the Track MLP</text>
+<text id="text-001" x="55" y="102" font-size="24" fill="#66747D" font-weight="400" text-anchor="start">An ordered 16-frame 3D history becomes one 512-D token per point</text>
+<text id="text-002" x="55" y="196" font-size="25" fill="#2D7C76" font-weight="600" text-anchor="start">1   One point history</text>
+<text id="text-003" x="425" y="196" font-size="25" fill="#2D7C76" font-weight="600" text-anchor="start">2   Eight features per time slot</text>
+<text id="text-004" x="1110" y="196" font-size="25" fill="#3A6387" font-weight="600" text-anchor="start">3   Flatten, then apply the shared MLP</text>
+<rect x="55" y="240" width="300" height="410" rx="8" stroke="#2D7C76" fill="white" stroke-width="1.6"/>
+<text id="text-005" x="205" y="277" font-size="23" fill="#2D7C76" font-weight="600" text-anchor="middle">Point i across time</text>
+<path d="M88 405 C125 327,165 340,198 396 S270 492,324 437" fill="none" stroke="#2D7C76" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="88" cy="405" r="5" fill="#2D7C76"/>
+<circle cx="128" cy="359" r="5" fill="#2D7C76"/>
+<circle cx="198" cy="396" r="5" fill="#2D7C76"/>
+<circle cx="266" cy="454" r="5" fill="#2D7C76"/>
+<circle cx="165" cy="365" r="7" stroke="#A66E29" fill="white" stroke-width="2" stroke-dasharray="3 2"/>
+<circle cx="324" cy="437" r="7" fill="#2D7C76"/>
+<text id="text-006" x="95" y="332" font-size="19" fill="#66747D" font-weight="400" text-anchor="start">past</text>
+<text id="text-007" x="254" y="404" font-size="19" fill="#2D7C76" font-weight="400" text-anchor="start">current</text>
+<text id="text-008" x="205" y="504" font-size="20" fill="#2D7C76" font-weight="400" text-anchor="middle">xᵢ(0): current XYZ anchor</text>
+<text id="text-009" x="205" y="548" font-size="22" fill="#20313E" font-weight="400" text-anchor="middle">XYZ: 16 × 3</text>
+<text id="text-010" x="205" y="582" font-size="19" fill="#66747D" font-weight="400" text-anchor="middle">Validity: 16   Time: 16</text>
+<text id="text-011" x="205" y="621" font-size="19" fill="#66747D" font-weight="400" text-anchor="middle">History: −0.5 s to 0</text>
+<path d="M355 445 H425" fill="none" stroke="#2D7C76" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#2D7C76)"/>
+<rect x="425" y="240" width="460" height="410" rx="8" stroke="#2D7C76" fill="white" stroke-width="1.6"/>
+<rect x="445" y="272" width="135" height="65" rx="0" stroke="#D7E0E5" fill="#F5F8FA" stroke-width="1.6"/>
+<text id="text-012" x="512.5" y="299" font-size="19" fill="#2D7C76" font-weight="600" text-anchor="middle">Anchor</text>
+<text id="text-013" x="512.5" y="324" font-size="16" fill="#66747D" font-weight="400" text-anchor="middle">3 channels</text>
+<rect x="580" y="272" width="135" height="65" rx="0" stroke="#D7E0E5" fill="#F5F8FA" stroke-width="1.6"/>
+<text id="text-014" x="647.5" y="299" font-size="19" fill="#3A6387" font-weight="600" text-anchor="middle">Motion</text>
+<text id="text-015" x="647.5" y="324" font-size="16" fill="#66747D" font-weight="400" text-anchor="middle">3 channels</text>
+<rect x="715" y="272" width="75" height="65" rx="0" stroke="#D7E0E5" fill="#F5F8FA" stroke-width="1.6"/>
+<text id="text-016" x="752.5" y="299" font-size="19" fill="#66747D" font-weight="600" text-anchor="middle">Time</text>
+<text id="text-017" x="752.5" y="324" font-size="16" fill="#66747D" font-weight="400" text-anchor="middle">1</text>
+<rect x="790" y="272" width="75" height="65" rx="0" stroke="#D7E0E5" fill="#F5F8FA" stroke-width="1.6"/>
+<text id="text-018" x="827.5" y="299" font-size="19" fill="#A66E29" font-weight="600" text-anchor="middle">Valid</text>
+<text id="text-019" x="827.5" y="324" font-size="16" fill="#66747D" font-weight="400" text-anchor="middle">1</text>
+<rect x="445" y="346" width="135" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-020" x="512.5" y="374" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">x₀ / 0.5</text>
+<rect x="580" y="346" width="135" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-021" x="647.5" y="374" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">Δx(τ) / 0.05</text>
+<rect x="715" y="346" width="75" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-022" x="752.5" y="374" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">−0.50</text>
+<rect x="790" y="346" width="75" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-023" x="827.5" y="374" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">1</text>
+<rect x="445" y="389" width="135" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-024" x="512.5" y="417" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">x₀ / 0.5</text>
+<rect x="580" y="389" width="135" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-025" x="647.5" y="417" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">Δx(τ) / 0.05</text>
+<rect x="715" y="389" width="75" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-026" x="752.5" y="417" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">−0.47</text>
+<rect x="790" y="389" width="75" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-027" x="827.5" y="417" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">1</text>
+<rect x="445" y="432" width="420" height="43" rx="0" stroke="#D7E0E5" fill="#FFF5E8" stroke-width="1.6"/>
+<text id="text-028" x="512.5" y="460" font-size="17" fill="#A66E29" font-weight="400" text-anchor="middle">0  0  0</text>
+<text id="text-029" x="647.5" y="460" font-size="17" fill="#A66E29" font-weight="400" text-anchor="middle">0  0  0</text>
+<text id="text-030" x="752.5" y="460" font-size="17" fill="#A66E29" font-weight="400" text-anchor="middle">0</text>
+<text id="text-031" x="827.5" y="460" font-size="17" fill="#A66E29" font-weight="400" text-anchor="middle">0</text>
+<rect x="445" y="475" width="135" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-032" x="512.5" y="503" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">⋮</text>
+<rect x="580" y="475" width="135" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-033" x="647.5" y="503" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">⋮</text>
+<rect x="715" y="475" width="75" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-034" x="752.5" y="503" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">⋮</text>
+<rect x="790" y="475" width="75" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-035" x="827.5" y="503" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">⋮</text>
+<rect x="445" y="518" width="135" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-036" x="512.5" y="546" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">x₀ / 0.5</text>
+<rect x="580" y="518" width="135" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-037" x="647.5" y="546" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">Δx(τ) / 0.05</text>
+<rect x="715" y="518" width="75" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-038" x="752.5" y="546" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">−0.03</text>
+<rect x="790" y="518" width="75" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-039" x="827.5" y="546" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">1</text>
+<rect x="445" y="561" width="135" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-040" x="512.5" y="589" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">x₀ / 0.5</text>
+<rect x="580" y="561" width="135" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-041" x="647.5" y="589" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">0  0  0</text>
+<rect x="715" y="561" width="75" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-042" x="752.5" y="589" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">0</text>
+<rect x="790" y="561" width="75" height="43" rx="0" stroke="#E1E7EB" fill="white" stroke-width="1.6"/>
+<text id="text-043" x="827.5" y="589" font-size="17" fill="#20313E" font-weight="400" text-anchor="middle">1</text>
+<text id="text-044" x="655" y="635" font-size="18" fill="#66747D" font-weight="400" text-anchor="middle">16 × 8 matrix · missing slots are all zero</text>
+<rect x="936" y="381" width="126" height="108" rx="8" stroke="#2D7C76" fill="#F4FAF8" stroke-width="1.6"/>
+<text id="text-045" x="999" y="413" font-size="23" fill="#2D7C76" font-weight="600" text-anchor="middle">Flatten</text>
+<text id="text-046" x="999" y="445" font-size="22" fill="#20313E" font-weight="400" text-anchor="middle">16 × 8</text>
+<text id="text-047" x="999" y="476" font-size="22" fill="#2D7C76" font-weight="400" text-anchor="middle">→ 128</text>
+<path d="M885 435 H936" fill="none" stroke="#2D7C76" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#2D7C76)"/>
+<rect x="1110" y="240" width="555" height="410" rx="11" stroke="#CCD8E2" fill="#FAFCFD" stroke-width="1.6"/>
+<rect x="1160" y="274" width="450" height="72" rx="8" stroke="#3A6387" fill="#F6F9FC" stroke-width="1.6"/>
+<text id="text-048" x="1385" y="304" font-size="25" fill="#3A6387" font-weight="600" text-anchor="middle">Linear 128 → 128</text>
+<text id="text-049" x="1385" y="331" font-size="17" fill="#66747D" font-weight="400" text-anchor="middle">16,512 parameters</text>
+<rect x="1330" y="367" width="110" height="30" rx="5" stroke="#A66E29" fill="#FFFCF7" stroke-width="1.6"/>
+<text id="text-050" x="1385" y="389" font-size="19" fill="#A66E29" font-weight="600" text-anchor="middle">ReLU</text>
+<rect x="1160" y="418" width="450" height="72" rx="8" stroke="#3A6387" fill="#F6F9FC" stroke-width="1.6"/>
+<text id="text-051" x="1385" y="448" font-size="25" fill="#3A6387" font-weight="600" text-anchor="middle">Linear 128 → 128</text>
+<text id="text-052" x="1385" y="475" font-size="17" fill="#66747D" font-weight="400" text-anchor="middle">16,512 parameters</text>
+<rect x="1330" y="511" width="110" height="30" rx="5" stroke="#A66E29" fill="#FFFCF7" stroke-width="1.6"/>
+<text id="text-053" x="1385" y="533" font-size="19" fill="#A66E29" font-weight="600" text-anchor="middle">ReLU</text>
+<rect x="1160" y="562" width="450" height="72" rx="8" stroke="#3A6387" fill="#F6F9FC" stroke-width="1.6"/>
+<text id="text-054" x="1385" y="592" font-size="25" fill="#3A6387" font-weight="600" text-anchor="middle">Linear 128 → 512</text>
+<text id="text-055" x="1385" y="619" font-size="17" fill="#66747D" font-weight="400" text-anchor="middle">66,048 parameters</text>
+<path d="M1062 435 H1091 V310 H1160" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#3A6387)"/>
+<path d="M1385 346 V367" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#3A6387)"/>
+<path d="M1385 397 V418" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#3A6387)"/>
+<path d="M1385 490 V511" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#3A6387)"/>
+<path d="M1385 541 V562" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#3A6387)"/>
+<rect x="1720" y="526" width="145" height="108" rx="8" stroke="#2D7C76" fill="#F4FAF8" stroke-width="1.6"/>
+<text id="text-056" x="1792.5" y="557" font-size="21" fill="#2D7C76" font-weight="600" text-anchor="middle">Point token</text>
+<text id="text-057" x="1792.5" y="591" font-size="24" fill="#2D7C76" font-weight="400" text-anchor="middle" font-style="italic">pᵢ ∈ R⁵¹²</text>
+<path d="M1610 598 H1720" fill="none" stroke="#2D7C76" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#2D7C76)"/>
+<text id="text-058" x="1385" y="689" font-size="23" fill="#3A6387" font-weight="600" text-anchor="middle">99,072 trainable parameters</text>
+<text id="text-059" x="1792" y="673" font-size="17" fill="#66747D" font-weight="400" text-anchor="middle">Next: LayerNorm</text>
+<text id="text-060" x="1792" y="698" font-size="17" fill="#66747D" font-weight="400" text-anchor="middle">→ fusion keys / values</text>
+<path d="M55 731 H1865" fill="none" stroke="#CCD5DC" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="text-061" x="55" y="775" font-size="24" fill="#2D7C76" font-weight="600" text-anchor="start">Exact feature construction</text>
+<text id="text-062" x="55" y="821" font-size="23" fill="#20313E" font-weight="400" text-anchor="start" font-style="italic">Effective validity: m̃ᵢ(τ) = mᵢ(τ) ∧ mᵢ(0)</text>
+<text id="text-063" x="55" y="863" font-size="22" fill="#20313E" font-weight="400" text-anchor="start" font-style="italic">fᵢ(τ) = where(m̃ᵢ(τ), [xᵢ(0)/0.5, Δxᵢ(τ)/0.05, τ, 1], 0)</text>
+<text id="text-064" x="55" y="904" font-size="23" fill="#20313E" font-weight="400" text-anchor="start" font-style="italic">Δxᵢ(τ) = xᵢ(τ) − xᵢ(0)</text>
+<text id="text-065" x="55" y="945" font-size="19" fill="#66747D" font-weight="400" text-anchor="start">Positions in meters; time in seconds. Validity distinguishes missing data from zero motion.</text>
+<text id="text-066" x="1040" y="775" font-size="24" fill="#3A6387" font-weight="600" text-anchor="start">Shared across points; time is flattened first</text>
+<rect x="1040" y="806" width="180" height="68" rx="8" stroke="#2D7C76" fill="#F4FAF8" stroke-width="1.6"/>
+<text id="text-067" x="1130" y="849" font-size="25" fill="#2D7C76" font-weight="600" text-anchor="middle">K × 128</text>
+<rect x="1300" y="806" width="235" height="68" rx="8" stroke="#3A6387" fill="#F6F9FC" stroke-width="1.6"/>
+<text id="text-068" x="1417.5" y="849" font-size="22" fill="#3A6387" font-weight="600" text-anchor="middle">Same MLP weights</text>
+<rect x="1615" y="806" width="250" height="68" rx="8" stroke="#2D7C76" fill="#F4FAF8" stroke-width="1.6"/>
+<text id="text-069" x="1740" y="849" font-size="24" fill="#2D7C76" font-weight="600" text-anchor="middle">K × 512 tokens</text>
+<path d="M1220 840 H1300" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#3A6387)"/>
+<path d="M1535 840 H1615" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#3A6387)"/>
+<text id="text-070" x="1040" y="911" font-size="20" fill="#66747D" font-weight="400" text-anchor="start">No cross-point mixing or point-ID embedding inside the MLP.</text>
+<text id="text-071" x="1040" y="947" font-size="20" fill="#66747D" font-weight="400" text-anchor="start">Current-invalid tracks are excluded before fusion attention.</text>
+<path d="M55 992 H1865" fill="none" stroke="#CCD5DC" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="text-072" x="55" y="1033" font-size="22" fill="#20313E" font-weight="400" text-anchor="start">Stationary control: zero only past displacement; preserve current anchors, timestamps and validity.</text>
+<text id="text-073" x="1865" y="1063" font-size="16" fill="#66747D" font-weight="400" text-anchor="end">Current setting: H = 16, K = 16, token width = 512 · input trajectory is schematic</text>
+</g></svg>
