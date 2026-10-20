@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "control": "Offline existing expert-state positive control, not additional policy rollouts",
+  "source_sha256": "cf17ffb9e015160e9fe9b1ed273870f1cabf0222a4864fc0cd56e642ed792862",
+  "indices": [
+    8077,
+    1711,
+    2578,
+    3942,
+    8738,
+    588
+  ],
+  "rows": [
+    {
+      "episode": 16,
+      "recorded_success": true,
+      "recomputed_success": true,
+      "maximum_distance_difference_cm": 1.5846336802738392e-06
+    },
+    {
+      "episode": 17,
+      "recorded_success": true,
+      "recomputed_success": true,
+      "maximum_distance_difference_cm": 3.7929499872024763e-06
+    },
+    {
+      "episode": 18,
+      "recorded_success": true,
+      "recomputed_success": true,
+      "maximum_distance_difference_cm": 7.691414034560751e-07
+    },
+    {
+      "episode": 19,
+      "recorded_success": true,
+      "recomputed_success": true,
+      "maximum_distance_difference_cm": 1.5799021269025104e-06
+    }
+  ]
+}

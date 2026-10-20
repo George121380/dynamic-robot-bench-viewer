@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-20T14:44:04.443130+00:00",
+  "rollouts": 320,
+  "initial_arrays_recomputed": 320,
+  "geometry_decisions_recomputed": 320,
+  "video_frame_counts_checked": 320,
+  "usd_physics_position_checks_verified": 14926,
+  "ffprobe_available": true,
+  "video_contract": "one initial frame plus one frame per action;30fps raw video,90Hz physical actions",
+  "maximum_initial_state_differences": {
+    "world_points": 0.04819142818450928,
+    "finite_difference_velocity": 0.5158692598342896,
+    "joint_position": 0.0,
+    "joint_velocity": 0.0
+  },
+  "unique_nominal_initial_poses": 20,
+  "initial_cloth_variation": {
+    "world_points": {
+      "median": 0.0,
+      "p95": 0.02811722457408905,
+      "maximum": 0.04819142818450928
+    },
+    "finite_difference_velocity": {
+      "median": 0.0,
+      "p95": 0.32107624411582947,
+      "maximum": 0.5158692598342896
+    },
+    "joint_position": {
+      "median": 0.0,
+      "p95": 0.0,
+      "maximum": 0.0
+    },
+    "joint_velocity": {
+      "median": 0.0,
+      "p95": 0.0,
+      "maximum": 0.0
+    }
+  },
+  "pairing_kind": "nominal_pose_with_stochastic_cloth",
+  "interpretation": "Exact nominal pose/asset/joint controls; actual cloth states vary stochastically and are not selected for microstate matching",
+  "minimum_pairwise_mesh_Linf_difference_m": 0.028762616217136383,
+  "canonical_reference_hashes": {
+    "62001": "d30044424b14860d2222e5aed5c8f99f17fe132b69844d0cda1184fc316a9c2a",
+    "62002": "1c6e9fbfd9a91c708e132eaf3e51c6cd67cb536325d5f23fafb57bdb7fbc333c",
+    "62003": "2893a61e8727fa3f6d432eb5245746c368bdf1a1255b93e3a83099d874f6f691",
+    "62004": "425661922112b4a76f16c4bea2b69bdff05a6cb7f92108ddef1d967e36bf40fa",
+    "62005": "e7420da062102b5c3e8586b19defa28b42613d0810f3f3b06a74fa7d6fedc0b1",
+    "62006": "e01f1bd95a90bb245ed9d31946e220801cdcbf066dc75adde6cb9d1d8a42708d",
+    "62007": "d8eb8b865f6861fc7b6c0542bca558b399ba49c583e77ede3893fdbbe84238ba",
+    "62008": "f23b5ef3b8a272dc6fe74d87e9079ca99273e4ca6b2cf4a83e4fafbf4be6e0e8",
+    "62009": "9f60b46c6f4e1e1195d6af86b9b00ca6214b8c4235f02c9884552b0adfb68597",
+    "62010": "08308b4a5ebe2ba38a592b833a5c34d06ec605d769a832adefe854e1db4daff8",
+    "62011": "c08364441cad790bfdccf3aa281e951d794f7e9f96bf65794f4a5315e763fafc",
+    "62012": "e27092a578a0e3bc14bdfc234441152a53dba7f7d3a3d721fb5842c2546ae9e0",
+    "62013": "0087755001146353aadfb608ec7846ca2f0eb217ebdfdfc5bfc6e74838771b55",
+    "62014": "81071a8e24b81912efc4bdb70b56a7db61d2b1031ca54b1364bb12dacd7c3eaa",
+    "62015": "40fb5a9d5ec076e023db0ee8bbca71da509d91242ecc0c71e968a7bdaf5ecfec",
+    "62016": "9ec7566529a15a31ed58d2f7c4ec1a0ea393ba653eaf8833f901822a9f0d3ff2",
+    "62017": "66dca99b4b5f1251bc95cc8373fb62bc9894c4286dee768814c4475a869fdf94",
+    "62018": "97cbd92c58c56ae18603fd3c657ef8b5ee927cd894af37c750277ecb7857257e",
+    "62019": "0bef17b46729263a70a6a743d2da473c5b26953d08f133039de794e5ae1b4240",
+    "62020": "d5585b1945395829cd61f2f5911c20f7757f8921910dba2da00d6cac8015e660"
+  },
+  "auditor_sha256": "19484664ac02a5d75c3971e1f1f34eef8c5a0ec17498fb1a5fe03500bade39b2"
+}
