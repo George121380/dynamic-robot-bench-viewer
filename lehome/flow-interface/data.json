@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-10-19T23:57:05.029855+00:00",
+  "updated_utc": "2026-10-20T00:13:20.373996+00:00",
   "checks": {
     "checks": {
       "geometry_initial_core_exact": true,
@@ -48,7 +48,7 @@
       "mode": "geometry",
       "fusion": "late",
       "status": "running",
-      "step": 125,
+      "step": 550,
       "initial_core": "b5a97db5347f325014b8fe0bdc9afdccdf08d7e8452503920baaf7e2c98ed012",
       "hardware": {
         "name": "NVIDIA H800",
@@ -61,13 +61,25 @@
       },
       "parameters": 53109263,
       "source_commit": "49d6ea15c9e4e927360a4029a4694809a64793e8",
+      "curve": [
+        {
+          "step": 250,
+          "MSE_rad2": 0.2883360281309782,
+          "prior_action_L1": 0.6444931371210751
+        },
+        {
+          "step": 500,
+          "MSE_rad2": 0.11226040784581597,
+          "prior_action_L1": 0.47082250799360437
+        }
+      ],
       "latest_training": {
-        "step": 143,
-        "action_loss": 0.5986700557405129,
-        "kl_loss": 0.2811012603342533,
-        "gradient_norm": 71.38709259033203,
-        "elapsed_seconds": 304.92487732181326,
-        "peak_reserved_bytes": 6754926592
+        "step": 573,
+        "action_loss": 0.33367706136777997,
+        "kl_loss": 0.15986553207039833,
+        "gradient_norm": 57.78618621826172,
+        "elapsed_seconds": 1280.6076996340416,
+        "peak_reserved_bytes": 6895435776
       }
     },
     {
@@ -92,7 +104,7 @@
       "mode": "tracks",
       "fusion": "late",
       "status": "running",
-      "step": 125,
+      "step": 550,
       "initial_core": "7f965109ca7026e49bc50d834a41cda1d6ef48e5cd2ad53f6b624002725c8f00",
       "hardware": {
         "name": "NVIDIA H800",
@@ -105,13 +117,25 @@
       },
       "parameters": 53109263,
       "source_commit": "49d6ea15c9e4e927360a4029a4694809a64793e8",
+      "curve": [
+        {
+          "step": 250,
+          "MSE_rad2": 0.30423175089251286,
+          "prior_action_L1": 0.653818980763465
+        },
+        {
+          "step": 500,
+          "MSE_rad2": 0.10561102428487827,
+          "prior_action_L1": 0.47062042814151
+        }
+      ],
       "latest_training": {
-        "step": 139,
-        "action_loss": 0.7052974943071604,
-        "kl_loss": 0.26776194758713245,
-        "gradient_norm": 64.482177734375,
-        "elapsed_seconds": 303.2162991389632,
-        "peak_reserved_bytes": 6794772480
+        "step": 558,
+        "action_loss": 0.3445161242270842,
+        "kl_loss": 0.15792176313698292,
+        "gradient_norm": 55.993629455566406,
+        "elapsed_seconds": 1277.6845345990732,
+        "peak_reserved_bytes": 6937378816
       }
     },
     {
@@ -120,7 +144,7 @@
       "mode": "geometry",
       "fusion": "late",
       "status": "running",
-      "step": 100,
+      "step": 525,
       "initial_core": "552c6f640c0548cae26b009e6395a1255dc379661011e9a3fa7d9531e45651d9",
       "hardware": {
         "name": "NVIDIA H800",
@@ -133,13 +157,25 @@
       },
       "parameters": 53109263,
       "source_commit": "49d6ea15c9e4e927360a4029a4694809a64793e8",
+      "curve": [
+        {
+          "step": 250,
+          "MSE_rad2": 0.3004497498551494,
+          "prior_action_L1": 0.6634469725940301
+        },
+        {
+          "step": 500,
+          "MSE_rad2": 0.10270142785019343,
+          "prior_action_L1": 0.47094022278737363
+        }
+      ],
       "latest_training": {
-        "step": 104,
-        "action_loss": 0.5203962294617668,
-        "kl_loss": 0.3416278064250946,
-        "gradient_norm": 82.0931625366211,
-        "elapsed_seconds": 222.04084690008312,
-        "peak_reserved_bytes": 6750732288
+        "step": 541,
+        "action_loss": 0.3599246070953086,
+        "kl_loss": 0.16705304011702538,
+        "gradient_norm": 60.664527893066406,
+        "elapsed_seconds": 1197.1596509320661,
+        "peak_reserved_bytes": 6893338624
       }
     },
     {
@@ -4769,6 +4805,88 @@
               "10": 0.1339031598831009,
               "100": 0.7076427738958815
             }
+          },
+          "episodes": {
+            "0": {
+              "MSE_rad2": 0.6632985993871401,
+              "valid_scalar_actions": 106596,
+              "windows": 105
+            },
+            "1": {
+              "MSE_rad2": 0.6989786225202814,
+              "valid_scalar_actions": 103800,
+              "windows": 103
+            },
+            "2": {
+              "MSE_rad2": 0.7434643855764945,
+              "valid_scalar_actions": 99396,
+              "windows": 99
+            },
+            "3": {
+              "MSE_rad2": 0.6644721937914214,
+              "valid_scalar_actions": 105396,
+              "windows": 104
+            },
+            "4": {
+              "MSE_rad2": 0.7980494861516784,
+              "valid_scalar_actions": 120600,
+              "windows": 117
+            },
+            "5": {
+              "MSE_rad2": 0.7100603868973714,
+              "valid_scalar_actions": 100200,
+              "windows": 100
+            },
+            "6": {
+              "MSE_rad2": 0.7126760774060261,
+              "valid_scalar_actions": 99804,
+              "windows": 100
+            },
+            "7": {
+              "MSE_rad2": 0.7423609940709838,
+              "valid_scalar_actions": 104196,
+              "windows": 103
+            },
+            "8": {
+              "MSE_rad2": 0.7100193695828774,
+              "valid_scalar_actions": 103404,
+              "windows": 103
+            },
+            "9": {
+              "MSE_rad2": 0.649209250485783,
+              "valid_scalar_actions": 114996,
+              "windows": 112
+            },
+            "10": {
+              "MSE_rad2": 0.6803235505409875,
+              "valid_scalar_actions": 110604,
+              "windows": 109
+            },
+            "11": {
+              "MSE_rad2": 0.6491385536361646,
+              "valid_scalar_actions": 107796,
+              "windows": 106
+            },
+            "12": {
+              "MSE_rad2": 0.7723507764385968,
+              "valid_scalar_actions": 109404,
+              "windows": 108
+            },
+            "13": {
+              "MSE_rad2": 0.7469852104190876,
+              "valid_scalar_actions": 109800,
+              "windows": 108
+            },
+            "14": {
+              "MSE_rad2": 0.7202043242113149,
+              "valid_scalar_actions": 103404,
+              "windows": 103
+            },
+            "15": {
+              "MSE_rad2": 0.6569551769760025,
+              "valid_scalar_actions": 109404,
+              "windows": 108
+            }
           }
         },
         "validation": {
@@ -4780,6 +4898,28 @@
               "1": 0.04502420795142973,
               "10": 0.12302647956971371,
               "100": 0.6848075730438434
+            }
+          },
+          "episodes": {
+            "16": {
+              "MSE_rad2": 0.6843207076400812,
+              "valid_scalar_actions": 109800,
+              "windows": 108
+            },
+            "17": {
+              "MSE_rad2": 0.7258993116535563,
+              "valid_scalar_actions": 112200,
+              "windows": 110
+            },
+            "18": {
+              "MSE_rad2": 0.6681502960979345,
+              "valid_scalar_actions": 112200,
+              "windows": 110
+            },
+            "19": {
+              "MSE_rad2": 0.657763338091273,
+              "valid_scalar_actions": 99396,
+              "windows": 99
             }
           }
         }
@@ -4809,6 +4949,88 @@
               "10": 0.04885137669237244,
               "100": 0.10579627857907901
             }
+          },
+          "episodes": {
+            "0": {
+              "MSE_rad2": 0.10084752803411576,
+              "valid_scalar_actions": 106596,
+              "windows": 105
+            },
+            "1": {
+              "MSE_rad2": 0.09133755078341133,
+              "valid_scalar_actions": 103800,
+              "windows": 103
+            },
+            "2": {
+              "MSE_rad2": 0.09715897275144428,
+              "valid_scalar_actions": 99396,
+              "windows": 99
+            },
+            "3": {
+              "MSE_rad2": 0.09071718823728739,
+              "valid_scalar_actions": 105396,
+              "windows": 104
+            },
+            "4": {
+              "MSE_rad2": 0.1433108858356532,
+              "valid_scalar_actions": 120600,
+              "windows": 117
+            },
+            "5": {
+              "MSE_rad2": 0.09009816818411995,
+              "valid_scalar_actions": 100200,
+              "windows": 100
+            },
+            "6": {
+              "MSE_rad2": 0.10392371816181008,
+              "valid_scalar_actions": 99804,
+              "windows": 100
+            },
+            "7": {
+              "MSE_rad2": 0.10487515321967013,
+              "valid_scalar_actions": 104196,
+              "windows": 103
+            },
+            "8": {
+              "MSE_rad2": 0.08222928422912328,
+              "valid_scalar_actions": 103404,
+              "windows": 103
+            },
+            "9": {
+              "MSE_rad2": 0.10407938785349873,
+              "valid_scalar_actions": 114996,
+              "windows": 112
+            },
+            "10": {
+              "MSE_rad2": 0.09090637341145924,
+              "valid_scalar_actions": 110604,
+              "windows": 109
+            },
+            "11": {
+              "MSE_rad2": 0.13106270687151306,
+              "valid_scalar_actions": 107796,
+              "windows": 106
+            },
+            "12": {
+              "MSE_rad2": 0.09151871556308389,
+              "valid_scalar_actions": 109404,
+              "windows": 108
+            },
+            "13": {
+              "MSE_rad2": 0.10816003504200362,
+              "valid_scalar_actions": 109800,
+              "windows": 108
+            },
+            "14": {
+              "MSE_rad2": 0.11314283570639393,
+              "valid_scalar_actions": 103404,
+              "windows": 103
+            },
+            "15": {
+              "MSE_rad2": 0.14151816174810505,
+              "valid_scalar_actions": 109404,
+              "windows": 108
+            }
           }
         },
         "validation": {
@@ -4820,6 +5042,28 @@
               "1": 0.01878406464086939,
               "10": 0.04698617425999094,
               "100": 0.1285670422998933
+            }
+          },
+          "episodes": {
+            "16": {
+              "MSE_rad2": 0.13728964346070938,
+              "valid_scalar_actions": 109800,
+              "windows": 108
+            },
+            "17": {
+              "MSE_rad2": 0.13988051943627952,
+              "valid_scalar_actions": 112200,
+              "windows": 110
+            },
+            "18": {
+              "MSE_rad2": 0.119659711596787,
+              "valid_scalar_actions": 112200,
+              "windows": 110
+            },
+            "19": {
+              "MSE_rad2": 0.11621532555805662,
+              "valid_scalar_actions": 99396,
+              "windows": 99
             }
           }
         }
@@ -4849,6 +5093,88 @@
               "10": 0.03716007831672776,
               "100": 0.0828869644632725
             }
+          },
+          "episodes": {
+            "0": {
+              "MSE_rad2": 0.071670049762419,
+              "valid_scalar_actions": 106596,
+              "windows": 105
+            },
+            "1": {
+              "MSE_rad2": 0.07192510209661931,
+              "valid_scalar_actions": 103800,
+              "windows": 103
+            },
+            "2": {
+              "MSE_rad2": 0.0754831249660319,
+              "valid_scalar_actions": 99396,
+              "windows": 99
+            },
+            "3": {
+              "MSE_rad2": 0.06922746200138338,
+              "valid_scalar_actions": 105396,
+              "windows": 104
+            },
+            "4": {
+              "MSE_rad2": 0.1218561267568657,
+              "valid_scalar_actions": 120600,
+              "windows": 117
+            },
+            "5": {
+              "MSE_rad2": 0.07076375630635412,
+              "valid_scalar_actions": 100200,
+              "windows": 100
+            },
+            "6": {
+              "MSE_rad2": 0.10171724862139304,
+              "valid_scalar_actions": 99804,
+              "windows": 100
+            },
+            "7": {
+              "MSE_rad2": 0.0736195129339343,
+              "valid_scalar_actions": 104196,
+              "windows": 103
+            },
+            "8": {
+              "MSE_rad2": 0.06565897089838878,
+              "valid_scalar_actions": 103404,
+              "windows": 103
+            },
+            "9": {
+              "MSE_rad2": 0.08182985910178361,
+              "valid_scalar_actions": 114996,
+              "windows": 112
+            },
+            "10": {
+              "MSE_rad2": 0.07430452197161841,
+              "valid_scalar_actions": 110604,
+              "windows": 109
+            },
+            "11": {
+              "MSE_rad2": 0.08482162287870468,
+              "valid_scalar_actions": 107796,
+              "windows": 106
+            },
+            "12": {
+              "MSE_rad2": 0.07244388562357154,
+              "valid_scalar_actions": 109404,
+              "windows": 108
+            },
+            "13": {
+              "MSE_rad2": 0.08843077546896898,
+              "valid_scalar_actions": 109800,
+              "windows": 108
+            },
+            "14": {
+              "MSE_rad2": 0.09974147104125605,
+              "valid_scalar_actions": 103404,
+              "windows": 103
+            },
+            "15": {
+              "MSE_rad2": 0.09701019401333315,
+              "valid_scalar_actions": 109404,
+              "windows": 108
+            }
           }
         },
         "validation": {
@@ -4860,6 +5186,28 @@
               "1": 0.015365386835744415,
               "10": 0.038380888769739385,
               "100": 0.09502872197989315
+            }
+          },
+          "episodes": {
+            "16": {
+              "MSE_rad2": 0.09607407361947248,
+              "valid_scalar_actions": 109800,
+              "windows": 108
+            },
+            "17": {
+              "MSE_rad2": 0.09847140787485885,
+              "valid_scalar_actions": 112200,
+              "windows": 110
+            },
+            "18": {
+              "MSE_rad2": 0.0921658387482235,
+              "valid_scalar_actions": 112200,
+              "windows": 110
+            },
+            "19": {
+              "MSE_rad2": 0.09321945934510267,
+              "valid_scalar_actions": 99396,
+              "windows": 99
             }
           }
         }
@@ -4889,6 +5237,88 @@
               "10": 0.02443900792041905,
               "100": 0.06514627536642204
             }
+          },
+          "episodes": {
+            "0": {
+              "MSE_rad2": 0.05624249085369642,
+              "valid_scalar_actions": 106596,
+              "windows": 105
+            },
+            "1": {
+              "MSE_rad2": 0.051998479232297085,
+              "valid_scalar_actions": 103800,
+              "windows": 103
+            },
+            "2": {
+              "MSE_rad2": 0.06580783468520855,
+              "valid_scalar_actions": 99396,
+              "windows": 99
+            },
+            "3": {
+              "MSE_rad2": 0.05298700790868389,
+              "valid_scalar_actions": 105396,
+              "windows": 104
+            },
+            "4": {
+              "MSE_rad2": 0.09065758960011473,
+              "valid_scalar_actions": 120600,
+              "windows": 117
+            },
+            "5": {
+              "MSE_rad2": 0.05373071595383151,
+              "valid_scalar_actions": 100200,
+              "windows": 100
+            },
+            "6": {
+              "MSE_rad2": 0.085787127521924,
+              "valid_scalar_actions": 99804,
+              "windows": 100
+            },
+            "7": {
+              "MSE_rad2": 0.05737038817100605,
+              "valid_scalar_actions": 104196,
+              "windows": 103
+            },
+            "8": {
+              "MSE_rad2": 0.05001296187174113,
+              "valid_scalar_actions": 103404,
+              "windows": 103
+            },
+            "9": {
+              "MSE_rad2": 0.06299379659539163,
+              "valid_scalar_actions": 114996,
+              "windows": 112
+            },
+            "10": {
+              "MSE_rad2": 0.05355684541706434,
+              "valid_scalar_actions": 110604,
+              "windows": 109
+            },
+            "11": {
+              "MSE_rad2": 0.06756563574287935,
+              "valid_scalar_actions": 107796,
+              "windows": 106
+            },
+            "12": {
+              "MSE_rad2": 0.062189881504760305,
+              "valid_scalar_actions": 109404,
+              "windows": 108
+            },
+            "13": {
+              "MSE_rad2": 0.06606683280492455,
+              "valid_scalar_actions": 109800,
+              "windows": 108
+            },
+            "14": {
+              "MSE_rad2": 0.08613290664161201,
+              "valid_scalar_actions": 103404,
+              "windows": 103
+            },
+            "15": {
+              "MSE_rad2": 0.0764132872586741,
+              "valid_scalar_actions": 109404,
+              "windows": 108
+            }
           }
         },
         "validation": {
@@ -4900,6 +5330,28 @@
               "1": 0.010993015104562425,
               "10": 0.02767161828123019,
               "100": 0.0821279142443473
+            }
+          },
+          "episodes": {
+            "16": {
+              "MSE_rad2": 0.08158660231841547,
+              "valid_scalar_actions": 109800,
+              "windows": 108
+            },
+            "17": {
+              "MSE_rad2": 0.08063229896189586,
+              "valid_scalar_actions": 112200,
+              "windows": 110
+            },
+            "18": {
+              "MSE_rad2": 0.08679321051591098,
+              "valid_scalar_actions": 112200,
+              "windows": 110
+            },
+            "19": {
+              "MSE_rad2": 0.07914789334299221,
+              "valid_scalar_actions": 99396,
+              "windows": 99
             }
           }
         }
