@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-10-20T03:43:46.204495+00:00",
+  "timestamp_utc": "2026-10-20T03:45:26.663959+00:00",
   "job_status": "Running",
   "display_status": "H100-I / H800 five-GPU pilot \u00b7 Running",
   "frozen_source_commit": "6ec1de1b7c75329d2eb1328f2d8d45af6189ee59",
@@ -14,40 +14,40 @@
     {
       "arm": "act",
       "seed": 1000,
-      "completed_updates": 0,
-      "status": "not_started",
-      "checkpoint_step": null,
-      "median_update_seconds": null,
-      "validation_step": null,
-      "raw_action_chunk_mse": null
+      "completed_updates": 136,
+      "status": "running",
+      "checkpoint_step": 125,
+      "median_update_seconds": 1.0529843866825104,
+      "validation_step": 100,
+      "raw_action_chunk_mse": 0.3240897909606225
     },
     {
       "arm": "tracks-aux",
       "seed": 1000,
-      "completed_updates": 0,
-      "status": "not_started",
-      "checkpoint_step": null,
-      "median_update_seconds": null,
+      "completed_updates": 80,
+      "status": "running",
+      "checkpoint_step": 75,
+      "median_update_seconds": 1.958306255750358,
       "validation_step": null,
       "raw_action_chunk_mse": null
     },
     {
       "arm": "act",
       "seed": 1001,
-      "completed_updates": 0,
-      "status": "not_started",
-      "checkpoint_step": null,
-      "median_update_seconds": null,
-      "validation_step": null,
-      "raw_action_chunk_mse": null
+      "completed_updates": 126,
+      "status": "running",
+      "checkpoint_step": 125,
+      "median_update_seconds": 1.148911400930956,
+      "validation_step": 100,
+      "raw_action_chunk_mse": 0.3829468753079788
     },
     {
       "arm": "tracks-aux",
       "seed": 1001,
-      "completed_updates": 0,
-      "status": "not_started",
-      "checkpoint_step": null,
-      "median_update_seconds": null,
+      "completed_updates": 76,
+      "status": "running",
+      "checkpoint_step": 75,
+      "median_update_seconds": 2.0434339619241655,
       "validation_step": null,
       "raw_action_chunk_mse": null
     },
@@ -64,10 +64,10 @@
     {
       "arm": "tracks-aux",
       "seed": 1002,
-      "completed_updates": 0,
-      "status": "not_started",
-      "checkpoint_step": null,
-      "median_update_seconds": null,
+      "completed_updates": 76,
+      "status": "running",
+      "checkpoint_step": 75,
+      "median_update_seconds": 2.0308897169306874,
       "validation_step": null,
       "raw_action_chunk_mse": null
     }
