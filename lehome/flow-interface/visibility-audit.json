@@ -1,0 +1,250 @@
+{
+  "scope": "Read-only oracle-input visibility provenance; no model execution, training or performance selection",
+  "passed": true,
+  "checks": {
+    "episode0_source_hash": true,
+    "episode0_cache_reconstruction_exact": true,
+    "episode0_current_points_visible": true,
+    "episode1_source_hash": true,
+    "episode1_cache_reconstruction_exact": true,
+    "episode1_current_points_visible": true,
+    "episode2_source_hash": true,
+    "episode2_cache_reconstruction_exact": true,
+    "episode2_current_points_visible": true,
+    "episode3_source_hash": true,
+    "episode3_cache_reconstruction_exact": true,
+    "episode3_current_points_visible": true,
+    "episode4_source_hash": true,
+    "episode4_cache_reconstruction_exact": true,
+    "episode4_current_points_visible": true,
+    "episode5_source_hash": true,
+    "episode5_cache_reconstruction_exact": true,
+    "episode5_current_points_visible": true,
+    "episode6_source_hash": true,
+    "episode6_cache_reconstruction_exact": true,
+    "episode6_current_points_visible": true,
+    "episode7_source_hash": true,
+    "episode7_cache_reconstruction_exact": true,
+    "episode7_current_points_visible": true,
+    "episode8_source_hash": true,
+    "episode8_cache_reconstruction_exact": true,
+    "episode8_current_points_visible": true,
+    "episode9_source_hash": true,
+    "episode9_cache_reconstruction_exact": true,
+    "episode9_current_points_visible": true,
+    "episode10_source_hash": true,
+    "episode10_cache_reconstruction_exact": true,
+    "episode10_current_points_visible": true,
+    "episode11_source_hash": true,
+    "episode11_cache_reconstruction_exact": true,
+    "episode11_current_points_visible": true,
+    "episode12_source_hash": true,
+    "episode12_cache_reconstruction_exact": true,
+    "episode12_current_points_visible": true,
+    "episode13_source_hash": true,
+    "episode13_cache_reconstruction_exact": true,
+    "episode13_current_points_visible": true,
+    "episode14_source_hash": true,
+    "episode14_cache_reconstruction_exact": true,
+    "episode14_current_points_visible": true,
+    "episode15_source_hash": true,
+    "episode15_cache_reconstruction_exact": true,
+    "episode15_current_points_visible": true,
+    "episode16_source_hash": true,
+    "episode16_cache_reconstruction_exact": true,
+    "episode16_current_points_visible": true,
+    "episode17_source_hash": true,
+    "episode17_cache_reconstruction_exact": true,
+    "episode17_current_points_visible": true,
+    "episode18_source_hash": true,
+    "episode18_cache_reconstruction_exact": true,
+    "episode18_current_points_visible": true,
+    "episode19_source_hash": true,
+    "episode19_cache_reconstruction_exact": true,
+    "episode19_current_points_visible": true
+  },
+  "check_count": 60,
+  "dataset_fingerprint": "f2f982c9f6c73c9322e5205013a8310c6f0ad0e035da6913bf25d2c6e4bbd0aa",
+  "source_sha256": "b608bec17bb2719e610387f3367288b765487b28498ef44adbd76c0a3d72578c",
+  "window_source_sha256": "f4060cab4201fa91a4a42200f811ce00c9aa064f3e0627a4f77e48d5a9ce4679",
+  "test_used": false,
+  "episodes": [
+    {
+      "episode": 0,
+      "split": "train",
+      "windows": 105,
+      "valid_past_point_samples": 23280,
+      "past_samples_not_sensor_visible": 2935,
+      "windows_with_invisible_past": 101
+    },
+    {
+      "episode": 1,
+      "split": "train",
+      "windows": 103,
+      "valid_past_point_samples": 22800,
+      "past_samples_not_sensor_visible": 2542,
+      "windows_with_invisible_past": 89
+    },
+    {
+      "episode": 2,
+      "split": "train",
+      "windows": 99,
+      "valid_past_point_samples": 21840,
+      "past_samples_not_sensor_visible": 2245,
+      "windows_with_invisible_past": 82
+    },
+    {
+      "episode": 3,
+      "split": "train",
+      "windows": 104,
+      "valid_past_point_samples": 23040,
+      "past_samples_not_sensor_visible": 2441,
+      "windows_with_invisible_past": 84
+    },
+    {
+      "episode": 4,
+      "split": "train",
+      "windows": 117,
+      "valid_past_point_samples": 26160,
+      "past_samples_not_sensor_visible": 1949,
+      "windows_with_invisible_past": 100
+    },
+    {
+      "episode": 5,
+      "split": "train",
+      "windows": 100,
+      "valid_past_point_samples": 22080,
+      "past_samples_not_sensor_visible": 2691,
+      "windows_with_invisible_past": 87
+    },
+    {
+      "episode": 6,
+      "split": "train",
+      "windows": 100,
+      "valid_past_point_samples": 22080,
+      "past_samples_not_sensor_visible": 2526,
+      "windows_with_invisible_past": 93
+    },
+    {
+      "episode": 7,
+      "split": "train",
+      "windows": 103,
+      "valid_past_point_samples": 22800,
+      "past_samples_not_sensor_visible": 2341,
+      "windows_with_invisible_past": 85
+    },
+    {
+      "episode": 8,
+      "split": "train",
+      "windows": 103,
+      "valid_past_point_samples": 22800,
+      "past_samples_not_sensor_visible": 2396,
+      "windows_with_invisible_past": 95
+    },
+    {
+      "episode": 9,
+      "split": "train",
+      "windows": 112,
+      "valid_past_point_samples": 24960,
+      "past_samples_not_sensor_visible": 2664,
+      "windows_with_invisible_past": 91
+    },
+    {
+      "episode": 10,
+      "split": "train",
+      "windows": 109,
+      "valid_past_point_samples": 24240,
+      "past_samples_not_sensor_visible": 2063,
+      "windows_with_invisible_past": 91
+    },
+    {
+      "episode": 11,
+      "split": "train",
+      "windows": 106,
+      "valid_past_point_samples": 23520,
+      "past_samples_not_sensor_visible": 2428,
+      "windows_with_invisible_past": 90
+    },
+    {
+      "episode": 12,
+      "split": "train",
+      "windows": 108,
+      "valid_past_point_samples": 24000,
+      "past_samples_not_sensor_visible": 2302,
+      "windows_with_invisible_past": 97
+    },
+    {
+      "episode": 13,
+      "split": "train",
+      "windows": 108,
+      "valid_past_point_samples": 24000,
+      "past_samples_not_sensor_visible": 2112,
+      "windows_with_invisible_past": 91
+    },
+    {
+      "episode": 14,
+      "split": "train",
+      "windows": 103,
+      "valid_past_point_samples": 22800,
+      "past_samples_not_sensor_visible": 2372,
+      "windows_with_invisible_past": 84
+    },
+    {
+      "episode": 15,
+      "split": "train",
+      "windows": 108,
+      "valid_past_point_samples": 24000,
+      "past_samples_not_sensor_visible": 2770,
+      "windows_with_invisible_past": 89
+    },
+    {
+      "episode": 16,
+      "split": "validation",
+      "windows": 108,
+      "valid_past_point_samples": 24000,
+      "past_samples_not_sensor_visible": 2236,
+      "windows_with_invisible_past": 92
+    },
+    {
+      "episode": 17,
+      "split": "validation",
+      "windows": 110,
+      "valid_past_point_samples": 24480,
+      "past_samples_not_sensor_visible": 2271,
+      "windows_with_invisible_past": 90
+    },
+    {
+      "episode": 18,
+      "split": "validation",
+      "windows": 110,
+      "valid_past_point_samples": 24480,
+      "past_samples_not_sensor_visible": 2595,
+      "windows_with_invisible_past": 100
+    },
+    {
+      "episode": 19,
+      "split": "validation",
+      "windows": 99,
+      "valid_past_point_samples": 21840,
+      "past_samples_not_sensor_visible": 2399,
+      "windows_with_invisible_past": 81
+    }
+  ],
+  "groups": {
+    "train": {
+      "windows": 1688,
+      "valid_past_point_samples": 374400,
+      "past_samples_not_sensor_visible": 38777,
+      "windows_with_invisible_past": 1449,
+      "invisible_fraction_of_valid_past": 0.10357104700854701
+    },
+    "validation": {
+      "windows": 427,
+      "valid_past_point_samples": 94800,
+      "past_samples_not_sensor_visible": 9501,
+      "windows_with_invisible_past": 363,
+      "invisible_fraction_of_valid_past": 0.10022151898734177
+    }
+  },
+  "interpretation": "Current points are visible, but past coordinates come from persistent GT vertices, including sensor-invisible past positions. This is an oracle history-content diagnostic, not evidence of online tracker availability."
+}

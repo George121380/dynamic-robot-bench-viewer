@@ -1,0 +1,10 @@
+{
+  "scope": "Supplementary frozen-weight dependence check, specified before completed paired outcomes; does not change the primary retrained comparison",
+  "weights": "final2000 observed Tracks, seeds1000..1002",
+  "transforms": ["set past XYZ to current XYZ with original validity/time", "reflect past displacement around current XYZ, preserving the current row exactly"],
+  "unchanged": ["current points", "RGB history", "current joints", "lag times", "validity masks", "weights", "labels", "validation windows"],
+  "metrics": ["full100 actual action MSE and change", "valid-scalar RMS change in predicted actions", "prefix1/10/100", "per episode"],
+  "reference": "unperturbed actor-only predictions must match the saved fixed-checkpoint reference at spot checks; labels and window identity must match throughout",
+  "interpretation": "Measures trained functional dependence and perturbation behavior. Cross-modal inconsistency can induce distribution shift, so this is not a substitute for the retrained Stationary/Observed comparison or closed-loop evidence. No primary winner selection uses these results.",
+  "test_used": false
+}
