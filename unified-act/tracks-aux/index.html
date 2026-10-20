@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ACT-Tracks with Auxiliary Motion Learning</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f7f8f9;color:#20313e;font:16px/1.6 -apple-system,BlinkMacSystemFont,Arial,sans-serif}
+main{max-width:1840px;margin:auto;padding:26px 28px 48px}header{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+header p{margin:0;color:#64717b;font-size:14px}nav{display:flex;flex-wrap:wrap;gap:8px}a,button{font:inherit;color:#315775}nav a,button{background:white;border:1px solid #cbd5dc;border-radius:5px;text-decoration:none;padding:7px 12px;font-size:14px;cursor:pointer}
+figure{margin:24px 0 30px;background:white;border:1px solid #dbe1e6}figure svg{width:100%;height:auto;display:block}figure:fullscreen{display:flex;align-items:center;background:white}figure:fullscreen svg{max-height:100vh}
+section{max-width:1160px;margin:32px auto}h1{font-size:22px;line-height:1.4;margin:0 0 3px}h2{font-size:19px;margin:0 0 10px}p{margin:0 0 12px}.notes{border-left:3px solid #a66e29;padding-left:20px}.small{font-size:14px;color:#64717b}.caption{line-height:1.75}
+@media print{body{background:white}main{padding:0;max-width:none}header,section{display:none}figure{border:0;margin:0}@page{size:landscape;margin:0}}
+</style>
+<main><header><div><h1>ACT-Tracks with Auxiliary Motion Learning</h1><p>English pipeline figure · editable vectors · 16:9</p></div>
+<nav><a href="act-tracks-aux.png" download>PNG · 4800 × 2700</a><a href="act-tracks-aux.pdf" download>Vector PDF</a><a href="act-tracks-aux.svg" download>Editable SVG</a><a href="act-tracks-aux-figure.zip" download>Download all</a><button onclick="document.getElementById('figure').requestFullscreen()">Full screen</button></nav></header>
+<figure id="figure"><svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<title>ACT-Tracks with auxiliary past completion and future motion prediction</title>
+<desc>Native ACT policy generation with RGB history and 3D track conditioning. A separate zero-latent observation pass shares weights and feeds training-only past and future point heads. Withheld target trajectories supervise auxiliary losses and never enter the actor.</desc>
+<defs>
+<marker id="3A6387" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#3A6387"/></marker>
+<marker id="2D7C76" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#2D7C76"/></marker>
+<marker id="A66E29" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#A66E29"/></marker>
+<marker id="64717B" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L8 4 L0 8 Z" fill="#64717B"/></marker>
+</defs><rect width="1920" height="1080" fill="white"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text id="text-000" x="55" y="58" font-size="34" fill="#20313E" font-weight="600" text-anchor="start">ACT-Tracks with Auxiliary Motion Learning</text>
+<text id="text-001" x="55" y="97" font-size="23" fill="#64717B" font-weight="400" text-anchor="start">Native ACT action generation, regularized by past completion and future prediction</text>
+<rect x="55" y="143" width="17" height="17" rx="2" fill="#3A6387" stroke="#3A6387" stroke-width="1.7"/>
+<text id="text-002" x="83" y="159" font-size="18" fill="#64717B" font-weight="400" text-anchor="start">Native ACT</text>
+<rect x="240" y="143" width="17" height="17" rx="2" fill="#2D7C76" stroke="#2D7C76" stroke-width="1.7"/>
+<text id="text-003" x="268" y="159" font-size="18" fill="#64717B" font-weight="400" text-anchor="start">Track conditioning</text>
+<rect x="485" y="143" width="17" height="17" rx="2" fill="#A66E29" stroke="#A66E29" stroke-width="1.7"/>
+<text id="text-004" x="513" y="159" font-size="18" fill="#64717B" font-weight="400" text-anchor="start">Training only</text>
+<rect x="325" y="207" width="920" height="549" rx="12" fill="#FAFCFD" stroke="#D2DCE3" stroke-width="1.7"/>
+<text id="text-005" x="349" y="235" font-size="19" fill="#64717B" font-weight="600" text-anchor="start">Shared observation modules</text>
+<rect x="55" y="272" width="220" height="176" rx="9" fill="white" stroke="#3A6387" stroke-width="1.7"/>
+<text id="text-006" x="165" y="304" font-size="23" fill="#3A6387" font-weight="600" text-anchor="middle">RGB history</text>
+<rect x="82" y="338" width="136" height="70" rx="3" fill="#F5F8FB" stroke="#AABBC9" stroke-width="1.7"/>
+<path d="M117 355 L131 348 L144 355 L157 348 L176 358 L167 373 L160 369 L160 394 L128 394 L128 369 L120 374 Z" fill="#D2DFEA" stroke="#3A6387" stroke-width="1.2"/>
+<rect x="100" y="330" width="136" height="70" rx="3" fill="#F5F8FB" stroke="#AABBC9" stroke-width="1.7"/>
+<path d="M135 347 L149 340 L162 347 L175 340 L194 350 L185 365 L178 361 L178 386 L146 386 L146 361 L138 366 Z" fill="#D2DFEA" stroke="#3A6387" stroke-width="1.2"/>
+<rect x="118" y="322" width="136" height="70" rx="3" fill="#F5F8FB" stroke="#AABBC9" stroke-width="1.7"/>
+<path d="M153 339 L167 332 L180 339 L193 332 L212 342 L203 357 L196 353 L196 378 L164 378 L164 353 L156 358 Z" fill="#D2DFEA" stroke="#3A6387" stroke-width="1.2"/>
+<text id="text-007" x="165" y="431" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">3 cameras · 16 frames</text>
+<rect x="350" y="272" width="225" height="176" rx="9" fill="white" stroke="#3A6387" stroke-width="1.7"/>
+<text id="text-008" x="462.5" y="306" font-size="22" fill="#3A6387" font-weight="600" text-anchor="middle">Shared ResNet-18</text>
+<text id="text-009" x="462.5" y="341" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">Current: full image grid</text>
+<text id="text-010" x="462.5" y="368" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">Past: 4 × 4 pooled</text>
+<text id="text-011" x="462.5" y="395" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">+ spatial / time encoding</text>
+<rect x="650" y="272" width="235" height="176" rx="9" fill="white" stroke="#3A6387" stroke-width="1.7"/>
+<text id="text-012" x="767.5" y="306" font-size="25" fill="#3A6387" font-weight="600" text-anchor="middle">ACT encoder</text>
+<text id="text-013" x="767.5" y="341" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">Visual tokens</text>
+<text id="text-014" x="767.5" y="368" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">+ current joints + latent</text>
+<text id="text-015" x="767.5" y="395" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">Native Transformer</text>
+<rect x="965" y="272" width="250" height="176" rx="9" fill="white" stroke="#2D7C76" stroke-width="1.7"/>
+<text id="text-016" x="1090.0" y="306" font-size="23" fill="#2D7C76" font-weight="600" text-anchor="middle">Gated track fusion</text>
+<text id="text-017" x="1090.0" y="341" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">Q: memory   K,V: tracks</text>
+<text id="text-018" x="1090.0" y="368" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">Residual cross-attention</text>
+<text id="text-019" x="1090.0" y="395" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">M′ = M + tanh(g) Attn</text>
+<rect x="1300" y="272" width="225" height="176" rx="9" fill="white" stroke="#3A6387" stroke-width="1.7"/>
+<text id="text-020" x="1412.5" y="306" font-size="25" fill="#3A6387" font-weight="600" text-anchor="middle">ACT decoder</text>
+<text id="text-021" x="1412.5" y="341" font-size="19" fill="#64717B" font-weight="400" text-anchor="middle">100 action queries</text>
+<text id="text-022" x="1412.5" y="368" font-size="19" fill="#64717B" font-weight="400" text-anchor="middle">Native Transformer</text>
+<text id="text-023" x="1412.5" y="395" font-size="19" fill="#64717B" font-weight="400" text-anchor="middle">+ linear action head</text>
+<rect x="1605" y="272" width="260" height="176" rx="9" fill="#F5F8FC" stroke="#3A6387" stroke-width="1.7"/>
+<text id="text-024" x="1735" y="306" font-size="25" fill="#3A6387" font-weight="600" text-anchor="middle">Action chunk</text>
+<polyline points="1634,371 1660,355 1685,359 1710,338 1734,345 1762,334 1787,340 1835,326" fill="none" stroke="#3A6387" stroke-width="2.2" opacity="1.0"/>
+<polyline points="1634,378 1660,373 1685,366 1710,371 1734,360 1762,366 1787,357 1835,350" fill="none" stroke="#3A6387" stroke-width="2.2" opacity="0.8"/>
+<polyline points="1634,384 1660,393 1685,382 1710,389 1734,381 1762,385 1787,375 1835,379" fill="none" stroke="#3A6387" stroke-width="2.2" opacity="0.6"/>
+<text id="text-025" x="1735" y="427" font-size="19" fill="#64717B" font-weight="400" text-anchor="middle">100 × 12 joint targets</text>
+<path d="M275 360 H350" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#3A6387)"/>
+<path d="M575 360 H650" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#3A6387)"/>
+<path d="M885 360 H965" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#3A6387)"/>
+<path d="M1215 325 H1300" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#3A6387)"/>
+<path d="M1525 360 H1605" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#3A6387)"/>
+<text id="text-026" x="1257" y="308" font-size="19" fill="#3A6387" font-weight="400" text-anchor="middle" font-style="italic">Mπ</text>
+<rect x="650" y="140" width="235" height="84" rx="9" fill="white" stroke="#3A6387" stroke-width="1.7"/>
+<text id="text-027" x="767.5" y="174" font-size="21" fill="#3A6387" font-weight="600" text-anchor="middle">ACT latent z</text>
+<text id="text-028" x="767.5" y="209" font-size="17" fill="#64717B" font-weight="400" text-anchor="middle">posterior at train; 0 at test</text>
+<path d="M767 224 V272" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#3A6387)"/>
+<rect x="650" y="499" width="235" height="91" rx="9" fill="white" stroke="#3A6387" stroke-width="1.7"/>
+<text id="text-029" x="767.5" y="533" font-size="21" fill="#3A6387" font-weight="600" text-anchor="middle">Current robot state</text>
+<text id="text-030" x="767.5" y="568" font-size="19" fill="#64717B" font-weight="400" text-anchor="middle">12 measured joints</text>
+<path d="M767 499 V448" fill="none" stroke="#3A6387" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#3A6387)"/>
+<text id="text-031" x="907" y="189" font-size="18" fill="#64717B" font-weight="400" text-anchor="start" font-style="italic">qφ(z | q₀, a*)</text>
+<text id="text-032" x="907" y="216" font-size="17" fill="#64717B" font-weight="400" text-anchor="start">Expert actions enter the CVAE only during training.</text>
+<rect x="55" y="559" width="220" height="176" rx="9" fill="white" stroke="#2D7C76" stroke-width="1.7"/>
+<text id="text-033" x="165" y="591" font-size="23" fill="#2D7C76" font-weight="600" text-anchor="middle">3D track history</text>
+<path d="M77 629 C117 601, 162 654, 250 619" fill="none" stroke="#2D7C76" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="77.0" cy="629" r="3.2" fill="#2D7C76"/>
+<circle cx="128.9" cy="623" r="3.2" fill="#2D7C76"/>
+<circle cx="189.45" cy="635" r="3.2" fill="#2D7C76"/>
+<circle cx="250.0" cy="619" r="3.2" fill="#2D7C76"/>
+<path d="M77 644 C117 616, 162 669, 250 634" fill="none" stroke="#2D7C76" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="77.0" cy="644" r="3.2" fill="#2D7C76"/>
+<circle cx="128.9" cy="638" r="3.2" fill="#2D7C76"/>
+<circle cx="189.45" cy="650" r="3.2" fill="#2D7C76"/>
+<circle cx="250.0" cy="634" r="3.2" fill="#2D7C76"/>
+<path d="M77 659 C117 631, 162 684, 250 649" fill="none" stroke="#2D7C76" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="77.0" cy="659" r="3.2" fill="#2D7C76"/>
+<circle cx="128.9" cy="653" r="3.2" fill="#2D7C76"/>
+<circle cx="189.45" cy="665" r="3.2" fill="#2D7C76"/>
+<circle cx="250.0" cy="649" r="3.2" fill="#2D7C76"/>
+<text id="text-034" x="165" y="717" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">16 observed points</text>
+<rect x="350" y="559" width="225" height="176" rx="9" fill="white" stroke="#2D7C76" stroke-width="1.7"/>
+<text id="text-035" x="462.5" y="593" font-size="25" fill="#2D7C76" font-weight="600" text-anchor="middle">Track MLP</text>
+<text id="text-036" x="462.5" y="628" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">Anchor + displacement</text>
+<text id="text-037" x="462.5" y="655" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">+ time + validity</text>
+<text id="text-038" x="462.5" y="682" font-size="18" fill="#64717B" font-weight="400" text-anchor="middle">One token per point</text>
+<path d="M275 647 H350" fill="none" stroke="#2D7C76" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#2D7C76)"/>
+<path d="M575 647 H1090 V448" fill="none" stroke="#2D7C76" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#2D7C76)"/>
+<text id="text-039" x="810" y="632" font-size="19" fill="#2D7C76" font-weight="400" text-anchor="middle" font-style="italic">Track tokens P</text>
+<text id="text-040" x="102" y="776" font-size="18" fill="#64717B" font-weight="400" text-anchor="start">Oracle vertex histories</text>
+<text id="text-041" x="350" y="787" font-size="20" fill="#64717B" font-weight="400" text-anchor="start">Shared weights; policy and auxiliary are separate forward passes.</text>
+<rect x="1253" y="515" width="645" height="474" rx="11" fill="#FFFCF7" stroke="#D6B78D" stroke-width="1.7" stroke-dasharray="8 6"/>
+<text id="text-042" x="1278" y="550" font-size="25" fill="#A66E29" font-weight="600" text-anchor="start">Training-only auxiliary heads</text>
+<text id="text-043" x="1278" y="581" font-size="19" fill="#64717B" font-weight="400" text-anchor="start">Observation-only pass: z = 0</text>
+<path d="M1215 408 H1231 V667 H1300" fill="none" stroke="#A66E29" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#A66E29)"/>
+<path d="M1231 667 V827 H1300" fill="none" stroke="#A66E29" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#A66E29)"/>
+<text id="text-044" x="1210" y="490" font-size="19" fill="#A66E29" font-weight="400" text-anchor="end" font-style="italic">M₀</text>
+<rect x="1300" y="620" width="225" height="98" rx="9" fill="white" stroke="#A66E29" stroke-width="1.7"/>
+<text id="text-045" x="1412.5" y="654" font-size="22" fill="#A66E29" font-weight="600" text-anchor="middle">Past completion</text>
+<text id="text-046" x="1412.5" y="689" font-size="17" fill="#64717B" font-weight="400" text-anchor="middle">XYZ + past-time query</text>
+<rect x="1300" y="780" width="225" height="98" rx="9" fill="white" stroke="#A66E29" stroke-width="1.7"/>
+<text id="text-047" x="1412.5" y="814" font-size="22" fill="#A66E29" font-weight="600" text-anchor="middle">Future prediction</text>
+<text id="text-048" x="1412.5" y="849" font-size="17" fill="#64717B" font-weight="400" text-anchor="middle">XYZ + future-time query</text>
+<rect x="1570" y="620" width="178" height="98" rx="7" fill="white" stroke="#D6B78D" stroke-width="1.7"/>
+<text id="text-049" x="1659" y="645" font-size="22" fill="#A66E29" font-weight="400" text-anchor="middle" font-style="italic">Δx̂ⱼ(τ)</text>
+<path d="M1595 693 H1723" fill="none" stroke="#64717B" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M1659 655 V699" fill="none" stroke="#64717B" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M1598 659 C1615 655, 1635 679, 1659 685" fill="none" stroke="#A66E29" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="1659" cy="685" r="3.5" fill="#A66E29"/>
+<text id="text-050" x="1659" y="709" font-size="16" fill="#64717B" font-weight="400" text-anchor="middle">τ &lt; 0</text>
+<path d="M1525 669 H1570" fill="none" stroke="#A66E29" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#A66E29)"/>
+<rect x="1793" y="638" width="83" height="62" rx="7" fill="white" stroke="#A66E29" stroke-width="1.7"/>
+<text id="text-051" x="1834.5" y="676" font-size="19" fill="#A66E29" font-weight="600" text-anchor="middle" font-style="italic">Lpast</text>
+<path d="M1748 669 H1793" fill="none" stroke="#A66E29" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#A66E29)"/>
+<rect x="1570" y="780" width="178" height="98" rx="7" fill="white" stroke="#D6B78D" stroke-width="1.7"/>
+<text id="text-052" x="1659" y="805" font-size="22" fill="#A66E29" font-weight="400" text-anchor="middle" font-style="italic">Δx̂ⱼ(τ)</text>
+<path d="M1595 853 H1723" fill="none" stroke="#64717B" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M1659 815 V859" fill="none" stroke="#64717B" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M1660 845 C1680 841, 1695 815, 1721 816" fill="none" stroke="#A66E29" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="1660" cy="845" r="3.5" fill="#A66E29"/>
+<text id="text-053" x="1659" y="869" font-size="16" fill="#64717B" font-weight="400" text-anchor="middle">τ &gt; 0</text>
+<path d="M1525 829 H1570" fill="none" stroke="#A66E29" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#A66E29)"/>
+<rect x="1793" y="798" width="83" height="62" rx="7" fill="white" stroke="#A66E29" stroke-width="1.7"/>
+<text id="text-054" x="1834.5" y="836" font-size="19" fill="#A66E29" font-weight="600" text-anchor="middle" font-style="italic">Lfuture</text>
+<path d="M1748 829 H1793" fill="none" stroke="#A66E29" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#A66E29)"/>
+<rect x="1574" y="921" width="301" height="44" rx="5" fill="white" stroke="#D6B78D" stroke-width="1.7"/>
+<text id="text-055" x="1724.5" y="949" font-size="19" fill="#A66E29" font-weight="400" text-anchor="middle">Withheld GT trajectories</text>
+<path d="M1875 943 H1887 V669 H1876" fill="none" stroke="#A66E29" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6" marker-end="url(#A66E29)"/>
+<path d="M1887 829 H1876" fill="none" stroke="#A66E29" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 6" marker-end="url(#A66E29)"/>
+<text id="text-056" x="1280" y="917" font-size="17" fill="#64717B" font-weight="400" text-anchor="start">Query anchors: 48 withheld points</text>
+<text id="text-057" x="1280" y="945" font-size="17" fill="#64717B" font-weight="400" text-anchor="start">Current XYZ only</text>
+<text id="text-058" x="1280" y="969" font-size="17" fill="#64717B" font-weight="400" text-anchor="start">No auxiliary output enters the actor.</text>
+<path d="M55 823 H1185" fill="none" stroke="#CCD5DC" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text id="text-059" x="55" y="860" font-size="22" fill="#20313E" font-weight="600" text-anchor="start">Training objectives</text>
+<text id="text-060" x="55" y="900" font-size="24" fill="#3A6387" font-weight="400" text-anchor="start" font-style="italic">Lpolicy = masked L1(â, a*) + 10 KL</text>
+<text id="text-061" x="55" y="941" font-size="24" fill="#A66E29" font-weight="400" text-anchor="start" font-style="italic">Laux = 0.5 Lpast + 0.5 Lfuture</text>
+<text id="text-062" x="55" y="978" font-size="19" fill="#64717B" font-weight="400" text-anchor="start">Auxiliary gradients regularize shared modules; shared norm cap = 0.1 × policy norm.</text>
+<path d="M55 1014 H1865" fill="none" stroke="#CCD5DC" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<text id="text-063" x="55" y="1048" font-size="21" fill="#20313E" font-weight="400" text-anchor="start">Inference uses only observations → ACT encoder / track fusion → ACT decoder → actions.</text>
+<text id="text-064" x="1865" y="1048" font-size="16" fill="#64717B" font-weight="400" text-anchor="end">Schematics; not measured trajectories</text>
+</g></svg></figure>
+<section><h2>Figure caption</h2><p class="caption">ACT-Tracks with auxiliary motion learning. The policy receives a causal RGB window, current robot joints and a subset of observed 3D point histories. A shared ResNet-18 retains the native spatial grid for current images and pools past image features before adding spatial and physical-time encodings. A shared per-track MLP encodes current anchors, past displacements, timestamps and validity into point tokens. One gated cross-attention layer conditions the native ACT encoder memory on these tokens; the native ACT decoder predicts an action chunk. During training, a separate observation-only pass reuses the same observation modules with the latent fixed to zero. Two independent point-query heads predict past and future displacements of withheld points from their current XYZ anchors and signed query times. Withheld displacements are labels only, and auxiliary predictions are never fed into the policy. Future supervision learns expert continuation from observations, without future-command conditioning. Masked, scale-normalized Smooth L1 losses supervise the point heads. Their gradients regularize shared observation modules under a global norm budget; the ACT action decoder and CVAE posterior retain the policy objective. At inference, only the observation-to-action path is evaluated. The illustrated pilot uses oracle persistent-vertex tracks, including occluded past positions.</p></section>
+<section class="notes"><h2>Presenter notes</h2><p>We keep the native ACT action decoder and extend its observations with RGB history and 3D point tracks. A shared ResNet and a per-track MLP encode the two modalities, and one gated cross-attention layer conditions the ACT memory on motion. During training, a separate zero-latent observation pass feeds two auxiliary heads: past completion and future motion prediction. These heads regularize the shared representation and are omitted at inference. Future prediction learns expert continuation from observations. Our present point inputs are oracle simulator tracks.</p><p class="small">Illustrated setting: 16 observed tracks, 48 withheld query points, a 16-frame history and a 100 × 12 action chunk. Input drawings and curves are schematic.</p></section>
+</main></html>
