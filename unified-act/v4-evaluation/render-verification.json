@@ -1,0 +1,134 @@
+{
+  "status": "complete",
+  "figures": [
+    {
+      "path": "episode-016-middle/comparison-past.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "5bd9e80038776921c4f82ac98675a073f16e1cd0214de9c2fc6b9ad8769fc99a"
+    },
+    {
+      "path": "episode-016-middle/comparison-future.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "99082bf870e24090c9009b69f85cf879fff11d46696efb69756666ece5d73964"
+    },
+    {
+      "path": "episode-016-observed-motion/comparison-past.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "f4c1edfcdbd39a864f5772d9867b9d10eefd72a8fa6db9e26df708f1702efe70"
+    },
+    {
+      "path": "episode-016-observed-motion/comparison-future.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "59208c158a8dc7d21e2cd68464e530403a01e000f8567b0dc81d3107922103ad"
+    },
+    {
+      "path": "episode-017-middle/comparison-past.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "eea2ca530d468f313adc2b3aa3ae166b08792beb516c6d0eff1190819cac414f"
+    },
+    {
+      "path": "episode-017-middle/comparison-future.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "0b11666371b5718fb91821e83d02eac5db50ca4401dd51c34a7f751c4eca2f79"
+    },
+    {
+      "path": "episode-017-observed-motion/comparison-past.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "a4974e5c8e95e4ae6588cdcbcb9ef460177322dcdc5740a6268e892fcaa091a4"
+    },
+    {
+      "path": "episode-017-observed-motion/comparison-future.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "e5e2822e790b4aac149ce9aaf075d1cd57746dc2d2613862a8e2347e0098ceae"
+    },
+    {
+      "path": "episode-018-middle/comparison-past.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "17ac66995c4e0102a3c7c245f266c78b37391271fa3fefa06007a10a85df28fa"
+    },
+    {
+      "path": "episode-018-middle/comparison-future.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "ac235577f8b18bfddad0026679104d38148da131c961bb9524f4277028210de4"
+    },
+    {
+      "path": "episode-018-observed-motion/comparison-past.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "21b41488677b86be1547c9053333378a8cef9bdc22f914eb484d7a06a68f76ff"
+    },
+    {
+      "path": "episode-018-observed-motion/comparison-future.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "4e21f30f3ac6a17435f266bfa997eedd249cbd3e50dab2f6228dca0340d62da4"
+    },
+    {
+      "path": "episode-019-middle/comparison-past.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "48db2c1d64f7e5946890b9a8ef6eda64ab686b763b0dbaef028359ffb56571ee"
+    },
+    {
+      "path": "episode-019-middle/comparison-future.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "ae91635b62f9286014b4643f2c968b68902fcb27cc90271a472328e3183d37aa"
+    },
+    {
+      "path": "episode-019-observed-motion/comparison-past.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "4a7663dc1cc4e598e78d43851e959b8dda406c9c761c2450fec14f79ca430e71"
+    },
+    {
+      "path": "episode-019-observed-motion/comparison-future.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "e65722bb6932b0e57e4b1b9b4cf1a961a8f10e02e5718059b56d4633d15d93dc"
+    }
+  ],
+  "renderer_sha256": "205d7af4cf9041ea192a97b65f1e69f057777568e133238b981aa63887d26cff"
+}
