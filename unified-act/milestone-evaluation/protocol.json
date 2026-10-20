@@ -1,0 +1,93 @@
+{
+  "schema": "unified-act-milestone-evaluation-v1",
+  "status": "ready_to_execute",
+  "arms": [
+    "act",
+    "tracks-off",
+    "v3",
+    "v4"
+  ],
+  "checkpoint_steps": [
+    5000,
+    10000,
+    20000,
+    30000
+  ],
+  "pose_seeds": [
+    62001,
+    62002,
+    62003,
+    62004,
+    62005,
+    62006,
+    62007,
+    62008,
+    62009,
+    62010,
+    62011,
+    62012,
+    62013,
+    62014,
+    62015,
+    62016,
+    62017,
+    62018,
+    62019,
+    62020
+  ],
+  "training_seed": 1000,
+  "garment": "Top_Long_Seen_0",
+  "point_seed": 2026,
+  "n_action_steps": 10,
+  "max_steps": 600,
+  "initial_only_retry_limit": 5,
+  "primary_metric": "final_success",
+  "secondary_metric": "ever_success",
+  "planned_rollouts": 320,
+  "reference_author": {
+    "arm": "act",
+    "checkpoint_step": 10000,
+    "before_actor": true,
+    "physics_ticks": 60
+  },
+  "experience_sha256": "bfc70328ac0474b9739fe0f2fe05411af2b9e61d17dd9b46c8e090e7c50c670f",
+  "rollout_source": "b571f6d05916618a0d02fda2cab1bfbccbce3fa5",
+  "training_model_source": "f3c0744ffe237c66d9a0b1d9dcfde78c00b1e4f3",
+  "pairing": "One immutable initial state per pose shared across all16 model/checkpoint combinations; strict positions1e-5m, FD velocity1e-3m/s, joints1e-5",
+  "termination": "600 actions or50 actions after first success;90Hz actions, prefix10",
+  "retry_rule": "At most5 initial-state-only attempts before actor; never retry completed policy outcomes; engineering failures remain separate",
+  "reporting": "4x4 final_success matrix on intersection of valid completed poses across all16 cells; show successes/n, planned20, coverage, ever_success and95%Wilson intervals",
+  "scope": "New fixed poses on one trained LeHome simulation task and one training seed; no physical-robot or cross-task claim",
+  "point_input_source": "Oracle persistent vertices, including occluded history; no future tracks/commands are policy inputs",
+  "resources": "One existing Beijing-H100-I eight-GPU allocation, at most two independent rollout processes/card after actual runtime gates; no training",
+  "separate_from": "Earlier61001..61005 and5000/10000-step developmental diagnostics; no reuse in fresh20-pose matrix",
+  "supersedes": "Original196-case partial batch excluded pending confirmed USD synchronization defect",
+  "runtime_sync": "After context construction call enable_fabric(False); USD physics/particle/velocity ON; Fabric rendering OFF; live camera extrinsics; USD/physics gripper position agreement1e-4m",
+  "checkpoint_sha256": {
+    "5000": {
+      "act": "6f7f8eaafa9e3044bb6dc38b92dab371f0907b62f02e317de94798e1715f7743",
+      "tracks-off": "3dbe620d2f3e3f10eec119e932a6bbf8eec9eaf27da36e087c7c48ab944c762d",
+      "v3": "56d42c5c268bbe90ffa4d9cc567fba3d6c4f000fa2997d546c0d64bbb0a4220d",
+      "v4": "5d8c79e536caabe4029c2f68c8fcfcc3b9dd7e2a00b2ecdd2067c249d1f3200e"
+    },
+    "10000": {
+      "act": "74db0648b861b71e12116acbbfec20c460eed8a5b8f14fa3bafb368372ed84da",
+      "tracks-off": "2db3889b335c6cc5b5103cf9f9bb48e33944d89a538762d8c8cf4557b138f4da",
+      "v3": "e116bcfea9b193e362151979b8fbcd27b2a4d7c811e77c0146b8a646fcf6e1c3",
+      "v4": "830e692453e18cb0c17dcf076cda6b4d411984b4e9d7a0a0b08580fedecdc1f7"
+    },
+    "20000": {
+      "act": "31d2f4f8fe96618609975397dbaaf74f5b9812ac3764aaaa5ad6a35c2f6435d6",
+      "tracks-off": "09e7102bbd7e67c4b1c0ce7443fe6f730ce46e0ab437cd4d33045e799951ae3e",
+      "v3": "0a13efae7cb13135799c852c1039fbfe88561a9549f5c0a6efe0752a0ba2719f",
+      "v4": "93b4f0aa69201dc8f96880d9b2997f29336d8f85f64d289746b06c16592270e1"
+    },
+    "30000": {
+      "act": "37e11710aed1019317f34374ab2f3458a162794ae4b82ebd1bc4acd222d7ee67",
+      "tracks-off": "dcd56bf4c93c8fb3af9fe59692f4af713477aca4a3f388711b4145af631ed6d3",
+      "v3": "dc91ca5daae5a7d7465f6ed06e935fe3aa2a26b7118c894dff1acc38c0fca451",
+      "v4": "8ed003f479e2d27deb322d117747d3fcf422bb1778e7c916c60befbc45a86960"
+    }
+  },
+  "prepared_utc": "2026-10-20T10:54:38.990753+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "status": "passed",
+  "checked_utc": "2026-10-20T10:57:19.203638+00:00",
+  "source": "b571f6d05916618a0d02fda2cab1bfbccbce3fa5",
+  "scope": "Executed engineering controls excluded from320 policy outcomes",
+  "pairing": {
+    "pair-author": {
+      "accepted": true,
+      "physics_steps": 60,
+      "maximum_absolute_differences": {
+        "world_points": 0.0,
+        "finite_difference_velocity": 0.0,
+        "joint_position": 0.0,
+        "joint_velocity": 0.0
+      },
+      "tolerances": {
+        "world_points": 1e-05,
+        "finite_difference_velocity": 0.001,
+        "joint_position": 1e-05,
+        "joint_velocity": 1e-05
+      },
+      "canonical_reference_sha256": "da16f1e44c09e8d22473de398c206d2326f8795886b0c6e69aa22d6993a142da",
+      "before_actor_construction": true,
+      "policy_actions_executed": 0
+    },
+    "pair-dependent": {
+      "accepted": true,
+      "physics_steps": 60,
+      "maximum_absolute_differences": {
+        "world_points": 0.0,
+        "finite_difference_velocity": 0.0,
+        "joint_position": 0.0,
+        "joint_velocity": 0.0
+      },
+      "tolerances": {
+        "world_points": 1e-05,
+        "finite_difference_velocity": 0.001,
+        "joint_position": 1e-05,
+        "joint_velocity": 1e-05
+      },
+      "canonical_reference_sha256": "da16f1e44c09e8d22473de398c206d2326f8795886b0c6e69aa22d6993a142da",
+      "before_actor_construction": true,
+      "policy_actions_executed": 0
+    }
+  },
+  "maximum_USD_physics_link_position_error_m": 5.551115123125783e-17,
+  "camera_position_changes_m": {
+    "pair-author": [
+      0.0,
+      0.20208246260881424,
+      0.161787211894989
+    ],
+    "pair-dependent": [
+      0.0,
+      0.200336791574955,
+      0.16472464054822922
+    ]
+  },
+  "expert_control": {
+    "actions": 323,
+    "final_success": true,
+    "ever_success": true,
+    "initial_max_difference_m": 0.0,
+    "final_max_difference_m": 0.039473757147789,
+    "final_rms_difference_m": 0.0025790489744395018
+  },
+  "superseded_policy_outcomes": 196
+}
