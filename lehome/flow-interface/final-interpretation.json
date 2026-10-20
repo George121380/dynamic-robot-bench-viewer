@@ -1,0 +1,147 @@
+{
+  "scope": "Predeclared secondary metrics, descriptive aggregation only; no selection or independent-test inference",
+  "source_data_sha256": "bac281aedab20d9dc1738850fbbad7bc655c4f34cd5db4de8c9de36725adf29d",
+  "source_sha256": "4ca8321944f638aefdc6e6cd8de1d51756024d13b73a2c85002f88c07744a3ac",
+  "primary": {
+    "stationary_mean_MSE_rad2": 0.07133751883572632,
+    "tracks_mean_MSE_rad2": 0.06942733611576518,
+    "mean_delta_rad2": -0.0019101827199611565,
+    "delta_sample_sd_rad2": 0.0017619198595135125,
+    "relative_change_percent": -2.677669129984528,
+    "seeds_favoring_tracks": 2
+  },
+  "prefix": {
+    "1": {
+      "stationary": 0.03330152495708455,
+      "observed": 0.03263093623961327,
+      "delta": -0.0006705887174712766,
+      "relative_percent": -2.01368771650986
+    },
+    "10": {
+      "stationary": 0.03767643774477319,
+      "observed": 0.036587933680762116,
+      "delta": -0.0010885040640110713,
+      "relative_percent": -2.8890843433362456
+    },
+    "100": {
+      "stationary": 0.07133751883572634,
+      "observed": 0.06942733611576518,
+      "delta": -0.0019101827199611565,
+      "relative_percent": -2.67766912998455
+    }
+  },
+  "training64": {
+    "stationary": 0.019755661846338042,
+    "observed": 0.020123935838325526,
+    "delta": 0.00036827399198748403,
+    "relative_percent": 1.8641440355274597
+  },
+  "motion_strata": {
+    "observed_motion_gt_5mm": {
+      "stationary": 0.03325365376010291,
+      "observed": 0.029255278774852792,
+      "delta": -0.00399837498525012,
+      "relative_percent": -12.023866652654247
+    },
+    "observed_motion_le_5mm": {
+      "stationary": 0.07460745691925479,
+      "observed": 0.0728567818421657,
+      "delta": -0.0017506750770890922,
+      "relative_percent": -2.34651487851113
+    },
+    "no_past": {
+      "stationary": 0.07314793094259232,
+      "observed": 0.07296405881301742,
+      "delta": -0.00018387212957490795,
+      "relative_percent": -0.25137024001296027
+    }
+  },
+  "episodes": {
+    "16": {
+      "stationary": 0.08675147522927538,
+      "observed": 0.08237488203923536,
+      "delta": -0.0043765931900400235,
+      "relative_percent": -5.044978403506262
+    },
+    "17": {
+      "stationary": 0.048769366474381945,
+      "observed": 0.048028213957516656,
+      "delta": -0.0007411525168652885,
+      "relative_percent": -1.5197091339183344
+    },
+    "18": {
+      "stationary": 0.06589067254258052,
+      "observed": 0.06588182266022957,
+      "delta": -8.849882350947524e-06,
+      "relative_percent": -0.013431161057320118
+    },
+    "19": {
+      "stationary": 0.08593398586681524,
+      "observed": 0.08328249702233638,
+      "delta": -0.0026514888444788554,
+      "relative_percent": -3.0854950084455157
+    }
+  },
+  "by_seed": {
+    "1000": {
+      "observed_motion_gt_5mm": {
+        "stationary": 0.037161581868198824,
+        "observed": 0.0283244731201268,
+        "delta": -0.008837108748072024,
+        "relative_percent": -23.78022760014534
+      },
+      "observed_motion_le_5mm": {
+        "stationary": 0.07560183398515243,
+        "observed": 0.07261861414742235,
+        "delta": -0.002983219837730075,
+        "relative_percent": -3.9459622610689027
+      },
+      "no_past": {
+        "stationary": 0.0817975093209436,
+        "observed": 0.08225394955671762,
+        "delta": 0.0004564402357740277,
+        "relative_percent": 0.5580123888407451
+      }
+    },
+    "1001": {
+      "observed_motion_gt_5mm": {
+        "stationary": 0.030762845518540576,
+        "observed": 0.030389172971277044,
+        "delta": -0.0003736725472635316,
+        "relative_percent": -1.21468785141583
+      },
+      "observed_motion_le_5mm": {
+        "stationary": 0.0743493746060763,
+        "observed": 0.07442859329224855,
+        "delta": 7.921868617224992e-05,
+        "relative_percent": 0.10654923002644257
+      },
+      "no_past": {
+        "stationary": 0.06986486272856626,
+        "observed": 0.06890696353564943,
+        "delta": -0.0009578991929168335,
+        "relative_percent": -1.3710743219211508
+      }
+    },
+    "1002": {
+      "observed_motion_gt_5mm": {
+        "stationary": 0.031836533893569344,
+        "observed": 0.029052190233154536,
+        "delta": -0.002784343660414808,
+        "relative_percent": -8.745749991889717
+      },
+      "observed_motion_le_5mm": {
+        "stationary": 0.07387116216653562,
+        "observed": 0.0715231380868262,
+        "delta": -0.0023480240797094237,
+        "relative_percent": -3.178539515076295
+      },
+      "no_past": {
+        "stationary": 0.0677814207782671,
+        "observed": 0.06773126334668521,
+        "delta": -5.0157431581890344e-05,
+        "relative_percent": -0.07399879053283653
+      }
+    }
+  }
+}
