@@ -11,3 +11,6 @@ Atomically checkpoint model, Adam, CPU/CUDA/Python RNG, data cursor and validati
 Resume refuses source, dataset, recipe or environment-version changes. Explicit runner --resume --extend-steps N permits only a larger total budget, with all other identities unchanged. This is capability, not authorization for the3000-step confirmation.
 
 Pilot: two arms×three paired seeds×500 updates, every100 updates full427-window prior-zero denormalized final action chunk MSE, first-action/per-joint MSE, point EPE and gradient reports. Thirty paired rollouts remain registered; distinguish runtime failures. Confirmation needs pilot review. This comparison tests the full tracks+aux package, not auxiliary causation. Point inputs remain oracle persistent vertices including occluded past; validation is reused development data and test20–24 remains untouched. See validation.json and status.json for evidence and actual scheduling state.
+
+
+Latest allocation: five H800 GPUs in Beijing-H100-I, same500-update pilot. **User explicitly requests no resume: all six runs start from paired initialization in fresh output directories, without prior checkpoints.** Up to five concurrent runs and queued sixth. Prior attempts are archived; resume capability remains for later use.

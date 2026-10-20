@@ -25,3 +25,6 @@
 两组×seeds1000/1001/1002×500updates，完整 validation 每100步记录 prior z=0 的反归一化真实 action chunk MSE（去 padding）、first action / 逐关节 MSE，past/future EPE 与梯度比例。保留原30次配对闭环安排，runtime 失败单独报告；3000步确认仍待 pilot 审阅。相同数据暴露与 ACT 初始化，计算成本单列。该对照检验 tracks+aux 整体收益，不能单独归因辅助任务。
 
 点输入仍为包含过去遮挡顶点的 oracle；不是 RGB tracker。validation 为复用开发集，test20–24未触碰。验证回执与当前调度状态见 validation.json / status.json；不能把未训练点输出当质量结论。
+
+
+最新资源安排：北京-H100-I的5卡（实际H800），同一500-step pilot。**用户明确本次不resume：六组全部从配对初始化开始，使用全新输出目录，不加载旧checkpoint。** 最多5组并行、第6组排队，旧任务保留档案，续训功能仍可后续使用。

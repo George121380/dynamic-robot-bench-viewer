@@ -1,12 +1,15 @@
 {
-  "timestamp_utc": "2026-10-20T03:16:55.968028+00:00",
-  "job_status": "Created",
-  "display_status": "A800 two-GPU pilot \u00b7 Created",
+  "timestamp_utc": "2026-10-20T03:43:46.204495+00:00",
+  "job_status": "Running",
+  "display_status": "H100-I / H800 five-GPU pilot \u00b7 Running",
   "frozen_source_commit": "6ec1de1b7c75329d2eb1328f2d8d45af6189ee59",
   "old_history_RGB_job": "stopped",
-  "requested_GPUs": 2,
-  "allocated_GPUs": 0,
+  "requested_GPUs": 5,
+  "allocated_GPUs": 5,
   "confirmation_submitted": false,
+  "fresh_initialization": true,
+  "resume": false,
+  "superseded_A800": "stopped and archived",
   "runs": [
     {
       "arm": "act",
@@ -68,5 +71,42 @@
       "validation_step": null,
       "raw_action_chunk_mse": null
     }
-  ]
+  ],
+  "GPU_gate": {
+    "status": "passed",
+    "precision": "bfloat16 autocast",
+    "paired_core_bitwise_equal": true,
+    "rows": [
+      {
+        "arm": "act",
+        "gpu_name": "NVIDIA H800",
+        "peak_allocated_GiB": 0.9670705795288086,
+        "rgb_shape": [
+          1,
+          1,
+          3,
+          3,
+          480,
+          640
+        ],
+        "track_history": 16,
+        "rgb_history": false
+      },
+      {
+        "arm": "tracks-aux",
+        "gpu_name": "NVIDIA H800",
+        "peak_allocated_GiB": 1.7276477813720703,
+        "rgb_shape": [
+          1,
+          1,
+          3,
+          3,
+          480,
+          640
+        ],
+        "track_history": 16,
+        "rgb_history": false
+      }
+    ]
+  }
 }
