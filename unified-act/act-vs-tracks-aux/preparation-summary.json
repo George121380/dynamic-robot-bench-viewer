@@ -1,0 +1,28 @@
+{
+  "schema": "policy-aux-preparation-summary-v1",
+  "status": "prepared_pending_user_review_not_launched",
+  "core_review_commit": "149ac640e9e690d07477964f3421d4e2402bf9fd",
+  "cpu_model_data_tests": 34,
+  "cpu_scheduler_tests": 2,
+  "real_full_history_cpu_pair": "passed",
+  "paired_core_bitwise_equal": true,
+  "real_task_optimizer_updates": 0,
+  "allocated_nodes": 0,
+  "submitted_jobs": 0,
+  "simulation_runs": 0,
+  "future_windows": 2115,
+  "train_windows": 1688,
+  "validation_windows": 427,
+  "source_receipts": {
+    "pair-preflight-cpu.json": "18fd020bd9de7f178036eadd882cd78f0696f310671e025d925bb027c75db355",
+    "future-labels-manifest.json": "d08cc8f23dee83bda47ea3dc773d3a6fe379d799a67b0eb3fabe3adf18c15349",
+    "unit-tests.txt": "438888f42ff5ea9dd3ce254b505d68a1ab28fd235c19fcb77f6aa3d5fa1c0cb6",
+    "scheduler-tests.txt": "1789692eac2f07ee7a890fdf4e6a3851724e93d826634aee333a1ae13464d8ec"
+  },
+  "pending_runtime": [
+    "target-node CUDA/BF16 and memory",
+    "driver/container compatibility",
+    "actual Isaac launch and initial-state acceptance"
+  ],
+  "comparison_scope": "whole package; does not isolate auxiliary or motion causation; oracle vertices; reused development validation"
+}

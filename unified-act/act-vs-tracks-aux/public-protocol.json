@@ -1,0 +1,163 @@
+{
+  "schema": "act-vs-tracks-aux-plan-v1",
+  "status": "preparation_only_pending_training_review",
+  "base_model_schema": "unified-act-v2",
+  "reviewed_core_commit": "149ac640e9e690d07477964f3421d4e2402bf9fd",
+  "primary_question": "Does the complete history/track/auxiliary package improve over native single-frame ACT? This pair does not isolate auxiliary or motion contributions.",
+  "arms": [
+    {
+      "name": "act",
+      "condition": "act",
+      "completion": "off",
+      "future": false
+    },
+    {
+      "name": "tracks-aux",
+      "condition": "tracks",
+      "completion": "bounded",
+      "future": true
+    }
+  ],
+  "stages": [
+    {
+      "name": "pilot",
+      "seeds": [
+        1000,
+        1001,
+        1002
+      ],
+      "steps": 500,
+      "validation_interval": 100
+    },
+    {
+      "name": "confirm",
+      "seeds": [
+        1000,
+        1001,
+        1002
+      ],
+      "steps": 3000,
+      "validation_interval": 500
+    }
+  ],
+  "shared": {
+    "schema": "unified-act-run-v2",
+    "task": "lehome_garment_folding",
+    "interface": "policy",
+    "precision": "bfloat16",
+    "model": {
+      "state_dim": 12,
+      "action_dim": 12,
+      "cameras": 3,
+      "image_height": 480,
+      "image_width": 640,
+      "chunk": 100,
+      "history": 16,
+      "width": 512,
+      "heads": 8,
+      "feedforward": 3200,
+      "encoder_layers": 4,
+      "decoder_layers": 1,
+      "posterior_layers": 4,
+      "latent_dim": 32,
+      "dropout": 0.1,
+      "history_grid": 4,
+      "spatial_scale_m": 0.5,
+      "motion_scale_m": 0.05,
+      "initial_fusion_gate": 0.1,
+      "point_query_chunk": 128,
+      "kl_weight": 10.0
+    },
+    "optimizer": {
+      "learning_rate": 1e-05,
+      "backbone_learning_rate": 1e-05,
+      "weight_decay": 0.0001,
+      "accumulation": 16
+    },
+    "validation": {
+      "maximum_windows": null
+    },
+    "aux_ratio_cap": 0.1
+  },
+  "auxiliary": {
+    "schema": "observation-future-aux-v1",
+    "past_weight": 0.5,
+    "future_weight": 0.5,
+    "future_offsets_ticks": [
+      3,
+      6,
+      9,
+      12,
+      15,
+      18,
+      21,
+      24,
+      27,
+      30,
+      33,
+      36,
+      39,
+      42,
+      45
+    ],
+    "physics_hz": 90,
+    "semantics": "observation-only expert continuation; not action-conditioned dynamics"
+  },
+  "data": {
+    "garment": "Top_Long_Seen_0",
+    "train_episodes": [
+      0,
+      15
+    ],
+    "validation_episodes": [
+      16,
+      19
+    ],
+    "train_windows": 1688,
+    "validation_windows": 427,
+    "K": 16,
+    "Q": 48,
+    "point_sampling": "frozen current-visible FPS64 plus seed/tick permutation, disjoint K/Q",
+    "history_source": "oracle persistent vertices including occluded history",
+    "test_episodes_20_24": "untouched; not used in preparation or model selection",
+    "validation_scope": "reused development validation; not a fresh test"
+  },
+  "selection": "lowest full-validation prior-zero denormalized action chunk MSE at fixed common checkpoints; ties keep earliest; retain final checkpoint too",
+  "closed_loop": {
+    "garment": "Top_Long_Seen_0",
+    "pose_seeds": [
+      61001,
+      61002,
+      61003,
+      61004,
+      61005
+    ],
+    "point_seed": 2026,
+    "n_action_steps": 10,
+    "max_steps": 600,
+    "primary": "final_success",
+    "secondary": "ever_success",
+    "pair_cloth_tolerance_m": 1e-05,
+    "pair_joint_tolerance_rad": 1e-05,
+    "pair_warm_velocity_tolerance_m_s": 0.001,
+    "pilot_rollouts": 30,
+    "confirm_rollouts": 30,
+    "status": "planned; no simulation launched",
+    "pair_joint_velocity_tolerance_rad_s": 1e-05,
+    "initialization": "pre-play garment authoring; fixed total60 physics ticks; canonical per-stage/pose, authored by ACT seed1000 before actor; <=5 initial-state-only retries; no runtime/outcome retries"
+  },
+  "interpretation": "Auxiliary predictions regularize shared observations during training; policy inference uses only the unchanged ACT action path. Compute cost differs and must be reported. A Tracks-only ablation is required before claiming auxiliary causation.",
+  "resources": {
+    "maximum_nodes": 2,
+    "preferred_nodes": 1,
+    "submission_status": "not_submitted; user must review concrete plan before training",
+    "strategy": "six independent single-GPU runs, expensive Tracks runs first; reuse all freed cards plus two reserved slots for registered paired evaluations; matched batch/steps, no DDP",
+    "training_node": {
+      "nodes": 1,
+      "gpus": 8,
+      "parallel_training_runs": 6,
+      "evaluation_or_preflight_slots": 2
+    },
+    "telemetry": "allocated-GPU utilization/memory/power every30s; owned process timings and per-run validation/elapsed metrics"
+  }
+}
