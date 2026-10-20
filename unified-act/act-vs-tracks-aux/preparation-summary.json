@@ -3,7 +3,7 @@
   "status": "prepared_pending_user_review_not_launched",
   "core_review_commit": "149ac640e9e690d07477964f3421d4e2402bf9fd",
   "cpu_model_data_tests": 34,
-  "cpu_scheduler_tests": 2,
+  "cpu_scheduler_tests": 3,
   "real_full_history_cpu_pair": "passed",
   "paired_core_bitwise_equal": true,
   "real_task_optimizer_updates": 0,
@@ -17,7 +17,7 @@
     "pair-preflight-cpu.json": "18fd020bd9de7f178036eadd882cd78f0696f310671e025d925bb027c75db355",
     "future-labels-manifest.json": "d08cc8f23dee83bda47ea3dc773d3a6fe379d799a67b0eb3fabe3adf18c15349",
     "unit-tests.txt": "438888f42ff5ea9dd3ce254b505d68a1ab28fd235c19fcb77f6aa3d5fa1c0cb6",
-    "scheduler-tests.txt": "1789692eac2f07ee7a890fdf4e6a3851724e93d826634aee333a1ae13464d8ec"
+    "scheduler-tests.txt": "e590d19e4ba8422f1c77da7ff06295178a73c14a42105ab57b1b4c62b96199d2"
   },
   "pending_runtime": [
     "target-node CUDA/BF16 and memory",
@@ -25,5 +25,6 @@
     "actual Isaac launch and initial-state acceptance"
   ],
   "comparison_scope": "whole package; does not isolate auxiliary or motion causation; oracle vertices; reused development validation",
-  "scope": "historical preparation snapshot before the first A800 job submission; runtime status in a800-pilot-status.json"
+  "scope": "Model/data CPU checks are the unchanged-core preparation snapshot; current scheduler has3 passing CPU tests; runtime in a800-pilot-status.json",
+  "archive_status": "history-RGB v2 job stopped; current experiment at ../flow-v3/"
 }

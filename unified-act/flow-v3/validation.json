@@ -1,0 +1,59 @@
+{
+  "schema": "unified-act-v3-validation-v1",
+  "status": "CPU_passed_GPU_pending",
+  "tests": {
+    "model_data_resume": 42,
+    "scheduler": 3,
+    "model_test_seconds": 16.329
+  },
+  "native_ACT": {
+    "output_loss_encoder_gradient": "bitwise_equal",
+    "CPU_backbone_gradient_absolute_tolerance": 1e-07,
+    "native_forward_patch_changed": false
+  },
+  "resume": {
+    "full_Adam_RNG_cursor_restore": "bitwise_equal_to_uninterrupted_synthetic_CPU",
+    "interrupted_validation": "full_pending_validation_rerun",
+    "budget_extension": "explicit_larger_steps_only_other_identity_changes_rejected"
+  },
+  "real_task_optimizer_updates": 0,
+  "limits": [
+    "CPU test throughput is not GPU performance",
+    "Oracle point histories include occluded positions",
+    "Isaac rollout runtime not yet accepted"
+  ],
+  "real_data_CPU_gate": {
+    "status": "passed",
+    "paired_core_bitwise_equal": true,
+    "precision": "float32",
+    "real_task_optimizer_updates": 0,
+    "input_RGB_shape": [
+      1,
+      1,
+      3,
+      3,
+      480,
+      640
+    ]
+  },
+  "loader_benchmark": {
+    "scope": "CPU loader only; seeded128 random train windows; warm OS page cache; no optimizer or GPU",
+    "sample_bytes_equal": true,
+    "rows": [
+      {
+        "point_cache_episodes": 2,
+        "windows": 128,
+        "seconds": 1.8500280580483377,
+        "base_episode_decompressions": 113,
+        "cached_point_bytes": 4988120
+      },
+      {
+        "point_cache_episodes": 20,
+        "windows": 128,
+        "seconds": 0.6726278318092227,
+        "base_episode_decompressions": 16,
+        "cached_point_bytes": 39162560
+      }
+    ]
+  }
+}

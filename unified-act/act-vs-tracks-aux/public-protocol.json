@@ -1,6 +1,6 @@
 {
   "schema": "act-vs-tracks-aux-plan-v1",
-  "status": "one A800 pilot submitted; timestamped runtime state separate; confirmation not submitted",
+  "status": "Two-GPU replacement pod Running; original8-GPU job ManualTermination; pilot only",
   "base_model_schema": "unified-act-v2",
   "reviewed_core_commit": "149ac640e9e690d07477964f3421d4e2402bf9fd",
   "primary_question": "Does the complete history/track/auxiliary package improve over native single-frame ACT? This pair does not isolate auxiliary or motion contributions.",
@@ -150,13 +150,14 @@
   "resources": {
     "maximum_nodes": 1,
     "preferred_nodes": 1,
-    "strategy": "six independent single-GPU runs, expensive Tracks runs first; reuse all freed cards plus two reserved slots for registered paired evaluations; matched batch/steps, no DDP",
+    "strategy": "two independent single-GPU slots; queue all six paired pilot runs, seed1000 pair first; same batch/steps/optimizer; train priority then registered evaluation",
     "training_node": {
       "nodes": 1,
-      "gpus": 8,
-      "parallel_training_runs": 6,
-      "evaluation_or_preflight_slots": 2
+      "gpus": 2,
+      "parallel_training_runs": 2,
+      "evaluation_or_preflight_slots": 0
     },
     "telemetry": "allocated-GPU utilization/memory/power every30s; owned process timings and per-run validation/elapsed metrics"
-  }
+  },
+  "archive_status": "history-RGB v2 job stopped; current experiment at ../flow-v3/"
 }

@@ -1,0 +1,72 @@
+{
+  "timestamp_utc": "2026-10-20T03:16:55.968028+00:00",
+  "job_status": "Created",
+  "display_status": "A800 two-GPU pilot \u00b7 Created",
+  "frozen_source_commit": "6ec1de1b7c75329d2eb1328f2d8d45af6189ee59",
+  "old_history_RGB_job": "stopped",
+  "requested_GPUs": 2,
+  "allocated_GPUs": 0,
+  "confirmation_submitted": false,
+  "runs": [
+    {
+      "arm": "act",
+      "seed": 1000,
+      "completed_updates": 0,
+      "status": "not_started",
+      "checkpoint_step": null,
+      "median_update_seconds": null,
+      "validation_step": null,
+      "raw_action_chunk_mse": null
+    },
+    {
+      "arm": "tracks-aux",
+      "seed": 1000,
+      "completed_updates": 0,
+      "status": "not_started",
+      "checkpoint_step": null,
+      "median_update_seconds": null,
+      "validation_step": null,
+      "raw_action_chunk_mse": null
+    },
+    {
+      "arm": "act",
+      "seed": 1001,
+      "completed_updates": 0,
+      "status": "not_started",
+      "checkpoint_step": null,
+      "median_update_seconds": null,
+      "validation_step": null,
+      "raw_action_chunk_mse": null
+    },
+    {
+      "arm": "tracks-aux",
+      "seed": 1001,
+      "completed_updates": 0,
+      "status": "not_started",
+      "checkpoint_step": null,
+      "median_update_seconds": null,
+      "validation_step": null,
+      "raw_action_chunk_mse": null
+    },
+    {
+      "arm": "act",
+      "seed": 1002,
+      "completed_updates": 0,
+      "status": "not_started",
+      "checkpoint_step": null,
+      "median_update_seconds": null,
+      "validation_step": null,
+      "raw_action_chunk_mse": null
+    },
+    {
+      "arm": "tracks-aux",
+      "seed": 1002,
+      "completed_updates": 0,
+      "status": "not_started",
+      "checkpoint_step": null,
+      "median_update_seconds": null,
+      "validation_step": null,
+      "raw_action_chunk_mse": null
+    }
+  ]
+}
