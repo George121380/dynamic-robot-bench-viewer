@@ -73,7 +73,7 @@
   },
   "execution_sources": {
     "act_pilot_rollout.py": "ed049cc0ef1d2cdf69956f449059bf2c11ab16b8ec0d3e9ef95e98e7afe8be66",
-    "act_pilot_run.sh": "7b427cdf5118c403e8f16333eae4df4d5d81f2eccf9d4cb0b7e69224ae32e20e"
+    "act_pilot_run.sh": "50a03583cc07b0034fc8df6d55b0b5dda2d8767ba84195af185a1ca034f5859c"
   },
   "limitations": [
     "CUDA/BF16 unvalidated",
@@ -81,5 +81,11 @@
     "real causal tracker not implemented",
     "full cross-task data exports pending",
     "no trained v2 policy quality claim"
+  ],
+  "execution_validation": [
+    "CPU lazy bridge/queue/reset",
+    "shell syntax bash -n",
+    "Python syntax compile",
+    "actual Isaac run pending"
   ]
 }

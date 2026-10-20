@@ -48,3 +48,5 @@ python -m dynamic_robot_bench.models.unified_act.runner preflight --config confi
 新配置schema为 `unified-act-run-v2`，steps仍为0。`evaluate` CLI要求checkpoint，避免把未训练输出当模型成绩。见 `validation.json`、`real-data-check.json` 和 `unit-tests.txt`。
 
 本轮验证只用CPU；合成小模型回归包含少量optimizer更新，真实任务更新为0。CUDA/BF16、真实tracker、完整跨任务历史导出和新模型闭环质量仍未验收。原训练hold及过期B20z授权边界不变。
+
+隔离checkout可复用已部署的LeHome环境，不复制权重/资产：显式设置 `LEHOME_RUNTIME`（旧.runtime/lehome）、`LEHOME_PY`（已验venv/bin/python）、`LEHOME_LAB`（旧IsaacLab目录）、`LEHOME_ASSETS_ROOT`（已下载资产），再调用当前checkout的 `integrations/LeHome/act_pilot_run.sh --checkpoint V2_CHECKPOINT --output NEW_OUTPUT --n-action-steps 10 ...`。launcher始终把当前代码root加入PYTHONPATH，环境路径不决定模型代码版本。此命令是后续验收入口，本轮没有执行。

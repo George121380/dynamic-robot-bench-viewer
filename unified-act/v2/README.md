@@ -26,3 +26,5 @@ python -m dynamic_robot_bench.models.unified_act.runner preflight --config confi
 ```
 
 The example uses run schema v2 and0 updates. Evaluation requires a checkpoint. Real-task training and node allocation remain on hold. CUDA/BF16, full cross-task exports and closed-loop performance are not established by CPU checks.
+
+For an isolated checkout, explicitly reuse the deployed runtime with LEHOME_RUNTIME, LEHOME_PY, LEHOME_LAB and LEHOME_ASSETS_ROOT, then invoke this checkout's integrations/LeHome/act_pilot_run.sh with a v2 checkpoint and explicit execution prefix. The launcher adds the current code root to PYTHONPATH. This documents a future acceptance entry point; it was not executed this turn.
