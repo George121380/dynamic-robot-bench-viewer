@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "training_records_accounted": 76000,
+  "run_count": 40,
+  "source_hash_checks": 88,
+  "loss_component_percentages_sum_to_100": true,
+  "all_detached_shared_gradients_zero": true,
+  "matching_four_seed_validation_at_each_budget": true,
+  "report_sha256": "9074b7cc291c47ebe4de867301f6f76cd698d55ee0c4036292cb1d7534eec1a6",
+  "analysis_html_sha256": "c620e17a8c8c32324f870738a572fd4a3946b6ab3bf35d9bee89078d33ae52fa",
+  "maximum_total_accounting_error": 3.4006719999979396e-06,
+  "new_optimizer_updates": 0,
+  "GPU_use": false
+}
