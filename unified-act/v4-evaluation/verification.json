@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "cases": 8,
+  "score_checks": 64,
+  "maximum_score_difference_mm": 5.696815549072198e-06,
+  "NPZ_CRCs": true,
+  "JSON_exact_to_raw_float32": true,
+  "zero_anchors_exact": true,
+  "disjoint_vertex_IDs": true,
+  "note": "Independent float64 arithmetic from full-precision NPZ; small tolerance allows original float32 target subtraction.",
+  "verifier_sha256": "3ce87153540425dc4c90834b1cf8b0d48e208ca93b3ae3f7f42633b9ba70b4c8"
+}
