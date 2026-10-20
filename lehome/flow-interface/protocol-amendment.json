@@ -1,0 +1,35 @@
+{
+  "schema": "motion-content-control-amendment-1",
+  "written_utc": "2026-10-20T00:16:11.556000+00:00",
+  "timing": "Before any paired 2000-update late result; preliminary single-condition 250/500 validation was observed",
+  "reason": "Original Geometry masks past rows; Tracks repeats current XYZ at each valid lag and adds time/valid channels. This changes encoding as well as actual displacement.",
+  "retained_original_protocol": "protocol.json remains unchanged; completed CPU diagnosis and superseded Geometry partial runs remain retained",
+  "corrected_primary_contrast": "Observed past displacements versus stationary-history inputs, with identical current XYZ repetitions, lag times, validity masks, point MLP, late attention, RGB history, joints, action targets, parameter count and recipe",
+  "stationary_definition": "At each past lag replace XYZ with the current XYZ for the same point; retain the original validity and relative_time; current rows unchanged",
+  "seeds": [
+    1000,
+    1001,
+    1002
+  ],
+  "steps": 2000,
+  "auxiliary_weight": 0,
+  "primary_metric": "Final-step full100-offset actual action MSE, valid scalar weighted, prior zero",
+  "order": {
+    "1000": [
+      "stationary",
+      "observed"
+    ],
+    "1001": [
+      "observed",
+      "stationary"
+    ],
+    "1002": [
+      "stationary",
+      "observed"
+    ]
+  },
+  "reuse": "Retain the already-running observed Tracks seed1001; exact model/initialization/forward/update equivalence is required for the observed subclass. Other observed runs use the frozen49d6ea1 training source.",
+  "test_used": false,
+  "formal_training_hold_unchanged": true,
+  "scope": "Four reused development episodes only; no closed-loop or independent generalization claim"
+}
