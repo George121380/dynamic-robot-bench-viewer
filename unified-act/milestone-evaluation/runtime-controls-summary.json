@@ -1,8 +1,8 @@
 {
   "status": "passed",
-  "checked_utc": "2026-10-20T10:57:19.203638+00:00",
-  "source": "b571f6d05916618a0d02fda2cab1bfbccbce3fa5",
-  "scope": "Executed engineering controls excluded from320 policy outcomes",
+  "checked_utc": "2026-10-20T11:45:46.910683+00:00",
+  "source": "e66b8ff554101ec2bc98721a8cac4c8ac02b6826",
+  "scope": "Engineering controls excluded from320 fresh nominal-pose policy outcomes; strict matched control at62001 is not a claim of exact full-cohort microstates",
   "pairing": {
     "pair-author": {
       "accepted": true,
@@ -64,5 +64,165 @@
     "final_max_difference_m": 0.039473757147789,
     "final_rms_difference_m": 0.0025790489744395018
   },
-  "superseded_policy_outcomes": 196
+  "superseded_policy_outcomes": 196,
+  "runtime_positive_control_source": "b571f6d05916618a0d02fda2cab1bfbccbce3fa5",
+  "pairing_kind": "nominal_pose_with_stochastic_cloth",
+  "nominal_pairing_gates": [
+    {
+      "name": "pose-62002-author",
+      "steps": 25,
+      "pairing": {
+        "accepted": true,
+        "physics_steps": 60,
+        "maximum_absolute_differences": {
+          "world_points": 0.0,
+          "finite_difference_velocity": 0.0,
+          "joint_position": 0.0,
+          "joint_velocity": 0.0
+        },
+        "canonical_reference_sha256": "3628559116427baf44d04cf2a29e91e09740746c1193a60995850d63b8e53d15",
+        "before_actor_construction": true,
+        "policy_actions_executed": 0,
+        "pairing_kind": "nominal_pose_with_stochastic_cloth",
+        "acceptance_tolerances": {
+          "translation_m": 1e-06,
+          "rotation_deg": 1e-05,
+          "scale": 1e-06,
+          "joint_position": 1e-05,
+          "joint_velocity": 1e-05
+        },
+        "nominal_pose_differences": {
+          "translation_m": 0.0,
+          "rotation_deg": 0.0,
+          "scale": 0.0
+        },
+        "asset_rest_points_sha256": "bd5ffa993e029d3cb9f1432a75685dea8c3c91f5f2bea97f8602c34c7d6b69e1",
+        "diagnostic_microstate_tolerances": {
+          "world_points": 1e-05,
+          "finite_difference_velocity": 0.001,
+          "joint_position": 1e-05,
+          "joint_velocity": 1e-05
+        },
+        "physical_microstate_matched": true,
+        "interpretation": "Same commanded pose/rest asset/joint start/time; cloth deformation and velocity are stochastic and do not gate acceptance"
+      }
+    },
+    {
+      "name": "pose-62003-author",
+      "steps": 25,
+      "pairing": {
+        "accepted": true,
+        "physics_steps": 60,
+        "maximum_absolute_differences": {
+          "world_points": 0.0,
+          "finite_difference_velocity": 0.0,
+          "joint_position": 0.0,
+          "joint_velocity": 0.0
+        },
+        "canonical_reference_sha256": "92da5d7d56370322cdb282087d4d84179babdbe24f89a00651990803be8ac8bf",
+        "before_actor_construction": true,
+        "policy_actions_executed": 0,
+        "pairing_kind": "nominal_pose_with_stochastic_cloth",
+        "acceptance_tolerances": {
+          "translation_m": 1e-06,
+          "rotation_deg": 1e-05,
+          "scale": 1e-06,
+          "joint_position": 1e-05,
+          "joint_velocity": 1e-05
+        },
+        "nominal_pose_differences": {
+          "translation_m": 0.0,
+          "rotation_deg": 0.0,
+          "scale": 0.0
+        },
+        "asset_rest_points_sha256": "bd5ffa993e029d3cb9f1432a75685dea8c3c91f5f2bea97f8602c34c7d6b69e1",
+        "diagnostic_microstate_tolerances": {
+          "world_points": 1e-05,
+          "finite_difference_velocity": 0.001,
+          "joint_position": 1e-05,
+          "joint_velocity": 1e-05
+        },
+        "physical_microstate_matched": true,
+        "interpretation": "Same commanded pose/rest asset/joint start/time; cloth deformation and velocity are stochastic and do not gate acceptance"
+      }
+    },
+    {
+      "name": "pose-62002-dependent",
+      "steps": 25,
+      "pairing": {
+        "accepted": true,
+        "physics_steps": 60,
+        "maximum_absolute_differences": {
+          "world_points": 0.02088974416255951,
+          "finite_difference_velocity": 0.25107085704803467,
+          "joint_position": 0.0,
+          "joint_velocity": 0.0
+        },
+        "canonical_reference_sha256": "3628559116427baf44d04cf2a29e91e09740746c1193a60995850d63b8e53d15",
+        "before_actor_construction": true,
+        "policy_actions_executed": 0,
+        "pairing_kind": "nominal_pose_with_stochastic_cloth",
+        "acceptance_tolerances": {
+          "translation_m": 1e-06,
+          "rotation_deg": 1e-05,
+          "scale": 1e-06,
+          "joint_position": 1e-05,
+          "joint_velocity": 1e-05
+        },
+        "nominal_pose_differences": {
+          "translation_m": 0.0,
+          "rotation_deg": 0.0,
+          "scale": 0.0
+        },
+        "asset_rest_points_sha256": "bd5ffa993e029d3cb9f1432a75685dea8c3c91f5f2bea97f8602c34c7d6b69e1",
+        "diagnostic_microstate_tolerances": {
+          "world_points": 1e-05,
+          "finite_difference_velocity": 0.001,
+          "joint_position": 1e-05,
+          "joint_velocity": 1e-05
+        },
+        "physical_microstate_matched": false,
+        "interpretation": "Same commanded pose/rest asset/joint start/time; cloth deformation and velocity are stochastic and do not gate acceptance"
+      }
+    },
+    {
+      "name": "pose-62003-dependent",
+      "steps": 25,
+      "pairing": {
+        "accepted": true,
+        "physics_steps": 60,
+        "maximum_absolute_differences": {
+          "world_points": 0.02805938571691513,
+          "finite_difference_velocity": 0.13529598712921143,
+          "joint_position": 0.0,
+          "joint_velocity": 0.0
+        },
+        "canonical_reference_sha256": "92da5d7d56370322cdb282087d4d84179babdbe24f89a00651990803be8ac8bf",
+        "before_actor_construction": true,
+        "policy_actions_executed": 0,
+        "pairing_kind": "nominal_pose_with_stochastic_cloth",
+        "acceptance_tolerances": {
+          "translation_m": 1e-06,
+          "rotation_deg": 1e-05,
+          "scale": 1e-06,
+          "joint_position": 1e-05,
+          "joint_velocity": 1e-05
+        },
+        "nominal_pose_differences": {
+          "translation_m": 0.0,
+          "rotation_deg": 0.0,
+          "scale": 0.0
+        },
+        "asset_rest_points_sha256": "bd5ffa993e029d3cb9f1432a75685dea8c3c91f5f2bea97f8602c34c7d6b69e1",
+        "diagnostic_microstate_tolerances": {
+          "world_points": 1e-05,
+          "finite_difference_velocity": 0.001,
+          "joint_position": 1e-05,
+          "joint_velocity": 1e-05
+        },
+        "physical_microstate_matched": false,
+        "interpretation": "Same commanded pose/rest asset/joint start/time; cloth deformation and velocity are stochastic and do not gate acceptance"
+      }
+    }
+  ]
 }
