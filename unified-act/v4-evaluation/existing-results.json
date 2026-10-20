@@ -1,6 +1,6 @@
 {
   "schema": "unified-act-results-v1",
-  "updated_utc": "2026-10-20T07:21:00.814742+00:00",
+  "updated_utc": "2026-10-20T07:33:39.866974+00:00",
   "training_seed": 1000,
   "validation_windows": 427,
   "scope": "Reused development validation, one seed; not a test-set or closed-loop success result",
@@ -9,13 +9,13 @@
   "rows": [
     {
       "arm": "act",
-      "status": "complete",
-      "completed_updates": 10000,
-      "target_steps": 10000,
-      "last_metric_step": 10000,
+      "status": "running",
+      "completed_updates": 10764,
+      "target_steps": 30000,
+      "last_metric_step": 10765,
       "microbatch": 8,
       "global_batch": 64,
-      "resume_start": 5000,
+      "resume_start": 10000,
       "validation": [
         {
           "step": 1000,
@@ -104,13 +104,13 @@
     },
     {
       "arm": "tracks-off",
-      "status": "complete",
-      "completed_updates": 10000,
-      "target_steps": 10000,
-      "last_metric_step": 10000,
+      "status": "running",
+      "completed_updates": 10374,
+      "target_steps": 30000,
+      "last_metric_step": 10374,
       "microbatch": 8,
       "global_batch": 64,
-      "resume_start": 5000,
+      "resume_start": 10000,
       "validation": [
         {
           "step": 1000,
@@ -199,13 +199,13 @@
     },
     {
       "arm": "tracks-v3-aux",
-      "status": "complete",
-      "completed_updates": 10000,
-      "target_steps": 10000,
-      "last_metric_step": 10000,
+      "status": "running",
+      "completed_updates": 10194,
+      "target_steps": 30000,
+      "last_metric_step": 10194,
       "microbatch": 8,
       "global_batch": 64,
-      "resume_start": 5000,
+      "resume_start": 10000,
       "validation": [
         {
           "step": 1000,
@@ -534,13 +534,13 @@
     },
     {
       "arm": "tracks-v4-aux",
-      "status": "complete",
-      "completed_updates": 10000,
-      "target_steps": 10000,
-      "last_metric_step": 10000,
+      "status": "running",
+      "completed_updates": 10211,
+      "target_steps": 30000,
+      "last_metric_step": 10211,
       "microbatch": 8,
       "global_batch": 64,
-      "resume_start": 5000,
+      "resume_start": 10000,
       "validation": [
         {
           "step": 1000,
