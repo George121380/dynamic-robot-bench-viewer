@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "episodes": 250,
+  "counts": {
+    "train": 200,
+    "validation": 50
+  },
+  "export_files_sha256_verified": 1500,
+  "original_video_sha256_verified": 250,
+  "manifest_fingerprint": "078008a3da4756fbec740baa8c311047f7b3ffb08599aa3eedbc9d5251019374",
+  "archive_sha256": "47969d0ef09bdf88e145710f8944c484d802ea055e03a8bd33cdf7993fb2b1cf",
+  "pose_max_error_m": 2.0360659547247195e-08,
+  "manifest_fingerprint_verified": true,
+  "browser_checks": [
+    "autoplay at contact minus 1.5 s",
+    "exact contact seek and one-frame increment",
+    "validation split contains 50 episodes",
+    "tool/direction intersection",
+    "empty filter hides stale playback and recovers",
+    "training-window RGB and point labels render",
+    "no browser errors"
+  ]
+}
