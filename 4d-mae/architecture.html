@@ -87,8 +87,8 @@ function render(){const e=$('encoder').value,f=$('fusion').value,train=mode==='t
  s+=box('query',330,664,500,71,'点头 query：已知当前坐标 p₀ + 物理时间 t',['Q 点查过去；Q + K 点共同查未来'],'purple');
  s+=arrow('M830 699 H890','purple');
  s+=`<g data-info="heads" role="button" tabindex="0" aria-label="两个点头" class="node"><rect x="890" y="487" width="240" height="248" rx="14" fill="#fcf9ff" stroke="#cdb8e2"/>${text(910,513,'M₀ → 两个已有点头','tiny')}</g>`;
- s+=box('heads',910,528,200,62,'过去头',['completion_head'],'purple');
- s+=box('heads',910,625,200,62,'未来头',['dynamics_head'],'purple');
+ s+=box('heads',910,528,200,72,'过去头',['completion_head'],'purple');
+ s+=box('heads',910,625,200,72,'未来头',['dynamics_head'],'purple');
  s+=text(1010,717,'v4：F(t) − F(0)','tiny','middle');
  s+=arrow('M1110 559 H1190','purple');s+=arrow('M1110 656 H1160 V640 H1190','purple');s+=arrow('M1160 656 V714 H1190','purple');
  s+=box('past',1190,523,220,74,'遮蔽点：过去',['Q 点 · t < 0 · 权重 1/3'],'purple');
