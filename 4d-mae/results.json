@@ -1,0 +1,146 @@
+{
+  "source_commit": "ec185466ce0a3577dc58efcb42b5ee4088634b45",
+  "summary": "4 组真实数据 × 8 rank 分布式梯度检查通过；14 组独立 100-step 短训完成，raw action MSE、三项点指标及 checkpoint 均已写出。 8 次原生 checkpoint 推理检查通过（Hook 20 / Bowling 80 ticks，仅验证链路）。",
+  "runs": [
+    {
+      "task": "hook",
+      "mode": "random",
+      "arm": "act",
+      "updates": 100,
+      "action_mse": 0.5547331664973726,
+      "masked_past": null,
+      "masked_future": null,
+      "visible_future": null
+    },
+    {
+      "task": "hook",
+      "mode": "random",
+      "arm": "tracks-off",
+      "updates": 100,
+      "action_mse": 0.5494532553970379,
+      "masked_past": null,
+      "masked_future": null,
+      "visible_future": null
+    },
+    {
+      "task": "hook",
+      "mode": "random",
+      "arm": "visible-future",
+      "updates": 100,
+      "action_mse": 0.5534101405793213,
+      "masked_past": 3.904574868972096,
+      "masked_future": 4.505098517334242,
+      "visible_future": 4.855285559760129
+    },
+    {
+      "task": "hook",
+      "mode": "random",
+      "arm": "4d-mae",
+      "updates": 100,
+      "action_mse": 0.5515650835930102,
+      "masked_past": 3.7651387123323348,
+      "masked_future": 4.5054244949606455,
+      "visible_future": 4.855245742108613
+    },
+    {
+      "task": "hook",
+      "mode": "object",
+      "arm": "tracks-off",
+      "updates": 100,
+      "action_mse": 0.5567981251432714,
+      "masked_past": null,
+      "masked_future": null,
+      "visible_future": null
+    },
+    {
+      "task": "hook",
+      "mode": "object",
+      "arm": "visible-future",
+      "updates": 100,
+      "action_mse": 0.5530896765127602,
+      "masked_past": 0.6918662195540529,
+      "masked_future": 0.3635293139991299,
+      "visible_future": 7.143156252525765
+    },
+    {
+      "task": "hook",
+      "mode": "object",
+      "arm": "4d-mae",
+      "updates": 100,
+      "action_mse": 0.558013491587849,
+      "masked_past": 1.7001293449652621,
+      "masked_future": 1.2100300379851583,
+      "visible_future": 7.6325584900549375
+    },
+    {
+      "task": "bowling",
+      "mode": "random",
+      "arm": "act",
+      "updates": 100,
+      "action_mse": 0.07637164867614854,
+      "masked_past": null,
+      "masked_future": null,
+      "visible_future": null
+    },
+    {
+      "task": "bowling",
+      "mode": "random",
+      "arm": "tracks-off",
+      "updates": 100,
+      "action_mse": 0.07481543089560992,
+      "masked_past": null,
+      "masked_future": null,
+      "visible_future": null
+    },
+    {
+      "task": "bowling",
+      "mode": "random",
+      "arm": "visible-future",
+      "updates": 100,
+      "action_mse": 0.07528401268095505,
+      "masked_past": 6.028186806985206,
+      "masked_future": 5.222379868245892,
+      "visible_future": 5.910073256466338
+    },
+    {
+      "task": "bowling",
+      "mode": "random",
+      "arm": "4d-mae",
+      "updates": 100,
+      "action_mse": 0.07542646492976914,
+      "masked_past": 5.195501624842476,
+      "masked_future": 5.274006141497188,
+      "visible_future": 5.959875012468767
+    },
+    {
+      "task": "bowling",
+      "mode": "object",
+      "arm": "tracks-off",
+      "updates": 100,
+      "action_mse": 0.07503693536200505,
+      "masked_past": null,
+      "masked_future": null,
+      "visible_future": null
+    },
+    {
+      "task": "bowling",
+      "mode": "object",
+      "arm": "visible-future",
+      "updates": 100,
+      "action_mse": 0.07495671518800665,
+      "masked_past": 1.774102134822897,
+      "masked_future": 1.155388356324336,
+      "visible_future": 8.632662206438605
+    },
+    {
+      "task": "bowling",
+      "mode": "object",
+      "arm": "4d-mae",
+      "updates": 100,
+      "action_mse": 0.07529105542704066,
+      "masked_past": 1.5867727182719844,
+      "masked_future": 1.9712034275597843,
+      "visible_future": 9.383739475440695
+    }
+  ]
+}
