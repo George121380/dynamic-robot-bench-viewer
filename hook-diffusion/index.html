@@ -10,6 +10,6 @@
 <div class="transport"><button id="restart">从头播放</button><button id="end">看最后一帧</button><label>播放速度 <select id="speed"><option value="1">1×</option><option value="2" selected>2×</option><option value="4">4×</option><option value="8">8×</option></select></label><span id="position"></span></div>
 <div id="strip"></div><p id="selectionNote" class="note"></p></section>
 <section id="results"><div class="heading"><h2>完整评估记录</h2><p>所有完成的回放都可查看，失败样本保留。</p></div><div id="formalSummary" hidden></div><div id="rates"></div><div id="gallery"></div></section>
-<details><summary>训练曲线与复现配置</summary><div class="technical"><h3>训练与验证的扩散噪声 MSE</h3><p class="note">横轴：优化器更新次数；纵轴：噪声 MSE（对数刻度）。训练线为 20 次更新的均值，验证点来自固定 1,024 个验证窗口。低 loss 不等于任务成功。</p><canvas id="lossChart" aria-label="扩散噪声训练与验证MSE"></canvas><div class="chart-legend"><span>— 训练 MSE</span><span>● EMA 验证 MSE</span></div><pre id="configuration"></pre></div></details>
+<details><summary>训练曲线与复现配置</summary><div class="technical"><h3>训练与验证的扩散噪声 MSE</h3><p class="note">横轴：优化器更新次数；纵轴：噪声 MSE（对数刻度）。训练线为 20 次更新的均值，验证点来自固定 1,024 个验证窗口。低 loss 不等于任务成功。</p><canvas id="lossChart" aria-label="扩散噪声训练与验证MSE"></canvas><div class="chart-legend"><span>— 训练 MSE</span><span>● EMA 验证 MSE</span></div><div id="actionDiagnostics" hidden></div><pre id="configuration"></pre></div></details>
 <footer><p id="provenance"></p><p>成功条件：抓住工具，用工具接触方块，方块整体进入绿色目标圈并连续驻留 0.5 秒；机器人直接接触方块或方块掉落均判失败。最长 1,680 步（84 秒）。</p></footer>
 </main><script src="app.js"></script></body></html>
