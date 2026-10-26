@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="UnifiedACT 当前代码架构：ACT 策略、可配置 flow encoder / fusion，以及 observation-only 4D MAE。">
+<title>UnifiedACT · 当前模型架构</title>
+<style>
+:root{--ink:#172c40;--muted:#617286;--line:#dbe4ec;--blue:#2866b2;--green:#177c70;--purple:#7b51ac;--paper:#f5f7fa}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}main{max-width:1380px;margin:auto;padding:30px 32px 40px}header{display:flex;justify-content:space-between;gap:28px;align-items:center}.eyebrow{font:11px/1.6 ui-monospace,monospace;letter-spacing:1.6px;color:var(--muted)}h1{margin:8px 0 5px;font-size:31px;letter-spacing:-.7px;line-height:1.35}.intro{margin:0;color:var(--muted);font-size:15px}.status{white-space:nowrap;font-size:12px;background:#e8f2ed;color:#346c51;padding:7px 12px;border-radius:20px}a{color:var(--blue);text-underline-offset:4px}.toolbar{display:flex;align-items:center;gap:18px;justify-content:space-between;flex-wrap:wrap;margin:24px 0 12px}.tabs{display:flex;padding:4px;background:#e7edf3;border-radius:10px;gap:4px}button,select{font:inherit;color:inherit;cursor:pointer}button{border:0;background:none;padding:8px 16px;border-radius:7px}.tabs button[aria-selected=true]{background:white;box-shadow:0 2px 6px #23354e13;font-weight:600;color:var(--blue)}button:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #77aade;outline-offset:3px}.controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.controls label{font-size:12px;color:var(--muted)}select{display:inline-block;margin-left:6px;border:1px solid #ced9e4;border-radius:6px;background:#fff;padding:6px 10px;font-size:13px}.controls[aria-disabled=true]{opacity:.45}button.download{border:1px solid #ced9e4;background:white;padding:6px 12px;font-size:12px}.caption{display:flex;justify-content:space-between;gap:20px;margin:0 2px 8px;font-size:12px;color:var(--muted)}.board{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 8px 32px #21384a04}.diagram-scroll{overflow-x:auto}#diagram{display:block;width:100%;min-width:980px;height:auto}.legend{display:flex;gap:22px;flex-wrap:wrap;border-top:1px solid #edf0f4;padding:12px 22px;font-size:12px;color:var(--muted)}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}.detail{display:flex;gap:24px;align-items:start;padding:16px 22px;background:#f9fbfd;border-top:1px solid #edf0f4}.detail-title{flex:0 0 220px}.detail-title strong{display:block;font-size:15px}.detail-title code{font-size:11px;color:var(--muted);overflow-wrap:anywhere}.detail p{margin:0;max-width:1000px;font-size:13px}.notes{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin:20px 0}.note{padding:18px 20px;border:1px solid var(--line);border-radius:10px;background:#fff}.note h2{font-size:15px;margin:0 0 9px}.note p{font-size:13px;margin:6px 0;color:#53677c}.formula{font:14px/1.7 ui-monospace,monospace;color:var(--purple);padding:6px 0}.small{font-size:12px;color:var(--muted)}details{border-top:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:600;font-size:14px}details p{max-width:1100px;font-size:13px;color:var(--muted)}code{font:12px ui-monospace,monospace}pre{padding:15px 18px;border-radius:8px;background:#eaf0f5;overflow-x:auto;font:12px/1.7 ui-monospace,monospace}.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:var(--muted);font-size:12px;margin-top:18px}#modeNote{min-height:22px} @media(max-width:900px){main{padding:22px 16px}header{align-items:start}h1{font-size:25px}.status{display:none}.notes{grid-template-columns:1fr}.detail{display:block}.detail-title{margin-bottom:8px}.caption{display:block}.caption span{display:block}.toolbar{gap:12px}.controls{gap:8px}.footer{display:block}}@media print{.toolbar,.footer{display:none}main{padding:0;max-width:none}.board{box-shadow:none}.notes{break-inside:avoid}#diagram{min-width:0}details{display:none}}
+</style>
+</head>
+<body><main>
+<header><div><div class="eyebrow">UNIFIEDACT / IMPLEMENTED ARCHITECTURE / CORE 500D716</div><h1>UnifiedACT 当前模型架构</h1><p class="intro">当前实现：原生 ACT 策略 + 可替换的 flow 编码与融合 + 4D MAE 辅助监督。</p></div><span class="status">按实际代码核对 · 2026-10-26</span></header>
+<div class="toolbar"><div class="tabs" role="tablist" aria-label="架构视图"><button role="tab" id="trainingTab" aria-selected="true" data-mode="training">训练 · 4D MAE</button><button role="tab" aria-selected="false" data-mode="inference">推理 · Tracks</button><button role="tab" aria-selected="false" data-mode="baseline">ACT baseline</button></div><div class="controls" id="components"><label>Flow encoder<select id="encoder"><option value="mlp">MLP（默认）</option><option value="tcn">Temporal Conv</option><option value="temporal_transformer">Temporal Transformer</option></select></label><label>融合<select id="fusion"><option value="cross_attention">Cross-attention（默认）</option><option value="add">Add</option><option value="film">FiLM</option></select></label></div><button class="download" id="download">下载 SVG</button></div>
+<div class="caption"><span id="modeNote">两次前向，共享编码与融合权重；策略 memory 与辅助 memory 分别计算。</span><span>点击模块查看细节 · 控件仅切换图示，不修改 config</span></div>
+<section class="board" aria-label="模型架构图"><div class="diagram-scroll"><svg id="diagram" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svgTitle svgDesc"></svg></div><div class="legend"><span><i class="dot" style="background:#2866b2"></i>ACT 策略路径</span><span><i class="dot" style="background:#177c70"></i>Flow 条件 / 可消融部件</span><span><i class="dot" style="background:#7b51ac"></i>4D MAE 训练辅助路径</span><span>实线箭头：前向数据流；梯度机制见下方</span></div><div class="detail" aria-live="polite"><div class="detail-title"><strong id="detailTitle"></strong><code id="detailSource"></code></div><p id="detailText"></p></div></section>
+<div class="notes">
+<article class="note"><h2>① 遮蔽的是轨迹历史</h2><p><b>random</b>：从当前可见场景表面选 K + Q 点，K 点提供历史，Q 点隐藏历史。</p><p><b>object</b>：隐藏一个物体 / 工具的全部点历史；K 点来自其他实体，Q 个 query 来自被遮蔽实体。</p><p>Q 点的当前坐标仍是已知 query anchor；RGB 保留完整场景。物体 ID 只用于采样与诊断。</p></article>
+<article class="note"><h2>② 一个过去头，一个共享未来头</h2><div class="formula">d̂(t) = F(p₀, t, M₀) − F(p₀, 0, M₀)</div><p>v4 在 FP32 中相减，保证 d̂(0) = 0。预测的是相对当前坐标的米制位移。</p><p>三项 Smooth L1 各自按窗口内有效 XYZ 标量归一化，再平均窗口；默认权重各 1/3。未来头一次查询 Q + K 点，再拆分两类输出。</p></article>
+<article class="note"><h2>③ 轨迹监督通过梯度影响策略</h2><p>动作目标保留原生 ACT：标准化动作的 L1 + 10 × KL。完整 MAE 训练使用 <code>completion="bounded"</code>。</p><p>跨 rank 归约原始梯度后，辅助梯度在共享参数上的范数上限为主梯度的 0.1 倍（裁剪前）；点头单独更新。</p><p>选模仍看 <b>raw action chunk MSE</b>。默认每 100 updates 验证、每 1000 updates 保存。</p></article>
+</div>
+<details><summary>配置入口与公平消融</summary><p>两项部件开关作用于同一输入格式和同一融合位置；默认 MLP + cross-attention。切换部件不会改变其余共享参数的配对初始化。它们是数据与训练配方配对，并非等参数量。H（历史帧数）、K（输入点数）、Q（遮蔽 query 数）、S（动作 chunk 长度）由任务配置决定。</p><pre id="config"></pre><p>输入未来预测对照：将三个点损失权重设为 <code>0 / 0 / 1</code>；Tracks OFF 关闭辅助损失。<code>completion="detached"</code> 只训练点头，辅助梯度不回传观察编码。</p></details>
+<details><summary>当前信息边界与保留接口</summary><p>图示对应当前 v4 / <code>rgb_history=false</code> 配方：仅输入当前 RGB 与当前状态，历史仅来自 flow。历史 v2 的 RGB-history 分支仍保留，但不在此配方启用。输入点特征为 [当前 XYZ / spatial scale，历史相对位移 / motion scale，物理时间，valid]，共 8 维；不输入未来轨迹或物体 ID。</p><p>Hook / Bowling 的点历史由当前 RGB-D 表面和仿真器刚体 pose 恢复，属于 oracle material tracks，包含过去被遮挡的表面；还不是视觉 tracker。全场景采样含物体、工具、机器人、桌面与背景，按候选像素均匀采样。推理取消人为物体遮蔽，保持 K 点输入预算。</p><p><code>predict_dynamics()</code> 仍保留：预先给定的命令经过 <code>command_encoder</code> 后，仅进入动力学读出，使用时间 mask；本页的策略 MAE 不调用该接口，也不训练命令编码器。当前未来头学习专家轨迹中的观察条件续演，不代表已经学会动作条件动力学。</p><p><code>model/</code> 与 <code>benchmark/</code> 平级；模型不读取任务名称。上游 ACT、既有 <code>act_extension.py</code> 和 patch 保持原样。当前 4D MAE 复用已有两个点头，未新增可学习参数。</p></details>
+<footer class="footer"><span>源码核对：<code>unified_act.py · conditioning.py · act_extension.py · policy_aux.py · optimization.py</code></span><a href="./">查看真实点采样与调试结果 ↗</a></footer>
+</main>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+let mode = 'training';
+const names = {mlp:'Track MLP',tcn:'Temporal Conv',temporal_transformer:'Temporal Transformer',cross_attention:'Cross-attention',add:'Pooled Add',film:'Pooled FiLM'};
+const palette = {blue:['#f0f6ff','#a9c5e6','#2866b2'],green:['#eff9f5','#9bcdbf','#177c70'],purple:['#f8f3fc','#cdb8e2','#7b51ac'],neutral:['#f8fafc','#d7e0e9','#5e7388']};
+const info = {
+ latent:['推理时的 latent','act_extension.py · forward','部署时不调用 CVAE posterior，latent 固定为 z=0。当前 RGB、state 与保留点历史经过策略路径生成动作；不执行辅助观察 pass 或点头。'],
+ observation:['当前观察','unified_act.py · _native_batch','当前多相机 RGB 做 ImageNet 归一化，经 ACT CNN backbone 与图像投影形成空间 token；当前机器人状态使用数据集统计标准化并线性投影。当前配方不输入过去 RGB。'],
+ posterior:['ACT 训练专用的 CVAE','act_extension.py · forward','训练策略时，当前 state 与专家未来动作 chunk 经原生 VAE encoder 得到 μ / logσ²，再重参数采样 z。KL 约束此分布。专家动作仅进入这条原生训练路径及动作 loss，不进入下方辅助观察 pass。推理使用 z = 0。'],
+ encoder:['ACT 观察编码器','act_extension.py · forward','将视觉空间 token、state token 与 latent token 拼接，加位置编码后经过 ACT Transformer encoder。图中两份 encoder 表示同一模块的两次调用，不是两套模型；原生配置默认 D=512、4 个 encoder 层。'],
+ prior:['辅助 pass：固定 z = 0','unified_act.py · observation_memory','重新执行一次共享的观察编码与 flow 融合，以 prior=True / return_memory=True 返回 M₀。该 pass 不接收专家未来动作，也不运行 ACT action decoder。两个点头共用这一份 M₀。'],
+ tracks:['保留的点历史','unified_act.py · _point_tokens','输入 track_xyz 为 [B,K,H,3]，结合 valid 与物理时间形成 [B,K,H,8]：当前 XYZ 3 维、相对当前的历史位移 3 维、时间 1 维、valid 1 维。无效时间槽清零。每点生成一个 D 维 token；不使用点索引或物体 ID embedding。'],
+ flow:['可配置 Flow encoder','conditioning.py',''],
+ fusion:['ACT memory 后融合','unified_act.py · _fuse_points',''],
+ decoder:['原生动作 decoder 与 head','act_extension.py · forward','S 个零初始化内容 query 配合学习到的位置 embedding，cross-attend 融合后的 observation memory。沿用原生 Transformer decoder 与线性 action_head，输出 S 步标准化动作；之后还原至原动作单位。默认 decoder 为 1 层。'],
+ actions:['动作 chunk','unified_act.py · policy','输出 [B,S,action_dim]。部署时由任务执行层按 execution.n_action_steps 执行动作前缀，再读取新观察重规划。点预测不作为 action decoder 的额外输入，推理不执行两个点头。'],
+ actionloss:['策略主目标','unified_act.py · policy','保留原生标准化动作 L1 + kl_weight × KL，默认 kl_weight=10。训练 L1 对 padding 置零后求 mean。验证选模使用零 prior 下原始动作单位的 raw_action_chunk_mse，并只以有效标量计数归一化。'],
+ sampling:['场景点采样与 mask','benchmark/common/point_sampling.py','random 按当前可见表面候选像素无放回抽取 K+Q 点；object 从可用任务物体 / 工具中选一个，完全排除它的历史作为上下文，Q 个 query 在该实体上采样。seed + episode/tick 决定固定 mask，跨 epoch / 方法一致。ACT baseline 不打开或采样点数据。'],
+ query:['点头的查询，不是 actor 输入','policy_aux.py · predictions','每个 query 是已知当前坐标 p₀ 与物理时间 t。过去头查询 Q 个遮蔽点；未来头拼接 Q 个遮蔽点与 K 个输入点，一次解码后拆分。遮蔽点历史与所有未来轨迹只作为监督标签。'],
+ heads:['两个已有 PointDecoder','unified_act.py · PointDecoder','completion_head 与 dynamics_head 结构相同、权重独立。每个 XYZ/time query 由 MLP 映射至 128 维，cross-attend 投影后的 M₀，再经残差、LayerNorm、FFN 与线性 XYZ 输出。点 query 之间没有 self-attention；未来两类点共享同一个 dynamics_head。v4 以 F(t)−F(0) 读出位移。'],
+ past:['遮蔽点：过去重建','policy_aux.py · objective','用 completion_head 预测遮蔽 Q 点的 t<0 历史位移；当前锚点已知，不计入过去目标。Smooth L1 以 motion_scale_m 归一化，独立排除无效标签。默认占辅助目标 1/3。'],
+ future:['遮蔽点：未来预测','policy_aux.py · objective','用 dynamics_head 从观察 memory 预测遮蔽 Q 点在 t>0 的位移。这是观察条件的专家轨迹续演；没有预先输入专家未来动作。默认占辅助目标 1/3。'],
+ visible:['保留点：未来预测','policy_aux.py · objective','同一个 dynamics_head 预测输入 K 点在 t>0 的位移。其历史可见，未来不可见；与遮蔽点未来使用相同时间网格。默认占辅助目标 1/3，单独消融时可以设为 1。'],
+ baseline:['纯 ACT baseline','unified_act.py · policy','condition=act、rgb_history=false、completion=off。没有 flow 输入、场景点提取、融合或点头执行。推理 z=0；训练仍使用原生 CVAE posterior 与 L1+10KL。标准路径直接调用上游 ACT.forward。']
+};
+function showInfo(id){let [title,source,body]=info[id];if(id==='flow'){const e=$('encoder').value;title=names[e];body={mlp:'把每点 H×8 历史展平：MLP(H×8 → 128 → 128 → D)，中间 ReLU。它是原始默认编码器；输出 [B,K,D]。',tcn:'每点时间序列经过两层因果 Conv1d（8→128→128，kernel=3，dilation=1/2）与 ReLU；每层清零无效槽，最后 valid masked mean 与 Linear→D。',temporal_transformer:'每帧 8 维特征投影到 128 维，经过两层 4-head temporal Transformer（FFN=512、dropout=0），仅在单个点的已观察历史内做 attention；valid masked mean 后投影到 D。物理时间已经是输入特征。'}[e];}if(id==='fusion'){const f=$('fusion').value;title=names[f]+' · 后置融合';body={cross_attention:'Q = LayerNorm(ACT memory)，K/V = LayerNorm(point tokens)。memory 中每个 token 可独立关注全部有效点 token。融合在 ACT encoder 之后、action decoder / point heads 之前。',add:'先对 LayerNorm(point tokens) 做 valid masked mean，再线性投影为共享 context，广播加到每个 memory token。融合位置与默认方案相同。',film:'对归一化点 token 做 valid masked mean，线性生成 scale / shift；context = scale × LayerNorm(memory) + shift。融合位置与默认方案相同。'}[f]+' 所有方案统一为 M′ = M + tanh(g) × context；gate 初始值为 0.1，可学习。全空点集不会改变 memory。';}$('detailTitle').textContent=title;$('detailSource').textContent=source;$('detailText').textContent=body;}
+function text(x,y,value,cls='sub',anchor='start'){return `<text x="${x}" y="${y}" class="${cls}" text-anchor="${anchor}">${value}</text>`;}
+function box(id,x,y,w,h,title,lines=[],color='neutral'){const [fill,stroke]=palette[color];return `<g data-info="${id}" role="button" tabindex="0" aria-label="${title}" class="node"><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="12" fill="${fill}" stroke="${stroke}"/>${text(x+18,y+31,title,'title')}${lines.map((line,i)=>text(x+18,y+58+i*23,line)).join('')}</g>`;}
+function arrow(d,color='blue',bridge=false){return `${bridge?`<path d="${d}" fill="none" stroke="white" stroke-width="9"/>`:''}<path d="${d}" fill="none" stroke="${palette[color][2]}" stroke-width="2" stroke-linejoin="round" marker-end="url(#${color})"/>`;}
+function render(){const e=$('encoder').value,f=$('fusion').value,train=mode==='training',base=mode==='baseline',height=train?780:500;let s=`<title id="svgTitle">UnifiedACT ${train?'4D MAE 训练':base?'ACT baseline':'Tracks 推理'}架构</title><desc id="svgDesc">当前 RGB 和状态进入 ACT encoder，保留点历史经可配置 flow encoder，在 ACT memory 之后融合。训练时另用共享权重执行 z=0 的辅助 pass，经过去与未来两个点头产生三项轨迹监督。推理仅运行策略路径。</desc><defs>${Object.entries(palette).map(([k,v])=>`<marker id="${k}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="${v[2]}"/></marker>`).join('')}</defs><style>text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',sans-serif;fill:#172c40}.title{font-size:20px;font-weight:600}.sub{font-size:16px;fill:#536b80}.tiny{font-size:14px;fill:#617286}.label{font-size:15px;fill:#617286;font-weight:600;letter-spacing:.5px}.accent{font-size:17px;fill:#7b51ac;font-weight:600}.node{cursor:pointer}.node:hover rect,.node:focus rect{stroke:#233f5c;stroke-width:2}.node:focus{outline:none}</style><rect width="1440" height="${height}" fill="white"/>`;
+ if(base){s+=text(30,40,'BASELINE / 原生 ACT · 推理视图','label');s+=box('baseline',330,60,500,64,'z = 0 · 没有点采样、融合或轨迹辅助',[],'neutral');s+=arrow('M450 124 V180');s+=arrow('M260 232 H330');s+=arrow('M560 232 H760');s+=arrow('M1000 232 H1190');s+=box('observation',30,180,230,104,'当前 RGB + 状态',['图像 → CNN → tokens','state → 标准化 → token'],'blue');s+=box('encoder',330,180,230,104,'ACT 观察编码',['视觉 + state + latent','Transformer encoder'],'blue');s+=box('decoder',760,180,240,104,'ACT 动作 decoder',['S 个学习位置 query','原生 decoder + action head'],'blue');s+=box('actions',1190,180,220,104,'动作 chunk',['反标准化 → 原动作单位','[B, S, action_dim]'],'blue');s+=text(30,353,'训练时：专家动作与 state → 原生 CVAE posterior → z；动作目标为 L1 + 10 × KL。','sub');s+=text(30,391,'condition = act · completion = off · rgb_history = false','sub');s+=text(30,435,'当前标准路径直接调用上游 ACT.forward；图示不展开已保留的历史 RGB 配方。','tiny');}
+ else{
+ s+=text(30,40,train?'TRAINING / 当前 v4 · completion = bounded':'INFERENCE / 当前 v4 · z = 0','label');
+ s+=box(train?'posterior':'latent',330,60,500,64,train?'ACT 训练：qφ(z | state, 专家动作 a*) → z':'策略推理：固定 z = 0',[],train?'blue':'neutral');s+=arrow('M445 124 V160');
+ s+=arrow('M260 212 H330');if(train)s+=arrow('M294 212 V567 H330','purple');
+ s+=arrow('M560 212 H650');s+=arrow('M830 212 H900');s+=arrow('M1110 212 H1190');
+ s+=arrow('M260 385 H330','green',true);s+=arrow('M560 385 H605 V294 H740 V264','green');
+ s+=box('observation',30,160,230,104,'当前 RGB + 状态',['图像 → CNN → tokens','state → 标准化 → token'],'blue');
+ s+=box('encoder',330,160,230,104,'ACT 观察编码',['视觉 + state + latent','Transformer encoder'],'blue');
+ s+=box('fusion',650,160,180,104,names[f],['归一化 + 残差 gate','在 encoder 后融合'],'green');
+ s+=box('decoder',900,160,210,104,'ACT 动作 decoder',['S 个学习位置 query','原生 action head'],'blue');
+ s+=box('actions',1190,160,220,104,'动作 chunk',['反标准化 → 原动作单位','[B, S, action_dim]'],'blue');
+ s+=box('tracks',30,330,230,110,'K 个保留点的历史',['当前锚点 + 历史位移','时间 + valid · [B,K,H,8]'],'green');
+ s+=box('flow',330,330,230,110,names[e],['每个点独立编码时间历史','输出 K 个 D 维点 token'],'green');
+ s+=text(588,365,'point tokens','tiny');s+=text(586,198,'memory','tiny');
+ if(train){
+ s+=arrow('M1300 264 V330');s+=box('actionloss',1190,330,220,86,'策略主目标',['标准化 L1 + 10 × KL'],'blue');
+ s+=text(680,338,'共享 ACT 编码与点融合权重','accent');s+=text(680,366,'策略 pass：z ∼ posterior','sub');s+=text(680,393,'辅助 pass：z = 0，重新计算 M₀','sub');s+=text(680,420,'点预测不回灌 action decoder','tiny');
+ s+=arrow('M605 385 V480 H740 V515','green');s+=arrow('M560 567 H650','purple');s+=arrow('M830 567 H890','purple');
+ s+=text(330,493,'OBSERVATION-ONLY PASS / z = 0','label');
+ s+=box('prior',330,515,230,104,'ACT 观察编码',['与上方共享权重','不接收专家未来动作'],'purple');
+ s+=box('fusion',650,515,180,104,names[f],['与上方共享权重','得到观察 memory M₀'],'green');
+ s+=arrow('M145 515 V440','green');s+=arrow('M260 697 H330','purple');
+ s+=box('sampling',30,515,230,220,'场景点采样 / 遮蔽',['random：隐藏部分点','object：隐藏整物体历史','保留 K 点 → 输入历史','遮蔽 Q 点 → 监督查询','RGB 仍保留完整场景'],'neutral');
+ s+=box('query',330,664,500,71,'点头 query：已知当前坐标 p₀ + 物理时间 t',['Q 点查过去；Q + K 点共同查未来'],'purple');
+ s+=arrow('M830 699 H890','purple');
+ s+=`<g data-info="heads" role="button" tabindex="0" aria-label="两个点头" class="node"><rect x="890" y="487" width="240" height="248" rx="14" fill="#fcf9ff" stroke="#cdb8e2"/>${text(910,513,'M₀ → 两个已有点头','tiny')}</g>`;
+ s+=box('heads',910,528,200,62,'过去头',['completion_head'],'purple');
+ s+=box('heads',910,625,200,62,'未来头',['dynamics_head'],'purple');
+ s+=text(1010,717,'v4：F(t) − F(0)','tiny','middle');
+ s+=arrow('M1110 559 H1190','purple');s+=arrow('M1110 656 H1160 V640 H1190','purple');s+=arrow('M1160 656 V714 H1190','purple');
+ s+=box('past',1190,523,220,74,'遮蔽点：过去',['Q 点 · t < 0 · 权重 1/3'],'purple');
+ s+=box('future',1190,609,220,64,'遮蔽点：未来',['Q 点 · t > 0 · 权重 1/3'],'purple');
+ s+=box('visible',1190,687,220,64,'保留点：未来',['K 点 · t > 0 · 权重 1/3'],'purple');
+ }else{
+ s+=text(670,350,'不再人为遮蔽一个物体','accent');s+=text(670,380,'从所有实体采样相同 K 点预算；只用过去与当前。','sub');s+=text(670,410,'不运行 completion_head / dynamics_head。','sub');s+=text(670,440,'执行动作前缀 → 新观察 → 再次预测动作 chunk。','sub');
+ }
+ }
+ $('diagram').setAttribute('viewBox',`0 0 1440 ${height}`);$('diagram').innerHTML=s;
+ if(base)$('svgDesc').textContent='纯 ACT：当前 RGB 和状态经 ACT encoder 与动作 decoder 输出动作 chunk；无点采样、融合或辅助轨迹分支。';
+ else if(!train)$('svgDesc').textContent='Tracks 推理：当前 RGB / state 与保留点历史，分别经 ACT encoder 和 flow encoder，在 memory 后融合；z=0，输出动作 chunk，不执行点头。';
+ $('modeNote').textContent=train?'两次前向，共享编码与融合权重；策略 memory 与辅助 memory 分别计算。':base?'纯 ACT 路径：不读取点数据；这里展示 z=0 的部署推理。':'部署只经过策略路径：当前观察 + 保留点历史 → 动作。';
+ $('components').setAttribute('aria-disabled',String(base));$('encoder').disabled=base;$('fusion').disabled=base;
+ $('diagram').querySelectorAll('[data-info]').forEach(n=>{n.addEventListener('click',()=>showInfo(n.dataset.info));n.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();showInfo(n.dataset.info)}})});
+ $('config').textContent=JSON.stringify({model:{schema:'unified-act-v4',rgb_history:false,condition:base?'act':'tracks',flow_encoder:base?'mlp':e,flow_fusion:base?'cross_attention':f},completion:base?'off':'bounded',...(!base?{policy_future:{schema:'observation-4d-mae-v1',past_weight:1/3,future_weight:1/3,visible_future_weight:1/3},data:{point_sampling:{mode:'object'}}}:{})},null,2)+'\n// 配置片段：完整运行还需 labels / manifest / seed 等数据字段。';
+ showInfo(base?'baseline':train?'prior':'actions');
+}
+document.querySelectorAll('[data-mode]').forEach(button=>button.addEventListener('click',()=>{mode=button.dataset.mode;document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-selected',String(b===button)));render()}));
+for(const id of ['encoder','fusion'])$(id).addEventListener('change',()=>{render();showInfo(id==='encoder'?'flow':'fusion')});
+$('download').addEventListener('click',()=>{const svg=$('diagram').cloneNode(true);svg.setAttribute('width','1440');svg.setAttribute('height',mode==='training'?'780':'500');const url=URL.createObjectURL(new Blob([new XMLSerializer().serializeToString(svg)],{type:'image/svg+xml;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download=`unified-act-${mode}-500d716.svg`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
+render();
+</script></body></html>
