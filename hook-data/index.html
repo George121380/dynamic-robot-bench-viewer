@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hook · 看实际数据</title><link rel="stylesheet" href="data-browser.css"></head>
 <body><main>
-<header><div><p class="eyebrow">HOOKPULL V2 / DATA BROWSER</p><h1>看实际采集的数据</h1><p class="intro">从拿起工具，到接触方块，再拉进绿色目标圈。这里的每一条，都来自已录取的正式数据集。</p></div><a class="quiet-link" href="DATA-BROWSER.zh-CN.md">数据说明 ↗</a></header>
+<header><div><p class="eyebrow">HOOKPULL V2 / DATA BROWSER</p><h1>看实际采集的数据</h1><p class="intro">从拿起工具，到接触方块，再拉进绿色目标圈。这里的每一条，都来自已录取的正式数据集。</p></div><div class="header-links"><a class="quiet-link" href="../hook-diffusion/">看 Diffusion Policy 推理 ↗</a><a class="quiet-link" href="DATA-BROWSER.zh-CN.md">数据说明 ↗</a></div></header>
 <div class="scope"><b>250 条</b><span>200 训练 · 50 验证</span><span>8 种工具 · 8 个方向</span><span>20 Hz 原生记录</span></div>
 <section class="filters" aria-label="数据筛选"><div class="split-buttons" role="group" aria-label="数据划分"><button class="active" data-split="all">全部</button><button data-split="train">训练集 200</button><button data-split="validation">验证集 50</button></div><label>工具 <select id="toolFilter"><option value="all">全部工具</option></select></label><label>移动方向 <select id="directionFilter"><option value="all">全部方向</option></select></label><span id="filterCount"></span></section>
 <section class="viewer" aria-label="实际数据回放">

@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hook · Diffusion Policy 实际效果</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><div><p class="eyebrow">HOOKPULL V2 / DIFFUSION POLICY</p><h1>学到的策略，实际怎么做？</h1><p id="intro">原版 DP-CNN，在原生 Hook 环境中闭环执行。</p></div><nav><a href="../hook-data/">看训练数据 ↗</a><a href="manifest.json">下载结果记录 ↗</a></nav></header>
+<div class="protocol"><b>当前 RGB ＋ 机器人状态</b><span>预测 40 步 · 每次执行 1 步</span><span>100 步 DDPM · 20 Hz 仿真控制</span></div>
+<p class="status" id="status"></p>
+<div class="filters"><label>训练种子 <select id="seed"></select></label><label>评估划分 <select id="split"></select></label><label>训练步数 <select id="checkpoint"></select></label><label>任务分组 <select id="group"><option value="all">全部</option><option value="id">同分布 ID</option><option value="new_tool">新工具</option><option value="new_position">新位置</option></select></label><label>结果 <select id="outcome"><option value="all">成功与失败</option><option value="success">成功</option><option value="failure">失败</option></select></label><span id="count"></span></div>
+<section class="player"><div class="player-title"><div><p id="caseLabel" class="eyebrow"></p><h2 id="caseTitle"></h2></div><div class="navigation"><button id="previous" aria-label="上一条">←</button><select id="episode" aria-label="选择闭环回放"></select><button id="next" aria-label="下一条">→</button></div></div>
+<div class="replay"><div class="screen"><video id="video" controls autoplay loop muted playsinline preload="metadata"></video><span id="badge"></span></div><aside><h3>这一条完成到哪一步</h3><ol id="stages"></ol><p id="reason"></p><dl id="facts"></dl><a id="download" download>下载完整原始回放 ↓</a><p><a id="teacher" target="_blank" rel="noopener" hidden>对照同一初态的专家示范 ↗</a></p><p class="note">画面来自原生相机，原始分辨率 128 × 128。策略只看 RGB 和机器人状态；这里的任务指标由环境计算。</p></aside></div>
+<div class="transport"><button id="restart">从头播放</button><button id="end">看最后一帧</button><label>播放速度 <select id="speed"><option value="1">1×</option><option value="2" selected>2×</option><option value="4">4×</option><option value="8">8×</option></select></label><span id="position"></span></div>
+<div id="strip"></div><p id="selectionNote" class="note"></p></section>
+<section id="results"><div class="heading"><h2>完整评估记录</h2><p>所有完成的回放都可查看，失败样本保留。</p></div><div id="formalSummary" hidden></div><div id="rates"></div><div id="gallery"></div></section>
+<details><summary>训练曲线与复现配置</summary><div class="technical"><h3>训练与验证的扩散噪声 MSE</h3><p class="note">横轴：优化器更新次数；纵轴：噪声 MSE（对数刻度）。训练线为 20 次更新的均值，验证点来自固定 1,024 个验证窗口。低 loss 不等于任务成功。</p><canvas id="lossChart" aria-label="扩散噪声训练与验证MSE"></canvas><div class="chart-legend"><span>— 训练 MSE</span><span>● EMA 验证 MSE</span></div><pre id="configuration"></pre></div></details>
+<footer><p id="provenance"></p><p>成功条件：抓住工具，用工具接触方块，方块整体进入绿色目标圈并连续驻留 0.5 秒；机器人直接接触方块或方块掉落均判失败。最长 1,680 步（84 秒）。</p></footer>
+</main><script src="app.js"></script></body></html>

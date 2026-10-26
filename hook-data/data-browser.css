@@ -4,3 +4,5 @@
 @media(min-width:1001px){main{padding-top:22px}.scope{margin:15px 0 10px;padding-bottom:12px}.filters{margin:14px 0}.viewer{padding:18px}.viewer-head{margin-bottom:13px}.video-wrap,#scene{height:min(47vh,460px);aspect-ratio:auto}.legend{margin:9px 0 11px}.transport{padding-top:12px}}
 
 .viewer.empty>:not(#loadError){display:none}.viewer.empty #loadError{margin:0}
+
+.header-links{display:flex;gap:20px;flex-wrap:wrap;justify-content:flex-end}
