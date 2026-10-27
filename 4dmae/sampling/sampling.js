@@ -1,6 +1,7 @@
 'use strict';
 const $=id=>document.getElementById(id);
 const colors={c:'#2167ae',target:'#c03639',other:'#b37616',removed:'#8a418f'};
+const visible=category=>$('show-'+category).checked;
 let data,current,epoch,frame=15,playing=false,last=0,images=new Map(),hits={};
 const nameTarget=n=>({1:'cube',2:'tool',3:'gripper'}[n]||'none');
 const fmt=n=>Number(n).toFixed(4);
@@ -37,32 +38,35 @@ function trace(ctx,track,t,end,color,valid=null,dash=false){
 }
 function paintB1(){
   const {ctx,t}=base('b1'),end=$('future').checked?Math.max(0,frame-15):0;
-  current.b1.query.forEach((track,i)=>{const color=i<32?colors.target:colors.other;if(end)trace(ctx,track,t,end,color,null,true);const p=t.point(track[end]);marker(ctx,p,color,'triangle',3.7);hits.b1.push({p,type:'B1 Q',i,body:current.b1.objects[i],xyz:current.b1.query_xyz[i][end],delta:distance(current.b1.query_xyz[i][0],current.b1.query_xyz[i][end])});});
+  current.b1.query.forEach((track,i)=>{const category=i<32?'target':'other';if(!visible(category))return;const color=colors[category];if(end)trace(ctx,track,t,end,color,null,true);const p=t.point(track[end]);marker(ctx,p,color,'triangle',3.7);hits.b1.push({p,type:'B1 Q',i,body:current.b1.objects[i],xyz:current.b1.query_xyz[i][end],delta:distance(current.b1.query_xyz[i][0],current.b1.query_xyz[i][end])});});
 }
 function paintB5(mode){
   const {ctx,t}=base(mode,true),v=epoch[mode],cf=Math.min(frame,15),qf=$('future').checked?frame:15;
   v.condition.forEach((track,i)=>{
+    const refill=mode==='holdout'&&!epoch.scene.c_pixel.includes(v.c_pixel[i]);
+    if(!visible(refill?'refill':'c'))return;
     trace(ctx,track,t,cf,colors.c,v.valid);
     if(!v.valid[cf])return;
     const p=t.point(track[cf]);marker(ctx,p,colors.c);
-    const refill=mode==='holdout'&&!epoch.scene.c_pixel.includes(v.c_pixel[i]);
     if(refill){ctx.save();ctx.strokeStyle=colors.c;ctx.lineWidth=2;ctx.beginPath();ctx.arc(...p,9,0,Math.PI*2);ctx.stroke();ctx.restore();}
     hits[mode].push({p,type:refill?'C (refilled)':'C',i,body:v.c_bodies[i],pixel:v.c_pixel[i],xyz:v.condition_xyz[i][cf],delta:distance(v.condition_xyz[i][15],v.condition_xyz[i][cf])});
   });
   v.query.forEach((track,i)=>{
-    const color=v.target_mask[i]?colors.target:colors.other;
+    const category=v.target_mask[i]?'target':'other';
+    if(!visible(category))return;
+    const color=colors[category];
     if($('future').checked)trace(ctx,track,t,qf,color,v.valid,true);
     if($('future').checked&&!v.valid[qf])return;
     const p=t.point(track[qf]);marker(ctx,p,color,'triangle');
     hits[mode].push({p,type:v.target_mask[i]?'Q (target)':'Q (other)',i,body:v.q_bodies[i],pixel:v.q_pixel[i],xyz:v.query_xyz[i][qf],delta:distance(v.query_xyz[i][15],v.query_xyz[i][qf])});
   });
-  if(mode==='holdout'&&cf===15){
+  if(mode==='holdout'&&cf===15&&visible('removed')){
     epoch.scene.condition.forEach((track,i)=>{if(v.c_pixel.includes(epoch.scene.c_pixel[i]))return;const p=t.point(track[15]);ctx.save();ctx.strokeStyle=colors.removed;ctx.lineWidth=3;ctx.beginPath();ctx.moveTo(p[0]-7,p[1]-7);ctx.lineTo(p[0]+7,p[1]+7);ctx.moveTo(p[0]-7,p[1]+7);ctx.lineTo(p[0]+7,p[1]-7);ctx.stroke();ctx.restore();});
   }
 }
 function paintPool(){
   const {ctx,t}=base('pool',true),p=current.pool;
-  p.xy.forEach((xy,i)=>{const pos=t.point(xy);if(p.global_pool[i])marker(ctx,pos,colors.c,'circle',2.5);else{ctx.save();ctx.strokeStyle=colors.other;ctx.lineWidth=1.8;ctx.beginPath();ctx.arc(...pos,3.2,0,Math.PI*2);ctx.stroke();ctx.restore();}hits.pool.push({p:pos,type:p.global_pool[i]?'Global candidate':'Supplemental candidate',i,body:p.bodies[i],pixel:p.pixel[i]});});
+  p.xy.forEach((xy,i)=>{if(!visible(p.global_pool[i]?'global':'supplemental'))return;const pos=t.point(xy);if(p.global_pool[i])marker(ctx,pos,colors.c,'circle',2.5);else{ctx.save();ctx.strokeStyle=colors.other;ctx.lineWidth=1.8;ctx.beginPath();ctx.arc(...pos,3.2,0,Math.PI*2);ctx.stroke();ctx.restore();}hits.pool.push({p:pos,type:p.global_pool[i]?'Global candidate':'Supplemental candidate',i,body:p.bodies[i],pixel:p.pixel[i]});});
   const n=p.global_pool.filter(Boolean).length;$('pool-caption').textContent=`Stored pool: ${n} global + ${p.xy.length-n} supplemental = ${p.xy.length} distinct visible pixels`;
 }
 function draw(){
@@ -70,7 +74,7 @@ function draw(){
   paintB1();paintB5('scene');paintB5('holdout');paintPool();
   $('time').textContent=`t = ${((frame-15)/20).toFixed(2)} s`;$('time-slider').value=frame;
   const valid=epoch.scene.valid.slice(0,Math.min(frame,15)+1).filter(Boolean).length;
-  $('time-note').textContent=`${$('rgb-replay').checked?'RGB replay is reference only.':'Current RGB is fixed.'} C: ${valid}/16 history positions shown; frozen after t = 0. ${$('future').checked?'Dashed Q paths are ground-truth labels, never model predictions.':'Q markers show the current anchors.'}`;
+  $('time-note').textContent=`${$('rgb-replay').checked?'RGB replay is reference only.':'Current RGB is fixed.'} C: ${valid}/16 valid history positions up to this time; frozen after t = 0. ${$('future').checked?'Dashed Q paths are ground-truth labels, never model predictions.':'Q markers show the current anchors.'}`;
 }
 function update(){
   current=data.cases[Number($('sample').value)];epoch=current.epochs[Number($('epoch').value)];
@@ -98,7 +102,9 @@ function downloadFigure(){
   const c=canvas.getContext('2d');c.fillStyle='white';c.fillRect(0,0,2020,860);c.textAlign='center';c.fillStyle='#333';c.font='28px Arial';c.fillText('B1 / B5 — Training Point Sampling',1010,38);
   c.font='19px Arial';c.fillText(`Train episode ${current.episode} · tick ${current.tick} · epoch ${epoch.epoch} · target ${nameTarget(epoch.scene.target)} · t = ${((frame-15)/20).toFixed(2)} s`,1010,70);
   ['b1','scene','holdout'].forEach((id,i)=>{const x=30+i*660;c.font='23px Arial';c.fillText(['B1 · 64 fixed Q','B5 scene · 12 C + 12 Q',`B5 holdout · ${epoch.holdout.removed} C replaced`][i],x+320,112);c.drawImage($(id),x,130,640,640);});
-  c.font='19px Arial';[['C history',colors.c],['Target Q / B1 cube',colors.target],['Other Q / B1 tool',colors.other],['Removed C',colors.removed]].forEach(([label,color],i)=>{c.fillStyle=color;c.fillText(label,330+i*450,805);});
+  c.font='19px Arial';const shown=[['c','Original C',colors.c],['target','Target Q / B1 cube',colors.target],['other','Other Q / B1 tool',colors.other],['removed','Removed C',colors.removed],['refill','Refilled C',colors.c]].filter(([key])=>visible(key));
+  shown.forEach(([,label,color],i)=>{c.fillStyle=color;c.fillText(label,30+(i+.5)*1960/shown.length,805);});
+  if(!shown.length){c.fillStyle='#555';c.fillText('All point categories hidden',1010,805);}
   c.fillStyle='#555';c.font='17px Arial';c.fillText(`Current-visible B5 anchors; oracle histories. ${$('future').checked?'Dashed Q paths: ground-truth labels only.':'Q shown at current anchors.'} B1 8cfd8df · B5 b537131`,1010,839);
   const a=$('export-link');a.hidden=false;a.download=`training-points-ep${current.episode}-t${current.tick}-epoch${epoch.epoch}.png`;a.href=canvas.toDataURL('image/png');a.click();
 }
@@ -111,6 +117,7 @@ async function init(){
   for(let rank=0;rank<8;rank++){const col=document.createElement('div');col.className='rank';const title=document.createElement('div');title.className='rank-title';title.textContent='Rank '+rank;col.append(title);data.batch.filter(b=>b.rank===rank).forEach(b=>{const idx=data.cases.findIndex(c=>c.slot===b.slot);const cell=document.createElement(idx>=0?'button':'div');cell.className='slot '+b.mode+(idx>=0?' exported':'');cell.dataset.slot=b.slot;cell.textContent=`${b.slot+1} ${b.mode==='scene'?'S':'H'}`;cell.title=`Episode ${b.episode}, tick ${b.tick}, window ${b.index}`;if(idx>=0)cell.onclick=()=>{$('sample').value=idx;update();$('samples').scrollIntoView({behavior:'smooth'});};col.append(cell);});$('batch').append(col);}
   $('provenance').textContent=`Export: ${data.exported_at} · scene manifest ${data.b5_manifest_sha256.slice(0,16)}… · oracle manifest ${data.b1_manifest_sha256.slice(0,16)}…`;
   ['sample','epoch'].forEach(id=>$(id).onchange=()=>{setPlaying(false);update();});['zoom','future','rgb-replay','grid'].forEach(id=>$(id).onchange=draw);
+  document.querySelectorAll('.point-filters input').forEach(input=>{input.onchange=()=>{$('point-detail').textContent='Select a visible marker to inspect its body, material identity and world coordinates.';$('export-link').hidden=true;draw();};});
   $('time-slider').oninput=e=>{setPlaying(false);frame=Number(e.target.value);draw();};['play','restart','anchor','download'].forEach(id=>$(id).disabled=false);
   $('play').onclick=()=>{if(frame===30)frame=0;setPlaying(!playing);draw();};$('restart').onclick=()=>{setPlaying(false);frame=0;draw();};
   $('anchor').onclick=()=>{setPlaying(false);frame=15;draw();};$('download').onclick=downloadFigure;
