@@ -1,0 +1,1029 @@
+{
+  "same_seed_reproducible": true,
+  "different_seed_changes": true,
+  "no_cq_overlap": true,
+  "visible_points_only": true,
+  "whole_entity_exclusion": true,
+  "gripper_parts_grouped": true,
+  "history_anchor_roundtrip": true,
+  "sample_sets": 150,
+  "points": 3060,
+  "by_frame": {
+    "255": {
+      "random": {
+        "counts": [
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "unique_seed_results": 10
+      },
+      "dino": {
+        "counts": [
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "unique_seed_results": 10
+      },
+      "holdout:cube": {
+        "counts": [
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ]
+        ],
+        "unique_seed_results": 10
+      },
+      "holdout:tool": {
+        "counts": [
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ]
+        ],
+        "unique_seed_results": 10
+      },
+      "holdout:gripper": {
+        "counts": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "unique_seed_results": 10
+      }
+    },
+    "510": {
+      "random": {
+        "counts": [
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "unique_seed_results": 10
+      },
+      "dino": {
+        "counts": [
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "unique_seed_results": 10
+      },
+      "holdout:cube": {
+        "counts": [
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ]
+        ],
+        "unique_seed_results": 10
+      },
+      "holdout:tool": {
+        "counts": [
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ]
+        ],
+        "unique_seed_results": 10
+      },
+      "holdout:gripper": {
+        "counts": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "unique_seed_results": 10
+      }
+    },
+    "765": {
+      "random": {
+        "counts": [
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "unique_seed_results": 10
+      },
+      "dino": {
+        "counts": [
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "unique_seed_results": 10
+      },
+      "holdout:cube": {
+        "counts": [
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ]
+        ],
+        "unique_seed_results": 10
+      },
+      "holdout:tool": {
+        "counts": [
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ],
+          [
+            15,
+            3
+          ]
+        ],
+        "unique_seed_results": 10
+      },
+      "holdout:gripper": {
+        "counts": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "unique_seed_results": 10
+      }
+    }
+  },
+  "scene_source": {
+    "episode": 416,
+    "seed": 420,
+    "frames": [
+      255,
+      510,
+      765
+    ],
+    "resolution": 512,
+    "environment_commit": "95ea99d4eaad36477823d97077ab935caeb73359",
+    "task_source_sha256": "ece01ba3fd851268874fdbcefbfbc0a8ea833c31293cff6343fd46eaff929a1a",
+    "source_trajectory_sha256": "b60f9da299f49773f20e135405853aea19bf27766bcb6a8bd3ce5959944da8ad",
+    "physics_steps": 0,
+    "time_step_s": 0.05,
+    "position_source": "raw float32 Position texture (metres)",
+    "coordinate_frame": "fixed simulator world",
+    "frame_reports": [
+      {
+        "frame": 255,
+        "valid_pixels": 254976,
+        "visible_pixels": {
+          "1": 1493,
+          "2": 710,
+          "3": 2139,
+          "4": 4666,
+          "5": 2127,
+          "6": 17942,
+          "7": 7347,
+          "8": 2338,
+          "9": 0,
+          "10": 3228,
+          "11": 0,
+          "12": 14,
+          "13": 0,
+          "14": 63,
+          "15": 0,
+          "16": 138368,
+          "17": 63169,
+          "18": 1545,
+          "19": 9827
+        },
+        "max_state_pose_error": 0.0,
+        "max_projection_error_px": 0.00244140625,
+        "pixel_center_offset": [
+          0.49982452392578125,
+          0.499481201171875
+        ]
+      },
+      {
+        "frame": 510,
+        "valid_pixels": 254976,
+        "visible_pixels": {
+          "1": 1514,
+          "2": 752,
+          "3": 2160,
+          "4": 4794,
+          "5": 2307,
+          "6": 17100,
+          "7": 7901,
+          "8": 2187,
+          "9": 0,
+          "10": 3096,
+          "11": 0,
+          "12": 12,
+          "13": 0,
+          "14": 61,
+          "15": 0,
+          "16": 139183,
+          "17": 62952,
+          "18": 1596,
+          "19": 9361
+        },
+        "max_state_pose_error": 0.0,
+        "max_projection_error_px": 0.002490997314453125,
+        "pixel_center_offset": [
+          0.49982452392578125,
+          0.4994773864746094
+        ]
+      },
+      {
+        "frame": 765,
+        "valid_pixels": 254976,
+        "visible_pixels": {
+          "1": 1426,
+          "2": 761,
+          "3": 2251,
+          "4": 4690,
+          "5": 2155,
+          "6": 15143,
+          "7": 8987,
+          "8": 1979,
+          "9": 0,
+          "10": 2735,
+          "11": 0,
+          "12": 10,
+          "13": 0,
+          "14": 47,
+          "15": 0,
+          "16": 140781,
+          "17": 64429,
+          "18": 1518,
+          "19": 8064
+        },
+        "max_state_pose_error": 0.0,
+        "max_projection_error_px": 0.002384185791015625,
+        "pixel_center_offset": [
+          0.49981689453125,
+          0.499481201171875
+        ]
+      }
+    ],
+    "bodies": [
+      {
+        "id": 1,
+        "name": "panda_link0",
+        "group": "robot",
+        "part": "arm",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 2,
+        "name": "panda_link1",
+        "group": "robot",
+        "part": "arm",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 3,
+        "name": "panda_link2",
+        "group": "robot",
+        "part": "arm",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 4,
+        "name": "panda_link3",
+        "group": "robot",
+        "part": "arm",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 5,
+        "name": "panda_link4",
+        "group": "robot",
+        "part": "arm",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 6,
+        "name": "panda_link5",
+        "group": "robot",
+        "part": "arm",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 7,
+        "name": "panda_link6",
+        "group": "robot",
+        "part": "arm",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 8,
+        "name": "panda_link7",
+        "group": "robot",
+        "part": "arm",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 9,
+        "name": "panda_link8",
+        "group": "robot",
+        "part": "arm",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 10,
+        "name": "panda_hand",
+        "group": "gripper",
+        "part": "palm",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 11,
+        "name": "panda_hand_tcp",
+        "group": "gripper",
+        "part": "palm",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 12,
+        "name": "panda_leftfinger",
+        "group": "gripper",
+        "part": "left_finger",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 13,
+        "name": "panda_leftfinger_pad",
+        "group": "gripper",
+        "part": "left_finger",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 14,
+        "name": "panda_rightfinger",
+        "group": "gripper",
+        "part": "right_finger",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 15,
+        "name": "panda_rightfinger_pad",
+        "group": "gripper",
+        "part": "right_finger",
+        "kind": "articulation_link"
+      },
+      {
+        "id": 16,
+        "name": "table-workspace",
+        "group": "background",
+        "part": "background",
+        "kind": "kinematic"
+      },
+      {
+        "id": 17,
+        "name": "ground",
+        "group": "background",
+        "part": "background",
+        "kind": "static"
+      },
+      {
+        "id": 18,
+        "name": "cube",
+        "group": "cube",
+        "part": "cube",
+        "kind": "dynamic"
+      },
+      {
+        "id": 19,
+        "name": "l_shape_tool",
+        "group": "tool",
+        "part": "tool",
+        "kind": "dynamic"
+      }
+    ]
+  },
+  "feature_source": {
+    "model": "DINOv2 ViT-S/14 with registers",
+    "repository_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+    "checkpoint_sha256": "f433177089a681826f849f194ece3bb48f4d63fb38d32fc837e3dc7a4e5641fb",
+    "input_size": [
+      224,
+      224
+    ],
+    "patch_grid": [
+      16,
+      16
+    ],
+    "feature_dim": 384,
+    "frozen": true,
+    "inputs": "current RGB frame only",
+    "training_updates": 0,
+    "device": "cpu"
+  },
+  "additional_checks": {
+    "future_independent_selection": true,
+    "dino_features_affect_selection": true,
+    "gripper_includes_palm_fingers_and_pads": true,
+    "coverage": {
+      "255": {
+        "random": {
+          "mean_points_per_seed": {
+            "background": 18.9,
+            "robot": 3.8,
+            "tool": 0.6,
+            "cube": 0.2,
+            "gripper": 0.5
+          }
+        },
+        "dino": {
+          "mean_points_per_seed": {
+            "background": 16.1,
+            "robot": 5.7,
+            "tool": 0.9,
+            "cube": 0.7,
+            "gripper": 0.6
+          }
+        }
+      },
+      "510": {
+        "random": {
+          "mean_points_per_seed": {
+            "background": 19.1,
+            "robot": 3.7,
+            "tool": 0.6,
+            "cube": 0.2,
+            "gripper": 0.4
+          }
+        },
+        "dino": {
+          "mean_points_per_seed": {
+            "robot": 5.5,
+            "background": 16.9,
+            "cube": 0.4,
+            "gripper": 0.5,
+            "tool": 0.7
+          }
+        }
+      },
+      "765": {
+        "random": {
+          "mean_points_per_seed": {
+            "background": 19.7,
+            "robot": 3.4,
+            "tool": 0.4,
+            "cube": 0.2,
+            "gripper": 0.3
+          }
+        },
+        "dino": {
+          "mean_points_per_seed": {
+            "robot": 6.5,
+            "background": 15.6,
+            "tool": 0.6,
+            "gripper": 1.2,
+            "cube": 0.1
+          }
+        }
+      }
+    },
+    "minimum_finger_pixel_separation": 0.9989324808120728,
+    "feature_ablation_changed_sets": 30,
+    "interpretation": "Coverage is descriptive for one demonstration; this is not a performance comparison."
+  }
+}

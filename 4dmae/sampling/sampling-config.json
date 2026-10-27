@@ -1,0 +1,62 @@
+{
+  "schema": "point-sampling-preview.v1",
+  "episode": 416,
+  "frames": [
+    255,
+    510,
+    765
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "preview_mode": "explicit selection; no training mixture is executed",
+  "proposed_training_mode_weights": {
+    "scene": 0.5,
+    "object_holdout": 0.5
+  },
+  "scene": {
+    "condition_points": 12,
+    "query_points": 12,
+    "grid": [
+      4,
+      6
+    ],
+    "selectors": [
+      "stratified_random",
+      "dino_diversity"
+    ],
+    "dino_random_points": 6,
+    "dino_feature_distance_weight": 0.75,
+    "dino_spatial_distance_weight": 0.25
+  },
+  "object_holdout": {
+    "points_per_rigid_part": 3,
+    "background_condition_points": 3,
+    "background_selector": "uniform visible static pixels without replacement",
+    "targets": [
+      "cube",
+      "tool",
+      "gripper"
+    ],
+    "gripper_parts": [
+      "palm",
+      "left_finger",
+      "right_finger"
+    ]
+  },
+  "visibility": "current visible surface only",
+  "known_information": "current RGB, current anchors, C history",
+  "units": "metres",
+  "history_frames": 16,
+  "future_frames": 15,
+  "dt_s": 0.05
+}

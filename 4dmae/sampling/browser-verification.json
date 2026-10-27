@@ -1,0 +1,20 @@
+{
+  "desktop": "Three panels, controls and point markers visually inspected in Chrome",
+  "controls": [
+    "random/DINO selector",
+    "seed 9",
+    "frames 255/765",
+    "tool/gripper holdout",
+    "observed history",
+    "query reference history",
+    "presentation view"
+  ],
+  "mobile": {
+    "viewport_width": 390,
+    "document_scroll_width": 390,
+    "panel_width": 358
+  },
+  "browser_export": "Exported 3840 \u00d7 2160 PNG toast observed; download-event automation timed out",
+  "console_errors": [],
+  "static_figures": "Three 3840 \u00d7 2160 PNG files generated from the same SVG renderer"
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Point Sampling — PullCubeTool</title>
+<style>
+:root{--ink:#172129;--muted:#66737d;--line:#dfe5e8;--soft:#f4f6f7;--c:#0072b2;--q:#d55e00}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}main{max-width:1540px;margin:auto;padding:36px 44px 24px}header{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:24px}h1{font-size:27px;font-weight:600;letter-spacing:-.7px;margin:2px 0 5px}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:1.6px;color:var(--muted)}.sub{color:var(--muted);font-size:13px}.header-actions{display:flex;gap:10px;align-items:center}button,select{font:inherit;font-size:13px;background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:5px;padding:8px 12px;cursor:pointer}button:hover,select:hover{border-color:#9caab4}button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--c);outline-offset:3px}button.selected{color:#fff;background:var(--ink);border-color:var(--ink)}.tabs{display:flex;gap:8px}.toolbar{padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}.controls{display:flex;flex-wrap:wrap;gap:16px;align-items:center}.field{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:12px}.switch{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);cursor:pointer}.switch input{accent-color:var(--c)}.strip{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:22px 0 16px}.context{font-size:15px;font-weight:500}.legend{display:flex;align-items:center;gap:20px;color:var(--muted);font-size:12px}.legend span{display:flex;align-items:center;gap:7px}.dot{width:9px;height:9px;border-radius:50%;background:var(--c);display:inline-block}.diamond{width:8px;height:8px;background:var(--q);transform:rotate(45deg);display:inline-block;margin-right:2px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.panel{min-width:0}.panel-top{display:flex;justify-content:space-between;align-items:center;margin:0 0 10px}.panel-title{font-weight:600;font-size:14px}.seed-select{font-size:12px;padding:4px 7px;border:none;background:var(--soft)}.scene{display:block;width:100%;height:auto;background:var(--soft);border-radius:3px}.panel-bottom{display:flex;justify-content:space-between;align-items:center;margin:9px 0 0;font-size:12px;color:var(--muted)}.counts{display:flex;gap:14px}.c-text{color:var(--c)}.q-text{color:var(--q)}.note{font-size:12px;color:var(--muted);margin:23px 0 0;max-width:900px}.footer{margin-top:30px;padding-top:15px;border-top:1px solid var(--line);display:flex;gap:18px;align-items:center;justify-content:space-between;color:var(--muted);font-size:11px}.downloads{display:flex;gap:16px;flex-wrap:wrap}a{color:inherit;text-decoration:none;border-bottom:1px solid #bac4cb}a:hover{color:var(--ink)}details{margin-top:22px;color:var(--muted);font-size:12px;max-width:1000px}summary{cursor:pointer}details p{margin:9px 0}.method-table{border-collapse:collapse;margin:12px 0;font-size:12px}.method-table td{padding:4px 20px 4px 0;vertical-align:top}.method-table td:first-child{color:var(--ink)}.presentation .toolbar,.presentation details,.presentation .downloads,.presentation .panel-top select,.presentation .export-button{display:none}.presentation main{padding-top:30px}.presentation header{margin-bottom:5px}.presentation .strip{padding-top:20px}.presentation .note{margin-top:20px}.presentation .footer{margin-top:20px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:white;font-size:13px;padding:10px 18px;border-radius:5px;display:none;z-index:5}@media(max-width:900px){main{padding:25px 20px}.grid{gap:12px}.toolbar{align-items:flex-start}.header-actions{flex-direction:column;gap:7px}.legend{gap:12px}.footer{align-items:flex-start;flex-direction:column}}@media(max-width:650px){header{align-items:flex-start}h1{font-size:23px}.grid{grid-template-columns:1fr;gap:22px}.strip{align-items:flex-start;flex-direction:column}.header-actions button{font-size:11px;padding:7px}.context{font-size:14px}}@media print{.toolbar,details,.header-actions,.downloads{display:none}main{padding:0}.grid{grid-template-columns:repeat(3,1fr)}.scene{break-inside:avoid}}
+/* Quiet, figure-first presentation following the project's research-page preference. */
+body{font-family:Arial,Helvetica,sans-serif;color:#333}main{max-width:1440px;padding-top:40px}
+header{display:block;text-align:center;margin-bottom:30px}h1{font-size:36px;font-weight:600;letter-spacing:-.7px;margin:0 0 8px}.sub{font-size:16px;color:#555}
+.header-actions{justify-content:center;margin-top:16px;gap:22px}.header-actions button{border:0;border-bottom:1px solid #b9c8d2;color:#1d6095;border-radius:0;padding:1px 0;font-size:13px}
+button,select{border-radius:0}.tabs button{border:0;border-bottom:2px solid transparent;background:white;color:#666;padding:7px 0;margin-right:16px}
+.tabs button.selected{background:white;color:#222;border-color:#333}.toolbar{border-top:0;padding-top:0}.seed-select{background:white;border:1px solid #ddd}.scene{border-radius:0}
+a{color:#1d6095;border:0}a:hover{text-decoration:underline}.panel-title{font-weight:500}.note{max-width:none}.presentation header{margin-bottom:22px}
+@media(max-width:900px){.header-actions{flex-direction:row}.toolbar{gap:12px}h1{font-size:30px}}
+@media(max-width:650px){main{padding:24px 16px}header{margin-bottom:22px}.controls{gap:10px}h1{font-size:27px}.sub{font-size:14px}.header-actions button{font-size:12px}.footer{line-height:1.6}}
+</style>
+</head>
+<body><main>
+<header><h1>Point Sampling</h1><div class="sub">PullCubeTool · Visible surface points</div><div class="header-actions"><button id="export" class="export-button">Export PNG</button><button id="present" aria-pressed="false">Presentation view</button></div></header>
+<div class="toolbar">
+ <div class="tabs" role="group" aria-label="Sampling mode"><button id="sceneTab" class="selected" aria-pressed="true">Scene Sampling</button><button id="objectTab" aria-pressed="false">Object Holdout</button></div>
+ <div class="controls">
+  <label class="field" id="methodField">Method <select id="method"><option value="random">Stratified Random</option><option value="dino">DINO Diversity</option></select></label>
+  <label class="field" id="targetField" hidden>Target <select id="target"><option value="cube">Cube</option><option value="tool">Tool</option><option value="gripper">Gripper</option></select></label>
+  <label class="field">Frame <select id="frame"><option value="255">255 · 12.75 s</option><option value="510" selected>510 · 25.50 s</option><option value="765">765 · 38.25 s</option></select></label>
+  <label class="switch"><input type="checkbox" id="history">Observed history</label>
+ </div>
+</div>
+<div class="strip"><div class="context" id="context"></div><div class="legend"><span><i class="dot"></i>Condition</span><span><i class="diamond"></i>Query</span></div></div>
+<div class="grid" id="panels"></div>
+<p class="note" id="note"></p>
+<div class="footer"><div id="source"></div><div class="downloads"><a href="seed-comparison.png" download>Seed comparison</a><a href="object-holdout.png" download>Object holdout</a><a href="sampling-methods.png" download>Random vs DINO</a><a href="index.html" download="point-sampling-preview.html">Offline HTML</a></div></div>
+<details><summary>Methods &amp; source</summary>
+ <table class="method-table"><tr><td>Stratified Random</td><td>One visible point per 4 × 6 image cell; random split into 12 condition and 12 query points.</td></tr><tr><td>DINO Diversity</td><td>6 random points + 18 points selected by feature and spatial diversity. Frozen DINOv2 ViT-S/14 with registers, current RGB only.</td></tr><tr><td>Object Holdout</td><td>Up to 3 points per visible rigid part. Condition: other entities + 3 static background points. Query: the held-out entity only.</td></tr><tr><td>Gripper</td><td>Palm and both fingers form one holdout group. Finger pads are grouped with their corresponding finger.</td></tr><tr><td>History</td><td>16 states at 20 Hz (0.75 s), reconstructed from saved rigid-body poses. Past occlusion does not invalidate oracle tracks.</td></tr></table>
+ <p>The held-out object's current appearance and query positions remain visible. Only its motion history is withheld. Colors identify C/Q roles, not physical visibility. The fixed camera exposes very small finger surfaces (10–14 pixels on the left finger); point spacing in 3D does not guarantee useful image separation.</p>
+ <label class="switch"><input type="checkbox" id="reference">Show query reference history (not an input)</label>
+ <p>Official demonstration 416 · frames 255, 510, 765 · fixed base camera, rendered at 512 × 512. Sampling uses current-frame RGB, geometry and visibility only; no future state is used to choose points. This is a sampling prototype, not a trained-model result.</p>
+ <p><a href="samples.json" download>Sample coordinates and reference tracks</a> · <a href="sampling-config.json" download>Sampling configuration</a> · <a href="verification.json" download>Verification</a></p>
+</details>
+</main><div class="toast" id="toast" role="status"></div>
+<script id="data" type="application/json">__DATA__</script>
+<script>
+'use strict';
+const DATA=JSON.parse(document.getElementById('data').textContent), NS='http://www.w3.org/2000/svg';
+const C='#0072b2',Q='#d55e00',INK='#172129',MUTED='#66737d';
+const titles={random:'Stratified Random',dino:'DINO Diversity','holdout:cube':'Cube','holdout:tool':'Tool','holdout:gripper':'Gripper'};
+let state={mode:'scene',method:'random',target:'cube',frame:510,seeds:[0,1,2],history:false,reference:false};
+function esc(x){return String(x).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');}
+function keyMode(){return state.mode==='scene'?state.method:'holdout:'+state.target;}
+function sample(mode,seed,frame=state.frame){return DATA.samples[`${frame}/${mode}/${seed}`];}
+function frameData(frame=state.frame){return DATA.frames.find(x=>x.id===frame);}
+function sceneMarkup(s,frame=state.frame,history=state.history,reference=state.reference){
+ const f=frameData(frame);let out=`<image href="${f.image_data}" x="0" y="0" width="512" height="512"/>`;
+ if(s.mode.startsWith('holdout:')){for(const path of f.outlines[s.mode.split(':')[1]]){const p=path.map(x=>x.join(',')).join(' ');out+=`<polygon points="${p}" fill="none" stroke="#fff" stroke-width="3" opacity=".75"/><polygon points="${p}" fill="none" stroke="${Q}" stroke-width="1.1" opacity=".9"/>`;}}
+ for(const p of s.points){if((p.role==='C'&&history)||(p.role==='Q'&&reference)){let path=p.history_uv.map((x,i)=>(i?'L':'M')+x.map(v=>v.toFixed(3)).join(' ')).join(' ');out+=`<path d="${path}" fill="none" stroke="white" stroke-width="3" opacity=".8"/><path d="${path}" fill="none" stroke="${p.role==='C'?C:Q}" stroke-width="1.35" ${p.role==='Q'?'stroke-dasharray="4 3"':''}/>`;}}
+ for(const p of s.points){let [x,y]=p.uv;const title=`${p.role==='C'?'Condition':'Query'} · ${p.entity.replace('_',' ')} / ${p.part.replaceAll('_',' ')} · ${p.xyz_m.map(v=>v.toFixed(3)).join(', ')} m`;
+  if(p.role==='C')out+=`<circle cx="${x}" cy="${y}" r="4" fill="${C}" stroke="white" stroke-width="1.6"><title>${esc(title)}</title></circle>`;
+  else out+=`<path d="M ${x} ${y-5} L ${x+5} ${y} L ${x} ${y+5} L ${x-5} ${y} Z" fill="${Q}" stroke="white" stroke-width="1.5"><title>${esc(title)}</title></path>`;
+ }
+ return out;
+}
+function render(){
+ const mode=keyMode(),f=frameData();
+ document.getElementById('methodField').style.display=state.mode==='scene'?'flex':'none';
+ document.getElementById('targetField').style.display=state.mode==='object'?'flex':'none';
+ document.getElementById('sceneTab').classList.toggle('selected',state.mode==='scene');document.getElementById('objectTab').classList.toggle('selected',state.mode==='object');
+ document.getElementById('sceneTab').setAttribute('aria-pressed',state.mode==='scene');document.getElementById('objectTab').setAttribute('aria-pressed',state.mode==='object');
+ document.getElementById('context').textContent=state.mode==='scene'?titles[mode]+' · Same frame, different seeds':'Held-out '+titles[mode].toLowerCase()+' · Same frame, different seeds';
+ document.getElementById('panels').innerHTML=state.seeds.map((seed,i)=>{let s=sample(mode,seed);return `<section class="panel"><div class="panel-top"><span class="panel-title">Seed ${seed}</span><select class="seed-select" data-panel="${i}" aria-label="Seed for panel ${i+1}">${DATA.config.seeds.map(x=>`<option value="${x}" ${x===seed?'selected':''}>Seed ${x}</option>`).join('')}</select></div><svg class="scene" role="img" aria-label="${esc(titles[mode])}, frame ${state.frame}, seed ${seed}, ${s.c_count} condition and ${s.q_count} query points" viewBox="0 0 512 512">${sceneMarkup(s)}</svg><div class="panel-bottom"><span class="counts"><span class="c-text">${s.c_count} condition</span><span class="q-text">${s.q_count} query</span></span><span>Frame ${state.frame}</span></div></section>`;}).join('');
+ document.querySelectorAll('.seed-select').forEach(el=>el.onchange=()=>{state.seeds[+el.dataset.panel]=+el.value;render();});
+ document.getElementById('note').textContent=state.mode==='scene'?(state.method==='random'?'Spatial coverage without foreground filtering. Background, objects and robot are all eligible.':'Frozen visual features diversify the selection; a random subset preserves broad scene coverage.'):(state.target==='gripper'?'Palm and both fingers are withheld together. Current appearance and query anchors remain available.':'All history points on the target are withheld. Other entities provide the observed motion cues.');
+ document.getElementById('source').textContent=`Demo 416 · ${f.time_s.toFixed(2)} s · Simulation ground truth · No model predictions`;
+ if(state.reference)document.getElementById('note').textContent+=' Dashed query tracks are ground truth, not inputs.';
+}
+function legendSvg(x,y){return `<g font-family="Arial, sans-serif" font-size="19" fill="${MUTED}"><circle cx="${x}" cy="${y-6}" r="6" fill="${C}"/><text x="${x+17}" y="${y}">Condition</text><path d="M ${x+155} ${y-13} l 7 7 -7 7 -7 -7 Z" fill="${Q}"/><text x="${x+175}" y="${y}">Query</text></g>`;}
+function exportSvg(kind='current'){
+ const frame=state.frame;let mode=keyMode(), specs=state.seeds.map(seed=>({s:sample(mode,seed),label:'Seed '+seed}));
+ let title=state.mode==='scene'?'Scene Sampling':'Object Holdout';let subtitle=state.mode==='scene'?titles[mode]+' · Same frame, different seeds':'Held-out '+titles[mode].toLowerCase()+' · Same frame, different seeds';
+ if(kind==='holdout'){title='Object Holdout';subtitle='One entity withheld at a time · Seed 0';specs=['cube','tool','gripper'].map(g=>({s:sample('holdout:'+g,0),label:'Held-out '+titles['holdout:'+g].toLowerCase()}));}
+ if(kind==='seeds'){title='Scene Sampling';subtitle='Stratified Random · Same frame, different seeds';specs=[0,1,2].map(seed=>({s:sample('random',seed),label:'Seed '+seed}));}
+ if(kind==='methods'){title='Scene Sampling';subtitle='Same frame and point budget · Seed 0';specs=['random','dino'].map(m=>({s:sample(m,0),label:titles[m]}));}
+ const n=specs.length,w=n===2?680:576,gap=n===2?60:32,left=(1920-n*w-(n-1)*gap)/2,top=n===2?210:235;
+ let svg=`<svg xmlns="${NS}" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="white"/><g font-family="Arial, sans-serif"><text x="960" y="84" text-anchor="middle" font-size="42" font-weight="600" fill="${INK}">${title}</text><text x="960" y="132" text-anchor="middle" font-size="23" fill="${MUTED}">PullCubeTool · ${subtitle}</text>`;
+ specs.forEach((a,i)=>{const x=left+i*(w+gap);svg+=`<text x="${x}" y="${top-17}" font-size="22" font-weight="500" fill="${INK}">${esc(a.label)}</text><svg x="${x}" y="${top}" width="${w}" height="${w}" viewBox="0 0 512 512" overflow="hidden">${sceneMarkup(a.s,frame,kind==='current'&&state.history,kind==='current'&&state.reference)}</svg><text x="${x}" y="${top+w+32}" font-size="20" fill="${C}">${a.s.c_count} condition</text><text x="${x+160}" y="${top+w+32}" font-size="20" fill="${Q}">${a.s.q_count} query</text>`;});
+ svg+=legendSvg(left,989)+(kind==='current'&&state.reference?`<text x="${left+340}" y="989" font-size="19" fill="${MUTED}">Dashed query tracks: reference only</text>`:'')+`<text x="${1920-left}" y="1036" text-anchor="end" font-size="17" fill="${MUTED}">Demo 416 · Frame ${frame} · Simulation ground truth · No model predictions</text></g></svg>`;
+ return svg;
+}
+function toast(msg){const x=document.getElementById('toast');x.textContent=msg;x.style.display='block';setTimeout(()=>x.style.display='none',3500);}
+function downloadBlob(blob,name){const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),10000);}
+async function exportPng(){try{const svg=exportSvg(),blob=new Blob([svg],{type:'image/svg+xml;charset=utf-8'}),url=URL.createObjectURL(blob);const img=new Image();await new Promise((ok,no)=>{img.onload=ok;img.onerror=no;img.src=url;});const canvas=document.createElement('canvas');canvas.width=3840;canvas.height=2160;canvas.getContext('2d').drawImage(img,0,0,3840,2160);URL.revokeObjectURL(url);canvas.toBlob(b=>{downloadBlob(b,`sampling-${state.frame}-${keyMode().replace(':','-')}.png`);toast('Exported 3840 × 2160 PNG');},'image/png');}catch(e){console.error(e);toast('PNG export failed. Use the downloadable figures below.');}}
+document.getElementById('sceneTab').onclick=()=>{state.mode='scene';render();};document.getElementById('objectTab').onclick=()=>{state.mode='object';render();};
+document.getElementById('method').onchange=e=>{state.method=e.target.value;render();};document.getElementById('target').onchange=e=>{state.target=e.target.value;render();};document.getElementById('frame').onchange=e=>{state.frame=+e.target.value;render();};
+document.getElementById('history').onchange=e=>{state.history=e.target.checked;render();};document.getElementById('reference').onchange=e=>{state.reference=e.target.checked;render();};
+document.getElementById('present').onclick=()=>{const on=document.body.classList.toggle('presentation');document.getElementById('present').textContent=on?'Exit presentation':'Presentation view';document.getElementById('present').setAttribute('aria-pressed',on);};
+document.getElementById('export').onclick=exportPng;
+window.samplingPreview={get state(){return {...state};},exportSvg,render,sample};render();
+</script></body></html>
