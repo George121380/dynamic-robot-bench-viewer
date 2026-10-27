@@ -6,8 +6,8 @@
 <section><span class="tag">提取网络已验证</span> <span class="tag pending">研究收益尚未建立</span><p>保留原 HPT、ResNet/MLP stems、动作 CrossTransformer、点 FlowDecoder 与 flow-matching。移除未用的 U-Net / DiT 定义、机器人部署及无关工具。源 commit <code>c87617f</code>，保留 MIT 许可。新历史模块与原网络文件分开。</p><p>官方 checkpoint：相同输入、权重和随机数，检查图像/状态编码、trunk、完整动作/flow采样、训练态 loss、梯度及一次 AdamW 更新。逐层输出全部相等。这不代表新轨迹模块也与旧模型等价。</p></section>
 <!-- matched-training:start -->
 <h2>单种子、同 batch 的正式 baseline</h2><section>
-<span class="tag">八卡验证通过</span> <span class="tag pending">100k 训练进行中</span>
-<p id="matched-status">2026-10-27 00:15 UTC 核验：seed42 已超过1,000 / 100,000更新。首个完整checkpoint通过检查：565组Adam状态均更新1000次，模型/动量有限，8rank随机状态与采样位置完整。训练继续；本页是状态快照，不是实时计数器。</p>
+<span class="tag">八卡验证通过</span> <span class="tag pending">用户已停止训练</span>
+<p id="matched-status">2026-10-27 00:25 UTC：用户要求停止本轮训练。EgoWAM及ACT已确认ManualTermination；DP训练此前已完成100k。已有checkpoint和日志保留，不自动恢复或重新提交。下表是停止前的预算，EgoWAM未完成100k。</p>
 <table><thead><tr><th>共同条件</th><th>本轮设置</th></tr></thead><tbody>
 <tr><td>随机种子 / batch</td><td>仅 seed42；8 GPU × batch8 = global64；无梯度累积</td></tr>
 <tr><td>数据</td><td>相同200训练 / 50验证示范；79,770 / 21,599窗口</td></tr>
@@ -16,7 +16,7 @@
 </tbody></table>
 <p>本轮从头训练 B1（原未来flow辅助头，不输入历史flow）。旧 seed1000、batch32、5k 的0/20属于调试结果，单独保留。三种算法各自的原生损失与优化配方保留；这里对齐共同数据、batch、seed和更新预算。</p>
 <p>已执行检查：与实际DP adapter的全部窗口索引一致，750个RGB/state/action窗口逐值相等；八卡连续100步与50+50断点恢复的模型、Adam、八rank随机状态及采样位置逐值一致。新增适配只涉及训练入口与末尾窗口，提取的原网络文件哈希不变。</p>
-<p>训练作业 <code>job-qh50cxvlk3hn</code>；冻结代码 <code>bdc1716</code>。约0.16秒/更新，预计4–5小时，排队另计。本轮闭环成功率尚未评估。</p>
+<p>训练作业 <code>job-qh50cxvlk3hn</code>；冻结代码 <code>bdc1716</code>。停止前速度约0.16秒/更新。本轮闭环成功率尚未评估。</p>
 <p><a href="https://github.com/George121380/egowam-dev/blob/task/egowam-4dmae-20261026/docs/matched-baseline.zh-CN.md">训练协议与验证回执</a></p>
 </section>
 <!-- matched-training:end -->
