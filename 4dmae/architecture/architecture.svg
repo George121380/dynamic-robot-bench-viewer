@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-<title id="title">4D MAE / B5: policy and trajectory completion</title><desc id="desc">PullCube configuration. RGB, state, and observed point history condition a shared HPT. The action and trajectory heads receive separate context slices. The trajectory tokenizer is shared across observation encoding and decoder inputs. Only the action branch is used for control.</desc>
+<title id="title">4D MAE / B5: policy and trajectory completion</title><desc id="desc">PullCube configuration. RGB, state, and observed point history condition a shared HPT. The physical Q anchor enters the trajectory tokenizer with noisy tracks and slot flags. Its point token queries the HPT future context inside decoder cross-attention. The trajectory tokenizer is shared across observation encoding and decoder inputs. Only the action branch is used for control.</desc>
 <defs>
 <marker id="ink" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7" fill="#252525"/></marker>
 <marker id="blue" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7" fill="#496fa4"/></marker>
@@ -101,31 +101,43 @@
 <text x="1452" y="269" font-size="21" fill="#496fa4" font-weight="600" text-anchor="middle">Action chunk</text>
 <text x="1452" y="297" font-size="19" fill="#666666" font-weight="400" text-anchor="middle">32 × 8</text>
 <text x="1452" y="325" font-size="17" fill="#666666" font-weight="400" text-anchor="middle">Execute 8; replan</text>
-<path d="M850,380 L890,380 L890,465 L1064,465" fill="none" stroke="#ae7541" stroke-width="1.5" marker-end="url(#orange)"/>
-<rect x="924" y="436" width="12" height="30" fill="#faf1e7" stroke="#ae7541" stroke-width="1" rx="0"/>
-<rect x="941" y="436" width="12" height="30" fill="#faf1e7" stroke="#ae7541" stroke-width="1" rx="0"/>
-<rect x="958" y="436" width="12" height="30" fill="#faf1e7" stroke="#ae7541" stroke-width="1" rx="0"/>
-<rect x="975" y="436" width="12" height="30" fill="#faf1e7" stroke="#ae7541" stroke-width="1" rx="0"/>
-<text x="954" y="505" font-size="18" fill="#ae7541" font-weight="400" text-anchor="middle">16 future</text>
-<text x="1187" y="385" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">Noisy tracks + anchors + τ</text>
-<path d="M1187,396 L1187,424" fill="none" stroke="#ae7541" stroke-width="1.5" marker-end="url(#orange)"/>
-<rect x="1064" y="424" width="246" height="82" fill="#faf1e7" stroke="#ae7541" stroke-width="1.5" rx="0"/>
-<text x="1187.0" y="462.0" font-size="20" fill="#ae7541" font-weight="600" text-anchor="middle">Tθ + trajectory decoder</text>
-<text x="1187.0" y="490.0" font-size="17" fill="#666666" font-weight="400" text-anchor="middle">4 blocks · width 256</text>
-<path d="M1310,465 L1354,465" fill="none" stroke="#ae7541" stroke-width="1.5" marker-end="url(#orange)"/>
-<path d="M1372.0,433.16 L1379.7619047619048,432.23596838471394 L1387.5238095238096,431.32206065317104 L1395.2857142857142,430.4282897697255 L1403.047619047619,429.56444807520995 L1410.8095238095239,428.74 L1418.5714285714287,427.96397836973455 L1426.3333333333333,427.2448854397877 L1434.095238095238,426.5905997427799 L1441.857142857143,426.0082897697255 L1449.6190476190477,425.5043354305456 L1457.3809523809523,425.08425815443945 L1465.142857142857,424.7526603959509 L1472.904761904762,424.5131752095132 L1480.6666666666667,424.3684264449445 L1488.4285714285713,424.32000000000005 L1496.1904761904761,424.3684264449445 L1503.952380952381,424.5131752095132 L1511.7142857142858,424.75266039595084 L1519.4761904761904,425.08425815443945 L1527.2380952380952,425.5043354305456 L1535.0,426.0082897697255" fill="none" stroke="#ae7541" stroke-width="1.8"/>
-<circle cx="1535.0" cy="426.0082897697255" r="3" fill="#ae7541" stroke="#ae7541" stroke-width="1"/>
-<path d="M1372.0,448.8 L1379.7619047619048,449.8348291099412 L1387.5238095238096,450.8529479921552 L1395.2857142857142,451.83791625255986 L1403.047619047619,452.77382880713964 L1410.8095238095239,453.6455727142798 L1418.5714285714287,454.43907121573284 L1426.3333333333333,455.14151104548887 L1434.095238095238,455.7415493360087 L1441.857142857143,456.22949678073593 L1449.6190476190477,456.5974740952149 L1457.3809523809523,456.83953925030835 L1465.142857142857,456.95178342297714 L1472.904761904762,456.9323941152269 L1480.6666666666667,456.78168442198785 L1488.4285714285713,456.5020879753163 L1496.1904761904761,456.09811964655734 L1503.952380952381,455.5763026410434 L1511.7142857142858,454.94506316258946 L1519.4761904761904,454.2145943487233 L1527.2380952380952,453.3966916737992 L1535.0,452.5045624778747" fill="none" stroke="#ae7541" stroke-width="1.8"/>
-<circle cx="1535.0" cy="452.5045624778747" r="3" fill="#ae7541" stroke="#ae7541" stroke-width="1"/>
-<path d="M1372.0,464.44 L1379.7619047619048,463.12246636700263 L1387.5238095238096,461.8343642582076 L1395.2857142857142,460.6044677462008 L1403.047619047619,459.4602506867176 L1410.8095238095239,458.4272729981051 L1418.5714285714287,457.5286096949826 L1426.3333333333333,456.7843354305456 L1434.095238095238,456.21107606198524 L1441.857142857143,455.82163725631267 L1449.6190476190477,455.62471843291837 L1457.3809523809523,455.62471843291837 L1465.142857142857,455.82163725631267 L1472.904761904762,456.21107606198524 L1480.6666666666667,456.7843354305456 L1488.4285714285713,457.5286096949826 L1496.1904761904761,458.4272729981051 L1503.952380952381,459.4602506867176 L1511.7142857142858,460.6044677462008 L1519.4761904761904,461.8343642582076 L1527.2380952380952,463.12246636700263 L1535.0,464.44" fill="none" stroke="#ae7541" stroke-width="1.8"/>
-<circle cx="1535.0" cy="464.44" r="3" fill="#ae7541" stroke="#ae7541" stroke-width="1"/>
-<path d="M1372.0,480.08 L1379.7619047619048,481.47692828833544 L1387.5238095238096,482.8326126970439 L1395.2857142857142,484.107027059405 L1403.047619047619,485.2625446819122 L1410.8095238095239,486.2650492608669 L1418.5714285714287,487.0849421557912 L1426.3333333333333,487.69801628021713 L1434.095238095238,488.08617080849643 L1441.857142857143,488.2379455971308 L1449.6190476190477,488.148859541997 L1457.3809523809523,487.8215428815726 L1465.142857142857,487.26565953995095 L1472.904761904762,486.49762180244414 L1480.6666666666667,485.5401057478883 L1488.4285714285713,484.42138174436514 L1496.1904761904761,483.1744797752479 L1503.952380952381,481.83621423906396 L1511.7142857142858,480.4460970156602 L1519.4761904761904,479.0451708900588 L1527.2380952380952,477.674797776807 L1535.0,476.3754375221253" fill="none" stroke="#ae7541" stroke-width="1.8"/>
-<circle cx="1535.0" cy="476.3754375221253" r="3" fill="#ae7541" stroke="#ae7541" stroke-width="1"/>
-<text x="1452" y="530" font-size="20" fill="#ae7541" font-weight="600" text-anchor="middle">Point displacements</text>
-<text x="1452" y="558" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">15 past + 15 future</text>
-<path d="M330,505 L330,570 L1187,570 L1187,506" fill="none" stroke="#76618f" stroke-width="1.3" stroke-dasharray="5 5"/>
-<rect x="647" y="554" width="235" height="32" fill="white" stroke="none" stroke-width="1.5" rx="0"/>
-<text x="764" y="576" font-size="18" fill="#76618f" font-weight="400" text-anchor="middle">Tθ: shared weights</text>
+<path d="M850,380 L880,380 L880,405 L1280,405 L1280,445" fill="none" stroke="#ae7541" stroke-width="1.5" marker-end="url(#orange)"/>
+<rect x="924" y="375" width="12" height="30" fill="#faf1e7" stroke="#ae7541" stroke-width="1" rx="0"/>
+<rect x="941" y="375" width="12" height="30" fill="#faf1e7" stroke="#ae7541" stroke-width="1" rx="0"/>
+<rect x="958" y="375" width="12" height="30" fill="#faf1e7" stroke="#ae7541" stroke-width="1" rx="0"/>
+<rect x="975" y="375" width="12" height="30" fill="#faf1e7" stroke="#ae7541" stroke-width="1" rx="0"/>
+<text x="1077" y="432" font-size="18" fill="#ae7541" font-weight="400" text-anchor="middle">16 future-context tokens (K, V)</text>
+<rect x="895" y="445" width="120" height="75" fill="white" stroke="#76618f" stroke-width="1.5" rx="0"/>
+<text x="955.0" y="479.5" font-size="17" fill="#76618f" font-weight="600" text-anchor="middle">Point query Q</text>
+<text x="955.0" y="507.5" font-size="17" fill="#666666" font-weight="400" text-anchor="middle">Current XYZ</text>
+<path d="M1015,482 L1045,482" fill="none" stroke="#76618f" stroke-width="1.5" marker-end="url(#purple)"/>
+<rect x="1045" y="445" width="100" height="75" fill="white" stroke="#76618f" stroke-width="1.5" rx="0"/>
+<text x="1095.0" y="479.5" font-size="25" fill="#76618f" font-weight="600" text-anchor="middle">Tθ</text>
+<text x="1095.0" y="507.5" font-size="17" fill="#666666" font-weight="400" text-anchor="middle">Point token</text>
+<path d="M1145,482 L1175,482" fill="none" stroke="#76618f" stroke-width="1.5" marker-end="url(#purple)"/>
+<text x="1160" y="468" font-size="19" fill="#76618f" font-weight="600" text-anchor="middle">q</text>
+<text x="966" y="559" font-size="17" fill="#666666" font-weight="400" text-anchor="middle">Noisy tracks + flags</text>
+<path d="M1055,550 L1095,520" fill="none" stroke="#76618f" stroke-width="1.5" marker-end="url(#purple)"/>
+<rect x="1175" y="445" width="210" height="75" fill="#faf1e7" stroke="#ae7541" stroke-width="1.5" rx="0"/>
+<text x="1280.0" y="479.5" font-size="20" fill="#ae7541" font-weight="600" text-anchor="middle">Trajectory decoder</text>
+<text x="1280.0" y="507.5" font-size="17" fill="#666666" font-weight="400" text-anchor="middle">q attends to K, V</text>
+<text x="1280" y="568" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">Flow time τ</text>
+<path d="M1280,548 L1280,520" fill="none" stroke="#ae7541" stroke-width="1.5" marker-end="url(#orange)"/>
+<path d="M1385,482 L1410,482" fill="none" stroke="#ae7541" stroke-width="1.5" marker-end="url(#orange)"/>
+<path d="M1420.0,453.8 L1425.952380952381,452.91673448538836 L1431.904761904762,452.04314621258993 L1437.857142857143,451.1888063975317 L1443.8095238095239,450.3630753660095 L1449.7619047619048,449.575 L1455.7142857142858,448.83321461812864 L1461.6666666666667,448.1458463762677 L1467.6190476190477,447.520426224716 L1473.5714285714287,446.9638063975317 L1479.5238095238096,446.4820853380215 L1485.4761904761904,446.08054088292005 L1491.4285714285713,445.763572437306 L1497.3809523809523,445.53465277379934 L1503.3333333333333,445.3962899841381 L1509.2857142857142,445.35 L1515.2380952380952,445.3962899841381 L1521.1904761904761,445.53465277379934 L1527.142857142857,445.763572437306 L1533.095238095238,446.08054088292005 L1539.047619047619,446.4820853380215 L1545.0,446.9638063975317" fill="none" stroke="#ae7541" stroke-width="1.8"/>
+<circle cx="1545.0" cy="446.9638063975317" r="3" fill="#ae7541" stroke="#ae7541" stroke-width="1"/>
+<path d="M1420.0,468.75 L1425.952380952381,469.7391748845026 L1431.904761904762,470.71237675720715 L1437.857142857143,471.6538905355352 L1443.8095238095239,472.54851283035407 L1449.7619047619048,473.38179744747333 L1455.7142857142858,474.14028866209753 L1461.6666666666667,474.81173849936437 L1467.6190476190477,475.38530451236124 L1473.5714285714287,475.8517248639388 L1479.5238095238096,476.2034678851319 L1485.4761904761904,476.43485369514764 L1491.4285714285713,476.54214591902223 L1497.3809523809523,476.52361202190804 L1503.3333333333333,476.37955128572366 L1509.2857142857142,476.1122899764053 L1515.2380952380952,475.72614377979744 L1521.1904761904761,475.22734811276206 L1527.142857142857,474.6239574348282 L1533.095238095238,473.92571518627966 L1539.047619047619,473.14389645289623 L1545.0,472.29112589796847" fill="none" stroke="#ae7541" stroke-width="1.8"/>
+<circle cx="1545.0" cy="472.29112589796847" r="3" fill="#ae7541" stroke="#ae7541" stroke-width="1"/>
+<path d="M1420.0,483.7 L1425.952380952381,482.4405928508113 L1431.904761904762,481.20931877622786 L1437.857142857143,480.0336824044566 L1443.8095238095239,478.93994550936236 L1449.7619047619048,477.9525403658357 L1455.7142857142858,477.0935239731451 L1461.6666666666667,476.38208533802145 L1467.6190476190477,475.8341168239565 L1473.5714285714287,475.4618591420636 L1479.5238095238096,475.27362791381904 L1485.4761904761904,475.27362791381904 L1491.4285714285713,475.4618591420636 L1497.3809523809523,475.83411682395644 L1503.3333333333333,476.38208533802145 L1509.2857142857142,477.0935239731451 L1515.2380952380952,477.9525403658357 L1521.1904761904761,478.93994550936236 L1527.142857142857,480.0336824044566 L1533.095238095238,481.20931877622786 L1539.047619047619,482.4405928508113 L1545.0,483.7" fill="none" stroke="#ae7541" stroke-width="1.8"/>
+<circle cx="1545.0" cy="483.7" r="3" fill="#ae7541" stroke="#ae7541" stroke-width="1"/>
+<path d="M1420.0,498.65 L1425.952380952381,499.9852990991442 L1431.904761904762,501.28117390158604 L1437.857142857143,502.49936410090186 L1443.8095238095239,503.603903004769 L1449.7619047619048,504.5621794405345 L1455.7142857142858,505.3459005900945 L1461.6666666666667,505.93192732667814 L1467.6190476190477,506.30295739047455 L1473.5714285714287,506.44803623255154 L1479.5238095238096,506.36288044455597 L1485.4761904761904,506.05000422503264 L1491.4285714285713,505.5186451484825 L1497.3809523809523,504.78449142880686 L1503.3333333333333,503.8692187295991 L1509.2857142857142,502.7998501968196 L1515.2380952380952,501.6079586086928 L1521.1904761904761,500.3287341991052 L1527.142857142857,498.999945676734 L1533.095238095238,497.6608251154974 L1539.047619047619,496.35090963959493 L1545.0,495.1088741020315" fill="none" stroke="#ae7541" stroke-width="1.8"/>
+<circle cx="1545.0" cy="495.1088741020315" r="3" fill="#ae7541" stroke="#ae7541" stroke-width="1"/>
+<text x="1482" y="546" font-size="20" fill="#ae7541" font-weight="600" text-anchor="middle">Q completion</text>
+<text x="1482" y="572" font-size="16" fill="#666666" font-weight="400" text-anchor="middle">50 flow steps</text>
+<text x="1482" y="598" font-size="17" fill="#666666" font-weight="400" text-anchor="middle">15 past + 15 future</text>
+<path d="M330,505 L330,592 L1160,592 L1160,505 L1145,505" fill="none" stroke="#76618f" stroke-width="1.3" stroke-dasharray="5 5"/>
+<rect x="647" y="576" width="235" height="32" fill="white" stroke="none" stroke-width="1.5" rx="0"/>
+<text x="764" y="598" font-size="18" fill="#76618f" font-weight="400" text-anchor="middle">Tθ: shared weights</text>
 <text x="40" y="615" font-size="18" fill="#666666" font-weight="400" text-anchor="start">Control uses the action branch. Trajectory completion supplies auxiliary training supervision.</text>
 <path d="M40,640 L1560,640" fill="none" stroke="#d4d4d4" stroke-width="1"/>
 <text x="40" y="683" font-size="23" fill="#252525" font-weight="600" text-anchor="start">(b) Trajectory supervision</text>
@@ -201,7 +213,7 @@
 <text x="676" y="846" font-size="17" fill="#ae7541" font-weight="400" text-anchor="start">Reconstruct / predict</text>
 <text x="1000" y="749" font-size="24" fill="#252525">L = L<tspan baseline-shift="sub" font-size="15">action</tspan><tspan baseline-shift="baseline"> + (L</tspan><tspan baseline-shift="sub" font-size="15">C,future</tspan><tspan baseline-shift="baseline"> + L</tspan><tspan baseline-shift="sub" font-size="15">Q,past</tspan><tspan baseline-shift="baseline"> + L</tspan><tspan baseline-shift="sub" font-size="15">Q,future</tspan><tspan baseline-shift="baseline">) / 3</tspan></text>
 <text x="1000" y="782" font-size="17" fill="#666666" font-weight="400" text-anchor="start">Flow-matching losses on valid targets.</text>
-<text x="1000" y="817" font-size="17" fill="#666666" font-weight="400" text-anchor="start">One decoder, called separately for C and Q.</text>
+<text x="1000" y="817" font-size="17" fill="#666666" font-weight="400" text-anchor="start">C: same decoder; observed past stays fixed.</text>
 <text x="40" y="885" font-size="16" fill="#666666" font-weight="400" text-anchor="start">64 C points · 64 Q points · 16 history frames · privileged simulator history in PullCube</text>
 <text x="1560" y="885" font-size="16" fill="#666666" font-weight="400" text-anchor="end">All trajectory sketches are schematic.</text>
 </svg>

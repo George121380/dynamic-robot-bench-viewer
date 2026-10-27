@@ -9,7 +9,7 @@ python3 4dmae/architecture/source/build_hpt.py
 pdfunite 4dmae/architecture/architecture.pdf 4dmae/architecture/hpt-internals.pdf 4dmae/architecture/shared-tokenizer.pdf 4dmae/architecture/b5-figures-with-hpt.pdf
 ```
 
-Requires Inkscape and Poppler. The original overview, tokenizer figure and two-page PDF are unchanged. The three-page bundle inserts HPT between them.
+Requires Inkscape and Poppler. The three-page bundle places HPT between the overview and tokenizer figures. The later query-entry revision below updates the overview and both bundles.
 
 Evidence:
 
@@ -22,10 +22,22 @@ Evidence:
 
 The schematic omits dropout, normalization of input coordinates, and invalid-point handling. It distinguishes the learned query parameters, the scene-conditioned output features, the physical anchors, and the random generation state. The name HPT alone does not imply pretrained trunk weights in this run.
 
-## Query and completion explanation
+## Query entry in the overview
 
-The HTML section `#completion` defines physical point queries and shows which C/Q time slots are given or generated. It covers HPT context, decoder inputs, C-history clamping, and flow-matching supervision, with formulas and sampling details collapsed. This is page text, so the existing figure/PDF exports remain unchanged.
+The user asked to locate query inside the pipeline, not add explanatory paragraphs. The previous `#completion` text/table section has been removed; its fragment now points into the overview for link continuity. The main diagram separates the formerly combined tokenizer/decoder box:
 
-The scope is the same frozen `cf880fa` PullCube setup: 64 C and 64 Q persistent surface points, 32 of each per cube/tool, sampled once with seed 42; privileged simulator world coordinates without a visibility filter. This is different-point completion on the same objects, not an object-holdout result. It does not describe the newer 12 C / 12 Q scene-motion sampler.
+`Point query Q (current XYZ) + noisy tracks/status → Tθ → point token q → trajectory decoder → Q completion`.
 
-Additional evidence: [point bank, C/Q split and temporal windows](https://github.com/George121380/4dmae/blob/cf880fa7882665aad0d66c86adb1b45d6f14327c/benchmarks/pull_cube_tool/oracle.py). Decoder and training statements are checked against `TrajectoryTokenizer`, `HistoryExtension.velocity_loss/loss/sample`, and `EgoWAMPolicy.encode_observation/compute_loss/predict_tracks` at that same commit.
+The HPT path is labeled `16 future-context tokens (K, V)`. Inside decoder cross-attention, point features form the query and HPT context supplies keys and values. Flow time enters the decoder; completion uses 50 flow steps. The lower C/Q panel notes that C uses the same decoder with observed past clamped. This is a schematic of the Q call, not a new network architecture.
+
+Rebuild the updated overview SVG/PNG/PDF and both PDF bundles:
+
+```sh
+python3 4dmae/architecture/source/build_overview.py
+```
+
+`pullcube-rgb.png` is the same recorded thumbnail embedded in the original overview. The generator does not rewrite the HTML, HPT inset, or tokenizer figure.
+
+Evidence remains frozen to `cf880fa7882665aad0d66c86adb1b45d6f14327c`: `TrajectoryTokenizer.forward`, `TrajectoryDecoder.forward`, and `HistoryExtension.sample` in [trajectory.py](https://github.com/George121380/4dmae/blob/cf880fa7882665aad0d66c86adb1b45d6f14327c/four_d_mae/models/egowam/trajectory.py); [CrossBlock.forward_cross](https://github.com/George121380/4dmae/blob/cf880fa7882665aad0d66c86adb1b45d6f14327c/four_d_mae/models/egowam/vendor/denoising_nets.py) calls cross-attention as `cmha(x, cond, cond)`. The point token is updated by time embedding and self-attention before the cross-attention operation; those internal operations remain expanded in the tokenizer figure.
+
+Scope is unchanged: privileged 64 C / 64 Q persistent surface points on cube/tool, not the newer 12 C / 12 Q scene-motion sampler or an object-holdout result. Point-selection evidence: [oracle.py](https://github.com/George121380/4dmae/blob/cf880fa7882665aad0d66c86adb1b45d6f14327c/benchmarks/pull_cube_tool/oracle.py).
