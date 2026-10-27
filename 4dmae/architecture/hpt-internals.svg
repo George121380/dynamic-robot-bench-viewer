@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Inside the HPT trunk: observations and learned tokens</title>
+<desc id="desc">The shown B5 configuration concatenates 48 observation tokens, 64 learned action tokens and 16 learned future tokens. Sixteen self-attention and MLP blocks produce separate action and trajectory contexts. The trajectory tokenizer encodes the noisy trajectory, while the HPT future context enters the decoder separately.</desc>
+<defs>
+<marker id="ink" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7" fill="#252525"/></marker>
+<marker id="blue" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7" fill="#496fa4"/></marker>
+<marker id="orange" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7" fill="#ae7541"/></marker>
+<marker id="purple" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7" fill="#76618f"/></marker>
+</defs><style>text{font-family:Arial,Helvetica,sans-serif}path,rect{vector-effect:non-scaling-stroke}</style><rect width="1600" height="900" fill="white"/>
+<text x="40" y="48" font-size="31" fill="#252525" font-weight="600" text-anchor="start">Inside HPT</text>
+<text x="1560" y="46" font-size="19" fill="#666666" font-weight="400" text-anchor="end">B5 / PullCube · 128 tokens × 256 dimensions</text>
+<text x="40" y="84" font-size="22" fill="#666666" font-weight="400" text-anchor="start">Heterogeneous Pretrained Transformer: modality-specific stems → shared transformer → task readouts</text>
+<text x="40" y="132" font-size="21" fill="#252525" font-weight="600" text-anchor="start">Observation-dependent features</text>
+<rect x="40" y="150" width="345" height="58" stroke="#252525" stroke-width="1.4" fill="white"/>
+<text x="212.5" y="175.0" font-size="21" fill="#252525" font-weight="600" text-anchor="middle">RGB stem</text>
+<text x="212.5" y="202.0" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">16 × 256</text>
+<rect x="40" y="226" width="345" height="58" stroke="#252525" stroke-width="1.4" fill="white"/>
+<text x="212.5" y="251.0" font-size="21" fill="#252525" font-weight="600" text-anchor="middle">State stem</text>
+<text x="212.5" y="278.0" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">16 × 256</text>
+<rect x="40" y="302" width="345" height="58" stroke="#76618f" stroke-width="1.4" fill="white"/>
+<text x="212.5" y="327.0" font-size="19" fill="#76618f" font-weight="600" text-anchor="middle">History tokenizer + resampler</text>
+<text x="212.5" y="354.0" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">16 × 256 · B5 extension</text>
+<text x="40" y="409" font-size="21" fill="#252525" font-weight="600" text-anchor="start">Learned input tokens · EgoWAM</text>
+<rect x="40" y="427" width="345" height="58" stroke="#496fa4" stroke-width="1.4" fill="#edf2f9"/>
+<text x="212.5" y="452.0" font-size="21" fill="#496fa4" font-weight="600" text-anchor="middle">64 action tokens</text>
+<text x="212.5" y="479.0" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">Learned parameter vectors</text>
+<rect x="40" y="503" width="345" height="58" stroke="#ae7541" stroke-width="1.4" fill="#faf1e7"/>
+<text x="212.5" y="528.0" font-size="21" fill="#ae7541" font-weight="600" text-anchor="middle">16 future tokens</text>
+<text x="212.5" y="555.0" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">Learned parameter vectors</text>
+<path d="M385,179 L435,179" stroke="#252525" stroke-width="1.5" fill="none"/>
+<path d="M385,255 L435,255" stroke="#252525" stroke-width="1.5" fill="none"/>
+<path d="M385,331 L435,331" stroke="#252525" stroke-width="1.5" fill="none"/>
+<path d="M385,456 L435,456" stroke="#252525" stroke-width="1.5" fill="none"/>
+<path d="M385,532 L435,532" stroke="#252525" stroke-width="1.5" fill="none"/>
+<path d="M435,179 L435,532" stroke="#252525" stroke-width="1.5" fill="none"/>
+<path d="M435,355 L555,355" stroke="#252525" stroke-width="1.5" fill="none" marker-end="url(#ink)"/>
+<text x="495" y="315" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">Concat.</text>
+<text x="495" y="339" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">+ position</text>
+<rect x="555" y="150" width="465" height="411" stroke="#252525" stroke-width="1.4" fill="white"/>
+<text x="787" y="191" font-size="25" fill="#252525" font-weight="600" text-anchor="middle">Shared transformer trunk</text>
+<text x="787" y="223" font-size="19" fill="#666666" font-weight="400" text-anchor="middle">16 blocks · width 256 · 8 attention heads</text>
+<rect x="590" y="256" width="395" height="72" stroke="#252525" stroke-width="1.4" fill="white"/>
+<text x="787.5" y="288.0" font-size="21" fill="#252525" font-weight="600" text-anchor="middle">LayerNorm → self-attention</text>
+<text x="787.5" y="315.0" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">Residual addition</text>
+<path d="M787,328 L787,355" stroke="#252525" stroke-width="1.5" fill="none" marker-end="url(#ink)"/>
+<rect x="590" y="355" width="395" height="72" stroke="#252525" stroke-width="1.4" fill="white"/>
+<text x="787.5" y="387.0" font-size="21" fill="#252525" font-weight="600" text-anchor="middle">LayerNorm → MLP</text>
+<text x="787.5" y="414.0" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">Residual addition</text>
+<text x="787" y="470" font-size="20" fill="#252525" font-weight="400" text-anchor="middle">All token groups attend to each other.</text>
+<text x="787" y="503" font-size="20" fill="#252525" font-weight="400" text-anchor="middle">One forward pass per observation.</text>
+<text x="787" y="535" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">No noisy trajectories or flow time τ here.</text>
+<text x="1135" y="132" font-size="21" fill="#252525" font-weight="600" text-anchor="start">Read out the corresponding positions</text>
+<path d="M1020,256 L1135,256" stroke="#496fa4" stroke-width="1.5" fill="none" marker-end="url(#blue)"/>
+<rect x="1135" y="213" width="425" height="86" stroke="#496fa4" stroke-width="1.4" fill="#edf2f9"/>
+<text x="1347.5" y="252.0" font-size="21" fill="#496fa4" font-weight="600" text-anchor="middle">64 action-context tokens</text>
+<text x="1347.5" y="279.0" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">Condition the action flow head</text>
+<path d="M1020,405 L1135,405" stroke="#ae7541" stroke-width="1.5" fill="none" marker-end="url(#orange)"/>
+<rect x="1135" y="362" width="425" height="86" stroke="#ae7541" stroke-width="1.4" fill="#faf1e7"/>
+<text x="1347.5" y="401.0" font-size="21" fill="#ae7541" font-weight="600" text-anchor="middle">16 future-context tokens</text>
+<text x="1347.5" y="428.0" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">Condition the trajectory decoder</text>
+<text x="1135" y="493" font-size="19" fill="#252525" font-weight="400" text-anchor="start">Both outputs depend on this observation.</text>
+<text x="1135" y="525" font-size="19" fill="#666666" font-weight="400" text-anchor="start">Token counts are latent capacity;</text>
+<text x="1135" y="551" font-size="19" fill="#666666" font-weight="400" text-anchor="start">they do not count predicted time steps.</text>
+<path d="M40,602 L1560,602" stroke="#d4d4d4" stroke-width="1.5" fill="none"/>
+<text x="40" y="644" font-size="24" fill="#252525" font-weight="600" text-anchor="start">Two separate inputs to the trajectory decoder</text>
+<text x="1560" y="644" font-size="18" fill="#666666" font-weight="400" text-anchor="end">HPT context is fixed during 50 generation steps</text>
+<rect x="40" y="687" width="325" height="72" stroke="#ae7541" stroke-width="1.4" fill="#faf1e7"/>
+<text x="202.5" y="719.0" font-size="21" fill="#ae7541" font-weight="600" text-anchor="middle">16 future-context tokens</text>
+<text x="202.5" y="746.0" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">From HPT</text>
+<path d="M365,723 L1060,723" stroke="#ae7541" stroke-width="1.5" fill="none" marker-end="url(#orange)"/>
+<text x="680" y="710" font-size="20" fill="#ae7541" font-weight="400" text-anchor="middle">Condition via cross-attention</text>
+<rect x="400" y="802" width="350" height="58" stroke="#76618f" stroke-width="1.4" fill="white"/>
+<text x="575.0" y="827.0" font-size="18" fill="#76618f" font-weight="600" text-anchor="middle">Noisy displacements + anchors</text>
+<text x="575.0" y="854.0" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">+ observed / noisy slot flags</text>
+<path d="M750,831 L790,831" stroke="#76618f" stroke-width="1.5" fill="none" marker-end="url(#purple)"/>
+<rect x="790" y="802" width="180" height="58" stroke="#76618f" stroke-width="1.4" fill="white"/>
+<text x="880.0" y="827.0" font-size="20" fill="#76618f" font-weight="600" text-anchor="middle">Tokenizer Tθ</text>
+<text x="880.0" y="854.0" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">One token per point</text>
+<path d="M970,831 L1008,831 L1008,755 L1060,755" stroke="#76618f" stroke-width="1.5" fill="none" marker-end="url(#purple)"/>
+<rect x="1060" y="687" width="280" height="100" stroke="#ae7541" stroke-width="1.4" fill="#faf1e7"/>
+<text x="1200.0" y="733.0" font-size="21" fill="#ae7541" font-weight="600" text-anchor="middle">Trajectory decoder</text>
+<text x="1200.0" y="760.0" font-size="18" fill="#666666" font-weight="400" text-anchor="middle">Predict a velocity field</text>
+<text x="1200" y="839" font-size="20" fill="#666666" font-weight="400" text-anchor="middle">Flow time τ</text>
+<path d="M1200,817 L1200,787" stroke="#ae7541" stroke-width="1.5" fill="none" marker-end="url(#orange)"/>
+<path d="M1340,737 L1380,737" stroke="#ae7541" stroke-width="1.5" fill="none" marker-end="url(#orange)"/>
+<text x="1400" y="729" font-size="23" fill="#ae7541" font-weight="600" text-anchor="start">Update</text>
+<text x="1400" y="760" font-size="20" fill="#ae7541" font-weight="400" text-anchor="start">the trajectory</text>
+<text x="40" y="886" font-size="18" fill="#666666" font-weight="400" text-anchor="start">The 16 HPT context tokens bypass Tθ. The decoder combines context with the evolving trajectory.</text>
+</svg>
