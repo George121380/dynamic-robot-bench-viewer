@@ -1,0 +1,140 @@
+{
+  "b1_training_source": "8cfd8df",
+  "b5_training_source": "b537131",
+  "inspected_checkout": "f21e87b",
+  "relevant_files_identical_to_frozen_runs": true,
+  "new_200k_recipe": {
+    "commit": "29bc2a546ff2200d6b75900eff5c4124a724459e",
+    "production_training_started": false,
+    "sampling_code_unchanged": true
+  },
+  "source_files": {
+    "benchmarks/pull_cube_tool/oracle.py": {
+      "sha256": "572c7df511f201ef8b9334d52a4e13a2ed0b95c1895e29fd9d3ed192f6b74b87",
+      "download": "source/benchmarks/pull_cube_tool/oracle.py"
+    },
+    "benchmarks/pull_cube_tool/prepare_oracle.py": {
+      "sha256": "0dc79c7f70a64348def3db08186508fc755ac56882338539ef88943bfb9d0fc6",
+      "download": "source/benchmarks/pull_cube_tool/prepare_oracle.py"
+    },
+    "benchmarks/pull_cube_tool/scene_geometry.py": {
+      "sha256": "030d70c125e1a53b2b0bdc7816ae9b31e13f1aabed2e4bb2761a8fe79e1a26a7",
+      "download": "source/benchmarks/pull_cube_tool/scene_geometry.py"
+    },
+    "benchmarks/pull_cube_tool/prepare_scene.py": {
+      "sha256": "540996996adf41f627fbbe669287eb5eda0c4cbf2aea4e56d19d762cd544b3c2",
+      "download": "source/benchmarks/pull_cube_tool/prepare_scene.py"
+    },
+    "four_d_mae/scene_sampling.py": {
+      "sha256": "987c6ce70ba9bb47637c91ef049817880dc6d7754c7441c304f47ec62c1e56ec",
+      "download": "source/four_d_mae/scene_sampling.py"
+    },
+    "four_d_mae/scene_data.py": {
+      "sha256": "ee6127aa0158c9071885c182b4eefae70480e0c248cd4e091c8407b95efb0f3c",
+      "download": "source/four_d_mae/scene_data.py"
+    },
+    "four_d_mae/data.py": {
+      "sha256": "bc14e82d27a0ca6901bb330f0c6bb64256d266e6504a4affca2cb07dcad776b1",
+      "download": "source/four_d_mae/data.py"
+    },
+    "four_d_mae/train.py": {
+      "sha256": "17619d6534c0453eadcc3065e3089841aca4dfdfe86c30b44f26fe7febf950fc",
+      "download": "source/four_d_mae/train.py"
+    }
+  },
+  "configurations": {
+    "b1": {
+      "policy": {
+        "name": "egowam",
+        "model": {
+          "arm": "B1",
+          "state_dim": 9,
+          "action_dim": 8,
+          "chunk": 32,
+          "width": 256,
+          "blocks": 16,
+          "heads": 8,
+          "history": 16,
+          "input_points": 64,
+          "query_points": 64,
+          "inference_steps": 50
+        }
+      },
+      "training": {
+        "steps": 50000,
+        "seed": 42,
+        "global_batch_size": 64,
+        "accumulation_steps": 1,
+        "clip_grad_norm": 1,
+        "precision": "bfloat16",
+        "workers": 2,
+        "save_every": 5000,
+        "validate_every": 20000,
+        "validation_samples": 256,
+        "log_every": 100,
+        "lr": 0.0001,
+        "lr_schedule": "cosine",
+        "warmup_steps": 500,
+        "weight_decay": 0.0001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "ema": false,
+        "vision_init_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+        "flow_statistics_source": "q_future"
+      }
+    },
+    "b5": {
+      "policy": {
+        "name": "4dmae",
+        "model": {
+          "arm": "B5",
+          "state_dim": 9,
+          "action_dim": 8,
+          "chunk": 32,
+          "width": 256,
+          "blocks": 16,
+          "heads": 8,
+          "history": 16,
+          "input_points": 12,
+          "query_points": 12,
+          "inference_steps": 50
+        }
+      },
+      "training": {
+        "steps": 50000,
+        "seed": 42,
+        "global_batch_size": 64,
+        "accumulation_steps": 1,
+        "clip_grad_norm": 1,
+        "precision": "bfloat16",
+        "workers": 2,
+        "save_every": 5000,
+        "validate_every": 20000,
+        "validation_samples": 256,
+        "log_every": 100,
+        "lr": 0.0001,
+        "lr_schedule": "cosine",
+        "warmup_steps": 500,
+        "weight_decay": 0.0001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "ema": false,
+        "vision_init_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+        "flow_statistics_source": "q_future"
+      },
+      "sampling": {
+        "mode": "mixed",
+        "holdout_probability": 0.5,
+        "condition_points": 12,
+        "query_points": 12,
+        "target_query_points": 3,
+        "seed": 42,
+        "batch_balance": true
+      }
+    }
+  }
+}

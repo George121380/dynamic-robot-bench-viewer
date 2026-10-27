@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "train_windows": 4096,
+  "index_selection": "linspace(0,200206,4096)",
+  "epoch": 0,
+  "seed": 42,
+  "results": {
+    "scene": {
+      "points_by_category": {
+        "background": 42215,
+        "gripper": 1003,
+        "tool": 1294,
+        "arm": 4467,
+        "cube": 173
+      },
+      "mean_points_by_category": {
+        "background": 10.306396484375,
+        "gripper": 0.244873046875,
+        "tool": 0.31591796875,
+        "arm": 1.090576171875,
+        "cube": 0.042236328125
+      },
+      "object_groups_per_window": {
+        "0": 2227,
+        "1": 1541,
+        "2": 315,
+        "3": 13
+      },
+      "windows_with_any_history_motion_over_1mm": 3255,
+      "moving_points_over_1mm": 6023,
+      "total_points": 49152
+    },
+    "holdout": {
+      "points_by_category": {
+        "background": 42931,
+        "gripper": 664,
+        "tool": 889,
+        "arm": 4553,
+        "cube": 115
+      },
+      "mean_points_by_category": {
+        "background": 10.481201171875,
+        "gripper": 0.162109375,
+        "tool": 0.217041015625,
+        "arm": 1.111572265625,
+        "cube": 0.028076171875
+      },
+      "object_groups_per_window": {
+        "0": 2719,
+        "1": 1269,
+        "2": 108
+      },
+      "windows_with_any_history_motion_over_1mm": 3116,
+      "moving_points_over_1mm": 5427,
+      "total_points": 49152
+    }
+  },
+  "seconds": 18.231985753402114
+}

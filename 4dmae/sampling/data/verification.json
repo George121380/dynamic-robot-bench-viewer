@@ -1,0 +1,199 @@
+{
+  "cpu_only": true,
+  "physics_steps": 0,
+  "model_calls": 0,
+  "cases": 7,
+  "epoch_pairs": 21,
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "index": 174504,
+      "epoch": 0,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 174504,
+      "epoch": 1,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 174504,
+      "epoch": 2,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 105903,
+      "epoch": 0,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 105903,
+      "epoch": 1,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 105903,
+      "epoch": 2,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 43677,
+      "epoch": 0,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 43677,
+      "epoch": 1,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 43677,
+      "epoch": 2,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 102321,
+      "epoch": 0,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": false,
+      "removed": 1
+    },
+    {
+      "index": 102321,
+      "epoch": 1,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 102321,
+      "epoch": 2,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 168688,
+      "epoch": 0,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": false,
+      "removed": 1
+    },
+    {
+      "index": 168688,
+      "epoch": 1,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 168688,
+      "epoch": 2,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 37183,
+      "epoch": 0,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 37183,
+      "epoch": 1,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": false,
+      "removed": 2
+    },
+    {
+      "index": 37183,
+      "epoch": 2,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": false,
+      "removed": 1
+    },
+    {
+      "index": 0,
+      "epoch": 0,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 0,
+      "epoch": 1,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    },
+    {
+      "index": 0,
+      "epoch": 2,
+      "disjoint": true,
+      "paired_query": true,
+      "holdout_target_absent": true,
+      "identical_conditions": true,
+      "removed": 0
+    }
+  ]
+}

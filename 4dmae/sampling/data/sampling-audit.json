@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "training_windows": 200207,
+  "validation_windows": 22458,
+  "sampling": {
+    "mode": "mixed",
+    "holdout_probability": 0.5,
+    "condition_points": 12,
+    "query_points": 12,
+    "target_query_points": 3,
+    "seed": 42,
+    "batch_balance": true
+  },
+  "fixed_epoch": 0,
+  "diagnostic_preview_counts": {
+    "windows": 200207,
+    "holdout": 100210,
+    "fallback": 0,
+    "scene_hits_target": 36463,
+    "removed": 20331,
+    "targets": {
+      "0": 0,
+      "1": 66021,
+      "2": 67054,
+      "3": 67132
+    }
+  },
+  "exact_training_batch": {
+    "global_batch": 64,
+    "scene": 32,
+    "holdout": 32,
+    "rank_batch": 8,
+    "rank_scene": 4,
+    "rank_holdout": 4
+  },
+  "state_action_statistics_equal_reference": true,
+  "statistics_sha256": "17530aade560e544290560c73dd46e3fad50a50ed67637d1e92b9d6d07f87c16",
+  "seconds": 254.2376137021929
+}

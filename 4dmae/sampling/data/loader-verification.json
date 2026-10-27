@@ -1,0 +1,268 @@
+{
+  "b5_loader_samples": 42,
+  "b1_loader_samples": 7,
+  "b1_observation_keys": [
+    "rgb",
+    "state"
+  ],
+  "all_passed": true,
+  "tolerance_m": 1.5e-07,
+  "reason_for_tolerance": "JSON rounds absolute coordinates to seven decimal places",
+  "cpu_only": true,
+  "optimizer_steps": 0,
+  "physics_steps": 0,
+  "checks": [
+    {
+      "index": 174504,
+      "epoch": 0,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 174504,
+      "epoch": 0,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 174504,
+      "epoch": 1,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 174504,
+      "epoch": 1,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 174504,
+      "epoch": 2,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 174504,
+      "epoch": 2,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 105903,
+      "epoch": 0,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 105903,
+      "epoch": 0,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 105903,
+      "epoch": 1,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 105903,
+      "epoch": 1,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 105903,
+      "epoch": 2,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 105903,
+      "epoch": 2,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 43677,
+      "epoch": 0,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 43677,
+      "epoch": 0,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 43677,
+      "epoch": 1,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 43677,
+      "epoch": 1,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 43677,
+      "epoch": 2,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 43677,
+      "epoch": 2,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 102321,
+      "epoch": 0,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 102321,
+      "epoch": 0,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 102321,
+      "epoch": 1,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 102321,
+      "epoch": 1,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 102321,
+      "epoch": 2,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 102321,
+      "epoch": 2,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 168688,
+      "epoch": 0,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 168688,
+      "epoch": 0,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 168688,
+      "epoch": 1,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 168688,
+      "epoch": 1,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 168688,
+      "epoch": 2,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 168688,
+      "epoch": 2,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 37183,
+      "epoch": 0,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 37183,
+      "epoch": 0,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 37183,
+      "epoch": 1,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 37183,
+      "epoch": 1,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 37183,
+      "epoch": 2,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 37183,
+      "epoch": 2,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 0,
+      "epoch": 0,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 0,
+      "epoch": 0,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 0,
+      "epoch": 1,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 0,
+      "epoch": 1,
+      "mode": "holdout",
+      "loader_parity": true
+    },
+    {
+      "index": 0,
+      "epoch": 2,
+      "mode": "scene",
+      "loader_parity": true
+    },
+    {
+      "index": 0,
+      "epoch": 2,
+      "mode": "holdout",
+      "loader_parity": true
+    }
+  ]
+}
