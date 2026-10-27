@@ -21,3 +21,11 @@ Evidence:
 - [Trajectory path](https://github.com/George121380/4dmae/blob/cf880fa7882665aad0d66c86adb1b45d6f14327c/four_d_mae/models/egowam/trajectory.py#L33): tokenize the noisy trajectory, add flow time, cross-attend to HPT context, predict velocity. Sampling keeps C history fixed.
 
 The schematic omits dropout, normalization of input coordinates, and invalid-point handling. It distinguishes the learned query parameters, the scene-conditioned output features, the physical anchors, and the random generation state. The name HPT alone does not imply pretrained trunk weights in this run.
+
+## Query and completion explanation
+
+The HTML section `#completion` defines physical point queries and shows which C/Q time slots are given or generated. It covers HPT context, decoder inputs, C-history clamping, and flow-matching supervision, with formulas and sampling details collapsed. This is page text, so the existing figure/PDF exports remain unchanged.
+
+The scope is the same frozen `cf880fa` PullCube setup: 64 C and 64 Q persistent surface points, 32 of each per cube/tool, sampled once with seed 42; privileged simulator world coordinates without a visibility filter. This is different-point completion on the same objects, not an object-holdout result. It does not describe the newer 12 C / 12 Q scene-motion sampler.
+
+Additional evidence: [point bank, C/Q split and temporal windows](https://github.com/George121380/4dmae/blob/cf880fa7882665aad0d66c86adb1b45d6f14327c/benchmarks/pull_cube_tool/oracle.py). Decoder and training statements are checked against `TrajectoryTokenizer`, `HistoryExtension.velocity_loss/loss/sample`, and `EgoWAMPolicy.encode_observation/compute_loss/predict_tracks` at that same commit.
