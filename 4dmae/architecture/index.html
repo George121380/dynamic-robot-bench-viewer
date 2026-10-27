@@ -7,26 +7,25 @@
 <section id="hpt" class="hpt-section" aria-labelledby="hpt-title">
 <h2 id="hpt-title">Inside HPT</h2>
 <div class="explanation">
-<p><strong>HPT encodes the observation into conditions for two generation heads.</strong> HPT stands for Heterogeneous Pretrained Transformer: different input modalities have their own stems, followed by one shared transformer trunk. In this diagram, the trunk runs once; the action and trajectory heads perform the iterative flow-matching generation.</p>
-<p>The overview’s <strong>“Learned queries”</strong> are EgoWAM’s <strong>learnable action and future tokens</strong>. The original paper specifies the same 64 action tokens and 16 future tokens; B5 retains them.</p>
+<p>HPT mixes observation features with learned action and future tokens, producing conditions for the two flow-matching heads.</p>
 </div>
 <figure>
 <a href="hpt-internals.svg"><img src="hpt-internals.svg" alt="HPT concatenates 48 observation tokens with 64 learned action tokens and 16 learned future tokens, mixes them in 16 self-attention blocks, and reads out separate head conditions. The future context and tokenized noisy trajectory enter the trajectory decoder on separate paths." width="1600" height="900" loading="lazy"></a>
-<figcaption>Shown: the frozen PullCube B5 configuration. The 16 future tokens are scene-conditioned features, not 16 predicted frames. Open the figure to zoom.</figcaption>
+<figcaption>B5 / PullCube. Token counts denote latent features, not predicted frames.</figcaption>
 <div class="downloads"><a href="hpt-internals.pdf">HPT PDF</a><a href="hpt-internals.svg">Editable SVG</a><a href="hpt-internals.png">PNG</a></div>
 </figure>
 <div class="explanation">
-<ol>
-<li><strong>Tokenize and concatenate.</strong> RGB, robot state and point history each contribute 16 tokens. Add 64 learned action tokens and 16 learned future tokens: <strong>48 + 64 + 16 = 128 tokens</strong>, each 256-dimensional. Positional encodings identify token positions.</li>
-<li><strong>Mix information in the trunk.</strong> Each of 16 blocks applies LayerNorm, 8-head self-attention and an MLP, with residual connections. All token groups can exchange information. The learned input vectors are shared across observations; their output features depend on the current scene.</li>
-<li><strong>Read out conditions for generation.</strong> The first 64 output positions condition the action head; the next 16 condition the trajectory decoder. Observation positions participate in attention but are not separately passed to the heads in this B5 implementation. These contexts remain fixed during each 50-step generation loop.</li>
-</ol>
-<p><strong>Learned tokens and noise have different roles.</strong> Learned tokens are parameters updated during training and reused at inference. Random noise is sampled as the starting point for a new action or trajectory. The HPT trunk receives neither that noise nor the flow time <em>τ</em>.</p>
-<p><strong>The future context bypasses T<sub>θ</sub>.</strong> T<sub>θ</sub> encodes the evolving trajectory using noisy displacements, current point positions (anchors), and slot-status flags. The trajectory decoder combines these point tokens with the 16 HPT context tokens and flow time <em>τ</em>, then predicts a velocity field used to update the trajectory. For C points, the observed past stays fixed.</p>
-<p><strong>Action inference uses the action head.</strong> The future tokens remain in the HPT trunk, while the trajectory decoder is omitted. Trajectory completion supplies auxiliary training supervision.</p>
-<p class="source-note"><strong>Inherited from EgoWAM:</strong> the shared trunk and learned action/future tokens. <strong>B5 extensions:</strong> observed point-history input, C/Q trajectory completion, and tied trajectory-tokenizer weights. The name HPT identifies the backbone family; this run initializes the trunk from scratch and uses ImageNet initialization for the RGB backbone.</p>
-<p class="source-note">Sources: <a href="https://arxiv.org/html/2607.08436v1#S4.SS1">EgoWAM §4.1</a> · <a href="https://arxiv.org/html/2607.08436v1#A2.SS1">Appendix B.1: 64 action / 16 future tokens</a> · <a href="https://github.com/GaTech-RL2/EgoWAM/blob/c87617fe37a6ed6a951e6b176ad552200c425c93/egowam/algo/hpt_wm.py#L419">Original learned-token definitions</a> · <a href="https://github.com/George121380/4dmae/blob/cf880fa7882665aad0d66c86adb1b45d6f14327c/four_d_mae/models/egowam/vendor/hpt.py#L487">B5 token assembly and readout</a> · <a href="https://github.com/George121380/4dmae/blob/cf880fa7882665aad0d66c86adb1b45d6f14327c/four_d_mae/models/egowam/trajectory.py#L33">Trajectory decoder inputs</a>.</p>
+<ul>
+<li><strong>Queries:</strong> learned parameters inherited from EgoWAM, distinct from sampled noise.</li>
+<li><strong>Generation:</strong> HPT runs once per observation; each head uses its fixed context for 50 steps.</li>
+<li><strong>Two inputs:</strong> T<sub>θ</sub> encodes noisy tracks; the 16 future-context tokens enter the decoder separately.</li>
+</ul>
 </div>
+<details><summary>Sources and implementation notes</summary>
+<p>B5 adds point-history input, C/Q completion and shared trajectory-tokenizer weights. The trunk and 64 action / 16 future tokens are inherited from EgoWAM. This run initializes the trunk from scratch and the RGB backbone from ImageNet.</p>
+<p>Only action/future output positions are read out. Action inference retains future tokens in the trunk and omits the trajectory decoder. Observed C history stays fixed during trajectory generation.</p>
+<p class="source-note">Sources: <a href="https://arxiv.org/html/2607.08436v1#S4.SS1">EgoWAM §4.1</a> · <a href="https://arxiv.org/html/2607.08436v1#A2.SS1">Appendix B.1: 64 action / 16 future tokens</a> · <a href="https://github.com/GaTech-RL2/EgoWAM/blob/c87617fe37a6ed6a951e6b176ad552200c425c93/egowam/algo/hpt_wm.py#L419">Original learned-token definitions</a> · <a href="https://github.com/George121380/4dmae/blob/cf880fa7882665aad0d66c86adb1b45d6f14327c/four_d_mae/models/egowam/vendor/hpt.py#L487">B5 token assembly and readout</a> · <a href="https://github.com/George121380/4dmae/blob/cf880fa7882665aad0d66c86adb1b45d6f14327c/four_d_mae/models/egowam/trajectory.py#L33">Trajectory decoder inputs</a>.</p>
+</details>
 </section>
 <h2 id="tokenizer">Shared trajectory tokenizer</h2><figure><a href="shared-tokenizer.svg"><img src="shared-tokenizer.svg" alt="Anchor, displacement, and status projections share weights in the input and decoding paths"></a><figcaption>Each point token encodes an entire trajectory. Decoder self-attention operates across points.</figcaption><div class="downloads"><a href="shared-tokenizer.pdf">PDF</a><a href="shared-tokenizer.svg">Editable SVG</a><a href="shared-tokenizer.png">PNG</a></div></figure>
 <details><summary>Configuration and implementation notes</summary><table><tr><th></th><th>Shown: PullCube</th><th>Base B5 defaults</th></tr><tr><td>Robot state</td><td>9</td><td>18</td></tr><tr><td>Action chunk</td><td>32 × 8</td><td>40 × 7</td></tr><tr><td>Trajectory points</td><td>64 C + 64 Q</td><td>64 C + 64 Q</td></tr><tr><td>History / displacement slots</td><td>16 / 30</td><td>16 / 30</td></tr></table>
