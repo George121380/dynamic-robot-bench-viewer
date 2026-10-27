@@ -15,6 +15,7 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--root', type=Path, required=True)
     p.add_argument('--prepare-only', action='store_true')
+    p.add_argument('--frames',type=int,nargs='+',default=[255,510,765])
     a = p.parse_args()
     torch.set_num_threads(2)
     model = torch.hub.load('facebookresearch/dinov2:'+REVISION, 'dinov2_vits14_reg',
@@ -31,7 +32,7 @@ def main():
     preprocess = transforms.Compose([transforms.Resize((224,224), interpolation=transforms.InterpolationMode.BICUBIC,
         antialias=True), transforms.ToTensor(), transforms.Normalize((.485,.456,.406),(.229,.224,.225))])
     with torch.inference_mode():
-        for frame in (255,510,765):
+        for frame in a.frames:
             x = preprocess(Image.open(a.root/'raw'/f'frame-{frame}.png').convert('RGB'))[None]
             feat = model.forward_features(x)['x_norm_patchtokens'][0]
             feat = torch.nn.functional.normalize(feat,dim=-1)

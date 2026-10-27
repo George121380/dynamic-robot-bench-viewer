@@ -1,0 +1,45 @@
+{
+  "clips": [
+    {
+      "anchor": 255,
+      "sample_sets": 50,
+      "unique_points": 519,
+      "anchor_error_m": 2.662453979507262e-08,
+      "future_independent_selection": true,
+      "visible_point_fraction": 0.856876204238921,
+      "minimum_visible_current": 1.0
+    },
+    {
+      "anchor": 510,
+      "sample_sets": 50,
+      "unique_points": 524,
+      "anchor_error_m": 3.50812926763755e-08,
+      "future_independent_selection": true,
+      "visible_point_fraction": 0.975393606870229,
+      "minimum_visible_current": 1.0
+    },
+    {
+      "anchor": 765,
+      "sample_sets": 50,
+      "unique_points": 515,
+      "anchor_error_m": 2.571389079442099e-08,
+      "future_independent_selection": true,
+      "visible_point_fraction": 0.9744417475728155,
+      "minimum_visible_current": 1.0
+    },
+    {
+      "anchor": 988,
+      "sample_sets": 50,
+      "unique_points": 519,
+      "anchor_error_m": 4.1700278674561275e-08,
+      "future_independent_selection": true,
+      "visible_point_fraction": 0.8744460500963391,
+      "minimum_visible_current": 1.0
+    }
+  ],
+  "identity": "fixed material anchors; never resampled during playback",
+  "visibility": "body ID plus depth tolerance 4 mm + 0.3% depth",
+  "fps": 20,
+  "physics_steps": 0,
+  "model_predictions": false
+}
